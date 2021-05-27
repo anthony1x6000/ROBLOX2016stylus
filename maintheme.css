@@ -985,6 +985,17 @@ border-top: hidden;
 }
 
 
+.icon-common-play:after {
+    visibility: visible;
+    position: absolute;
+    align-content: center;
+    top: 20px;
+    left: 142px;
+    content: "Play";
+    font-size: 27px;
+}
+
+
 /*.profile-header .header-caption .header-details .details-info li .font-header-2:before {
     content: "\A \A";
 	white-space: pre;
@@ -2245,3 +2256,8 @@ div[style="col-sm-6 slide-item-container-left"]
     background-position: 0px 0px;
     background-size: 28px 28px;
 }
+
+
+/* extra things */
+
+
