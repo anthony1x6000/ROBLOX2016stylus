@@ -990,7 +990,7 @@ border-top: hidden;
     position: absolute;
     align-content: center;
     top: 21px;
-    left: 142px;
+    left: 145px;
     content: "Play";
     font-size: 24px;
 }
@@ -1651,8 +1651,8 @@ position: absolute;
 
 .light-theme .btn-primary-md
 {
-    background-color: #02b757;
-    border-color: #02b757;
+    background-color: #089c5c;
+    border-color: #089c5c;
 }
 
 .light-theme .profile-avatar-left
@@ -1966,8 +1966,8 @@ background-color: #fff;
 
 .light-theme .btn-primary-md:focus, .light-theme .btn-primary-md:hover, .light-theme .btn-primary-md[disabled]
 {
-    background-color: #02b757;
-    border: 1px solid #02b757;
+    background-color: #40ac7c;
+    border: 1px solid #40ac7c;
 }
 
 .light-theme .dialogs .dialog-container.active .dialog-header
