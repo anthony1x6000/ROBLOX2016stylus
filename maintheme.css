@@ -987,8 +987,26 @@ border-top: hidden;
 /* Play button changes */
 /* The first time im creating any sort of new code */
 /* It feels cool but im probably gonna mess the whole css stuff up 
-Stackoverflow is pretty sick 
+stackoverflow is pretty sick 
 I just realized that I dont have to do a new comment for every line -Anthony */
+/* if any smart people are reading this how tf do I change text in css?
+like I did like this thing 
+
+.replaceclass {
+    visibility: hidden;
+    position: relative;
+}
+and the other thing 
+
+but the thing im trying to change falls under the same class so it changes all the text
+specifically this: font-header-2.nav-menu-title.text-header / font-header-2 nav-menu-title text-header (in html)
+css confusing and I found nothing online
+
+also how do I do da ting where I insert a horizontal line above and under the play button? 
+if you do know just fork the code and if ur on userstyles go to 
+https://github.com/anthony1x6000/ROBLOX2016stylus
+*/ 
+
 .icon-common-play:after {
     visibility: visible;
     position: absolute;
@@ -2270,5 +2288,7 @@ div[style="col-sm-6 slide-item-container-left"]
     background-size: 28px 28px;
 }
 
+
+/* extra things */
 
 
