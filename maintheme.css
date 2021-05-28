@@ -1023,6 +1023,52 @@ https://github.com/anthony1x6000/ROBLOX2016stylus
 
 }
 
+/* changing top bar stuff I FOUND OUT HOW! Not really I just looked at Ologist's code and saw that he figured it out so I'm shamelessly stealing it */ 
+
+
+ul.nav:nth-child(2) > li:nth-child(1) > a:nth-child(1)
+  {
+    font-size: 0 !important;
+  }
+
+  ul.nav:nth-child(2) > li:nth-child(1) > a:nth-child(1)::before
+  {
+    content: "Games";
+    font-size: 16px;
+  }
+
+ul.nav:nth-child(2) > li:nth-child(2) > a:nth-child(1)
+  {
+    font-size: 0 !important;
+  }
+
+  ul.nav:nth-child(2) > li:nth-child(2) > a:nth-child(1)::before
+  {
+    content: "Catalog";
+    font-size: 16px;
+  }
+
+ul.nav:nth-child(2) > li:nth-child(3) > a:nth-child(1)
+  {
+    font-size: 0 !important;
+  }
+
+  ul.nav:nth-child(2) > li:nth-child(3) > a:nth-child(1)::before
+  {
+    content: "Develop";
+    font-size: 16px;
+  }
+
+ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)
+  {
+    font-size: 0 !important;
+  }
+
+  ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)::before
+  {
+    content: "ROBUX";
+    font-size: 16px;
+  }
 
 
 
