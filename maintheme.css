@@ -984,7 +984,11 @@ border-top: hidden;
     visibility: hidden;
 }
 
-
+/* Play button changes */
+/* The first time im creating any sort of new code */
+/* It feels cool but im probably gonna mess the whole css stuff up 
+Stackoverflow is pretty sick 
+I just realized that I dont have to do a new comment for every line -Anthony */
 .icon-common-play:after {
     visibility: visible;
     position: absolute;
@@ -994,6 +998,15 @@ border-top: hidden;
     content: "Play";
     font-size: 24px;
 }
+
+
+.btn-full-width {
+    width: 85%;
+
+}
+
+
+
 
 
 /*.profile-header .header-caption .header-details .details-info li .font-header-2:before {
@@ -2257,7 +2270,5 @@ div[style="col-sm-6 slide-item-container-left"]
     background-size: 28px 28px;
 }
 
-
-/* extra things */
 
 
