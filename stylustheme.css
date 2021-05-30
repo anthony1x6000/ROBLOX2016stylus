@@ -1030,13 +1030,33 @@ https://github.com/anthony1x6000/ROBLOX2016stylus
 /* fixing the color of the thumbnail arrow things */ 
 
 .carousel-controls.carousel-controls-left.btn-primary-md.btn-min-width {
-    background-color: #fff0;
-    border-color: #fff0;
+    background-color: rgba(25,25,25,0.3);
+    border: 2px solid #fff;
+    border-color: #fff;
+}
+
+.icon-carousel-left {    
+    background-position-x: 0px;
+    background-position-y: -857px;
+    
 }
 
 .carousel-controls.carousel-controls-right.btn-primary-md.btn-min-width {
-    background-color: #fff0;
-    border-color: #fff0;
+    background-color: rgba(25,25,25,0.3);
+    border: 2px solid #fff;
+    border-color: #fff;
+}
+
+.icon-carousel-right {    
+    background-position-x: 0px;
+    background-position-y: -831px;
+    
+}
+
+
+.carousel-controls.carousel-controls-right.btn-primary-md.btn-min-width {
+    background-color: rgba(25,25,25,0.3);
+    border-color: #fff;
     
 }
 
