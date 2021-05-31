@@ -361,6 +361,12 @@ thumbnail-2d .thumbnail-2d-container img {
 }
 
 
+/* search bar */ 
+
+.rbx-header .navbar-search .input-field {
+    border-radius: 3px;
+    
+}
 
 
 
@@ -1129,9 +1135,9 @@ ul.nav:nth-child(1) > li:nth-child(3) > a:nth-child(1) .text-lead {
     transition: none;
 }
 
-/* test  
+/* test 
 
-.ad, .abp.other {
+.ad {
     background-image: url("https://i.ibb.co/R654SKN/cat.webp");
     background-repeat: repeat;
     background-size: 190px;
