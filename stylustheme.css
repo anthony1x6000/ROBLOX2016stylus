@@ -2471,11 +2471,11 @@ div[style="col-sm-6 slide-item-container-left"]
     height: 99%;
 }
 
-
+/* this doesnt really work (outside of the games page and the home page)
 .game-card-native-ad {
     position: relative;
     top: 28px;
-}
+} */
 
 .game-tile:hover .game-card-container {
     height: 99%;
