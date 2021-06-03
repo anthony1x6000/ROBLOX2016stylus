@@ -1832,8 +1832,8 @@ position: absolute;
 
 .light-theme .btn-primary-md
 {
-    background-color: #089c5c;
-    border-color: #089c5c;
+    background-color: #08b454;
+    border-color: #08b454;
 }
 
 .light-theme .profile-avatar-left
@@ -2147,8 +2147,9 @@ background-color: #fff;
 
 .light-theme .btn-primary-md:focus, .light-theme .btn-primary-md:hover, .light-theme .btn-primary-md[disabled]
 {
-    background-color: #40ac7c;
-    border: 1px solid #40ac7c;
+    background-color: #3fc679;
+    border: 1px solid #3fc679;
+    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30)
 }
 
 .light-theme .dialogs .dialog-container.active .dialog-header
@@ -2446,11 +2447,19 @@ div[style="col-sm-6 slide-item-container-left"]
     
 } */
 
-  .light-theme .game-card-info .info-label.icon-votes-gray
+
+.light-theme .game-card-info .info-label.icon-votes-gray
   {
     background-position: 0 -351px !important;
     background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/cd9b642ccf4ef8bfd605a035bb2cc53db92f4e24/images/archiveofimages/153fd3209692232cd8087cad74a669b0-games.svg);
   }
+
+
+.game-card-info .vote-percentage-label {
+    position: relative;
+    right: 0px;
+    top: 2.5px;
+}
 
 .scroller.next:hover, .scroller.prev:hover {
     cursor: pointer;
@@ -2460,13 +2469,14 @@ div[style="col-sm-6 slide-item-container-left"]
 
 
 .game-card-container {
-    height: 99%;
+    height: 239px;
 }
 
 
 .game-card-native-ad {
     position: relative;
     top: 28px;
+    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.3);
 }
 
 .game-tile:hover .game-card-container {
@@ -2481,21 +2491,24 @@ div[style="col-sm-6 slide-item-container-left"]
     top: 212px;
 }
 
+
 .game-card-info .playing-counts-label {
     position: relative; 
     top: -30px;
     left: -68px;
-}
+} 
+
+/* 
+.game-card-info .playing-counts-label {
+    float: left;
+    display: block;
+  }*/
+
 
 .game-card-info .icon-playing-counts-gray {
     visibility: hidden;
 }
 
-.game-card-info .vote-percentage-label {
-    position: relative;
-    right: 0px;
-    top: 2.5px;
-}
 
 
 
@@ -2506,6 +2519,10 @@ div[style="col-sm-6 slide-item-container-left"]
   left: 100px;
   top: 150px;
 */
+
+
+/* --------------- */ 
+
 
 /* side bar tab thing */
 
