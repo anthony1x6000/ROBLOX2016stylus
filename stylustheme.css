@@ -1075,41 +1075,14 @@ https://github.com/anthony1x6000/ROBLOX2016stylus
 .rbx-tab-heading {
     height: 50px;
 
-
 }
 
-ul.nav:nth-child(1) > li:nth-child(1) > a:nth-child(1) .text-lead {
-    font-size: 0 !important;
+.text-lead.ng-binding{
+    position: relative;
+    top: 5px;
     
 }
-ul.nav:nth-child(1) > li:nth-child(1) > a:nth-child(1) .text-lead::before {
-    content: "Game Instances";
-    font-size: 16px;
-    position: relative;
-    top: 5px;
-}
 
-ul.nav:nth-child(1) > li:nth-child(2) > a:nth-child(1) .text-lead::before {
-    visibility: hidden;
-    position: relative;
-}
-ul.nav:nth-child(1) > li:nth-child(2) > a:nth-child(1) .text-lead {
-    content: "Store";
-    font-size: 16px;
-    position: relative;
-    top: 5px;
-}
-
-ul.nav:nth-child(1) > li:nth-child(3) > a:nth-child(1) .text-lead::before {
-    visibility: hidden;
-    position: relative;
-}
-ul.nav:nth-child(1) > li:nth-child(3) > a:nth-child(1) .text-lead {
-    content: "Recommended";
-    font-size: 16px;
-    position: relative;
-    top: 5px;
-}
 
 /* refresh blue - reference for all of this is at https://web.archive.org/web/20150627045216/https://www.roblox.com/games/9689581/Roblox-High-School#!/about*/ 
 .btn-min-width.btn-control-xs.btn-more.rbx-refresh.refresh-link-icon {
