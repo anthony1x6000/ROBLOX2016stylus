@@ -2449,13 +2449,14 @@ div[style="col-sm-6 slide-item-container-left"]
 
 
 .light-theme .game-card-info .info-label.icon-votes-gray {
+
     background-position: 0 -351px;
     background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/cd9b642ccf4ef8bfd605a035bb2cc53db92f4e24/images/archiveofimages/153fd3209692232cd8087cad74a669b0-games.svg);
+    
 }
 
 .game-card-info .vote-percentage-label {
     position: relative;
-    right: 0px;
     top: 2.5px;
 }
 
@@ -2467,14 +2468,13 @@ div[style="col-sm-6 slide-item-container-left"]
 
 
 .game-card-container {
-    height: 239px;
+    height: 99%;
 }
 
 
 .game-card-native-ad {
     position: relative;
     top: 28px;
-    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.3);
 }
 
 .game-tile:hover .game-card-container {
@@ -2483,24 +2483,23 @@ div[style="col-sm-6 slide-item-container-left"]
     
 }
 
-
+/* 
 .game-card-info {
     position: relative;
     top: 212px;
 }
 
+*/ 
 
 .game-card-info .playing-counts-label {
     position: relative; 
-    top: -30px;
-    left: -68px;
+    display: block !important;
+    bottom: 32px;
+    right: 2px;
 } 
 
-/* 
-.game-card-info .playing-counts-label {
-    float: left;
-    display: block;
-  }*/
+
+
 
 
 .game-card-info .icon-playing-counts-gray {
