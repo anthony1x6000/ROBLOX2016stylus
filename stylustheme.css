@@ -2448,12 +2448,10 @@ div[style="col-sm-6 slide-item-container-left"]
 } */
 
 
-.light-theme .game-card-info .info-label.icon-votes-gray
-  {
-    background-position: 0 -351px !important;
+.light-theme .game-card-info .info-label.icon-votes-gray {
+    background-position: 0 -351px;
     background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/cd9b642ccf4ef8bfd605a035bb2cc53db92f4e24/images/archiveofimages/153fd3209692232cd8087cad74a669b0-games.svg);
-  }
-
+}
 
 .game-card-info .vote-percentage-label {
     position: relative;
@@ -2550,4 +2548,19 @@ div[style="col-sm-6 slide-item-container-left"]
     position: relative; 
     right: -5px; 
     
+}
+
+/* credit in website itself */
+
+.text-footer.footer-note {
+    visibility: hidden;
+    position: relative;
+}
+.text-footer.footer-note:after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: "©2021 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries." " | Stylus theme credit: Credit to Ologist for originally making this userstyle theme. | For quick updates and releases find the GitHub page of this style at https://github.com/anthony1x6000/ROBLOX2016stylus.";
 }
