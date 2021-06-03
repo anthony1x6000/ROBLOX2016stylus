@@ -485,7 +485,8 @@ thumbnail-2d .thumbnail-2d-container img {
 .gotham-font.light-theme .see-all-link-icon {
     padding: 4px 4px !important;
     font-size: 14px !important;
-    font-weight: bold !important;
+    font-weight: thin !important;
+    width: 100px;
 }
 
 .see-all-link-icon:hover, .touch .see-all-link-icon:hover {
@@ -2463,6 +2464,91 @@ div[style="col-sm-6 slide-item-container-left"]
   }
 
 
-/* extra things */
+/* Messing with the games tab */
+
+/* 
+.scroller.next, .scroller.prev {
+    height: 80.6%;
+    
+    
+} */
+
+.scroller.next:hover, .scroller.prev:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 30%)    
+}
+
+.game-card-container {
+    height: 99%
+}
 
 
+.game-card-native-ad {
+    position: relative;
+    top: 28px;
+}
+
+
+
+.game-card-info {
+    position: relative;
+    top: 212px;
+}
+
+.game-card-info .playing-counts-label {
+    position: relative; 
+    top: -30px;
+    left: -68px;
+}
+
+.game-card-info .icon-playing-counts-gray {
+    visibility: hidden;
+}
+
+.game-card-info .vote-percentage-label {
+    position: relative;
+    right: -90px;
+    top: -5px;
+}
+
+.game-card-info .icon-votes-gray {
+    position: relative;
+    right: -90px;
+    top: -5px;
+}
+
+
+
+/* 
+  position: absolute;
+  left: 100px;
+  top: 150px;
+*/
+
+/* side bar tab thing */
+
+.btn-growth-md.btn-secondary-md {
+    font-size: 0 !important;    
+}
+
+
+.btn-growth-md.btn-secondary-md::before {
+    content: "Upgrade Now";
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    top: 1px;
+    line-height: 100%;
+}
+
+.light-theme .btn-secondary-md:link {
+    padding: 9px;
+    
+}
+
+/* robux icon to the right */
+.icon-robux-28x28.roblox-popover-close {
+    position: relative; 
+    right: -5px; 
+    
+}
