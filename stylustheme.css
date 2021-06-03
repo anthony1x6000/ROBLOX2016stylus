@@ -2481,7 +2481,8 @@ div[style="col-sm-6 slide-item-container-left"]
 
 .scroller.next:hover, .scroller.prev:hover {
     cursor: pointer;
-    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 30%)    
+    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.3)
+        
 }
 
 .game-card-container {
