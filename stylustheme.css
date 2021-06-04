@@ -1019,7 +1019,7 @@ https://github.com/anthony1x6000/ROBLOX2016stylus
     position: absolute;
     align-content: center;
     top: 21px;
-    left: 145px;
+    left: 135px;
     content: "Play";
     font-size: 24px;
 }
@@ -1074,7 +1074,6 @@ https://github.com/anthony1x6000/ROBLOX2016stylus
 
 .rbx-tab-heading {
     height: 50px;
-
 }
 
 .text-lead.ng-binding{
@@ -1082,6 +1081,12 @@ https://github.com/anthony1x6000/ROBLOX2016stylus
     top: 5px;
     
 }
+
+.text-lead {
+    position: relative;
+    top: 4px;
+}
+
 
 
 /* refresh blue - reference for all of this is at https://web.archive.org/web/20150627045216/https://www.roblox.com/games/9689581/Roblox-High-School#!/about*/ 
