@@ -2494,7 +2494,7 @@ div[style="col-sm-6 slide-item-container-left"]
 .game-card-info .playing-counts-label {
     position: relative; 
     display: block !important;
-    bottom: 32px;
+    bottom: 30px;
     right: 2px;
 } 
 
@@ -2506,6 +2506,16 @@ div[style="col-sm-6 slide-item-container-left"]
     visibility: hidden;
 }
 
+.info-label.vote-percentage-label {
+    top: 7px;
+    
+}
+
+.info-label.icon-votes-gray {
+    position: relative;
+    top: 5px;
+    
+}
 
 
 
