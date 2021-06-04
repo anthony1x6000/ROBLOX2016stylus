@@ -1109,15 +1109,14 @@ https://github.com/anthony1x6000/ROBLOX2016stylus
     transition: none;
 }
 
-/* test 
 
 .ad {
     background-image: url("https://i.ibb.co/R654SKN/cat.webp");
     background-repeat: repeat;
-    background-size: 190px;
+    background-size: 100px;
 }
 
-*/
+
 
 /* maybe this will fix see more being short I probably did something to mess it up */
 .btn-control-sm {
@@ -2624,10 +2623,10 @@ div[style="col-sm-6 slide-item-container-left"]
 }
 
 .text-logo {
-    background-image: url("https://web.archive.org/web/20160210160751im_/http://images.rbxcdn.com/39ae3ca577c8488487ef492031b8e264.png");
+    background-image: url("https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/robloxlogo.png?raw=true");
     position: relative;
     height: 90px;
-    bottom: 15px;
+    bottom: 10px;
     
     
 }
