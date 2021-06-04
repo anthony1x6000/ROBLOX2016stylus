@@ -1017,9 +1017,8 @@ https://github.com/anthony1x6000/ROBLOX2016stylus
 .icon-common-play:after {
     visibility: visible;
     position: absolute;
-    align-content: center;
     top: 21px;
-    left: 135px;
+    left: 146px;
     content: "Play";
     font-size: 24px;
 }
