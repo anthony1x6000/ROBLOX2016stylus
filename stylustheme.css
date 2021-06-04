@@ -2552,6 +2552,86 @@ div[style="col-sm-6 slide-item-container-left"]
     
 }
 
+/* login stuff */ 
+.login-button, .cross-device-login-button, .btn-full-width.btn-control-md.fb-button.social-login {
+    width: 100%; 
+    
+}
+
+.font-header-2.rbx-navbar-login.nav-menu-title.rbx-menu-item {
+    position: relative;
+    right: 10px;
+    
+}
+
+/* signup page */ 
+.dark-theme .theme-bg {
+    background-color: rgba(255,255,255,0.95)
+    
+}
+
+.text-center.signup-header.ng-binding {
+    color: #2d2d2de0;
+    
+}
+
+.signup-container .birthday-container .rbx-select-group:first-of-type .rbx-select, .signup-container .birthday-container .rbx-select-group:nth-of-type(2) .rbx-select, .dark-theme .birthday-container .rbx-select-group .rbx-select, .dark-theme .fake-input-lg {
+    background-color: white;
+
+    
+}
+
+.signup-or-log-in input[type=email]:focus, .signup-or-log-in input[type=password]:focus, .signup-or-log-in input[type=text]:focus {
+    background-color: white;
+    border: 1px solid #b8b8b8;
+    
+}
+
+.dark-theme .input-field {
+    background-color: #fff;
+    border: 1px solid #b8b8b8;
+}
+
+.signup-or-log-in .signup-container .signup-input-area .legal-text-container div {
+    color: #2d2d2de0;
+    
+}
+
+
+.signup-or-log-in .signup-container .signup-input-area .signup-submit-button {
+    background-color: #02b757;
+    border-color: #02b757;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+}
+
+.signup-or-log-in .signup-container .signup-input-area .signup-submit-button:hover {
+    background-color: #3fc679;
+    border-color: #3fc679;
+
+}
+
+.form-control.fake-input-lg {
+    border: 1px solid #b8b8b8;
+    
+}
+
+.signup-container .birthday-container .birthday-select-group {
+    border: 1px solid #b8b8b8;    
+    
+}
+
+.text-logo {
+    background-image: url("https://web.archive.org/web/20160210160751im_/http://images.rbxcdn.com/39ae3ca577c8488487ef492031b8e264.png");
+    position: relative;
+    height: 90px;
+    bottom: 15px;
+    
+    
+}
+
 /* robux icon to the right */
 .icon-robux-28x28.roblox-popover-close {
     position: relative; 
