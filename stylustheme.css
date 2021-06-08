@@ -1456,6 +1456,18 @@ background-color: #44b4f8;
 }
 
 
+.game-card-link {
+    position: relative;
+    height: 240px;
+    
+    
+}
+
+.arrow, .scroller.prev.disabled, .scroller.next, .scroller.next.disabled, .scroller.prev {
+    height: 242px;
+    
+}
+
 
 .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image, .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image:hover {
 box-shadow: none !important;
@@ -2406,7 +2418,9 @@ div[style="col-sm-6 slide-item-container-left"]
 
 .gotham-font.light-theme .see-all-link-icon
 {
-    padding: 0;
+    padding: 0px;
+
+    
 }
 
 .rbx-header.light-theme .rbx-navbar li .nav-menu-title:focus, .rbx-header.light-theme .rbx-navbar li .nav-menu-title:hover
@@ -2453,6 +2467,11 @@ div[style="col-sm-6 slide-item-container-left"]
     
     
 } */
+
+.gotham-font.light-theme .refresh-link, .gotham-font.light-theme .refresh-link-icon, .gotham-font.light-theme .refresh-link-icon:active, .gotham-font.light-theme .refresh-link-icon:hover, .gotham-font.light-theme .refresh-link-icon:link, .gotham-font.light-theme .refresh-link-icon:visited, .gotham-font.light-theme .refresh-link:active, .gotham-font.light-theme .refresh-link:hover, .gotham-font.light-theme .refresh-link:link, .gotham-font.light-theme .refresh-link:visited, .gotham-font.light-theme .see-all-link, .gotham-font.light-theme .see-all-link-icon, .gotham-font.light-theme .see-all-link-icon:active, .gotham-font.light-theme .see-all-link-icon:hover, .gotham-font.light-theme .see-all-link-icon:link, .gotham-font.light-theme .see-all-link-icon:visited, .gotham-font.light-theme .see-all-link:active, .gotham-font.light-theme .see-all-link:hover, .gotham-font.light-theme .see-all-link:link, .gotham-font.light-theme .see-all-link:visited, .gotham-font.light-theme .touch .refresh-link, .gotham-font.light-theme .touch .refresh-link-icon, .gotham-font.light-theme .touch .refresh-link-icon:active, .gotham-font.light-theme .touch .refresh-link-icon:hover, .gotham-font.light-theme .touch .refresh-link-icon:link, .gotham-font.light-theme .touch .refresh-link-icon:visited, .gotham-font.light-theme .touch .refresh-link:active, .gotham-font.light-theme .touch .refresh-link:hover, .gotham-font.light-theme .touch .refresh-link:link, .gotham-font.light-theme .touch .refresh-link:visited, .gotham-font.light-theme .touch .see-all-link, .gotham-font.light-theme .touch .see-all-link-icon, .gotham-font.light-theme .touch .see-all-link-icon:active, .gotham-font.light-theme .touch .see-all-link-icon:hover, .gotham-font.light-theme .touch .see-all-link-icon:link, .gotham-font.light-theme .touch .see-all-link-icon:visited, .gotham-font.light-theme .touch .see-all-link:active, .gotham-font.light-theme .touch .see-all-link:hover, .gotham-font.light-theme .touch .see-all-link:link, .gotham-font.light-theme .touch .see-all-link:visited {
+    border-radius: 3px;
+    
+}
 
 
 .light-theme .game-card-info .info-label.icon-votes-gray {
