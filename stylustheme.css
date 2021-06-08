@@ -364,7 +364,7 @@ thumbnail-2d .thumbnail-2d-container img {
 /* search bar */ 
 
 .rbx-header .navbar-search .input-field {
-    border-radius: 3px;
+    border-radius: 2px;
     
 }
 
@@ -1093,7 +1093,7 @@ https://github.com/anthony1x6000/ROBLOX2016stylus
 
 
 /* refresh blue - reference for all of this is at https://web.archive.org/web/20150627045216/https://www.roblox.com/games/9689581/Roblox-High-School#!/about*/ 
-.btn-min-width.btn-control-xs.btn-more.rbx-refresh.refresh-link-icon {
+.btn-min-width.btn-control-xs.btn-more.rbx-refresh.refresh-link-icon, .btn-min-width.btn-control-xs.btn-more.rbx-refresh.refresh-link-icon:hover, .btn-min-width.btn-control-xs.btn-more.rbx-refresh.refresh-link-icon:active {
     background-color: #00a2ff;
     height: 30px;
     color: #fff;
@@ -1460,11 +1460,15 @@ background-color: #44b4f8;
 }
 
 
-
+/* changing the game arrow carousel things */ 
 .arrow, .scroller.prev.disabled, .scroller.next, .scroller.next.disabled, .scroller.prev {
     height: 242px;
     
+    
 }
+
+
+
 
 
 .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image, .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image:hover {
@@ -2516,7 +2520,7 @@ div[style="col-sm-6 slide-item-container-left"]
 .game-card-info .playing-counts-label {
     position: relative; 
     display: block !important;
-    bottom: 30px;
+    bottom: 25px;
     right: 2px;
 } 
 
@@ -2529,18 +2533,20 @@ div[style="col-sm-6 slide-item-container-left"]
 }
 
 .info-label.vote-percentage-label {
-    top: 7px;
+    top: 14px;
     
 }
 
 .info-label.icon-votes-gray {
     position: relative;
-    top: 5px;
+    top: 12px;
     
 }
 
-
-
+.game-carousel {
+    width: 110%;
+    height: 240px;
+}
 
 
 /* 
@@ -2696,3 +2702,17 @@ div[style="col-sm-6 slide-item-container-left"]
     font-weight: thin !important;
     width: 100px;
 } */
+
+/* Game card NAME changes | Restriciting the amount of space to prevent it pushing other details such as ratings down (why didnt I think of this earlier???) */ 
+
+.game-card-name, .game-name-title {
+    height: 20px;
+}
+
+/* cont with the sponosred ad stuff */ 
+
+.game-card-native-ad {
+    position: relative; 
+    top: 28px;
+    
+}
