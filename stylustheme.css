@@ -483,7 +483,7 @@ thumbnail-2d .thumbnail-2d-container img {
 }
 
 .gotham-font.light-theme .see-all-link-icon {
-    padding: 4px 4px !important;
+    padding: 1px 4px;
     font-size: 14px !important;
     font-weight: thin !important;
     width: 100px;
@@ -1189,9 +1189,6 @@ ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)
 	white-space: pre;
 }*/
 
-.light-theme .btn-secondary-xs {
-    border-radius: 3px !important;
-}
 
 .profile-header .header-caption .header-title h2, .profile-header .header-caption .header-title span[class^="icon"] {
     float: right !important;
@@ -1448,7 +1445,7 @@ background-color: #44b4f8;
     position: relative;
     border-radius: 3px;
     float: left;
-    height: 90%;
+    height: 200px;
     margin: 0 auto;
     padding: 0;
     text-align: left;
@@ -1459,9 +1456,10 @@ background-color: #44b4f8;
 .game-card-link {
     position: relative;
     height: 240px;
-    
-    
+    border-radius: 4px;
 }
+
+
 
 .arrow, .scroller.prev.disabled, .scroller.next, .scroller.next.disabled, .scroller.prev {
     height: 242px;
@@ -2416,12 +2414,14 @@ div[style="col-sm-6 slide-item-container-left"]
     cursor: pointer;
 }
 
+/*
 .gotham-font.light-theme .see-all-link-icon
 {
     padding: 0px;
 
     
 }
+*/
 
 .rbx-header.light-theme .rbx-navbar li .nav-menu-title:focus, .rbx-header.light-theme .rbx-navbar li .nav-menu-title:hover
 {
@@ -2468,10 +2468,6 @@ div[style="col-sm-6 slide-item-container-left"]
     
 } */
 
-.gotham-font.light-theme .refresh-link, .gotham-font.light-theme .refresh-link-icon, .gotham-font.light-theme .refresh-link-icon:active, .gotham-font.light-theme .refresh-link-icon:hover, .gotham-font.light-theme .refresh-link-icon:link, .gotham-font.light-theme .refresh-link-icon:visited, .gotham-font.light-theme .refresh-link:active, .gotham-font.light-theme .refresh-link:hover, .gotham-font.light-theme .refresh-link:link, .gotham-font.light-theme .refresh-link:visited, .gotham-font.light-theme .see-all-link, .gotham-font.light-theme .see-all-link-icon, .gotham-font.light-theme .see-all-link-icon:active, .gotham-font.light-theme .see-all-link-icon:hover, .gotham-font.light-theme .see-all-link-icon:link, .gotham-font.light-theme .see-all-link-icon:visited, .gotham-font.light-theme .see-all-link:active, .gotham-font.light-theme .see-all-link:hover, .gotham-font.light-theme .see-all-link:link, .gotham-font.light-theme .see-all-link:visited, .gotham-font.light-theme .touch .refresh-link, .gotham-font.light-theme .touch .refresh-link-icon, .gotham-font.light-theme .touch .refresh-link-icon:active, .gotham-font.light-theme .touch .refresh-link-icon:hover, .gotham-font.light-theme .touch .refresh-link-icon:link, .gotham-font.light-theme .touch .refresh-link-icon:visited, .gotham-font.light-theme .touch .refresh-link:active, .gotham-font.light-theme .touch .refresh-link:hover, .gotham-font.light-theme .touch .refresh-link:link, .gotham-font.light-theme .touch .refresh-link:visited, .gotham-font.light-theme .touch .see-all-link, .gotham-font.light-theme .touch .see-all-link-icon, .gotham-font.light-theme .touch .see-all-link-icon:active, .gotham-font.light-theme .touch .see-all-link-icon:hover, .gotham-font.light-theme .touch .see-all-link-icon:link, .gotham-font.light-theme .touch .see-all-link-icon:visited, .gotham-font.light-theme .touch .see-all-link:active, .gotham-font.light-theme .touch .see-all-link:hover, .gotham-font.light-theme .touch .see-all-link:link, .gotham-font.light-theme .touch .see-all-link:visited {
-    border-radius: 3px;
-    
-}
 
 
 .light-theme .game-card-info .info-label.icon-votes-gray {
@@ -2679,3 +2675,24 @@ div[style="col-sm-6 slide-item-container-left"]
     display: block;
     content: "©2021 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries." " | Stylus theme credit: Credit to Ologist for originally making this userstyle theme. | For quick updates and releases find the GitHub page of this style at https://github.com/anthony1x6000/ROBLOX2016stylus.";
 }
+
+/* See all button fixes */
+.see-all-link-icon {
+    height: 25px !important;
+    position: relative; 
+    text-align: center;
+    border-radius: 3px;
+}
+
+.light-theme .btn-secondary-xs {
+    border-radius: 3px !important;
+    padding: 4px 4px !important;
+}
+
+/* 
+.gotham-font.light-theme .see-all-link-icon {
+    padding: 1px 4px !important;
+    font-size: 14px !important;
+    font-weight: thin !important;
+    width: 100px;
+} */
