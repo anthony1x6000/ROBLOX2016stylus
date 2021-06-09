@@ -2734,4 +2734,10 @@ https://i.ibb.co/VtZQ0KP/image.png    */
     text-align: left;
 /* if you want to centered again remove line 2731 to 2732 */
 }
+/* contiunue move down */ 
+.container-header.games-filter-changer {
+    position: relative;
+    top: 5px;
+    
+}
 
