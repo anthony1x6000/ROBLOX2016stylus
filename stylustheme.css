@@ -2716,3 +2716,20 @@ div[style="col-sm-6 slide-item-container-left"]
     top: 30px;
     
 }
+
+/* avatar frieds playing game tile */
+/* this could be slightly broken idk I just tested it with two alts and it seems fine
+https://i.ibb.co/VtZQ0KP/image.png    */ 
+.game-card-name.game-name-title.game-name-oneline {
+    position: relative; 
+    bottom: 85px;
+}
+
+.cursor-pointer.game-card-avatar-slots {
+    position: relative; 
+    bottom: 80px;
+    left: 8px;
+    text-align: left;
+/* if you want to centered again remove line 2731 to 2732 */
+}
+
