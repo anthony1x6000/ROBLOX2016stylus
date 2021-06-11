@@ -8,7 +8,7 @@ I also make a little bit of changes. If I see something thats a bit broken I'll 
 ## Userscript
 If you want to get a userscript version of this script click [here](https://userstyles.org/styles/userjs/189624/roblox-2016-fixed-robux-icon.user.js).
 ## Find this at userstyles
-It'll be under three releases<br>
+It'll be under these three releases<br>
 https://userstyles.org/styles/189625/, https://userstyles.org/styles/189624, and https://userstyles.org/styles/195713/
 
 ### Credit
