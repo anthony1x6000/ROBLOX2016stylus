@@ -18,5 +18,5 @@ This is just me adding onto it and fixing some little things.
 Find the original style @ https://userstyles.org/styles/178105/roblox-in-2016
 
 #### Compatability  
-I know this 100% works well on Chromium based browser such as [Brave](https://brave.com/) which is my main browser but I haven't tested it on FireFox since late 2020. 
+I know this 100% works well on Chromium based browsers such as [Brave](https://brave.com/) which is my main browser but I haven't tested it on FireFox since late 2020. 
 Create an issue if you, well, find an issue with compatability and I'll be sure to try and fix it.  
