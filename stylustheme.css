@@ -1120,10 +1120,12 @@ padding: 4px 4px !important;
 } */ 
 
 
+/* this would freak a lot more people out if this wasnt open source... probably */ 
 .ad {
-    background-image: url("https://i.ibb.co/R654SKN/cat.webp");
+    background-image: url("https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/eseg.jpg?raw=true");
     background-repeat: repeat;
-    background-size: 100px;
+    background-size: 300px;
+    background-position: -25px;
 }
 
 
@@ -2747,3 +2749,7 @@ https://i.ibb.co/VtZQ0KP/image.png    */
     
 }
 
+/* Catalog bottom items recommended */ 
+.light-theme .item-card {
+    height: 235px;
+}
