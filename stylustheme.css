@@ -1472,11 +1472,8 @@ background-color: #44b4f8;
 
 /* changing the game arrow carousel things */ 
 .arrow, .scroller.prev.disabled, .scroller.next, .scroller.next.disabled, .scroller.prev {
-    height: 242px;
-    
-    
+    height: 242px;   
 }
-
 
 
 
@@ -2752,4 +2749,17 @@ https://i.ibb.co/VtZQ0KP/image.png    */
 /* Catalog bottom items recommended */ 
 .light-theme .item-card {
     height: 235px;
+}
+
+/* notification top */ 
+
+.light-theme .alert-info {
+    background-color: #ff8c41;
+    color: #fff;
+}
+
+.push-notifications-prompt-text {
+    position: relative;
+    top: 2px;
+    
 }
