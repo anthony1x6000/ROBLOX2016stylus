@@ -1475,6 +1475,20 @@ background-color: #44b4f8;
     height: 242px;   
 }
 
+/* game cover thing fixing gaps */ 
+.horizontal-scroller .scroller.next .spacer {
+    left: 29px;
+    height: 110%;
+    bottom: -5px;
+    background-color: #e3e3e3;
+}
+.horizontal-scroller .scroller.prev .spacer {
+    right: 29px;
+    height: 110%;
+    background-color: #e3e3e3;
+    top: -10px;
+}
+
 
 
 
