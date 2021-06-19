@@ -2,8 +2,8 @@
 Stylish/stylus browser addon.
 ![Preview of style](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/2016_stuff/preview.jpg?raw=true "Preview")
 <br>
-Trying to keep the script up to date by making sure images and that still work because on the original css file it depended on roblox's server itself and recently roblox has started to move or delete those files.<br>
-I also make a little bit of changes. If I see something thats a bit broken I'll try fixing it. 
+Trying to keep the script up to date by making sure images and other stuff still work because on the original css file had files that depended on roblox's server itself and recently roblox has started to move or delete those files.<br>
+I'm also changing some things like adding small fixes. 
 <br>
 
 ## Userscript
