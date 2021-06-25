@@ -1501,8 +1501,7 @@ background-color: #44b4f8;
 .light-theme .game-card-container .game-card-name {
     padding: 0 6px;
     margin: 6px 0;
-    overflow: hidden;
-    width: 100%;
+    width: 150px;
 }
 .game-card-name, .game-name-title {
     height: 20px;
@@ -1526,7 +1525,6 @@ background-color: #44b4f8;
     transition-duration: .15s;
     transition-delay: .15s;
 }
-
 .hover-game-tile.visible-tile:hover.first-tile, .hover-game-tile.visible-tile:hover {
     margin-left: 0px !important;
     margin-right: 14px !important;
@@ -1541,12 +1539,33 @@ background-color: #44b4f8;
 .hover-game-tile .featured-game-container .thumb-container {
     position: absolute;
     height: 194px;
-    width: 100%;
+    width: 0%; /* change the value here to figure something out */
     overflow: hidden;
     border-radius: 3px 3px 0 0;
     opacity: 0;
     transition: opacity .0s ease-out;
+    
 }
+
+/* point of 100% removing the new game cards */
+.list-item.hover-game-tile.visible-tile {
+    width: 150px;
+}
+.hover-game-tile.visible-tile:hover .featured-game-container .info-container {
+    width: 315px;
+    margin-left: 0px;
+    margin-right: 0px;
+    transition: width 0s cubic-bezier(0,0,0,1) .0s,margin .0s cubic-bezier(0,0,0,1) .0s;
+}
+
+.thumbnail-2d-container.brief-game-icon {
+    border-radius: 0px !important;
+}
+.hover-game-tile.visible-tile:hover .featured-game-container .featured-game-icon-container { /* fixing the game icon going to the right*/ 
+    margin-left: 0px !important;
+    
+}
+
 
 /* END OF GAME CARD FIXING STUFF */
 
