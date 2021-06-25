@@ -1478,7 +1478,7 @@ background-color: #44b4f8;
 }
 
 /* fixing the game tiles to be the old ones | GAME CARD FIX */
-.thumbnail-2d-container img {
+.thumb-container img {
     width: 150px;
     height: 150px;
     overflow: hidden;
