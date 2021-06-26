@@ -956,6 +956,8 @@ border-top: hidden;
 }
 .btn-common-play-game-lg span[class^=icon-], .btn-common-play-game-lg span[class^=icon-]:hover, a.btn-common-play-game-lg span[class^=icon-], a.btn-common-play-game-lg span[class^=icon-]:hover {
     visibility: hidden;
+    background-position: 0 -35px;
+    background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/80a1e55d792875c92f6a4c5e7b4ef949fa17c157/images/robux/icons.svg)
 }
 
 /* Play button changes */
@@ -970,6 +972,31 @@ border-top: hidden;
     content: "Play";
     font-size: 24px;
 }
+/* paid games thing working */ 
+.btn-text {
+    font-size: 23px;
+    position: relative;
+
+} 
+/* paid games thing - ref https://web.archive.org/web/20160402134243/http://www.roblox.com:80/games/388168427/ZOMBIE-UNIVERSE-BETA-TEST-SUNDAY
+I think this works
+*/
+.btn-text:before {
+    position: relative;
+    content: "Buy Access for ";
+}.btn-text:after {
+    position: relative;
+    content: " ROBUX";
+
+}
+.btn-text {
+    font-size: large;
+    position: relative;
+    text-align: center !important;
+  margin-left: -43.3px;
+  margin-right: auto;
+    overflow: hidden;
+} 
 
 
 .btn-full-width {
@@ -2773,6 +2800,9 @@ div[style="col-sm-6 slide-item-container-left"]
     font-weight: thin !important;
     width: 100px;
 } */
+
+
+
 
 
 /* avatar frieds playing game tile */
