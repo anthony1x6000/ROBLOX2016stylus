@@ -756,9 +756,7 @@ thumbnail-2d .thumbnail-2d-container[thumbnail-type=avatarHeadshot] {
 
 
 
-.dark-theme .game-card-container, .light-theme .game-card-container {
-    box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
-}
+
 .dark-theme .game-card-container:hover, .light-theme .game-card-container:hover {
     box-shadow: 0 1px 6px 0 rgba(25,25,25,0.45);
 }
@@ -1474,10 +1472,11 @@ background-color: #44b4f8;
 .game-card-link {
     position: relative;
     height: 240px !important;
-    border-radius: 4px;
+    border-radius: 3px;
+    
 }
 
-/* fixing the game tiles to be the old ones | GAME CARD FIX */
+/* fixing the game tiles to be the old ones | GAME PAGE CARD FIX */
 .thumb-container img {
     width: 150px;
     height: 150px;
@@ -1486,18 +1485,29 @@ background-color: #44b4f8;
     opacity: 1;
 }
 .hover-game-tile {
-    height: auto;
+    height: 100%;
     max-height: 300px;
     width: 150px;
-    overflow: hidden;
     margin-right: 14px;
     transition: all .0s cubic-bezier(0,0,0,1);
+
 }
+
+/* game tile shadows */ 
+.light-theme .hover-game-tile.visible-tile:hover .featured-game-container {
+    box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.75);
+}
+.dark-theme .game-card-container, .light-theme .game-card-container {
+    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
+}
+
 .hover-game-tile .featured-game-container .featured-game-icon-container .brief-game-icon {
     height: 150px;
     width: 150px;
     border-radius: 8px;
+    transition: all .05s cubic-bezier(0,0,0,1);
 }
+
 .light-theme .game-card-container .game-card-name {
     padding: 0 6px;
     margin: 6px 0;
@@ -1510,7 +1520,6 @@ background-color: #44b4f8;
     position: relative;
     overflow: hidden;
     max-height: 240px;
-    box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
     transition-duration: 0s;
     transition-delay: 0s;
 }
@@ -1539,7 +1548,7 @@ background-color: #44b4f8;
 .hover-game-tile .featured-game-container .thumb-container {
     position: absolute;
     height: 194px;
-    width: 0%; /* change the value here to figure something out */
+    width: 0%; /* chng val 4 smth */
     overflow: hidden;
     border-radius: 3px 3px 0 0;
     opacity: 0;
@@ -1565,12 +1574,10 @@ background-color: #44b4f8;
     margin-left: 0px !important;
     
 }
-
-
 /* END OF GAME CARD FIXING STUFF */
 
 
-/* changing the game arrow carousel things */ 
+/* changing the game slidey thing arrow things */ 
 .arrow, .scroller.prev.disabled, .scroller.next, .scroller.next.disabled, .scroller.prev {
     height: 242px;   
 }
@@ -1596,8 +1603,6 @@ background-color: #44b4f8;
 box-shadow: none !important;
 border: #c5c5c5 1px solid !important;
 }
-
-
 
 .avatar-card-fullbody .avatar-card-image, .avatar-card-fullbody .avatar-card-link, .avatar .avatar-card-image, .avatar .avatar-card-link {
     border-radius: 50%;
