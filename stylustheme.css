@@ -2,7 +2,7 @@
 /* Hey! if you're seeing this check out the github repository for this! Just incase the userstyles goes under and to get early access because userstyles is really REALLY slow.
 https://github.com/anthony1x6000/ROBLOX2016stylus
 It'll be under "maintheme.css" or another .css file! But will 100% be under releases. 
-Wayback ROBLOX games page: https://web.archive.org/web/20160916190637if_/https://www.roblox.com/games/?SortFilter=default&TimeFilter=0&GenreFilter=1
+Wayback ROBLOX games page: https://web.archive.org/web/20160916190637/https://www.roblox.com/games/?SortFilter=default&TimeFilter=0&GenreFilter=1
 Credit to Ologist for originally making this incredible userstyle theme!
 */
 
@@ -879,8 +879,6 @@ color: #ffffff !important;
     border-bottom-color: #ffffff;
 }
 
-.light-theme .notification-stream-header {
-}
 
 
 .notification-action-container {
@@ -1015,6 +1013,7 @@ I think this works
     background-color: rgba(25,25,25,0.3);
     border: 2px solid #fff;
     border-color: #fff;
+    
 }
 
 .icon-carousel-left {    
@@ -1471,9 +1470,11 @@ background-color: #44b4f8;
 .hover-game-tile .featured-game-container .featured-game-icon-container .brief-game-icon {
     height: 150px;
     width: 150px;
-    border-radius: 8px;
-    transition: all .05s cubic-bezier(0,0,0,1);
+    border-top-left-radius: 3px !important;
+    border-top-right-radius: 3px !important;
+    transition: all .0s cubic-bezier(0,0,0,1) !important;
 }
+.hover-game-tile .featured-game-container{transition: all 0s cubic-bezier(0,0,0,1) !important;}
 
 .light-theme .game-card-container .game-card-name {
     padding: 0 6px;
@@ -1505,6 +1506,9 @@ background-color: #44b4f8;
     margin-left: 0px !important;
     margin-right: 14px !important;
 }
+.list-item.hover-game-tile.first-tile.visible-tile {
+    margin-left: 11px !important;
+}
 .game-card-native-ad {
     position: relative; 
     overflow: hidden;
@@ -1523,6 +1527,8 @@ background-color: #44b4f8;
     transition: opacity .0s ease-out;
     
 }
+
+
 
 /* point of 100% removing the new game cards */
 .list-item.hover-game-tile.visible-tile {
@@ -1548,19 +1554,28 @@ background-color: #44b4f8;
 /* changing the game slidey thing arrow things */ 
 .arrow, .scroller.prev.disabled, .scroller.next, .scroller.next.disabled, .scroller.prev {
     height: 242px;   
-    
+
 }
+/* Apparently z-index doesnt want to work DO NOT DELETE MAYBE I'LL FIGURE SOMETHING OUT. 
+.horizontal-scroller .scroller.next {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 3px;
+    z-index: 5 !important;
+} */ 
 
 /* game cover thing fixing gaps */ 
 .horizontal-scroller .scroller.next .spacer {
     left: 29px;
-    height: 110%;
+    height: 108%;
     bottom: -5px;
     background-color: #e3e3e3;
 }
+
+
 .horizontal-scroller .scroller.prev .spacer {
     right: 29px;
-    height: 110%;
+    height: 108%;
     background-color: #e3e3e3;
     top: -10px;
 }
@@ -2583,8 +2598,7 @@ div[style="col-sm-6 slide-item-container-left"]
 
 .scroller.next:hover, .scroller.prev:hover {
     cursor: pointer;
-    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.3)
-        
+    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.3);
 }
 
 
