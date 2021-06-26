@@ -2,7 +2,7 @@
 /* Hey! if you're seeing this check out the github repository for this! Just incase the userstyles goes under and to get early access because userstyles is really REALLY slow.
 https://github.com/anthony1x6000/ROBLOX2016stylus
 It'll be under "maintheme.css" or another .css file! But will 100% be under releases. 
-
+Wayback ROBLOX games page: https://web.archive.org/web/20160916190637if_/https://www.roblox.com/games/?SortFilter=default&TimeFilter=0&GenreFilter=1
 Credit to Ologist for originally making this incredible userstyle theme!
 */
 
@@ -31,7 +31,8 @@ body
     background-color: #ffffff;
 }
 .light-theme .scroller.disabled {
-    background-color: #ffffff;
+    background-color: #f0f1f0;
+	opacity: 1;
 }
 
 /* at some point figure out how to do a custom font. 
@@ -39,9 +40,7 @@ Look here:
 https://web.archive.org/web/20160724012820cs_/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700
 */ 
 
-.light-theme .rbx-header .text-header, .light-theme .rbx-header .text-header:active, .light-theme .rbx-header .text-header:focus, .light-theme .rbx-header .text-header:hover, .light-theme .rbx-header .text-header:link, .light-theme .rbx-header .text-header:visited {
-    color: #ffffff;
-}
+
 .gotham-font.light-theme .refresh-link, .gotham-font.light-theme .refresh-link-icon, .gotham-font.light-theme .refresh-link-icon:active, .gotham-font.light-theme .refresh-link-icon:hover, .gotham-font.light-theme .refresh-link-icon:link, .gotham-font.light-theme .refresh-link-icon:visited, .gotham-font.light-theme .refresh-link:active, .gotham-font.light-theme .refresh-link:hover, .gotham-font.light-theme .refresh-link:link, .gotham-font.light-theme .refresh-link:visited, .gotham-font.light-theme .see-all-link, .gotham-font.light-theme .see-all-link-icon, .gotham-font.light-theme .see-all-link-icon:active, .gotham-font.light-theme .see-all-link-icon:hover, .gotham-font.light-theme .see-all-link-icon:link, .gotham-font.light-theme .see-all-link-icon:visited, .gotham-font.light-theme .see-all-link:active, .gotham-font.light-theme .see-all-link:hover, .gotham-font.light-theme .see-all-link:link, .gotham-font.light-theme .see-all-link:visited, .gotham-font.light-theme .touch .refresh-link, .gotham-font.light-theme .touch .refresh-link-icon, .gotham-font.light-theme .touch .refresh-link-icon:active, .gotham-font.light-theme .touch .refresh-link-icon:hover, .gotham-font.light-theme .touch .refresh-link-icon:link, .gotham-font.light-theme .touch .refresh-link-icon:visited, .gotham-font.light-theme .touch .refresh-link:active, .gotham-font.light-theme .touch .refresh-link:hover, .gotham-font.light-theme .touch .refresh-link:link, .gotham-font.light-theme .touch .refresh-link:visited, .gotham-font.light-theme .touch .see-all-link, .gotham-font.light-theme .touch .see-all-link-icon, .gotham-font.light-theme .touch .see-all-link-icon:active, .gotham-font.light-theme .touch .see-all-link-icon:hover, .gotham-font.light-theme .touch .see-all-link-icon:link, .gotham-font.light-theme .touch .see-all-link-icon:visited, .gotham-font.light-theme .touch .see-all-link:active, .gotham-font.light-theme .touch .see-all-link:hover, .gotham-font.light-theme .touch .see-all-link:link, .gotham-font.light-theme .touch .see-all-link:visited {
     color: #00a2ff;
     background-color: rgba(255, 0, 0, 0);
@@ -1163,9 +1162,8 @@ ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)
 /* making the gray highlight thing smaller */
 
 .light-theme .rbx-header .text-header, .light-theme .rbx-header .text-header:active, .light-theme .rbx-header .text-header:focus, .light-theme .rbx-header .text-header:hover, .light-theme .rbx-header .text-header:link, .light-theme .rbx-header .text-header:visited {
-    height: 85%;
-    
-    
+    height: 90%;
+    color: #ffffff;
 }
 
 
@@ -1550,6 +1548,7 @@ background-color: #44b4f8;
 /* changing the game slidey thing arrow things */ 
 .arrow, .scroller.prev.disabled, .scroller.next, .scroller.next.disabled, .scroller.prev {
     height: 242px;   
+    
 }
 
 /* game cover thing fixing gaps */ 
