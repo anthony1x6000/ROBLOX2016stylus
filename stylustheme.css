@@ -1011,29 +1011,36 @@ I think this works
 
 .carousel-controls.carousel-controls-left.btn-primary-md.btn-min-width {
     background-color: rgba(25,25,25,0.3);
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     border-color: #fff;
     
 }
 
-.icon-carousel-left {    
-    background-position-x: 0px;
-    background-position-y: -857px;
-    
-}
+
 
 .carousel-controls.carousel-controls-right.btn-primary-md.btn-min-width {
     background-color: rgba(25,25,25,0.3);
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     border-color: #fff;
 }
 
-.icon-carousel-right {    
+/* .icon-carousel-right {    
     background-position-x: 0px;
     background-position-y: -831px;
     
 }
+.icon-carousel-left {    
+    background-position-x: 0px;
+    background-position-y: -857px;
+    
+} */
 
+.icon-carousel-right {
+    background-position: 0 -896px;
+}
+.icon-carousel-left {
+    background-position: 0 -924px;
+}
 
 .carousel-controls.carousel-controls-right.btn-primary-md.btn-min-width {
     background-color: rgba(25,25,25,0.3);
