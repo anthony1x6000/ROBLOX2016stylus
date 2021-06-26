@@ -1011,8 +1011,9 @@ I think this works
 
 .carousel-controls.carousel-controls-left.btn-primary-md.btn-min-width {
     background-color: rgba(25,25,25,0.3);
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     border-color: #fff;
+
     
 }
 
@@ -1020,10 +1021,14 @@ I think this works
 
 .carousel-controls.carousel-controls-right.btn-primary-md.btn-min-width {
     background-color: rgba(25,25,25,0.3);
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     border-color: #fff;
+
 }
 
+.icon-additem, .icon-arrow-right-blue, .icon-audio, .icon-back, .icon-bigplay, .icon-bigplay-fill, .icon-bigstop, .icon-bigstop-fill, .icon-brokenpage, .icon-carousel-left, .icon-carousel-right, .icon-chat-gray, .icon-check-selection, .icon-checkmark, .icon-checkmark-blue, .icon-checkmark-on, .icon-checkmark-white, .icon-checkmark-white-bold, .icon-clock, .icon-close, .icon-close-white, .icon-copy, .icon-default-generic, .icon-down, .icon-edit, .icon-female, .icon-female-white, .icon-first-gray, .icon-first-page, .icon-games-carousel-left, .icon-games-carousel-left.hover, .icon-games-carousel-right, .icon-games-carousel-right.hover, .icon-globe, .icon-grid, .icon-home, .icon-inactive, .icon-last-gray, .icon-last-page, .icon-left, .icon-left-gray, .icon-locked, .icon-logo-apple, .icon-logo-win, .icon-male, .icon-male-white, .icon-menu, .icon-menu-black, .icon-minus, .icon-more, .icon-more-gray-vertical, .icon-moreinfo, .icon-next, .icon-notifications, .icon-page, .icon-password-hide, .icon-password-hide-white, .icon-password-show, .icon-password-show-white, .icon-pastname, .icon-pause, .icon-pause-fill, .icon-play, .icon-playgame, .icon-plus, .icon-regenerate, .icon-right, .icon-right-gray, .icon-sandglass, .icon-search, .icon-settings, .icon-slideshow, .icon-sorting, .icon-trash-bin, .icon-unlocked, .icon-up, .icon-viewdetails {
+    background-size: auto;
+}
 /* .icon-carousel-right {    
     background-position-x: 0px;
     background-position-y: -831px;
@@ -1100,7 +1105,7 @@ padding: 4px 4px !important;
 } */ 
 
 
-/* this would freak a lot more people out if this wasnt open source... probably */ 
+/* random thing I did to the ad */
 .ad {
     background-image: url("https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/eseg.jpg?raw=true");
     background-repeat: repeat;
@@ -2287,7 +2292,7 @@ background-color: #fff;
 {
     background-color: #3fc679;
     border: 1px solid #3fc679;
-    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30)
+    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
 }
 
 .light-theme .dialogs .dialog-container.active .dialog-header
