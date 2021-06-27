@@ -21,6 +21,6 @@ Find the original style @ https://userstyles.org/styles/178105/roblox-in-2016
 This should work on 
 - [Brave](https://brave.com/)
 - [Firefox](https://firefox.com/) (some things don't render properly; just reload that usually fixes it). 
-As always if something doesnt work, create an [issue](https://github.com/anthony1x6000/ROBLOX2016stylus/issues).
+As always if something doesn't work, create an [issue](https://github.com/anthony1x6000/ROBLOX2016stylus/issues).
 - Microsoft Edge
 - I'm assuming most Chromium-based browsers
