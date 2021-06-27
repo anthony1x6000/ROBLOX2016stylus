@@ -1029,6 +1029,9 @@ I think this works
 .icon-additem, .icon-arrow-right-blue, .icon-audio, .icon-back, .icon-bigplay, .icon-bigplay-fill, .icon-bigstop, .icon-bigstop-fill, .icon-brokenpage, .icon-carousel-left, .icon-carousel-right, .icon-chat-gray, .icon-check-selection, .icon-checkmark, .icon-checkmark-blue, .icon-checkmark-on, .icon-checkmark-white, .icon-checkmark-white-bold, .icon-clock, .icon-close, .icon-close-white, .icon-copy, .icon-default-generic, .icon-down, .icon-edit, .icon-female, .icon-female-white, .icon-first-gray, .icon-first-page, .icon-games-carousel-left, .icon-games-carousel-left.hover, .icon-games-carousel-right, .icon-games-carousel-right.hover, .icon-globe, .icon-grid, .icon-home, .icon-inactive, .icon-last-gray, .icon-last-page, .icon-left, .icon-left-gray, .icon-locked, .icon-logo-apple, .icon-logo-win, .icon-male, .icon-male-white, .icon-menu, .icon-menu-black, .icon-minus, .icon-more, .icon-more-gray-vertical, .icon-moreinfo, .icon-next, .icon-notifications, .icon-page, .icon-password-hide, .icon-password-hide-white, .icon-password-show, .icon-password-show-white, .icon-pastname, .icon-pause, .icon-pause-fill, .icon-play, .icon-playgame, .icon-plus, .icon-regenerate, .icon-right, .icon-right-gray, .icon-sandglass, .icon-search, .icon-settings, .icon-slideshow, .icon-sorting, .icon-trash-bin, .icon-unlocked, .icon-up, .icon-viewdetails {
     background-size: auto;
 }
+
+
+
 /* .icon-carousel-right {    
     background-position-x: 0px;
     background-position-y: -831px;
@@ -1092,7 +1095,7 @@ text-decoration: none !important;
 padding: 4px 4px !important;
 }
 
-/* .light-theme .btn-primary-md:focus, .light-theme .btn-primary-md:hover, .light-theme .btn-primary-md[disabled] */ 
+
     
 
 
@@ -1560,6 +1563,17 @@ background-color: #44b4f8;
     margin-left: 0px !important;
     
 }
+
+/* Stuff for my browser that hopefully won't mess something up */ 
+
+.grid-item-container.game-card-container {
+    width: 150px;
+} /* cant seem to close the gap between the game cards 
+https://i.ibb.co/NVQQkd6/image.png
+Got any ideas? (I tried margin-... w/ !important and it didnt work)
+*/
+
+
 /* END OF GAME CARD FIXING STUFF */
 
 
