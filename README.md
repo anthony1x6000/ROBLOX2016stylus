@@ -16,7 +16,11 @@ https://userstyles.org/styles/189625/, https://userstyles.org/styles/189624, and
 All credit to Ologist for originally making this incredible user-style theme!
 This is just me adding onto it and fixing some little things. 
 Find the original style @ https://userstyles.org/styles/178105/roblox-in-2016
-
-#### Compatability  
-I know this 100% works well on Chromium based browsers such as [Brave](https://brave.com/) which is my main browser but I haven't tested it on FireFox since late 2020. 
-Create an issue if you, well, find an issue with compatability and I'll be sure to try and fix it.  
+ 
+### Compatability
+This should work on 
+- [Brave](https://brave.com/)
+- [Firefox](https://firefox.com/) (some things don't render properly; just reload that usually fixes it). 
+As always if something doesn't work, create an [issue](https://github.com/anthony1x6000/ROBLOX2016stylus/issues).
+- Microsoft Edge
+- I'm assuming most Chromium-based browsers
