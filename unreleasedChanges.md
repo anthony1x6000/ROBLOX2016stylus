@@ -18,7 +18,7 @@ Changes could be removed because I don't yet know its effects on the rest of the
 All credit to Ologist for originally making this incredible user-style theme!
 Find the original style @ https://userstyles.org/styles/178105/roblox-in-2016.
 ### Find a bug?
-Head on over to the [GitHub page](https://github.com/anthony1x6000/ROBLOX2016stylus) and create an issue! There you'll also get faster updates and beta versions of the script! (It'll just be a commit under [stylustheme.css](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/stylustheme.css)).
+Head on over to the [GitHub page](https://github.com/anthony1x6000/ROBLOX2016stylus) and create an issue! There you'll also get faster updates and beta versions of the script! (It'll just be a commit under [stylustheme.css](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/stylustheme.css)). The bug could also be fixed in the beta as well just check the [beta information](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/unreleasedChanges.md#beta--116).
 ### Compatability
 This should work on 
 - [Brave](https://brave.com/)
