@@ -11,6 +11,10 @@ If you want to get a userscript version of this script click [here](https://user
 ## Find this at userstyles
 It'll be under these three releases<br>
 https://userstyles.org/styles/189625/, https://userstyles.org/styles/189624, and https://userstyles.org/styles/195713/
+## Beta/unreleased
+Prerelease, beta, alpha, unreleased, etc. I don't know what to call it. 
+To find unreleased changes go to [stylustheme.css](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/stylustheme.css).
+For more information (changes and everything) head over to [unreleasedChanges.md](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/unreleasedChanges.md).
 
 ### Credit
 All credit to Ologist for originally making this incredible user-style theme!
