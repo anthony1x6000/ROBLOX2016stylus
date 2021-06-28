@@ -1557,7 +1557,9 @@ background-color: #44b4f8;
 https://i.ibb.co/NVQQkd6/image.png
 Got any ideas? (I tried margin-... w/ !important and it didnt work)
 */
-
+.game-grid {
+    margin-right: 78px;
+} /* This did fix it but I don't know if breaks anything */ 
 
 /* END OF GAME CARD FIXING STUFF */
 
