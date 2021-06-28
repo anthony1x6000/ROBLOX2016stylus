@@ -336,13 +336,6 @@ background-color: #3FC679;
     
 }
 
-
-
-
-
-
-
-
 /*Premium Medium (OBC)*/
 .profile-header .header-title h2, .profile-header .header-title span[class^="icon"] {
     float: right;
@@ -453,8 +446,8 @@ background-color: #3FC679;
 .gotham-font.light-theme .see-all-link-icon {
     padding: 1px 4px;
     font-size: 14px !important;
-    font-weight: thin !important;
-    width: 100px;
+    font-weight: normal !important;
+    min-width: 100px; 
 }
 
 .see-all-link-icon:hover, .touch .see-all-link-icon:hover {
@@ -676,12 +669,6 @@ padding: 4px 4px !important;
     border-color: #fff;
 }
 
-
-/* 
-.gotham-font.light-theme .refresh-link-icon {
-} */ 
-
-
 .light-theme .item-card-container .item-card-price {
     bottom: auto !important;
 }
@@ -749,7 +736,7 @@ a:hover {
 
 
 .light-theme .btn-secondary-md, .light-theme .btn-secondary-md:visited {
-    color: #ffffff !important;
+    color: #fff;
 }
 
 
@@ -958,8 +945,6 @@ border-top: hidden;
 }
 
 /* Play button changes */
-/* The first time im creating any sort of new code */
-/* removed ramblings */
 
 .icon-common-play:after {
     visibility: visible;
@@ -2022,7 +2007,7 @@ position: absolute;
 {
     background-color: #fff;
     border: 1px solid #B8B8B8;
-    color: #fff;
+    color: rgba(0,0,0,.6);
     border-radius: 3px
 }
 .light-theme .btn-control-xs:hover {
