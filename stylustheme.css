@@ -1559,10 +1559,9 @@ Got any ideas? (I tried margin-... w/ !important and it didnt work)
 */
 .game-grid {
     margin-right: 78px;
-} /* This did fix it but I don't know if breaks anything */ 
+} /* This did fix it (vertically) but I don't know if breaks anything */ 
 
 /* END OF GAME CARD FIXING STUFF */
-
 
 /* changing the game slidey thing arrow things */ 
 .arrow, .scroller.prev.disabled, .scroller.next, .scroller.next.disabled, .scroller.prev {
@@ -2893,3 +2892,31 @@ https://i.ibb.co/VtZQ0KP/image.png    */
 
 /* roblox powering imagination chat & party */ 
 .light-theme .icon-default-logo-tagline, .light-theme .icon-logo-tagline {visibility: hidden;}
+
+/* Buy premium page */ 
+.premium-landing-page .premium-title-section .get-premium-button {
+    color: #fff;    
+}
+.premium-landing-page .premium-title-section .get-premium-button:hover {
+    background-color: #00bf5a;
+    border-color: #00bf5a;
+}
+
+div.icon-robux-medium-desktop {
+    background-image: url("https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/dbaa476c9543275afa24e1ebe97a5d05984b8663/images/4302021_archive/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg");
+    background-size: 330px;
+    background-position: 0px -665px;
+}
+.robux-package-name, .font-header-2.text-disabled{
+    position: relative;
+    top: 30px;
+}
+
+.icon-premium-120x120{
+    background-image: url("https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/oldbchardhat.png?raw=true");
+    background-size: 110%;
+}
+ul.nav:nth-child(999) > li:nth-child(2) > a:nth-child(1)::before {
+    visibility: hidden;
+    
+}

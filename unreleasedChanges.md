@@ -14,6 +14,7 @@ Changes could be removed because I don't yet know its effects on the rest of the
 - Buttons "Add people" and "Generate" text changed to black. 
 - Removed !important tag next to the button color so if you created a private server, the text wouldn't be [white](https://i.ibb.co/PN8f5D7/image.png). 
 - Problem could be specific to my browser. Fixed large gaps in between game cards on the [Home > Personal Recommendation page](https://www.roblox.com/discover#/sortName/v2/Recommended%20For%20You). [Before](https://i.ibb.co/NVQQkd6/image.png) [After](https://ibb.co/sVd9v8f).
+- Some things were changed on the buy premium page. 
 
 ### Credit
 All credit to Ologist for originally making this incredible user-style theme!
