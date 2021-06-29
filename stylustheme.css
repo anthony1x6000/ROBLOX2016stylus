@@ -2916,7 +2916,3 @@ div.icon-robux-medium-desktop {
     background-image: url("https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/oldbchardhat.png?raw=true");
     background-size: 110%;
 }
-ul.nav:nth-child(999) > li:nth-child(2) > a:nth-child(1)::before {
-    visibility: hidden;
-    
-}
