@@ -2867,10 +2867,8 @@ https://i.ibb.co/VtZQ0KP/image.png    */
     
 }
 
-/* Catalog bottom items recommended */ 
-.light-theme .item-card {
-    height: 235px;
-}
+
+
 
 /* notification top */ 
 
@@ -2935,13 +2933,14 @@ div.icon-robux-medium-desktop {
 /* catalog changes  */ 
 
 .list-item.item-card.ng-scope {
-    margin-right: 1px;
     margin-bottom: 5px;
+    width: auto;
 }
 .container-main .catalog-full-screen .catalog-results .item-cards-stackable .item-card, .container-main .splash.catalog-full-screen .catalog-results .item-cards-stackable .item-card {
     width: auto;
 }
-.light-theme .btn-control-md {
+
+button.btn-control-md.view-all{
     width: 95%;
 }
 .catalog-container .search-container .input-group .search-input {
@@ -2952,4 +2951,11 @@ div.icon-robux-medium-desktop {
 .icon-search{
     position: relative;
     left: 2px;
+}
+/* recommended catalog */ 
+.list-item.item-card.recommended-item.ng-scope{
+    height: 250px;
+}
+recommendations > div > div > div > div > ul > li > div > a > div.item-card-name.recommended-name > span.ng-binding, div > div > div > recommendations.ng-isolate-scope > div > div > div > div > ul > li > div > div {
+    margin-left: 6px;
 }
