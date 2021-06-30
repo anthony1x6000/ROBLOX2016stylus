@@ -21,6 +21,7 @@ Changes could be removed because I don't yet know its effects on the rest of the
 - Some things were changed on the buy premium page. 
 - Bottom "view featured items" button width changed to be wider.
 - "Fixed" the margins between the items in the catalog. 
+- Text pushed to right on recommended items when viewing an item. 
 
 ### Credit
 All credit to Ologist for originally making this incredible user-style theme!
