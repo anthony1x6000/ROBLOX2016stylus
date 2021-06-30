@@ -1439,7 +1439,7 @@ background-color: #44b4f8;
     position: relative;
     height: 240px !important;
     border-radius: 3px;
-    
+    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 30%);
 }
 
 /* fixing the game tiles to be the old ones | GAME PAGE CARD FIX */
@@ -2915,4 +2915,26 @@ div.icon-robux-medium-desktop {
 .icon-premium-120x120{
     background-image: url("https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/oldbchardhat.png?raw=true");
     background-size: 110%;
+}
+
+/* catalog changes  */ 
+
+.list-item.item-card.ng-scope {
+    margin-right: 1px;
+    margin-bottom: 5px;
+}
+.container-main .catalog-full-screen .catalog-results .item-cards-stackable .item-card, .container-main .splash.catalog-full-screen .catalog-results .item-cards-stackable .item-card {
+    width: auto;
+}
+.light-theme .btn-control-md {
+    width: 95%;
+}
+.catalog-container .search-container .input-group .search-input {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    left: 1px;
+}
+.icon-search{
+    position: relative;
+    left: 2px;
 }

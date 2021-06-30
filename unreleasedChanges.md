@@ -8,7 +8,10 @@
 - Game icon border radius changed to 3px.  
 - Added an 11-pixel gap from the arrow to the first game tile. 
 - Recommended games fix (for my browser)
-- Fixed the width for the "[Back to private servers](https://imgur.com/a/JBuWZHp)" button
+- Fixed the width for the "[Back to private servers](https://imgur.com/a/JBuWZHp)" button.
+- Fixed game tile box shadows. (Added them on a higher layer)
+- Fixed the margins between the items in the catalog. 
+- Small changes to the Catalog search bar
 ## Could be removed changes
 Changes could be removed because I don't yet know its effects on the rest of the website.
 - Buttons "Add people" and "Generate" text changed to black. 
