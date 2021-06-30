@@ -1473,7 +1473,9 @@ background-color: #44b4f8;
     transition: all .0s cubic-bezier(0,0,0,1) !important;
 }
 .hover-game-tile .featured-game-container{transition: all 0s cubic-bezier(0,0,0,1) !important;}
-
+.game-card-container {
+    margin-left: 11px;
+}
 .light-theme .game-card-container .game-card-name {
     padding: 0 6px;
     margin: 6px 0;
