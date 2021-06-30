@@ -12,7 +12,6 @@
 - Fixed game tile box shadows.
 - Small changes to the Catalog search bar.
 - Polished up the game scroller buttons.
-- Added a small margin on the left between the games and the arrows. 
 ## Could be removed changes
 Changes could be removed because I don't yet know its effects on the rest of the website.
 - Buttons "Add people" and "Generate" text changed to black. 

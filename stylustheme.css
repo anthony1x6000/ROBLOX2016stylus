@@ -1463,7 +1463,6 @@ background-color: #44b4f8;
 }
 .dark-theme .game-card-container, .light-theme .game-card-container {
     box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.60);
-    margin-left: 11px;
 }
 
 .hover-game-tile .featured-game-container .featured-game-icon-container .brief-game-icon {
