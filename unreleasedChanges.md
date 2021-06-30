@@ -7,10 +7,12 @@
 - Moved stuff around to save some space. The file is still riding that 100kb limit. 
 - Game icon border radius changed to 3px.  
 - Added an 11-pixel gap from the arrow to the first game tile. 
-- Recommended games fix (for my browser)
+- Recommended games fix (for my browser).
 - Fixed the width for the "[Back to private servers](https://imgur.com/a/JBuWZHp)" button.
-- Fixed game tile box shadows. (Added them on a higher layer)
-- Small changes to the Catalog search bar
+- Fixed game tile box shadows.
+- Small changes to the Catalog search bar.
+- Polished up the game scroller buttons.
+- Added a small margin on the left between the games and the arrows. 
 ## Could be removed changes
 Changes could be removed because I don't yet know its effects on the rest of the website.
 - Buttons "Add people" and "Generate" text changed to black. 
@@ -19,6 +21,7 @@ Changes could be removed because I don't yet know its effects on the rest of the
 - Some things were changed on the buy premium page. 
 - Bottom "view featured items" button width changed to be wider.
 - "Fixed" the margins between the items in the catalog. 
+
 
 ### Credit
 All credit to Ologist for originally making this incredible user-style theme!

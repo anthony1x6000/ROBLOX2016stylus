@@ -1436,10 +1436,8 @@ background-color: #44b4f8;
 
 
 .game-card-link {
-    position: relative;
-    height: 240px !important;
-    border-radius: 3px;
-    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 30%);
+    height: 100%;
+    border-radius: 3px; 
 }
 
 /* fixing the game tiles to be the old ones | GAME PAGE CARD FIX */
@@ -1464,7 +1462,8 @@ background-color: #44b4f8;
     box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.75);
 }
 .dark-theme .game-card-container, .light-theme .game-card-container {
-    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
+    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.60);
+    margin-left: 11px;
 }
 
 .hover-game-tile .featured-game-container .featured-game-icon-container .brief-game-icon {
@@ -1568,32 +1567,51 @@ Got any ideas? (I tried margin-... w/ !important and it didnt work)
     height: 242px;   
 
 }
-/* Apparently z-index doesnt want to work DO NOT DELETE MAYBE I'LL FIGURE SOMETHING OUT. 
-.horizontal-scroller .scroller.next {
-    border-top-left-radius: 3px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 3px;
-    z-index: 5 !important;
-} */ 
+
 
 /* game cover thing fixing gaps */ 
 .horizontal-scroller .scroller.next .spacer {
     left: 29px;
-    height: 108%;
+    height: 115%;
     bottom: -5px;
     background-color: #e3e3e3;
 }
 
-
 .horizontal-scroller .scroller.prev .spacer {
     right: 29px;
-    height: 108%;
+    height: 115%;
     background-color: #e3e3e3;
     top: -10px;
 }
 
-
-
+.spacer {
+    z-index: 0 !important;
+}
+.scroller.prev, .scroller.next {
+    height: 91% !important;
+    top: -3px;
+}
+.icon-games-carousel-right {
+    margin-right: 3px;
+}
+.scroller.next .arrow {
+    z-index: 2 !important;
+    left: 1px;
+    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
+}
+.scroller.prev .arrow {
+    z-index: 2 !important;
+    left: 1px;
+    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
+}
+.arrow:hover {
+    z-index: 5;
+    cursor: pointer;
+    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.6) !important;
+}
+.light-theme .scroller .icon-games-carousel-right {
+    margin-left: -7px;
+}
 
 .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image, .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image:hover {
 box-shadow: none !important;
@@ -2608,14 +2626,11 @@ div[style="col-sm-6 slide-item-container-left"]
     top: 2.5px;
 }
 
-.scroller.next:hover, .scroller.prev:hover {
-    cursor: pointer;
-    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.3);
-}
+
 
 
 .game-card-container {
-    height: 99%;
+    height: 240px;
 }
 
 /* this doesnt really work (outside of the games page and the home page)
@@ -2625,9 +2640,8 @@ div[style="col-sm-6 slide-item-container-left"]
 } */
 
 .game-tile:hover .game-card-container {
-    height: 99%;
+    height: 240px;
     box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.9);
-    
 }
 
 /* 
