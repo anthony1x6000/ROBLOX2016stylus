@@ -1464,7 +1464,9 @@ background-color: #44b4f8;
 .dark-theme .game-card-container, .light-theme .game-card-container {
     box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.60);
 }
-
+.dark-theme .game-card-container, .light-theme .game-card-container:hover {
+    box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.60);
+}
 .hover-game-tile .featured-game-container .featured-game-icon-container .brief-game-icon {
     height: 150px;
     width: 150px;
