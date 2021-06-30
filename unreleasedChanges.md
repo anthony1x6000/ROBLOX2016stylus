@@ -10,7 +10,6 @@
 - Recommended games fix (for my browser)
 - Fixed the width for the "[Back to private servers](https://imgur.com/a/JBuWZHp)" button.
 - Fixed game tile box shadows. (Added them on a higher layer)
-- Fixed the margins between the items in the catalog. 
 - Small changes to the Catalog search bar
 ## Could be removed changes
 Changes could be removed because I don't yet know its effects on the rest of the website.
@@ -18,6 +17,8 @@ Changes could be removed because I don't yet know its effects on the rest of the
 - Removed !important tag next to the button color so if you created a private server, the text wouldn't be [white](https://i.ibb.co/PN8f5D7/image.png). 
 - Problem could be specific to my browser. Fixed large gaps in between game cards on the [Home > Personal Recommendation page](https://www.roblox.com/discover#/sortName/v2/Recommended%20For%20You). [Before](https://i.ibb.co/NVQQkd6/image.png) [After](https://ibb.co/sVd9v8f).
 - Some things were changed on the buy premium page. 
+- Bottom "view featured items" button width changed to be wider.
+- "Fixed" the margins between the items in the catalog. 
 
 ### Credit
 All credit to Ologist for originally making this incredible user-style theme!
