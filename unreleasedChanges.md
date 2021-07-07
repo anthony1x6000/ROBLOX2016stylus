@@ -1,5 +1,6 @@
 
 # BETA | 1.1.6
+# NOW [RELEASED]("https://github.com/anthony1x6000/ROBLOX2016stylus/releases/tag/1.1.6")
 ## Games page changes
 - Game icon border-radius changed to 3px.  
 - Added an 11-pixel gap from the arrow to the first game tile. 
