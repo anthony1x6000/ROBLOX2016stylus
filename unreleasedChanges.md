@@ -1,6 +1,6 @@
 
-# BETA | 1.1.7
-# [BETA]("https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/stylustheme.css")
+# Unreleased | 1.1.7
+Get the beta [here](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/stylustheme.css).
 ## Games page changes
 - When hovering over a game tile the like button turns green. 
 
