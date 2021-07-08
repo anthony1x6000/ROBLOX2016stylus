@@ -1114,10 +1114,11 @@ ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)
     font-size: 15px;
   }
 
+
 /* making the gray highlight thing smaller */
 
 .light-theme .rbx-header .text-header, .light-theme .rbx-header .text-header:active, .light-theme .rbx-header .text-header:focus, .light-theme .rbx-header .text-header:hover, .light-theme .rbx-header .text-header:link, .light-theme .rbx-header .text-header:visited {
-    height: 90%;
+    height: 31px;
     color: #ffffff;
 }
 
@@ -1396,7 +1397,7 @@ background-color: #44b4f8;
     border-radius: 3px; 
 }
 
-/* fixing the game tiles to be the old ones | GAME PAGE CARD FIX */
+/* fixing the game tiles to be the old ones | GAMES PAGE CARD FIX */
 .thumb-container img {
     width: 150px;
     height: 150px;

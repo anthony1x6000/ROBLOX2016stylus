@@ -7,6 +7,9 @@ Get the beta [here](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/
 ## Code changes
 - Cleaned up some code and removed some random things. 
 
+### Known bugs
+- When on the develop page for some unknown reason random things start to glitch out like the gray highlights over the Games, Catalog, etc clipping outside of the header when hovering. Some other things also break such as the box-radius rule on the chat bar. 
+- Different font when searching for friends. 
 ### Credit
 All credit to Ologist for originally making this incredible user-style theme!
 Find the original style @ https://userstyles.org/styles/178105/roblox-in-2016.
