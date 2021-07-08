@@ -1055,7 +1055,6 @@ padding: 4px 4px !important;
     transition: none;
 } */ 
 
-
 /* random thing I did to the ad */
 .ad {
     background-image: url("https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/eseg.jpg?raw=true");
@@ -1064,16 +1063,10 @@ padding: 4px 4px !important;
     background-position: -25px;
 }
 
-
-
 /* maybe this will fix see more being short I probably did something to mess it up */
 .btn-control-sm {
     width: 100%;
-    
 }
-
-
-
 
 /* changing top bar stuff I FOUND OUT HOW! Not really I just looked at Ologist's code and saw that he figured it out so I'm shamelessly stealing it */ 
 /* comment this or delete this if you dont care about it */ 
@@ -1417,7 +1410,6 @@ background-color: #44b4f8;
     width: 150px;
     margin-right: 14px;
     transition: all .0s cubic-bezier(0,0,0,1);
-
 }
 
 /* game tile shadows */ 
@@ -1438,8 +1430,11 @@ background-color: #44b4f8;
     transition: all .0s cubic-bezier(0,0,0,1) !important;
 }
 .hover-game-tile .featured-game-container{transition: all 0s cubic-bezier(0,0,0,1) !important;}
+.game-card-container {
+    margin-left: 1px;
+}
+/* used to be margin-left: 11px; ^^*/ 
 
-/* margin-left: 11px;*/ 
 
 .light-theme .game-card-container .game-card-name {
     padding: 0 6px;
