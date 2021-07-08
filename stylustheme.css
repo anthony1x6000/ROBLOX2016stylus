@@ -481,8 +481,6 @@ background-color: #3FC679;
     img.scr: url(https://www.dictionary.com/e/wp-content/uploads/2019/05/1000x700-LOL-1.jpg);
 }*/
 
-
-
 .light-theme .item-card-container .item-card-price {
     margin-top: 0 !important;
 }
@@ -1014,20 +1012,6 @@ I think this works
 .icon-additem, .icon-arrow-right-blue, .icon-audio, .icon-back, .icon-bigplay, .icon-bigplay-fill, .icon-bigstop, .icon-bigstop-fill, .icon-brokenpage, .icon-carousel-left, .icon-carousel-right, .icon-chat-gray, .icon-check-selection, .icon-checkmark, .icon-checkmark-blue, .icon-checkmark-on, .icon-checkmark-white, .icon-checkmark-white-bold, .icon-clock, .icon-close, .icon-close-white, .icon-copy, .icon-default-generic, .icon-down, .icon-edit, .icon-female, .icon-female-white, .icon-first-gray, .icon-first-page, .icon-games-carousel-left, .icon-games-carousel-left.hover, .icon-games-carousel-right, .icon-games-carousel-right.hover, .icon-globe, .icon-grid, .icon-home, .icon-inactive, .icon-last-gray, .icon-last-page, .icon-left, .icon-left-gray, .icon-locked, .icon-logo-apple, .icon-logo-win, .icon-male, .icon-male-white, .icon-menu, .icon-menu-black, .icon-minus, .icon-more, .icon-more-gray-vertical, .icon-moreinfo, .icon-next, .icon-notifications, .icon-page, .icon-password-hide, .icon-password-hide-white, .icon-password-show, .icon-password-show-white, .icon-pastname, .icon-pause, .icon-pause-fill, .icon-play, .icon-playgame, .icon-plus, .icon-regenerate, .icon-right, .icon-right-gray, .icon-sandglass, .icon-search, .icon-settings, .icon-slideshow, .icon-sorting, .icon-trash-bin, .icon-unlocked, .icon-up, .icon-viewdetails {
     background-size: auto;
 }
-
-
-
-/* .icon-carousel-right {    
-    background-position-x: 0px;
-    background-position-y: -831px;
-    
-}
-.icon-carousel-left {    
-    background-position-x: 0px;
-    background-position-y: -857px;
-    
-} */
-
 .icon-carousel-right {
     background-position: 0 -896px;
 }
@@ -1037,34 +1021,18 @@ I think this works
 
 .carousel-controls.carousel-controls-right.btn-primary-md.btn-min-width {
     background-color: rgba(25,25,25,0.3);
-    border-color: #fff;
-    
+    border-color: #fff;   
 }
-
-
-
-
 /* Servers header tab selection thingy changes 
 Unrelated note but remember when games had comments? That was pretty cool.
 */ 
-
 .rbx-tab-heading {
     height: 45px;
 }
-
-.text-lead.ng-binding{
-    position: relative;
-    top: 4px;
-    
-}
-
 .text-lead {
     position: relative;
     top: 3px;
 }
-
-
-
 /* refresh ~~blue~~ WHITE (I was looking at 2015 not 2016 but personally I like 2015 better) - reference for all of this is at https://web.archive.org/web/20150627045216/https://www.roblox.com/games/9689581/Roblox-High-School#!/about*/ 
 .btn-min-width.btn-control-xs.btn-more.rbx-refresh.refresh-link-icon {
 background-color: #ffffff;
@@ -1079,11 +1047,6 @@ color: black !important;
 text-decoration: none !important;
 padding: 4px 4px !important;
 }
-
-
-    
-
-
 /* 
 .refresh-link-icon, .touch .refresh-link-icon {
     background-color: #32b5ff;
@@ -2563,16 +2526,6 @@ div[style="col-sm-6 slide-item-container-left"]
     box-shadow: inset 4px 0 0 0 #00a2ff;
     cursor: pointer;
 }
-
-/*
-.gotham-font.light-theme .see-all-link-icon
-{
-    padding: 0px;
-
-    
-}
-*/
-
 .rbx-header.light-theme .rbx-navbar li .nav-menu-title:focus, .rbx-header.light-theme .rbx-navbar li .nav-menu-title:hover
 {
     background-color: rgba(25,25,25,.1);
@@ -2607,19 +2560,7 @@ div[style="col-sm-6 slide-item-container-left"]
     background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/80a1e55d792875c92f6a4c5e7b4ef949fa17c157/images/robux/icons.svg);
     background-position: -28px -28px;
   }
-
-
 /* Messing with the games tab */
-
-/* 
-.scroller.next, .scroller.prev {
-    height: 80.6%;
-    
-    
-} */
-
-
-
 .light-theme .game-card-info .info-label.icon-votes-gray {
 
     background-position: 0 -351px;
@@ -2631,10 +2572,6 @@ div[style="col-sm-6 slide-item-container-left"]
     position: relative;
     top: 2.5px;
 }
-
-
-
-
 .game-card-container {
     height: 240px;
 }
@@ -2644,26 +2581,12 @@ div[style="col-sm-6 slide-item-container-left"]
     height: 240px;
     box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.9);
 }
-
-/* 
-.game-card-info {
-    position: relative;
-    top: 212px;
-}
-
-*/ 
-
 .game-card-info .playing-counts-label {
     position: relative; 
     display: block !important;
     bottom: 25px;
     right: 2px;
 } 
-
-
-
-
-
 .game-card-info .icon-playing-counts-gray {
     visibility: hidden;
 }
@@ -2685,18 +2608,7 @@ div[style="col-sm-6 slide-item-container-left"]
     overflow-x: visible;
     overflow-y: visible;
 }
-
-
-/* 
-  position: absolute;
-  left: 100px;
-  top: 150px;
-*/
-
-
 /* --------------- */ 
-
-
 /* side bar tab thing */
 
 .btn-growth-md.btn-secondary-md {
@@ -2832,20 +2744,7 @@ div[style="col-sm-6 slide-item-container-left"]
     border-radius: 3px !important;
     padding: 4px 4px !important;
 }
-
-/* 
-.gotham-font.light-theme .see-all-link-icon {
-    padding: 1px 4px !important;
-    font-size: 14px !important;
-    font-weight: thin !important;
-    width: 100px;
-} */
-
-
-
-
-
-/* avatar frieds playing game tile */
+/* avatar friends playing game tile */
 /* this could be slightly broken idk I just tested it with two alts and it seems fine
 https://i.ibb.co/VtZQ0KP/image.png    */ 
 .game-card-name.game-name-title.game-name-oneline {
@@ -2863,13 +2762,8 @@ https://i.ibb.co/VtZQ0KP/image.png    */
 /* continue move down */ 
 .container-header.games-filter-changer {
     position: relative;
-    top: 5px;
-    
+    top: 5px;   
 }
-
-
-
-
 /* notification top */ 
 
 .light-theme .alert-info {
@@ -2959,3 +2853,25 @@ button.btn-control-md.view-all{
 recommendations > div > div > div > div > ul > li > div > a > div.item-card-name.recommended-name > span.ng-binding, div > div > div > recommendations.ng-isolate-scope > div > div > div > div > ul > li > div > div {
     margin-left: 6px;
 }
+/* avatar page changes */ 
+.redraw-avatar > .text-link.ng-binding::before {
+    content: "Click here to re-draw it!";
+    font-size: 16px;
+    color: #085bcd;
+}
+.redraw-avatar > .text-link.ng-binding {
+    position: relative; 
+    bottom: 11px;
+    right: 112px;
+    font-size: 0px;
+}
+.redraw-avatar > span.ng-binding:nth-of-type(1)::before {
+    content: "Something wrong with your avatar?";
+    font-size: 16px; 
+}
+.redraw-avatar > span.ng-binding:nth-of-type(1) {
+    font-size: 0px; 
+    position: relative;
+    left: 1px;
+}
+
