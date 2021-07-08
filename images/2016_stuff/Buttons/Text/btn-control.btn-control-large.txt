@@ -1,0 +1,7 @@
+.btn-control.btn-control-large {
+    height: 25px;
+    line-height: 24px;
+    font-size: 13px;
+    padding: 0 7px;
+    background-image: url(/images/StyleGuide/btn-control-large-tile.png);
+}

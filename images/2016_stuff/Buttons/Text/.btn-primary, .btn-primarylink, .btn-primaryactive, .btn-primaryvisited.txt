@@ -1,0 +1,6 @@
+.btn-primary, .btn-primary:link, .btn-primary:active, .btn-primary:visited {
+    border-color: #007001;
+    background-color: #007001;
+    background-image: url(/images/Buttons/StyleGuide/bg-btn-green.png)!important;
+    color: white;
+}
