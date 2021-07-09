@@ -29,7 +29,7 @@ This should work on
 - [Firefox](https://firefox.com/) (sometimes things don't render properly; reloading usually fixes it). 
 As always, if something doesn't work, create an [issue](https://github.com/anthony1x6000/ROBLOX2016stylus/issues).
 - Microsoft Edge
-- I'm assuming most Chromium-based browsers
+- I'm assuming most Chromium-based browsers<br>
 Display Compatability
 Your display/monitor has to be AT LEAST 544 pixels wide for this style to work properly. 
 I'd recommend at least a 1366 x 768 monitor or, even better, a 1920 x 1080 monitor.
