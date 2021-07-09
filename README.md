@@ -1,5 +1,5 @@
 # ROBLOX 2016 Userstyles/Stylus
-Stylish/stylus browser addon.
+Stylish/stylus browser addon. <br> If you don't already; this userstyle requires stylus to function. Get it at the [Chrome Web Store](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or the [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) website. <br> [Userscript](https://github.com/anthony1x6000/ROBLOX2016stylus#userscript) is also supported.
 ![Preview of style](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/2016_stuff/preview.jpg?raw=true "Preview")
 <br>
 Trying to keep the script up to date by making sure images and other stuff still works because the original CSS file had files that depended on Roblox's server itself, and recently Roblox has started to move or delete those files.<br>
@@ -9,7 +9,8 @@ I'm also changing some things, like adding small fixes.
 If you know how to fix anything that hasn't been fixed already or see anything that could be improved, I encourage you to create a fork or make a pull request and fix it! I don't really know much CSS myself, so any contribution, even fixing the smallest little thing, is greatly appreciated!
 <br> 
 ## Userscript
-If you want to get a user script version of this script, click [here](https://userstyles.org/styles/userjs/189624/roblox-2016-fixed-robux-icon.user.js).
+If you want to get a user script version of this script, click [here](https://userstyles.org/styles/userjs/189624/roblox-2016-fixed-robux-icon.user.js).<br>
+It'll require the Tampermonkey extension/addon or another similar. Find it at the [Chrome Web Store](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or the [Firefox Add-ons website](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/).
 ## Find this at user styles
 It'll be under these three releases<br>
 https://userstyles.org/styles/189625/, https://userstyles.org/styles/189624, and https://userstyles.org/styles/195713/
