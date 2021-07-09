@@ -1557,8 +1557,9 @@ Got any ideas? (I tried margin-... w/ !important and it didnt work)
 }
 .scroller.next .arrow {
     z-index: 2 !important;
-    left: 1px;
+    left: 0px;
     box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
+    width: 101%;
 }
 .scroller.prev .arrow {
     z-index: 2 !important;
