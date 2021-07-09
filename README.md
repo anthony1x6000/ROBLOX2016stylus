@@ -5,7 +5,9 @@ Stylish/stylus browser addon.
 Trying to keep the script up to date by making sure images and other stuff still works because the original CSS file had files that depended on Roblox's server itself, and recently Roblox has started to move or delete those files.<br>
 I'm also changing some things, like adding small fixes. 
 <br>
-
+## Open source information
+If you know how to fix anything that hasn't been fixed already or see anything that could be improved, I encourage you to create a fork or make a pull request and fix it! I don't really know much CSS myself, so any contribution, even fixing the smallest little thing, is greatly appreciated!
+<br> 
 ## Userscript
 If you want to get a user script version of this script, click [here](https://userstyles.org/styles/userjs/189624/roblox-2016-fixed-robux-icon.user.js).
 ## Find this at user styles
