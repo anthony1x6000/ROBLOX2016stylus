@@ -1,4 +1,5 @@
-# Unreleased | 1.1.7
+# Small changes | 1.1.7
+<br>This version is not 100% released and could have bugs. 
 Get the beta [here](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/stylustheme.css).
 ## Games page changes
 - When hovering over a game tile, the like button turns green. 
