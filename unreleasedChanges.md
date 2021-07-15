@@ -6,6 +6,8 @@ Get the beta [here](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/
 - Changed some text on the avatar page. 
 ## Code changes
 - Cleaned up some code and removed some random things. 
+## Notifications
+- Fix button color of friend requests. 
 
 ### Known bugs
 - When on the develop page for some unknown reason random things start to glitch out like the gray highlights over the Games, Catalog, etc clipping outside of the header when hovering. Some other things also break such as the box-radius rule on the chat bar. 
