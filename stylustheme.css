@@ -1049,14 +1049,7 @@ padding: 4px 4px !important;
     background-size: 300px;
     background-position: -25px;
 }
-div.games-list-container.is-windows:nth-of-type(9) > a:nth-of-type(1) > .container-header.games-filter-changer > h3::before {
-    content: "Popular Among Us???? ROBLOX ACTING SUS😳😳😳😳";
-    font-size: 24px;
-}
-div.games-list-container.is-windows:nth-of-type(9) > a:nth-of-type(1) > .container-header.games-filter-changer > h3 {
-    font-size: 0px;
-    margin-top: 9px;
-}
+
 /*end of meme*/ 
 /* maybe this will fix see more being short I probably did something to mess it up */
 .btn-control-sm {
