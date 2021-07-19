@@ -76,14 +76,12 @@ h1, h2, h3, h4, h5 {
 
 
 .gotham-font, .gotham-font .h1, .gotham-font .h2, .gotham-font .h3, .gotham-font .h4, .gotham-font .h5, .gotham-font .h6, .gotham-font h1, .gotham-font h2, .gotham-font h3, .gotham-font h4, .gotham-font h5, .gotham-font h6 {
-    font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
+    font-family: "Source Sans Pro",Arial,Helvetica,sans-serif !important;
 }
 
 .gotham-font .text, .gotham-font body, .gotham-font button, .gotham-font html, .gotham-font input, .gotham-font pre, .gotham-font select, .gotham-font textarea {
-    font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
+    font-family: "Source Sans Pro",Arial,Helvetica,sans-serif !important;
 }
-
-
 
 .profile-header .header-caption .header-details .details-info li
 {
@@ -1062,6 +1060,7 @@ ul.nav:nth-child(2) > li:nth-child(1) > a:nth-child(1)
   {
     content: "Games";
     font-size: 15px;
+      
   }
 
 ul.nav:nth-child(2) > li:nth-child(2) > a:nth-child(1)
@@ -2888,4 +2887,8 @@ div.featured-grid-item-container.game-card-container > a > div.game-card-descrip
     overflow: hidden;
     left: 5px;
     width: 97%;
+}
+/* Font fixes */ 
+.input-field.chat-search-input.font-caption-body.ng-pristine.ng-valid.ng-empty.ng-touched, .font-header-2.nav-menu-title.text-header {
+    font-family: "Source Sans Pro",Arial,Helvetica,sans-serif !important;
 }
