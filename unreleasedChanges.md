@@ -6,7 +6,7 @@ Get the beta [here](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/
 - 11px margin at the games page changed to a 1px margin because it conflicted with the home page. 
 - Changed some text on the avatar page. 
 ## Game search results
-- Featured game fixes to be uniform with the rest of the game tiles. Check out the before and after [here.](https://imgur.com/a/4BaqYto)
+- Featured game fixes to be uniform with the rest of the game tiles. Check out the before and after images [here.](https://imgur.com/a/4BaqYto)
 ## Code changes
 - Cleaned up some code and removed some random things. 
 ## Notifications
