@@ -2892,3 +2892,7 @@ div.featured-grid-item-container.game-card-container > a > div.game-card-descrip
 .input-field.chat-search-input.font-caption-body.ng-pristine.ng-valid.ng-empty.ng-touched, .font-header-2.nav-menu-title.text-header {
     font-family: "Source Sans Pro",Arial,Helvetica,sans-serif !important;
 }
+html > body > div#chat-container > div > div.chat-header.chat-windows-header {
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
