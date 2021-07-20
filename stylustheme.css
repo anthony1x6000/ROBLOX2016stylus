@@ -2313,7 +2313,7 @@ div[style="col-sm-6 slide-item-container-left"]
 
 .messageDivider .roblox-system-image .icon-logo-notification, .messageDivider .roblox-system-image .icon-logo-r
 {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCI+PHBhdGggZD0iTTguMyAzLjdMMy42IDIxLjhsMTguMSA0LjYgNC42LTE4LjEtMTgtNC42em04IDEzLjZsLTMuNS0uOS45LTMuNSAzLjUuOS0uOSAzLjV6IiBmaWxsPSIjMzkzYjNkIi8+PC9zdmc+)
+    background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/6bb425b39f2a5e4951bc632b86049161f13fcad7/images/image.svg)
 }
 
 .light-theme .btn-primary-lg
@@ -2752,6 +2752,9 @@ https://i.ibb.co/VtZQ0KP/image.png    */
     top: 2px;
     
 }
+.alert-info.linkify > .text-link {
+    color: #085bcd;
+}
 
 /* 404 error page */
 .light-theme .request-error-page-content .action-buttons .btn-primary-md {
@@ -2850,6 +2853,15 @@ recommendations > div > div > div > div > ul > li > div > a > div.item-card-name
     position: relative;
     left: 1px;
 }
+div > div > div > div > div > div > div.avatar-editor-header > div.catalog-header > a.btn-primary-md {
+    visibility: hidden; 
+}
+div > div.catalog-header > div {
+    position: relative;
+    left: 87px;
+    bottom: 2px;
+}
+
 /*optional gender?? cringe!!!*/.gender-container > .ng-binding.font-caption-header {font-size: 0px;}.gender-container > .ng-binding.font-caption-header::before{content:"Gender";font-size: 15px;}
 /*accept friend button */ 
 #accept-fr-btn {

@@ -11,9 +11,11 @@ Get the beta [here](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/
 - Cleaned up some code and removed some random things. 
 ## Notifications
 - Fix button color of friend requests. 
-## Site changes
+## General site changes
 - Font face fixes to chat; still don't know why the top header font breaks when on the develop page. 
 - Chat rounded corners fixed. On the develop page rounded corners now show; when on other pages rounded corners no longer have a white background.
+- Changed link text for orange notif header. 
+- Removed "Get More" button from avatar editor page. 
 
 ### Known bugs
 - When on the develop page for some unknown reason random things start to glitch out like the gray highlights over the Games, Catalog, etc clipping outside of the header when hovering. Some other things also break such as the box-radius rule on the chat bar. 
