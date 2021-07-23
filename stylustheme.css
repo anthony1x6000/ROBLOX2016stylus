@@ -1046,6 +1046,10 @@ div.game-details-play-button-container > button {
 .icon-carousel-left {
     background-position: 0 -924px;
 }
+button.carousel-controls.carousel-controls-left {
+    padding-left: 7px;
+}
+
 
 .carousel-controls.carousel-controls-right.btn-primary-md.btn-min-width {
     background-color: rgba(25,25,25,0.3);
