@@ -1453,8 +1453,8 @@ background-color: #44b4f8;
     transition: all .0s cubic-bezier(0,0,0,1) !important;
 }
 .hover-game-tile .featured-game-container{transition: all 0s cubic-bezier(0,0,0,1) !important;}
-.game-card-container {
-    margin-left: 1px;
+div > div.horizontally-scrollable > ul > li.list-item.game-card.game-tile > div.game-card-container {
+    margin-left: 11px;
 }
 /* used to be margin-left: 11px; ^^*/ 
 

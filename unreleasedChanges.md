@@ -5,6 +5,7 @@ Get the beta [here](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/
 - When hovering over a game tile, the like button turns green. 
 - 11px margin at the games page changed to a 1px margin because it conflicted with the home page. 
 - Changed some text on the avatar page. 
+- Got the 11px left margin to work without messing up the home page. 
 ## Game search results
 - Featured game fixes to be uniform with the rest of the game tiles. Check out before and after images [here.](https://imgur.com/a/4BaqYto)
 ## Code changes
