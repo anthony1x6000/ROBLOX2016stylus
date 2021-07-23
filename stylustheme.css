@@ -323,10 +323,50 @@ background-color: #3FC679;
 /* search bar */ 
 
 .rbx-header .navbar-search .input-field {
-    border-radius: 2px;
-    
+    border-radius: 2px;   
+}
+/* search results & bar */ 
+.light-theme .rbx-header .navbar-search .new-dropdown-menu {
+    width: 475px !important;
+    margin-left: 6px;
+    margin-top: 0px;
+/*    width: calc(100% + 12px); */ 
+    background-color: #fff;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.1);
+    border-radius: 3px;
+}
+#navbar-search-clear-btn {
+    visibility: hidden;
+}
+.new-navbar-search-anchor {
+    max-height: 43px !important;
 }
 
+span.navbar-list-option-icon {
+    visibility: hidden;
+}
+
+span.navbar-list-option-icon::before {
+    visibility: visible;
+      content: "Search";
+    font-size: 16px;
+}
+.new-navbar-search-anchor > .navbar-list-option-text {
+    margin-left: 28px;
+}
+.new-navbar-search-anchor > .navbar-list-option-suffix, span.navbar-list-option-icon {
+    color: #606162 !important;
+    opacity: 1 !important;
+}
+div > ul > li > a.new-navbar-search-anchor:hover {
+    background-color: #f3f2f3;
+} 
+li.new-selected > a {
+background-color: #bcbebf !important;
+}
+.light-theme .rbx-header .navbar-search .new-dropdown-menu li {
+    border-bottom: 0px;
+}
 /*Premium Medium (OBC)*/
 .profile-header .header-title h2, .profile-header .header-title span[class^="icon"] {
     float: right;
