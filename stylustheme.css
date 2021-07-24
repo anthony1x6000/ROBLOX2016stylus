@@ -1547,12 +1547,28 @@ Got any ideas? (I tried margin-... w/ !important and it didnt work)
     margin-right: 78px;
 } /* This did fix it (vertically) but I don't know if breaks anything */ 
 
+
+/* new games page fixes */ 
+.hover-game-tile .featured-game-container {
+    height: 240px;
+}
+/*sponsored ad */ 
+.game-card-native-ad {
+    width: 150px !important;
+    overflow: hidden; 
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
 /* END OF GAME CARD FIXING STUFF */
 
 /* changing the game slidey thing arrow things */ 
-.arrow, .scroller.prev.disabled, .scroller.next, .scroller.next.disabled, .scroller.prev {
+/* .arrow, .scroller.prev.disabled, .scroller.next, .scroller.next.disabled, .scroller.prev {
     height: 242px;   
-}
+} */ 
+div > div.scroller > div.arrow {
+    height: 245px !important;
+}/* new games page fix */ 
 /* game cover thing fixing gaps */ 
 .horizontal-scroller .scroller.next .spacer {
     left: 29px;
@@ -1572,9 +1588,9 @@ Got any ideas? (I tried margin-... w/ !important and it didnt work)
     z-index: 0 !important;
 }
 .scroller.prev, .scroller.next {
-    height: 91% !important;
+    height: 247px !important;
     top: -3px;
-}
+}/* games page fix right above here too changed 91 to 82 i think */ 
 .icon-games-carousel-right {
     margin-right: 3px;
 }

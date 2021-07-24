@@ -1,6 +1,12 @@
 # Unreleased | 1.1.7 <br>
 This version is not yet 100% released and could have bugs. 
 Get the beta [here](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/stylustheme.css).
+## Major changes
+- Yet again, another games page fix. For some reason, it differs from account to account.
+- Search bar fixes
+-- NOTES
+For some reason, the changes don't affect every single account (I only knew about these recent Roblox site changes because of my alts) <br> 
+so it might be different for you; my point is if there is a change, please create an issue because I might not have caught it. 
 ## Games page changes
 - When hovering over a game tile, the like button turns green. 
 - 11px margin at the games page changed to a 1px margin because it conflicted with the home page. 
@@ -10,6 +16,7 @@ Get the beta [here](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/
 - Featured game fixes to be uniform with the rest of the game tiles. Check out before and after images [here.](https://imgur.com/a/4BaqYto)
 ## Code changes
 - Cleaned up some code and removed some random things. 
+- For the user styles release, I will compress the code as best as possible, so it stays under the 100kb limit. (Over 100kb milestone?)
 ## Notifications
 - Fix button color of friend requests. 
 ## General site changes
@@ -19,7 +26,7 @@ Get the beta [here](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/
 - Removed the "Get More" button from the Avatar Editor page. 
 - Search dropdown changed back to the old dropdown. 
 - Fixed left carousel arrow positioning
-- Join button when first installing roblox background fix
+- Join button when first installing Roblox background fix
 ### Known bugs
 - When on the develop page, for some unknown reason, random things start to glitch out, like the gray highlights over the Games, Catalog, etc., clipping outside of the header when hovering. Some other elements break, such as the box-radius rule on the chat bar. 
 - Different font when searching for friends. 
@@ -29,6 +36,8 @@ Find the original style @ https://userstyles.org/styles/178105/roblox-in-2016.
 ### Find a bug?
 Head on over to the [GitHub page](https://github.com/anthony1x6000/ROBLOX2016stylus) and create an issue!
 There you'll also get faster updates and beta versions of the script! (It'll just be a commit under [stylustheme.css](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/stylustheme.css)). Known bugs could also be fixed in the beta; check out the [beta information here](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/unreleasedChanges.md#beta--116).
+
+
 
 
 
