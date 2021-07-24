@@ -2952,3 +2952,8 @@ html > body > div#chat-container > div > div.chat-header.chat-windows-header {
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
 }
+/*thanks for visiting roblox */ 
+div > div > div > ul > li.step4-of-4 > div.VisitButton.VisitButtonContinueGLI > a:hover {
+    background-color: #3fc679; 
+    border-color: #3fc679;
+}

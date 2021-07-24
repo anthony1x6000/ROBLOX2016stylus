@@ -19,7 +19,7 @@ Get the beta [here](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/
 - Removed the "Get More" button from the Avatar Editor page. 
 - Search dropdown changed back to the old dropdown. 
 - Fixed left carousel arrow positioning
-
+- Join button when first installing roblox background fix
 ### Known bugs
 - When on the develop page, for some unknown reason, random things start to glitch out, like the gray highlights over the Games, Catalog, etc., clipping outside of the header when hovering. Some other elements break, such as the box-radius rule on the chat bar. 
 - Different font when searching for friends. 
