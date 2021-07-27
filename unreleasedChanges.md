@@ -27,6 +27,7 @@ so it might be different for you; my point is if there is a change, please creat
 - Search dropdown changed back to the old dropdown. 
 - Fixed left carousel arrow positioning
 - Join button when first installing Roblox background fix
+- Got rid of the x scroll bar on the friends list
 ### Known bugs
 - When on the develop page, for some unknown reason, random things start to glitch out, like the gray highlights over the Games, Catalog, etc., clipping outside of the header when hovering. Some other elements break, such as the box-radius rule on the chat bar. 
 - Different font when searching for friends. 

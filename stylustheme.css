@@ -2972,3 +2972,7 @@ div > div > div > ul > li.step4-of-4 > div.VisitButton.VisitButtonContinueGLI > 
     background-color: #3fc679; 
     border-color: #3fc679;
 }
+/* scroll bars*/
+.section-content.remove-panel.people-list {
+    overflow-x: hidden;
+}
