@@ -1,10 +1,4 @@
-/* i really want this to be global */
-/* Hey! if you're seeing this check out the github repository for this! Just incase the userstyles goes under and to get early access because userstyles is really REALLY slow.
-https://github.com/anthony1x6000/ROBLOX2016stylus
-It'll be under "stylustheme.css" or another .css file! But will 100% be under releases. 
-Credit to Ologist for originally making this incredible userstyle theme!
-*/
-body
+body 
   
 {
     background-color: #e3e3e3;
@@ -18,7 +12,7 @@ body
 }
 .light-theme .content {
     background-color: #e3e3e3;
-    color: #000000;
+    color: #191919;
 }
 .light-theme .scroller {
     background-color: #ffffff;
@@ -28,17 +22,44 @@ body
     background-color: #ffffff;
 }
 .light-theme .scroller.disabled {
-    background-color: #f0f1f0;
-	opacity: 1;
+    background-color: #ffffff;
 }
 
-/* at some point figure out how to do a custom font. 
-Look here:
-https://web.archive.org/web/20160724012820cs_/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700
-*/ 
+/*start of new font */ 
+
+*
+{
+    font-family: "Source Sans Pro",Arial,Helvetica,sans-serif !important;
+}
+
+/* ~/CSS/Fonts/SourceSansPro-Google.css */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 300;
+src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGMVNtom4QlEDNJaqqqzqdSs.woff) format('woff');
+}
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNHq-FFgoDNV3GTKpHwuvtI.woff) format('woff');
+}
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 600;
+src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGCmgpmuQqK2I-L2S9cF65Ek.woff) format('woff');
+}
+
+/* end of new font */
+
+.light-theme .rbx-header .text-header, .light-theme .rbx-header .text-header:active, .light-theme .rbx-header .text-header:focus, .light-theme .rbx-header .text-header:hover, .light-theme .rbx-header .text-header:link, .light-theme .rbx-header .text-header:visited {
+    color: #ffffff;
+}
 .gotham-font.light-theme .refresh-link, .gotham-font.light-theme .refresh-link-icon, .gotham-font.light-theme .refresh-link-icon:active, .gotham-font.light-theme .refresh-link-icon:hover, .gotham-font.light-theme .refresh-link-icon:link, .gotham-font.light-theme .refresh-link-icon:visited, .gotham-font.light-theme .refresh-link:active, .gotham-font.light-theme .refresh-link:hover, .gotham-font.light-theme .refresh-link:link, .gotham-font.light-theme .refresh-link:visited, .gotham-font.light-theme .see-all-link, .gotham-font.light-theme .see-all-link-icon, .gotham-font.light-theme .see-all-link-icon:active, .gotham-font.light-theme .see-all-link-icon:hover, .gotham-font.light-theme .see-all-link-icon:link, .gotham-font.light-theme .see-all-link-icon:visited, .gotham-font.light-theme .see-all-link:active, .gotham-font.light-theme .see-all-link:hover, .gotham-font.light-theme .see-all-link:link, .gotham-font.light-theme .see-all-link:visited, .gotham-font.light-theme .touch .refresh-link, .gotham-font.light-theme .touch .refresh-link-icon, .gotham-font.light-theme .touch .refresh-link-icon:active, .gotham-font.light-theme .touch .refresh-link-icon:hover, .gotham-font.light-theme .touch .refresh-link-icon:link, .gotham-font.light-theme .touch .refresh-link-icon:visited, .gotham-font.light-theme .touch .refresh-link:active, .gotham-font.light-theme .touch .refresh-link:hover, .gotham-font.light-theme .touch .refresh-link:link, .gotham-font.light-theme .touch .refresh-link:visited, .gotham-font.light-theme .touch .see-all-link, .gotham-font.light-theme .touch .see-all-link-icon, .gotham-font.light-theme .touch .see-all-link-icon:active, .gotham-font.light-theme .touch .see-all-link-icon:hover, .gotham-font.light-theme .touch .see-all-link-icon:link, .gotham-font.light-theme .touch .see-all-link-icon:visited, .gotham-font.light-theme .touch .see-all-link:active, .gotham-font.light-theme .touch .see-all-link:hover, .gotham-font.light-theme .touch .see-all-link:link, .gotham-font.light-theme .touch .see-all-link:visited {
     color: #00a2ff;
-    background-color: rgba(255, 0, 0, 0);
+    background-color: transparent;
     border: none;
 }
 .dark-theme .gotham-font .see-all-link-icon:after, .gotham-font.dark-theme .see-all-link-icon:after, .gotham-font.light-theme .see-all-link-icon:after, .icon-push-right-sm, .light-theme .gotham-font .see-all-link-icon:after {
@@ -47,6 +68,130 @@ https://web.archive.org/web/20160724012820cs_/https://fonts.googleapis.com/css?f
 .light-theme .icon-default-navigation, .light-theme .icon-nav-blog, .light-theme .icon-nav-charactercustomizer, .light-theme .icon-nav-friends, .light-theme .icon-nav-group, .light-theme .icon-nav-home, .light-theme .icon-nav-inventory, .light-theme .icon-nav-menu, .light-theme .icon-nav-message, .light-theme .icon-nav-my-feed, .light-theme .icon-nav-notification-stream, .light-theme .icon-nav-profile, .light-theme .icon-nav-robux, .light-theme .icon-nav-search, .light-theme .icon-nav-search-white, .light-theme .icon-nav-settings, .light-theme .icon-nav-shop, .light-theme .icon-nav-trade {
     background-image: url(https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg);
 }
+
+
+.section .container-header {
+    padding: 0 0;
+}
+
+.light-theme .rbx-header .navbar-search .navbar-search-option a {
+    color: #191919;
+}
+
+.light-theme .rbx-header .navbar-search .navbar-search-option.selected {
+    background-color: #F2F2F2;
+    box-shadow: 4px 0 0 0 #00A2FF inset;
+    color: #393b3d;
+}
+
+.rbx-header .navbar-search .navbar-search-option:hover {
+    box-shadow: 4px 0 0 0 #00A2FF inset;
+}
+
+
+
+ul.details-info:nth-child(1) > li:nth-child(1) > div:nth-child(1) {
+    font-size: 0 !important;
+}
+ul.details-info:nth-child(1) > li:nth-child(1) > div:nth-child(1)::before {
+    content: "Friends";
+    color: #B8B8B8;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3em;
+}
+
+ul.details-info:nth-child(1) > li:nth-child(2) > div:nth-child(1) {
+    font-size: 0 !important;
+}
+ul.details-info:nth-child(1) > li:nth-child(2) > div:nth-child(1)::before {
+    content: "Followers";
+    color: #B8B8B8;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3em;
+}
+
+ul.details-info:nth-child(1) > li:nth-child(3) > div:nth-child(1) {
+    font-size: 0 !important;
+}
+ul.details-info:nth-child(1) > li:nth-child(3) > div:nth-child(1)::before {
+    content: "Following";
+    color: #B8B8B8;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3em;
+}
+
+
+ul.nav:nth-child(2) > li:nth-child(1) > a:nth-child(1) {
+font-size: 0 !important;
+}
+ul.nav:nth-child(2) > li:nth-child(1) > a:nth-child(1)::before {
+    content:"Games";
+    font-size: 16px;
+    font-weight: bold !important;
+}
+
+ul.nav:nth-child(2) > li:nth-child(2) > a:nth-child(1) {
+font-size: 0 !important;
+}
+ul.nav:nth-child(2) > li:nth-child(2) > a:nth-child(1)::before {
+    content:"Catalog";
+    font-size: 16px;
+    font-weight: bold !important;
+}
+
+ul.nav:nth-child(2) > li:nth-child(3) > a:nth-child(1) {
+font-size: 0 !important;
+}
+ul.nav:nth-child(2) > li:nth-child(3) > a:nth-child(1)::before {
+content:"Develop";
+font-size: 16px;
+font-weight: bold !important;
+}
+
+ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1) {
+font-size: 0 !important;
+}
+ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)::before {
+content:"ROBUX";
+    font-size: 16px;
+    font-weight: bold !important;
+}
+
+
+
+
+.rbx-header .rbx-navbar-icon-group li span[class^=rbx-text] {
+    display: inline-block;
+    min-width: 42px;
+    margin: 0 0 0 6px;
+    font-weight: 600;
+}
+
+.profile-about .profile-about-content {
+    padding: 10px !important;
+    display: grid;
+}
+
+
+.game-card-info .playing-counts-label {
+    float: left;
+    display: block !important;
+}
+.game-tile .game-card-container .game-card-info .no-vote, .game-tile .game-card-container .game-card-info .playing-counts-label, .game-tile .game-card-container .game-card-info .vote-percentage-label {
+    padding: 0 12px 3px 0;
+    display: none;
+}
+
+
+.gotham-font .font-body, .gotham-font .text-description, .gotham-font .text-favorite, .gotham-font p {
+    font-size: 16px;
+    font-weight: 300;
+}
+    
+
 
 .avatar-card-fullbody .avatar-card-image, .avatar .avatar-card-image {
     width: 100%;
@@ -57,10 +202,32 @@ https://web.archive.org/web/20160724012820cs_/https://fonts.googleapis.com/css?f
     border: 1px solid #B8B8B8;
 }
 
+.game-card-info .vote-percentage-label {
+    vertical-align: middle;
+    background-image: url(https://images.rbxcdn.com/153fd3209692232cd8087cad74a669b0-games.svg);
+    background-position: 24px -351px;
+    block-size: 18px;
+    background-repeat: no-repeat;
+    background-size: 32px;
+    width: 41px;
+}
+
+.rbx-header .rbx-navbar-icon-group li span[class^=rbx-text] {
+    font-weight: 600;
+}
+
+.profile-header .header-caption .header-title {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    float: left;
+}
+
 
 h1, h2, h3, h4, h5 {
     padding: 8px 0 !important;
 }
+
 
 
 .gotham-font .font-title, .gotham-font .h1, .gotham-font .h2, .gotham-font h1, .gotham-font h2 {
@@ -73,14 +240,15 @@ h1, h2, h3, h4, h5 {
 }
 
 
-
-.gotham-font, .gotham-font .h1, .gotham-font .h2, .gotham-font .h3, .gotham-font .h4, .gotham-font .h5, .gotham-font .h6, .gotham-font h1, .gotham-font h2, .gotham-font h3, .gotham-font h4, .gotham-font h5, .gotham-font h6 {
-    font-family: "Source Sans Pro",Arial,Helvetica,sans-serif !important;
+/*.gotham-font, .gotham-font .h1, .gotham-font .h2, .gotham-font .h3, .gotham-font .h4, .gotham-font .h5, .gotham-font .h6, .gotham-font h1, .gotham-font h2, .gotham-font h3, .gotham-font h4, .gotham-font h5, .gotham-font h6 {
+    font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
 }
 
 .gotham-font .text, .gotham-font body, .gotham-font button, .gotham-font html, .gotham-font input, .gotham-font pre, .gotham-font select, .gotham-font textarea {
-    font-family: "Source Sans Pro",Arial,Helvetica,sans-serif !important;
-}
+    font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
+}*/
+
+
 
 .profile-header .header-caption .header-details .details-info li
 {
@@ -91,45 +259,36 @@ padding: 0 20px;
 
 .profile-header .header-caption .header-details .details-info li .font-header-2
 {
-font-size: 20px;
+font-size: 24px;
 }
 
-
-
-
-.gotham-font .font-caption-header, .gotham-font .font-caption-header:active, .gotham-font .font-caption-header:focus, .gotham-font .font-caption-header:hover, .gotham-font .font-caption-header:link, .gotham-font .font-caption-header:visited, .gotham-font .small.font-caption-header, .gotham-font .small.font-caption-header:active, .gotham-font .small.font-caption-header:focus, .gotham-font .small.font-caption-header:hover, .gotham-font .small.font-caption-header:link, .gotham-font .small.font-caption-header:visited, .gotham-font .small.text-error, .gotham-font .small.text-error:active, .gotham-font .small.text-error:focus, .gotham-font .small.text-error:hover, .gotham-font .small.text-error:link, .gotham-font .small.text-error:visited, .gotham-font .small.text-pastname, .gotham-font .small.text-pastname:active, .gotham-font .small.text-pastname:focus, .gotham-font .small.text-pastname:hover, .gotham-font .small.text-pastname:link, .gotham-font .small.text-pastname:visited, .gotham-font .small.text-report, .gotham-font .small.text-report-ads, .gotham-font .small.text-report-ads:active, .gotham-font .small.text-report-ads:focus, .gotham-font .small.text-report-ads:hover, .gotham-font .small.text-report-ads:link, .gotham-font .small.text-report-ads:visited, .gotham-font .small.text-report:active, .gotham-font .small.text-report:focus, .gotham-font .small.text-report:hover, .gotham-font .small.text-report:link, .gotham-font .small.text-report:visited, .gotham-font .text-error, .gotham-font .text-error:active, .gotham-font .text-error:focus, .gotham-font .text-error:hover, .gotham-font .text-error:link, .gotham-font .text-error:visited, .gotham-font .text-pastname, .gotham-font .text-pastname:active, .gotham-font .text-pastname:focus, .gotham-font .text-pastname:hover, .gotham-font .text-pastname:link, .gotham-font .text-pastname:visited, .gotham-font .text-report, .gotham-font .text-report-ads, .gotham-font .text-report-ads:active, .gotham-font .text-report-ads:focus, .gotham-font .text-report-ads:hover, .gotham-font .text-report-ads:link, .gotham-font .text-report-ads:visited, .gotham-font .text-report:active, .gotham-font .text-report:focus, .gotham-font .text-report:hover, .gotham-font .text-report:link, .gotham-font .text-report:visited {
-    font-size: 16px;
-font-weight: 400;
-}
 
 
 
 .gotham-font .font-bold, .gotham-font .font-bold:active, .gotham-font .font-bold:hover, .gotham-font .font-bold:link, .gotham-font .font-bold:visited, .gotham-font .font-header-2, .gotham-font .font-header-2:active, .gotham-font .font-header-2:hover, .gotham-font .font-header-2:link, .gotham-font .font-header-2:visited, .gotham-font .h5, .gotham-font .h5:active, .gotham-font .h5:hover, .gotham-font .h5:link, .gotham-font .h5:visited, .gotham-font .h6, .gotham-font .h6:active, .gotham-font .h6:hover, .gotham-font .h6:link, .gotham-font .h6:visited, .gotham-font .text-footer-nav, .gotham-font .text-footer-nav:active, .gotham-font .text-footer-nav:hover, .gotham-font .text-footer-nav:link, .gotham-font .text-footer-nav:visited, .gotham-font .text-label, .gotham-font .text-label:active, .gotham-font .text-label:hover, .gotham-font .text-label:link, .gotham-font .text-label:visited, .gotham-font .text-lead, .gotham-font .text-lead:active, .gotham-font .text-lead:hover, .gotham-font .text-lead:link, .gotham-font .text-lead:visited, .gotham-font .text-name, .gotham-font .text-name:active, .gotham-font .text-name:hover, .gotham-font .text-name:link, .gotham-font .text-name:visited, .gotham-font .text-subject, .gotham-font .text-subject:active, .gotham-font .text-subject:hover, .gotham-font .text-subject:link, .gotham-font .text-subject:visited, .gotham-font .text-warning, .gotham-font .text-warning:active, .gotham-font .text-warning:hover, .gotham-font .text-warning:link, .gotham-font .text-warning:visited, .gotham-font h5, .gotham-font h5:active, .gotham-font h5:hover, .gotham-font h5:link, .gotham-font h5:visited, .gotham-font h6, .gotham-font h6:active, .gotham-font h6:hover, .gotham-font h6:link, .gotham-font h6:visited, .gotham-font strong, .gotham-font strong:active, .gotham-font strong:hover, .gotham-font strong:link, .gotham-font strong:visited {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
-
-
-.filter-hidden {
-    height: auto;
-    visibility: visible;
+.light-theme .text, .light-theme .text-date-hint, .light-theme .text-default, .light-theme .text-description, .light-theme .text-footer, .light-theme .text-info, .light-theme .text-label, .light-theme .text-secondary, .light-theme p {
+    color: #000000;
 }
-
 
 
 .gotham-font .font-caption-body, .gotham-font .font-caption-body:active, .gotham-font .font-caption-body:focus, .gotham-font .font-caption-body:link, .gotham-font .font-caption-body:visited, .gotham-font .tooltip .tooltip-inner, .gotham-font .tooltip .tooltip-inner:active, .gotham-font .tooltip .tooltip-inner:focus, .gotham-font .tooltip .tooltip-inner:link, .gotham-font .tooltip .tooltip-inner:visited {
     font-size: 16px;
     font-weight: 300;
 }
-.gotham-font .font-caption-header, .gotham-font .font-caption-header:active, .gotham-font .font-caption-header:focus, .gotham-font .font-caption-header:hover, .gotham-font .font-caption-header:link, .gotham-font .font-caption-header:visited, .gotham-font .small.font-caption-header, .gotham-font .small.font-caption-header:active, .gotham-font .small.font-caption-header:focus, .gotham-font .small.font-caption-header:hover, .gotham-font .small.font-caption-header:link, .gotham-font .small.font-caption-header:visited, .gotham-font .small.text-error, .gotham-font .small.text-error:active, .gotham-font .small.text-error:focus, .gotham-font .small.text-error:hover, .gotham-font .small.text-error:link, .gotham-font .small.text-error:visited, .gotham-font .small.text-pastname, .gotham-font .small.text-pastname:active, .gotham-font .small.text-pastname:focus, .gotham-font .small.text-pastname:hover, .gotham-font .small.text-pastname:link, .gotham-font .small.text-pastname:visited, .gotham-font .small.text-report, .gotham-font .small.text-report-ads, .gotham-font .small.text-report-ads:active, .gotham-font .small.text-report-ads:focus, .gotham-font .small.text-report-ads:hover, .gotham-font .small.text-report-ads:link, .gotham-font .small.text-report-ads:visited, .gotham-font .small.text-report:active, .gotham-font .small.text-report:focus, .gotham-font .small.text-report:hover, .gotham-font .small.text-report:link, .gotham-font .small.text-report:visited, .gotham-font .text-error, .gotham-font .text-error:active, .gotham-font .text-error:focus, .gotham-font .text-error:hover, .gotham-font .text-error:link, .gotham-font .text-error:visited, .gotham-font .text-pastname, .gotham-font .text-pastname:active, .gotham-font .text-pastname:focus, .gotham-font .text-pastname:hover, .gotham-font .text-pastname:link, .gotham-font .text-pastname:visited, .gotham-font .text-report, .gotham-font .text-report-ads, .gotham-font .text-report-ads:active, .gotham-font .text-report-ads:focus, .gotham-font .text-report-ads:hover, .gotham-font .text-report-ads:link, .gotham-font .text-report-ads:visited, .gotham-font .text-report:active, .gotham-font .text-report:focus, .gotham-font .text-report:hover, .gotham-font .text-report:link, .gotham-font .text-report:visited {
-    font-size: 16px;
-    font-weight: 400;
-}
+
 .gotham-font div {
     line-height: 1.2em;
 }
 
+
+.filter-hidden {
+    height: auto;
+    visibility: visible;
+}
 
 
 .light-theme .rbx-tab:hover {
@@ -205,7 +364,7 @@ visibility: hidden;
     color: #ffffff;
     background-color: #00A2FF;
     border: 1px solid transparent;
-    margin: 12px;
+margin: 12px;
 }
 
 .light-theme .dialogs .dialog-container .dialog-message-container .indicated-message-bubble {
@@ -233,15 +392,24 @@ div.home-header-content a:after {
 div.game-card-info, span.playing-counts-label:before {
 content: title;
 }
-div.game-card-info, span.playing-counts-label:after {
-content: " Playing";
-}
+
+
+
+/*div.game-card-container.ng-scope, a.game-card-link.ng-scope, div.game-card-info:after {
+content: "\00000a By ";
+}*/
+
 
 
 .light-theme .btn-control-xs:visited, .light-theme .btn-control-xs:hover {
     color: rgba(0,0,0,.6) !important;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2) !important;
 }
+
+/*.light-theme .btn-control-xs {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2) !important;
+}*/
+
 
 
 .dark-theme .store-card, .light-theme .store-card {
@@ -280,6 +448,17 @@ box-shadow: 0 1px 6px 0 rgba(25,25,25,0.45);
 }
 
 
+.light-theme .content {
+    color: #000000;
+}
+
+
+.light-theme .text-lead, .light-theme .text-lead:active, .light-theme .text-lead:hover, .light-theme .text-lead:link, .light-theme .text-lead:visited, .light-theme .text-title, .light-theme .text-title:active, .light-theme .text-title:hover, .light-theme .text-title:link, .light-theme .text-title:visited {
+    color: #191919;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+}
+
 
 .store-card .store-card-caption {
     padding: 0 6px 6px;
@@ -307,10 +486,45 @@ background-color: #3FC679;
 }
 
 
-.item-card-container .item-card-name {
+
+/*.light-theme .item-card-container {
+    background-color: transparent !important;
+}
+.light-theme .text-link, .light-theme .text-link.small, .light-theme .text-link.small:active, .light-theme .text-link.small:link, .light-theme .text-link.small:visited, .light-theme .text-link.xsmall, .light-theme .text-link.xsmall:active, .light-theme .text-link.xsmall:link, .light-theme .text-link.xsmall:visited, .light-theme .text-link.xxsmall, .light-theme .text-link.xxsmall:active, .light-theme .text-link.xxsmall:link, .light-theme .text-link.xxsmall:visited, .light-theme .text-link:active, .light-theme .text-link:hover, .light-theme .text-link:link, .light-theme .text-link:visited, .light-theme .text-name, .light-theme .text-name.small, .light-theme .text-name.small:active, .light-theme .text-name.small:link, .light-theme .text-name.small:visited, .light-theme .text-name.xsmall, .light-theme .text-name.xsmall:active, .light-theme .text-name.xsmall:link, .light-theme .text-name.xsmall:visited, .light-theme .text-name.xxsmall, .light-theme .text-name.xxsmall:active, .light-theme .text-name.xxsmall:link, .light-theme .text-name.xxsmall:visited, .light-theme .text-name:active, .light-theme .text-name:hover, .light-theme .text-name:link, .light-theme .text-name:visited, .light-theme .vlist .list-item .list-body .list-content a, .light-theme .vlist .list-item .list-body .list-content a.small, .light-theme .vlist .list-item .list-body .list-content a.small:active, .light-theme .vlist .list-item .list-body .list-content a.small:link, .light-theme .vlist .list-item .list-body .list-content a.small:visited, .light-theme .vlist .list-item .list-body .list-content a.xsmall, .light-theme .vlist .list-item .list-body .list-content a.xsmall:active, .light-theme .vlist .list-item .list-body .list-content a.xsmall:link, .light-theme .vlist .list-item .list-body .list-content a.xsmall:visited, .light-theme .vlist .list-item .list-body .list-content a.xxsmall, .light-theme .vlist .list-item .list-body .list-content a.xxsmall:active, .light-theme .vlist .list-item .list-body .list-content a.xxsmall:link, .light-theme .vlist .list-item .list-body .list-content a.xxsmall:visited, .light-theme .vlist .list-item .list-body .list-content a:active, .light-theme .vlist .list-item .list-body .list-content a:hover, .light-theme .vlist .list-item .list-body .list-content a:link, .light-theme .vlist .list-item .list-body .list-content a:visited, .vlist .list-item .list-body .list-content .light-theme a, .vlist .list-item .list-body .list-content .light-theme a.small, .vlist .list-item .list-body .list-content .light-theme a.small:active, .vlist .list-item .list-body .list-content .light-theme a.small:link, .vlist .list-item .list-body .list-content .light-theme a.small:visited, .vlist .list-item .list-body .list-content .light-theme a.xsmall, .vlist .list-item .list-body .list-content .light-theme a.xsmall:active, .vlist .list-item .list-body .list-content .light-theme a.xsmall:link, .vlist .list-item .list-body .list-content .light-theme a.xsmall:visited, .vlist .list-item .list-body .list-content .light-theme a.xxsmall, .vlist .list-item .list-body .list-content .light-theme a.xxsmall:active, .vlist .list-item .list-body .list-content .light-theme a.xxsmall:link, .vlist .list-item .list-body .list-content .light-theme a.xxsmall:visited, .vlist .list-item .list-body .list-content .light-theme a:active, .vlist .list-item .list-body .list-content .light-theme a:hover, .vlist .list-item .list-body .list-content .light-theme a:link, .vlist .list-item .list-body .list-content .light-theme a:visited {
+    color: #00a2ff;
+    background-color: transparent !important;
+}
+.item-card-container.recommended-item-link .item-card-link .item-card-name.recommended-name.ng-binding {
+    background-color: transparent !important;
+}*/
+
+
+/*.item-card-container .item-card-name {
     white-space: nowrap;
+}*/
+
+
+.dark-theme .game-card-info .info-label.icon-playing-counts-gray, .dark-theme .game-card-info .info-label.icon-playing-counts-gray-white-70, .icon-currently-playing-sm, .light-theme .game-card-info .info-label.icon-playing-counts-gray, .light-theme .game-card-info .info-label.icon-playing-counts-gray-white-70 {
+    background-position: 0 -496px;
+    visibility: hidden;
 }
 
+
+
+
+/*.hlist .list-item a {
+    background-color: transparent !important;
+}
+thumbnail-2d .thumbnail-2d-container img {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff !important;
+}
+.item-card-container .icon-robux-16x16 {
+    background-position: 0 -20px;
+    margin-bottom: 7px;
+    margin-right: -2px;
+}*/
 .light-theme .item-card-container {
     background-color: white !important;
 }
@@ -319,53 +533,14 @@ background-color: #3FC679;
 }
 
 
-/* search bar */ 
 
-.rbx-header .navbar-search .input-field {
-    border-radius: 2px;   
-}
-/* search results & bar */ 
-.light-theme .rbx-header .navbar-search .new-dropdown-menu {
-    width: 475px !important;
-    margin-left: 6px;
-    margin-top: 0px;
-/*    width: calc(100% + 12px); */ 
-    background-color: #fff;
-    box-shadow: 0 0 8px 0 rgba(0,0,0,.1);
-    border-radius: 3px;
-}
-#navbar-search-clear-btn {
-    visibility: hidden;
-}
-.new-navbar-search-anchor {
-    max-height: 43px !important;
-}
 
-span.navbar-list-option-icon {
-    visibility: hidden;
-}
 
-span.navbar-list-option-icon::before {
-    visibility: visible;
-      content: "Search";
-    font-size: 16px;
-}
-.new-navbar-search-anchor > .navbar-list-option-text {
-    margin-left: 28px;
-}
-.new-navbar-search-anchor > .navbar-list-option-suffix, span.navbar-list-option-icon {
-    color: #606162 !important;
-    opacity: 1 !important;
-}
-div > ul > li > a.new-navbar-search-anchor:hover {
-    background-color: #f3f2f3;
-} 
-li.new-selected > a {
-background-color: #bcbebf !important;
-}
-.light-theme .rbx-header .navbar-search .new-dropdown-menu li {
-    border-bottom: 0px;
-}
+
+
+
+
+
 /*Premium Medium (OBC)*/
 .profile-header .header-title h2, .profile-header .header-title span[class^="icon"] {
     float: right;
@@ -419,14 +594,14 @@ background-color: #bcbebf !important;
 }
 
 .btr-profile-favorites .btr-creator-link-container {
-	line-height: 14px;
+line-height: 14px;
 }
 
 .btr-profile-favorites .card-item .btr-creator-link:any-link {
-	display: inline-block;
-	vertical-align: bottom;
-	max-width: calc(100% - 22px);
-	font-size: 12px;
+display: inline-block;
+vertical-align: bottom;
+max-width: calc(100% - 22px);
+font-size: 12px;
 }
 
 
@@ -463,21 +638,19 @@ background-color: #bcbebf !important;
     background-image: url(https://svgur.com/i/GuZ.svg);
     background-size: 56px;
 }
-  #nav-robux-icon .icon-robux-28x28
-  {
+#nav-robux-icon .icon-robux-28x28 {
     background-position: 0 -28px;
-    background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/80a1e55d792875c92f6a4c5e7b4ef949fa17c157/images/robux/icons.svg);
-  }
+    background-image: url(https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg);
+}
 
 .light-theme .icon-default-economy-28x28, .light-theme .icon-robux-28x28, .light-theme .icon-robux-gold-28x28, .light-theme .icon-robux-white:hover {
     background-size: 56px;
 }
 
 .gotham-font.light-theme .see-all-link-icon {
-    padding: 1px 4px;
+    padding: 4px 4px !important;
     font-size: 14px !important;
-    font-weight: normal !important;
-    min-width: 100px; 
+    font-weight: bold !important;
 }
 
 .see-all-link-icon:hover, .touch .see-all-link-icon:hover {
@@ -510,6 +683,8 @@ background-color: #bcbebf !important;
 /*img.avatar-card-image:scr {
     img.scr: url(https://www.dictionary.com/e/wp-content/uploads/2019/05/1000x700-LOL-1.jpg);
 }*/
+
+
 
 .light-theme .item-card-container .item-card-price {
     margin-top: 0 !important;
@@ -561,7 +736,7 @@ background-color: #bcbebf !important;
 
 
 /*.gotham-font .text-link, .gotham-font .vlist .list-item .list-body .list-content a, .vlist .list-item .list-body .list-content .gotham-font a {
-	float: right;
+float: right;
 }*/
 
 
@@ -586,16 +761,15 @@ background-color: #bcbebf !important;
 }
 
 .light-theme .icon-default-logo-r, .light-theme .icon-logo-r, .light-theme .icon-logo-r-95 {
-    background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/e7e1749ce9770fc92c27226b20627243cd8291ad/images/logo_R2016.svg);
+    background-image: url(https://i.ya-webdesign.com/images/roblox-logo-png-2.png);
 }
 
 .dark-theme .icon-default-logo-r, .dark-theme .icon-logo-r, .dark-theme .icon-logo-r-95, .icon-default-logo-r, .icon-logo-r, .icon-logo-r-95 {
-    background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/e7e1749ce9770fc92c27226b20627243cd8291ad/images/logo_R2016.svg) !important;
+    background-image: url(https://i.ya-webdesign.com/images/roblox-logo-png-2.png) !important;
 }
 
 .light-theme .icon-default-logo, .light-theme .icon-logo {
-    background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/15ff06a608df59433976333e28ef66ff6f114bf3/images/roblox_logo2016.svg) !important;
-    background-size: 118px 30px;
+    background-image: url(https://t5.rbxcdn.com/c9749ac59c201199fc5ec1610dcf7d52) !important;
 }
 
 .icon-logo {
@@ -697,6 +871,12 @@ padding: 4px 4px !important;
     border-color: #fff;
 }
 
+
+
+.gotham-font.light-theme .refresh-link-icon {
+}
+
+
 .light-theme .item-card-container .item-card-price {
     bottom: auto !important;
 }
@@ -707,9 +887,9 @@ padding: 4px 4px !important;
     height: 100%;
 }
 
-/*
+
 .section-content.remove-panel.people-list .hlist .list-item.friend.ng-scope .ng-scope .avatar-container .text-link.friend-link.ng-isolate-scope .avatar-card-link .avatar-card-image.ng-isolate-scope {
-} */
+}
 
 .game-card-container thumbnail-2d .game-card-thumb, .game-card-thumb-container .game-card-thumb {
     border-top-left-radius: 3px;
@@ -733,10 +913,25 @@ thumbnail-2d .thumbnail-2d-container[thumbnail-type=avatarHeadshot] {
 
 
 
-
+.dark-theme .game-card-container, .light-theme .game-card-container {
+    box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
+}
 .dark-theme .game-card-container:hover, .light-theme .game-card-container:hover {
     box-shadow: 0 1px 6px 0 rgba(25,25,25,0.45);
+    background-position: -16px -351px !important;
+    
 }
+
+div.game-card-container:nth-child(1):hover > a:nth-child(1) > div:nth-child(3) > span:nth-child(1) {
+    background-position: -16px -351px !important;
+}
+
+div.game-card-info, span.playing-counts-label:after {
+    content: " Playing";
+}
+
+
+
 
 .game-card-thumb-container:before {
     border-radius: 8px;
@@ -764,7 +959,7 @@ a:hover {
 
 
 .light-theme .btn-secondary-md, .light-theme .btn-secondary-md:visited {
-    color: #fff;
+    color: #ffffff !important;
 }
 
 
@@ -832,12 +1027,8 @@ height: 100%;
 .light-theme .game-card-info .info-label {
     padding-right: 0;
     margin-right: -2px;
-}
-
-
-
-.light-theme .text, .light-theme .text-date-hint, .light-theme .text-default, .light-theme .text-description, .light-theme .text-footer, .light-theme .text-info, .light-theme .text-label, .light-theme .text-secondary, .light-theme p {
-    color: rgb(25, 25, 25);
+    margin-top: -2px;
+    white-space: pre-wrap;
 }
 
 
@@ -894,6 +1085,8 @@ color: #ffffff !important;
     border-bottom-color: #ffffff;
 }
 
+.light-theme .notification-stream-header {
+}
 
 
 .notification-action-container {
@@ -968,191 +1161,17 @@ border-top: hidden;
 }
 .btn-common-play-game-lg span[class^=icon-], .btn-common-play-game-lg span[class^=icon-]:hover, a.btn-common-play-game-lg span[class^=icon-], a.btn-common-play-game-lg span[class^=icon-]:hover {
     visibility: hidden;
-    background-position: 0 -35px;
-    background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/80a1e55d792875c92f6a4c5e7b4ef949fa17c157/images/robux/icons.svg)
-}
-
-/* Play button changes */
-
-.icon-common-play:after {
-    visibility: visible;
-    position: relative;
-    top: 8px;
-    left: -5px;
-    content: "Play";
-    font-size: 24px;
-}
-/* paid games thing working */ 
-.btn-text {
-    font-size: 23px;
-    position: relative;
-
-} 
-/* paid games thing - ref https://web.archive.org/web/20160402134243/http://www.roblox.com:80/games/388168427/ZOMBIE-UNIVERSE-BETA-TEST-SUNDAY
-I think this works
-*/
-.btn-text:before {
-    position: relative;
-    content: "Buy Access for ";
-}.btn-text:after {
-    position: relative;
-    content: " ROBUX";
-
-}
-.btn-text {
-    font-size: large;
-    position: relative;
-    text-align: center !important;
-  margin-left: -43.3px;
-  margin-right: auto;
-    overflow: hidden;
-} 
-div.game-details-play-button-container > button {
-    width: 85% !important;
-}
-
-/* avatar page try it on */
-.thumbnail-holder .try-it-on {
-    width: 100px; 
-    
-}
-
-/* fixing the color of the thumbnail arrow things */ 
-
-.carousel-controls.carousel-controls-left.btn-primary-md.btn-min-width {
-    background-color: rgba(25,25,25,0.3);
-    border: 2px solid #fff;
-    border-color: #fff;
-
-    
-}
-
-
-
-.carousel-controls.carousel-controls-right.btn-primary-md.btn-min-width {
-    background-color: rgba(25,25,25,0.3);
-    border: 2px solid #fff;
-    border-color: #fff;
-
-}
-
-.icon-additem, .icon-arrow-right-blue, .icon-audio, .icon-back, .icon-bigplay, .icon-bigplay-fill, .icon-bigstop, .icon-bigstop-fill, .icon-brokenpage, .icon-carousel-left, .icon-carousel-right, .icon-chat-gray, .icon-check-selection, .icon-checkmark, .icon-checkmark-blue, .icon-checkmark-on, .icon-checkmark-white, .icon-checkmark-white-bold, .icon-clock, .icon-close, .icon-close-white, .icon-copy, .icon-default-generic, .icon-down, .icon-edit, .icon-female, .icon-female-white, .icon-first-gray, .icon-first-page, .icon-games-carousel-left, .icon-games-carousel-left.hover, .icon-games-carousel-right, .icon-games-carousel-right.hover, .icon-globe, .icon-grid, .icon-home, .icon-inactive, .icon-last-gray, .icon-last-page, .icon-left, .icon-left-gray, .icon-locked, .icon-logo-apple, .icon-logo-win, .icon-male, .icon-male-white, .icon-menu, .icon-menu-black, .icon-minus, .icon-more, .icon-more-gray-vertical, .icon-moreinfo, .icon-next, .icon-notifications, .icon-page, .icon-password-hide, .icon-password-hide-white, .icon-password-show, .icon-password-show-white, .icon-pastname, .icon-pause, .icon-pause-fill, .icon-play, .icon-playgame, .icon-plus, .icon-regenerate, .icon-right, .icon-right-gray, .icon-sandglass, .icon-search, .icon-settings, .icon-slideshow, .icon-sorting, .icon-trash-bin, .icon-unlocked, .icon-up, .icon-viewdetails {
-    background-size: auto;
-}
-.icon-carousel-right {
-    background-position: 0 -896px;
-}
-.icon-carousel-left {
-    background-position: 0 -924px;
-}
-button.carousel-controls.carousel-controls-left {
-    padding-left: 7px;
-}
-
-
-.carousel-controls.carousel-controls-right.btn-primary-md.btn-min-width {
-    background-color: rgba(25,25,25,0.3);
-    border-color: #fff;   
-}
-/* Servers header tab selection thingy changes 
-Unrelated note but remember when games had comments? That was pretty cool.
-*/ 
-.rbx-tab-heading {
-    height: 45px;
-}
-.text-lead {
-    position: relative;
-    top: 3px;
-}
-/* refresh ~~blue~~ WHITE (I was looking at 2015 not 2016 but personally I like 2015 better) - reference for all of this is at https://web.archive.org/web/20150627045216/https://www.roblox.com/games/9689581/Roblox-High-School#!/about*/ 
-.btn-min-width.btn-control-xs.btn-more.rbx-refresh.refresh-link-icon {
-background-color: #ffffff;
-color: black;
-border: 1px solid #B8B8B8;
-padding: 4px 4px !important;
-}
-.btn-min-width.btn-control-xs.btn-more.rbx-refresh.refresh-link-icon:hover {
-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2) !important;
-background-color: white !important;
-color: black !important;
-text-decoration: none !important;
-padding: 4px 4px !important;
-}
-
-/*meme */ 
-/* random thing I did to the ad */
-.ad {
-    background-image: url("https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/eseg.jpg?raw=true");
-    background-repeat: repeat;
-    background-size: 300px;
-    background-position: -25px;
-}
-
-/*end of meme*/ 
-/* maybe this will fix see more being short I probably did something to mess it up */
-.btn-control-sm {
-    width: 100%;
-}
-/* changing top bar stuff I FOUND OUT HOW! Not really I just looked at Ologist's code and saw that he figured it out so I'm shamelessly stealing it */ 
-ul.nav:nth-child(2) > li:nth-child(1) > a:nth-child(1)
-  {
-    font-size: 0 !important;
-  }
-
-  ul.nav:nth-child(2) > li:nth-child(1) > a:nth-child(1)::before
-  {
-    content: "Games";
-    font-size: 15px;
-      
-  }
-
-ul.nav:nth-child(2) > li:nth-child(2) > a:nth-child(1)
-  {
-    font-size: 0 !important;
-  }
-
-  ul.nav:nth-child(2) > li:nth-child(2) > a:nth-child(1)::before
-  {
-    content: "Catalog";
-    font-size: 15px;
-  }
-
-ul.nav:nth-child(2) > li:nth-child(3) > a:nth-child(1)
-  {
-    font-size: 0 !important;
-  }
-
-  ul.nav:nth-child(2) > li:nth-child(3) > a:nth-child(1)::before
-  {
-    content: "Develop";
-    font-size: 15px;
-  }
-
-ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)
-  {
-    font-size: 0 !important;
-  }
-
-  ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)::before
-  {
-    content: "ROBUX";
-    font-size: 15px;
-  }
-
-
-/* making the gray highlight thing smaller */
-
-.light-theme .rbx-header .text-header, .light-theme .rbx-header .text-header:active, .light-theme .rbx-header .text-header:focus, .light-theme .rbx-header .text-header:hover, .light-theme .rbx-header .text-header:link, .light-theme .rbx-header .text-header:visited {
-    height: 31px;
-    color: #ffffff;
 }
 
 
 /*.profile-header .header-caption .header-details .details-info li .font-header-2:before {
     content: "\A \A";
-	white-space: pre;
+white-space: pre;
 }*/
 
+.light-theme .btn-secondary-xs {
+    border-radius: 3px !important;
+}
 
 .profile-header .header-caption .header-title h2, .profile-header .header-caption .header-title span[class^="icon"] {
     float: right !important;
@@ -1279,7 +1298,7 @@ box-shadow: none !important;
 
 
 .profile-container .asset-item .item-name:hover {
-	color: #00A2FF !important;
+color: #00A2FF !important;
     text-decoration: none !important;
 }
 
@@ -1344,11 +1363,9 @@ margin-top: -2px;
 }*/
 
 
-.gotham-font .font-caption-header, .gotham-font .font-caption-header:active, .gotham-font .font-caption-header:focus, .gotham-font .font-caption-header:hover, .gotham-font .font-caption-header:link, .gotham-font .font-caption-header:visited, .gotham-font .small.font-caption-header, .gotham-font .small.font-caption-header:active, .gotham-font .small.font-caption-header:focus, .gotham-font .small.font-caption-header:hover, .gotham-font .small.font-caption-header:link, .gotham-font .small.font-caption-header:visited, .gotham-font .small.text-error, .gotham-font .small.text-error:active, .gotham-font .small.text-error:focus, .gotham-font .small.text-error:hover, .gotham-font .small.text-error:link, .gotham-font .small.text-error:visited, .gotham-font .small.text-pastname, .gotham-font .small.text-pastname:active, .gotham-font .small.text-pastname:focus, .gotham-font .small.text-pastname:hover, .gotham-font .small.text-pastname:link, .gotham-font .small.text-pastname:visited, .gotham-font .small.text-report, .gotham-font .small.text-report-ads, .gotham-font .small.text-report-ads:active, .gotham-font .small.text-report-ads:focus, .gotham-font .small.text-report-ads:hover, .gotham-font .small.text-report-ads:link, .gotham-font .small.text-report-ads:visited, .gotham-font .small.text-report:active, .gotham-font .small.text-report:focus, .gotham-font .small.text-report:hover, .gotham-font .small.text-report:link, .gotham-font .small.text-report:visited, .gotham-font .text-error, .gotham-font .text-error:active, .gotham-font .text-error:focus, .gotham-font .text-error:hover, .gotham-font .text-error:link, .gotham-font .text-error:visited, .gotham-font .text-pastname, .gotham-font .text-pastname:active, .gotham-font .text-pastname:focus, .gotham-font .text-pastname:hover, .gotham-font .text-pastname:link, .gotham-font .text-pastname:visited, .gotham-font .text-report, .gotham-font .text-report-ads, .gotham-font .text-report-ads:active, .gotham-font .text-report-ads:focus, .gotham-font .text-report-ads:hover, .gotham-font .text-report-ads:link, .gotham-font .text-report-ads:visited, .gotham-font .text-report:active, .gotham-font .text-report:focus, .gotham-font .text-report:hover, .gotham-font .text-report:link, .gotham-font .text-report:visited {
-    font-size: 16px;
-    font-weight: 400;
+.game-card-container .game-card-name {
+    font-weight: 300;
 }
-
 
 
 .light-theme .text-label, .light-theme.text-label:hover, .light-theme .text-label:focus {
@@ -1356,6 +1373,14 @@ margin-top: -2px;
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 4px;
+}
+
+.game-card-info .info-label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #757575 !important;
 }
 
 
@@ -1396,9 +1421,11 @@ background-color: #44b4f8;
 
 .light-theme .game-card-info {
     position: absolute;
-    bottom: auto !important;
+    bottom: 6px;
     width: 100%;
-    margin: 0 6px;
+    margin: 2px 6px !important;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .game-cards .game-card {
@@ -1409,7 +1436,7 @@ background-color: #44b4f8;
     position: relative;
     border-radius: 3px;
     float: left;
-    height: 200px;
+    height: 90%;
     margin: 0 auto;
     padding: 0;
     text-align: left;
@@ -1417,206 +1444,13 @@ background-color: #44b4f8;
 }
 
 
-.game-card-link {
-    height: 100%;
-    border-radius: 3px; 
-}
-
-/* fixing the game tiles to be the old ones | GAMES PAGE CARD FIX */
-.thumb-container img {
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    transition: opacity .5s ease;
-    opacity: 1;
-}
-.hover-game-tile {
-    height: 100%;
-    max-height: 300px;
-    width: 150px;
-    margin-right: 14px;
-    transition: all .0s cubic-bezier(0,0,0,1);
-}
-
-/* game tile shadows */ 
-.light-theme .hover-game-tile.visible-tile:hover .featured-game-container {
-    box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.75);
-}
-.dark-theme .game-card-container, .light-theme .game-card-container {
-    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.60);
-}
-.dark-theme .game-card-container, .light-theme .game-card-container:hover {
-    box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.75);
-}
-.hover-game-tile .featured-game-container .featured-game-icon-container .brief-game-icon {
-    height: 150px;
-    width: 150px;
-    border-top-left-radius: 3px !important;
-    border-top-right-radius: 3px !important;
-    transition: all .0s cubic-bezier(0,0,0,1) !important;
-}
-.hover-game-tile .featured-game-container{transition: all 0s cubic-bezier(0,0,0,1) !important;}
-div > div.horizontally-scrollable > ul > li.list-item.game-card.game-tile > div.game-card-container {
-    margin-left: 11px;
-}
-/* used to be margin-left: 11px; ^^*/ 
-
-
-.light-theme .game-card-container .game-card-name {
-    padding: 0 6px;
-    margin: 6px 0;
-    width: 150px;
-}
-.game-card-name, .game-name-title {
-    height: 20px;
-}
-.hover-game-tile.visible-tile:hover .featured-game-container {
-    position: relative;
-    overflow: hidden;
-    max-height: 240px;
-    transition-duration: 0s;
-    transition-delay: 0s;
-}
-.scroller.next, .scroller.prev {
-    height: 242px !important;
-}
-
-.hover-game-tile.visible-tile:hover {
-    width: 345px;
-    z-index: 4;
-    margin: 0px 24px 0 0px;
-    transition-duration: .15s;
-    transition-delay: .15s;
-}
-.hover-game-tile.visible-tile:hover.first-tile, .hover-game-tile.visible-tile:hover {
-    margin-left: 0px !important;
-    margin-right: 14px !important;
-}
-.list-item.hover-game-tile.first-tile.visible-tile {
-    margin-left: 11px !important;
-}
-.game-card-native-ad {
-    position: relative; 
-    overflow: hidden;
-    top: 30px;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-}
-.hover-game-tile .featured-game-container .thumb-container {
-    position: absolute;
-    height: 194px;
-    width: 0%; /* chng val 4 smth */
-    overflow: hidden;
-    border-radius: 3px 3px 0 0;
-    opacity: 0;
-    transition: opacity .0s ease-out;
-    
-}
-
-
-
-/* point of 100% removing the new game cards */
-.list-item.hover-game-tile.visible-tile {
-    width: 150px;
-}
-.hover-game-tile.visible-tile:hover .featured-game-container .info-container {
-    width: 315px;
-    margin-left: 0px;
-    margin-right: 0px;
-    transition: width 0s cubic-bezier(0,0,0,1) .0s,margin .0s cubic-bezier(0,0,0,1) .0s;
-}
-
-.thumbnail-2d-container.brief-game-icon {
-    border-radius: 0px !important;
-}
-.hover-game-tile.visible-tile:hover .featured-game-container .featured-game-icon-container { /* fixing the game icon going to the right*/ 
-    margin-left: 0px !important;
-    
-}
-
-/* Stuff for my browser that hopefully won't mess something up */ 
-
-.grid-item-container.game-card-container {
-    width: 150px;
-} /* cant seem to close the gap between the game cards 
-https://i.ibb.co/NVQQkd6/image.png
-Got any ideas? (I tried margin-... w/ !important and it didnt work)
-*/
-.game-grid {
-    margin-right: 78px;
-} /* This did fix it (vertically) but I don't know if breaks anything */ 
-
-
-/* new games page fixes */ 
-.hover-game-tile .featured-game-container {
-    height: 240px;
-}
-/*sponsored ad */ 
-.game-card-native-ad {
-    width: 150px !important;
-    overflow: hidden; 
-    border-bottom-right-radius: 2px;
-    border-bottom-left-radius: 2px;
-}
-
-/* END OF GAME CARD FIXING STUFF */
-
-/* changing the game slidey thing arrow things */ 
-/* .arrow, .scroller.prev.disabled, .scroller.next, .scroller.next.disabled, .scroller.prev {
-    height: 242px;   
-} */ 
-div > div.scroller > div.arrow {
-    height: 245px !important;
-}/* new games page fix */ 
-/* game cover thing fixing gaps */ 
-.horizontal-scroller .scroller.next .spacer {
-    left: 29px;
-    height: 115%;
-    bottom: -5px;
-    background-color: #e3e3e3;
-}
-
-.horizontal-scroller .scroller.prev .spacer {
-    right: 29px;
-    height: 115%;
-    background-color: #e3e3e3;
-    top: -10px;
-}
-
-.spacer {
-    z-index: 0 !important;
-}
-.scroller.prev, .scroller.next {
-    height: 247px !important;
-    top: -3px;
-}/* games page fix right above here too changed 91 to 82 i think */ 
-.icon-games-carousel-right {
-    margin-right: 3px;
-}
-.scroller.next .arrow {
-    z-index: 2 !important;
-    left: 0px;
-    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
-    width: 101%;
-}
-.scroller.prev .arrow {
-    z-index: 2 !important;
-    left: 1px;
-    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
-}
-.arrow:hover {
-    z-index: 5;
-    cursor: pointer;
-    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.6) !important;
-}
-.light-theme .scroller .icon-games-carousel-right {
-    margin-left: -7px;
-}
 
 .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image, .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image:hover {
 box-shadow: none !important;
 border: #c5c5c5 1px solid !important;
 }
+
+
 
 .avatar-card-fullbody .avatar-card-image, .avatar-card-fullbody .avatar-card-link, .avatar .avatar-card-image, .avatar .avatar-card-link {
     border-radius: 50%;
@@ -1654,7 +1488,7 @@ box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
     font-weight: 300;
 }
 .gotham-font .font-caption-header {
-    color: #333333 !important;
+    color: #000000 !important;
 }
 
 
@@ -1668,6 +1502,19 @@ box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
 
 .layer {
     padding: 0;
+}
+
+.rbx-header .rbx-navbar-icon-group li span[class^=rbx-text] {
+    font-weight: 600 !important;
+}
+
+.rbx-header .rbx-navbar-icon-group li span[class^=rbx-text] {
+    font-weight: 600 !important;
+}
+
+.profile-container .asset-item .item-name {
+    font-weight: 300 !important;
+    color: #000000 !important;
 }
 
 
@@ -1766,8 +1613,10 @@ box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
 
 .light-theme .game-card-container .game-card-name
 {
-    padding: 0 6px;
-    margin: 6px 0;
+    padding: 2px 6px 0 6px;
+    margin: 0 0;
+    white-space: nowrap;
+    color: #000000 !important;
 }
 
 .game-card-container thumbnail-2d .game-card-thumb, .game-card-thumb-container .game-card-thumb
@@ -1777,7 +1626,7 @@ box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
 
 .light-theme .game-card-info
 {
-    position: absolute;
+    position: sticky;
     bottom: 6px;
     width: 100%;
     margin: 0 6px;
@@ -1815,14 +1664,9 @@ box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
 
 
 .light-theme .game-card-info .info-label.icon-votes-gray {
-    background-position: 0 -480px;
+    background-position: 0 -351px !important;
     background-image: url(https://images.rbxcdn.com/153fd3209692232cd8087cad74a669b0-games.svg)
 }
-.light-theme .game-card-container:hover .game-card-info .info-label.icon-votes-gray {
-    background-position: -16px -351px;
-    background-image: url(https://images.rbxcdn.com/153fd3209692232cd8087cad74a669b0-games.svg)
-}
-
 
 
 
@@ -1842,9 +1686,6 @@ box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
     color: #fff;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-}
-span.font-caption-header.chat-header-title.ng-binding:after {
-    content: " & Party";
 }
 
 .light-theme .icon-chat-add-friends, .light-theme .icon-chat-arrow-right, .light-theme .icon-chat-back, .light-theme .icon-chat-close-black, .light-theme .icon-chat-close-white, .light-theme .icon-chat-error, .light-theme .icon-chat-friends, .light-theme .icon-chat-group-create, .light-theme .icon-chat-group-label, .light-theme .icon-chat-group-name, .light-theme .icon-chat-info-black, .light-theme .icon-chat-info-white, .light-theme .icon-chat-more-dialogs, .light-theme .icon-chat-more-options, .light-theme .icon-chat-notification, .light-theme .icon-chat-notification-mute, .light-theme .icon-chat-party-label-black, .light-theme .icon-chat-party-label-white, .light-theme .icon-chat-pin, .light-theme .icon-chat-pinned, .light-theme .icon-chat-place-favorite, .light-theme .icon-chat-place-my, .light-theme .icon-chat-place-popular, .light-theme .icon-chat-place-recent, .light-theme .icon-chat-place-recommended, .light-theme .icon-chat-place-vip, .light-theme .icon-chat-play-together, .light-theme .icon-chat-resend, .light-theme .icon-chat-search, .light-theme .icon-chat-search-cancel, .light-theme .icon-chat-search-white, .light-theme .icon-chat-selected, .light-theme .icon-chat-set-place, .light-theme .icon-chat-unpin, .light-theme .icon-default-chat
@@ -1890,11 +1731,6 @@ background-color: #ffffff;
 .light-theme .dialog-container .dialog-input-container .dialog-input
 {
     background-color: #fff;
-}
-
-.gotham-font .font-caption-header
-{
-    color: #b8b8b8;
 }
 
 
@@ -1997,8 +1833,8 @@ position: absolute;
 
 .light-theme .btn-primary-md
 {
-    background-color: #08b454;
-    border-color: #08b454;
+    background-color: #02b757;
+    border-color: #02b757;
 }
 
 .light-theme .profile-avatar-left
@@ -2030,7 +1866,7 @@ position: absolute;
 {
     background-color: #fff;
     border: 1px solid #B8B8B8;
-    color: rgba(0,0,0,.6);
+    color: #fff;
     border-radius: 3px
 }
 .light-theme .btn-control-xs:hover {
@@ -2241,11 +2077,6 @@ border-radius: 1px;
     border-radius: 1px;
 }
 
-.gotham-font .font-caption-header
-{
-    color: #606162
-}
-
 .light-theme .rbx-header .rbx-navbar li .nav-menu-title:focus, .light-theme .rbx-header .rbx-navbar li .nav-menu-title:hover
 {
     background-color: rgba(25,25,25,.1);
@@ -2312,9 +2143,8 @@ background-color: #fff;
 
 .light-theme .btn-primary-md:focus, .light-theme .btn-primary-md:hover, .light-theme .btn-primary-md[disabled]
 {
-    background-color: #3fc679;
-    border: 1px solid #3fc679;
-    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
+    background-color: #02b757;
+    border: 1px solid #02b757;
 }
 
 .light-theme .dialogs .dialog-container.active .dialog-header
@@ -2347,6 +2177,12 @@ div[style="col-sm-6 slide-item-container-left"]
 
 .dark-theme .game-card-info .info-label.icon-playing-counts-gray, .dark-theme .game-card-info .info-label.icon-playing-counts-gray-white-70, .icon-currently-playing-sm, .light-theme .game-card-info .info-label.icon-playing-counts-gray, .light-theme .game-card-info .info-label.icon-playing-counts-gray-white-70 {
     background-position: 0 -496px;
+    display: none;
+}
+
+.light-theme .game-card-info .info-label.icon-votes-gray {
+    background-position: 0 -480px;
+    display: block;
 }
 
 
@@ -2372,7 +2208,7 @@ div[style="col-sm-6 slide-item-container-left"]
 
 .messageDivider .roblox-system-image .icon-logo-notification, .messageDivider .roblox-system-image .icon-logo-r
 {
-    background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/6bb425b39f2a5e4951bc632b86049161f13fcad7/images/image.svg)
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCI+PHBhdGggZD0iTTguMyAzLjdMMy42IDIxLjhsMTguMSA0LjYgNC42LTE4LjEtMTgtNC42em04IDEzLjZsLTMuNS0uOS45LTMuNSAzLjUuOS0uOSAzLjV6IiBmaWxsPSIjMzkzYjNkIi8+PC9zdmc+)
 }
 
 .light-theme .btn-primary-lg
@@ -2561,6 +2397,12 @@ div[style="col-sm-6 slide-item-container-left"]
     box-shadow: inset 4px 0 0 0 #00a2ff;
     cursor: pointer;
 }
+
+.gotham-font.light-theme .see-all-link-icon
+{
+    padding: 0;
+}
+
 .rbx-header.light-theme .rbx-navbar li .nav-menu-title:focus, .rbx-header.light-theme .rbx-navbar li .nav-menu-title:hover
 {
     background-color: rgba(25,25,25,.1);
@@ -2571,6 +2413,50 @@ div[style="col-sm-6 slide-item-container-left"]
 {
     border: 0;
 }
+
+
+.game-stats-container .game-stat .text-label {
+    white-space: nowrap;
+    color: #B8B8B8 !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+
+.voting-panel span {
+    float: none;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.game-main-content.follow-button-enabled .favorite-follow-vote-share .game-follow-button-container .follow-button {
+    width: 0;
+    text-align: center;
+    display: none;
+}
+
+*.gig-bar-container img {
+    display: none;
+}
+
+constructed stylesheet
+.gotham-font .game-main-content.follow-button-enabled .favorite-follow-vote-share .game-favorite-button-container .favorite-button {
+    width: 68px;
+    padding-left: 40px !important;
+}
+
+constructed stylesheet
+.game-main-content.follow-button-enabled .favorite-follow-vote-share .game-favorite-button-container .icon-label {
+    display: none !important;
+}
+
+constructed stylesheet
+.game-main-content.follow-button-enabled .favorite-follow-vote-share .voting-panel {
+    width: 110px;
+    bottom: -24px;
+    float: left;
+    margin-left: -40px !important;
+}
+
 
 /*.light-theme .icon-robux-28x28, .robux-upsell .unsubscribed .icon-robux-white
 {
@@ -2590,389 +2476,8 @@ div[style="col-sm-6 slide-item-container-left"]
     background-position: 0;
 }
 
-  #nav-robux-icon .icon-robux-28x28:hover
-  {
-    background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/80a1e55d792875c92f6a4c5e7b4ef949fa17c157/images/robux/icons.svg);
+#nav-robux-icon .icon-robux-28x28:hover
+{
+    background-image: url(https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg);
     background-position: -28px -28px;
-  }
-/* Messing with the games tab */
-.light-theme .game-card-info .info-label.icon-votes-gray {
-
-    background-position: 0 -351px;
-    background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/cd9b642ccf4ef8bfd605a035bb2cc53db92f4e24/images/archiveofimages/153fd3209692232cd8087cad74a669b0-games.svg);
-    
-}
-
-.game-card-info .vote-percentage-label {
-    position: relative;
-    top: 2.5px;
-}
-.game-card-container {
-    height: 240px;
-}
-
-
-.game-tile:hover .game-card-container {
-    height: 240px;
-    box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.9);
-}
-.game-card-info .playing-counts-label {
-    position: relative; 
-    display: block !important;
-    bottom: 25px;
-    right: 2px;
-} 
-.game-card-info .icon-playing-counts-gray {
-    visibility: hidden;
-}
-
-.info-label.vote-percentage-label {
-    top: 12px;
-    
-}
-
-.info-label.icon-votes-gray {
-    position: relative;
-    top: 10px;
-    
-}
-
-.game-carousel {
-    width: 110%;
-    height: 240px;
-    overflow-x: visible;
-    overflow-y: visible;
-}
-/* --------------- */ 
-/* side bar tab thing */
-
-.btn-growth-md.btn-secondary-md {
-    font-size: 0 !important;    
-}
-
-
-.btn-growth-md.btn-secondary-md::before {
-    content: "Upgrade Now";
-    font-size: 16px;
-    font-weight: 500;
-    position: relative;
-    top: 1px;
-    line-height: 100%;
-}
-
-.light-theme .btn-secondary-md:link {
-    padding: 9px;
-    
-}
-
-/* login stuff */ 
-.login-button, .cross-device-login-button, .btn-full-width.btn-control-md.fb-button.social-login {
-    width: 100%; 
-    
-}
-
-.font-header-2.rbx-navbar-login.nav-menu-title.rbx-menu-item {
-    position: relative;
-    right: 10px;
-    
-}
-
-/* signup page */ 
-.dark-theme .theme-bg {
-    background-color: rgba(255,255,255,0.95)
-    
-}
-
-.text-center.signup-header.ng-binding {
-    color: #2d2d2de0;
-    
-}
-
-.signup-container .birthday-container .rbx-select-group:first-of-type .rbx-select, .signup-container .birthday-container .rbx-select-group:nth-of-type(2) .rbx-select, .dark-theme .birthday-container .rbx-select-group .rbx-select, .dark-theme .fake-input-lg {
-    background-color: white;
-
-    
-}
-
-.signup-or-log-in input[type=email]:focus, .signup-or-log-in input[type=password]:focus, .signup-or-log-in input[type=text]:focus {
-    background-color: white;
-    border: 1px solid #b8b8b8;
-    
-}
-
-.dark-theme .input-field {
-    background-color: #fff;
-    border: 1px solid #b8b8b8;
-}
-
-.signup-or-log-in .signup-container .signup-input-area .legal-text-container div {
-    color: #2d2d2de0;
-    
-}
-
-
-.signup-or-log-in .signup-container .signup-input-area .signup-submit-button {
-    background-color: #02b757;
-    border-color: #02b757;
-    color: #fff;
-    width: 100%;
-    height: 50px;
-    font-size: 20px;
-}
-
-.signup-or-log-in .signup-container .signup-input-area .signup-submit-button:hover {
-    background-color: #3fc679;
-    border-color: #3fc679;
-
-}
-
-.form-control.fake-input-lg {
-    border: 1px solid #b8b8b8;
-    
-}
-
-.signup-container .birthday-container .birthday-select-group {
-    border: 1px solid #b8b8b8;    
-    
-}
-
-.text-logo {
-    background-image: url("https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/robloxlogo.png?raw=true");
-    position: relative;
-    height: 90px;
-    bottom: 10px;
-    
-    
-}
-
-/* robux icon to the right */
-.icon-robux-28x28.roblox-popover-close {
-    position: relative; 
-    right: -5px; 
-    
-}
-
-/* credit in website itself */
-
-.text-footer.footer-note {
-    visibility: hidden;
-    position: relative;
-}
-.text-footer.footer-note:after {
-    visibility: visible;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    content: "©2021 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries." " | Stylus theme credit: Credit to Ologist for originally making this userstyle theme. | For quick updates and releases find the GitHub page of this style at https://github.com/anthony1x6000/ROBLOX2016stylus.";
-}
-
-/* See all button fixes */
-.see-all-link-icon {
-    height: 25px !important;
-    position: relative; 
-    text-align: center;
-    border-radius: 3px;
-}
-
-.light-theme .btn-secondary-xs {
-    border-radius: 3px !important;
-    padding: 4px 4px !important;
-}
-/* avatar friends playing game tile */
-/* this could be slightly broken idk I just tested it with two alts and it seems fine
-https://i.ibb.co/VtZQ0KP/image.png    */ 
-.game-card-name.game-name-title.game-name-oneline {
-    position: relative; 
-    bottom: 85px;
-}
-
-.cursor-pointer.game-card-avatar-slots {
-    position: relative; 
-    bottom: 80px;
-    left: 8px;
-    text-align: left;
-/* if you want to centered again remove line 2731 to 2732 */
-}
-/* continue move down */ 
-.container-header.games-filter-changer {
-    position: relative;
-    top: 5px;   
-}
-/* notification top */ 
-
-.light-theme .alert-info {
-    background-color: #ff8c41;
-    color: #fff;
-}
-
-.push-notifications-prompt-text {
-    position: relative;
-    top: 2px;
-    
-}
-.alert-info.linkify > .text-link {
-    color: #085bcd;
-}
-
-/* 404 error page */
-.light-theme .request-error-page-content .action-buttons .btn-primary-md {
-    background-color: #00a2ff;
-    border-color: #00a2ff;
-    color: #f2f4f5;
-    border-radius: 8px;
-}
-
-/* ignore accept friend request */ 
-
-.ignore-friend.btn-secondary-md.btn-min-width {
-    color: #000 !important;
-    border-radius: 2px;
-}
-
-.accept-friend.btn-cta-md.btn-min-width {
-    border-radius: 4px;
-    
-}
-
-/* roblox powering imagination chat & party */ 
-.light-theme .icon-default-logo-tagline, .light-theme .icon-logo-tagline {visibility: hidden;}
-
-/* Buy premium page */ 
-.premium-landing-page .premium-title-section .get-premium-button {
-    color: #fff;    
-}
-.premium-landing-page .premium-title-section .get-premium-button:hover {
-    background-color: #00bf5a;
-    border-color: #00bf5a;
-}
-
-div.icon-robux-medium-desktop {
-    background-image: url("https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/dbaa476c9543275afa24e1ebe97a5d05984b8663/images/4302021_archive/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg");
-    background-size: 330px;
-    background-position: 0px -665px;
-}
-.robux-package-name, .font-header-2.text-disabled{
-    position: relative;
-    top: 30px;
-}
-
-.icon-premium-120x120{
-    background-image: url("https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/oldbchardhat.png?raw=true");
-    background-size: 110%;
-}
-
-/* catalog changes  */ 
-
-.list-item.item-card.ng-scope {
-    margin-bottom: 5px;
-    width: auto;
-}
-.container-main .catalog-full-screen .catalog-results .item-cards-stackable .item-card, .container-main .splash.catalog-full-screen .catalog-results .item-cards-stackable .item-card {
-    width: auto;
-}
-
-button.btn-control-md.view-all{
-    width: 95%;
-}
-.catalog-container .search-container .input-group .search-input {
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-    left: 1px;
-}
-.icon-search{
-    position: relative;
-    left: 2px;
-}
-/* recommended catalog */ 
-.list-item.item-card.recommended-item.ng-scope{
-    height: 250px;
-}
-recommendations > div > div > div > div > ul > li > div > a > div.item-card-name.recommended-name > span.ng-binding, div > div > div > recommendations.ng-isolate-scope > div > div > div > div > ul > li > div > div {
-    margin-left: 6px;
-}
-/* avatar page changes */ 
-.redraw-avatar > .text-link.ng-binding::before {
-    content: "Click here to re-draw it!";
-    font-size: 16px;
-    color: #085bcd;
-}
-.redraw-avatar > .text-link.ng-binding {
-    position: relative; 
-    bottom: 11px;
-    right: 112px;
-    font-size: 0px;
-}
-.redraw-avatar > span.ng-binding:nth-of-type(1)::before {
-    content: "Something wrong with your avatar?";
-    font-size: 16px; 
-}
-.redraw-avatar > span.ng-binding:nth-of-type(1) {
-    font-size: 0px; 
-    position: relative;
-    left: 1px;
-}
-div > div > div > div > div > div > div.avatar-editor-header > div.catalog-header > a.btn-primary-md {
-    visibility: hidden; 
-}
-div > div.catalog-header > div {
-    position: relative;
-    left: 87px;
-    bottom: 2px;
-}
-
-/*optional gender?? cringe!!!*/.gender-container > .ng-binding.font-caption-header {font-size: 0px;}.gender-container > .ng-binding.font-caption-header::before{content:"Gender";font-size: 15px;}
-/*accept friend button */ 
-#accept-fr-btn {
-    background-color: #00a2ff;
-    border-color: #00a2ff;
-    color: white !important;
-    border-radius: 3px;
-}
-.notification-item.ng-scope.ng-isolate-scope > .notification-item-front > .notification-item-content > .notification-action-container {
-    margin-bottom: 1px;
-}
-/*game search results */ 
-    /* big game icon (featured game)*/
-.game-card-description-info.font-body {
-    margin-top: 25px;
-}
-div.game-card-name-info > button.btn-full-width[type='button'] {
-    position: relative;
-    width: 168px !important;
-    height: 10px;
-    padding-right: 9px !important;
-    padding-bottom: 5px !important; 
-    right: 10px;
-}
-div > div.featured-grid-item-container.game-card-container > a > div > div > div {
-    font-size: 17px;
-}
-div > div.featured-grid-item-container {
-    overflow: hidden;
-    height: 504px;
-    background-color: white;
-}
-div.featured-grid-item-container.game-card-container > a > div.game-card-description-info {
-    position: relative;
-    overflow: hidden;
-    left: 5px;
-    width: 97%;
-}
-/* Font fixes */ 
-.input-field.chat-search-input.font-caption-body.ng-pristine.ng-valid.ng-empty.ng-touched, .font-header-2.nav-menu-title.text-header {
-    font-family: "Source Sans Pro",Arial,Helvetica,sans-serif !important;
-}
-html > body > div#chat-container > div > div.chat-header.chat-windows-header {
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
-}
-/*thanks for visiting roblox */ 
-div > div > div > ul > li.step4-of-4 > div.VisitButton.VisitButtonContinueGLI > a:hover {
-    background-color: #3fc679; 
-    border-color: #3fc679;
-}
-/* scroll bars*/
-.section-content.remove-panel.people-list {
-    overflow-x: hidden;
 }
