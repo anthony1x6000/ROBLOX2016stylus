@@ -1170,8 +1170,10 @@ ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)
     height: 31px;
     color: #ffffff;
 }
-
-
+body[data-performance-relative-value='\30 \.005'][data-internal-page-name='Create'][data-send-event-percentage='\30 '] > div > div > div > div > ul > li > a.font-header-2.nav-menu-title.text-header
+{
+    height: 20px;
+}
 /*.profile-header .header-caption .header-details .details-info li .font-header-2:before {
     content: "\A \A";
 	white-space: pre;
@@ -2983,14 +2985,6 @@ div.featured-grid-item-container.game-card-container > a > div.game-card-descrip
     left: 5px;
     width: 97%;
 }
-/* Font fixes */ 
-.input-field.chat-search-input.font-caption-body.ng-pristine.ng-valid.ng-empty.ng-touched, .font-header-2.nav-menu-title.text-header {
-    font-family: "Source Sans Pro",Arial,Helvetica,sans-serif !important;
-}
-html > body > div#chat-container > div > div.chat-header.chat-windows-header {
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
-}
 /*thanks for visiting roblox */ 
 div > div > div > ul > li.step4-of-4 > div.VisitButton.VisitButtonContinueGLI > a:hover {
     background-color: #3fc679; 
@@ -3000,3 +2994,4 @@ div > div > div > ul > li.step4-of-4 > div.VisitButton.VisitButtonContinueGLI > 
 .section-content.remove-panel.people-list {
     overflow-x: hidden;
 }
+
