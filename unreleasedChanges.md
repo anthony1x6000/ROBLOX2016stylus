@@ -1,8 +1,8 @@
-# Unreleased | 1.1.8 <br>
+# Quick fix | 1.1.8
 This version is not yet 100% released and could have bugs. 
 Get the beta [here](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/stylustheme.css).
 ## Major changes
-- Font change. Idk could have been my pc but the fonts messed up, so I took [Ologist’s code](https://userstyles.org/styles/178105/roblox-in-2016) for the custom font. Its around line 37 so you can get rid of it. 
+- Font change. Idk could have been my pc but the fonts messed up, so I took [Ologist’s code](https://userstyles.org/styles/178105/roblox-in-2016) for the custom font. It's around line 37 so you can get rid of it. 
 ## Small changes
 - When the window is too small, I hid the scroll bar on the friend’s list. 
 
