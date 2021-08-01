@@ -43,22 +43,22 @@ https://web.archive.org/web/20160724012820cs_/https://fonts.googleapis.com/css?f
 
 /* ~/CSS/Fonts/SourceSansPro-Google.css */
 @font-face {
-font-family: 'Source Sans Pro';
-font-style: normal;
-font-weight: 300;
-src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGMVNtom4QlEDNJaqqqzqdSs.woff) format('woff');
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGMVNtom4QlEDNJaqqqzqdSs.woff) format('woff');
 }
 @font-face {
-font-family: 'Source Sans Pro';
-font-style: normal;
-font-weight: 400;
-src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNHq-FFgoDNV3GTKpHwuvtI.woff) format('woff');
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNHq-FFgoDNV3GTKpHwuvtI.woff) format('woff');
 }
 @font-face {
-font-family: 'Source Sans Pro';
-font-style: normal;
-font-weight: 600;
-src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGCmgpmuQqK2I-L2S9cF65Ek.woff) format('woff');
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGCmgpmuQqK2I-L2S9cF65Ek.woff) format('woff');
 }
 .gotham-font.light-theme .refresh-link, .gotham-font.light-theme .refresh-link-icon, .gotham-font.light-theme .refresh-link-icon:active, .gotham-font.light-theme .refresh-link-icon:hover, .gotham-font.light-theme .refresh-link-icon:link, .gotham-font.light-theme .refresh-link-icon:visited, .gotham-font.light-theme .refresh-link:active, .gotham-font.light-theme .refresh-link:hover, .gotham-font.light-theme .refresh-link:link, .gotham-font.light-theme .refresh-link:visited, .gotham-font.light-theme .see-all-link, .gotham-font.light-theme .see-all-link-icon, .gotham-font.light-theme .see-all-link-icon:active, .gotham-font.light-theme .see-all-link-icon:hover, .gotham-font.light-theme .see-all-link-icon:link, .gotham-font.light-theme .see-all-link-icon:visited, .gotham-font.light-theme .see-all-link:active, .gotham-font.light-theme .see-all-link:hover, .gotham-font.light-theme .see-all-link:link, .gotham-font.light-theme .see-all-link:visited, .gotham-font.light-theme .touch .refresh-link, .gotham-font.light-theme .touch .refresh-link-icon, .gotham-font.light-theme .touch .refresh-link-icon:active, .gotham-font.light-theme .touch .refresh-link-icon:hover, .gotham-font.light-theme .touch .refresh-link-icon:link, .gotham-font.light-theme .touch .refresh-link-icon:visited, .gotham-font.light-theme .touch .refresh-link:active, .gotham-font.light-theme .touch .refresh-link:hover, .gotham-font.light-theme .touch .refresh-link:link, .gotham-font.light-theme .touch .refresh-link:visited, .gotham-font.light-theme .touch .see-all-link, .gotham-font.light-theme .touch .see-all-link-icon, .gotham-font.light-theme .touch .see-all-link-icon:active, .gotham-font.light-theme .touch .see-all-link-icon:hover, .gotham-font.light-theme .touch .see-all-link-icon:link, .gotham-font.light-theme .touch .see-all-link-icon:visited, .gotham-font.light-theme .touch .see-all-link:active, .gotham-font.light-theme .touch .see-all-link:hover, .gotham-font.light-theme .touch .see-all-link:link, .gotham-font.light-theme .touch .see-all-link:visited {
     color: #00a2ff;
@@ -375,7 +375,7 @@ span.navbar-list-option-icon::before {
     font-size: 16px;
 }
 .new-navbar-search-anchor > .navbar-list-option-text {
-    margin-left: 28px;
+    margin-left: 21px;
 }
 .new-navbar-search-anchor > .navbar-list-option-suffix, span.navbar-list-option-icon {
     color: #606162 !important;
@@ -2765,7 +2765,7 @@ div[style="col-sm-6 slide-item-container-left"]
 .text-logo {
     background-image: url("https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/robloxlogo.png?raw=true");
     position: relative;
-    height: 90px;
+    height: 100px;
     bottom: 10px;
     
     
@@ -2776,7 +2776,7 @@ div[style="col-sm-6 slide-item-container-left"]
     position: relative; 
     right: -5px; 
     
-}
+}.signup-container.ng-isolate-scope.theme-bg.rbx-login-form{border-radius:0px;}
 
 /* credit in website itself */
 
@@ -2994,4 +2994,3 @@ div > div > div > ul > li.step4-of-4 > div.VisitButton.VisitButtonContinueGLI > 
 .section-content.remove-panel.people-list {
     overflow-x: hidden;
 }
-
