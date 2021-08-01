@@ -1,4 +1,4 @@
-# ROBLOX 2016 Userstyles/Stylus
+# ROBLOX 2016 Userstyles/Stylus ![GitHub all releases](https://img.shields.io/github/downloads/anthony1x6000/ROBLOX2016stylus/total)
 Stylish/stylus browser addon. <br> If you don't already; this userstyle requires stylus to function. Get it at the [Chrome Web Store](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or the [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) website. <br> [Userscript](https://github.com/anthony1x6000/ROBLOX2016stylus#userscript) is also supported.
 ![Preview of style](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/2016_stuff/preview.jpg?raw=true "Preview")
 <br>
