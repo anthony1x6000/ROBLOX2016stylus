@@ -2985,6 +2985,12 @@ div.featured-grid-item-container.game-card-container > a > div.game-card-descrip
     left: 5px;
     width: 97%;
 }
+    /* pushing results to the right */ 
+div.game-grid-container > li.game-card {
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
 /*thanks for visiting roblox */ 
 div > div > div > ul > li.step4-of-4 > div.VisitButton.VisitButtonContinueGLI > a:hover {
     background-color: #3fc679; 

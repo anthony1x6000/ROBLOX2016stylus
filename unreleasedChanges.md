@@ -3,9 +3,10 @@ This version is not yet 100% released and could have bugs.
 Get the beta [here](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/stylustheme.css).
 ## Major changes
 - Fixed the top header gray highlight problem. Refer to Known Bugs.
-
 ## Small changes
-- Fixed the search bar. (Large gap in between "Search" and search query. 
+- Fixed the search bar. (Large gap in between "Search" and search query.)
+## Games list changes
+- Fixed shadows cutting of when viewing a large list of games (after searching or clicking "See all") 
 ### Known bugs
 - FIXED: When on the develop page, for some unknown reason, random things start to glitch out, like the gray highlights over the Games, Catalog, etc., clipping outside of the header when hovering. Some other elements break, such as the box-radius rule on the chat bar. 
 - FIXED: Different font when searching for friends. 
