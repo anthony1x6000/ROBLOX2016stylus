@@ -3000,3 +3000,10 @@ div > div > div > ul > li.step4-of-4 > div.VisitButton.VisitButtonContinueGLI > 
 .section-content.remove-panel.people-list {
     overflow-x: hidden;
 }
+/* re-activate button */ 
+div.not-approved-page > div > div > button#logout-button.btn-control-md {
+    font-size: 13px;
+    line-height: 2px;
+    padding: 9px;
+}
+/* cant mess with the "re-activate My Account" button :/ */
