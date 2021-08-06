@@ -633,7 +633,7 @@ background-color: #bcbebf !important;
 }
 
 .game-card-2x-featured .thumb-container {
-    border-radius: 3px 3px 0 0;
+    border-radius: 3px 0px 0 0;
 }
 
 .game-card-2x-featured .thumb-container::before {
@@ -1538,8 +1538,16 @@ div > div.horizontally-scrollable > ul > li.list-item.game-card.game-tile > div.
     transition: opacity .0s ease-out;
     
 }
-
-
+div.featured-game-container.game-card-container > a.game-card-link > div.thumb-container {
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.featured-game-container.game-card-container {
+    margin-left: 5px;
+    margin-top: 4px;
+}
 
 /* point of 100% removing the new game cards */
 .list-item.hover-game-tile.visible-tile {
@@ -2916,6 +2924,9 @@ button.btn-control-md.view-all{
     /*category background fix */ 
 div.ng-scope[ng-if='\!layout\.hasSearchOptionsError'] {
     background-color: #e3e3e3;
+}
+input.form-control.input-field { /* changed the border radius of the input fields */ 
+    border-radius: 0px;
 }
 /* limited label change */
 .icon-limited-label { 
