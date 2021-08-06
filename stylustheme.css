@@ -3000,10 +3000,19 @@ div > div > div > ul > li.step4-of-4 > div.VisitButton.VisitButtonContinueGLI > 
 .section-content.remove-panel.people-list {
     overflow-x: hidden;
 }
-/* re-activate button */ 
-div.not-approved-page > div > div > button#logout-button.btn-control-md {
+/* re-activate screen/ban screen */ 
+    /* replicating old buttons | IE 11 type beat */ 
+button#reactivate-button, div.not-approved-page > div > div > button#logout-button {
     font-size: 13px;
     line-height: 2px;
     padding: 9px;
+    border-color: #717071; 
+    border-radius: 0px;
+    background-image: linear-gradient(#e9e8e8, #dcdcdd);
+    color: black;
+    box-shadow: 0 0 0 white /* hopefully this nulls it */ ;
+}button#reactivate-button:hover, div.not-approved-page > div > div > button#logout-button:hover {
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2) !important;
+    background-image: linear-gradient(#a6f5fe, #a6f5fe) !important;
+    border-color: #27a1da;
 }
-/* cant mess with the "re-activate My Account" button :/ */
