@@ -5,9 +5,11 @@ Get the beta [here](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/
 - Fixed the top header gray highlight problem. Refer to Known Bugs.
 ## Small changes
 - Fixed the search bar. (Large gap in between "Search" and search query.)
+- Changed the border radius of some buttons. 
 ## Games list changes
 - Fixed shadows cutting of when viewing a large list of games (after searching or clicking "See all") 
 - Changed the position of the featured game when searching. Basically applying the fix above to featured games. 
+- Softened game tile shadows. 
 ## Banned page changes
 - Got banned and fixed the buttons there. Made them look like IE 11. [Reference image](https://i.ibb.co/DGfy6xM/3917e9527abcdee0387d51e0c6f773c20a9350d0.jpg) If anyone out there wants to know how to get it just save the page (Ctrl + S) then select the id from there. In my case it was button#reactivate-button.
 ## 404 page fixes

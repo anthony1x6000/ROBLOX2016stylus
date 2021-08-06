@@ -1466,10 +1466,10 @@ background-color: #44b4f8;
 
 /* game tile shadows */ 
 .light-theme .hover-game-tile.visible-tile:hover .featured-game-container {
-    box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.75);
+    box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.60);
 }
 .dark-theme .game-card-container, .light-theme .game-card-container {
-    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.60);
+    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.40);/* I softend the shadows a bit here */ 
 }
 .dark-theme .game-card-container, .light-theme .game-card-container:hover {
     box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.75);
@@ -1742,6 +1742,8 @@ box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
     background-color: #00a2ff;
     border-color: #00a2ff;
     color: #ffffff;
+    border-radius: 2px;
+    line-height: 7px;
 }
 .light-theme .sponsored-game .game-card-native-ad {
     background-color: #00a2ff;
@@ -1965,7 +1967,7 @@ border: 1px solid #b8b8b8;
     padding: 9px;
     font-size: 16px;
     line-height: 100%;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 
 .gotham-font.light-theme .refresh-link-icon:after
@@ -2587,6 +2589,7 @@ div[style="col-sm-6 slide-item-container-left"]
 {
     background-color: #02b757;
     border: 1px solid #02b757;
+    border-radius: 1px;
 }
 
 .light-theme .rbx-header .rbx-navbar-search .rbx-navbar-search-option.selected
@@ -3035,6 +3038,7 @@ div > div > div > ul > li.step4-of-4 > div.VisitButton.VisitButtonContinueGLI > 
 }
 /* re-activate screen/ban screen */ 
     /* replicating old buttons | IE 11 type beat */ 
+        /* TAGS: NOT NEEDED */ 
 button#reactivate-button, div.not-approved-page > div > div > button#logout-button {
     font-size: 13px;
     line-height: 2px;
@@ -3048,4 +3052,15 @@ button#reactivate-button, div.not-approved-page > div > div > button#logout-butt
     box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2) !important;
     background-image: linear-gradient(#a6f5fe, #a6f5fe) !important;
     border-color: #27a1da;
+}
+/* private server */ 
+    /* TAGS: NOT NEEDED */
+.light-theme .rbx-private-server-create-button {
+    font-size: 0 !important;
+}
+
+.light-theme .rbx-private-server-create-button::before {
+    content: "Create VIP server";
+    font-size: 16px;
+    line-height: 15px;
 }
