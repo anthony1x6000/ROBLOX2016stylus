@@ -2913,6 +2913,25 @@ button.btn-control-md.view-all{
     position: relative;
     left: 2px;
 }
+    /*category background fix */ 
+div.ng-scope[ng-if='\!layout\.hasSearchOptionsError'] {
+    background-color: #e3e3e3;
+}
+/* limited label change */
+.icon-limited-label { 
+    background-image: url("https://web.archive.org/web/20160910031530im_/https://images.rbxcdn.com/793dc1fd7562307165231ca2b960b19a.png");
+    width: 70px;
+    height: 18px;
+    margin-left: 2px;
+    background-repeat: repeat;
+}
+.icon-limited-unique-label{
+    background-image: url("https://web.archive.org/web/20160910031530im_/https://images.rbxcdn.com/d649b9c54a08dcfa76131d123e7d8acc.png");
+    width: 88px;
+    height: 18px;
+    margin-left: 2px;
+    background-repeat: repeat;
+}
 /* recommended catalog */ 
 .list-item.item-card.recommended-item.ng-scope{
     height: 250px;
