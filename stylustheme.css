@@ -2843,10 +2843,13 @@ https://i.ibb.co/VtZQ0KP/image.png    */
 
 /* 404 error page */
 .light-theme .request-error-page-content .action-buttons .btn-primary-md {
-    background-color: #00a2ff;
-    border-color: #00a2ff;
+    background-color: #02b757;
+    border-color: #02b757;
     color: #f2f4f5;
-    border-radius: 8px;
+    border-radius: 1px;
+}.light-theme .request-error-page-content .action-buttons .btn-primary-md:hover {
+    background-color: #40c47c;
+    border-color: #40c47c;
 }
 
 /* ignore accept friend request */ 
