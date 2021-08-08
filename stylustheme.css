@@ -3064,3 +3064,10 @@ button#reactivate-button, div.not-approved-page > div > div > button#logout-butt
     font-size: 16px;
     line-height: 15px;
 }
+/* sitewide defaults */
+.input-field{ /* search bars */ 
+    border-radius: 1px !important;
+}
+.input-dropdown-btn { /* dropdowns */ 
+    border-radius: 1px !important; 
+}
