@@ -3071,3 +3071,8 @@ button#reactivate-button, div.not-approved-page > div > div > button#logout-butt
 .input-dropdown-btn { /* dropdowns */ 
     border-radius: 1px !important; 
 }
+.light-theme .btn-primary-md {
+    border-radius: 1px;
+}button.btn-common-play-game-lg{
+    border-radius: 8px !important;
+}
