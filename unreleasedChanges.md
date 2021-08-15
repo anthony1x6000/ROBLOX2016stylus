@@ -1,6 +1,7 @@
-# Unreleased | 1.1.9
+# Beta-preview | 1.1.9
 This version is not yet 100% released and could have bugs. 
 Get the beta [here](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/stylustheme.css).
+"Stable" versions can be found at [Github/releases](https://github.com/anthony1x6000/ROBLOX2016stylus/releases).
 ## Major changes
 - Fixed the top header gray highlight problem. Refer to Known Bugs.
 ## Small changes
