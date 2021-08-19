@@ -7,6 +7,7 @@ Get the beta [here](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/
 ## Small changes
 - Fixed the search bar. (Large gap in between "Search" and search query.)
 - Changed the border-radius of some buttons. 
+- Rounded chat header corners when on the develop page. 
 ## Games list changes
 - Fixed shadows cutting of when viewing a large list of games (after searching or clicking "See all") 
 - Changed the position of the featured game when searching. Pretty much adding onto the above fix.  
