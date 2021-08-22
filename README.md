@@ -8,7 +8,7 @@ I'm also changing some things, like adding small fixes.
 ## Open source information
 If you know how to fix anything that hasn't been already fixed or see anything that could be improved, I encourage you to create a fork or make a pull request and fix it! I don't really know much CSS myself, so any contribution, even improving the slightest little thing, is greatly appreciated!
 
-If you're up to fix some things, the large amount of unorganized CSS I wrote is getting out of hand and has surpassed the 100KB limit for user styles, so I've been compressing it.
+If you want to fix some things, the large amount of unorganized CSS I wrote is getting hard to keep track of and has surpassed the 100KB limit for user styles, so temproarily I've been compressing the css file.
 
 If you find something that can be applied to multiple elements or have any other ideas on compressing or cutting back on some useless code, feel free to create a pull request and apply it yourself. 
 <br> 
@@ -16,8 +16,7 @@ If you find something that can be applied to multiple elements or have any other
 If you want to get a user script version of this script, click [here](https://userstyles.org/styles/userjs/189624/roblox-2016-fixed-robux-icon.user.js).<br>
 It'll require the Tampermonkey extension/addon or another similar. Find it at the [Chrome Web Store](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or the [Firefox Add-ons website](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/).
 ## Find this at user styles
-It'll be under these three releases<br>
-https://userstyles.org/styles/189625/, https://userstyles.org/styles/189624, and https://userstyles.org/styles/195713/
+You can find it [here](https://userstyles.org/styles/189624/roblox-2016-games-page-fix-icon-fix)<br>
 ## Beta/unreleased
 Prerelease, beta, alpha, unreleased, etc. I don't know what to call it. 
 To find unreleased changes go to [stylustheme.css](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/stylustheme.css).
