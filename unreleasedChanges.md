@@ -8,6 +8,9 @@ Get the beta [here](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/
 - Fixed the search bar. (Large gap in between "Search" and search query.)
 - Changed the border-radius of some buttons. 
 - Rounded chat header corners when on the develop page. 
+- Pushed header icons closer together. [Reference 1](https://web.archive.org/web/20160707045058/https://www.roblox.com/games/?SortFilter=default&TimeFilter=0&GenreFilter=1#close), [Reference 2 (Youtube | 13+ warning)](https://youtu.be/gBP1kpiESqc?t=56).
+- Changed the bottom credit in ROBLOX.
+- Fixed buttons (profile & see all)
 ## Games list changes
 - Fixed shadows cutting of when viewing a large list of games (after searching or clicking "See all") 
 - Changed the position of the featured game when searching. Pretty much adding onto the above fix.  

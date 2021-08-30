@@ -2383,13 +2383,13 @@ div[style="col-sm-6 slide-item-container-left"]
 }
 
 
-
+/*
 .light-theme .btn-secondary-xs:focus, .light-theme .btn-secondary-xs:hover
 {
     background-color: #00a2ff;
     border: 1px solid #00a2ff;
     color: #fff;
-}
+}*/ 
 
 .light-theme .slide-switcher.games .slide-item-container .slide-item-container-left
 {
@@ -2779,26 +2779,30 @@ div[style="col-sm-6 slide-item-container-left"]
     
 }
 
-/* robux icon to the right */
-.icon-robux-28x28.roblox-popover-close {
-    position: relative; 
-    right: -5px; 
-    
-}.signup-container.ng-isolate-scope.theme-bg.rbx-login-form{border-radius:0px;}
+/* robux icon change */
+.rbx-header .rbx-navbar-icon-group li span[class^=rbx-text] {
+    min-width: 2px;
+}
+.nav-robux-icon{
+    right: 4px;
+}
+.signup-container.ng-isolate-scope.theme-bg.rbx-login-form{border-radius:0px;}
 
 /* credit in website itself */
-
+/* 
 .text-footer.footer-note {
     visibility: hidden;
     position: relative;
-}
-.text-footer.footer-note:after {
+} */ 
+.text-footer.footer-note:after{
     visibility: visible;
     position: absolute;
     top: 0;
     left: 0;
     display: block;
-    content: "©2021 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries." " | Stylus theme credit: Credit to Ologist for originally making this userstyle theme. | For quick updates and releases find the GitHub page of this style at https://github.com/anthony1x6000/ROBLOX2016stylus.";
+    content: "For quick updates and releases find the GitHub page of this style at https://github.com/anthony1x6000/ROBLOX2016stylus";
+    margin-top: 23px;
+    margin-left: 24px;
 }
 
 /* See all button fixes */
@@ -2810,9 +2814,12 @@ div[style="col-sm-6 slide-item-container-left"]
 }
 
 .light-theme .btn-secondary-xs {
-    border-radius: 3px !important;
+    border-radius: 3px;
+}
+a.btn-secondary-xs.see-all-link-icon, span.see-all-button {
     padding: 4px 4px !important;
 }
+
 /* avatar friends playing game tile */
 /* this could be slightly broken idk I just tested it with two alts and it seems fine
 https://i.ibb.co/VtZQ0KP/image.png    */ 
@@ -2956,10 +2963,18 @@ recommendations > div > div > div > div > ul > li > div > a > div.item-card-name
     font-size: 16px;
     color: #085bcd;
 }
+/* Avatar scale color change */
+.light-theme input, .light-theme textarea {
+    color: red;
+    background-color: red;
+    border-color: red;
+}
+
+
 .redraw-avatar > .text-link.ng-binding {
     position: relative; 
     bottom: 11px;
-    right: 112px;
+    right: 122px;
     font-size: 0px;
 }
 .redraw-avatar > span.ng-binding:nth-of-type(1)::before {
@@ -3073,3 +3088,32 @@ button#reactivate-button, div.not-approved-page > div > div > button#logout-butt
 }button.btn-common-play-game-lg{
     border-radius: 8px !important;
 }
+
+/* profile game card layout */ 
+div.game-container {
+    margin-left: 11px;
+}
+div > div.profile-game.container-list > div.game-grid {
+    position: relative;
+    right: 9px;
+}
+
+
+/* signup header */ 
+
+.rbx-navbar-signup.btn-growth-sm.nav-menu-title.signup-button {
+    background: none; 
+    border: none;
+}
+.nav.navbar-right.rbx-navbar-right-nav {
+    margin-right: 30px;
+}
+.font-header-2.rbx-navbar-login.nav-menu-title.rbx-menu-item {
+    margin-left: 110px;
+} /* i know that this is the best way of doing this but it works */ 
+/*pushing header buttons closer together*/
+.nav.rbx-navbar.hidden-xs.hidden-sm.col-md-5.col-lg-4 {
+    width: 25%;
+    right: 21px;
+}
+
