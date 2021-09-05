@@ -35,5 +35,5 @@ As always, if something doesn't work, create an [issue](https://github.com/antho
 - Microsoft Edge
 - I'm assuming most Chromium-based browsers
 #### Display Compatability
-Your display/monitor has to be AT LEAST 544 pixels wide for this style to work correctly. 
+Your display/monitor has to be AT LEAST 1024 pixels wide for this style to work correctly. 
 I'd recommend at least a 1366 x 768 monitor or, even better, a 1920 x 1080 monitor.
