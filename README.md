@@ -6,11 +6,9 @@ Trying to keep the script up to date by making sure images and other stuff still
 I'm also changing some things, like adding small fixes. 
 <br>
 ## Open source information
-If you know how to fix anything that hasn't been already fixed or see anything that could be improved, I encourage you to create a fork or make a pull request and fix it! I don't really know much CSS myself, so any contribution, even improving the slightest little thing, is greatly appreciated!
+If you know how to fix anything that hasn't been already fixed or see anything that could be improved, I encourage you to create a fork or make a pull request and fix it! I don't know much CSS myself, so any contribution, even improving the slightest little thing, is greatly appreciated!
 <br>
-If you want to fix some things, the large amount of unorganized CSS I wrote is getting hard to keep track of and has surpassed the 100KB limit for user styles, so temproarily I've been compressing the css file.
-<br>
-If you find something that can be applied to multiple elements or have any other ideas on compressing or cutting back on some useless code, feel free to create a pull request and apply it yourself. 
+And if you do end up wanting to contribute, the large amount of unorganized CSS I wrote is getting hard to keep track of and has surpassed the 100KB limit for user styles, so temporarily, I've been compressing the CSS file.
 <br> 
 ## Userscript
 If you want to get a user script version of this script, click [here](https://userstyles.org/styles/userjs/189624/roblox-2016-fixed-robux-icon.user.js).<br>
