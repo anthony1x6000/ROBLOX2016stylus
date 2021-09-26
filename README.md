@@ -30,6 +30,7 @@ As always, if something doesn't work, create an [issue](https://github.com/antho
 #### Display Compatability
 Your display/monitor has to be AT LEAST 1024 pixels wide for this style to work correctly. 
 I'd recommend at least a 1366 x 768 monitor or, even better, a 1920 x 1080 monitor.
+I could try and fix this but thats too much work. You can try to fix it if you want.
 
 ## Credit
 All credit to Ologist for originally making this great user-style theme!
