@@ -5,6 +5,7 @@ Get the beta [here](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/
 # BEFORE INSTALLING READ BELOW
 Around line 130 (comment: TESTING REMOVE LATER). I commented that out to see if it'll lower the size of the file. 
 ## Major changes
+- Fixed style application issues (applying outside of roblox) 
 - Fixed the top header gray highlight problem. Refer to Known Bugs.
 - Got rid of the old limited label. There's a bug that comes with it that I don't want to fix. (When viewing the limited itself the limited logo bugs out)
 ## Small changes
