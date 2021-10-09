@@ -15,10 +15,9 @@ If you want to get a user script version of this script, click [here](https://us
 It'll require the Tampermonkey extension/addon or another similar. Find it at the [Chrome Web Store](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or the [Firefox Add-ons website](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/).
 ## Find this at user styles
 You can find it [here](https://userstyles.org/styles/189624/roblox-2016-games-page-fix-icon-fix)<br>
-## Beta/unreleased
-Prerelease, beta, alpha, unreleased, etc. I don't know what to call it. 
-To find unreleased changes go to [stylustheme.css](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/stylustheme.css).
-For more information (changes and everything), head over to [unreleasedChanges.md](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/unreleasedChanges.md).
+## Unreleased/beta style
+To find the unreleased style go to [stylustheme.css](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/stylustheme.css).
+To see the list of changes, head over to [unreleasedChanges.md](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/unreleasedChanges.md).
 
 ### Compatability
 This should work on 
@@ -30,9 +29,9 @@ As always, if something doesn't work, create an [issue](https://github.com/antho
 #### Display Compatability
 Your display/monitor has to be AT LEAST 1024 pixels wide for this style to work correctly. 
 I'd recommend at least a 1366 x 768 monitor or, even better, a 1920 x 1080 monitor.
-I could try and fix this but thats too much work. You can try to fix it if you want.
+I could try and fix this, but that's too much work. You can try to fix it if you want.
 
 ## Credit
-All credit to Ologist for originally making this great user-style theme!
+All credit to Ologist for initially making this great user-style theme!
 This is just me adding to it and fixing some little things. 
 Find the original style @ https://userstyles.org/styles/178105/roblox-in-2016
