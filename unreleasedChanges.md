@@ -1,39 +1,11 @@
-# Beta-preview | 1.1.9
-This version is not yet 100% released and could have bugs. 
-Get the beta [here](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/stylustheme.css).
-"Stable" versions can be found at [Github/releases](https://github.com/anthony1x6000/ROBLOX2016stylus/releases).
-# BEFORE INSTALLING READ BELOW
-Around line 130 (comment: TESTING REMOVE LATER). I commented that out to see if it'll lower the size of the file. 
-## Major changes
-- Fixed style application issues (applying outside of roblox) 
-- Fixed the top header gray highlight problem. Refer to Known Bugs.
-- Got rid of the old limited label. There's a bug that comes with it that I don't want to fix. (When viewing the limited itself the limited logo bugs out)
-## Small changes
-- Fixed the search bar. (Large gap in between "Search" and search query.)
-- Changed the border-radius of some buttons. 
-- Rounded chat header corners when on the develop page. 
-- Pushed header icons closer together. [Reference 1](https://web.archive.org/web/20160707045058/https://www.roblox.com/games/?SortFilter=default&TimeFilter=0&GenreFilter=1#close), [Reference 2 (Youtube | 13+ warning)](https://youtu.be/gBP1kpiESqc?t=56).
-- Changed the bottom credit in ROBLOX.
-- Fixed buttons (profile & see all)
-- Shrunk the height of the rbx-tab-heading element by two pixels. 
-- Extended the width of the rbx-tab-heading element by 0.01%. 
-## Games list changes
-- Fixed shadows cutting of when viewing a large list of games (after searching or clicking "See all") 
-- Changed the position of the featured game when searching. Pretty much adding onto the above fix.  
-- Softened game tile shadows. 
-## Banned page changes
-- Got banned and fixed the buttons there. Made them look like IE 11. [Reference image](https://i.ibb.co/DGfy6xM/3917e9527abcdee0387d51e0c6f773c20a9350d0.jpg) If anyone out there wants to know how to get it just save the page (Ctrl + S) then select the id from there. In my case, it was button#reactivate-button.
-## 404-page fixes
-- Fixed the button colors and size.
-## Catalog changes
-- Changed the limited labels back to their old 2016 variants. 
-## Code changes
-- Adding some sitewide rules. This should, in the future, lower the amount of CSS I have to put in; effectively lowering the size of the file in the future. 
-### Known bugs
-- FIXED: When on the develop page, for some unknown reason, random things start to glitch out, like the gray highlights over the Games, Catalog, etc., clipping outside of the header when hovering. Some other elements break, such as the box-radius rule on the chat bar. 
-- FIXED: Different font when searching for friends. 
+# Style-Preview | 1.2.0
+This version is not yet 100% released and may have bugs.
+Normal releases can be found at [Github/releases](https://github.com/anthony1x6000/ROBLOX2016stylus/releases).
+Find the unreleased version [here](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/stylustheme.css).
+## Changes
+- Fixed website chat (background color not applying properly)
 ### Credit
-All credit to Ologist for initially making this great user-style theme!
+Credit to Ologist for initially making this great user-style theme!
 Find the original style @ https://userstyles.org/styles/178105/roblox-in-2016.
 ### Find a bug?
 Head on over to the [GitHub page](https://github.com/anthony1x6000/ROBLOX2016stylus) and create an issue!

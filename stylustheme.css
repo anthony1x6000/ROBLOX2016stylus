@@ -1,10 +1,8 @@
 @-moz-document url-prefix("https://www.roblox.com"), url-prefix("https://web.roblox.com"){
-
-/* Hey! if you're seeing this check out the github repository for this! Just incase the userstyles goes under and to get early access because userstyles is really REALLY slow.
+/* Hey! if you're seeing this check out the github repository for this!
 https://github.com/anthony1x6000/ROBLOX2016stylus
-It'll be under "stylustheme.css" or another .css file! But will 100% be under releases. 
-Credit to Ologist for originally making this incredible userstyle theme!
-*/
+You can find the style under releases and to see the unreleased version of the style check out "stylustheme.css"
+Credit to Ologist for originally making this incredible userstyle theme! */
 body
   
 {
@@ -33,16 +31,15 @@ body
 	opacity: 1;
 }
 
-/* at some point figure out how to do a custom font. 
-Look here:
-https://web.archive.org/web/20160724012820cs_/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700
-*/ /* Ended up taking ologists code for the custom fonts. Don't know how to revert it */ 
+
 *
 {
     font-family: "Source Sans Pro",Arial,Helvetica,sans-serif !important;
 }
 
-/* ~/CSS/Fonts/SourceSansPro-Google.css */
+/* ~/CSS/Fonts/SourceSansPro-Google.css
+Font code taken from Ologists theme
+*/
 @font-face {
     font-family: 'Source Sans Pro';
     font-style: normal;
@@ -1712,7 +1709,7 @@ box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
 .rbx-header .age-bracket-label .age-bracket-label-username, .chat-container.collapsed .chat-header .chat-header-title {
     color: #fff !important;
 }
-.chat-windows-header .chat-header-label span {
+.chat-windows-header .chat-header-label span{
     color: #fff !important;
 }
 
@@ -1889,13 +1886,13 @@ box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
     background-image: url(https://images.rbxcdn.com/153fd3209692232cd8087cad74a669b0-games.svg);
 }
 
-.light-theme .chat-container .chat-main .chat-header, .chat-header-label, .light-theme .chat-main .chat-header
-{
+div#chat-header, div.dialog-header {
     background-color: #00a2ff;
-    color: #fff;
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
 }
+
+
 span.font-caption-header.chat-header-title.ng-binding:after {
     content: " & Party";
 }
