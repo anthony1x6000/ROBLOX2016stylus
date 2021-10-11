@@ -4,6 +4,7 @@ Normal releases can be found at [Github/releases](https://github.com/anthony1x60
 Find the unreleased version [here](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/stylustheme.css).
 ## Changes
 - Fixed website chat (background color not applying properly)
+- [Small change] Centered (shrunk) the left side bar. [Before](https://i.ibb.co/PwgjTcZ/image.png), [After](https://i.ibb.co/8zrZ9LH/image.png) | [Reference Image](https://imgr.search.brave.com/mYrJP_-JRZk6ViEc2S6K9afu23NDlY2rjB80ViEZwRw/fit/1200/649/ce/1/aHR0cHM6Ly92aWdu/ZXR0ZS53aWtpYS5u/b2Nvb2tpZS5uZXQv/cm9ibG94L2ltYWdl/cy9mL2ZlL0hvbWVz/Y3JlZW4ucG5nL3Jl/dmlzaW9uL2xhdGVz/dD9jYj0yMDE3MDIw/NTIyNTAwMw).
 ### Credit
 Credit to Ologist for initially making this great user-style theme!
 Find the original style @ https://userstyles.org/styles/178105/roblox-in-2016.

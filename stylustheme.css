@@ -3135,4 +3135,8 @@ div > div.profile-game.container-list > div.game-grid {
 .nav.nav-tabs {
     width: 100.01%;
 }
+/* Divider on the left */ 
+.rbx-divider {
+    width: 94%;
+}
 }
