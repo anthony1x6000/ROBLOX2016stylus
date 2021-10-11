@@ -1,4 +1,5 @@
 @-moz-document url-prefix("https://www.roblox.com"), url-prefix("https://web.roblox.com"){
+
 /* Hey! if you're seeing this check out the github repository for this!
 https://github.com/anthony1x6000/ROBLOX2016stylus
 You can find the style under releases and to see the unreleased version of the style check out "stylustheme.css"
@@ -499,7 +500,7 @@ background-color: #bcbebf !important;
     padding: 1px 4px;
     font-size: 14px !important;
     font-weight: normal !important;
-    min-width: 100px; 
+    min-width: 90px; 
 }
 
 .see-all-link-icon:hover, .touch .see-all-link-icon:hover {
@@ -1061,8 +1062,6 @@ div.game-details-play-button-container > button {
     background-color: rgba(25,25,25,0.3);
     border: 2px solid #fff;
     border-color: #fff;
-
-    
 }
 
 
@@ -1428,8 +1427,8 @@ font-size: 12px !important;
 
 
 .gotham-font.light-theme .see-all-link-icon:hover {
-    box-shadow: 0 1px 6px 0 rgba(25,25,25,0.45);
-background-color: #44b4f8;
+    box-shadow: 0 1px 4px 0 rgba(25,25,25,0.35);
+    background-color: #44b4f8;
 }
 
 
@@ -1641,26 +1640,40 @@ div > div.scroller > div.arrow {
 .icon-games-carousel-right {
     margin-right: 3px;
 }
-.scroller.next .arrow {
+.scroller .arrow {
     z-index: 2 !important;
     left: 0px;
-    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
+    background-color: #fff;
     width: 101%;
 }
-.scroller.prev .arrow {
+
+/* removed this
+.scroller.prev .arrow::hover {
     z-index: 2 !important;
     left: 1px;
     box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
-}
+} */ 
 .arrow:hover {
     z-index: 5;
     cursor: pointer;
-    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.6) !important;
+    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
 }
+.disabled > .arrow {
+    box-shadow: 0 0 0;
+    cursor: default;
+    background-color: #f2f4f5;
+}
+div.disabled > div > span.icon-games-carousel-left {
+    filter: opacity(.3);
+}
+
 .light-theme .scroller .icon-games-carousel-right {
     margin-left: -7px;
 }
-
+/* 
+.light-theme .scroller:focus, .light-theme .scroller:hover {
+    background-color: #fff;
+} */ 
 .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image, .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image:hover {
 box-shadow: none !important;
 border: #c5c5c5 1px solid !important;
@@ -1843,10 +1856,6 @@ box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
     border: 1px solid #e3e3e3;
 }
 
-.light-theme .scroller:focus, .light-theme .scroller:hover
-{
-    background-color: #ffffff;
-}
 
 .rbx-tabs-horizontal .rbx-tab .rbx-tab-heading.active, .rbx-tabs-horizontal .rbx-tab .rbx-tab-heading:active, .rbx-tabs-horizontal .rbx-tab .rbx-tab-heading:focus, .rbx-tabs-horizontal .rbx-tab .rbx-tab-heading:hover
 {
@@ -3139,4 +3148,19 @@ div > div.profile-game.container-list > div.game-grid {
 .rbx-divider {
     width: 94%;
 }
+.info-text > .ng-binding {
+    position: relative;
+    top: 11px;
+}
+
+/* WE DO A LITTLE TROLLING */ 
+#\36 48454481 > .game-card-thumb-container:hover, #\31 087859240 > .game-card-thumb-container:hover {
+    background: url(https://t4.rbxcdn.com/95cbc398c5101cfc377d8511431b6430) no-repeat;
+    padding-left: 100%;
+    overflow: hidden;
+    filter: drop-shadow(0 90px 0 pink);
+    transition: padding 2s, filter 1.9s; 
+}
+/* NO MORE TROLLING */ 
+
 }
