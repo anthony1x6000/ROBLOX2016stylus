@@ -1,5 +1,5 @@
 # ROBLOX 2016 Userstyles/Stylus ![GitHub all releases](https://img.shields.io/github/downloads/anthony1x6000/ROBLOX2016stylus/total)
-Stylish/stylus browser addon, changes the look of ROBLOX to be more faithful to what it would look like in 2016. <br> If you don't already; this userstyle requires stylus to function. Get it at the [Chrome Web Store](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or the [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) website. <br> [Userscript](https://github.com/anthony1x6000/ROBLOX2016stylus#userscript) is also supported, though not 100% tested.
+User style that changes the look of ROBLOX to be more faithful to what it would look like back in 2016. <br> If you don't already, this user style requires stylus to function. Get it at the [Chrome Web Store](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or the [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) website. <br> [Userscript](https://github.com/anthony1x6000/ROBLOX2016stylus#userscript) is also supported, though not 100% tested.
 ![Preview of style](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/2016_stuff/preview.png?raw=true "Preview")
 <br>
 Trying to keep the script up to date by making sure images and other stuff still works because the original CSS file had files that depended on Roblox's server itself, and recently Roblox has started to move or delete those files.<br>
@@ -35,3 +35,4 @@ I could try and fix this, but that's too much work. You can try to fix it if you
 All credit to Ologist for initially making this great user-style theme!
 This is just me adding to it and fixing some little things. 
 Find the original style @ https://userstyles.org/styles/178105/roblox-in-2016
+
