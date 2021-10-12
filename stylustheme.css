@@ -1,11 +1,3 @@
-/* ==UserStyle==
-@name           ROBLOX 2016	Pre-release
-@namespace      Userstyle
-@author         anthony1x6000
-@description    `Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.`
-@version        1.2.0
-@license        MIT License
-==/UserStyle== */
 @-moz-document url-prefix("https://www.roblox.com"), url-prefix("https://web.roblox.com"){
 /* Hey! if you're seeing this check out the github repository for this!
 https://github.com/anthony1x6000/ROBLOX2016stylus
@@ -3159,6 +3151,19 @@ div > div.profile-game.container-list > div.game-grid {
     position: relative;
     top: 11px;
 }
+/* Only favorites & continue on homepage */ 
+div.game-home-page-carousel-title:nth-of-type(1) {
+    margin-top: 12px;
+}
+.avatar-shop-homepage-recommendations-container, div.game-carousel:nth-of-type(n+3), div.game-home-page-carousel-title:nth-of-type(n+3) {
+    visibility: hidden;
+    height: 0px;
+    margin-bottom: 0;
+}
+div.game-carousel:nth-of-type(19), div.game-home-page-carousel-title:nth-of-type(18) {
+    visibility: visible !important;
+    height: inherit !important;
+}
 
 
 /* WE DO A LITTLE TROLLING */ 
@@ -3168,6 +3173,6 @@ div > div.profile-game.container-list > div.game-grid {
     overflow: hidden;
     filter: drop-shadow(0 90px 0 pink);
     transition: padding 2s, filter 1.9s; 
-}
-/* NO MORE TROLLING */ 
+}/* GPO */ 
+/* NO MORE TROLLING */
 }

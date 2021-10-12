@@ -9,6 +9,7 @@ Find the unreleased version [here](https://github.com/anthony1x6000/ROBLOX2016st
 - [SEE ALL BUTTON] Changed minimum width to be more faithful to 2016.
 - [SEE ALL BUTTON] Changed shadow to be more faithful to 2016. 
 - [GAMES PAGE/CAROUSEL ARROW CHANGES] Fixed up arrows to be more faithful to 2016. 
+- [HOME PAGE] Got rid of the other random game & avatar containers. 90% chance it'll break but I should be studying rn.  
 - [SOME TROLLING] Don't worry, it won't be in the final release. It's under the comment ``/* WE DO A LITTLE TROLLING */``
 ## Known bugs
 - Under profile pages, the about section and the report section don't correctly splice together. I'll try working on a fix for that when I have the time, but today (10/11/2021) is my last day off, and I have a project due on the 13th, plus I do be failing math, 49% avg & a 51% class avg. Whoever thought Grade 11 Functions was a good idea is burning in hell rn. My teacher boosted everyone's averages cuz I'm pretty sure it'd look bad when the principal does a staff review or something. Idk man, someone help me; cheating isn't cutting it anymore :(.  
