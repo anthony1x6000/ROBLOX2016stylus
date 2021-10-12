@@ -1,6 +1,6 @@
 # ROBLOX 2016 Userstyles/Stylus
 User style that changes the look of ROBLOX to be more faithful to what it would look like back in 2016.\
-To install the latest release click [here](https://github.com/anthony1x6000/ROBLOX2016stylus/raw/main/.user.css-installFiles/release.user.css)\
+**To install the latest release click [here](https://github.com/anthony1x6000/ROBLOX2016stylus/raw/main/.user.css-installFiles/release.user.css).** \
 If you don't already, this requires stylus to function. Get it at the [Chrome Web Store](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or the [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) website. <br> [Userscript](https://github.com/anthony1x6000/ROBLOX2016stylus#userscript) is also supported, though not 100% tested.<br>
 ![Preview of style](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/2016_stuff/preview.png?raw=true "Preview")
 <br>
