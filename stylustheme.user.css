@@ -1,5 +1,12 @@
+/* ==UserStyle==
+@name           ROBLOX 2016	Pre-release
+@namespace      Userstyle
+@author         anthony1x6000
+@description    `Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.`
+@version        1.2.0
+@license        MIT License
+==/UserStyle== */
 @-moz-document url-prefix("https://www.roblox.com"), url-prefix("https://web.roblox.com"){
-
 /* Hey! if you're seeing this check out the github repository for this!
 https://github.com/anthony1x6000/ROBLOX2016stylus
 You can find the style under releases and to see the unreleased version of the style check out "stylustheme.css"
@@ -3153,6 +3160,7 @@ div > div.profile-game.container-list > div.game-grid {
     top: 11px;
 }
 
+
 /* WE DO A LITTLE TROLLING */ 
 #\36 48454481 > .game-card-thumb-container:hover, #\31 087859240 > .game-card-thumb-container:hover {
     background: url(https://t4.rbxcdn.com/95cbc398c5101cfc377d8511431b6430) no-repeat;
@@ -3162,5 +3170,4 @@ div > div.profile-game.container-list > div.game-grid {
     transition: padding 2s, filter 1.9s; 
 }
 /* NO MORE TROLLING */ 
-
 }
