@@ -13,7 +13,7 @@ And if you do end up wanting to contribute, the large amount of unorganized CSS 
 ## Userscript
 If you want to get a user script version of this script, click [here](https://userstyles.org/styles/userjs/189624/roblox-2016-fixed-robux-icon.user.js).<br>
 It'll require the Tampermonkey extension/addon or another similar. Find it at the [Chrome Web Store](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or the [Firefox Add-ons website](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/).
-## Find this at user styles
+## Find this at UserStyles
 You can find it [here](https://userstyles.org/styles/189624/roblox-2016-games-page-fix-icon-fix)<br>
 ## Unreleased/beta style
 To find the unreleased style go to [stylustheme.css](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/stylustheme.css).
