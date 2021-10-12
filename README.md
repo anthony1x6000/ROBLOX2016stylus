@@ -16,7 +16,7 @@ It'll require the Tampermonkey extension/addon or another similar. Find it at th
 ## Find this at user styles
 You can find it [here](https://userstyles.org/styles/189624/roblox-2016-games-page-fix-icon-fix)<br>
 ## Unreleased/beta style
-To find the unreleased style go to [stylustheme.css](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/stylustheme.css).
+To find the unreleased style go to [stylustheme.user.css](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/stylustheme.user.css).
 To see the list of changes, head over to [unreleasedChanges.md](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/unreleasedChanges.md).
 
 ### Compatability
