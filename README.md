@@ -1,40 +1,35 @@
+
 # ROBLOX 2016 Userstyles/Stylus
-User style that changes the look of ROBLOX to be more faithful to what it would look like back in 2016.\
+UserStyle that changes the look of ROBLOX to be more faithful to what it would look like back in 2016.\
 **To install the latest release click [here](https://github.com/anthony1x6000/ROBLOX2016stylus/raw/main/.user.css-installFiles/release.user.css).**
 
-If you don't already, this requires stylus to function. Get it at the [Chrome Web Store](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or the [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) website. <br> [Userscript](https://github.com/anthony1x6000/ROBLOX2016stylus#userscript) is also supported, though not 100% tested.<br>
+If you don't already, this requires stylus to function. Get it at the [Chrome Web Store](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or the [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) website. <br> [Userscript](https://github.com/anthony1x6000/ROBLOX2016stylus#mirrors) is also supported, though not 100% tested.<br>
 ![Preview of style](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/2016_stuff/preview.png?raw=true "Preview")
 <br>
-Trying to keep the script up to date by making sure images and other stuff still works because the original CSS file had files that depended on Roblox's server itself, and recently Roblox has started to move or delete those files.<br>
-I'm also changing some things, like adding small fixes. 
-<br>
-## Open source information
+## Contributing
 **If you can, please contribute!**<br>
 If you know how to fix anything that hasn't been already fixed or see anything that could be improved, I encourage you to create a fork or make a pull request and fix it! I don't know much CSS myself, so any contribution, even improving the slightest little thing, is greatly appreciated!
-<br>
-And if you do end up wanting to contribute, the large amount of unorganized CSS I wrote is getting hard to keep track of and has surpassed the 100KB limit for user styles, so temporarily, I've been compressing the CSS file.
-<br> 
-## Userscript
-If you use Userscript, go [here](https://userstyles.org/styles/userjs/189624/roblox-2016-fixed-robux-icon.user.js).<br>
-Please note that it'll require the Tampermonkey extension/addon or another similar and may be outdated. 
-## Find this at UserStyles
-You can find it [here](https://userstyles.org/styles/189624/roblox-2016-games-page-fix-icon-fix)<br>
+## Style Mirrors
+ - [Github](https://github.com/anthony1x6000/ROBLOX2016stylus/raw/main/.user.css-installFiles/release.user.css)
+ - [Userstyles](https://userstyles.org/styles/189624)
+ - [Userstyles.world](https://userstyles.world/style/1485)
+ - [UserScript](https://userstyles.org/styles/userjs/189624/roblox-2016-fixed-robux-icon.user.js)
+ - [Github pre-release/beta style](https://github.com/anthony1x6000/ROBLOX2016stylus#unreleasedbeta-style)
+ 
 ## Unreleased/beta style
 To find the unreleased style go to [stylustheme.css](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/stylustheme.css).
 To see the list of changes, head over to [unreleasedChanges.md](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/unreleasedChanges.md).
 
-### Compatability
-This should work on 
-- [Brave](https://brave.com/)
-- [Firefox](https://firefox.com/) (sometimes things don't render properly; reloading usually fixes it). 
-As always, if something doesn't work, create an [issue](https://github.com/anthony1x6000/ROBLOX2016stylus/issues).
-- Microsoft Edge
-- I'm assuming most Chromium-based browsers
-#### Display Compatability
-Your display/monitor has to be AT LEAST 1024 pixels wide for this style to work correctly. 
+---
+### Browser Compatability
+- [Brave](https://brave.com/) & most Chromium browsers
+- [Firefox](https://firefox.com/) (This style is built around the [Brave Browser](https://brave.com/) and because Firefox uses a different browser engine, [Gecko](https://en.wikipedia.org/wiki/Gecko_%28software%29), the style may not work properly, though I will fix bugs on the Firefox browser. 
+### Display Compatability
+Your display/monitor has to be AT LEAST **1024 pixels wide** for this style to work correctly. 
 I'd recommend at least a 1366 x 768 monitor or, even better, a 1920 x 1080 monitor.
 I could try and fix this, but that's too much work. You can try to fix it if you want.
 
+---
 ## Credit
 All credit to Ologist for initially making this great user-style theme!
 This is just me adding to it and fixing some little things. 
