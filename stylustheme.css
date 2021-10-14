@@ -1752,9 +1752,15 @@ box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
 .light-theme .games-list-container {
     background-color: #e3e3e3
 }
-.light-theme .notification-red {
+
+.light-theme .notification-red, .light-theme #header .btr-nav-notif /*better roblox */ {
     background-color: #e2231a;
     color: #ffffff;
+    border: 0px;
+}
+.light-theme .icon-nav-message-btr,
+.light-theme .icon-nav-friend-btr /*better roblox */{
+    filter: none;
 }
 .light-theme .notification-blue {
     background-color: #00a2ff;
@@ -3151,28 +3157,21 @@ div > div.profile-game.container-list > div.game-grid {
     position: relative;
     top: 11px;
 }
-/* Only favorites & continue on homepage */ 
-div.game-home-page-carousel-title:nth-of-type(1) {
-    margin-top: 12px;
+/* I agree button */
+.agree-button.btn-cta-lg.btn-min-width {
+    background-color: #00a2ff;
+    border: 0px;
 }
-.avatar-shop-homepage-recommendations-container, div.game-carousel:nth-of-type(n+3), div.game-home-page-carousel-title:nth-of-type(n+3) {
-    visibility: hidden;
-    height: 0px;
-    margin-bottom: 0;
-}
-div.game-carousel:nth-of-type(19), div.game-home-page-carousel-title:nth-of-type(18) {
-    visibility: visible !important;
-    height: inherit !important;
-}
+
 
 
 /* WE DO A LITTLE TROLLING */ 
-#\36 48454481 > .game-card-thumb-container:hover, #\31 087859240 > .game-card-thumb-container:hover {
+/* #\36 48454481 > .game-card-thumb-container:hover, #\31 087859240 > .game-card-thumb-container:hover {
     background: url(https://t4.rbxcdn.com/95cbc398c5101cfc377d8511431b6430) no-repeat;
     padding-left: 100%;
     overflow: hidden;
     filter: drop-shadow(0 90px 0 pink);
     transition: padding 2s, filter 1.9s; 
-}/* GPO */ 
+} */
 /* NO MORE TROLLING */
 }
