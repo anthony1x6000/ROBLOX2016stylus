@@ -4001,6 +4001,11 @@ https://i.ibb.co/VtZQ0KP/image.png    */
     #MasterContainer {
 	background-color: #fff;
     }
+	
+    /* remove weird line on unvoted game cards */
+    .game-card-info .no-vote::after {
+        content: none;
+    }
     
     /*
      * if you're reading this text from the pr:
