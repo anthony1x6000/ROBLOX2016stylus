@@ -1012,11 +1012,7 @@ border-top: hidden;
     content: "Play";
     font-size: 24px;
 }
-/* paid games thing working */ 
-.btn-text {
-    font-size: 23px;
-    position: relative;
-} 
+
     /* play button top and bottom bar things */ 
 .game-details-play-button-container {
     padding: 30px 0px 30px 0px;
@@ -1037,6 +1033,11 @@ li.voting-panel {
 /* paid games thing - ref https://web.archive.org/web/20160402134243/http://www.roblox.com:80/games/388168427/ZOMBIE-UNIVERSE-BETA-TEST-SUNDAY
 I think this works
 */
+/* paid games thing */ 
+/* .btn-text {
+    font-size: 23px;
+    position: relative;
+} 
 .btn-text:before {
     position: relative;
     content: "Buy Access for ";
@@ -1055,7 +1056,7 @@ I think this works
 } 
 div.game-details-play-button-container > button {
     width: 85% !important;
-}
+} */
 
 /* avatar page try it on */
 .thumbnail-holder .try-it-on {
