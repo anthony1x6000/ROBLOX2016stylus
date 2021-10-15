@@ -3,7 +3,12 @@ url-prefix("https://web.roblox.com") {
     /* Hey! if you're seeing this check out the github repository for this!
 https://github.com/anthony1x6000/ROBLOX2016stylus
 You can find the style under releases and to see the unreleased version of the style check out "stylustheme.css"
-Credit to Ologist for originally making this incredible userstyle theme! */
+Credit to Ologist for originally making this incredible userstyle theme!
+Code contributors:
+- Ologist (Original creator)
+- anthony1x6000
+- Diyamund
+*/ 
     @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700);
     body {
         background-color: #e3e3e3;
