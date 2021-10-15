@@ -1,8 +1,16 @@
 @-moz-document url-prefix("https://www.roblox.com"), url-prefix("https://web.roblox.com"){
-/* Hey! if you're seeing this check out the github repository for this!
+/* Hey! if you see this, check out the Github repository for this!
 https://github.com/anthony1x6000/ROBLOX2016stylus
-You can find the style under releases and to see the unreleased version of the style check out "stylustheme.css"
-Credit to Ologist for originally making this incredible userstyle theme! */
+You can find the style under releases. Make sure to check out the beta "stylustheme.css."
+Make sure to report any bugs to the issue tracker on Github.  
+
+Credit to Ologist for initially making this great Userstyle theme!
+Code contributors:
+- Ologist (Original creator)
+- anthony1x6000
+- Diyamund
+*/ 
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700);
 body
   
 {
@@ -38,9 +46,9 @@ body
 }
 
 /* ~/CSS/Fonts/SourceSansPro-Google.css
-Font code taken from Ologists theme
+Changed font see @import (around line 5)
 */
-@font-face {
+/* @font-face {
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 300;
@@ -57,7 +65,7 @@ Font code taken from Ologists theme
     font-style: normal;
     font-weight: 600;
     src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGCmgpmuQqK2I-L2S9cF65Ek.woff) format('woff');
-}
+} */
 .gotham-font.light-theme .refresh-link, .gotham-font.light-theme .refresh-link-icon, .gotham-font.light-theme .refresh-link-icon:active, .gotham-font.light-theme .refresh-link-icon:hover, .gotham-font.light-theme .refresh-link-icon:link, .gotham-font.light-theme .refresh-link-icon:visited, .gotham-font.light-theme .refresh-link:active, .gotham-font.light-theme .refresh-link:hover, .gotham-font.light-theme .refresh-link:link, .gotham-font.light-theme .refresh-link:visited, .gotham-font.light-theme .see-all-link, .gotham-font.light-theme .see-all-link-icon, .gotham-font.light-theme .see-all-link-icon:active, .gotham-font.light-theme .see-all-link-icon:hover, .gotham-font.light-theme .see-all-link-icon:link, .gotham-font.light-theme .see-all-link-icon:visited, .gotham-font.light-theme .see-all-link:active, .gotham-font.light-theme .see-all-link:hover, .gotham-font.light-theme .see-all-link:link, .gotham-font.light-theme .see-all-link:visited, .gotham-font.light-theme .touch .refresh-link, .gotham-font.light-theme .touch .refresh-link-icon, .gotham-font.light-theme .touch .refresh-link-icon:active, .gotham-font.light-theme .touch .refresh-link-icon:hover, .gotham-font.light-theme .touch .refresh-link-icon:link, .gotham-font.light-theme .touch .refresh-link-icon:visited, .gotham-font.light-theme .touch .refresh-link:active, .gotham-font.light-theme .touch .refresh-link:hover, .gotham-font.light-theme .touch .refresh-link:link, .gotham-font.light-theme .touch .refresh-link:visited, .gotham-font.light-theme .touch .see-all-link, .gotham-font.light-theme .touch .see-all-link-icon, .gotham-font.light-theme .touch .see-all-link-icon:active, .gotham-font.light-theme .touch .see-all-link-icon:hover, .gotham-font.light-theme .touch .see-all-link-icon:link, .gotham-font.light-theme .touch .see-all-link-icon:visited, .gotham-font.light-theme .touch .see-all-link:active, .gotham-font.light-theme .touch .see-all-link:hover, .gotham-font.light-theme .touch .see-all-link:link, .gotham-font.light-theme .touch .see-all-link:visited {
     color: #00a2ff;
     background-color: rgba(255, 0, 0, 0);
@@ -3162,8 +3170,6 @@ div > div.profile-game.container-list > div.game-grid {
     background-color: #00a2ff;
     border: 0px;
 }
-
-
 
 /* WE DO A LITTLE TROLLING */ 
 /* #\36 48454481 > .game-card-thumb-container:hover, #\31 087859240 > .game-card-thumb-container:hover {
