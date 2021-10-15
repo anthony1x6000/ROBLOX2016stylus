@@ -3996,6 +3996,11 @@ https://i.ibb.co/VtZQ0KP/image.png    */
     #navigation .avatar-headshot-xs {
         display: none;
     }
+	
+    /* for legacy pages */
+    #MasterContainer {
+	background-color: #fff;
+    }
     
     /*
      * if you're reading this text from the pr:
