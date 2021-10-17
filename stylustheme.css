@@ -2683,16 +2683,6 @@ div[style="col-sm-6 slide-item-container-left"]
 .game-card-container {
     height: 220px;
 }
-	
-/*
- * simulates the more "advanced" info on game card hovers
- * remove it if you want, but i think it's nice
- * - aubrey (diyamund)
- */
-.game-card-container:hover {
-    height: 240px;	
-}
-
 
 .game-tile:hover .game-card-container {
     height: 240px;
