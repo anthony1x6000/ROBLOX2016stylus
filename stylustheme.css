@@ -1148,7 +1148,7 @@ ul.nav:nth-child(2) > li:nth-child(1) > a:nth-child(1)
   ul.nav:nth-child(2) > li:nth-child(1) > a:nth-child(1)::before
   {
     content: "Games";
-    font-size: 15px;
+    font-size: 16px;
       
   }
 
@@ -1160,7 +1160,7 @@ ul.nav:nth-child(2) > li:nth-child(2) > a:nth-child(1)
   ul.nav:nth-child(2) > li:nth-child(2) > a:nth-child(1)::before
   {
     content: "Catalog";
-    font-size: 15px;
+    font-size: 16px;
   }
 
 ul.nav:nth-child(2) > li:nth-child(3) > a:nth-child(1)
@@ -1171,7 +1171,7 @@ ul.nav:nth-child(2) > li:nth-child(3) > a:nth-child(1)
   ul.nav:nth-child(2) > li:nth-child(3) > a:nth-child(1)::before
   {
     content: "Develop";
-    font-size: 15px;
+    font-size: 16px;
   }
 
 ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)
@@ -1182,7 +1182,7 @@ ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)
   ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)::before
   {
     content: "ROBUX";
-    font-size: 15px;
+    font-size: 16px;
   }
 
 
@@ -1514,6 +1514,8 @@ div > div.horizontally-scrollable > ul > li.list-item.game-card.game-tile > div.
     padding: 0 6px;
     margin: 6px 0;
     width: 150px;
+    margin-top: 0px !important;
+    font-weight: 300;
 }
 .game-card-name, .game-name-title {
     height: 20px;
@@ -1622,7 +1624,7 @@ Got any ideas? (I tried margin-... w/ !important and it didnt work)
     height: 242px;   
 } */ 
 div > div.scroller > div.arrow {
-    height: 245px !important;
+    height: 225px !important;
 }/* new games page fix */ 
 /* game cover thing fixing gaps */ 
 .horizontal-scroller .scroller.next .spacer {
@@ -1643,7 +1645,7 @@ div > div.scroller > div.arrow {
     z-index: 0 !important;
 }
 .scroller.prev, .scroller.next {
-    height: 247px !important;
+    height: 227px !important;
     top: -3px;
 }/* games page fix right above here too changed 91 to 82 i think */ 
 .icon-games-carousel-right {
@@ -2680,7 +2682,16 @@ div[style="col-sm-6 slide-item-container-left"]
     top: 2.5px;
 }
 .game-card-container {
-    height: 240px;
+    height: 220px;
+}
+	
+/*
+ * simulates the more "advanced" info on game card hovers
+ * remove it if you want, but i think it's nice
+ * - aubrey (diyamund)
+ */
+.game-card-container:hover {
+    height: 240px;	
 }
 
 
@@ -2711,7 +2722,7 @@ div[style="col-sm-6 slide-item-container-left"]
 
 .game-carousel {
     width: 110%;
-    height: 240px;
+    height: 220px;
     overflow-x: visible;
     overflow-y: visible;
 }
@@ -3212,7 +3223,7 @@ transition: padding 2s, filter 1.9s;
 .game-cards .game-card .game-card-name {
     line-height: 20px;
 /*     margin-top: 0; */
-    font-weight: 400;
+    font-weight: 300;
 }
 /* hide avatar icon on sidebar */
 #navigation .avatar-headshot-xs {
@@ -3231,5 +3242,9 @@ transition: padding 2s, filter 1.9s;
 /* view featured items hover button fix */ 
 .btn-control-md.btn-full-width.view-all.ng-binding.ng-scope:hover {
     background-color: #fff;
+}
+	
+#nav-robux-amount {
+    font-weight: 400;
 }
 }
