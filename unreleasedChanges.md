@@ -14,6 +14,7 @@ Find the unreleased version [here](https://github.com/anthony1x6000/ROBLOX2016st
 - [GAMES PAGE/CAROUSEL ARROW CHANGES] Fixed up arrows to be more faithful to 2016. 
 - [BUTTONS] Made the "I agree" button shown when signing a Roblox contract uniform with normal buttons.  
 - [AVATAR PAGE] Added line at the bottom of game catalog card and fixed View Featured Item button (background color broke when hovering)
+- [PLAY BUTTON] Fixed button width. 
 ## Known bugs
 - Under profile pages, the about section and the report section don't correctly splice together. I'll try working on a fix for that when I have the time. 
 ### Credit

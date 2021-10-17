@@ -1054,9 +1054,10 @@ I think this works
   margin-right: auto;
     overflow: hidden;
 } 
-div.game-details-play-button-container > button {
-    width: 85% !important;
-} */
+*/
+button.btn-common-play-game-lg {
+    width: calc(100% - 20%);
+}
 
 /* avatar page try it on */
 .thumbnail-holder .try-it-on {
@@ -2739,7 +2740,6 @@ div[style="col-sm-6 slide-item-container-left"]
 /* login stuff */ 
 .login-button, .cross-device-login-button, .btn-full-width.btn-control-md.fb-button.social-login {
     width: 100%; 
-    
 }
 
 .font-header-2.rbx-navbar-login.nav-menu-title.rbx-menu-item {
