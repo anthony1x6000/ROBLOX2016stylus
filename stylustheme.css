@@ -1,4 +1,4 @@
-@-moz-document url-prefix("https://www.roblox.com"), url-prefix("https://web.roblox.com"){
+@-moz-document url-prefix("web.roblox.com"), domain("www.roblox.com") {
 /* Hey! if you see this, check out the Github repository for this!
 https://github.com/anthony1x6000/ROBLOX2016stylus
 You can find the style under releases. Make sure to check out the beta "stylustheme.css."
