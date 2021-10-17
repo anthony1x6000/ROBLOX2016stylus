@@ -3253,3 +3253,7 @@ transition: padding 2s, filter 1.9s;
 .gotham-font .game-main-content .game-calls-to-action, .gotham-font .game-main-content .game-calls-to-action .game-buttons-container {
     padding-right: 0;
 }
+
+.btr-description .game-description {
+    padding: 0;
+}
