@@ -1225,7 +1225,7 @@ body[data-performance-relative-value='\30 \.005'][data-internal-page-name='Creat
 
 .light-theme .remove-panel {
     background-color: transparent;
-    padding: 0;
+    padding: 7px;
 }
 .game-main-content {
     height: 400px;
