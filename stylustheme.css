@@ -3047,7 +3047,10 @@ div > div.catalog-header > div {
     bottom: 2px;
 }
 
-/*optional gender?? cringe!!!*/.gender-container > .ng-binding.font-caption-header {font-size: 0px;}.gender-container > .ng-binding.font-caption-header::before{content:"Gender";font-size: 15px;}
+/*optional gender?? cringe!!!*/
+/* nah bro, the TRUE cringe is that the only options are male and female */
+	
+.gender-container > .ng-binding.font-caption-header {font-size: 0px;}.gender-container > .ng-binding.font-caption-header::before{content:"Gender";font-size: 15px;}
 /*accept friend button */ 
 #accept-fr-btn {
     background-color: #00a2ff;
