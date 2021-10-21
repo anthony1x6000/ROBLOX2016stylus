@@ -1,7 +1,7 @@
 
 # ROBLOX 2016 Userstyles/Stylus
 UserStyle that changes the look of ROBLOX to be more faithful to what it would look like back in 2016.\
-**To install the latest release click [here](https://github.com/anthony1x6000/ROBLOX2016stylus/raw/main/.user.css-installFiles/release.user.css).**
+**To install the latest release click [here](https://github.com/anthony1x6000/ROBLOX2016stylus/raw/downloads/.user.css-installFiles/release.user.css).**
 
 If you don't already, this requires stylus to function. Get it at the [Chrome Web Store](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or the [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) website. <br> [Userscript](https://github.com/anthony1x6000/ROBLOX2016stylus#mirrors) is also supported, though not 100% tested.<br>
 ![Preview of style](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/2016_stuff/preview.png?raw=true "Preview")
@@ -10,7 +10,7 @@ If you don't already, this requires stylus to function. Get it at the [Chrome We
 **If you can, please contribute!**<br>
 If you know how to fix anything that hasn't been already fixed or see anything that could be improved, I encourage you to fix it and start a pull request! I don't know much CSS myself, so any contribution, even improving the slightest little thing, is greatly appreciated!
 ## Style Mirrors
- - [Github](https://github.com/anthony1x6000/ROBLOX2016stylus/raw/main/.user.css-installFiles/release.user.css)
+ - [Github](https://github.com/anthony1x6000/ROBLOX2016stylus/raw/downloads/.user.css-installFiles/release.user.css)
  - [Userstyles](https://userstyles.org/styles/189624)
  - [Userstyles.world](https://userstyles.world/style/1485)
  - [UserScript](https://userstyles.org/styles/userjs/189624/roblox-2016-fixed-robux-icon.user.js)
