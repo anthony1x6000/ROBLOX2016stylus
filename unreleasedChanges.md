@@ -2,10 +2,11 @@
 This version is not yet 100% released and may have bugs.
 Normal releases can be found at [Github/releases](https://github.com/anthony1x6000/ROBLOX2016stylus/releases).
 Find the unreleased version [here](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/stylustheme.css).
-## Site breaking changes
+## Site breaking fixes
 - [WEBSITE CHAT] Fixed website chat (background color not applying properly)
 - [BETTER ROBLOX] Big thanks to [Diyamund](https://github.com/anthony1x6000/ROBLOX2016stylus/issues/7) for making BTRoblox icons to be consistent with 2016. 
-- [FONT FIXES] Another fix thanks to [Diyamund](https://github.com/anthony1x6000/ROBLOX2016stylus/issues/8); implemented similar, but different font faces. 
+- [FONT FIXES] Another fix thanks to [Diyamund](https://github.com/anthony1x6000/ROBLOX2016stylus/issues/8); implemented similar, but different font faces.
+- [FONT FIXES] More font fixes from [Diyamund's pull request](https://github.com/anthony1x6000/ROBLOX2016stylus/pull/11). Fixed header and sidebar font sizes (Currently only available in pull request 10/21/2021). 
 - [AVATAR PAGE SIDEBAR FIX] Some stuff (paid games button) conflicted with the headers on the side. I guess Roblox decided to make both of them have the same classes, idk.
 ## Small Changes
 - [LEFT SIDE BAR] Centered (shrunk) the left sidebar. [Before](https://i.ibb.co/PwgjTcZ/image.png), [After](https://i.ibb.co/8zrZ9LH/image.png) | [Reference Image](https://imgr.search.brave.com/mYrJP_-JRZk6ViEc2S6K9afu23NDlY2rjB80ViEZwRw/fit/1200/649/ce/1/aHR0cHM6Ly92aWdu/ZXR0ZS53aWtpYS5u/b2Nvb2tpZS5uZXQv/cm9ibG94L2ltYWdl/cy9mL2ZlL0hvbWVz/Y3JlZW4ucG5nL3Jl/dmlzaW9uL2xhdGVz/dD9jYj0yMDE3MDIw/NTIyNTAwMw).
@@ -15,10 +16,7 @@ Find the unreleased version [here](https://github.com/anthony1x6000/ROBLOX2016st
 - [BUTTONS] Made the "I agree" button shown when signing a Roblox contract uniform with normal buttons.  
 - [AVATAR PAGE] Added line at the bottom of game catalog card and fixed View Featured Item button (background color broke when hovering)
 - [PLAY BUTTON] Fixed button width. 
-## Pull request changes (temp) (Diyamund / ROBLOX2016stylus)
-- General font fixes (header, sidebar).
-- I have no clue what line 1225 does.
-- Got rid of based thing, used to be at line [3018](https://i.ibb.co/hMXWTrX/image.png); I completely forgot that existed.
+- [CODE CHANGES] Got rid of based thing, used to be at line [3018](https://i.ibb.co/hMXWTrX/image.png); I completely forgot that existed. (Currently only available in pull request 10/21/2021).
 ## Known bugs
 - Under profile pages, the about section and the report section don't correctly splice together. I'll try working on a fix for that when I have the time. 
 ### Credit
