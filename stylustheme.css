@@ -1,4 +1,3 @@
-@-moz-document url-prefix("https://www.roblox.com"), url-prefix("https://web.roblox.com"){
 /* Hey! if you see this, check out the Github repository for this!
 https://github.com/anthony1x6000/ROBLOX2016stylus
 You can find the style under releases. Make sure to check out the beta "stylustheme.css."
@@ -156,9 +155,9 @@ font-weight: 400;
     font-size: 16px;
     font-weight: 400;
 }
-.gotham-font div {
+/* .gotham-font div {
     line-height: 1.2em;
-}
+} Looks better when I remove this, just pushes stuff on the top header & the left bar up a little. */
 
 
 
@@ -1148,7 +1147,7 @@ ul.nav:nth-child(2) > li:nth-child(1) > a:nth-child(1)
   ul.nav:nth-child(2) > li:nth-child(1) > a:nth-child(1)::before
   {
     content: "Games";
-    font-size: 15px;
+    font-size: 16px;
       
   }
 
@@ -1160,7 +1159,7 @@ ul.nav:nth-child(2) > li:nth-child(2) > a:nth-child(1)
   ul.nav:nth-child(2) > li:nth-child(2) > a:nth-child(1)::before
   {
     content: "Catalog";
-    font-size: 15px;
+    font-size: 16px;
   }
 
 ul.nav:nth-child(2) > li:nth-child(3) > a:nth-child(1)
@@ -1171,7 +1170,7 @@ ul.nav:nth-child(2) > li:nth-child(3) > a:nth-child(1)
   ul.nav:nth-child(2) > li:nth-child(3) > a:nth-child(1)::before
   {
     content: "Develop";
-    font-size: 15px;
+    font-size: 16px;
   }
 
 ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)
@@ -1182,7 +1181,7 @@ ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)
   ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)::before
   {
     content: "ROBUX";
-    font-size: 15px;
+    font-size: 16px;
   }
 
 
@@ -1223,9 +1222,9 @@ body[data-performance-relative-value='\30 \.005'][data-internal-page-name='Creat
     box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
 }
 
-.light-theme .remove-panel {
+.light-theme .remove-panel:not(.people-list) {
     background-color: transparent;
-    padding: 0;
+    padding: 7px;
 }
 .game-main-content {
     height: 400px;
@@ -1510,14 +1509,7 @@ div > div.horizontally-scrollable > ul > li.list-item.game-card.game-tile > div.
 /* used to be margin-left: 11px; ^^*/ 
 
 
-.light-theme .game-card-container .game-card-name {
-    padding: 0 6px;
-    margin: 6px 0;
-    width: 150px;
-}
-.game-card-name, .game-name-title {
-    height: 20px;
-}
+
 .hover-game-tile.visible-tile:hover .featured-game-container {
     position: relative;
     overflow: hidden;
@@ -1621,9 +1613,7 @@ Got any ideas? (I tried margin-... w/ !important and it didnt work)
 /* .arrow, .scroller.prev.disabled, .scroller.next, .scroller.next.disabled, .scroller.prev {
     height: 242px;   
 } */ 
-div > div.scroller > div.arrow {
-    height: 245px !important;
-}/* new games page fix */ 
+/* new games page fix */ 
 /* game cover thing fixing gaps */ 
 .horizontal-scroller .scroller.next .spacer {
     left: 29px;
@@ -1642,10 +1632,7 @@ div > div.scroller > div.arrow {
 .spacer {
     z-index: 0 !important;
 }
-.scroller.prev, .scroller.next {
-    height: 247px !important;
-    top: -3px;
-}/* games page fix right above here too changed 91 to 82 i think */ 
+/* games page fix right above here too changed 91 to 82 i think */ 
 .icon-games-carousel-right {
     margin-right: 3px;
 }
@@ -2679,9 +2666,6 @@ div[style="col-sm-6 slide-item-container-left"]
     position: relative;
     top: 2.5px;
 }
-.game-card-container {
-    height: 240px;
-}
 
 
 .game-tile:hover .game-card-container {
@@ -2709,12 +2693,7 @@ div[style="col-sm-6 slide-item-container-left"]
     
 }
 
-.game-carousel {
-    width: 110%;
-    height: 240px;
-    overflow-x: visible;
-    overflow-y: visible;
-}
+
 /* --------------- */ 
 /* side bar tab thing */
 
@@ -3035,8 +3014,6 @@ div > div.catalog-header > div {
     left: 87px;
     bottom: 2px;
 }
-
-/*optional gender?? cringe!!!*/.gender-container > .ng-binding.font-caption-header {font-size: 0px;}.gender-container > .ng-binding.font-caption-header::before{content:"Gender";font-size: 15px;}
 /*accept friend button */ 
 #accept-fr-btn {
     background-color: #00a2ff;
@@ -3212,7 +3189,7 @@ transition: padding 2s, filter 1.9s;
 .game-cards .game-card .game-card-name {
     line-height: 20px;
 /*     margin-top: 0; */
-    font-weight: 400;
+    font-weight: 300;
 }
 /* hide avatar icon on sidebar */
 #navigation .avatar-headshot-xs {
@@ -3232,4 +3209,49 @@ transition: padding 2s, filter 1.9s;
 .btn-control-md.btn-full-width.view-all.ng-binding.ng-scope:hover {
     background-color: #fff;
 }
+	
+#nav-robux-amount {
+    font-weight: 400;
 }
+
+.gotham-font .game-main-content .game-calls-to-action, .gotham-font .game-main-content .game-calls-to-action .game-buttons-container {
+    padding-right: 0;
+}
+
+.btr-description .game-description {
+    padding: 0;
+}
+
+.light-theme .game-card-container .game-card-name {
+    padding: 0 6px;
+    margin: 6px 0;
+    width: 150px;
+    margin-top: 2px !important;
+    font-weight: 300;
+}
+.game-card-name, .game-name-title {
+    height: 20px;
+}
+.scroller.prev, .scroller.next {
+    top: -3px;
+}
+
+.game-carousel {
+    width: 110%;
+    overflow-x: visible;
+    overflow-y: visible;
+}
+/* STATIC gamecards */ 
+    .scroller.prev, .scroller.next {
+        height: 247px !important;
+    }
+    .game-card-container {
+        height: 240px;
+    }
+    .game-carousel {
+        height: 240px;
+    }
+/* End of STATIC gamecards
+For expanding gamecards see addon on GitHub: anthony1x6000/ROBLOX2016stylus */ 
+
+
