@@ -15,6 +15,10 @@ Find the unreleased version [here](https://github.com/anthony1x6000/ROBLOX2016st
 - [BUTTONS] Made the "I agree" button shown when signing a Roblox contract uniform with normal buttons.  
 - [AVATAR PAGE] Added line at the bottom of game catalog card and fixed View Featured Item button (background color broke when hovering)
 - [PLAY BUTTON] Fixed button width. 
+## Pull request changes (temp) (Diyamund / ROBLOX2016stylus)
+- General font fixes (header, sidebar).
+- I have no clue what line 1225 does.
+- Got rid of based thing, used to be at line [3018](https://i.ibb.co/hMXWTrX/image.png); I completely forgot that existed.
 ## Known bugs
 - Under profile pages, the about section and the report section don't correctly splice together. I'll try working on a fix for that when I have the time. 
 ### Credit
