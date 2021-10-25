@@ -8,6 +8,7 @@ Find the unreleased version [here](https://github.com/anthony1x6000/ROBLOX2016st
 - [FONT FIXES] Another fix thanks to [Diyamund](https://github.com/anthony1x6000/ROBLOX2016stylus/issues/8); implemented similar, but different font faces.
 - [FONT FIXES] More font fixes from [Diyamund's pull request](https://github.com/anthony1x6000/ROBLOX2016stylus/pull/11). Fixed header and sidebar font sizes (Pull request 10/21/2021). 
 - [AVATAR PAGE SIDEBAR FIX] Some stuff (paid games button) conflicted with the headers on the side. I guess Roblox decided to make both of them have the same classes, idk.
+- [FRIENDS PLAYING PAID GAME] Fixed Robux icon of friends playing a paid game and changed text height so "View Details" wouldn't clip out of the container. 
 ## Small Changes
 - [LEFT SIDE BAR] Centered (shrunk) the left sidebar. [Before](https://i.ibb.co/PwgjTcZ/image.png), [After](https://i.ibb.co/8zrZ9LH/image.png) | [Reference Image](https://imgr.search.brave.com/mYrJP_-JRZk6ViEc2S6K9afu23NDlY2rjB80ViEZwRw/fit/1200/649/ce/1/aHR0cHM6Ly92aWdu/ZXR0ZS53aWtpYS5u/b2Nvb2tpZS5uZXQv/cm9ibG94L2ltYWdl/cy9mL2ZlL0hvbWVz/Y3JlZW4ucG5nL3Jl/dmlzaW9uL2xhdGVz/dD9jYj0yMDE3MDIw/NTIyNTAwMw).
 - [SEE ALL BUTTON] Changed minimum width to be more faithful to 2016.
@@ -25,3 +26,5 @@ Find the original style @ https://userstyles.org/styles/178105/roblox-in-2016.
 ### Find a bug?
 Head on over to the [GitHub page](https://github.com/anthony1x6000/ROBLOX2016stylus) and create an issue!
 There you'll also get faster updates and beta versions of the script! (It'll just be a commit under [stylustheme.css](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/stylustheme.css)). Known bugs could also be fixed in the beta; check out the [beta information here](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/unreleasedChanges.md#beta--116).
+
+

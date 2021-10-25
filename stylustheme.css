@@ -1,3 +1,4 @@
+@-moz-document url-prefix("web.roblox.com"), domain("www.roblox.com") {
 /* Hey! if you see this, check out the Github repository for this!
 https://github.com/anthony1x6000/ROBLOX2016stylus
 You can find the style under releases. Make sure to check out the beta "stylustheme.css."
@@ -3253,5 +3254,14 @@ transition: padding 2s, filter 1.9s;
     }
 /* End of STATIC gamecards
 For expanding gamecards see addon on GitHub: anthony1x6000/ROBLOX2016stylus */ 
-
-
+/* View Details hover over player */
+span[ng-bind='library\.placesDict\[friend\.presence\.rootPlaceId\]\.name'] {
+    height: 20px;
+}
+.icon-robux {
+    filter: invert(0.6);
+    background-position: 0px -37px;
+    background-size: 75px;
+    background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/80a1e55d792875c92f6a4c5e7b4ef949fa17c157/images/robux/icons.svg) !important;
+}
+}
