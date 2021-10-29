@@ -3264,4 +3264,8 @@ span[ng-bind='library\.placesDict\[friend\.presence\.rootPlaceId\]\.name'] {
     background-size: 75px;
     background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/80a1e55d792875c92f6a4c5e7b4ef949fa17c157/images/robux/icons.svg) !important;
 }
+/* Top header */ 
+.navbar-fixed-top {
+    border: 0 !important;
+}
 }
