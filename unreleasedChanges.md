@@ -18,6 +18,7 @@ Find the unreleased version [here](https://github.com/anthony1x6000/ROBLOX2016st
 - [AVATAR PAGE] Added line at the bottom of game catalog card and fixed View Featured Item button (background color broke when hovering)
 - [PLAY BUTTON] Fixed button width. 
 - [CODE CHANGES] Got rid of based thing, used to be at line [3018](https://i.ibb.co/hMXWTrX/image.png); I completely forgot that existed. (Pull request 10/21/2021).
+- [HEADER] Removed header border. 
 ## Known bugs
 - Under profile pages, the about section and the report section don't correctly splice together. I'll try working on a fix for that when I have the time. 
 ### Credit
