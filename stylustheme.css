@@ -10,9 +10,236 @@ Code contributors:
 - anthony1x6000
 - Diyamund
 */ 
-@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700);
+
+/* font */ 
+/* cyrillic-ext */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 300;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmhduz8A.woff2) format('woff2');
+unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 300;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwkxduz8A.woff2) format('woff2');
+unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 300;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmxduz8A.woff2) format('woff2');
+unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 300;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlBduz8A.woff2) format('woff2');
+unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 300;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmBduz8A.woff2) format('woff2');
+unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 300;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmRduz8A.woff2) format('woff2');
+unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 300;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNa7lqDY.woff2) format('woff2');
+unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qPK7lqDY.woff2) format('woff2');
+unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNK7lqDY.woff2) format('woff2');
+unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qO67lqDY.woff2) format('woff2');
+unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qN67lqDY.woff2) format('woff2');
+unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNq7lqDY.woff2) format('woff2');
+unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 600;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmhduz8A.woff2) format('woff2');
+unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 600;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwkxduz8A.woff2) format('woff2');
+unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 600;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmxduz8A.woff2) format('woff2');
+unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 600;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlBduz8A.woff2) format('woff2');
+unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 600;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmBduz8A.woff2) format('woff2');
+unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 600;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmRduz8A.woff2) format('woff2');
+unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 600;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 700;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmhduz8A.woff2) format('woff2');
+unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 700;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwkxduz8A.woff2) format('woff2');
+unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 700;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmxduz8A.woff2) format('woff2');
+unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 700;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlBduz8A.woff2) format('woff2');
+unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 700;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmBduz8A.woff2) format('woff2');
+unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 700;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmRduz8A.woff2) format('woff2');
+unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 700;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v14/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* end of font */ 
+
 body
-  
+
 {
     background-color: #e3e3e3;
 }
@@ -36,7 +263,7 @@ body
 }
 .light-theme .scroller.disabled {
     background-color: #f0f1f0;
-	opacity: 1;
+    opacity: 1;
 }
 
 
@@ -210,7 +437,7 @@ background: #F2F2F2
     font-size: 24px;
     font-weight: 300;
 }
-                                     
+
 
 
 
@@ -377,7 +604,7 @@ span.navbar-list-option-icon {
 
 span.navbar-list-option-icon::before {
     visibility: visible;
-      content: "Search";
+        content: "Search";
     font-size: 16px;
 }
 .new-navbar-search-anchor > .navbar-list-option-text {
@@ -449,14 +676,14 @@ background-color: #bcbebf !important;
 }
 
 .btr-profile-favorites .btr-creator-link-container {
-	line-height: 14px;
+    line-height: 14px;
 }
 
 .btr-profile-favorites .card-item .btr-creator-link:any-link {
-	display: inline-block;
-	vertical-align: bottom;
-	max-width: calc(100% - 22px);
-	font-size: 12px;
+    display: inline-block;
+    vertical-align: bottom;
+    max-width: calc(100% - 22px);
+    font-size: 12px;
 }
 
 
@@ -493,11 +720,11 @@ background-color: #bcbebf !important;
     background-image: url(https://svgur.com/i/GuZ.svg);
     background-size: 56px;
 }
-  #nav-robux-icon .icon-robux-28x28
-  {
+    #nav-robux-icon .icon-robux-28x28
+    {
     background-position: 0 -28px;
     background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/80a1e55d792875c92f6a4c5e7b4ef949fa17c157/images/robux/icons.svg);
-  }
+    }
 
 .light-theme .icon-default-economy-28x28, .light-theme .icon-robux-28x28, .light-theme .icon-robux-gold-28x28, .light-theme .icon-robux-white:hover {
     background-size: 56px;
@@ -591,7 +818,7 @@ background-color: #bcbebf !important;
 
 
 /*.gotham-font .text-link, .gotham-font .vlist .list-item .list-body .list-content a, .vlist .list-item .list-body .list-content .gotham-font a {
-	float: right;
+    float: right;
 }*/
 
 
@@ -1050,8 +1277,8 @@ I think this works
     font-size: large;
     position: relative;
     text-align: center !important;
-  margin-left: -43.3px;
-  margin-right: auto;
+    margin-left: -43.3px;
+    margin-right: auto;
     overflow: hidden;
 } 
 */
@@ -1062,7 +1289,7 @@ button.btn-common-play-game-lg {
 /* avatar page try it on */
 .thumbnail-holder .try-it-on {
     width: 100px; 
-    
+
 }
 
 /* fixing the color of the thumbnail arrow things */ 
@@ -1141,49 +1368,49 @@ padding: 4px 4px !important;
 }
 /* changing top bar stuff I FOUND OUT HOW! Not really I just looked at Ologist's code and saw that he figured it out so I'm shamelessly stealing it */ 
 ul.nav:nth-child(2) > li:nth-child(1) > a:nth-child(1)
-  {
+    {
     font-size: 0 !important;
-  }
+    }
 
-  ul.nav:nth-child(2) > li:nth-child(1) > a:nth-child(1)::before
-  {
+    ul.nav:nth-child(2) > li:nth-child(1) > a:nth-child(1)::before
+    {
     content: "Games";
     font-size: 16px;
-      
-  }
+
+    }
 
 ul.nav:nth-child(2) > li:nth-child(2) > a:nth-child(1)
-  {
+    {
     font-size: 0 !important;
-  }
+    }
 
-  ul.nav:nth-child(2) > li:nth-child(2) > a:nth-child(1)::before
-  {
+    ul.nav:nth-child(2) > li:nth-child(2) > a:nth-child(1)::before
+    {
     content: "Catalog";
     font-size: 16px;
-  }
+    }
 
 ul.nav:nth-child(2) > li:nth-child(3) > a:nth-child(1)
-  {
+    {
     font-size: 0 !important;
-  }
+    }
 
-  ul.nav:nth-child(2) > li:nth-child(3) > a:nth-child(1)::before
-  {
+    ul.nav:nth-child(2) > li:nth-child(3) > a:nth-child(1)::before
+    {
     content: "Develop";
     font-size: 16px;
-  }
+    }
 
 ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)
-  {
+    {
     font-size: 0 !important;
-  }
+    }
 
-  ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)::before
-  {
+    ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)::before
+    {
     content: "ROBUX";
     font-size: 16px;
-  }
+    }
 
 
 /* making the gray highlight thing smaller */
@@ -1198,7 +1425,7 @@ body[data-performance-relative-value='\30 \.005'][data-internal-page-name='Creat
 }
 /*.profile-header .header-caption .header-details .details-info li .font-header-2:before {
     content: "\A \A";
-	white-space: pre;
+    white-space: pre;
 }*/
 
 
@@ -1327,7 +1554,7 @@ box-shadow: none !important;
 
 
 .profile-container .asset-item .item-name:hover {
-	color: #00A2FF !important;
+    color: #00A2FF !important;
     text-decoration: none !important;
 }
 
@@ -1551,7 +1778,7 @@ div > div.horizontally-scrollable > ul > li.list-item.game-card.game-tile > div.
     border-radius: 3px 3px 0 0;
     opacity: 0;
     transition: opacity .0s ease-out;
-    
+
 }
 div.featured-game-container.game-card-container > a.game-card-link > div.thumb-container {
     border-top-right-radius: 3px;
@@ -1580,7 +1807,7 @@ div.featured-game-container.game-card-container > a.game-card-link > div.thumb-c
 }
 .hover-game-tile.visible-tile:hover .featured-game-container .featured-game-icon-container { /* fixing the game icon going to the right*/ 
     margin-left: 0px !important;
-    
+
 }
 
 /* Stuff for my browser that hopefully won't mess something up */ 
@@ -1869,7 +2096,7 @@ box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
 {
     color: #02b757;
 }
- .light-theme .voting-panel .users-vote .vote-details .vote-numbers .count-right
+    .light-theme .voting-panel .users-vote .vote-details .vote-numbers .count-right
 {
     color: #e2231a;
 }
@@ -2650,17 +2877,17 @@ div[style="col-sm-6 slide-item-container-left"]
     background-position: 0;
 }
 
-  #nav-robux-icon .icon-robux-28x28:hover
-  {
+    #nav-robux-icon .icon-robux-28x28:hover
+    {
     background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/80a1e55d792875c92f6a4c5e7b4ef949fa17c157/images/robux/icons.svg);
     background-position: -28px -28px;
-  }
+    }
 /* Messing with the games tab */
 .light-theme .game-card-info .info-label.icon-votes-gray {
 
     background-position: 0 -351px;
     background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/cd9b642ccf4ef8bfd605a035bb2cc53db92f4e24/images/archiveofimages/153fd3209692232cd8087cad74a669b0-games.svg);
-    
+
 }
 
 .game-card-info .vote-percentage-label {
@@ -2685,13 +2912,13 @@ div[style="col-sm-6 slide-item-container-left"]
 
 .info-label.vote-percentage-label {
     top: 12px;
-    
+
 }
 
 .info-label.icon-votes-gray {
     position: relative;
     top: 10px;
-    
+
 }
 
 
@@ -2714,7 +2941,7 @@ div[style="col-sm-6 slide-item-container-left"]
 
 .light-theme .btn-secondary-md:link {
     padding: 9px;
-    
+
 }
 
 /* login stuff */ 
@@ -2725,30 +2952,30 @@ div[style="col-sm-6 slide-item-container-left"]
 .font-header-2.rbx-navbar-login.nav-menu-title.rbx-menu-item {
     position: relative;
     right: 10px;
-    
+
 }
 
 /* signup page */ 
 .dark-theme .theme-bg {
     background-color: rgba(255,255,255,0.95)
-    
+
 }
 
 .text-center.signup-header.ng-binding {
     color: #2d2d2de0;
-    
+
 }
 
 .signup-container .birthday-container .rbx-select-group:first-of-type .rbx-select, .signup-container .birthday-container .rbx-select-group:nth-of-type(2) .rbx-select, .dark-theme .birthday-container .rbx-select-group .rbx-select, .dark-theme .fake-input-lg {
     background-color: white;
 
-    
+
 }
 
 .signup-or-log-in input[type=email]:focus, .signup-or-log-in input[type=password]:focus, .signup-or-log-in input[type=text]:focus {
     background-color: white;
     border: 1px solid #b8b8b8;
-    
+
 }
 
 .dark-theme .input-field {
@@ -2758,7 +2985,7 @@ div[style="col-sm-6 slide-item-container-left"]
 
 .signup-or-log-in .signup-container .signup-input-area .legal-text-container div {
     color: #2d2d2de0;
-    
+
 }
 
 
@@ -2779,12 +3006,12 @@ div[style="col-sm-6 slide-item-container-left"]
 
 .form-control.fake-input-lg {
     border: 1px solid #b8b8b8;
-    
+
 }
 
 .signup-container .birthday-container .birthday-select-group {
     border: 1px solid #b8b8b8;    
-    
+
 }
 
 .text-logo {
@@ -2792,8 +3019,8 @@ div[style="col-sm-6 slide-item-container-left"]
     position: relative;
     height: 100px;
     bottom: 10px;
-    
-    
+
+
 }
 
 /* robux icon change */
@@ -2867,7 +3094,7 @@ https://i.ibb.co/VtZQ0KP/image.png    */
 .push-notifications-prompt-text {
     position: relative;
     top: 2px;
-    
+
 }
 .alert-info.linkify > .text-link {
     color: #085bcd;
@@ -2893,7 +3120,7 @@ https://i.ibb.co/VtZQ0KP/image.png    */
 
 .accept-friend.btn-cta-md.btn-min-width {
     border-radius: 4px;
-    
+
 }
 
 /* roblox powering imagination chat & party */ 
@@ -2936,7 +3163,7 @@ div.catalog-results > div > ul > li > a.item-card-container > div.item-card-link
 /* .container-main .catalog-full-screen .catalog-results .item-cards-stackable .item-card, .container-main .splash.catalog-full-screen .catalog-results .item-cards-stackable .item-card {
     width: auto;
 }
- */
+    */
 .hlist.item-cards-stackable.ng-scope {
     overflow: visible !important;
 }
@@ -3210,7 +3437,7 @@ transition: padding 2s, filter 1.9s;
 .btn-control-md.btn-full-width.view-all.ng-binding.ng-scope:hover {
     background-color: #fff;
 }
-	
+
 #nav-robux-amount {
     font-weight: 400;
 }
@@ -3267,5 +3494,10 @@ span[ng-bind='library\.placesDict\[friend\.presence\.rootPlaceId\]\.name'] {
 /* Top header */ 
 .navbar-fixed-top {
     border: 0 !important;
+}
+/* Downpage */ 
+img[src='https\:\/\/images\.rbxcdn\.com\/6ef6e892aea640c3b1f79f0f820caca5'] {
+content: url('https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/offline.png?raw=true');
+height: 400px;
 }
 }
