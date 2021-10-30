@@ -1,4 +1,4 @@
-@-moz-document url-prefix("web.roblox.com"), domain("www.roblox.com") {
+@-moz-document url-prefix("web.roblox.com"), domain("www.roblox.com") { 
 /* Hey! if you see this, check out the Github repository for this!
 https://github.com/anthony1x6000/ROBLOX2016stylus
 You can find the style under releases. Make sure to check out the beta "stylustheme.css."
@@ -3497,7 +3497,6 @@ span[ng-bind='library\.placesDict\[friend\.presence\.rootPlaceId\]\.name'] {
 }
 /* Downpage */ 
 img[src='https\:\/\/images\.rbxcdn\.com\/6ef6e892aea640c3b1f79f0f820caca5'] {
-content: url('https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/offline.png?raw=true');
-height: 400px;
+content: url('https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/ohnoes.jpg?raw=true');
 }
 }
