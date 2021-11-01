@@ -3495,8 +3495,10 @@ span[ng-bind='library\.placesDict\[friend\.presence\.rootPlaceId\]\.name'] {
 .navbar-fixed-top {
     border: 0 !important;
 }
-/* Downpage */ 
-img[src='https\:\/\/images\.rbxcdn\.com\/6ef6e892aea640c3b1f79f0f820caca5'] {
-content: url('https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/ohnoes.jpg?raw=true');
+/* remove suggested avatar items */ 
+div.avatar-shop-homepage-recommendations-container {
+    visibility: hidden;
+    height: 0;
+    margin: 0;
 }
 }
