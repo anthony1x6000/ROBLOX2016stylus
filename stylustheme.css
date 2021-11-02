@@ -1450,10 +1450,10 @@ body[data-performance-relative-value='\30 \.005'][data-internal-page-name='Creat
     box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
 }
 
-.light-theme .remove-panel:not(.people-list) {
+/* .light-theme .remove-panel:not(.people-list) {
     background-color: transparent;
-    padding: 7px;
-}
+    padding: 0px;
+} */
 .game-main-content {
     height: 400px;
 }
@@ -3500,5 +3500,9 @@ div.avatar-shop-homepage-recommendations-container {
     visibility: hidden;
     height: 0;
     margin: 0;
+}
+/* favorites on profile */
+div.favorite-games-container > ul > li.list-item {
+    margin-right: -3px;
 }
 }
