@@ -12,7 +12,7 @@ Code contributors:
 */ 
 
 /* font */ 
-    @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700);
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700);
 /* end of font */ 
 
 body
@@ -1199,7 +1199,7 @@ ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)
 body[data-performance-relative-value='\30 \.005'][data-internal-page-name='Create'][data-send-event-percentage='\30 '] > div > div > div > div > ul > li > a.font-header-2.nav-menu-title.text-header
 {
     height: 20px;
-}
+} 
 /*.profile-header .header-caption .header-details .details-info li .font-header-2:before {
     content: "\A \A";
     white-space: pre;
@@ -2725,7 +2725,14 @@ div[style="col-sm-6 slide-item-container-left"]
 .login-button, .cross-device-login-button, .btn-full-width.btn-control-md.fb-button.social-login {
     width: 100%; 
 }
-
+.fb-button {
+    background: #3b5998 !important;
+    border-color: #3b5998 !important;
+    color: white !important;
+}
+.fb-button:hover {
+    background: #627aad;
+}
 .font-header-2.rbx-navbar-login.nav-menu-title.rbx-menu-item {
     position: relative;
     right: 10px;
