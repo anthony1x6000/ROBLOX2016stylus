@@ -2731,7 +2731,8 @@ div[style="col-sm-6 slide-item-container-left"]
     color: white !important;
 }
 .fb-button:hover {
-    background: #627aad;
+    background: #627aad !important;
+    border-color: #627aad !important;
 }
 .font-header-2.rbx-navbar-login.nav-menu-title.rbx-menu-item {
     position: relative;
