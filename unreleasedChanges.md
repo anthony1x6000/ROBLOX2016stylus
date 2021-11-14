@@ -9,7 +9,8 @@ Find the unreleased version [here](https://github.com/anthony1x6000/ROBLOX2016st
 - [Font] Removed @import for importing the font and directly added it to the style itself; UserStyles' website doesn't allow @import tags. 
 - [Homepage] Removed suggested avatar items on the homepage. 
 - [Homepage] Fixed favorites (on profile page) clipping outside of its parent container. 
-- [Login] Facebook login button fixed.
+- [Login] Facebook login button fixed. Later I'll try to make the entire login page look like 2016.
+- [Play Button] Fixed play button alignment, made it more centered.
 ## Known bugs
 - Under profile pages, the about section and the report section don't correctly splice together. I'll try working on a fix for that when I have the time. 
 ### Credit

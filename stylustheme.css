@@ -1007,7 +1007,10 @@ border-top: hidden;
 }
 
 /* Play button changes */
-
+button.btn-common-play-game-lg {
+    position: relative;
+    right: 3px;
+}
 .icon-common-play:after {
     visibility: visible;
     position: relative;
