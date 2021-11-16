@@ -1,5 +1,5 @@
 @-moz-document domain("web.roblox.com"), domain("www.roblox.com") { 
-/* Hey! if you see this, check out the Github repository for this!
+    /* Hey! if you see this, check out the Github repository for this!
 https://github.com/anthony1x6000/ROBLOX2016stylus
 You can find the style under releases. Make sure to check out the beta "stylustheme.css."
 Make sure to report any bugs to the issue tracker on Github.  
@@ -359,54 +359,73 @@ background-color: #3FC679;
     border-radius: 2px;   
 }
 /* search results & bar */ 
+.new-navbar-search-anchor > .navbar-list-option-suffix, span.navbar-list-option-icon, .navbar-list-option-text {
+    color: #000 !important;
+    opacity: 1 !important;
+    font-size: 16px;
+}
 .light-theme .rbx-header .navbar-search .new-dropdown-menu {
     width: 475px !important;
     margin-left: 6px;
     margin-top: 0px;
-/*    width: calc(100% + 12px); */ 
     background-color: #fff;
     box-shadow: 0 0 8px 0 rgba(0,0,0,.1);
     border-radius: 3px;
 }
-#navbar-search-clear-btn {
+.light-theme .rbx-header .navbar-search .navbar-search-option.new-selected {
+    background-color: #F2F2F2;
+    box-shadow: 4px 0 0 0 #00A2FF inset;
+    cursor: pointer !important;
+}
+.clear-search {
     visibility: hidden;
 }
 .new-navbar-search-anchor {
     max-height: 43px !important;
 }
-
 span.navbar-list-option-icon {
     visibility: hidden;
 }
 
 span.navbar-list-option-icon::before {
     visibility: visible;
-        content: "Search";
+    content: "Search";
     font-size: 16px;
 }
 .new-navbar-search-anchor > .navbar-list-option-text {
     margin-left: 21px;
 }
-.new-navbar-search-anchor > .navbar-list-option-suffix, span.navbar-list-option-icon {
-    color: #606162 !important;
-    opacity: 1 !important;
-}
-div > ul > li > a.new-navbar-search-anchor:hover {
-    background-color: #f3f2f3;
-} 
-li.new-selected > a {
-background-color: #bcbebf !important;
-}
 .light-theme .rbx-header .navbar-search .new-dropdown-menu li {
     border-bottom: 0px;
 }
+/* auto complete in catalog */ 
+li[ng-repeat='suggestion\ in\ autocompleteSuggestions\.suggestions'] {
+    height: 43px !important;
+    overflow: hidden;
+}
+div.autocomplete-dropdown-menu {
+    position: relative;
+    top: -7px;
+    width: 300px !important;
+    margin-left: 11.4px;
+}
+a[ng-click='onAutocompleteSuggestionClicked\(suggestion\.Query\,\ \$index\)'] > span.navbar-list-option-icon {
+    position: relative;
+    margin-bottom: 6px;
+    left: -10px;
+}
+a[ng-click='onAutocompleteSuggestionClicked\(suggestion\.Query\,\ \$index\)'] > span.ng-binding {
+    margin-left: 10px;
+}
+
+
 /*Premium Medium (OBC)*/
 .profile-header .header-title h2, .profile-header .header-title span[class^="icon"] {
     float: right;
 }
 .profile-header .header-title .icon-premium-medium {
     display: inline;
-    margin-top: 0 !important;
+/*     margin-top: 0 !important; */
     margin-left: 6px;
 }
 .light-theme .icon-default-premium-medium, .light-theme .icon-premium-medium {
@@ -2622,12 +2641,12 @@ div[style="col-sm-6 slide-item-container-left"]
     border-radius: 1px;
 }
 
-.light-theme .rbx-header .rbx-navbar-search .rbx-navbar-search-option.selected
+/* .light-theme .rbx-header .rbx-navbar-search .rbx-navbar-search-option.selected
 {
     background-color: #f2f2f2;
     box-shadow: inset 4px 0 0 0 #00a2ff;
     cursor: pointer;
-}
+} */
 .rbx-header.light-theme .rbx-navbar li .nav-menu-title:focus, .rbx-header.light-theme .rbx-navbar li .nav-menu-title:hover
 {
     background-color: rgba(25,25,25,.1);
