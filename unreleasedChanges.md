@@ -12,6 +12,7 @@ Find the unreleased version [here](https://github.com/anthony1x6000/ROBLOX2016st
 - [Login] Facebook login button fixed. Later I'll try to make the entire login page look like 2016.
 - [Play Button] Fixed play button alignment, made it more centered.
 - [Search] Fixed and cleaned up search results. [See images.](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/unreleasedChanges.md#images)
+- [Item Price] Fixed item card price icon for being cut off.
 ## Known bugs
 - Under profile pages, the about section and the report section don't correctly splice together. I'll try working on a fix for that when I have the time. 
 ## Images

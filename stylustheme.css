@@ -1,5 +1,5 @@
 @-moz-document domain("web.roblox.com"), domain("www.roblox.com") { 
-    /* Hey! if you see this, check out the Github repository for this!
+/* Hey! if you see this, check out the Github repository for this!
 https://github.com/anthony1x6000/ROBLOX2016stylus
 You can find the style under releases. Make sure to check out the beta "stylustheme.css."
 Make sure to report any bugs to the issue tracker on Github.  
@@ -3311,5 +3311,8 @@ div.avatar-shop-homepage-recommendations-container {
 /* favorites on profile */
 div.favorite-games-container > ul > li.list-item {
     margin-right: -3px;
+}
+.text-overflow.item-card-price {
+height: 100%;
 }
 }
