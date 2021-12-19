@@ -1,4 +1,4 @@
-@-moz-document domain("web.roblox.com"), domain("www.roblox.com") { 
+@-moz-document domain("web.roblox.com"), domain("www.roblox.com") {
 /* Hey! if you see this, check out the Github repository for this!
 https://github.com/anthony1x6000/ROBLOX2016stylus
 You can find the style under releases. Make sure to check out the beta "stylustheme.css."
@@ -564,9 +564,6 @@ a[ng-click='onAutocompleteSuggestionClicked\(suggestion\.Query\,\ \$index\)'] > 
     img.scr: url(https://www.dictionary.com/e/wp-content/uploads/2019/05/1000x700-LOL-1.jpg);
 }*/
 
-.light-theme .item-card-container .item-card-price {
-    margin-top: 0 !important;
-}
 
 .light-theme .item-card {
     height: 205px;
@@ -750,9 +747,7 @@ padding: 4px 4px !important;
     border-color: #fff;
 }
 
-.light-theme .item-card-container .item-card-price {
-    bottom: auto !important;
-}
+
 
 
 
@@ -2045,10 +2040,10 @@ background-color: #fff;
     height: 90px;
 }
 
-.light-theme .item-card-container .item-card-price
+.text-overflow.item-card-price.font-header-2.text-subheader.ng-scope.margin-top-none
 {
-position: absolute;
-    bottom: -6px;
+    height: auto;
+
 }
 
 .items-list .item-card .item-card-caption
@@ -2519,10 +2514,6 @@ div[style="col-sm-6 slide-item-container-left"]
     background-color: #fff;
 }
 
-.light-theme .item-card-container .item-card-price
-{
-    bottom: 0px;
-}
 
 .item-cards-stackable .item-card
 {
