@@ -7,6 +7,7 @@ Find the unreleased version [here](https://github.com/anthony1x6000/ROBLOX2016st
 ## Major Changes
 - [Search] Fixed and cleaned up [search](https://pixelfed.social/p/Anthony16000/366047194306153633).
 - [Catalog] Fixed [card price](https://pixelfed.social/p/Anthony16000/378201306465421246) height.
+- [Play button] Fixed [paid games play button](https://pixelfed-prod.nyc3.cdn.digitaloceanspaces.com/public/m/_v2/366043747065310340/7198ec0c0-99bc91/0LcvUKlFLcOE/CX9ThndZAwldLagDUkMlxKR8yLD2PRXOfhEyV6NP.png) and made the [regular play button](https://pixelfed-prod.nyc3.cdn.digitaloceanspaces.com/public/m/_v2/366043747065310340/7198ec0c0-99bc91/Qd90bwQEisAB/6xsfxlpQDrAIG9OlCCS4K8b6vBMwBi2UuR8Zn0Mz.png) more [faithful](https://pixelfed.social/p/Anthony16000/379036711761901441) to 2016. 
 ### Small changes
 - [Downpage] Replace Roblox down page image. I don't know how to replicate the entire thing, but the image is a start. If you want to try and fix it yourself, see this [reference](https://static.wikia.nocookie.net/roblox/images/5/5a/Apr7-2015_maintenance.PNG/revision/latest?cb=20200319185127) [ima](ipfs://bafybeidt47vbu53oazqit7xs7mdmyvo7kyymweh5ldogdm25nljzraua6e/?filename=downpage2016.png)[ge](https://ipfs.io/ipfs/QmW96hcndqibSzRiCrs6Y1vkSqFzWVNLAxW9Fzv9stLLZW?filename=downpage2016.png).
 - [Font] Removed @import for importing the font and directly added it to the style itself; UserStyles' website doesn't allow @import tags. 
@@ -17,6 +18,7 @@ Find the unreleased version [here](https://github.com/anthony1x6000/ROBLOX2016st
 - [Item Price] Fixed item card price icon for being cut off.
 ## Known bugs
 - Under profile pages, the about section and the report section aren't connected. I'll try working on a fix for that when I have the time. 
+  - Nevermind, impossible. 
 
 ### Find a bug?
 Head on over to the [GitHub page](https://github.com/anthony1x6000/ROBLOX2016stylus) and create an issue!

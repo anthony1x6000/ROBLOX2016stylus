@@ -591,21 +591,7 @@ a[ng-click='onAutocompleteSuggestionClicked\(suggestion\.Query\,\ \$index\)'] > 
 
 
 
-.game-main-content.follow-button-enabled .favorite-follow-vote-share {
-    position: relative;
-    width: 100%;
-    padding-top: 20px;
-}
-.game-main-content .game-play-buttons .btn-common-play-game-lg {
-    min-width: 80% !important;
-    padding: 10px 0 8px !important;
-}
-.gotham-font .game-main-content .game-calls-to-action .game-play-buttons, .gotham-font .game-main-content .game-calls-to-action .game-buttons-container .game-play-buttons {
-    padding: 36px 12px;
-}
-.gotham-font .game-main-content .game-calls-to-action .game-play-buttons, .gotham-font .game-main-content .game-calls-to-action .game-buttons-container .game-play-buttons {
-    border-top: #bdbebe solid 1px !important;
-}
+
 
 
 
@@ -667,14 +653,6 @@ a[ng-click='onAutocompleteSuggestionClicked\(suggestion\.Query\,\ \$index\)'] > 
 }
 
 
-
-.game-main-content .game-play-buttons .btn-common-play-game-lg {
-    min-width: 100%;
-    padding: 4px 16px;
-    padding-top: 8px;
-}
-
-
 .avatar-card-container .avatar-card-caption {
     padding: 10px 0 0;
 }
@@ -696,8 +674,37 @@ a.avatar-card-label:before {
 }
 
 
+/* .game-main-content.follow-button-enabled .favorite-follow-vote-share {
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+} */
+/* .game-main-content .game-play-buttons .btn-common-play-game-lg {
+    min-width: 80%;
+    padding: 10px 0 8px;
+} */
 
-
+/* .gotham-font .game-main-content .game-calls-to-action .game-play-buttons, .gotham-font .game-main-content .game-calls-to-action .game-buttons-container .game-play-buttons {
+    padding: 36px 12px;
+} */
+/* .gotham-font .game-main-content .game-calls-to-action .game-play-buttons, .gotham-font .game-main-content .game-calls-to-action .game-buttons-container .game-play-buttons {
+    border-top: #bdbebe solid 1px;
+} */
+/* .game-main-content .game-play-buttons .btn-common-play-game-lg {
+    min-width: 100%;
+    padding: 4px 16px;
+    padding-top: 8px;
+} */
+.light-theme .remove-panel {
+    padding: 8px;
+}
+.game-main-content {
+    min-height: 345px;
+    padding: 12px 12px !important;
+}
+.gotham-font .game-main-content .game-calls-to-action, .gotham-font .game-main-content .game-calls-to-action .game-buttons-container {
+    padding-right: 0;
+}
 
 div.VisitButton.VisitButtonPlayGLI a:before {
 content: "Play";
@@ -990,9 +997,6 @@ border-top: hidden;
     border-bottom: 1px solid #B8B8B8;
 }
 
-
-
-
 .social-links .medallion {
     height: 100px;
     margin: .5em;
@@ -1014,70 +1018,63 @@ border-top: hidden;
 .light-theme a.btn-common-play-game-lg {
     border-radius: 5px;
 }
-.btn-common-play-game-lg span[class^=icon-], .btn-common-play-game-lg span[class^=icon-]:hover, a.btn-common-play-game-lg span[class^=icon-], a.btn-common-play-game-lg span[class^=icon-]:hover {
-    visibility: hidden;
-    background-position: 0 -35px;
-    background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/80a1e55d792875c92f6a4c5e7b4ef949fa17c157/images/robux/icons.svg)
-}
+
 
 /* Play button changes */
 button.btn-common-play-game-lg {
     position: relative;
-    right: 3px;
+/*     right: 1px; */
+    width: auto;
+    min-width: 75%;
+    overflow: hidden;
+    height: 53.21px;
+    padding: 13px 15px;
+}
+.light-theme .btn-growth-sm { /* popover join button */
+    border-radius: 3px;
+    background: #02b757;
+    border: 0;
+}
+.light-theme .btn-growth-sm:hover {
+    background: #3FC679;
+}
+button.btn-full-width > span.icon-common-play {
+    visibility: hidden;
 }
 .icon-common-play:after {
     visibility: visible;
     position: relative;
-    top: 8px;
-    margin-left: -5px;
+    top: 3px;
+    right: 2px;
     content: "Play";
-    font-size: 24px;
+    font-size: 21px;
+}
+/* paid games play button - ref https://web.archive.org/web/20160501164208/roblox.com/games/388168427/ZOMBIE-UNIVERSE-BETA-TEST-SUNDAY */
+button.btn-common-play-game-lg > span.icon-robux-white {
+    display: none;
+    background-position: 0 -35px;
+    background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/80a1e55d792875c92f6a4c5e7b4ef949fa17c157/images/robux/icons.svg);
+}
+button.btn-common-play-game-lg > span.btn-text {
+    position: relative;
+    margin-left: 0px;
+    right: 2px;
+    bottom: 1px;
+}
+button.btn-common-play-game-lg > span.btn-text:before {
+    position: relative;
+    content: "Buy Access for ";
+}
+button.btn-common-play-game-lg > span.btn-text:after {
+    position: relative;
+    content: " ROBUX";
 }
 
-    /* play button top and bottom bar things */ 
+/* play button top and bottom bar things */ 
 .game-details-play-button-container {
     padding: 30px 0px 30px 0px;
     border-top: 1px solid #bdbebe;
     border-bottom: 1px solid #bdbebe;
-}
-/* Moving the voting and follow buttons 
-.game-follow-button-container {
-    position: relative;
-    left: 130px;
-}
-li.voting-panel {
-    position: relative !important;
-    right: 88px;
-} temp commented out */
-
-
-/* paid games thing - ref https://web.archive.org/web/20160402134243/http://www.roblox.com:80/games/388168427/ZOMBIE-UNIVERSE-BETA-TEST-SUNDAY
-I think this works
-*/
-/* paid games thing */ 
-/* .btn-text {
-    font-size: 23px;
-    position: relative;
-} 
-.btn-text:before {
-    position: relative;
-    content: "Buy Access for ";
-}.btn-text:after {
-    position: relative;
-    content: " ROBUX";
-
-}
-.btn-text {
-    font-size: large;
-    position: relative;
-    text-align: center !important;
-    margin-left: -43.3px;
-    margin-right: auto;
-    overflow: hidden;
-} 
-*/
-button.btn-common-play-game-lg {
-    width: calc(100% - 20%);
 }
 
 /* avatar page try it on */
@@ -1248,9 +1245,7 @@ body[data-performance-relative-value='\30 \.005'][data-internal-page-name='Creat
     background-color: transparent;
     padding: 0px;
 } */
-.game-main-content {
-    height: 400px;
-}
+
 
 .gotham-font .font-caption-body:hover, .gotham-font .tooltip .tooltip-inner:hover {
     font-size: 16px;
@@ -1827,9 +1822,8 @@ box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
 .light-theme .section-content.remove-panel
 {
     background-color: #ffffff;
-    border: 6px solid #ffffff
+/*     border: 12px solid #ffffff; */
 }
-
 .avatar-back
 {
     width: 265px;
@@ -2039,13 +2033,6 @@ background-color: #fff;
 {
     height: 90px;
 }
-
-.text-overflow.item-card-price.font-header-2.text-subheader.ng-scope.margin-top-none
-{
-    height: auto;
-
-}
-
 .items-list .item-card .item-card-caption
 {
     height: 53px
@@ -2392,8 +2379,8 @@ background-color: #fff;
 
 .light-theme .btn-primary-md:focus, .light-theme .btn-primary-md:hover, .light-theme .btn-primary-md[disabled]
 {
-    background-color: #3fc679;
-    border: 1px solid #3fc679;
+    background-color: #3FC679;
+    border: 1px solid #3FC679;
     box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
 }
 
@@ -3109,17 +3096,7 @@ button#reactivate-button, div.not-approved-page > div > div > button#logout-butt
     background-image: linear-gradient(#a6f5fe, #a6f5fe) !important;
     border-color: #27a1da;
 }
-/* private server */ 
-    /* TAGS: NOT NEEDED */
-.light-theme .rbx-private-server-create-button {
-    font-size: 0 !important;
-}
 
-.light-theme .rbx-private-server-create-button::before {
-    content: "Create VIP server";
-    font-size: 16px;
-    line-height: 15px;
-}
 /* sitewide defaults */
 .input-field{ /* search bars */ 
     border-radius: 1px !important;
@@ -3128,9 +3105,7 @@ button#reactivate-button, div.not-approved-page > div > div > button#logout-butt
     border-radius: 1px !important; 
 }
 .light-theme .btn-primary-md {
-    border-radius: 1px;
-}button.btn-common-play-game-lg{
-    border-radius: 8px !important;
+    border-radius: 5px;
 }
 
 /* profile game card layout */ 
@@ -3240,9 +3215,7 @@ transition: padding 2s, filter 1.9s;
     font-weight: 400;
 }
 
-.gotham-font .game-main-content .game-calls-to-action, .gotham-font .game-main-content .game-calls-to-action .game-buttons-container {
-    padding-right: 0;
-}
+
 
 .btr-description .game-description {
     padding: 0;
@@ -3306,4 +3279,15 @@ div.favorite-games-container > ul > li.list-item {
 .text-overflow.item-card-price {
 height: 100%;
 }
+/* Catalog */
+.text-overflow.item-card-price.font-header-2.text-subheader.ng-scope.margin-top-none, .light-theme .item-card-container .item-card-price {
+    height: auto;
+    position: absolute;
+}
+/* popover */ 
+.popover {
+border-radius: 2px;
+}
+
+
 }
