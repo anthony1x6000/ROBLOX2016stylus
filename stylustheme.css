@@ -1570,10 +1570,15 @@ div > div.horizontally-scrollable > ul > li.list-item.game-card.game-tile > div.
 
 }
 div.featured-game-container.game-card-container > a.game-card-link > div.thumb-container {
-    border-top-right-radius: 3px;
+    border-radius: 0px;
     border-top-left-radius: 3px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
+    border-top-right-radius: 3px;
+}
+.featured-game-tile:hover .thumb-container:before {
+    opacity: 0;
+}
+span.brief-game-icon > img {
+    border-radius: 3px;
 }
 .featured-game-container.game-card-container {
     margin-left: 5px;
