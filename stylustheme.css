@@ -516,12 +516,19 @@ a[ng-click='onAutocompleteSuggestionClicked\(suggestion\.Query\,\ \$index\)'] > 
     background-image: url(https://svgur.com/i/GuZ.svg);
     background-size: 56px;
 }
-    #nav-robux-icon .icon-robux-28x28
-    {
+#nav-robux-icon .icon-robux-28x28
+{
     background-position: 0 -28px;
     background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/80a1e55d792875c92f6a4c5e7b4ef949fa17c157/images/robux/icons.svg);
-    }
-
+}
+button[ng-click='buyClick\(product\.subscription\)'] > span.icon-robux-white {
+    background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/80a1e55d792875c92f6a4c5e7b4ef949fa17c157/images/robux/icons.svg);
+    background-position: 0px -28px !important;
+}
+.group-detail-stat.col-xs-6.col-md-2 .icon-text-wrapper .icon-robux-28x28 {
+    background-image: url(https://vignette.wikia.nocookie.net/roblox/images/c/cb/ROBUX.svg/revision/latest/top-crop/width/220/height/220?cb=20170306044224) !important;
+    background-size: 1.1em;
+}
 .light-theme .icon-default-economy-28x28, .light-theme .icon-robux-28x28, .light-theme .icon-robux-gold-28x28, .light-theme .icon-robux-white:hover {
     background-size: 56px;
 }
@@ -536,15 +543,6 @@ a[ng-click='onAutocompleteSuggestionClicked\(suggestion\.Query\,\ \$index\)'] > 
 .see-all-link-icon:hover, .touch .see-all-link-icon:hover {
     text-decoration: none;
 }
-
-
-
-.group-detail-stat.col-xs-6.col-md-2 .icon-text-wrapper .icon-robux-28x28 {
-    background-image: url(https://vignette.wikia.nocookie.net/roblox/images/c/cb/ROBUX.svg/revision/latest/top-crop/width/220/height/220?cb=20170306044224) !important;
-    background-size: 1.1em;
-}
-
-
 
 .avatar {
     background-color: white;
@@ -869,17 +867,11 @@ a:hover {
 .profile-slide-container .layout.isGridOn .hlist.game-cards.group-list .list-item.group-container.shown.ng-scope .ng-isolate-scope .game-card .card-item.game-card-container {
 height: 100%;
 }
-
-
-
 .light-theme .icon-robux-16x16, .robux-downsell .icon-robux-gray {
     background-image: url(https://vignette.wikia.nocookie.net/roblox/images/c/cb/ROBUX.svg/revision/latest/top-crop/width/220/height/220?cb=20170306044224) !important;
     background-position: 0;
     background-size: contain;
 }
-
-
-
 
 .content .games-lists-multiple .games-list-container .game-card-container {
     white-space: nowrap;
@@ -3112,6 +3104,9 @@ button#reactivate-button, div.not-approved-page > div > div > button#logout-butt
 .light-theme .btn-primary-md {
     border-radius: 5px;
 }
+.btn-control-md.btn-full-width.ng-scope:hover, .btn-control-md.btn-full-width.ng-binding:hover {
+background-color: white;
+}
 
 /* profile game card layout */ 
 div.game-container {
@@ -3198,9 +3193,9 @@ transition: padding 2s, filter 1.9s;
     font-weight: 300;
 }
 /* hide avatar icon on sidebar */
-#navigation .avatar-headshot-xs {
+/* #navigation .avatar-headshot-xs {
     display: none;
-}
+} */
 
 /* for legacy pages */
 #MasterContainer {
@@ -3293,6 +3288,4 @@ height: 100%;
 .popover {
 border-radius: 2px;
 }
-
-
 }

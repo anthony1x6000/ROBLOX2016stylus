@@ -3,10 +3,12 @@ This version is not 100% released and may have bugs.\
 Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com/anthony1x6000/ROBLOX2016stylus/releases).
 ## Code changes
 - Removed thing that gave everything 7px padding. 
-## Major Changes
+## Major Changes/Fixes
 - [Search] Fixed and cleaned up [search](https://pixelfed.social/p/Anthony16000/366047194306153633).
 - [Catalog] Fixed [card price](https://pixelfed.social/p/Anthony16000/378201306465421246) height.
 - [Play button] Fixed [paid games play button](https://pixelfed-prod.nyc3.cdn.digitaloceanspaces.com/public/m/_v2/366043747065310340/7198ec0c0-99bc91/0LcvUKlFLcOE/CX9ThndZAwldLagDUkMlxKR8yLD2PRXOfhEyV6NP.png) and made the [regular play button](https://pixelfed-prod.nyc3.cdn.digitaloceanspaces.com/public/m/_v2/366043747065310340/7198ec0c0-99bc91/Qd90bwQEisAB/6xsfxlpQDrAIG9OlCCS4K8b6vBMwBi2UuR8Zn0Mz.png) more [faithful](https://pixelfed.social/p/Anthony16000/379036711761901441) to 2016. 
+- [Buy ROBUX] Fixed ROBUX icons not showing on the [buy ROBUX page](https://www.roblox.com/upgrades/robux). 
+- [Generic button] Fixed no background when hovering over a generic full-width button. 
 ### Small changes
 - [Padding] Changed the padding of game pages. 
 - [Downpage] Replace Roblox down page image. I don't know how to replicate the entire thing, but the image is a start. If you want to try and fix it yourself, see this [reference](https://static.wikia.nocookie.net/roblox/images/5/5a/Apr7-2015_maintenance.PNG/revision/latest?cb=20200319185127) [image](https://ibb.co/6v6LkL0).
