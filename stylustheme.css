@@ -334,12 +334,12 @@ background-color: #3FC679;
     border-color: #3FC679;
     color: #fff;
 }
-
-.hlist .list-item a {
+/* .hlist .list-item a {
+    border-radius: 3px;
     border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
+    border-top-left-radius: 3px; 
 }
-
+*/
 
 .item-card-container .item-card-name {
     white-space: nowrap;
@@ -521,13 +521,19 @@ a[ng-click='onAutocompleteSuggestionClicked\(suggestion\.Query\,\ \$index\)'] > 
     background-position: 0 -28px;
     background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/80a1e55d792875c92f6a4c5e7b4ef949fa17c157/images/robux/icons.svg);
 }
+/*robux patch      */
 button[ng-click='buyClick\(product\.subscription\)'] > span.icon-robux-white {
     background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/80a1e55d792875c92f6a4c5e7b4ef949fa17c157/images/robux/icons.svg);
     background-position: 0px -28px !important;
 }
 .group-detail-stat.col-xs-6.col-md-2 .icon-text-wrapper .icon-robux-28x28 {
-    background-image: url(https://vignette.wikia.nocookie.net/roblox/images/c/cb/ROBUX.svg/revision/latest/top-crop/width/220/height/220?cb=20170306044224) !important;
+    background-image: url(https://vignette.wikia.nocookie.net/roblox/images/c/cb/ROBUX.svg) !important;
     background-size: 1.1em;
+}
+.light-theme .icon-robux-16x16, .robux-downsell .icon-robux-gray {
+    background-image: url(https://vignette.wikia.nocookie.net/roblox/images/c/cb/ROBUX.svg) !important;
+    background-position: 0;
+    background-size: 1.5em;
 }
 .light-theme .icon-default-economy-28x28, .light-theme .icon-robux-28x28, .light-theme .icon-robux-gold-28x28, .light-theme .icon-robux-white:hover {
     background-size: 56px;
@@ -787,9 +793,7 @@ thumbnail-2d .thumbnail-2d-container[thumbnail-type=avatarHeadshot] {
 
 
 
-.dark-theme .game-card-container:hover, .light-theme .game-card-container:hover {
-    box-shadow: 0 1px 6px 0 rgba(25,25,25,0.45);
-}
+
 
 .game-card-thumb-container:before {
     border-radius: 8px;
@@ -867,11 +871,7 @@ a:hover {
 .profile-slide-container .layout.isGridOn .hlist.game-cards.group-list .list-item.group-container.shown.ng-scope .ng-isolate-scope .game-card .card-item.game-card-container {
 height: 100%;
 }
-.light-theme .icon-robux-16x16, .robux-downsell .icon-robux-gray {
-    background-image: url(https://vignette.wikia.nocookie.net/roblox/images/c/cb/ROBUX.svg/revision/latest/top-crop/width/220/height/220?cb=20170306044224) !important;
-    background-position: 0;
-    background-size: contain;
-}
+
 
 .content .games-lists-multiple .games-list-container .game-card-container {
     white-space: nowrap;
@@ -1495,15 +1495,33 @@ font-size: 12px !important;
 }
 
 /* game tile shadows */ 
-.light-theme .hover-game-tile.visible-tile:hover .featured-game-container {
-    box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.60);
+.game-card-container {
+    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 30%);
+    transition: box-shadow 70ms ease;
 }
-.dark-theme .game-card-container, .light-theme .game-card-container {
-    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.40);/* I softend the shadows a bit here */ 
+.game-card-container:hover {
+    box-shadow: 0 1px 6px 0 rgb(25 25 25 / 75%);
+    
 }
-.dark-theme .game-card-container, .light-theme .game-card-container:hover {
-    box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.75);
-}
+    /* Took a while to scout these rules out. */
+    /* .light-theme .hover-game-tile.visible-tile:hover .featured-game-container {
+        box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.60);
+    }
+    .dark-theme .game-card-container, .light-theme .game-card-container {
+        box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.40);
+    }
+    .dark-theme .game-card-container, .light-theme .game-card-container:hover {
+        box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.75);
+    } 
+    .game-tile:hover .game-card-container {
+        height: 240px;
+        box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.9);
+    } 
+    .dark-theme .game-card-container:hover, .light-theme .game-card-container:hover {
+        box-shadow: 0 1px 6px 0 rgba(25,25,25,0.45);
+    }
+    */
+
 .hover-game-tile .featured-game-container .featured-game-icon-container .brief-game-icon {
     height: 150px;
     width: 150px;
@@ -1528,6 +1546,8 @@ div > div.horizontally-scrollable > ul > li.list-item.game-card.game-tile > div.
 }
 .scroller.next, .scroller.prev {
     height: 242px !important;
+    top: -3px;
+    
 }
 
 .hover-game-tile.visible-tile:hover {
@@ -1623,17 +1643,23 @@ Got any ideas? (I tried margin-... w/ !important and it didnt work)
 
 /* END OF GAME CARD FIXING STUFF */
 
-/* changing the game slidey thing arrow things */ 
+/* games page arrows */ 
 /* .arrow, .scroller.prev.disabled, .scroller.next, .scroller.next.disabled, .scroller.prev {
     height: 242px;   
 } */ 
 /* new games page fix */ 
-/* game cover thing fixing gaps */ 
+/* Game cover thing fixing gaps */ 
 .horizontal-scroller .scroller.next .spacer {
     left: 29px;
     height: 115%;
     bottom: -5px;
     background-color: #e3e3e3;
+}
+.scroller.prev, div.prev > div.arrow{
+    border-radius: 3px 0px 0px 3px;
+}
+.scroller.next, div.next > div.arrow{
+    border-radius: 0px 3px 3px 0px;
 }
 
 .horizontal-scroller .scroller.prev .spacer {
@@ -1642,7 +1668,6 @@ Got any ideas? (I tried margin-... w/ !important and it didnt work)
     background-color: #e3e3e3;
     top: -10px;
 }
-
 .spacer {
     z-index: 0 !important;
 }
@@ -2355,6 +2380,7 @@ background-color: #fff;
     border: 1px solid #b8b8b8;
     color: #191919;
     border-radius: 1px;
+    background: #fff;
 }
 
 .scale-container .text-label
@@ -2639,11 +2665,7 @@ div[style="col-sm-6 slide-item-container-left"]
     background-position: 0;
 }*/
 
-.light-theme .icon-robux-16x16, .robux-downsell .icon-robux-gray
-{
-    background-image: url(https://svgur.com/i/GP3.svg);
-    background-position: 0;
-}
+
 
 .icon-robux-16x16
 {
@@ -2670,10 +2692,6 @@ div[style="col-sm-6 slide-item-container-left"]
 }
 
 
-.game-tile:hover .game-card-container {
-    height: 240px;
-    box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.9);
-}
 .game-card-info .playing-counts-label {
     position: relative; 
     display: block !important;
@@ -3104,9 +3122,6 @@ button#reactivate-button, div.not-approved-page > div > div > button#logout-butt
 .light-theme .btn-primary-md {
     border-radius: 5px;
 }
-.btn-control-md.btn-full-width.ng-scope:hover, .btn-control-md.btn-full-width.ng-binding:hover {
-background-color: white;
-}
 
 /* profile game card layout */ 
 div.game-container {
@@ -3231,10 +3246,6 @@ transition: padding 2s, filter 1.9s;
 .game-card-name, .game-name-title {
     height: 20px;
 }
-.scroller.prev, .scroller.next {
-    top: -3px;
-}
-
 .game-carousel {
     width: 110%;
     overflow-x: visible;
@@ -3288,4 +3299,6 @@ height: 100%;
 .popover {
 border-radius: 2px;
 }
+
+
 }
