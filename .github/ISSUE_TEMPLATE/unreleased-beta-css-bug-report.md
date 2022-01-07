@@ -13,6 +13,7 @@ A clear and concise description of what the bug is.
 
 **To Reproduce**
 Steps to reproduce the behavior:
+A link to the page where the bug is located is preferred. 
 1. Go to '...'
 2. Click on '....'
 3. Scroll down to '....'
@@ -20,7 +21,7 @@ Steps to reproduce the behavior:
 Please include an image with the bug report. 
 
 **What it should look like**
-Put a reference image or a Wayback link of what it should look like here.
+Put a reference image or a [Wayback](https://wayback.archive.org/) link of what it should look like here.
 
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
