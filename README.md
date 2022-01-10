@@ -22,11 +22,12 @@ To see the list of changes, head over to [unreleasedChanges.md](https://github.c
 
 ## Browser Compatability
 - [Brave](https://brave.com/) & most Chromium browsers
-- [Firefox](https://firefox.com/) (This style is built around the [Brave Browser](https://brave.com/) and because Firefox uses a different browser engine, [Gecko](https://en.wikipedia.org/wiki/Gecko_%28software%29), the style may not work properly, though I will fix bugs on the Firefox browser. 
+- [Firefox](https://firefox.com/) (This style is built around a Chromium based browser, [Brave](https://brave.com/), and because Firefox uses a different browser engine, Gecko, the style may not work properly, though I will fix bugs on the Firefox browser. 
 ### Display Compatability
-Your display/monitor has to be AT LEAST **1024 pixels wide** for this style to work correctly. 
-I'd recommend at least a 1366 x 768 monitor or, even better, a 1920 x 1080 monitor.
-I could try and fix this, but that's too much work. You can try to fix it if you want.
+Your display/monitor has to be AT LEAST 1024 pixels wide for this style to work correctly. \
+**Note: I don't know what other people or I did, but in the beta style and releases past 1.2.0 (not including patches) should work on a thinner display.** \
+I'd recommend at least a 1366 x 768 monitor or, even better, a 1920 x 1080 monitor. \
+~~I could try and fix this, but that's too much work. You can try to fix it if you want.~~
 
 ## Credit
 All credit to Ologist for initially making this great user-style theme!
