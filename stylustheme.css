@@ -1525,11 +1525,11 @@ font-size: 12px !important;
 
 /* game tile shadows */ 
 .game-card-container {
-    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
+    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 30%);
     transition: box-shadow 70ms ease;
 }
 .game-card-container:hover {
-    box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.75);
+    box-shadow: 0 1px 6px 0 rgb(25 25 25 / 75%);
     
 }
     /* Took a while to scout these rules out. */
@@ -1679,6 +1679,9 @@ div > ul.hlist.game-tile-list {
 .touch .is-windows .scroller{
     opacity: 1;
     display: block !important;
+}
+div.horizontal-scroll-window {
+    overflow: visible !important;
 }
 /* .arrow, .scroller.prev.disabled, .scroller.next, .scroller.next.disabled, .scroller.prev {
     height: 242px;   

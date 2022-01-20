@@ -2,6 +2,7 @@
 This version is not 100% released and may have bugs.\
 Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com/anthony1x6000/ROBLOX2016stylus/releases).
 ## Major Changes/Fixes
+- [Discover page] Fixed game card shadows being cut off. / Will be sent as a patch.
 ## Small changes
 ## Known bugs
 - Under profile pages, the about section and the report section aren't connected. I'll try working on a fix for that when I have the time. 
