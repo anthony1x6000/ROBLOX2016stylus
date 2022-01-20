@@ -8,7 +8,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Catalog] Fixed [card price](https://pixelfed.social/p/Anthony16000/378201306465421246) height.
 - [Play button] Fixed [paid games play button](https://pixelfed-prod.nyc3.cdn.digitaloceanspaces.com/public/m/_v2/366043747065310340/7198ec0c0-99bc91/0LcvUKlFLcOE/CX9ThndZAwldLagDUkMlxKR8yLD2PRXOfhEyV6NP.png) and made the [regular play button](https://pixelfed-prod.nyc3.cdn.digitaloceanspaces.com/public/m/_v2/366043747065310340/7198ec0c0-99bc91/Qd90bwQEisAB/6xsfxlpQDrAIG9OlCCS4K8b6vBMwBi2UuR8Zn0Mz.png) more [faithful](https://pixelfed.social/p/Anthony16000/379036711761901441) to 2016. 
 - [Buy ROBUX] Fixed ROBUX icons not showing on the [buy ROBUX page](https://www.roblox.com/upgrades/robux). 
-- [Generic button] Fixed no background when hovering over a generic full-width button. 
+- [Generic button] Fixed no background when hovering over a generic full-width button. | 01/19/22 Fixed this again. 
 - [Game tile shadow] Fixed shadow code (simplified it). Also added a 70ms box-shadow transition when hovering. 
 - [Game Carousel Arrows] Rounded corners of arrow buttons on discover page. 
 - [Game Carousel Arrows] Arrows back in their old spot, showing. Worked around new roblox website update (hover arrows appear). 
@@ -25,6 +25,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Generic white button] Made white background when hobering??/? on  t thing gg/??????????
 - [ROBUX] Better green robux icon on the buy robux page. 
 - [Code] Simplified some code. 
+- [Code] Embed fonts.
 ## Known bugs
 - Under profile pages, the about section and the report section aren't connected. I'll try working on a fix for that when I have the time. 
   - Nevermind, impossible. 
