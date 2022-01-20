@@ -1673,7 +1673,7 @@ Got any ideas? (I tried margin-... w/ !important and it didnt work)
 /* END OF GAME CARD FIXING STUFF */
 
 /* games page arrows */ 
-/* div > ul.hlist.game-tile-list {
+div > ul.hlist.game-tile-list {
     padding: 0px 30px;
 }
 .touch .is-windows .scroller{
@@ -1682,7 +1682,7 @@ Got any ideas? (I tried margin-... w/ !important and it didnt work)
 }
 div.horizontal-scroll-window {
     overflow: visible !important;
-} */
+}
 /* .arrow, .scroller.prev.disabled, .scroller.next, .scroller.next.disabled, .scroller.prev {
     height: 242px;   
 } */ 
