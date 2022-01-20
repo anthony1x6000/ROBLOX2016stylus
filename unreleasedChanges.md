@@ -11,6 +11,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Generic button] Fixed no background when hovering over a generic full-width button. 
 - [Game tile shadow] Fixed shadow code (simplified it). Also added a 70ms box-shadow transition when hovering. 
 - [Game Carousel Arrows] Rounded corners of arrow buttons on discover page. 
+- [Game Carousel Arrows] Arrows back in their old spot, showing. Worked around new roblox website update (hover arrows appear). 
 ### Small changes
 - [Padding] Changed the padding of game pages. 
 - [Downpage] Replace Roblox down page image. I don't know how to replicate the entire thing, but the image is a start. If you want to try and fix it yourself, see this [reference](https://static.wikia.nocookie.net/roblox/images/5/5a/Apr7-2015_maintenance.PNG/revision/latest?cb=20200319185127) [image](https://ibb.co/6v6LkL0).

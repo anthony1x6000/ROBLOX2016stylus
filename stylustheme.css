@@ -512,28 +512,25 @@ a[ng-click='onAutocompleteSuggestionClicked\(suggestion\.Query\,\ \$index\)'] > 
 
 
 
-.light-theme .icon-default-economy-28x28, .light-theme .icon-robux-28x28, .light-theme .icon-robux-gold-28x28, .light-theme .icon-robux-white {
-    background-image: url(https://svgur.com/i/GuZ.svg);
-    background-size: 56px;
-}
+
 #nav-robux-icon .icon-robux-28x28
 {
     background-position: 0 -28px;
     background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/80a1e55d792875c92f6a4c5e7b4ef949fa17c157/images/robux/icons.svg);
 }
 /*robux patch      */
-button[ng-click='buyClick\(product\.subscription\)'] > span.icon-robux-white {
+.robux-upsell .unsubscribed .icon-robux-white, .robux-upsell .subscribed .icon-robux-white{
     background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/80a1e55d792875c92f6a4c5e7b4ef949fa17c157/images/robux/icons.svg);
     background-position: 0px -28px !important;
-}
-.group-detail-stat.col-xs-6.col-md-2 .icon-text-wrapper .icon-robux-28x28 {
-    background-image: url(https://vignette.wikia.nocookie.net/roblox/images/c/cb/ROBUX.svg) !important;
-    background-size: 1.1em;
 }
 .light-theme .icon-robux-16x16, .robux-downsell .icon-robux-gray {
     background-image: url(https://vignette.wikia.nocookie.net/roblox/images/c/cb/ROBUX.svg) !important;
     background-position: 0;
-    background-size: 1.5em;
+    background-size: cover;
+}
+.light-theme .icon-default-economy-28x28, .light-theme .icon-robux-28x28, .light-theme .icon-robux-gold-28x28, .light-theme .icon-robux-white {
+/*     background-image: url(https://svgur.com/i/GuZ.svg); */
+    background-size: 56px;
 }
 .light-theme .icon-default-economy-28x28, .light-theme .icon-robux-28x28, .light-theme .icon-robux-gold-28x28, .light-theme .icon-robux-white:hover {
     background-size: 56px;
@@ -1644,6 +1641,13 @@ Got any ideas? (I tried margin-... w/ !important and it didnt work)
 /* END OF GAME CARD FIXING STUFF */
 
 /* games page arrows */ 
+div > ul.hlist.game-tile-list {
+    padding: 0px 30px;
+}
+.touch .is-windows .scroller{
+    opacity: 1;
+    display: block !important;
+}
 /* .arrow, .scroller.prev.disabled, .scroller.next, .scroller.next.disabled, .scroller.prev {
     height: 242px;   
 } */ 
