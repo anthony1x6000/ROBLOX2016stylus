@@ -1064,11 +1064,11 @@ button.btn-full-width > span.icon-common-play {
 }
 .icon-common-play:after {
     visibility: visible;
-/*     position: relative; */
+    position: relative;
 /*     top: 3px; */
     vertical-align: middle;
     text-align: center;
-/*     right: 2px; */
+    right: 2px;
     content: "Play";
     font-size: 21px;
 }

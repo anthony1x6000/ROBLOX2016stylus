@@ -5,7 +5,8 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Discover page] Fixed game card shadows being cut off. Will be sent as a patch.
 - [Header] Fixed messed up header. Will be sent as a patch.
 ## Small changes
-- [Play button] Did something to the play button
+- [Play button] Did something to the play button.
+- [Play button] Fixed Play text alignment. 
 ## Known bugs
 - Under profile pages, the about section and the report section aren't connected. I'll try working on a fix for that when I have the time. 
   - Nevermind, impossible. 
