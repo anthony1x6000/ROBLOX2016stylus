@@ -1,12 +1,11 @@
-# Style-Preview | 1.2.1
+# Style-Preview | 1.2.2
 This version is not 100% released and may have bugs.\
 Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com/anthony1x6000/ROBLOX2016stylus/releases).
 ## Major Changes/Fixes
-- [Discover page] Fixed game card shadows being cut off. Will be sent as a patch.
-- [Header] Fixed messed up header. Will be sent as a patch.
+- [*Sent as Patch 2 for 1.2.1* | Discover page] Fixed game card shadows being cut off. Will be sent as a patch.
+- [*Sent as Patch 2 for 1.2.1* | Header] Fixed messed up header. Will be sent as a patch.
 ## Small changes
-- Play button:
-  - Did something to the play button?
+- [*Sent as Patch for 2 1.2.1*] Play button:
   - Fixed Play text alignment. 
   - Removed Play Button border. 
 ## Known bugs
