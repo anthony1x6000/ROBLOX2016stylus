@@ -745,11 +745,7 @@ margin-left: 40px;
 font-size: 21px;
     font-weight: 400;
 }
-.dark-theme .touch .btn-common-play-game-lg:hover, .light-theme .touch .btn-common-play-game-lg:hover {
-    background-color: #3FC679 !important;
-    border-color: #3FC679 !important;
-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.45) !important;
-}
+
 
 /*div.favorite-button a:after {
 content: span.game-favorite-count;
@@ -1043,7 +1039,7 @@ border-top: hidden;
 
 /* Play button changes */
 button.btn-common-play-game-lg {
-    position: relative;
+/*     position: relative; */
 /*     right: 1px; */
     width: auto;
     min-width: 75%;
@@ -1055,6 +1051,10 @@ button.btn-common-play-game-lg {
     border-radius: 3px;
     background: #02b757;
     border: 0;
+}
+.light-theme .btn-primary-md:focus, .light-theme .btn-primary-md:hover, .light-theme .btn-primary-md[disabled] {
+    background-color: #3FC679;
+    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
 }
 .light-theme .btn-growth-sm:hover {
     background: #3FC679;
@@ -1899,12 +1899,6 @@ box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
     width: 265px;
 }
 
-.dark-theme .touch .btn-common-play-game-lg.active, .dark-theme .touch .btn-common-play-game-lg:active, .dark-theme .touch .btn-common-play-game-lg:focus, .dark-theme .touch .btn-common-play-game-lg:hover, .dark-theme .touch .btn-common-play-game-lg:visited, .light-theme .touch .btn-common-play-game-lg.active, .light-theme .touch .btn-common-play-game-lg:active, .light-theme .touch .btn-common-play-game-lg:focus, .light-theme .touch .btn-common-play-game-lg:hover, .light-theme .touch .btn-common-play-game-lg:visited, .light-theme a.btn-common-play-game-lg
-{
-    background-color: #02b75a;
-    border-color: #02b75a
-}
-
 .light-theme .spinner
 {
     background-image: url(https://images.rbxcdn.com/4bed93c91f909002b1f17f05c0ce13d1-loading.gif);
@@ -2455,12 +2449,7 @@ background-color: #fff;
     background-color: #0080ff;
 }
 
-.light-theme .btn-primary-md:focus, .light-theme .btn-primary-md:hover, .light-theme .btn-primary-md[disabled]
-{
-    background-color: #3FC679;
-    border: 1px solid #3FC679;
-    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
-}
+
 
 .light-theme .dialogs .dialog-container.active .dialog-header
 {
