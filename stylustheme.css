@@ -15,35 +15,35 @@ Code contributors:
 /* @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700); */
 /* latin */
 @font-face {
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 300;
-    src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 300;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 /* latin */
 @font-face {
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 /* latin */
 @font-face {
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 600;
-    src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 600;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 /* latin */
 @font-face {
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 700;
-    src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 700;
+src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2) format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 /* end of font */ 
 
@@ -1064,11 +1064,16 @@ button.btn-full-width > span.icon-common-play {
 }
 .icon-common-play:after {
     visibility: visible;
-    position: relative;
-    top: 3px;
-    right: 2px;
+/*     position: relative; */
+/*     top: 3px; */
+    vertical-align: middle;
+    text-align: center;
+/*     right: 2px; */
     content: "Play";
     font-size: 21px;
+}
+div.game-card-name-info > button.btn-common-play-game-lg {
+    padding: 6px 0 0 0 !important;
 }
 /* paid games play button - ref https://web.archive.org/web/20160501164208/roblox.com/games/388168427/ZOMBIE-UNIVERSE-BETA-TEST-SUNDAY */
 button.btn-common-play-game-lg > span.icon-robux-white {
@@ -1096,6 +1101,7 @@ button.btn-common-play-game-lg > span.btn-text:after {
     padding: 30px 0px 30px 0px;
     border-top: 1px solid #bdbebe;
     border-bottom: 1px solid #bdbebe;
+    margin: 0.5% 0 0.5%;
 }
 
 /* avatar page try it on */
@@ -1224,17 +1230,20 @@ ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)
     font-size: 16px;
     }
 
-
-/* making the gray highlight thing smaller */
-
-.light-theme .rbx-header .text-header, .light-theme .rbx-header .text-header:active, .light-theme .rbx-header .text-header:focus, .light-theme .rbx-header .text-header:hover, .light-theme .rbx-header .text-header:link, .light-theme .rbx-header .text-header:visited {
-    height: 31px;
-    color: #ffffff;
+/* background position fix */ 
+.icon-nav-notification-stream:hover {
+    background-position: -28px -448px !important;
 }
-body[data-performance-relative-value='\30 \.005'][data-internal-page-name='Create'][data-send-event-percentage='\30 '] > div > div > div > div > ul > li > a.font-header-2.nav-menu-title.text-header
-{
-    height: 20px;
-} 
+.icon-nav-settings:hover {
+    background-position: -28px -84px !important;
+}
+/* Gray highlight */
+.light-theme .rbx-header .text-header, .light-theme .rbx-header .text-header:active, .light-theme .rbx-header .text-header:focus, .light-theme .rbx-header .text-header:hover, .light-theme .rbx-header .text-header:link, .light-theme .rbx-header .text-header:visited {    color: #ffffff;
+}
+
+.btn-navigation-nav-robux-md, .btn-navigation-nav-notification-stream-md, .btn-navigation-nav-settings-md {
+    background-color: transparent !important;
+}
 /*.profile-header .header-caption .header-details .details-info li .font-header-2:before {
     content: "\A \A";
     white-space: pre;
@@ -1672,8 +1681,8 @@ Got any ideas? (I tried margin-... w/ !important and it didnt work)
 
 /* END OF GAME CARD FIXING STUFF */
 
-/* games page arrows */ 
-div > ul.hlist.game-tile-list {
+/* games page arrows & fix*/ 
+/* div > ul.hlist.game-tile-list {
     padding: 0px 30px;
 }
 .touch .is-windows .scroller{
@@ -1682,7 +1691,7 @@ div > ul.hlist.game-tile-list {
 }
 div.horizontal-scroll-window {
     overflow: visible !important;
-}
+} */
 /* .arrow, .scroller.prev.disabled, .scroller.next, .scroller.next.disabled, .scroller.prev {
     height: 242px;   
 } */ 
@@ -2378,8 +2387,15 @@ border-radius: 1px;
 {
     background-color: rgba(25,25,25,.1);
     border-radius: 5px;
+    width: 65%;
+    height: 83%;
 }
 
+body[data-performance-relative-value='\30 \.005'][data-internal-page-name='Create'][data-send-event-percentage='\30 '] > div > div > div > div > ul > li > a.font-header-2.nav-menu-title.text-header
+{
+    height: 20px;
+    width: 45%;
+} 
 .rbx-header.light-theme .rbx-navbar li:hover
 {
     border-color: transparent;
@@ -2871,13 +2887,12 @@ div[style="col-sm-6 slide-item-container-left"]
 }
 .signup-container.ng-isolate-scope.theme-bg.rbx-login-form{border-radius:0px;}
 
-/* credit in website itself */
-/* 
 .text-footer.footer-note {
-    visibility: hidden;
     position: relative;
-} */ 
-.text-footer.footer-note:after{
+    margin-top: 1.5%;
+} 
+/* credit in website itself */
+/* .text-footer.footer-note:after{
     visibility: visible;
     position: absolute;
     top: 0;
@@ -2886,7 +2901,7 @@ div[style="col-sm-6 slide-item-container-left"]
     content: "For quick updates and releases find the GitHub page of this style at https://github.com/anthony1x6000/ROBLOX2016stylus";
     margin-top: 23px;
     margin-left: 24px;
-}
+} */
 
 /* See all button fixes */
 .see-all-link-icon {
@@ -3050,14 +3065,6 @@ recommendations > div > div > div > div > ul > li > div > a > div.item-card-name
     font-size: 16px;
     color: #085bcd;
 }
-/* Avatar scale color change */
-.light-theme input, .light-theme textarea {
-    color: red;
-    background-color: red;
-    border-color: red;
-}
-
-
 .redraw-avatar > .text-link.ng-binding {
     position: relative; 
     bottom: 11px;
@@ -3342,6 +3349,5 @@ height: 100%;
 .popover {
 border-radius: 2px;
 }
-
 
 }
