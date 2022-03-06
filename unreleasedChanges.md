@@ -9,6 +9,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [*Sent as Patch for 2 1.2.1*] Play button:
   - Fixed Play text alignment. 
   - Removed Play Button border. 
+- [Studio widget] Fit-content.
 ## Known bugs
 - Under profile pages, the about section and the report section aren't connected. I'll try working on a fix for that when I have the time. 
   - Nevermind, impossible. 
