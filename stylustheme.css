@@ -1230,20 +1230,49 @@ ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)
     font-size: 16px;
     }
 
-/* background position fix */ 
-.icon-nav-notification-stream:hover {
-    background-position: -28px -448px !important;
+/* tHEADER, GRAY HIGHLIGHT */
+.light-theme .rbx-header .text-header, .light-theme .rbx-header .text-header:active, .light-theme .rbx-header .text-header:focus, .light-theme .rbx-header .text-header:hover, .light-theme .rbx-header .text-header:link, .light-theme .rbx-header .text-header:visited {
+    color: #ffffff;
 }
-.icon-nav-settings:hover {
-    background-position: -28px -84px !important;
+    /* Header fix, background position, etc*/ 
+        .icon-nav-notification-stream:hover {
+            background-position: -28px -448px !important;
+        }
+        .icon-nav-settings:hover {
+            background-position: -28px -84px !important;
+        }
+        .icon-nav-menu:hover {
+            background-position: -28px 0 !important;
+        }
+        .btn-navigation-nav-robux-md, .btn-navigation-nav-notification-stream-md, .btn-navigation-nav-settings-md, .btn-navigation-nav-menu-md {
+            background-color: transparent !important;
+        }
+.rbx-text-navbar-right.text-header {
+    margin-bottom: 2px !important;
 }
-/* Gray highlight */
-.light-theme .rbx-header .text-header, .light-theme .rbx-header .text-header:active, .light-theme .rbx-header .text-header:focus, .light-theme .rbx-header .text-header:hover, .light-theme .rbx-header .text-header:link, .light-theme .rbx-header .text-header:visited {    color: #ffffff;
+.font-header-2.nav-menu-title.text-header:hover {
+    background: #1919191a !important;
+    border-radius: 5px;
+    height: 21px !important;
+} 
+div#wrap > div > div > div > ul > li > a {
+    height: 33px !important; 
+}
+.rbx-header .rbx-navbar-header {
+    width: 167px !important;
+    padding: 0;
+    margin-left: 9px;
+    margin-right: 0;
+}
+.nav.rbx-navbar.hidden-xs.hidden-sm.col-md-5.col-lg-4 {
+    padding-top: 3px;
+    margin: 0;
+    width: 25%;
+}
+.rbx-header .rbx-navbar li .nav-menu-title {
+    width: auto;
 }
 
-.btn-navigation-nav-robux-md, .btn-navigation-nav-notification-stream-md, .btn-navigation-nav-settings-md {
-    background-color: transparent !important;
-}
 /*.profile-header .header-caption .header-details .details-info li .font-header-2:before {
     content: "\A \A";
     white-space: pre;
@@ -2377,19 +2406,7 @@ border-radius: 1px;
     color: #606162
 }
 
-.light-theme .rbx-header .rbx-navbar li .nav-menu-title:focus, .light-theme .rbx-header .rbx-navbar li .nav-menu-title:hover
-{
-    background-color: rgba(25,25,25,.1);
-    border-radius: 5px;
-    width: 65%;
-    height: 83%;
-}
 
-body[data-performance-relative-value='\30 \.005'][data-internal-page-name='Create'][data-send-event-percentage='\30 '] > div > div > div > div > ul > li > a.font-header-2.nav-menu-title.text-header
-{
-    height: 20px;
-    width: 45%;
-} 
 .rbx-header.light-theme .rbx-navbar li:hover
 {
     border-color: transparent;
@@ -2692,11 +2709,7 @@ div[style="col-sm-6 slide-item-container-left"]
     box-shadow: inset 4px 0 0 0 #00a2ff;
     cursor: pointer;
 } */
-.rbx-header.light-theme .rbx-navbar li .nav-menu-title:focus, .rbx-header.light-theme .rbx-navbar li .nav-menu-title:hover
-{
-    background-color: rgba(25,25,25,.1);
-    border-radius: 5px;
-}
+
 
 .light-theme .rbx-header .rbx-navbar li:hover
 {
@@ -2793,11 +2806,7 @@ div[style="col-sm-6 slide-item-container-left"]
     background: #627aad !important;
     border-color: #627aad !important;
 }
-.font-header-2.rbx-navbar-login.nav-menu-title.rbx-menu-item {
-    position: relative;
-    right: 10px;
 
-}
 
 /* signup page */ 
 .dark-theme .theme-bg {
@@ -3180,11 +3189,8 @@ div > div.profile-game.container-list > div.game-grid {
 .font-header-2.rbx-navbar-login.nav-menu-title.rbx-menu-item {
     margin-left: 110px;
 } /* i know that this is the best way of doing this but it works */ 
-/*pushing header buttons closer together*/
-.nav.rbx-navbar.hidden-xs.hidden-sm.col-md-5.col-lg-4 {
-    width: 25%;
-    right: 21px;
-}
+
+
 
 /* game page about store servers bottom highlight fix */ 
 .nav.nav-tabs {
