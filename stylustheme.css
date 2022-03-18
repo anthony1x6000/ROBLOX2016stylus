@@ -81,6 +81,9 @@ body
     font-family: "Source Sans Pro",Arial,Helvetica,sans-serif !important;
 }
 
+.light-theme .remove-panel {
+    padding: 6px;
+}
 /* ~/CSS/Fonts/SourceSansPro-Google.css
 Changed font see @import (around line 5)
 */
@@ -379,6 +382,9 @@ background-color: #3FC679;
 
 .light-theme .item-card-container {
     background-color: white !important;
+    padding: 0 0 1.8px 0;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
 }
 .item-card-container.recommended-item-link {
     height: 84%;
@@ -602,10 +608,7 @@ a[ng-click='onAutocompleteSuggestionClicked\(suggestion\.Query\,\ \$index\)'] > 
     height: 205px;
 }
 
-.light-theme .item-card-container {
-    border-radius: 3px;
-    box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
-}
+
 .light-theme .item-card-container:hover {
     box-shadow: 0 1px 6px 0 rgba(25,25,25,0.45);
 }
@@ -728,9 +731,7 @@ a.avatar-card-label:before {
     padding: 4px 16px;
     padding-top: 8px;
 } */
-.light-theme .remove-panel {
-    padding: 8px;
-}
+
 .game-main-content {
     min-height: 345px;
     padding: 12px 12px !important;
@@ -1440,7 +1441,7 @@ box-shadow: none !important;
 
 .light-theme .item-card-container .item-card-caption {
     background-color: transparent !important;
-margin-top: -2px;
+    margin-top: -2px;
 }
 
 .light-theme .item-card-container .item-card-caption {
@@ -2613,7 +2614,12 @@ div[style="col-sm-6 slide-item-container-left"]
 {   
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
     border-radius: 3px;
+
 }
+.items-list.avatar-item-list .item-card {
+    height: 100%;
+}
+
 
 .light-theme .items-list.avatar-item-list .item-card-container .item-card-thumb-container
 {
