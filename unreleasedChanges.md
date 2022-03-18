@@ -5,6 +5,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [*Sent as Patch 2 for 1.2.1* | Discover page] Fixed game card shadows being cut off. Will be sent as a patch.
 - [*Sent as Patch 2 for 1.2.1* | Header] Fixed messed up header. Will be sent as a patch.
 - [Header] Redid entire header. Header should now be the same on all pages, especially the develop page. 
+- [Avatar page] Fixed padding and stuff like that on the avatar page. 
 ## Small changes
 - [*Sent as Patch for 2 1.2.1*] Play button:
   - Fixed Play text alignment. 
