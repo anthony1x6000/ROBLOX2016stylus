@@ -1,20 +1,18 @@
 @-moz-document domain("web.roblox.com"), domain("www.roblox.com") {
-/* 
-Hey! if you see this, check out the Github repository!
-    https://github.com/anthony1x6000/ROBLOX2016stylus
-    You can find the style under releases. While you're at it, check out the beta style: "stylustheme.css"
-    Make sure to report any bugs to the issue tracker on Github.  
+/* Hey! if you see this, check out the Github repository for this!
+https://github.com/anthony1x6000/ROBLOX2016stylus
+You can find the style under releases. Make sure to check out the beta "stylustheme.css."
+Make sure to report any bugs to the issue tracker on Github.  
 
 Credit to Ologist for initially making this great Userstyle theme!
-    Code contributors:
-    - Ologist (Original creator)
-    - anthony1x6000
-    - Diyamund
-LICENSE:
-    MIT License - https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/LICENSE
-        You must keep this same license for any modified version of this script. 
+Code contributors:
+- Ologist (Original creator)
+- anthony1x6000
+- Diyamund
 */ 
-/* fonts */
+
+/* font */ 
+/* @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700); */
 /* latin */
 @font-face {
     font-family: 'Source Sans Pro';
@@ -47,7 +45,7 @@ LICENSE:
     src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-/* end of fonts */ 
+/* end of font */ 
 
 body
 
@@ -391,6 +389,7 @@ background-color: #3FC679;
 .item-card-container.recommended-item-link {
     height: 84%;
 }
+
 
 
 /* search bar */ 
@@ -1055,10 +1054,10 @@ button.btn-common-play-game-lg {
     background: #02b757;
     border: 0;
 }
-.light-theme .btn-primary-md:focus, .light-theme .btn-primary-md:hover, .light-theme .btn-primary-md[disabled] {
+/* .light-theme .btn-primary-md:focus, .light-theme .btn-primary-md:hover, .light-theme .btn-primary-md[disabled] {
     background-color: #3FC679;
     box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
-}
+} */
 .light-theme .btn-growth-sm:hover {
     background: #3FC679;
 }
@@ -2813,6 +2812,17 @@ div[style="col-sm-6 slide-item-container-left"]
     background: #627aad !important;
     border-color: #627aad !important;
 }
+.light-theme .btn-secondary-sm {
+    background: transparent;
+    border: 0;
+}
+.rbx-header .rbx-navbar-icon-group li .nav-menu-title, .rbx-header .rbx-navbar-right-nav li .nav-menu-title:hover {
+        background: rgba(25,25,25,0.1);
+        border: 0 !important;
+        border-radius: 5px;
+}
+
+
 
 
 /* signup page */ 
@@ -3192,6 +3202,7 @@ div > div.profile-game.container-list > div.game-grid {
 }
 .nav.navbar-right.rbx-navbar-right-nav {
     margin-right: 30px;
+    margin-top: 3px;
 }
 .font-header-2.rbx-navbar-login.nav-menu-title.rbx-menu-item {
     margin-left: 110px;
@@ -3354,5 +3365,8 @@ border-radius: 2px;
 #StudioWidget {
     height: fit-content;
 }
-
+/* Server tab */
+.light-theme .btn-control-xs:focus {
+    border: 1px solid #b8b8b8;
+}
 }

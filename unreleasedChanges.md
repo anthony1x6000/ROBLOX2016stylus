@@ -11,6 +11,8 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
   - Fixed Play text alignment. 
   - Removed Play Button border. 
 - [Studio widget] Fit-content.
+- [Signup & login button] Fixed login button background. Realigned and added proper hover background to the signup and login button.
+- [Button fixes] Fixed green background and border color on server join buttons.  
 ## Known bugs
 - Under profile pages, the about section and the report section aren't connected. I'll try working on a fix for that when I have the time. 
   - Nevermind, impossible. 
