@@ -14,6 +14,9 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Signup & login button] Fixed login button background. Realigned and added proper hover background to the signup and login button.
 - [Button fixes] Fixed green background and border color on server join buttons.  
 - [Sponsored Ad] Fixed position of the Sponsored Ad div on game cards. 
+- [Pager buttons] Fixed pager button background and colors. 
+- [Play button] Fixed play button hover color, border, and shadow. 
+- [VIP/Private server] Fixed VIP server change name button hover background, border, and shadow. 
 ## Known bugs
 - Under profile pages, the about section and the report section aren't connected. I'll try working on a fix for that when I have the time. 
   - Nevermind, impossible. 

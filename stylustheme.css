@@ -1049,15 +1049,16 @@ button.btn-common-play-game-lg {
     height: 53.21px;
     padding: 13px 15px;
 }
+.light-theme .btn-common-play-game-lg:focus, .light-theme .btn-common-play-game-lg:hover {
+    background: #3FC679;
+    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
+}
 .light-theme .btn-growth-sm { /* popover join button */
     border-radius: 3px;
     background: #02b757;
     border: 0;
 }
-/* .light-theme .btn-primary-md:focus, .light-theme .btn-primary-md:hover, .light-theme .btn-primary-md[disabled] {
-    background-color: #3FC679;
-    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
-} */
+
 .light-theme .btn-growth-sm:hover {
     background: #3FC679;
 }
@@ -2320,11 +2321,35 @@ border-radius: 1px;
         box-shadow: inset 0 -4px 0 0 #00a2ff;
 }
 
-.light-theme .pager .first .pager-btn, .light-theme .pager .first a, .light-theme .pager .last .pager-btn, .light-theme .pager .last a, .light-theme .pager .pager-next .pager-btn, .light-theme .pager .pager-next a, .light-theme .pager .pager-prev .pager-btn, .light-theme .pager .pager-prev a
+/* .light-theme .pager .first .pager-btn, .light-theme .pager .first a, .light-theme .pager .last .pager-btn, .light-theme .pager .last a, .light-theme .pager .pager-next .pager-btn, .light-theme .pager .pager-next a, .light-theme .pager .pager-prev .pager-btn, .light-theme .pager .pager-prev a
 {
     border-radius: 3px;
     background-color: #fff;
     border: 1px solid #b8b8b8;
+} */
+.light-theme .btn-generic-right-sm, .light-theme .btn-generic-left-sm {
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #b8b8b8 !important;
+}
+.light-theme .btn-generic-right-sm:hover, .light-theme .btn-generic-left-sm:hover {
+    background: #F2F2F2;
+}
+.icon-right {
+    background-position: 0 -280px !important;
+}
+.icon-left {
+    background-position: 0 -300px !important;
+}
+.btn-generic-left-sm[disabled] {
+    background: #fff !important;
+    border: 1px solid transparent !important;
+    opacity: 0.35 !important;
+}
+.btn-generic-right-sm[disabled] {
+    background: #fff !important;
+    border: 1px solid transparent !important;
+    opacity: 0.35 !important;
 }
 
 .chat-windows-header .chat-header-label span
@@ -3363,4 +3388,15 @@ border-radius: 2px;
 .light-theme .btn-control-xs:focus {
     border: 1px solid #b8b8b8;
 }
+/* Private server/VIP server change name button */
+/* .light-theme .btn-primary-md:focus, .light-theme .btn-primary-md:hover, .light-theme .btn-primary-md[disabled] {
+    background-color: #3FC679;
+    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
+} */
+button.modal-button.btn-primary-md:hover {
+    background: #3FC679;
+    border: 1px solid #3FC679;
+    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
+}
+
 }
