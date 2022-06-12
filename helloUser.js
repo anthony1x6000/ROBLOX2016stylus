@@ -43,19 +43,19 @@
   `;
 
   window.addEventListener('load', function() { // WAIT FOR PAGE LOAD. listening to dprk music rn. becoming juchepilled by the second!!!! 
-      const profileLink = `https://www.roblox.com/users/${userId}/profile`;
-      const profileAV = document.querySelector("#navigation > ul > li:nth-child(1) > a > span > span > img").src;
-      const avT = document.querySelector("#navigation > ul > li:nth-child(1)").innerHTML;
-      console.log("TEST LOG!!!", profileAV);
-      newDiv.innerHTML = `
-      <a class="dynamic-overflow-container text-nav" href="https://www.roblox.com/users/${userId}/profile" role="link">
-        <span id="profileAV" class="avatar avatar-headshot-xs" style="${profileAVClass}">
-          <span class="thumbnail-2d-container avatar-card-image">
-            <img class="" src="${profileAV}" alt="${userName}" title="${userName}">
-          </span>
+    const profileLink = `https://www.roblox.com/users/${userId}/profile`;
+    const profileAV = document.querySelector("#navigation > ul > li:nth-child(1) > a > span > span > img").src;
+    const avT = document.querySelector("#navigation > ul > li:nth-child(1)").innerHTML;
+    console.log("TEST LOG!!!", profileAV);
+    newDiv.innerHTML = `
+    <a class="dynamic-overflow-container text-nav" href="https://www.roblox.com/users/${userId}/profile" role="link">
+      <span id="profileAV" class="avatar avatar-headshot-xs" style="${profileAVClass}">
+        <span class="thumbnail-2d-container avatar-card-image">
+          <img class="" src="${profileAV}" alt="${userName}" title="${userName}">
         </span>
-        <div id="displayName" class="font-header-2 dynamic-ellipsis-item" style="${displayNameClass}">Hello, ${userDisplayName}!</div>
-      </a>
-      `;
+      </span>
+      <div id="displayName" class="font-header-2 dynamic-ellipsis-item" style="${displayNameClass}">Hello, ${userDisplayName}!</div>
+    </a>
+    `;
 }, false);
 })();
