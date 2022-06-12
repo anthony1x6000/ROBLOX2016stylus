@@ -46,5 +46,5 @@
     const profileAV = document.querySelector("#navigation > ul > li:nth-child(1) > a > span > span > img").src;
     const userAVID = document.getElementById("userAV");
     userAVID.src = profileAV;
-}, false);
+  }, false);
 })();
