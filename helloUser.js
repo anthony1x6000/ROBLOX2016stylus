@@ -12,7 +12,7 @@
 
 (function() {
   'use strict';
-  document.querySelector("#HomeContainer > div.section > div > h1").style = "font-size: 5px; visibility: hidden;"; // "Home" text
+  document.querySelector("#HomeContainer > div.section > div > h1").style = "font-size: 5px; visibility: hidden;";
   const homeID = document.querySelector("#HomeContainer > div.section");
   const newDiv = document.createElement("div");
   let userId = document.getElementsByName('user-data')[0].getAttribute('data-userid');
@@ -35,27 +35,16 @@
   <a class="dynamic-overflow-container text-nav" href="https://www.roblox.com/users/${userId}/profile" role="link">
     <span id="profileAV" class="avatar avatar-headshot-xs" style="${profileAVClass}">
       <span class="thumbnail-2d-container avatar-card-image">
-        <img class="" src="${NA}" alt="Loading..." title="Loading...">
+        <img id="userAV" class="" src="${NA}" alt="${userName}" title="${userName}">
       </span>
     </span>
     <div id="displayName" class="font-header-2 dynamic-ellipsis-item" style="${displayNameClass}">Hello, ${userDisplayName}!</div>
   </a>
   `;
 
-  window.addEventListener('load', function() { // WAIT FOR PAGE LOAD. listening to dprk music rn. becoming juchepilled by the second!!!! 
-    const profileLink = `https://www.roblox.com/users/${userId}/profile`;
+  window.addEventListener('load', function() { // Wait for page load
     const profileAV = document.querySelector("#navigation > ul > li:nth-child(1) > a > span > span > img").src;
-    const avT = document.querySelector("#navigation > ul > li:nth-child(1)").innerHTML;
-    console.log("TEST LOG!!!", profileAV);
-    newDiv.innerHTML = `
-    <a class="dynamic-overflow-container text-nav" href="https://www.roblox.com/users/${userId}/profile" role="link">
-      <span id="profileAV" class="avatar avatar-headshot-xs" style="${profileAVClass}">
-        <span class="thumbnail-2d-container avatar-card-image">
-          <img class="" src="${profileAV}" alt="${userName}" title="${userName}">
-        </span>
-      </span>
-      <div id="displayName" class="font-header-2 dynamic-ellipsis-item" style="${displayNameClass}">Hello, ${userDisplayName}!</div>
-    </a>
-    `;
+    const userAVID = document.getElementById("userAV");
+    userAVID.src = profileAV;
 }, false);
 })();
