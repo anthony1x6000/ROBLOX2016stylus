@@ -1174,11 +1174,11 @@ padding: 4px 4px !important;
 }
 
 /* random thing I did to the ad. Will be removed in releases. */
-.ad {
+/* .ad {
     background: url('data:image/png;base64,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');
     background-size: 140%;
     background-position: 35% 0px;
-}
+} */
 
 /* maybe this will fix see more being short I probably did something to mess it up */
 .btn-control-sm {
@@ -2718,11 +2718,16 @@ div[style="col-sm-6 slide-item-container-left"]
     color: #00a2ff;
 }
 
-.light-theme .btn-growth-md
+.light-theme .btn-growth-md, button.btn-primary-md.ng-binding[ng-click='chat\(\)']
 {
     background-color: #02b757;
     border: 1px solid #02b757;
     border-radius: 1px;
+}
+button.btn-primary-md.ng-binding[ng-click='chat\(\)']:hover {
+    background-color: #00b06f;
+    border-color: #00b06f;
+    color: #fff;
 }
 
 /* .light-theme .rbx-header .rbx-navbar-search .rbx-navbar-search-option.selected
@@ -3403,6 +3408,32 @@ button.modal-button.btn-primary-md:hover {
     border: 1px solid #3FC679;
     box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
 }
-
+/* welcome user */
+/* span.thumbnail-2d-container.avatar-card-image {
+    position: relative;
+    left: 455px;
+    width: 128px;
+    height: 128px;
+}
+div.font-header-2.dynamic-ellipsis-item:before {
+    content: "Hello, ";
+}
+div.font-header-2.dynamic-ellipsis-item, div.font-header-2.dynamic-ellipsis-item:hover{
+    position: relative;
+    left: 575px;
+    top: 50px;
+    overflow: visible;
+    font-size: 30px;
+}
+div.font-header-2.dynamic-ellipsis-item:after {
+    content: "!"
+}
+.rbx-left-col {
+    overflow: visible;
+}
+div.col-xs-12.container-header {
+    margin-top: 115px;
+    visibility: hidden;
+} */
 
 }

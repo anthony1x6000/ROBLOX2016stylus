@@ -18,7 +18,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Play button] Fixed play button hover color, border, and shadow. 
 - [VIP/Private server] Fixed VIP server change name button hover background, border, and shadow. 
 - [Catalog > Buy Robux] Removed "Buy Robux" button next to dropdown menu.
-- [AD]
+- [Chat button] Made button uniform with Join button.
 ## Known bugs
 - Under profile pages, the about section and the report section aren't connected. I'll try working on a fix for that when I have the time. 
   - Nevermind, impossible. 
