@@ -256,10 +256,10 @@ background: #F2F2F2
 .rbx-header .age-bracket-label .age-bracket-label-username {
 visibility: hidden;
 }
-.gotham-font .font-footer, .gotham-font .font-footer:active, .gotham-font .font-footer:focus, .gotham-font .font-footer:hover, .gotham-font .font-footer:link, .gotham-font .font-footer:visited, .gotham-font .text-footer, .gotham-font .text-footer:active, .gotham-font .text-footer:focus, .gotham-font .text-footer:hover, .gotham-font .text-footer:link, .gotham-font .text-footer:visited, .gotham-font .xsmall, .gotham-font .xsmall:active, .gotham-font .xsmall:focus, .gotham-font .xsmall:hover, .gotham-font .xsmall:link, .gotham-font .xsmall:visited, .gotham-font .xxsmall, .gotham-font .xxsmall:active, .gotham-font .xxsmall:focus, .gotham-font .xxsmall:hover, .gotham-font .xxsmall:link, .gotham-font .xxsmall:visited {
+/* .gotham-font .font-footer, .gotham-font .font-footer:active, .gotham-font .font-footer:focus, .gotham-font .font-footer:hover, .gotham-font .font-footer:link, .gotham-font .font-footer:visited, .gotham-font .text-footer, .gotham-font .text-footer:active, .gotham-font .text-footer:focus, .gotham-font .text-footer:hover, .gotham-font .text-footer:link, .gotham-font .text-footer:visited, .gotham-font .xsmall, .gotham-font .xsmall:active, .gotham-font .xsmall:focus, .gotham-font .xsmall:hover, .gotham-font .xsmall:link, .gotham-font .xsmall:visited, .gotham-font .xxsmall, .gotham-font .xxsmall:active, .gotham-font .xxsmall:focus, .gotham-font .xxsmall:hover, .gotham-font .xxsmall:link, .gotham-font .xxsmall:visited {
     font-size: 0;
     font-weight: 500;
-}
+} */
 .chat-container.collapsed .chat-header .chat-header-title {
     color: #fff;
 }
@@ -281,8 +281,8 @@ visibility: hidden;
     color: rgb(116, 116, 116);
 }
 .gotham-font .font-footer, .gotham-font .font-footer:active, .gotham-font .font-footer:focus, .gotham-font .font-footer:hover, .gotham-font .font-footer:link, .gotham-font .font-footer:visited, .gotham-font .text-footer, .gotham-font .text-footer:active, .gotham-font .text-footer:focus, .gotham-font .text-footer:hover, .gotham-font .text-footer:link, .gotham-font .text-footer:visited, .gotham-font .xsmall, .gotham-font .xsmall:active, .gotham-font .xsmall:focus, .gotham-font .xsmall:hover, .gotham-font .xsmall:link, .gotham-font .xsmall:visited, .gotham-font .xxsmall, .gotham-font .xxsmall:active, .gotham-font .xxsmall:focus, .gotham-font .xxsmall:hover, .gotham-font .xxsmall:link, .gotham-font .xxsmall:visited {
-    font-size: 10px;
-    font-weight: 500;
+    font-size: 10px !important;
+    font-weight: 500 !important;
 }
 
 
@@ -1173,21 +1173,18 @@ text-decoration: none !important;
 padding: 4px 4px !important;
 }
 
-/*meme */ 
-/* random thing I did to the ad */
+/* random thing I did to the ad. Will be removed in releases. */
 .ad {
-    background-image: url("https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/eseg.jpg?raw=true");
-    background-repeat: repeat;
-    background-size: 300px;
-    background-position: -25px;
+    background: url('data:image/png;base64,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');
+    background-size: 140%;
+    background-position: 35% 0px;
 }
 
-/*end of meme*/ 
 /* maybe this will fix see more being short I probably did something to mess it up */
 .btn-control-sm {
     width: 100%;
 }
-/* changing top bar stuff I FOUND OUT HOW! Not really I just looked at Ologist's code and saw that he figured it out so I'm shamelessly stealing it */ 
+/* changing top bar stuff I FOUND OUT HOW! Not really I just looked at Ologist's code and saw that he figured it out so I'm stealing it */ 
 ul.nav:nth-child(2) > li:nth-child(1) > a:nth-child(1)
     {
     font-size: 0 !important;
@@ -3377,6 +3374,14 @@ height: 100%;
     height: auto;
     position: absolute;
 }
+/*     robux */
+    div[ng-controller='itemsContainerController'] > a.btn-growth-md {
+        display: none;
+    }
+    div.input-group-btn.sort-dropdown {
+        position: relative;
+        margin-right: -12px;
+    }
 /* popover */ 
 .popover {
 border-radius: 2px;
@@ -3398,5 +3403,6 @@ button.modal-button.btn-primary-md:hover {
     border: 1px solid #3FC679;
     box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
 }
+
 
 }
