@@ -1,11 +1,12 @@
 
-# ROBLOX 2016 Userstyles/Stylus
+# ROBLOX 2016 Userstyle & helloUser.js
 A UserStyle that changes the look of ROBLOX to be more faithful to what it would look like back in 2016.\
 **To install the latest release click [here](https://github.com/anthony1x6000/ROBLOX2016stylus/raw/downloads/.user.css-installFiles/release.user.css).**
 
 If you don't already, this requires Stylus to function. Get it at the [Chrome Web Store](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or at [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/styl-us/). \
 ![Preview of style](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/2016_stuff/preview.png?raw=true "Preview")
-<br>
+## helloUser.js
+[helloUser](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/helloUser.js)[.js](https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/main/helloUser.js) is a userscript. It was built on [Tampermonkey](https://www.tampermonkey.net/) so I'd recommend using that. I haven't tested it out on other extensions like [Greasemonkey](https://www.greasespot.net/).
 ## Contributing
 **If you can, please contribute!** \
 I don't know much CSS myself, so any contribution, even improving the slightest little thing, is greatly appreciated!
