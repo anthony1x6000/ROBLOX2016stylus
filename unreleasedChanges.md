@@ -6,6 +6,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [*Sent as Patch 2 for 1.2.1* | Header] Fixed messed up header. Will be sent as a patch.
 - [Header] Redid entire header. Header should now be the same on all pages, especially the develop page. 
 - [Avatar page] Fixed padding and stuff like that on the avatar page. 
+- [Images] Fixed image request denial because of roblox website policy. Just either moved all links to roblox cdn or base64.
 ## Small changes
 - [*Sent as Patch for 2 1.2.1*] Play button:
   - Fixed Play text alignment. 
