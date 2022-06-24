@@ -6,6 +6,7 @@ A UserStyle that changes the look of ROBLOX to be more faithful to what it would
 If you don't already, this requires Stylus to function. Get it at the [Chrome Web Store](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or at [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/styl-us/). \
 ![Preview of style](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/2016_stuff/preview.png?raw=true "Preview")
 ## helloUser.js
+This userscript brings back the [Hello, User](https://i.ibb.co/r5pfQpS/image.png) thing that used to be at the top of the site.\
 [helloUser](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/helloUser.js)[.js](https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/main/helloUser.js) is a userscript. It was built on [Tampermonkey](https://www.tampermonkey.net/) so I'd recommend using that. I haven't tested it out on other extensions like [Greasemonkey](https://www.greasespot.net/).
 ## Contributing
 **If you can, please contribute!** \
