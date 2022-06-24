@@ -7,7 +7,7 @@ If you don't already, this requires Stylus to function. Get it at the [Chrome We
 ![Preview of style](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/2016_stuff/preview.png?raw=true "Preview")
 ## helloUser.user.js
 This userscript brings back the [Hello, User](https://i.ibb.co/r5pfQpS/image.png) thing that used to be at the top of the site.\
-[helloUser](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/helloUser.user.js)[.js](https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/main/helloUser.user.js) is a userscript. It was built on [Tampermonkey](https://www.tampermonkey.net/) so I'd recommend using that. I haven't tested it out on other extensions like [Greasemonkey](https://www.greasespot.net/).
+[helloUser](https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/main/helloUser.user.js)[.js](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/helloUser.user.js) is a userscript. It was built on [Tampermonkey](https://www.tampermonkey.net/) so I'd recommend using that. I haven't tested it out on other extensions like [Greasemonkey](https://www.greasespot.net/).
 ## Contributing
 **If you can, please contribute!** \
 I don't know much CSS myself, so any contribution, even improving the slightest little thing, is greatly appreciated!
