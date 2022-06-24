@@ -19,7 +19,7 @@
   let userName = document.getElementsByName('user-data')[0].getAttribute('data-name');
   let userDisplayName = document.getElementsByName('user-data')[0].getAttribute('data-displayName');
   newDiv.setAttribute("id", "newdiv");
-  const NA = "https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/main/images/error.svg";
+  const NA = "https://t3.rbxcdn.com/894dca84231352d56ec346174a3c0cf9";
   const profileAVClass = `
     height: 128px;
     width: 128px;
