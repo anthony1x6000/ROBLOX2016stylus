@@ -3517,5 +3517,7 @@ span.brief-game-icon > img {
     position: relative;
     bottom: 3px;
 }
-
+.horizontally-scrollable {
+    height: 240px !important;
+}
 }
