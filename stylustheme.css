@@ -1,18 +1,18 @@
 @-moz-document domain("web.roblox.com"), domain("www.roblox.com") {
     /* Hey! if you see this, check out the Github repository for this!
-    https://github.com/anthony1x6000/ROBLOX2016stylus
-    You can find the style under releases. Make sure to check out the beta "stylustheme.css."
-    Make sure to report any bugs to the issue tracker on Github.  
-
+        https://github.com/anthony1x6000/ROBLOX2016stylus
+            You can find the style under releases. Make sure to check out the beta "stylustheme.css."
+            Make sure to report any bugs to the issue tracker on Github.  
     Credit to Ologist for initially making this great Userstyle theme!
-    Code contributors:
-    - Ologist (Original creator)
-    - anthony1x6000
-    - Diyamund
+        Code contributors:
+        - Ologist (Original creator)
+        - anthony1x6000
+        - Diyamund
     */ 
 
-    /* font */ 
-    /* @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700); */
+    /* ::::font::::
+        @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700);
+    */ 
     /* latin */
     @font-face {
         font-family: 'Source Sans Pro';
