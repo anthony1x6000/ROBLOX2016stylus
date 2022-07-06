@@ -533,9 +533,9 @@ a[ng-click='onAutocompleteSuggestionClicked\(suggestion\.Query\,\ \$index\)'] > 
     background-color: #00A2FF;
 }
 
-.input-group-btn .input-dropdown-btn:focus .light-theme .icon-down, .input-group-btn .input-dropdown-btn:hover .light-theme .icon-down, .light-theme .icon-checkmark-16x16, .light-theme .icon-close-16x16, .light-theme .icon-close-gray-16x16, .light-theme .icon-default-generic-16x16, .light-theme .icon-down-16x16, .light-theme .icon-edit-16x16, .light-theme .icon-left-16x16, .light-theme .icon-moreinfo-16x16, .light-theme .icon-red-timer-16x16, .light-theme .icon-right-16x16, .light-theme .icon-settings-16x16, .light-theme .icon-up-16x16, .light-theme .input-group-btn .input-dropdown-btn:focus .icon-down, .light-theme .input-group-btn .input-dropdown-btn:hover .icon-down, .light-theme .open .input-dropdown-btn .icon-down, .light-theme .rbx-select-group:hover .icon-down, .open .input-dropdown-btn .light-theme .icon-down, .rbx-select-group:hover .light-theme .icon-down {
+/* .input-group-btn .input-dropdown-btn:focus .light-theme .icon-down, .input-group-btn .input-dropdown-btn:hover .light-theme .icon-down, .light-theme .icon-checkmark-16x16, .light-theme .icon-close-16x16, .light-theme .icon-close-gray-16x16, .light-theme .icon-default-generic-16x16, .light-theme .icon-down-16x16, .light-theme .icon-edit-16x16, .light-theme .icon-left-16x16, .light-theme .icon-moreinfo-16x16, .light-theme .icon-red-timer-16x16, .light-theme .icon-right-16x16, .light-theme .icon-settings-16x16, .light-theme .icon-up-16x16, .light-theme .input-group-btn .input-dropdown-btn:focus .icon-down, .light-theme .input-group-btn .input-dropdown-btn:hover .icon-down, .light-theme .open .input-dropdown-btn .icon-down, .light-theme .rbx-select-group:hover .icon-down, .open .input-dropdown-btn .light-theme .icon-down, .rbx-select-group:hover .light-theme .icon-down {
     background-image: url(https://web.archive.org/web/20160727070458im_/https://static.rbxcdn.com/images/Shared/generic_06102016.svg);
-}
+} */
 .light-theme .dropdown-menu li:hover {
     background-color: #F2F2F2;
     box-shadow: 4px 0 0 0 #00A2FF inset;
@@ -3461,4 +3461,52 @@ div.col-xs-12.container-header {
         background-position: 0 -351px;
     /*     background-image: url(https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/cd9b642ccf4ef8bfd605a035bb2cc53db92f4e24/images/archiveofimages/153fd3209692232cd8087cad74a669b0-games.svg); */
     }
+
+    /* .section-content.remove-panel {
+        margin-bottom: 0;
+    }
+    div.profile-avatar > div.container-header {
+        margin-top: 12px;
+    }
+    div.profile-about.ng-scope > div.section-content.remove-panel {
+        position: relative;
+        box-shadow: none;
+    }
+    div.profile-about > div.section-content.ng-scope.remove-panel {
+        position: relative;
+        top: 40px;
+        padding-bottom: 45px;
+        margin-bottom: 0;
+    }
+    pre#profile-about-text {
+        position: relative;
+    }
+    div[ng-if='\$ctrl\.data\.description\ \&\&\ \!\$ctrl\.layout\.showEditBox']
+    {
+        margin-top: -40px;
+    }
+    div.profile-about-content {
+        position: relative;
+    } */
+.hover-game-tile.focused {
+    width: 150px;    
+    margin: 0 14px 0 0 !important;
+}
+.hover-game-tile.focused .featured-game-container .info-container {
+    margin-left: 0;
+    margin-right: 0;
+}
+.hover-game-tile.focused .featured-game-container .featured-game-icon-container {
+    margin-left: 0;
+}
+span.brief-game-icon > img {
+    border-radius: 0px !important;
+}
+.hover-game-tile.focused {
+    margin-right: 12px;
+}
+.featured-game-container.game-card-container {
+    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 30%) !important;
+    margin-right: 12px !important;
+}
 }
