@@ -5,6 +5,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 ## Major Changes/Fixes
 - [Discover > Game cards] Patched out game card hover animations. Like button sometimes is squished on hover.
 - [Discover > Game cards] Fix game card box-shadow. 
+- [Discover > Game cards] Push up game cards. 
 ## Known bugs
 - Under profile pages, the about section and the report section aren't connected. I'll try working on a fix for that when I have the time. 
   - Nevermind, impossible. 
