@@ -3506,7 +3506,13 @@ span.brief-game-icon > img {
     margin-right: 12px;
 }
 .featured-game-container.game-card-container {
-    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.3) !important;
+    transition: box-shadow 70ms ease !important;
+    box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.3);
     margin-right: 12px !important;
 }
+.featured-game-container.game-card-container:hover {
+    box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.75) !important;
+}
+
+
 }

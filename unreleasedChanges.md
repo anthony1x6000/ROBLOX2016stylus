@@ -3,7 +3,8 @@ This will be cleared out later when I make changes to stylustheme.css\
 This version is not 100% released and may have bugs.\
 Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com/anthony1x6000/ROBLOX2016stylus/releases).
 ## Major Changes/Fixes
-- [Game card Animations] Patched out game card hover animations. Like button sometimes is squished on hover.
+- [Discover > Game cards] Patched out game card hover animations. Like button sometimes is squished on hover.
+- [Discover > Game cards] Fix game card box-shadow. 
 ## Known bugs
 - Under profile pages, the about section and the report section aren't connected. I'll try working on a fix for that when I have the time. 
   - Nevermind, impossible. 
