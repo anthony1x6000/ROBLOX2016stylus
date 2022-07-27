@@ -7,6 +7,8 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Discover > Game cards] Fix game card box-shadow. 
 - [Discover > Game cards] Push up game cards. 
 - [Discover > Game cards] Made game card carousel heigh match game card height: ~240px
+- [navbar > Notification] Fixed notification icon along.
+- [Heading] Changed heading text.
 ## Known bugs
 - Under profile pages, the about section and the report section aren't connected. I'll try working on a fix for that when I have the time. 
   - Nevermind, impossible. 
