@@ -3514,10 +3514,6 @@
     .featured-game-container.game-card-container:hover {
         box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.75) !important;
     }
-    .hlist.games.game-cards.game-tile-list {
-        position: relative;
-        bottom: 3px;
-    }
     .horizontally-scrollable {
         height: 240px !important;
     }
