@@ -463,21 +463,21 @@
     .profile-header .header-title h2, .profile-header .header-title span[class^="icon"] {
         float: right;
     }
-    .profile-header .header-title .icon-premium-medium {
+    /* .profile-header .header-title .icon-premium-medium {
         display: inline;
-    /*     margin-top: 0 !important; */
+        margin-top: 0 !important;
         margin-left: 6px;
-    }
-    .light-theme .icon-default-premium-medium, .light-theme .icon-premium-medium {
+    } */
+    /* .light-theme .icon-default-premium-medium, .light-theme .icon-premium-medium {
         background-image: url(https://vignette.wikia.nocookie.net/roblox/images/4/47/OBCIcon.png/revision/latest?cb=20190702213429) !important;
-    }
-    .icon-default-premium-medium, .icon-premium-medium {
+    } */
+    /* .icon-default-premium-medium, .icon-premium-medium {
         background-size: 46px 26px;
         width: 47px;
         height: 40px;
         display: inline-block;
         vertical-align: middle;
-    }
+    } */
     .home-header-content a {
         float: left;
     }
@@ -3397,14 +3397,14 @@
     .games-list-header {
         display: none;
     }
-    /* IMAGE PATCH */
+    /* IMAGE PATCH, Buy Robux */
         /* Add in */
         .light-theme .icon-robux-16x16, .robux-downsell .icon-robux-gray {
             background-image: url(https://images.rbxcdn.com/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg) !important;
             background-size: 40px auto;
             background-position: 0 -80px;
         }
-        .premium-container span[class^=icon] {
+        span.icon-robux-gray {
             background-image: url(https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg);
             background-position: 0px -113px !important;
             background-size: auto !important;
@@ -3532,8 +3532,7 @@
         .notification-margins {
             margin-right: 5px !important;
         }
-    }
-/* Group search fix */
+    /* Group search fix */
     .game-card-container.group-card-name-container {
         background: transparent;
         bottom: 108px;
@@ -3547,4 +3546,6 @@
     }
     group-landing-row ul.hlist.game-cards {
         overflow: visible;
+    }
+    
     }
