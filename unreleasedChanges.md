@@ -1,4 +1,4 @@
-# 1.2.2.3 Released | 1.2.2.3
+# 1.2.2.4 Released | 1.2.2.4
 This will be cleared out later when I make changes to stylustheme.css\
 This version is not 100% released and may have bugs.\
 Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com/anthony1x6000/ROBLOX2016stylus/releases).
@@ -9,6 +9,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Discover > Game cards] Made game card carousel heigh match game card height: ~240px
 - [navbar > Notification] Fixed notification icon along.
 - [Heading] Changed heading text.
+- [Group search] Fixed group cards on group search. 
 ## Known bugs
 - Under profile pages, the about section and the report section aren't connected. I'll try working on a fix for that when I have the time. 
   - Nevermind, impossible. 

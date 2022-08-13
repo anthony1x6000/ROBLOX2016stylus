@@ -3533,3 +3533,18 @@
             margin-right: 5px !important;
         }
     }
+/* Group search fix */
+    .game-card-container.group-card-name-container {
+        background: transparent;
+        bottom: 108px;
+        box-shadow: none !important;
+    }
+    div.game-card-name-secondary {
+        margin-top: 22px;
+        margin-left: 6px;
+        position: absolute;
+        font-size: 12px;
+    }
+    group-landing-row ul.hlist.game-cards {
+        overflow: visible;
+    }
