@@ -866,8 +866,7 @@
         color: #fff;
     }
     #RollerContainer.rollercoaster-background {
-    /*     background-image: url(https://www.mmogames.com/wp-content/uploads/2012/10/ROBLOX-screenshot-2017-1.jpg); */
-        background: url('');
+        background-image: url(https://images.rbxcdn.com/f3259582db4c0dcc214fa0e3c78a5f7b);
         background-position: 50%;
         background-repeat: no-repeat;
         background-size: cover;
