@@ -2847,16 +2847,14 @@
     #app-stores-devices:after { 
         text-transform: none;
         background: rgba(0,0,0,0.7);
-        content: "Powering Imagination";
+        content: "Powering Imagination™";
         position: absolute !important;
+        width: 390px;
         line-height: 26px;
         font-size: 34px;
-    /*     left: 500px; */
         bottom: 470px;
-        right: 475px;
-        left: 0px;
+        left: -10px;
         padding: 17px 25px !important;
-    /*     top: 0px; */
         z-index: 0;
     }
     
