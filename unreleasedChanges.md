@@ -12,7 +12,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Roblox Signup page] Made signup page look like 2016.
 - [Notification] Removed white line from red notification dot. 
 - [Messages] Fixed buttons in inbox.
-
+- [Messages] Roblox official messages logo fix.
 ### Find a bug?
 Head on over to the [GitHub page](https://github.com/anthony1x6000/ROBLOX2016stylus) and create an issue!
 There you'll also get faster updates and beta versions of the script! (It'll just be a commit under [stylustheme.css](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/stylustheme.css)). Known bugs could also be fixed in the beta; check out the [beta information here](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/unreleasedChanges.md#beta--116).
