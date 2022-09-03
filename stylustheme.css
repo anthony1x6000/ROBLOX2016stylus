@@ -2803,6 +2803,15 @@
     
     /* signup page */ 
     /* 2016      */
+    #main-login-button {
+        background-color: #00B259 !important;
+        border: 1px solid transparent !important;
+        color: white !important;
+        font-weight: 400 !important;
+        font-size: 14px !important;
+        width: 10px !important;
+        border-radius: 1px;
+    }
     .signup-container.theme-bg.rbx-login-form {
         position: relative;
     /*     max-width: 435px; */
