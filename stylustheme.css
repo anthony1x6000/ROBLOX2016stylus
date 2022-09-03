@@ -1159,8 +1159,14 @@
     } */
     
     /* maybe this will fix see more being short I probably did something to mess it up */
-    .btn-control-sm {
-        width: 100%;
+    .btn-control-sm:hover {
+        border: 1px solid #a4a4a4;
+        color: #000;
+        box-shadow: 0 1px 4px 0 rgb(25 25 25 / 45%);   
+    }
+    .message-actions.ng-scope {
+        height: 40px;
+        padding-top: 3px;
     }
     /* changing top bar stuff I FOUND OUT HOW! Not really I just looked at Ologist's code and saw that he figured it out so I'm stealing it */ 
     ul.nav:nth-child(2) > li:nth-child(1) > a:nth-child(1)
