@@ -8,7 +8,7 @@
     Code contributors:
     - Ologist (Original creator)
     - anthony1x6000
-    - Diyamund
+    - Diyamund/aubymori
     */ 
     
     /* font */ 
@@ -1840,7 +1840,7 @@
     .light-theme .notification-red, .light-theme #header .btr-nav-notif /*better roblox */ {
         background-color: #e2231a;
         color: #ffffff;
-        border: 0px;
+        border: 0px !important;
     }
     .light-theme .icon-nav-message-btr,
     .light-theme .icon-nav-friend-btr /*better roblox */{

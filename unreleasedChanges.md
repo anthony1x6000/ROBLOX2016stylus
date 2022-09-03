@@ -1,4 +1,5 @@
-# 1.2.3 Unreleased
+# 1.2.3.1 Unreleased
+[Quick install](https://github.com/anthony1x6000/ROBLOX2016stylus/raw/downloads/.user.css-installFiles/release.user.css) | You'll get the most recent version of this release with patches and changes.
 ## Thanks for 25k installs on Userstyles!!!
 This will be cleared out later when I make changes to stylustheme.css
 This version is not 100% released and may have bugs.
@@ -9,6 +10,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 
 ## Changes/Fixes
 - [Roblox Signup page] Made signup page look like 2016.
+- [Notification] Removed white line from red notification dot. 
 
 ### Find a bug?
 Head on over to the [GitHub page](https://github.com/anthony1x6000/ROBLOX2016stylus) and create an issue!
