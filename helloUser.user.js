@@ -7,6 +7,7 @@
 // @license      MIT License: https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/LICENSE
 // @match        https://www.roblox.com/home
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=roblox.com
+// @run-at       document-end
 // @grant        none
 // ==/UserScript==
 
@@ -41,10 +42,9 @@
     <div id="displayName" class="font-header-2 dynamic-ellipsis-item" style="${displayNameClass}">Hello, ${userDisplayName}!</div>
   </a>
   `;
-
   window.addEventListener('load', function() { // Wait for page load
-    const profileAV = document.querySelector("#navigation > ul > li:nth-child(1) > a > span > span > img").src;
-    const userAVID = document.getElementById("userAV");
-    userAVID.src = profileAV;
+      const profileAV = document.querySelector("#navigation > ul > li:nth-child(1) > a > span > span > img").src;
+      const userAVID = document.getElementById("userAV");
+      userAVID.src = profileAV;
   }, false);
 })();
