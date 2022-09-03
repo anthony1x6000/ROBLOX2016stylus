@@ -1,4 +1,4 @@
-# 1.2.3 Unreleased Roblox Signup
+# 1.2.3 Unreleased
 ## Thanks for 25k installs on Userstyles!!!
 This will be cleared out later when I make changes to stylustheme.css
 This version is not 100% released and may have bugs.
