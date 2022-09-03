@@ -1162,7 +1162,7 @@
     .btn-control-sm:hover {
         border: 1px solid #a4a4a4;
         color: #000;
-        box-shadow: 0 1px 4px 0 rgb(25 25 25 / 45%);   
+        box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.45);   
     }
     .message-actions.ng-scope {
         height: 40px;
@@ -3437,6 +3437,7 @@
         margin-bottom: 25px;
     }
      */
+    /* 💀 https://files.catbox.moe/fdj9m3.png 🤖behavior */
     /* Remove discover */
     .games-list-header {
         display: none;
@@ -3615,6 +3616,5 @@
         background: none;
         content: url('https://tr.rbxcdn.com/f4712d317130845d47726fcfcd9209e0/420/420/Decal/Png');
         width: 45px;
-    
     }
     }
