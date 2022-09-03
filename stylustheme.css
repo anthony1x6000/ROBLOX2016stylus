@@ -3610,4 +3610,8 @@
         content: url('https://tr.rbxcdn.com/f4712d317130845d47726fcfcd9209e0/420/420/Decal/Png');
         width: 45px;
     }
+    .icon-robux-gray-16x16 {
+        background-position: 0px -80px;
+        background-size: 40px;
+    }
     }
