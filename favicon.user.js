@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  Change roblox icon and title
 // @author       anthony1x6000
-// @match        https://www.roblox.com/home
+// @match        https://www.roblox.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=roblox.com
 // @grant        none
 // @run-at       document-end
