@@ -3588,6 +3588,23 @@
         position: absolute;
         font-size: 12px;
     }
+/* Profile groups */
+    div.game-card-name-secondary[ng-bind='\$ctrl\.group\.role\.name'], div[ng-bind="\'Label\.MembersCount\'\ \|\ translate\:\{\ memberCount\:\ \$ctrl\.group\.members\ \}"] {
+        position: relative;
+        margin-top: 0;
+    }
+    div.profile-slide-container {
+        background: none !important;
+        box-shadow: 0 0 0 !important;
+        padding: 0 !important;
+    }
+    ul.game-cards.group-list {
+        padding-left: 4px;
+        padding-top: 3px;
+        width: 100% !important;
+        position: relative;
+        right: 4px;
+    }
     group-landing-row ul.hlist.game-cards {
         overflow: visible;
     }
