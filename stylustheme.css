@@ -1747,6 +1747,9 @@
         cursor: pointer;
         box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
     }
+    div#notification-stream-popover > div.arrow {
+    box-shadow: 0 0 0;
+    }
     .disabled > .arrow {
         box-shadow: 0 0 0;
         cursor: default;
