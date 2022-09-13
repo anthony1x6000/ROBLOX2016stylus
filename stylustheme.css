@@ -3570,11 +3570,11 @@
             background-image: url('https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg');
             background-position: -28px -448px !important;
         }
-        .light-theme .btn-uiblox-common-common-notification-bell-md:hover {
-            background: none;
+        .light-theme .btn-uiblox-common-common-notification-bell-md {
+            background: none !important;
         }
         .notification-margins {
-            margin-right: 5px !important;
+            margin-right: 0px !important;
         }
     /* Group search fix */
     .game-card-container.group-card-name-container {

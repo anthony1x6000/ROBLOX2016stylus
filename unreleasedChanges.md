@@ -17,6 +17,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Limited] Fixed robux icon displaying the was price.
 - [Configure place | Robux icon] Fixed robux icon on the configure place page. 
 - [Profile > Group list] Fixed group listing on profile.
+- [Notifications] Background & margin fix.
 
 ### Find a bug?
 Head on over to the [GitHub page](https://github.com/anthony1x6000/ROBLOX2016stylus) and create an issue!
