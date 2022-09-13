@@ -1,5 +1,5 @@
 @-moz-document domain("web.roblox.com"), domain("www.roblox.com") {
-    /* Hey! if you see this, check out the Github repository for this!
+/* Hey! if you see this, check out the Github repository for this!
     https://github.com/anthony1x6000/ROBLOX2016stylus
     You can find the style under releases. Make sure to check out the beta "stylustheme.css."
     Make sure to report any bugs to the issue tracker on Github.  
@@ -15,35 +15,35 @@
     /* @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700); */
     /* latin */
     @font-face {
-      font-family: 'Source Sans Pro';
-      font-style: normal;
-      font-weight: 300;
-      src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
     /* latin */
     @font-face {
-      font-family: 'Source Sans Pro';
-      font-style: normal;
-      font-weight: 400;
-      src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
     /* latin */
     @font-face {
-      font-family: 'Source Sans Pro';
-      font-style: normal;
-      font-weight: 600;
-      src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
     /* latin */
     @font-face {
-      font-family: 'Source Sans Pro';
-      font-style: normal;
-      font-weight: 700;
-      src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
     /* end of font */ 
     
@@ -2101,7 +2101,7 @@
     
     .light-theme .icon-default-branded-16x16, .light-theme .icon-robux-16x16, .light-theme .icon-robux-gray-16x16, .light-theme .icon-robux-white-16x16
     {
-     background-image: url(https://images.rbxcdn.com/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg);
+        background-image: url(https://images.rbxcdn.com/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg);
     }
     
     .light-theme .layer
@@ -2720,13 +2720,7 @@
     }*/
     
     
-    
-    .icon-robux-16x16
-    {
-        background-image: url(https://svgur.com/i/GP3.svg);
-        background-position: 0;
-    }
-    
+
     
     /* Messing with the games tab */
     
@@ -3434,7 +3428,7 @@
         margin-right: 15px;
         margin-bottom: 25px;
     }
-     */
+        */
     /* 💀 https://files.catbox.moe/fdj9m3.png 🤖behavior */
     /* Remove discover */
     .games-list-header {
@@ -3442,7 +3436,7 @@
     }
     /* IMAGE PATCH, Buy Robux */
         /* Add in */
-        .light-theme .icon-robux-16x16, .robux-downsell .icon-robux-gray {
+        .light-theme .icon-robux-16x16, .robux-downsell .icon-robux-gray, .icon-default-economy-small, .icon-robux-16x16 {
             background-image: url(https://images.rbxcdn.com/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg) !important;
             background-size: 40px auto;
             background-position: 0 -80px;
@@ -3485,7 +3479,7 @@
         }
         .light-theme .icon-default-branded-16x16, .light-theme .icon-robux-16x16, .light-theme .icon-robux-gray-16x16, .light-theme .icon-robux-white-16x16
         {
-         background-image: url(https://images.rbxcdn.com/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg);
+            background-image: url(https://images.rbxcdn.com/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg);
         }
         #nav-robux-icon .icon-robux-28x28:hover {
             background-image: url(https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg);
@@ -3614,4 +3608,4 @@
         background-position: 0px -80px;
         background-size: 40px;
     }
-    }
+}
