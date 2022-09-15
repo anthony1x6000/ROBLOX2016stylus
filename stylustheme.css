@@ -1865,9 +1865,9 @@
     }
     #upgrade-now-button {
         background-color: #00a2ff;
-        border-color: #00a2ff;
+        border-color: inherit;
         color: #ffffff;
-        border-radius: 2px;
+        border-radius: 3px;
         line-height: 7px;
     }
     .light-theme .sponsored-game .game-card-native-ad {
