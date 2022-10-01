@@ -21,6 +21,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Notifications] Removed top arrow shadow. 
 - [Header > Search] Fixed border radius.
 - [btn-min-width] Fixed hover color for btn-min-width class.
+- [btn-primary-md] Fixed hover color for btn-primary-md class. 
 
 ### Find a bug?
 Head on over to the [GitHub page](https://github.com/anthony1x6000/ROBLOX2016stylus) and create an issue!

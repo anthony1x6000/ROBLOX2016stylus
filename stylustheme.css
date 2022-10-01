@@ -3644,4 +3644,8 @@
         .btn-generic-more-sm:focus {
             background: transparent !important;
         }
+        .light-theme .btn-primary-md:hover, .light-theme .btn-primary-md:active, .light-theme .btn-primary-md:focus {
+            background-color: #3fc679;
+            border-color: #3fc679;
+        }
     }
