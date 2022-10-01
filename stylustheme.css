@@ -3014,9 +3014,9 @@
         .premium-landing-page .premium-title-section .get-premium-button {
             color: #fff;    
         }
-        .premium-landing-page .premium-title-section .get-premium-button:hover {
-            background-color: #00bf5a;
-            border-color: #00bf5a;
+        .premium-landing-page .premium-title-section .get-premium-button:hover, .btn-min-width:hover {
+            background-color: #00bf5a !important;
+            border-color: #00bf5a !important;
         }
         
         
@@ -3635,10 +3635,13 @@
         .age-recommendation-title {
             display: none;
         }
-        /* .error-text {
+        .error-text {
             color: #000 !important;
             background: white;
             padding: 5px 15px 5px 15px;
             border: 1px solid #b8b8b8;
-        } */
+        }
+        .btn-generic-more-sm:focus {
+            background: transparent !important;
+        }
     }
