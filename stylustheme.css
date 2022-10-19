@@ -3648,4 +3648,7 @@
             background-color: #3fc679;
             border-color: #3fc679;
         }
+        a[href='\/robux\?ctx-nav'] > div > span.font-header-2 {
+            display: none;
+        }
     }

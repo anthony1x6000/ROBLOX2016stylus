@@ -1,4 +1,4 @@
-# 1.2.3.1 Unreleased
+# 1.2.4.1 Unreleased
 [Quick install](https://github.com/anthony1x6000/ROBLOX2016stylus/raw/downloads/.user.css-installFiles/release.user.css) | You'll get the most recent version of this release with patches and changes.
 ## Thanks for 25k installs on Userstyles!!!
 This will be cleared out later when I make changes to stylustheme.css
@@ -22,6 +22,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Header > Search] Fixed border radius.
 - [btn-min-width] Fixed hover color for btn-min-width class.
 - [btn-primary-md] Fixed hover color for btn-primary-md class. 
+- [Remove extra robux]
 
 ### Find a bug?
 Head on over to the [GitHub page](https://github.com/anthony1x6000/ROBLOX2016stylus) and create an issue!
