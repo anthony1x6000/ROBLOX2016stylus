@@ -1094,17 +1094,17 @@
         /* fixing the color of the thumbnail arrow things */ 
         
         .carousel-controls.carousel-controls-left.btn-primary-md.btn-min-width {
-            background-color: rgba(25,25,25,0.3);
-            border: 2px solid #fff;
-            border-color: #fff;
+            background-color: rgba(25,25,25,0.3) !important;
+            border: 2px solid #fff !important;
+            border-color: #fff !important;
         }
         
         
         
         .carousel-controls.carousel-controls-right.btn-primary-md.btn-min-width {
-            background-color: rgba(25,25,25,0.3);
-            border: 2px solid #fff;
-            border-color: #fff;
+            background-color: rgba(25,25,25,0.3) !important;
+            border: 2px solid #fff !important;
+            border-color: #fff !important;
         
         }
         
@@ -3015,8 +3015,8 @@
             color: #fff;    
         }
         .premium-landing-page .premium-title-section .get-premium-button:hover, .btn-min-width:hover {
-            background-color: #00bf5a !important;
-            border-color: #00bf5a !important;
+            background-color: #00bf5a;
+            border-color: #00bf5a;
         }
         
         
@@ -3388,6 +3388,14 @@
             background-color: #3FC679;
             box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
         } */
+        .light-theme .btn-primary-md:hover, .light-theme .btn-primary-md:focus {
+            background: #00bf5a;
+            border-color: #00bf5a;
+        }
+        .stack .card-list .card-item button.game-server-join-btn:hover, .stack .card-list .card-item button.game-server-join-btn:focus{
+            background-color: #fff;
+            border: 1px solid #B8B8B8;
+        }
         button.modal-button.btn-primary-md:hover {
             background: #3FC679;
             border: 1px solid #3FC679;
@@ -3643,10 +3651,6 @@
         }
         .btn-generic-more-sm:focus {
             background: transparent !important;
-        }
-        .light-theme .btn-primary-md:hover, .light-theme .btn-primary-md:active, .light-theme .btn-primary-md:focus {
-            background-color: #3fc679;
-            border-color: #3fc679;
         }
         a[href='\/robux\?ctx-nav'] > div > span.font-header-2 {
             display: none;
