@@ -8,21 +8,8 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 ## Hello, User(script)
 [**HELLO, [USER]**](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/helloUser.user.js) - I probably should have announced this a while ago, but I made a [Userscript](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/helloUser.user.js) that **brings back the Hello, User stuff on the home page**. Go check it out! Works with and without the Roblox 2016 style.
 
-## Changes/Fixes
-- [Roblox Signup page] Made signup page look like 2016.
-- [Notification] Removed white line from red notification dot. 
-- [Messages] Fixed buttons in inbox.
-- [Messages] Roblox official messages logo fix.
-- [Code] Removed redundant code.
-- [Limited] Fixed robux icon displaying the was price.
-- [Configure place | Robux icon] Fixed robux icon on the configure place page. 
-- [Profile > Group list] Fixed group listing on profile.
-- [Notifications] Background & margin fix.
-- [Notifications] Removed top arrow shadow. 
-- [Header > Search] Fixed border radius.
-- [btn-min-width] Fixed hover color for btn-min-width class.
-- [btn-primary-md] Fixed hover color for btn-primary-md class. 
-- [Remove extra robux]
+## Changes/Fixes 1.2.4.1
+- [Header] Removed extra robux text from header and moved robux sale offer. 
 - [Background-color] General background-color fixes for buttons. 
 
 ### Find a bug?
