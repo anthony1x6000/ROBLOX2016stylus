@@ -3652,8 +3652,8 @@
         .btn-generic-more-sm:focus {
             background: transparent !important;
         }
-        a[href='\/robux\?ctx-nav'] > div > span.font-header-2 {
-            display: none;
+        .font-header-2 .buy-robux-btn {
+            display: none !important; 
         }
         .robux-10-percent-more-label {
             margin-top: 5px;
