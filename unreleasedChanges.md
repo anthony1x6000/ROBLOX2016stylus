@@ -9,7 +9,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 [**HELLO, [USER]**](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/helloUser.user.js) - I probably should have announced this a while ago, but I made a [Userscript](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/helloUser.user.js) that **brings back the Hello, User stuff on the home page**. Go check it out! Works with and without the Roblox 2016 style.
 
 ## Changes/Fixes 1.2.4.1
-- [Header] Removed extra robux text from header and moved robux sale offer. 
+- [Header] Removed extra robux text from header and moved robux sale offer & duplicate Robux text (x2) 
 - [Background-color] General background-color fixes for buttons. 
 
 ### Find a bug?

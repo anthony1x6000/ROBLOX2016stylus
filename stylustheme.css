@@ -3652,7 +3652,7 @@
         .btn-generic-more-sm:focus {
             background: transparent !important;
         }
-        .font-header-2 .buy-robux-btn {
+        .font-header-2 .buy-robux-btn, .robux-btn {
             display: none !important; 
         }
         .robux-10-percent-more-label {
