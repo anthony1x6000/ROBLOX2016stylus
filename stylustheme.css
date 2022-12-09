@@ -3600,6 +3600,13 @@
             font-size: 12px;
         }
     /* Profile groups */
+        div.btr-profile-groups div.card-item.game-card-container .game-card-name /*better roblox */ {
+            width:100px;
+        }
+        div.btr-profile-groups .card-item.game-card-container > div:nth-child(2)::before /*better roblox */ {
+        white-space: pre-wrap;
+            content: "\A";
+        }
         div.game-card-name-secondary[ng-bind='\$ctrl\.group\.role\.name'], div[ng-bind="\'Label\.MembersCount\'\ \|\ translate\:\{\ memberCount\:\ \$ctrl\.group\.members\ \}"] {
             position: relative;
             margin-top: 0;
