@@ -11,7 +11,8 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 ## Changes/Fixes 1.2.4.1
 - [Header] Removed extra robux text from header and moved robux sale offer & duplicate Robux text (x2) 
 - [Background-color] General background-color fixes for buttons. 
-- [Notification box] Fixed notification box style
+- [Notification box] Fixed notification box style [releasing as patch]
+- [Contributors] Updated contributors!! [releasing as patch]
 
 ### Find a bug?
 Head on over to the [GitHub page](https://github.com/anthony1x6000/ROBLOX2016stylus) and create an issue!
