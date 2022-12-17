@@ -1,16 +1,16 @@
 @-moz-document domain("web.roblox.com"), domain("www.roblox.com") {
     /* Hey! if you see this, check out the Github repository for this!
-        https://github.com/anthony1x6000/ROBLOX2016stylus
-        You can find the style under releases. Make sure to check out the beta "stylustheme.css."
-        Make sure to report any bugs to the issue tracker on Github.  
-        
-        Credit to Ologist for initially making this great Userstyle theme!
-        Code contributors:
-        - Ologist (Original creator)
-        - anthop/anthony1x6000
-        - Aubrey/aubymori
-        - ssd21345/randomguyingithub
-        */ 
+    https://github.com/anthony1x6000/ROBLOX2016stylus
+    You can find the style under releases. Make sure to check out the beta "stylustheme.css."
+    Make sure to report any bugs to the issue tracker on Github.  
+    
+    Credit to Ologist for initially making this great Userstyle theme!
+    Code contributors:
+    - Ologist (Original creator)
+    - anthony1x6000
+    - Aubrey/aubymori
+    - ssd21345/randomguyingithub
+    */ 
     
     /* font */ 
     /* @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700); */
@@ -126,23 +126,15 @@
         background-color: #ffffff;
         border: 1px solid #B8B8B8;
     }
-    
-    
-    h1, h2, h3, h4, h5 {
+    /* h1, h2, h3, h4, h5 {
         padding: 8px 0 !important;
-    }
-    
-    
+        line-height: 1em;
+    } */
     .gotham-font .font-title, .gotham-font .h1, .gotham-font .h2, .gotham-font h1, .gotham-font h2 {
-        margin-top: 5px;
         font-size: 25px;
         font-weight: 200;
+        overflow: visible;
     }
-    
-    h1, h2, h3, h4, h5 {
-        line-height: 1em;
-    }
-    
     
     
     .gotham-font, .gotham-font .h1, .gotham-font .h2, .gotham-font .h3, .gotham-font .h4, .gotham-font .h5, .gotham-font .h6, .gotham-font h1, .gotham-font h2, .gotham-font h3, .gotham-font h4, .gotham-font h5, .gotham-font h6 {
@@ -3701,4 +3693,6 @@
     #notification-stream-body {
         height: auto;
     }
+    /* Game name */
+    
     }
