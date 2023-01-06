@@ -6,7 +6,7 @@
 // @author       anthony1x6000
 // @license      MIT License: https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/LICENSE
 // @match        https://www.roblox.com/home
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=roblox.com
+// @icon         http://images.rbxcdn.com/7aee41db80c1071f60377c3575a0ed87.ico
 // @run-at       document-end
 // @grant        none
 // ==/UserScript==
@@ -49,5 +49,4 @@
   }
   window.addEventListener('load', finalSet, false);
   document.addEventListener('visibilitychange', finalSet, false);
-
 })();
