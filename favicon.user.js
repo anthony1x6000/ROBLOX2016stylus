@@ -12,10 +12,9 @@
 
 (function() {
     'use strict';
-    var icon = document.querySelector("link[rel~='icon']");
+    const icon = document.querySelector("link[rel~='icon']");
     icon.href = 'https://images.rbxcdn.com/7aee41db80c1071f60377c3575a0ed87.ico';
-
-    var title = document.querySelector("head > title").innerHTML;
+    let title = document.querySelector("head > title").innerHTML;
     title = title.replace('Roblox', 'ROBLOX');
     document.querySelector("head > title").innerHTML = title;
 })();
