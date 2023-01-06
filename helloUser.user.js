@@ -22,14 +22,14 @@
   newDiv.setAttribute("id", "newdiv");
   const NA = "https://t3.rbxcdn.com/894dca84231352d56ec346174a3c0cf9";
   const profileAVClass = `
-    height: 128px;
-    width: 128px;
-    margin-right: 15px;
-    margin-bottom: 0px;
+  height: 128px;
+  width: 128px;
+  margin-right: 15px;
+  margin-bottom: 0px;
   `;
   const displayNameClass = `
-    font-size: 30px;
-    margin-top: calc(128px / 3);
+  font-size: 30px;
+  margin-top: calc(128px / 3);
   `;
   homeID.parentNode.insertBefore(newDiv, homeID);
   newDiv.innerHTML = `
@@ -42,9 +42,12 @@
     <div id="displayName" class="font-header-2 dynamic-ellipsis-item" style="${displayNameClass}">Hello, ${userDisplayName}!</div>
   </a>
   `;
-  window.addEventListener('load', function() { // Wait for page load
+  function finalSet() {
       const profileAV = document.querySelector("#navigation > ul > li:nth-child(1) > a > span > span > img").src;
       const userAVID = document.getElementById("userAV");
       userAVID.src = profileAV;
-  }, false);
+  }
+  window.addEventListener('load', finalSet, false);
+  document.addEventListener('visibilitychange', finalSet, false);
+
 })();
