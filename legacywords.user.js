@@ -30,7 +30,7 @@
     }
 
     function runafter() { //replace your words here (word to replace, replacement)
-        console.log('Running replacement');
+        // console.log('Running replacement');
         replaceWord('Avatar Shop', 'Catalog');
         replaceWord('Creator Marketplace', 'Library');
         replaceWord('Experiences', 'Games');
