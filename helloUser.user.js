@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Hello, User!
 // @namespace    https://github.com/anthony1x6000/ROBLOX2016stylus
-// @version      0.1
+// @version      0.2
 // @description  Brings back the thing where roblox welcomed you.
 // @author       anthony1x6000
 // @license      MIT License: https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/LICENSE
@@ -42,10 +42,28 @@
     <div id="displayName" class="font-header-2 dynamic-ellipsis-item" style="${displayNameClass}">Hello, ${userDisplayName}!</div>
   </a>
   `;
+  function getCookie(name) {
+      var value = "; " + document.cookie;
+      var parts = value.split("; " + name + "=");
+      if (parts.length == 2) return parts.pop().split(";").shift();
+  }
   function finalSet() {
       const profileAV = document.querySelector("#navigation > ul > li:nth-child(1) > a > span > span > img").src;
       const userAVID = document.getElementById("userAV");
-      userAVID.src = profileAV;
+      try {
+          // throw new Error("testing break");
+          userAVID.src = profileAV;
+          try {
+              new URL(profileAV);
+              document.cookie = "uAVCookie=" + profileAV + "; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+          } catch (err) {
+              console.log(`invalid link? Check ${err}`);
+          }
+      } catch (e) {
+          var cookieAV = getCookie("uAVCookie");
+          userAVID.src = cookieAV;
+          console.log(`Exception found: ${e}. Setting avatar based on cookie. \n Cookie Avatar = ${cookieAV}`);
+      }
   }
   window.addEventListener('load', finalSet, false);
   document.addEventListener('visibilitychange', finalSet, false);
