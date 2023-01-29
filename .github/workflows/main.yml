@@ -14,34 +14,40 @@ jobs:
       with:
         ref: main
 
+    - name: Set global variables
+      run: |
+        CURDASH_DATE=$(date +'%m-%d')
+        CURDOT_DATE=$(date +'%m.%d')
+
     - name: Add header to stylustheme.css
       run: |
-        CUR_DATE=$(date +%m-%d)
-        CURV_DATE=$(date +%m.%d)
         echo "/* ==UserStyle==
-        @name           ROBLOX 2016 dev$CUR_DATE
+        @name           ROBLOX 2016 dev$CURDASH_DATE
         @namespace      Userstyle
         @author         anthony1x6000
         @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-        @version        $CURV_DATE
+        @version        $CURDOT_DATE
         @license        MIT License
         ==/UserStyle== */" > header.txt
-        cat header.txt stylustheme.css > roblox2016-pre$CUR_DATE.user.css
+        cat header.txt stylustheme.css > roblox2016Dev$CURDASH_DATE.user.css
+
     - name: Set user identity
       run: |
         git config --global user.email "contact.b7hkd@simplelogin.fr"
         git config --global user.name "anthony1x6000"
+
+    - name: Checkout dev branch
+      run: |
+        git checkout -b dev || git checkout dev
+        git pull origin dev --rebase
+
     - name: Commit changes to dev branch
       run: |
-        CUR_DATE=$(date +%m-%d)
-        git add roblox2016-pre$CUR_DATE.user.css
-        git commit -m "Add roblox2016-pre$CUR_DATE.user.css"
-        git checkout -b dev
-        git pull origin dev --rebase
+        git add roblox2016Dev$CURDASH_DATE.user.css
+        git commit -m "Add roblox2016Dev$CURDASH_DATE.user.css"
         git push -u origin dev
-    - name: Push to GitHub
-      uses: ad-m/github-push-action@master
+
+    - name: Verify Token
+      uses: actions/verify-token@v1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: dev
-        force: false
