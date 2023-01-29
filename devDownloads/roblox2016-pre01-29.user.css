@@ -753,7 +753,7 @@
     thumbnail-2d .thumbnail-2d-container[thumbnail-type=avatarHeadshot] {
         background-color: #ffffff;
     }
-    
+
     .game-card-thumb-container:before {
         border-radius: 8px;
         position: absolute;
@@ -766,13 +766,10 @@
         transition: opacity .3s cubic-bezier(0, -0.01, 1, 1);
         opacity: 0;
     }
-    
-    
-    
+      
     .light-theme .section-content.remove-panel {
         box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
     }
-    
     
     a:hover {
         text-decoration: none !important;
