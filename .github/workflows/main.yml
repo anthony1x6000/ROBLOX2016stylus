@@ -35,12 +35,13 @@ jobs:
     - name: Commit changes to dev branch
       run: |
         CUR_DATE=$(date +%m-%d)
-        git checkout dev
-        git rm -rf .
-        git checkout HEAD -- roblox2016-pre$CUR_DATE.user.css
         git add roblox2016-pre$CUR_DATE.user.css
+        git rm -rf .
+        git checkout --orphan dev
+        git add .
         git commit -m "Add roblox2016-pre$CUR_DATE.user.css"
         git push -u origin dev
+        
     - name: Push to GitHub
       uses: ad-m/github-push-action@master
       with:
