@@ -40,6 +40,7 @@ jobs:
         git checkout --orphan dev
         git add .
         git commit -m "Add roblox2016-pre$CUR_DATE.user.css"
+        git pull origin dev --rebase
         git push -u origin dev
         
     - name: Push to GitHub
