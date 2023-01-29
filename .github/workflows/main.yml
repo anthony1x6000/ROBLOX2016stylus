@@ -46,6 +46,8 @@ jobs:
       run: |
         git add roblox2016Dev$CURDASH_DATE.user.css
         git commit -m "Add roblox2016Dev$CURDASH_DATE.user.css"
+        git pull dev
+        git pull main
         git push -u origin dev
 
     - name: Verify Token
