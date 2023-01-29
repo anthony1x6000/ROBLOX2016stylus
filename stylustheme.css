@@ -745,8 +745,6 @@
     thumbnail-2d .thumbnail-2d-container[thumbnail-type=avatarHeadshot] {
         background-color: #ffffff;
     }
-               
-    
     
     .game-card-thumb-container:before {
         border-radius: 8px;
