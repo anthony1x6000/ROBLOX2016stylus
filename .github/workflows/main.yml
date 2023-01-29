@@ -37,10 +37,12 @@ jobs:
     - name: Commit changes to dev branch
       run: |
         CUR_DATE=$(date +%m-%d)
+        git checkout -b dev || git checkout dev
+        git reset HEAD --hard
+        git clean -df
+        git pull origin dev --rebase
         git add roblox2016-pre$CUR_DATE.user.css
         git commit -m "Add roblox2016-pre$CUR_DATE.user.css"
-        git checkout -b dev
-        git pull origin dev --rebase
         git push -u origin dev
 
     - name: Push to GitHub
@@ -48,4 +50,4 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: dev
-        force: false
+        force: true
