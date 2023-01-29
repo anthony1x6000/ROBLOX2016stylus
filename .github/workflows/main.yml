@@ -40,6 +40,7 @@ jobs:
       run: |
         git checkout -b dev || git checkout dev
         git pull origin dev --rebase
+        git rebase --skip
 
     - name: Commit changes to dev branch
       run: |
@@ -51,3 +52,4 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        force: true
