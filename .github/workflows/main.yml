@@ -37,7 +37,7 @@ jobs:
         # git checkout -b main
         mv roblox2016-pre$CUR_DATE.user.css devDownloads
         git add devDownloads
-        git commit -m "Add roblox2016-pre$CUR_DATE.user.css to devDownloads"
+        git commit -m "$CUR_DATE dev"
     - name: Pull and Rebase origin/dev
       run: |
         git pull origin main --rebase
