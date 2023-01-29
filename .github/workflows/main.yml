@@ -2,8 +2,6 @@ name: ROBLOX 2016 dev workflow
 
 on:
   push:
-    branches:
-      - main
     paths:
       - stylustheme.css
 jobs:
