@@ -13,7 +13,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
       with:
-        ref: blank
+        ref: main
 
     - name: Add header to stylustheme.css
       run: |
@@ -32,13 +32,14 @@ jobs:
       run: |
         git config --global user.email "contact.b7hkd@simplelogin.fr"
         git config --global user.name "anthony1x6000"
-    - name: Commit changes to dev branch
+      name: Commit changes to dev branch
       run: |
         CUR_DATE=$(date +%m-%d)
+        git checkout dev
+        git rm -rf .
+        git checkout HEAD -- roblox2016-pre$CUR_DATE.user.css
         git add roblox2016-pre$CUR_DATE.user.css
         git commit -m "Add roblox2016-pre$CUR_DATE.user.css"
-        git checkout -b dev
-        git pull origin dev --rebase
         git push -u origin dev
     - name: Push to GitHub
       uses: ad-m/github-push-action@master
