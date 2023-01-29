@@ -3,7 +3,7 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        01.29
+@version        01.29.1675021524
 @license        MIT License
 ==/UserStyle== */
 @-moz-document regexp("^(https?://(www.)?roblox.com/(?!my/account).*)$") {
@@ -774,7 +774,6 @@
     a:hover {
         text-decoration: none !important;
     }
-    
     
     .light-theme .btn-secondary-md, .light-theme .btn-secondary-md:visited {
         color: #fff;
