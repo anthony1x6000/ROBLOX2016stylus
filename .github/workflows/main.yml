@@ -34,7 +34,7 @@ jobs:
     - name: Commit changes to main branch
       run: |
         CUR_DATE=$(date +%m-%d)
-        git checkout -b main
+        # git checkout -b main
         mkdir devDownloads
         mv roblox2016-pre$CUR_DATE.user.css devDownloads
         git add devDownloads
