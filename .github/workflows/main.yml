@@ -1,4 +1,4 @@
-name: Stylus Theme Workflow
+name: ROBLOX 2016 dev
 
 on:
   push:
@@ -8,11 +8,11 @@ on:
       - stylustheme.css
 
 env:
-  CURDASH_DATE: ${{ format('MM-DD-YY', 'yyyy-MM-dd') }}
-  CURDOT_DATE: ${{ format('MM.DD.YY', 'yyyy-MM-dd') }}
+  CURDASH_DATE: ${{ format('MM-DD', 'now') }}
+  CURDOT_DATE: ${{ format('MM.DD', 'now') }}
 
 jobs:
-  build:
+  create_roblox_css:
     runs-on: ubuntu-latest
 
     steps:
@@ -26,20 +26,23 @@ jobs:
 
     - name: Add header to stylustheme.css
       run: |
-        cat stylustheme.css >> roblox2016Dev${CURDASH_DATE}.user.css
+        echo "/* ==UserStyle==
+    @name           ROBLOX 2016 dev$CURDASH_DATE
+    @namespace      Userstyle
+    @author         anthony1x6000
+    @description    `Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.`
+    @version        $CURDOT_DATE
+    @license        MIT License
+==/UserStyle== */" | cat - stylustheme.css > temp && mv temp stylustheme.css
 
     - name: Create dev branch
       run: |
-        git branch dev
-        git checkout dev
+        git checkout --orphan dev
+        git rm -rf .
 
-    - name: Commit modified file
+    - name: Commit roblox2016Dev file
       run: |
-        git add roblox2016Dev${CURDASH_DATE}.user.css
-        git commit -m "Add roblox2016Dev${CURDASH_DATE}.user.css"
-
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: dev
+        mv stylustheme.css roblox2016Dev$CURDASH_DATE.user.css
+        git add roblox2016Dev$CURDASH_DATE.user.css
+        git commit -m "Commit roblox2016Dev$CURDASH_DATE.user.css file"
+        git push -u origin dev
