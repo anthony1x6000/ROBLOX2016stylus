@@ -27,19 +27,15 @@ jobs:
         ==/UserStyle== */" > header.txt
         cat header.txt stylustheme.css > roblox2016-pre$CUR_DATE.user.css
 
-    - name: Create dev branch
-      run: |
-        git branch dev
-        git checkout dev
-
     - name: Set user identity
       run: |
         git config --global user.email "contact.b7hkd@simplelogin.fr"
         git config --global user.name "anthony1x6000"
 
-    - name: Commit changes
+    - name: Commit changes to dev branch
       run: |
         CUR_DATE=$(date +%m-%d)
+        git checkout -b dev
         git add roblox2016-pre$CUR_DATE.user.css
         git commit -m "Add roblox2016-pre$CUR_DATE.user.css"
 
