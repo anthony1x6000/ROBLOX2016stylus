@@ -3,7 +3,7 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        01.29.1675021524
+@version        01.29.1675021808
 @license        MIT License
 ==/UserStyle== */
 @-moz-document regexp("^(https?://(www.)?roblox.com/(?!my/account).*)$") {
@@ -57,7 +57,8 @@
     /* end of font */ 
     
     body
-        {
+    
+    {
         background-color: #e3e3e3;
     }
     
@@ -82,6 +83,7 @@
         background-color: #f0f1f0;
         opacity: 1;
     }
+    
     
     *
     {
@@ -132,11 +134,16 @@
         background-color: #ffffff;
         border: 1px solid #B8B8B8;
     }
+    /* h1, h2, h3, h4, h5 {
+        padding: 8px 0 !important;
+        line-height: 1em;
+    } */
     .gotham-font .font-title, .gotham-font .h1, .gotham-font .h2, .gotham-font h1, .gotham-font h2 {
         font-size: 25px;
         font-weight: 200;
         overflow: visible;
     }
+    
     
     .gotham-font, .gotham-font .h1, .gotham-font .h2, .gotham-font .h3, .gotham-font .h4, .gotham-font .h5, .gotham-font .h6, .gotham-font h1, .gotham-font h2, .gotham-font h3, .gotham-font h4, .gotham-font h5, .gotham-font h6 {
         font-family: "Source Sans Pro",Arial,Helvetica,sans-serif !important;
@@ -158,15 +165,29 @@
     font-size: 20px;
     }
     
+    
+    
+    
     .gotham-font .font-caption-header, .gotham-font .font-caption-header:active, .gotham-font .font-caption-header:focus, .gotham-font .font-caption-header:hover, .gotham-font .font-caption-header:link, .gotham-font .font-caption-header:visited, .gotham-font .small.font-caption-header, .gotham-font .small.font-caption-header:active, .gotham-font .small.font-caption-header:focus, .gotham-font .small.font-caption-header:hover, .gotham-font .small.font-caption-header:link, .gotham-font .small.font-caption-header:visited, .gotham-font .small.text-error, .gotham-font .small.text-error:active, .gotham-font .small.text-error:focus, .gotham-font .small.text-error:hover, .gotham-font .small.text-error:link, .gotham-font .small.text-error:visited, .gotham-font .small.text-pastname, .gotham-font .small.text-pastname:active, .gotham-font .small.text-pastname:focus, .gotham-font .small.text-pastname:hover, .gotham-font .small.text-pastname:link, .gotham-font .small.text-pastname:visited, .gotham-font .small.text-report, .gotham-font .small.text-report-ads, .gotham-font .small.text-report-ads:active, .gotham-font .small.text-report-ads:focus, .gotham-font .small.text-report-ads:hover, .gotham-font .small.text-report-ads:link, .gotham-font .small.text-report-ads:visited, .gotham-font .small.text-report:active, .gotham-font .small.text-report:focus, .gotham-font .small.text-report:hover, .gotham-font .small.text-report:link, .gotham-font .small.text-report:visited, .gotham-font .text-error, .gotham-font .text-error:active, .gotham-font .text-error:focus, .gotham-font .text-error:hover, .gotham-font .text-error:link, .gotham-font .text-error:visited, .gotham-font .text-pastname, .gotham-font .text-pastname:active, .gotham-font .text-pastname:focus, .gotham-font .text-pastname:hover, .gotham-font .text-pastname:link, .gotham-font .text-pastname:visited, .gotham-font .text-report, .gotham-font .text-report-ads, .gotham-font .text-report-ads:active, .gotham-font .text-report-ads:focus, .gotham-font .text-report-ads:hover, .gotham-font .text-report-ads:link, .gotham-font .text-report-ads:visited, .gotham-font .text-report:active, .gotham-font .text-report:focus, .gotham-font .text-report:hover, .gotham-font .text-report:link, .gotham-font .text-report:visited {
         font-size: 16px;
     font-weight: 400;
     }
     
+    
+    /* TESTING REMOVE LATER
+    .gotham-font .font-bold, .gotham-font .font-bold:active, .gotham-font .font-bold:hover, .gotham-font .font-bold:link, .gotham-font .font-bold:visited, .gotham-font .font-header-2, .gotham-font .font-header-2:active, .gotham-font .font-header-2:hover, .gotham-font .font-header-2:link, .gotham-font .font-header-2:visited, .gotham-font .h5, .gotham-font .h5:active, .gotham-font .h5:hover, .gotham-font .h5:link, .gotham-font .h5:visited, .gotham-font .h6, .gotham-font .h6:active, .gotham-font .h6:hover, .gotham-font .h6:link, .gotham-font .h6:visited, .gotham-font .text-footer-nav, .gotham-font .text-footer-nav:active, .gotham-font .text-footer-nav:hover, .gotham-font .text-footer-nav:link, .gotham-font .text-footer-nav:visited, .gotham-font .text-label, .gotham-font .text-label:active, .gotham-font .text-label:hover, .gotham-font .text-label:link, .gotham-font .text-label:visited, .gotham-font .text-lead, .gotham-font .text-lead:active, .gotham-font .text-lead:hover, .gotham-font .text-lead:link, .gotham-font .text-lead:visited, .gotham-font .text-name, .gotham-font .text-name:active, .gotham-font .text-name:hover, .gotham-font .text-name:link, .gotham-font .text-name:visited, .gotham-font .text-subject, .gotham-font .text-subject:active, .gotham-font .text-subject:hover, .gotham-font .text-subject:link, .gotham-font .text-subject:visited, .gotham-font .text-warning, .gotham-font .text-warning:active, .gotham-font .text-warning:hover, .gotham-font .text-warning:link, .gotham-font .text-warning:visited, .gotham-font h5, .gotham-font h5:active, .gotham-font h5:hover, .gotham-font h5:link, .gotham-font h5:visited, .gotham-font h6, .gotham-font h6:active, .gotham-font h6:hover, .gotham-font h6:link, .gotham-font h6:visited, .gotham-font strong, .gotham-font strong:active, .gotham-font strong:hover, .gotham-font strong:link, .gotham-font strong:visited {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    */ 
+    
     .filter-hidden {
         height: auto;
         visibility: visible;
     }
+    
+    
     
     .gotham-font .font-caption-body, .gotham-font .font-caption-body:active, .gotham-font .font-caption-body:focus, .gotham-font .font-caption-body:link, .gotham-font .font-caption-body:visited, .gotham-font .tooltip .tooltip-inner, .gotham-font .tooltip .tooltip-inner:active, .gotham-font .tooltip .tooltip-inner:focus, .gotham-font .tooltip .tooltip-inner:link, .gotham-font .tooltip .tooltip-inner:visited {
         font-size: 16px;
@@ -176,14 +197,23 @@
         font-size: 16px;
         font-weight: 400;
     }
-
+    /* .gotham-font div {
+        line-height: 1.2em;
+    } Looks better when I remove this, just pushes stuff on the top header & the left bar up a little. */
+    
+    
+    
     .light-theme .rbx-tab:hover {
     background: #F2F2F2
-    } 
+    }
+    
+    
     
     .light-theme .para-overflow-toggle .toggle-para, .light-theme .para-overflow-toggle .toggle-para:hover, .light-theme .para-overflow .toggle-para, .light-theme .para-overflow .toggle-para:hover {
         color: #00a2ff;
     }
+    
+    
     
     .slide-switcher .slide-item-container .slide-item-container-left .slide-item-image {
         box-shadow: 0 0 6px 0 rgba(0,0,0,0.49);
@@ -193,9 +223,13 @@
         color: rgb(25, 25, 25);
     }
     
+    
+    
     .light-theme .avatar .avatar-card-image {
         background-color: #ffffff !important;
     }
+    
+    
     
     .light-theme .btn-alert-md {
         background-color: #fff;
@@ -211,10 +245,15 @@
         border-radius: 1px;
     }
     
+    
+    
     .gotham-font .font-header-1, .gotham-font .h3, .gotham-font .h4, .gotham-font .text-robux-lg, .gotham-font h3, .gotham-font h4 {
         font-size: 24px;
         font-weight: 300;
     }
+    
+    
+    
     
     .rbx-header .age-bracket-label .age-bracket-label-username {
     visibility: hidden;
@@ -226,6 +265,12 @@
     .chat-container.collapsed .chat-header .chat-header-title {
         color: #fff;
     }
+    
+    
+    
+    
+    
+    
     
     .gotham-font.light-theme .refresh-link, .gotham-font.light-theme .refresh-link-icon, .gotham-font.light-theme .refresh-link-icon:active, .gotham-font.light-theme .refresh-link-icon:hover, .gotham-font.light-theme .refresh-link-icon:link, .gotham-font.light-theme .refresh-link-icon:visited, .gotham-font.light-theme .refresh-link:active, .gotham-font.light-theme .refresh-link:hover, .gotham-font.light-theme .refresh-link:link, .gotham-font.light-theme .refresh-link:visited, .gotham-font.light-theme .see-all-link, .gotham-font.light-theme .see-all-link-icon, .gotham-font.light-theme .see-all-link-icon:active, .gotham-font.light-theme .see-all-link-icon:hover, .gotham-font.light-theme .see-all-link-icon:link, .gotham-font.light-theme .see-all-link-icon:visited, .gotham-font.light-theme .see-all-link:active, .gotham-font.light-theme .see-all-link:hover, .gotham-font.light-theme .see-all-link:link, .gotham-font.light-theme .see-all-link:visited, .gotham-font.light-theme .touch .refresh-link, .gotham-font.light-theme .touch .refresh-link-icon, .gotham-font.light-theme .touch .refresh-link-icon:active, .gotham-font.light-theme .touch .refresh-link-icon:hover, .gotham-font.light-theme .touch .refresh-link-icon:link, .gotham-font.light-theme .touch .refresh-link-icon:visited, .gotham-font.light-theme .touch .refresh-link:active, .gotham-font.light-theme .touch .refresh-link:hover, .gotham-font.light-theme .touch .refresh-link:link, .gotham-font.light-theme .touch .refresh-link:visited, .gotham-font.light-theme .touch .see-all-link, .gotham-font.light-theme .touch .see-all-link-icon, .gotham-font.light-theme .touch .see-all-link-icon:active, .gotham-font.light-theme .touch .see-all-link-icon:hover, .gotham-font.light-theme .touch .see-all-link-icon:link, .gotham-font.light-theme .touch .see-all-link-icon:visited, .gotham-font.light-theme .touch .see-all-link:active, .gotham-font.light-theme .touch .see-all-link:hover, .gotham-font.light-theme .touch .see-all-link:link, .gotham-font.light-theme .touch .see-all-link:visited {
         color: #ffffff;
@@ -742,7 +787,8 @@
         border-bottom-right-radius: 0;
     }
     
-        
+    
+    
     .light-theme .btn-primary-sm, .light-theme .btn-primary-sm:hover {
         background-color: #02b757 !important;
         border: 1px solid #02b757;
@@ -753,7 +799,12 @@
     thumbnail-2d .thumbnail-2d-container[thumbnail-type=avatarHeadshot] {
         background-color: #ffffff;
     }
-
+    
+    
+    
+    
+    
+    
     .game-card-thumb-container:before {
         border-radius: 8px;
         position: absolute;
@@ -766,14 +817,18 @@
         transition: opacity .3s cubic-bezier(0, -0.01, 1, 1);
         opacity: 0;
     }
-      
+    
+    
+    
     .light-theme .section-content.remove-panel {
         box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
     }
     
+    
     a:hover {
         text-decoration: none !important;
     }
+    
     
     .light-theme .btn-secondary-md, .light-theme .btn-secondary-md:visited {
         color: #fff;
@@ -842,7 +897,8 @@
         color: rgb(25, 25, 25);
     }
     
-        
+    
+    
     .profile-accoutrements-container .profile-accoutrements-slider .accoutrement-item a {
         display: inline-block;
         border-radius: 3px;
@@ -859,7 +915,9 @@
     
     .light-theme .rbx-header .rbx-navbar-search {
         background-color: #2474bd;
-    }        
+    }
+    
+    
     
     .avatar-card-fullbody .avatar-card-image, .avatar .avatar-card-image {
         background-color: transparent;
@@ -869,7 +927,9 @@
         position: absolute;
         bottom: -0.1em;
         right: 0em;
-    }       
+    }
+    
+    
     
     .light-theme .tooltip {
         background-color: #75757500;
@@ -882,12 +942,16 @@
         border-bottom-color: #757575;
     }
     
+    
+    
     .notification-action-container .btn-secondary-xs.see-all-link.font-caption-header.ng-binding.ng-scope {
     color: #ffffff !important;
     }
     .light-theme .roblox-popover-content.bottom .arrow, .light-theme .roblox-popover-content.bottom .arrow:after, .roblox-popover-content.light-theme.bottom .arrow, .roblox-popover-content.light-theme.bottom .arrow:after {
         border-bottom-color: #ffffff;
     }
+    
+    
     
     .notification-action-container {
         position: absolute;
@@ -944,13 +1008,20 @@
         border-radius: 3px;
     }
     
+    
+    
+    
+    
     .light-theme .stack .stack-list .stack-row {
         box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
     }
     
+    
+    
     .light-theme a.btn-common-play-game-lg {
         border-radius: 5px;
     }
+    
     
     /* Play button changes */
     button.btn-common-play-game-lg {
@@ -1226,7 +1297,8 @@
         font-weight: 300;
         text-decoration: none;
     }
-        
+    
+    
     .profile-header .header-title .profile-name {
         padding: 7.5px 0 0 8px;
     }
@@ -1244,6 +1316,9 @@
         text-decoration: underline;
     }*/
     
+    
+    
+    
     h1, h2, h3, h4, h5 {
         padding: 0 0 5px 0 !important;
     }
@@ -1253,6 +1328,8 @@
         margin: 0;
         padding-top: 10px;
     }
+    
+    
     
     .light-theme .rbx-tabs-horizontal .nav-tabs {
         box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
@@ -1273,7 +1350,9 @@
         top: 61px !important;
         right: -2px !important;
     }
-      
+    
+    
+    
     .light-theme .avatar-card-container {
         box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
     }
@@ -1325,7 +1404,10 @@
     }
     .btn.btn-control-xs.load-more-button.ng-binding:hover {
         color: black !important;
-    }        
+    }
+    
+    
+    
     
     .light-theme .catalog-content .search-options .search-options-form {
         border-right: 1px solid #bdbebe;
@@ -1350,6 +1432,8 @@
     .light-theme .item-card-container .item-card-caption {
         margin-top: 0 !important;
     }
+    
+    
     
     .game-card-avatar-slots .avatar {
         margin: -10px 2px 0 0;
@@ -3618,5 +3702,9 @@
         height: auto;
     }
     /* Game name */
+    /* Buy it with */
+    #populated-complimentary-items-recommendations {
+        display: none;
+    }
     
     }
