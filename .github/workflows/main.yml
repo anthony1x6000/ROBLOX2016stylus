@@ -48,6 +48,6 @@ jobs:
         git push -u origin dev
 
     - name: Verify Token
-      uses: actions/verify-token@v1
+      uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
