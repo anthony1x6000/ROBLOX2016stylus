@@ -38,9 +38,9 @@ jobs:
 
     - name: Checkout dev branch
       run: |
-        git checkout -b dev || git checkout dev
-        git pull origin dev --rebase
-        git rebase --skip
+        git checkout dev
+        git fetch origin
+        git reset --hard origin/dev
 
     - name: Commit changes to dev branch
       run: |
@@ -52,4 +52,3 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        force: true
