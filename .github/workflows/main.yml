@@ -26,14 +26,7 @@ jobs:
 
     - name: Add header to stylustheme.css
       run: |
-        echo "/* ==UserStyle==
-    @name           ROBLOX 2016 dev${CURDASH_DATE}
-    @namespace      Userstyle
-    @author         anthony1x6000
-    @description    `Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.`
-    @version        ${CURDOT_DATE}
-    @license        MIT License
-==/UserStyle== */" > roblox2016Dev${CURDASH_DATE}.user.css
+        echo "/* ==UserStyle== @name           ROBLOX 2016 dev${CURDASH_DATE} @namespace      Userstyle @author         anthony1x6000 @description    `Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.` @version        ${CURDOT_DATE} @license        MIT License ==/UserStyle== */" > roblox2016Dev${CURDASH_DATE}.user.css
         cat stylustheme.css >> roblox2016Dev${CURDASH_DATE}.user.css
 
     - name: Create dev branch
