@@ -162,8 +162,6 @@
         visibility: visible;
     }
     
-    
-    
     .gotham-font .font-caption-body, .gotham-font .font-caption-body:active, .gotham-font .font-caption-body:focus, .gotham-font .font-caption-body:link, .gotham-font .font-caption-body:visited, .gotham-font .tooltip .tooltip-inner, .gotham-font .tooltip .tooltip-inner:active, .gotham-font .tooltip .tooltip-inner:focus, .gotham-font .tooltip .tooltip-inner:link, .gotham-font .tooltip .tooltip-inner:visited {
         font-size: 16px;
         font-weight: 300;
