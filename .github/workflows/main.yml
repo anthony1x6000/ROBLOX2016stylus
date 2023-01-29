@@ -38,15 +38,19 @@ jobs:
 
     - name: Checkout dev branch
       run: |
-        git checkout dev
-        git fetch origin
-        git reset --hard origin/dev
-
-    - name: Commit changes to dev branch
-      run: |
-        git add roblox2016Dev$CURDASH_DATE.user.css
-        git commit -m "Add roblox2016Dev$CURDASH_DATE.user.css"
+        CUR_DATE=$(date +%m-%d)
+        git add roblox2016-pre$CUR_DATE.user.css
+        git commit -m "Add roblox2016-pre$CUR_DATE.user.css"
+        git fetch origin dev
+        git checkout -b dev origin/dev
+        git pull origin dev --rebase
         git push -u origin dev
+
+    # - name: Commit changes to dev branch
+    #   run: |
+    #     git add roblox2016Dev$CURDASH_DATE.user.css
+    #     git commit -m "Add roblox2016Dev$CURDASH_DATE.user.css"
+    #     git push -u origin dev
 
     - name: Verify Token
       uses: ad-m/github-push-action@master
