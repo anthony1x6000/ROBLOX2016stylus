@@ -32,7 +32,7 @@ jobs:
       run: |
         git config --global user.email "contact.b7hkd@simplelogin.fr"
         git config --global user.name "anthony1x6000"
-      name: Commit changes to dev branch
+    - name: Commit changes to dev branch
       run: |
         CUR_DATE=$(date +%m-%d)
         git checkout dev
