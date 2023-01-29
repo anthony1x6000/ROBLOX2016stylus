@@ -35,6 +35,7 @@ jobs:
     - name: Commit changes to dev branch
       run: |
         CUR_DATE=$(date +%m-%d)
+        git config pull.ff only
         git add roblox2016-pre$CUR_DATE.user.css
         git commit -m "Add roblox2016-pre$CUR_DATE.user.css"
         git checkout -b dev
