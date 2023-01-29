@@ -8,8 +8,8 @@ on:
       - stylustheme.css
 
 env:
-  CURDASH_DATE: ${{ format('MM-DD-YY', 'yyyy-MM-dd') }}
-  CURDOT_DATE: ${{ format('MM.DD.YY', 'yyyy-MM-dd') }}
+  CURDASH_DATE: $(date +%m-%d)
+  CURDOT_DATE: $(date +%m.%d)
 
 jobs:
   build:
