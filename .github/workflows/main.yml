@@ -31,20 +31,20 @@ jobs:
       run: |
         git config --global user.email "contact.b7hkd@simplelogin.fr"
         git config --global user.name "anthony1x6000"
-    - name: Commit changes to dev branch
+    - name: Commit changes to main branch
       run: |
         CUR_DATE=$(date +%m-%d)
-        git checkout -b dev
+        git checkout -b main
         mkdir devDownloads
         mv roblox2016-pre$CUR_DATE.user.css devDownloads
         git add devDownloads
-        git commit -m "Add roblox2016-pre$CUR_DATE.user.css to devDownloads folder"
+        git commit -m "Add roblox2016-pre$CUR_DATE.user.css to devDownloads"
     - name: Pull and Rebase origin/dev
       run: |
-        git pull origin dev --rebase
+        git pull origin main --rebase
     - name: Push to GitHub
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: dev
+        branch: main
         force: true
