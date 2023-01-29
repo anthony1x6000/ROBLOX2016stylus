@@ -126,10 +126,6 @@
         background-color: #ffffff;
         border: 1px solid #B8B8B8;
     }
-    /* h1, h2, h3, h4, h5 {
-        padding: 8px 0 !important;
-        line-height: 1em;
-    } */
     .gotham-font .font-title, .gotham-font .h1, .gotham-font .h2, .gotham-font h1, .gotham-font h2 {
         font-size: 25px;
         font-weight: 200;
