@@ -37,6 +37,11 @@ jobs:
       run: |
         echo "ROBLOX 2016 dev file" > roblox2016-pre$CUR_DATE.user.css
 
+    - name: Set user identity
+      run: |
+        git config --global user.email "contact.b7hkd@simplelogin.fr"
+        git config --global user.name "anthony1x6000"
+
     - name: Commit changes
       run: |
         git add roblox2016-pre$CUR_DATE.user.css
