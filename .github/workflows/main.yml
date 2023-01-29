@@ -1,9 +1,15 @@
-name: ROBLOX 2016 dev workflow
+name: Stylus Theme Workflow
 
 on:
   push:
+    branches:
+      - main
     paths:
       - stylustheme.css
+
+env:
+  CURDASH_DATE: ${{ format('MM-DD-YY', 'yyyy-MM-dd') }}
+  CURDOT_DATE: ${{ format('MM.DD.YY', 'yyyy-MM-dd') }}
 
 jobs:
   build:
@@ -12,42 +18,36 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-      with:
-        ref: main
-
-    - name: Add header to stylustheme.css
-      run: |
-        CUR_DATE=$(date +%m-%d)
-        CURV_DATE=$(date +%m.%d)
-        echo "/* ==UserStyle==
-        @name           ROBLOX 2016 dev$CUR_DATE
-        @namespace      Userstyle
-        @author         anthony1x6000
-        @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-        @version        $CURV_DATE
-        @license        MIT License
-        ==/UserStyle== */" > header.txt
-        cat header.txt stylustheme.css > roblox2016-pre$CUR_DATE.user.css
 
     - name: Set user identity
       run: |
         git config --global user.email "contact.b7hkd@simplelogin.fr"
         git config --global user.name "anthony1x6000"
 
-    - name: Commit changes to dev branch
+    - name: Add header to stylustheme.css
       run: |
-        CUR_DATE=$(date +%m-%d)
-        git checkout -b dev || git checkout dev
-        git reset HEAD --hard
-        git clean -df
-        git pull origin dev --rebase
-        git add roblox2016-pre$CUR_DATE.user.css
-        git commit -m "Add roblox2016-pre$CUR_DATE.user.css"
-        git push -u origin dev
+        echo "/* ==UserStyle==
+    @name           ROBLOX 2016 dev${CURDASH_DATE}
+    @namespace      Userstyle
+    @author         anthony1x6000
+    @description    `Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.`
+    @version        ${CURDOT_DATE}
+    @license        MIT License
+==/UserStyle== */" > roblox2016Dev${CURDASH_DATE}.user.css
+        cat stylustheme.css >> roblox2016Dev${CURDASH_DATE}.user.css
 
-    - name: Push to GitHub
-      uses: ad-m/github-push-action@master
+    - name: Create dev branch
+      run: |
+        git branch dev
+        git checkout dev
+
+    - name: Commit modified file
+      run: |
+        git add roblox2016Dev${CURDASH_DATE}.user.css
+        git commit -m "Add roblox2016Dev${CURDASH_DATE}.user.css"
+
+    - name: Push changes
+      uses: ad-m/github-push-action@v0.7.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: dev
-        force: true
