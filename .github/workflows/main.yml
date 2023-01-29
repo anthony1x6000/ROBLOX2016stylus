@@ -1,12 +1,9 @@
-name: ROBLOX 2016 Dev Release
+name: ROBLOX 2016 dev workflow
 
 on:
   push:
-    branches:
-      - main
-
-env:
-  CUR_DATE: $(date +%m-%d)
+    paths:
+      - stylustheme.css
 
 jobs:
   build:
@@ -16,22 +13,23 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Modify stylustheme.css
+    - name: Add header to stylustheme.css
       run: |
+        CUR_DATE=$(date +%m-%d)
         echo "/* ==UserStyle==
-            @name           ROBLOX 2016 dev${CUR_DATE}
-            @namespace      Userstyle
-            @author         anthony1x6000
-            @description    `Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.`
-            @version        p${CUR_DATE}
-            @license        MIT License
-        ==/UserStyle== */" > roblox2016-pre${CUR_DATE}.user.css
-        cat stylustheme.css >> roblox2016-pre${CUR_DATE}.user.css
+        @name           ROBLOX 2016 dev$CUR_DATE
+        @namespace      Userstyle
+        @author         anthony1x6000
+        @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
+        @version        p$CUR_DATE
+        @license        MIT License
+        ==/UserStyle== */" > header.txt
+        cat header.txt stylustheme.css > roblox2016-pre$CUR_DATE.user.css
 
-    - name: Checkout dev branch
-      uses: actions/checkout@v2
-      with:
-        ref: dev
+    - name: Create dev branch
+      run: |
+        git branch dev
+        git checkout dev
 
     - name: Set user identity
       run: |
@@ -40,11 +38,13 @@ jobs:
 
     - name: Commit changes
       run: |
-        git add roblox2016-pre${CUR_DATE}.user.css
-        git commit -m "Add roblox2016-pre${CUR_DATE}.user.css"
+        CUR_DATE=$(date +%m-%d)
+        git add roblox2016-pre$CUR_DATE.user.css
+        git commit -m "Add roblox2016-pre$CUR_DATE.user.css"
 
-    - name: Push changes
+    - name: Push to GitHub
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: dev
+        force: true
