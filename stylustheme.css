@@ -173,9 +173,7 @@
 
     .light-theme .rbx-tab:hover {
     background: #F2F2F2
-    }
-    
-    
+    } 
     
     .light-theme .para-overflow-toggle .toggle-para, .light-theme .para-overflow-toggle .toggle-para:hover, .light-theme .para-overflow .toggle-para, .light-theme .para-overflow .toggle-para:hover {
         color: #00a2ff;
