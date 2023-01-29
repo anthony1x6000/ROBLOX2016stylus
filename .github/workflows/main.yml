@@ -1,4 +1,4 @@
-name: ROBLOX 2016 dev
+name: ROBLOX 2016 dev Workflow
 
 on:
   push:
@@ -8,11 +8,11 @@ on:
       - stylustheme.css
 
 env:
-  CURDASH_DATE: ${{ format('MM-DD', 'now') }}
-  CURDOT_DATE: ${{ format('MM.DD', 'now') }}
+  CURDASH_DATE: "$(date +'%m-%d')"
+  CURDOT_DATE: "$(date +'%m.%d')"
 
 jobs:
-  create_roblox_css:
+  roblox2016Dev:
     runs-on: ubuntu-latest
 
     steps:
@@ -27,22 +27,29 @@ jobs:
     - name: Add header to stylustheme.css
       run: |
         echo "/* ==UserStyle==
-    @name           ROBLOX 2016 dev$CURDASH_DATE
-    @namespace      Userstyle
-    @author         anthony1x6000
-    @description    `Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.`
-    @version        $CURDOT_DATE
-    @license        MIT License
-==/UserStyle== */" | cat - stylustheme.css > temp && mv temp stylustheme.css
+        @name           ROBLOX 2016 dev$CURDASH_DATE
+        @namespace      Userstyle
+        @author         anthony1x6000
+        @description    `Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.`
+        @version        $CURDOT_DATE
+        @license        MIT License
+        ==/UserStyle== */" >> stylustheme.css
+
+    - name: Rename stylustheme.css to roblox2016Dev$CURDASH_DATE.user.css
+      run: |
+        mv stylustheme.css roblox2016Dev$CURDASH_DATE.user.css
 
     - name: Create dev branch
       run: |
         git checkout --orphan dev
-        git rm -rf .
 
-    - name: Commit roblox2016Dev file
+    - name: Commit roblox2016Dev$CURDASH_DATE.user.css to dev branch
       run: |
-        mv stylustheme.css roblox2016Dev$CURDASH_DATE.user.css
         git add roblox2016Dev$CURDASH_DATE.user.css
-        git commit -m "Commit roblox2016Dev$CURDASH_DATE.user.css file"
-        git push -u origin dev
+        git commit -m "Adding roblox2016Dev$CURDASH_DATE.user.css to dev branch"
+
+    - name: Push to dev branch
+      uses: ad-m/github-push-action@master
+      with:
+        branch: dev
+        force_with_lease: true
