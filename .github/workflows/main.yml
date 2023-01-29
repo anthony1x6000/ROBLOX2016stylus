@@ -16,12 +16,13 @@ jobs:
     - name: Add header to stylustheme.css
       run: |
         CUR_DATE=$(date +%m-%d)
+        CURV_DATE=$(date +%m.%d)
         echo "/* ==UserStyle==
         @name           ROBLOX 2016 dev$CUR_DATE
         @namespace      Userstyle
         @author         anthony1x6000
         @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-        @version        p$CUR_DATE
+        @version        $CURV_DATE
         @license        MIT License
         ==/UserStyle== */" > header.txt
         cat header.txt stylustheme.css > roblox2016-pre$CUR_DATE.user.css
