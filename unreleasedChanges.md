@@ -24,6 +24,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Contributors] Updated contributors!! [releasing as patch]
 - [Game title] Fixed emojis being cut off
 - [URL matching] Uses regex to exclude any settings page. Even though I created the script, I still didn't like having it apply to the [account settings](https://www.roblox.com/my/account) page. I'll probably make this optional before release.
+- [Buy it with] Removed cause it's just milking you for more money. I also don't want to fix it. 
 
 ### Find a bug?
 
