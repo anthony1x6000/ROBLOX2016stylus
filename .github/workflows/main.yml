@@ -36,7 +36,8 @@ jobs:
       run: |
         CUR_DATE=$(date +%m-%d)
         git add roblox2016-pre$CUR_DATE.user.css
-        git commit -m "New roblox2016-pre$CUR_DATE.user.css"
+        git commit -m "Add roblox2016-pre$CUR_DATE.user.css"
+        git checkout -b dev
         git push -u origin dev
 
     - name: Push to GitHub
