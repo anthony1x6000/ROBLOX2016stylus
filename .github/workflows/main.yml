@@ -33,6 +33,10 @@ jobs:
         git branch downloads
         git checkout downloads
 
+    - name: Create file
+      run: |
+        echo "ROBLOX 2016 dev file" > roblox2016-pre$CUR_DATE.user.css
+
     - name: Commit changes
       run: |
         git add roblox2016-pre$CUR_DATE.user.css
