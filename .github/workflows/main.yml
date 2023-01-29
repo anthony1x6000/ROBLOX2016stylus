@@ -38,6 +38,7 @@ jobs:
         git add roblox2016-pre$CUR_DATE.user.css
         git commit -m "Add roblox2016-pre$CUR_DATE.user.css"
         git checkout -b dev
+        git pull origin dev
         git push -u origin dev
 
     - name: Push to GitHub
