@@ -2915,18 +2915,7 @@
         position: relative;
         margin-top: 1.5%;
     } 
-    /* credit in website itself */
-    /* .text-footer.footer-note:after{
-        visibility: visible;
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-        content: "For quick updates and releases find the GitHub page of this style at https://github.com/anthony1x6000/ROBLOX2016stylus";
-        margin-top: 23px;
-        margin-left: 24px;
-    } */
-    
+ 
     /* See all button fixes */
     .see-all-link-icon {
         height: 25px !important;
