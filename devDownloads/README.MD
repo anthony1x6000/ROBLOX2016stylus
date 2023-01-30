@@ -2,7 +2,7 @@
 
 For an easier installation of the in development script.
 
-Just click the most recent one, or a desired version, and hit raw.
+For the latest, go [here](https://github.com/anthony1x6000/ROBLOX2016stylus/raw/main/devDownloads/roblox2016-preLatest.user.css) and install the script. 
 
 ![screenshot](https://files.catbox.moe/peyp1u.png)
 
