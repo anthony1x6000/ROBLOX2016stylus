@@ -37,7 +37,8 @@ jobs:
         UNIX_TIME=$(date +%s)
         CUR_DATE=$(date +%m-%d)
         # git checkout -b main
-        mv roblox2016-pre$CUR_DATE.user.css devDownloads
+        cp roblox2016-pre$CUR_DATE.user.css roblox2016-preLatest.user.css
+        mv roblox2016-pre$CUR_DATE.user.css roblox2016-preLatest.user.css devDownloads/
         git add devDownloads
         git commit -m "$CUR_DATE-$UNIX_TIME dev"
     - name: Pull and Rebase origin/dev
