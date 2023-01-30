@@ -34,6 +34,7 @@ jobs:
         git config --global user.name "anthony1x6000"
     - name: Commit changes to main branch
       run: |
+        UNIX_TIME=$(date +%s)
         CUR_DATE=$(date +%m-%d)
         # git checkout -b main
         mv roblox2016-pre$CUR_DATE.user.css devDownloads
