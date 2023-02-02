@@ -33,7 +33,7 @@ jobs:
         ==/UserStyle== */" > header.txt
         cat header.txt stylustheme.css > $TAG.user.css
         echo "$(cat $TAG.user.css)"
-        
+
     - name: Release Asset
       uses: softprops/action-gh-release@v1
       env:
@@ -51,7 +51,7 @@ jobs:
       run: |
         UNIX_TIME=$(date +%s)
         CUR_DATE=$(date +%m-%d)
-        cp $TAG.user.css release.user.css
+        cp $(TAG).user.css release.user.css
         cp release.user.css ".user.css-installFiles"
         git add ".user.css-installFiles"
         git commit -m "$CUR_DATE-$UNIX_TIME release"
