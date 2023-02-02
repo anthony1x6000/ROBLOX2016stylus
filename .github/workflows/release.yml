@@ -51,9 +51,9 @@ jobs:
       run: |
         UNIX_TIME=$(date +%s)
         CUR_DATE=$(date +%m-%d)
-        cp $(TAG).user.css release.user.css
-        cp release.user.css ".user.css-installFiles"
-        git add ".user.css-installFiles"
+        cp $(TAG).user.css "release.user.css"
+        cp "release.user.css" ".user.css-installFiles/"
+        git add ".user.css-installFiles/"
         git commit -m "$CUR_DATE-$UNIX_TIME release"
     - name: Pull and Rebase origin/dev
       run: |
