@@ -29,5 +29,8 @@ All credit to Ologist for initially making this great user-style theme! \
 This is just me adding to it and fixing some little things. \
 Find the original style @ https://userstyles.org/styles/178105/roblox-in-2016 \
 Big thanks to all [contrubutors](https://github.com/anthony1x6000/ROBLOX2016stylus/graphs/contributors) as well!
+## Notes:
+I messed with workflows a little too much so some things might be broken. Message me if you find something. \
+I deleted all previous releases (by accident) because I merged this repository into itself while trying to clone it. Unfortunate. Message me if you know how to get them back. Theres places to contact me on my [website](https://anthonyonline.cf/).
 ## License
 The [license](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/LICENSE) in this Github repository applies to, but is not limited to, all code, images, and/or files created by me and/or contributors.
