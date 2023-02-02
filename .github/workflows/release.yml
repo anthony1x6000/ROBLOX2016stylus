@@ -7,6 +7,9 @@ on:
     branches:
       - '*'
 
+env:
+  TAG: `echo "$GITHUB_REF" | awk -F / '{print $3}'`
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,8 +21,6 @@ jobs:
         ref: main
 
     - name: Add header to stylustheme.css
-      env: |
-        TAG: `echo "$GITHUB_REF" | awk -F / '{print $3}'`
       run: |
         CUR_DATE=$(date +%m-%d)
         CURV_DATE=$(date +%m.%d)
