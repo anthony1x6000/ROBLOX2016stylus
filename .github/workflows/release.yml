@@ -49,9 +49,10 @@ jobs:
         git config --global user.name "anthony1x6000"
     - name: Commit changes to downloads branch
       run: |
+        TAG=`echo "$GITHUB_REF" | awk -F / '{print $3}'`
         UNIX_TIME=$(date +%s)
         CUR_DATE=$(date +%m-%d)
-        cp $(TAG).user.css "release.user.css"
+        cp ${TAG}.user.css "release.user.css"
         cp "release.user.css" ".user.css-installFiles/"
         git add ".user.css-installFiles/"
         git commit -m "$CUR_DATE-$UNIX_TIME release"
