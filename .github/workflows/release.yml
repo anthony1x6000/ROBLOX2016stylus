@@ -53,7 +53,8 @@ jobs:
         UNIX_TIME=$(date +%s)
         CUR_DATE=$(date +%m-%d)
         cp ${TAG}.user.css "release.user.css"
-        git checkout -b downloads
+        git checkout downloads
+        ls
         cp "release.user.css" ".user.css-installFiles/"
         git add ".user.css-installFiles/"
         git commit -m "$CUR_DATE-$UNIX_TIME release"
