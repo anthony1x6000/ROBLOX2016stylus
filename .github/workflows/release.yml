@@ -1,4 +1,4 @@
-name: ROBLOX 2016 dev workflow
+name: Release
 
 on:
   release:
