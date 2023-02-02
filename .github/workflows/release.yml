@@ -18,8 +18,9 @@ jobs:
         ref: main
 
     - name: Add header to stylustheme.css
+      env: |
+        TAG: `echo "$GITHUB_REF" | awk -F / '{print $3}'`
       run: |
-        TAG=`echo "$GITHUB_REF" | awk -F / '{print $3}'`
         CUR_DATE=$(date +%m-%d)
         CURV_DATE=$(date +%m.%d)
         UNIX_TIME=$(date +%s)
@@ -42,7 +43,7 @@ jobs:
         files: $TAG.user.css
         draft: false
         prerelease: false
-      if: github.event_name == 'release'
+      # if: github.event_name == 'release'
     - name: Set user identity
       run: |
         git config --global user.email "contact.b7hkd@simplelogin.fr"
