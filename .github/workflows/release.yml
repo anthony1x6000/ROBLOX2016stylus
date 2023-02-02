@@ -6,6 +6,7 @@ on:
   workflow_dispatch:
     branches:
     - main 
+    - downloads
 
 jobs:
   build:
