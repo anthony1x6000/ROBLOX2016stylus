@@ -3,10 +3,10 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        02.02.1675314441
+@version        02.02.1675314813
 @license        MIT License
 ==/UserStyle== */
-@-moz-document regexp("^(https?://(www.)?roblox.com/(?!my/account).*)$") {
+@-moz-document domain("web.roblox.com"), domain("www.roblox.com") {
     /* Hey! if you see this, check out the Github repository for this!
     https://github.com/anthony1x6000/ROBLOX2016stylus
     You can find the style under releases. Make sure to check out the beta "stylustheme.css."
