@@ -14,6 +14,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 ## Changes/Fixes 1.2.5.1
 
 - [URL Matching] Reverted URL regex.
+- [Avatar Page] Removed Get More button. 
 
 ### Find a bug?
 

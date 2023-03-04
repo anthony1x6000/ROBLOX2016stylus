@@ -15,6 +15,7 @@
     /* font */ 
     /* @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700); */
     /* latin */
+    
     @font-face {
       font-family: 'Source Sans Pro';
       font-style: normal;
@@ -2915,7 +2916,7 @@
         position: relative;
         margin-top: 1.5%;
     } 
- 
+    
     /* See all button fixes */
     .see-all-link-icon {
         height: 25px !important;
@@ -3093,10 +3094,8 @@
     div > div > div > div > div > div > div.avatar-editor-header > div.catalog-header > a.btn-primary-md {
         visibility: hidden; 
     }
-    div > div.catalog-header > div {
-        position: relative;
-        left: 87px;
-        bottom: 2px;
+    div.catalog-header {
+        display: none;
     }
     /*accept friend button */ 
     #accept-fr-btn {
@@ -3686,5 +3685,4 @@
     #populated-complimentary-items-recommendations {
         display: none;
     }
-    
-    }
+}
