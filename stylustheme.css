@@ -1929,7 +1929,7 @@
         position: absolute;
         bottom: 6px;
         width: 100%;
-        margin: 0 6px;
+        margin: 0 6px !important;
     }
     
     .game-card-thumb-container:before
