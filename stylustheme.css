@@ -259,11 +259,60 @@
         color: #fff;
     }
     
+    /* universal colors - universal buttons */
     
+    /* Hover green buttons */
+    .light-theme .btn-buy-md:hover, .light-theme .btn-buy-md:focus { 
+        background-color: #3FC679;
+        box-shadow: 0 1px 3px rgba(150,150,150,0.74);
+        border-color: #3FC679;
+        color: #fff;
+    }
+    .light-theme .btn-growth-lg:focus, .light-theme .btn-growth-lg:hover, .signup-or-log-in .signup-container .signup-input-area .signup-submit-button:hover, li.signup-button-container:hover   {
+        background-color: #3FC679;
+        border-color: #3FC679;
+        color: #fff;
+        cursor: pointer;
+    }
+    a.rbx-navbar-login.btn-secondary-sm.nav-menu-title.rbx-menu-item:hover {
+        background: rgba(25,25,25,0.1);
+        border: none;
+        border-radius: 5px;
+    }
+    .light-theme .btn-primary-sm, .light-theme .btn-primary-sm:hover {
+        background-color: #02b757;
+        border: none;
+    }
     
+    /* Green buttons */
+    .light-theme .btn-primary-lg, li.signup-button-container {
+        background-color: #02b757;
+        border: 1px solid #02b757;
+    }
+    .signup-or-log-in .signup-container .signup-input-area .signup-submit-button {
+        background-color: #02b757;
+        border-color: #02b757;
+        color: #fff;
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+    }
+    .light-theme .btn-growth-lg {
+        border: none;
+        background-color: #02b757;
+        display: inline-block;
+        border-radius: 5px;
+    }
+    li.signup-button-container {
+        border-radius: 3px;
+    }
+    .light-theme .btn-growth-md, button.btn-primary-md.ng-binding[ng-click='chat\(\)'], .light-theme .btn-primary-md.disabled, .light-theme .btn-primary-md, button.btn-common-play-game-lg.btn-primary-md {
+        background-color: #02b757;
+        border: 1px solid #02b757;
+        border-radius: 1px;
+    }
     
-    
-    
+    /* End of universal */
     
     .gotham-font.light-theme .refresh-link, .gotham-font.light-theme .refresh-link-icon, .gotham-font.light-theme .refresh-link-icon:active, .gotham-font.light-theme .refresh-link-icon:hover, .gotham-font.light-theme .refresh-link-icon:link, .gotham-font.light-theme .refresh-link-icon:visited, .gotham-font.light-theme .refresh-link:active, .gotham-font.light-theme .refresh-link:hover, .gotham-font.light-theme .refresh-link:link, .gotham-font.light-theme .refresh-link:visited, .gotham-font.light-theme .see-all-link, .gotham-font.light-theme .see-all-link-icon, .gotham-font.light-theme .see-all-link-icon:active, .gotham-font.light-theme .see-all-link-icon:hover, .gotham-font.light-theme .see-all-link-icon:link, .gotham-font.light-theme .see-all-link-icon:visited, .gotham-font.light-theme .see-all-link:active, .gotham-font.light-theme .see-all-link:hover, .gotham-font.light-theme .see-all-link:link, .gotham-font.light-theme .see-all-link:visited, .gotham-font.light-theme .touch .refresh-link, .gotham-font.light-theme .touch .refresh-link-icon, .gotham-font.light-theme .touch .refresh-link-icon:active, .gotham-font.light-theme .touch .refresh-link-icon:hover, .gotham-font.light-theme .touch .refresh-link-icon:link, .gotham-font.light-theme .touch .refresh-link-icon:visited, .gotham-font.light-theme .touch .refresh-link:active, .gotham-font.light-theme .touch .refresh-link:hover, .gotham-font.light-theme .touch .refresh-link:link, .gotham-font.light-theme .touch .refresh-link:visited, .gotham-font.light-theme .touch .see-all-link, .gotham-font.light-theme .touch .see-all-link-icon, .gotham-font.light-theme .touch .see-all-link-icon:active, .gotham-font.light-theme .touch .see-all-link-icon:hover, .gotham-font.light-theme .touch .see-all-link-icon:link, .gotham-font.light-theme .touch .see-all-link-icon:visited, .gotham-font.light-theme .touch .see-all-link:active, .gotham-font.light-theme .touch .see-all-link:hover, .gotham-font.light-theme .touch .see-all-link:link, .gotham-font.light-theme .touch .see-all-link:visited {
         color: #ffffff;
@@ -357,12 +406,6 @@
         border-radius: 3px;
     }
     
-    .light-theme .btn-buy-md:hover, .light-theme .btn-buy-md:focus {
-        background-color: #3FC679;
-        box-shadow: 0 1px 3px rgba(150,150,150,0.74);
-        border-color: #3FC679;
-        color: #fff;
-    }
     .resellers-container .vlist .list-item button {
         margin-top: 12px;
     }
@@ -779,10 +822,7 @@
     
     
     
-    .light-theme .btn-primary-sm, .light-theme .btn-primary-sm:hover {
-        background-color: #02b757 !important;
-        border: 1px solid #02b757;
-    }
+    
     
     
     
@@ -2313,17 +2353,13 @@
         opacity: 0.35 !important;
     }
     
-    .chat-windows-header .chat-header-label span
-    {
+    .chat-windows-header .chat-header-label span, div.robux-upsell > button > h4 {
         color: #fff;
     }
     
-    .light-theme .text-robux-lg, .light-theme .text-robux
-    {
+    .light-theme .text-robux-lg, .light-theme .text-robux, .discount-savings-original-price, div.robux-downsell > button > h4, td.icon-robux-container.amount > span {
         color: #02b757;
     }
-    
-    
     
     .light-theme .carousel-control
     {
@@ -2491,11 +2527,8 @@
         color: #fff;
     }
     
-    .light-theme .btn-primary-lg
-    {
-        background-color: #02b757;
-        border: 1px solid #02b757;
-    }
+    
+    
     
     .light-theme .favorite-button-container .text-favorite
     {
@@ -2666,12 +2699,7 @@
         color: #00a2ff;
     }
     
-    .light-theme .btn-growth-md, button.btn-primary-md.ng-binding[ng-click='chat\(\)'], .light-theme .btn-primary-md.disabled, .light-theme .btn-primary-md
-    {
-        background-color: #02b757;
-        border: 1px solid #02b757;
-        border-radius: 1px !important;
-    }
+    
     button.btn-primary-md.ng-binding[ng-click='chat\(\)']:hover {
         background-color: #00b06f;
         border-color: #00b06f;
@@ -2770,11 +2798,7 @@
         background: transparent;
         border: 0;
     }
-    .rbx-header .rbx-navbar-icon-group li .nav-menu-title, .rbx-header .rbx-navbar-right-nav li .nav-menu-title:hover {
-            background: rgba(25,25,25,0.1);
-            border: 0 !important;
-            border-radius: 5px;
-    }
+    
     
     
     
@@ -2849,20 +2873,9 @@
     }
     
     
-    .signup-or-log-in .signup-container .signup-input-area .signup-submit-button {
-        background-color: #02b757;
-        border-color: #02b757;
-        color: #fff;
-        width: 100%;
-        height: 50px;
-        font-size: 20px;
-    }
     
-    .signup-or-log-in .signup-container .signup-input-area .signup-submit-button:hover {
-        background-color: #3fc679;
-        border-color: #3fc679;
     
-    }
+    
     
     .form-control.fake-input-lg {
         border: 1px solid #b8b8b8;
