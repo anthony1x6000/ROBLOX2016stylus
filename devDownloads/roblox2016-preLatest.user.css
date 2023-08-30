@@ -3,7 +3,7 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        08.30.1693364142
+@version        08.30.1693364174
 @license        MIT License
 ==/UserStyle== */
 @-moz-document domain("web.roblox.com"), domain("www.roblox.com") {
@@ -30,7 +30,7 @@
         font-size: 16px;
     }
     body.dark-theme > div > main > div > div > div > div > div > div.tab-content.rbx-tab-content.ng-scope > div > div > div.section.ng-scope > div.container-header::after {
-        content: "SET THEME TO LIGHT MODE!!!!!";
+        content: "SET THEME TO LIGHT MODE!";
         color: red;
         font-weight: bold;
     }
