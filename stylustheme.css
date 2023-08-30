@@ -22,7 +22,7 @@
         font-size: 16px;
     }
     body.dark-theme > div > main > div > div > div > div > div > div.tab-content.rbx-tab-content.ng-scope > div > div > div.section.ng-scope > div.container-header::after {
-        content: "SET THEME TO LIGHT MODE!";
+        content: "SET THEME TO LIGHT!";
         color: red;
         font-weight: bold;
     }
