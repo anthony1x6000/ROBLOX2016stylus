@@ -3695,4 +3695,8 @@
     #populated-complimentary-items-recommendations {
         display: none;
     }
+    /* top bar pfp */      
+#navigation .text-nav.dynamic-overflow-container > .avatar-headshot-xs.avatar > .avatar-card-image.thumbnail-2d-container, #navigation .text-nav.dynamic-overflow-container > .avatar-headshot-xs.avatar {
+    display: none !important;
+}
 }
