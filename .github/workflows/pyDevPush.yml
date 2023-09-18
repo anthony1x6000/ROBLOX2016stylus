@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - stylustheme.css
-      - '/workflows/'
+      - '.github/workflows/**'
   workflow_dispatch:
 
 jobs:
@@ -25,13 +25,11 @@ jobs:
       run: |
         pwd
         python -m pip install --upgrade pip
-        # pip install -r workflows/newark/requirements.txt
+        # pip install -r .github/workflows/newark/requirements.txt
       
     - name: Run newark scripts
       run: |
-        cd
-        pwd
-        python workflows/newark/pyDevIzhevsk.py
+        python .github/workflows/newark/pyDevIzhevsk.py
     
     - name: Set user identity
       run: |
