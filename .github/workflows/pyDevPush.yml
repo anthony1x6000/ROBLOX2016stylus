@@ -41,18 +41,15 @@ jobs:
         git config user.name "${{ github.actor }}-roblox-shishkov"
         git config user.email "${{ github.actor }}@users.noreply.github.com"
     
-    - name: Switch to downloads branch
+    - name: All the git stuff
       run: |
-        git fetch origin downloads
-        git checkout downloads || git checkout -b downloads origin/downloads
+        git add devDownloads
+        git commit -m "dev push"
+        git pull origin main --rebase
 
-    - name: Delete stuff
-      run: |
-        rm -rf downloads/*
-        cp -r devDownloads/* downloads/
-
-    - name: Push changes to downloads branch
-      run: |
-        git add downloads/*
-        git commit -m "Copy devDownloads folder from main branch"
-        git push origin downloads --force
+    - name: Push to GitHub
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: downloads
+        force: true
