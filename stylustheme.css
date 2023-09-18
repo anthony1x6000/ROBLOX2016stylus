@@ -10,6 +10,7 @@
     - anthop/anthony1x6000
     - Aubrey/aubymori
     - ssd21345/randomguyingithub
+    - ProTaxEvader/ProTaxEvader
     */ 
     
     /* font */ 
@@ -3686,5 +3687,9 @@
     /* Buy it with */
     #populated-complimentary-items-recommendations {
         display: none;
+    }
+    /* top bar pfp */      
+    #navigation .text-nav.dynamic-overflow-container > .avatar-headshot-xs.avatar > .avatar-card-image.thumbnail-2d-container, #navigation .text-nav.dynamic-overflow-container > .avatar-headshot-xs.avatar {
+        display: var(--profileVis) !important;
     }
 }
