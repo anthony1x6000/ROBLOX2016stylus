@@ -34,6 +34,7 @@ jobs:
     - name: Run newark scripts
       run: |
         python .github/workflows/newark/pyDevIzhevsk.py
+        ls devDownloads/
     
     - name: Set user identity
       run: |
@@ -44,10 +45,13 @@ jobs:
       run: |
         git fetch origin downloads
         git checkout downloads || git checkout -b downloads origin/downloads
-        cp -r devDownloads downloads
+
+    - name: Copy changes to downloads directory
+      run: |
+        cp -r devDownloads/* downloads/
 
     - name: Push changes to downloads branch
       run: |
-        git add .
+        git add downloads/*
         git commit -m "Copy devDownloads folder from main branch"
         git push origin downloads --force
