@@ -55,7 +55,8 @@ if not version:
     print("Running as dev build")
 
     concat(mainDev, devStyle)
-
+    if not os.path.exists(f'{repRoot}/devDownloads'):
+        os.mkdir(f'{repRoot}/devDownloads/')
     if os.path.exists(f'{repRoot}/devDownloads/{devFName}'):
         os.remove(f'{repRoot}/devDownloads/{devFName}')
     shutil.move(devStyle, f'{repRoot}/devDownloads/')
