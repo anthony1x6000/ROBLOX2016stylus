@@ -1,0 +1,31 @@
+name: ROBLOX 2016 pyDev
+
+on:
+  push:
+    paths:
+      - stylustheme.css
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        ref: main
+    
+    - uses: actions/checkout@v2
+    - name: Set up Python 11
+      uses: actions/setup-python@v2
+      with:
+        python-version: '11'
+
+    - name: Install more python
+      run: |
+        pwd
+        python -m pip install --upgrade pip
+        pip install -r workflows/requirements.txt
+      
+    - name: Run newark scripts
+      run: |
+        
