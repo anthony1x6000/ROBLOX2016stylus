@@ -26,6 +26,10 @@ jobs:
         pwd
         python -m pip install --upgrade pip
         # pip install -r .github/workflows/newark/requirements.txt
+
+    - name: Pull and Rebase origin/dev
+      run: |
+        git pull origin main --rebase
       
     - name: Run newark scripts
       run: |
