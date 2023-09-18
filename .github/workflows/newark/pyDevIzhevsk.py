@@ -57,6 +57,5 @@ if not version:
     concat(mainDev, devStyle)
 
     if os.path.exists(f'{repRoot}/devDownloads/{devFName}'):
-        os.remove(f'')
+        os.remove(f'{repRoot}/devDownloads/{devFName}')
     shutil.move(devStyle, f'{repRoot}/devDownloads/')
-    
