@@ -29,6 +29,7 @@ jobs:
         @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
         @version        $TAG_NUMBER
         @license        MIT License
+        @var select profileVis "Hide profile in nav bar?" ["block:Visible", "none:Hidden"]
         ==/UserStyle== */" > header.txt
         cat header.txt stylustheme.css > $TAG_NUMBER.user.css
         cp $TAG_NUMBER.user.css release.user.css
