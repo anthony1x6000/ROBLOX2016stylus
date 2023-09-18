@@ -59,3 +59,6 @@ if not version:
     if os.path.exists(f'{repRoot}/devDownloads/{devFName}'):
         os.remove(f'{repRoot}/devDownloads/{devFName}')
     shutil.move(devStyle, f'{repRoot}/devDownloads/')
+    if os.path.exists(f'{repRoot}/devDownloads/roblox2016-preLatest.user.css'):
+        os.remove(f'{repRoot}/devDownloads/roblox2016-preLatest.user.css')
+    shutil.copyfile(f'{repRoot}/devDownloads/{devFName}', f'{repRoot}/devDownloads/roblox2016-preLatest.user.css')
