@@ -29,7 +29,7 @@ jobs:
         @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
         @version        $TAG_NUMBER
         @license        MIT License
-        @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
+        @var select profileVis "Hide profile in nav bar?" ["block:Visible", "none:Hidden"]
         ==/UserStyle== */" > header.txt
         cat header.txt stylustheme.css > $TAG_NUMBER.user.css
         cp $TAG_NUMBER.user.css release.user.css
@@ -46,8 +46,8 @@ jobs:
       if: github.event_name == 'release'
     - name: Set user identity
       run: |
-        git config --global user.email "33004321+anthony1x6000@users.noreply.github.com"
-        git config --global user.name "roblox-workflow"
+        git config --global user.email "contact.b7hkd@simplelogin.fr"
+        git config --global user.name "anthony1x6000"
     - name: Commit changes to downloads branch
       run: |
         ls
