@@ -3,7 +3,7 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        09.18.1695064026
+@version        09.18.1695070625
 @license        MIT License
 @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
 ==/UserStyle== */
@@ -83,7 +83,7 @@
         background-color: #ffffff;
     }
     .light-theme .content {
-        background-color: #e3e3e3;
+        background-color: transparent;
         color: #000000;
     }
     .light-theme .scroller {
@@ -815,10 +815,7 @@
         transition: box-shadow 200ms ease-in-out;
     }
     
-    .light-theme .thumbnail-2d-container {
-        background-color: transparent;
-        border: 1px #ddd solid;
-    }
+
     
     thumbnail-2d .thumbnail-2d-container[thumbnail-type=avatarHeadshot] {
         background-color: #ffffff;
@@ -870,7 +867,6 @@
     .light-theme .section-content.remove-panel {
         box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
     }
-    
     
     a:hover {
         text-decoration: none !important;
@@ -2620,12 +2616,7 @@
         margin-bottom: -2px;
     }
     
-    .items-list.avatar-item-list .item-card .item-card-container
-    {   
-        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
-        border-radius: 3px;
-    
-    }
+
     .items-list.avatar-item-list .item-card {
         height: 100%;
     }
@@ -2815,7 +2806,7 @@
     
     
     
-    /* signup page */ 
+/* Signup page */ 
     /* 2016      */
     #main-login-button {
         background-color: #00B259 !important;
@@ -2828,7 +2819,6 @@
     }
     .signup-container.theme-bg.rbx-login-form {
         position: relative;
-    /*     max-width: 435px; */
         max-width: 23%;
         margin-right: 25%;
         right: 0px;
@@ -2848,9 +2838,11 @@
         margin-right: 50%;
         top: 200px;
         padding: 0px;
-    /*     padding-right: 100px !important; */
         width: 100%;
         z-index: 1;
+    }
+    #signup-container #signup-header-container .header-icon-logo {
+        height: 123px;
     }
     #app-stores-devices:after { 
         text-transform: none;
@@ -2899,14 +2891,7 @@
     
     }
     
-    .text-logo {
-        background-image: url("https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/robloxlogo.png?raw=true");
-        position: relative;
-        height: 100px;
-        bottom: 10px;
-    
-    
-    }
+
     
     /* robux icon change */
     .rbx-header .rbx-navbar-icon-group li span[class^=rbx-text] {
@@ -3701,4 +3686,10 @@
     #navigation .text-nav.dynamic-overflow-container > .avatar-headshot-xs.avatar > .avatar-card-image.thumbnail-2d-container, #navigation .text-nav.dynamic-overflow-container > .avatar-headshot-xs.avatar {
         display: var(--profileVis) !important;
     }
+
+    /* ROBLOX 2016 Avatar Editor Reconstruct by Mystery Channel (1185261) 
+        No License as of 09-18023
+        https://uso.kkx.one/style/227593 */
+    thumbnail-2d[ng-class="\{\'shimmer\'\:avatarCallLimiter\.itemCardsDisabled\}"]{width:58%!important}.items-list .item-card .item-card-thumb{position:relative;top:2px;left:21px;cursor:default}.items-list.avatar-item-list .item-card.six-column{width:16.6%;margin-right:20px}.avatar-editor-header h1{display:inline-block;font-weight:1000;letter-spacing:-1px;line-height:32px;font-size:0}.items-list .item-card .item-card-thumb-container::before{display:inline-block!important;content:"Wear";font-size:14px;cursor:pointer;color:#fff;border:1px solid #0852b7;background-color:#0852b7!important;background-image:url(http://static.rbxcdn.com/images/Buttons/StyleGuide/bg-btn-blue.png)!important;padding:1px 7px 0;position:relative;left:78px;opacity:1!important}.items-list .item-card .item-card-name{color:#0055B3;font-size:14px}.light-theme .avatar-back{background:transparent}span.toggle-three-dee.btn-control.btn-control-small.ng-binding{background-image:url(https://static.rbxcdn.com/images/StyleGuide/btn-control-small-tile.png);padding:0 6px;line-height:1.428;font-size:12px;border-color:#777;min-height:0;border-radius:0}.light-theme .thumbnail-2d-container{background:none}.avatar-editor-header h1::before{content:"Avatar Customizer";font-size:32px}body[data-internal-page-name='Avatar'] > div > main#container-main{background:#fff}div[ng-controller='avatarController'] > div > div > div.section-content,.items-list.avatar-item-list .item-card .item-card-container{box-shadow:none!important}.items-list .item-card .item-card-equipped::before{display:inline-block;content:"Wearing";font-size:14px;cursor:pointer;height:26.781px;color:#fff;border:1px solid #0852b7;background-color:#0852b7;background-image:url(http://static.rbxcdn.com/images/Buttons/StyleGuide/bg-btn-blue.png);padding:1px 7px 0;position:relative;left:62px;top:-1px}.light-theme .item-card-container .item-card-equipped{border:none}.item-card-equipped-label{visibility:hidden}#wrap.pinned .right-wrapper:before{background:none!important}
+
 }
