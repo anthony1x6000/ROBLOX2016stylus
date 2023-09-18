@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - stylustheme.css
-      - '/workflows/**'
+      - '/workflows/'
   workflow_dispatch:
 
 jobs:
@@ -29,7 +29,9 @@ jobs:
       
     - name: Run newark scripts
       run: |
-        python /workflows/newark/pyDevIzhevsk.py
+        cd
+        pwd
+        python workflows/newark/pyDevIzhevsk.py
     
     - name: Set user identity
       run: |
