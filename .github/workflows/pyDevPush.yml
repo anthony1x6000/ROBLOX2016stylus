@@ -40,15 +40,15 @@ jobs:
       run: |
         git config user.name "${{ github.actor }}-roblox-shishkov"
         git config user.email "${{ github.actor }}@users.noreply.github.com"
-   
+    
     - name: Switch to downloads branch
       run: |
-        git stash
         git fetch origin downloads
         git checkout downloads || git checkout -b downloads origin/downloads
 
-    - name: Copy changes to downloads directory
+    - name: Delete stuff
       run: |
+        rm -rf downloads/*
         cp -r devDownloads/* downloads/
 
     - name: Push changes to downloads branch
