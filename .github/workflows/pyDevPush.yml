@@ -24,7 +24,7 @@ jobs:
       run: |
         pwd
         python -m pip install --upgrade pip
-        pip install -r workflows/newark/requirements.txt
+        # pip install -r workflows/newark/requirements.txt
       
     - name: Run newark scripts
       run: |
