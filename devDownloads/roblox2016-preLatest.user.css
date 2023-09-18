@@ -3,8 +3,9 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        09.18.1695005887
+@version        09.18.1695006806
 @license        MIT License
+@var select profileVis Hide profile in nav bar? [block:Visible, none:Hidden]
 ==/UserStyle== */
 @-moz-document domain("web.roblox.com"), domain("www.roblox.com") {
 /* Hey! if you see this, check out the Github repository for this!
@@ -18,6 +19,7 @@
     - anthop/anthony1x6000
     - Aubrey/aubymori
     - ssd21345/randomguyingithub
+    - ProTaxEvader/ProTaxEvader
     */ 
     
     /* font */ 
@@ -3696,7 +3698,7 @@
         display: none;
     }
     /* top bar pfp */      
-#navigation .text-nav.dynamic-overflow-container > .avatar-headshot-xs.avatar > .avatar-card-image.thumbnail-2d-container, #navigation .text-nav.dynamic-overflow-container > .avatar-headshot-xs.avatar {
-    display: none !important;
-}
+    #navigation .text-nav.dynamic-overflow-container > .avatar-headshot-xs.avatar > .avatar-card-image.thumbnail-2d-container, #navigation .text-nav.dynamic-overflow-container > .avatar-headshot-xs.avatar {
+        display: var(--profileVis) !important;
+    }
 }
