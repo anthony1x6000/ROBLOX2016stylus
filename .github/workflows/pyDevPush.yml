@@ -41,4 +41,5 @@ jobs:
         git checkout -b downloads
         git add devDownloads/
         git commit -m "Update devDownloads"
-        git push origin downloads
+        git pull origin downloads
+        git push -f origin downloads
