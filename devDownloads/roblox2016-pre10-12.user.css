@@ -3,7 +3,7 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        10.12.1697138068
+@version        10.12.1697138667
 @license        MIT License
 @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
 ==/UserStyle== */
@@ -632,9 +632,6 @@
         text-decoration: none;
     }
     
-    .avatar {
-        background-color: white;
-    }
     .avatar-headshot-sm {
         background-color: transparent;
         border: #c5c5c5 1px solid !important;
@@ -3640,14 +3637,15 @@
         background-color: #e3e3e3;
     }
     /* Dark theme modifications */
-    .dark-theme .asset-thumb-container, .dark-theme .thumbnail-2d-container {
-        background-color: transparent !important;
-    }
     .dark-theme .stack .card-list .card-item {
         background-color: transparent;
     }
     .dark-theme .age-rating-details, .dark-theme .item-card-container .item-card-thumb-container, .dark-theme .layer, .dark-theme .chat-search, .dark-theme .btn-uiblox-common-common-notification-bell-md:hover {
         background: none;
+    }
+    .dark-theme .avatar-container .avatar-card-image, .dark-theme .avatar-container img, .dark-theme .asset-thumb-container, .dark-theme .thumbnail-2d-container, .dark-theme .icon-default-placeholder, .dark-theme .icon-placeholder-asset, .dark-theme .icon-placeholder-avatar-fullbody, .dark-theme .icon-placeholder-avatar-headshot, .dark-theme .icon-placeholder-game {
+        background: none !important;
+        box-shadow: none;
     }
     /* ROBLOX 2016 Avatar Editor Reconstruct by Mystery Channel (1185261) 
         No License as of 09-18023
