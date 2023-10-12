@@ -3,7 +3,7 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        10.12.1697136301
+@version        10.12.1697137938
 @license        MIT License
 @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
 ==/UserStyle== */
@@ -26,7 +26,9 @@
     /* @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700); */
     /* latin */
     /*  DISABLE DARK MODE NOTIFIER    */
-    
+    :root {
+        --darkThemeBlue: #324856;
+    }
     .dark-theme .text-footer.footer-note::after{
         content: " This userstyle does not support dark theme. Please change to light theme.";
     }
@@ -328,6 +330,9 @@
         background-color: #02b757;
         border: 1px solid #02b757;
         border-radius: 1px;
+    }
+    .dark-theme button.btn-common-play-game-lg.btn-primary-md:hover {
+        background: #00bf5a;
     }
     
     /* End of universal */
@@ -1878,6 +1883,10 @@
         border-radius: 3px;
         line-height: 7px;
     }
+    .dark-theme #upgrade-now-button {
+        border: none;
+        background: var(--darkThemeBlue);
+    }
     .light-theme .sponsored-game .game-card-native-ad {
         background-color: #00a2ff;
     }
@@ -1967,6 +1976,9 @@
         background-color: #00a2ff;
         border-top-right-radius: 4px;
         border-top-left-radius: 4px;
+    }
+    .dark-theme div#chat-header, div.dialog-header  {
+        background: var(--darkThemeBlue);
     }
     
     
@@ -2943,7 +2955,7 @@
     
     /* catalog changes  */ 
     /* 10/16/2021 */
-    div.catalog-results > div > ul > li > a.item-card-container > div.item-card-link {
+    .light-theme div.catalog-results > div > ul > li > a.item-card-container > div.item-card-link {
         border-bottom: 1px solid #B8B8B8;
     }
     
@@ -3292,7 +3304,7 @@
         background: #00bf5a;
         border-color: #00bf5a;
     }
-    .stack .card-list .card-item button.game-server-join-btn:hover, .stack .card-list .card-item button.game-server-join-btn:focus{
+    .light-theme .stack .card-list .card-item button.game-server-join-btn:hover, .light-theme .stack .card-list .card-item button.game-server-join-btn:focus{
         background-color: #fff;
         border: 1px solid #B8B8B8;
     }
@@ -3495,12 +3507,11 @@
         height: 240px !important;
     }
     /* Notification icon fix */
-        .light-theme .icon-common-notification-bell {
-            background-image: url('https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg');
+        .icon-common-notification-bell {
+            background-image: url('https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg') !important;
             background-position: 0 -448px !important;
         }
-        .light-theme .icon-common-notification-bell:hover {
-            background-image: url('https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg');
+        .icon-common-notification-bell:hover {
             background-position: -28px -448px !important;
         }
         .light-theme .btn-uiblox-common-common-notification-bell-md {
@@ -3636,6 +3647,12 @@
     /* Dark theme modifications */
     .dark-theme .asset-thumb-container, .dark-theme .thumbnail-2d-container {
         background-color: transparent !important;
+    }
+    .dark-theme .stack .card-list .card-item {
+        background-color: transparent;
+    }
+    .dark-theme .age-rating-details, .dark-theme .item-card-container .item-card-thumb-container, .dark-theme .layer, .dark-theme .chat-search, .dark-theme .btn-uiblox-common-common-notification-bell-md:hover {
+        background: none;
     }
     /* ROBLOX 2016 Avatar Editor Reconstruct by Mystery Channel (1185261) 
         No License as of 09-18023
