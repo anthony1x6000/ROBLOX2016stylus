@@ -15,6 +15,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 
 - [Settings] Optional avatar visibility on navbar.
 - [Avatar Page] New avatar page. Referenced from [ROBLOX 2016 Avatar Editor Reconstruct](https://uso.kkx.one/style/227593).
+- [Dark theme] Planned support for dark theme when 1.2.8 releases.
 
 ### Find a bug?
 
