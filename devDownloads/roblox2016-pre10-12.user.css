@@ -3,7 +3,7 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        10.12.1697135534
+@version        10.12.1697136301
 @license        MIT License
 @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
 ==/UserStyle== */
@@ -27,17 +27,14 @@
     /* latin */
     /*  DISABLE DARK MODE NOTIFIER    */
     
-    body.dark-theme > div > div > div > div > div > div > div > div > div > div > ul > li.rbx-upgrade-now::after {
-        content: "This userstyle does not support dark theme.";
-        color: #515151;
-        font-size: 16px;
+    .dark-theme .text-footer.footer-note::after{
+        content: " This userstyle does not support dark theme. Please change to light theme.";
     }
     body.dark-theme > div > main > div > div > div > div > div > div.tab-content.rbx-tab-content.ng-scope > div > div > div.section.ng-scope > div.container-header::after {
         content: "SET THEME TO LIGHT";
         color: red;
         font-weight: bold;
     }
-    
     
     @font-face {
       font-family: 'Source Sans Pro';
@@ -378,12 +375,12 @@
     }
     
     
-    .dark-theme .store-card, .light-theme .store-card {
+    .light-theme .store-card {
         background-color: white;
-    box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
+        box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
     }
     .dark-theme .store-card:hover, .light-theme .store-card:hover {
-    box-shadow: 0 1px 6px 0 rgba(25,25,25,0.45);
+        box-shadow: 0 1px 6px 0 rgba(25,25,25,0.45);
     }
     
     
@@ -413,11 +410,8 @@
         background-color: #ffffff;
     }
     
-    
-    
     .store-card .store-card-caption {
         padding: 0 6px 6px;
-        border-top: 1px solid #B8B8B8;
     }
     
     .light-theme .btn-buy-md {
@@ -773,12 +767,15 @@
         padding-top: 8px;
     } */
     
-    .game-main-content {
+    .light-theme .game-main-content {
         min-height: 345px;
         padding: 12px 12px !important;
     }
-    .gotham-font .game-main-content .game-calls-to-action, .gotham-font .game-main-content .game-calls-to-action .game-buttons-container {
+    .gotham-font .game-main-content .game-calls-to-action {
         padding-right: 0;
+    }
+    .dark-theme > div > main > div > div > div > div.game-calls-to-action {
+        padding-top: 10px !important;
     }
     
     div.VisitButton.VisitButtonPlayGLI a:before {
@@ -838,19 +835,6 @@
         border-bottom-right-radius: 0;
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     .game-card-thumb-container:before {
         border-radius: 8px;
         position: absolute;
@@ -864,28 +848,22 @@
         opacity: 0;
     }
     
-    
-    
     .light-theme .section-content.remove-panel {
         box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
+        background-color: #ffffff;
     }
     
     a:hover {
         text-decoration: none !important;
     }
     
-    
     .light-theme .btn-secondary-md, .light-theme .btn-secondary-md:visited {
         color: #fff;
     }
     
-    
-    
     .places-list {
         height: 300px;
     }
-    
-    
     
     #InnerRollerContainer {
         background-size: 100% 100%;
@@ -1039,7 +1017,7 @@
     }
     
     
-    .social-links .medallion {
+    .light-theme .social-links .medallion {
         height: 100px;
         margin: .5em;
         padding: 1em;
@@ -1917,9 +1895,6 @@
         box-shadow: inset 0 -4px 0 0 #00a2ff;
         background-color: white;
     }
-    .social-links .medallion {
-        background-color: #ffffff;
-    }
     .light-theme .text-link, .light-theme .text-link.small, .light-theme .text-link.small:active, .light-theme .text-link.small:link, .light-theme .text-link.small:visited, .light-theme .text-link.xsmall, .light-theme .text-link.xsmall:active, .light-theme .text-link.xsmall:link, .light-theme .text-link.xsmall:visited, .light-theme .text-link.xxsmall, .light-theme .text-link.xxsmall:active, .light-theme .text-link.xxsmall:link, .light-theme .text-link.xxsmall:visited, .light-theme .text-link:active, .light-theme .text-link:hover, .light-theme .text-link:link, .light-theme .text-link:visited, .light-theme .text-name, .light-theme .text-name.small, .light-theme .text-name.small:active, .light-theme .text-name.small:link, .light-theme .text-name.small:visited, .light-theme .text-name.xsmall, .light-theme .text-name.xsmall:active, .light-theme .text-name.xsmall:link, .light-theme .text-name.xsmall:visited, .light-theme .text-name.xxsmall, .light-theme .text-name.xxsmall:active, .light-theme .text-name.xxsmall:link, .light-theme .text-name.xxsmall:visited, .light-theme .text-name:active, .light-theme .text-name:hover, .light-theme .text-name:link, .light-theme .text-name:visited, .light-theme .vlist .list-item .list-body .list-content a, .light-theme .vlist .list-item .list-body .list-content a.small, .light-theme .vlist .list-item .list-body .list-content a.small:active, .light-theme .vlist .list-item .list-body .list-content a.small:link, .light-theme .vlist .list-item .list-body .list-content a.small:visited, .light-theme .vlist .list-item .list-body .list-content a.xsmall, .light-theme .vlist .list-item .list-body .list-content a.xsmall:active, .light-theme .vlist .list-item .list-body .list-content a.xsmall:link, .light-theme .vlist .list-item .list-body .list-content a.xsmall:visited, .light-theme .vlist .list-item .list-body .list-content a.xxsmall, .light-theme .vlist .list-item .list-body .list-content a.xxsmall:active, .light-theme .vlist .list-item .list-body .list-content a.xxsmall:link, .light-theme .vlist .list-item .list-body .list-content a.xxsmall:visited, .light-theme .vlist .list-item .list-body .list-content a:active, .light-theme .vlist .list-item .list-body .list-content a:hover, .light-theme .vlist .list-item .list-body .list-content a:link, .light-theme .vlist .list-item .list-body .list-content a:visited, .vlist .list-item .list-body .list-content .light-theme a, .vlist .list-item .list-body .list-content .light-theme a.small, .vlist .list-item .list-body .list-content .light-theme a.small:active, .vlist .list-item .list-body .list-content .light-theme a.small:link, .vlist .list-item .list-body .list-content .light-theme a.small:visited, .vlist .list-item .list-body .list-content .light-theme a.xsmall, .vlist .list-item .list-body .list-content .light-theme a.xsmall:active, .vlist .list-item .list-body .list-content .light-theme a.xsmall:link, .vlist .list-item .list-body .list-content .light-theme a.xsmall:visited, .vlist .list-item .list-body .list-content .light-theme a.xxsmall, .vlist .list-item .list-body .list-content .light-theme a.xxsmall:active, .vlist .list-item .list-body .list-content .light-theme a.xxsmall:link, .vlist .list-item .list-body .list-content .light-theme a.xxsmall:visited, .vlist .list-item .list-body .list-content .light-theme a:active, .vlist .list-item .list-body .list-content .light-theme a:hover, .vlist .list-item .list-body .list-content .light-theme a:link, .vlist .list-item .list-body .list-content .light-theme a:visited {
         color: #00a2ff;
     }
@@ -1928,11 +1903,7 @@
         color: #191919;
     }
     
-    .light-theme .section-content.remove-panel
-    {
-        background-color: #ffffff;
-    /*     border: 12px solid #ffffff; */
-    }
+    
     .avatar-back
     {
         width: 265px;
@@ -3659,11 +3630,13 @@
     .light-theme .catalog-container .sticky .topic-container, .light-theme .catalog-container .sticky .search-bars {
         background: #e3e3e3;
     }
-    /*category background fix */ 
     .light-theme div.ng-scope[ng-if='\!layout\.hasSearchOptionsError'] {
         background-color: #e3e3e3;
     }
-    
+    /* Dark theme modifications */
+    .dark-theme .asset-thumb-container, .dark-theme .thumbnail-2d-container {
+        background-color: transparent !important;
+    }
     /* ROBLOX 2016 Avatar Editor Reconstruct by Mystery Channel (1185261) 
         No License as of 09-18023
         https://uso.kkx.one/style/227593 */

@@ -3,8 +3,13 @@
 A UserStyle that changes the look of ROBLOX to be more faithful to what it would look like back in 2016.\
 **To install the latest release click [here](https://github.com/anthony1x6000/ROBLOX2016stylus/raw/downloads/.user.css-installFiles/release.user.css).** \
 **To install the latest prerelease click [here](https://github.com/anthony1x6000/ROBLOX2016stylus/raw/main/devDownloads/roblox2016-preLatest.user.css).**
+## Dark Theme
+Dark theme is now supported as of the unreleased version and soon to be released userscript version [1.2.8](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/devDownloads/roblox2016-preLatest.user.css). \
+Dark theme support will not be 100% faithful to the 2016 era of Roblox.
+Please report any bugs related to dark theme.
 
-If you don't already, this requires Stylus to function. Get it at the [Chrome Web Store](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or at [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/styl-us/). \
+
+If you don't have it already, this requires Stylus to function. Get it at the [Chrome Web Store](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or at [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/styl-us/). \
 ![Preview of style](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/2016_stuff/preview.png?raw=true "Preview")
 ## helloUser.user.js
 This userscript brings back the [Hello, User](https://files.catbox.moe/26eosn.png) thing that used to be at the top of the site.\
@@ -31,8 +36,5 @@ All credit to Ologist for initially making this great user-style theme! \
 This is just me adding to it and fixing some little things. \
 Find the original style @ https://userstyles.org/styles/178105/roblox-in-2016 \
 Big thanks to all [contrubutors](https://github.com/anthony1x6000/ROBLOX2016stylus/graphs/contributors) as well!
-## Notes:
-I messed with workflows a little too much so some things might be broken. Message me if you find something. \
-I deleted all previous releases (by accident) because I merged this repository into itself while trying to clone it. Unfortunate. Message me if you know how to get them back. Theres places to contact me on my [website](https://anthonyonline.cf/).
 ## License
 The [license](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/LICENSE) in this Github repository applies to, but is not limited to, all code, images, and/or files created by me and/or contributors.
