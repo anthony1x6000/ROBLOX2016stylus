@@ -449,8 +449,8 @@
         border-radius: 2px !important; 
     }
     /* search results & bar */ 
-    .new-navbar-search-anchor > .navbar-list-option-suffix, span.navbar-list-option-icon, .navbar-list-option-text {
-        color: #000 !important;
+    .light-theme .new-navbar-search-anchor > .navbar-list-option-suffix, span.navbar-list-option-icon, .navbar-list-option-text {
+        color: #000;
         opacity: 1 !important;
         font-size: 16px;
     }
@@ -476,11 +476,13 @@
     span.navbar-list-option-icon {
         visibility: hidden;
     }
-    
     span.navbar-list-option-icon::before {
         visibility: visible;
         content: "Search";
         font-size: 16px;
+    }
+    .dark-theme span.navbar-list-option-icon{
+        color: rgb(189, 190, 190);
     }
     .new-navbar-search-anchor > .navbar-list-option-text {
         margin-left: 21px;
