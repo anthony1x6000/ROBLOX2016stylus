@@ -26,7 +26,7 @@ I don't know much CSS myself, so any contribution, even improving the slightest 
  - [Github pre-release/beta style](https://github.com/anthony1x6000/ROBLOX2016stylus#unreleasedbeta-style) / [changelog](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/unreleasedChanges.md).
 ## Supported Browsers
 - [Brave](https://brave.com/) and probably all [Chromium based browsers](https://en.wikipedia.org/wiki/Chromium_(web_browser)#Browsers_based_on_Chromium).
-- [Firefox](https://firefox.com/) (Not 100% guaranteed to work, but I will fix style bugs on FireFox). 
+- [Firefox](https://firefox.com/). 
 ### Display Compatability
 Your display/monitor needs to be at least 1024 pixels wide for this style to work correctly. \
 **Note: I don't know what other people or I did, but thinner displays should work fine in any releases past 1.2.0.x.* \
