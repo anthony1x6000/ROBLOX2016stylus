@@ -31,6 +31,11 @@ I don't know much CSS myself, so any contribution, even improving the slightest 
 Your display/monitor needs to be at least 1024 pixels wide for this style to work correctly. \
 **Note: I don't know what other people or I did, but thinner displays should work fine in any releases past 1.2.0.x.* \
 I'd recommend at least a 1366 x 768 monitor or, even better, a 1920 x 1080 monitor.
+## Releases<1.2.5
+For myself. \
+After, I think, merging a clone of this repo into itself through git prior releases to 1.2.5 dissapeared. \
+Access the older releases by manually accessing certain tags. ```https://github.com/anthony1x6000/ROBLOX2016stylus/releases/tag/{release<1.2.5}``` \
+[1.0.4](https://github.com/anthony1x6000/ROBLOX2016stylus/releases/tag/1.0.4), [1.2.0](https://github.com/anthony1x6000/ROBLOX2016stylus/releases/tag/1.2.0)
 ## Credit
 All credit to Ologist for initially making this great user-style theme! \
 This is just me adding to it and fixing some little things. \
