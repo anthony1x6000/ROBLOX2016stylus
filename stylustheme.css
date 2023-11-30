@@ -2562,7 +2562,7 @@
 
     .dark-theme .item-card-container .item-card-equipped .item-card-equipped-label, .light-theme .item-card-container .item-card-equipped .item-card-equipped-label
     {
-        display: unset
+        display: unset;
     }
 
     .light-theme .items-list.avatar-item-list .item-card-container .item-card-caption
@@ -3637,6 +3637,9 @@
         background-color: transparent;
     }
     .dark-theme .age-rating-details, .dark-theme .item-card-container .item-card-thumb-container, .dark-theme .layer, .dark-theme .chat-search, .dark-theme .btn-uiblox-common-common-notification-bell-md:hover {
+        background: none;
+    }
+    .dark-theme .item-card-container .item-card-equipped {
         background: none;
     }
     .dark-theme .avatar-container .avatar-card-image, .dark-theme .avatar-container img, .dark-theme .asset-thumb-container, .dark-theme .thumbnail-2d-container, .dark-theme .icon-default-placeholder, .dark-theme .icon-placeholder-asset, .dark-theme .icon-placeholder-avatar-fullbody, .dark-theme .icon-placeholder-avatar-headshot, .dark-theme .icon-placeholder-game {
