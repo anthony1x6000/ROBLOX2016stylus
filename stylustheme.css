@@ -3652,6 +3652,12 @@
     body.dark-theme[data-internal-page-name='Avatar'] > div > main.container-main {
         background-color: rgb(35, 37, 39) !important;
     }
+    .dark-theme #autocomplete-list {
+        background: rgba(35, 37, 39, .81);
+    }
+    #nav-credit-icon {
+        filter: invert(1);
+    }
     /* ROBLOX 2016 Avatar Editor Reconstruct by Mystery Channel (1185261) 
         No License as of 09-18023
         https://uso.kkx.one/style/227593 */
