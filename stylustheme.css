@@ -2294,16 +2294,16 @@
     .icon-left {
         background-position: 0 -300px !important;
     }
-    .btn-generic-left-sm[disabled] {
+    .dark-theme .btn-generic-left-sm[disabled], .dark-theme .btn-generic-right-sm[disabled] {
+        background: transparent !important;
+/*         border: 1px solid transparent !important;
+        opacity: 0.35 !important; */
+    }
+/*     .btn-generic-right-sm[disabled] {
         background: #fff !important;
         border: 1px solid transparent !important;
         opacity: 0.35 !important;
-    }
-    .btn-generic-right-sm[disabled] {
-        background: #fff !important;
-        border: 1px solid transparent !important;
-        opacity: 0.35 !important;
-    }
+    } */
 
     .chat-windows-header .chat-header-label span, div.robux-upsell > button > h4 {
         color: #fff;
