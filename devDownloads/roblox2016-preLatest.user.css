@@ -3,7 +3,7 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        02.08.1707362131
+@version        02.08.1707414009
 @license        MIT License
 @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
 ==/UserStyle== */
@@ -2303,16 +2303,16 @@
     .icon-left {
         background-position: 0 -300px !important;
     }
-    .btn-generic-left-sm[disabled] {
+    .dark-theme .btn-generic-left-sm[disabled], .dark-theme .btn-generic-right-sm[disabled] {
+        background: transparent !important;
+/*         border: 1px solid transparent !important;
+        opacity: 0.35 !important; */
+    }
+/*     .btn-generic-right-sm[disabled] {
         background: #fff !important;
         border: 1px solid transparent !important;
         opacity: 0.35 !important;
-    }
-    .btn-generic-right-sm[disabled] {
-        background: #fff !important;
-        border: 1px solid transparent !important;
-        opacity: 0.35 !important;
-    }
+    } */
 
     .chat-windows-header .chat-header-label span, div.robux-upsell > button > h4 {
         color: #fff;
