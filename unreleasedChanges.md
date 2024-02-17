@@ -18,6 +18,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Dark theme] Planned support for dark theme when 1.2.8 releases.
   - Small roblox icon fix
   - Light theme recommendation fix
+- [Notify] Notify button icon change
 
 ### Find a bug?
 

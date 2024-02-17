@@ -1981,6 +1981,16 @@
         background-image: url(https://images.rbxcdn.com/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg)
     }
 
+    div#game-follow-icon.icon-notifications-bell {
+        background-image: url('https://images.rbxcdn.com/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg');
+        background-position: 0 -250px;
+        
+    }
+    div#game-follow-icon.icon-notifications-bell:hover, div#game-follow-icon.followed.icon-notifications-bell {
+        background-image: url('https://images.rbxcdn.com/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg');
+        background-position: -28px -250px; 
+    }
+
     .light-theme .dialogs .dialog-container .dialog-header
     {
         background-color: #00a2ff;
