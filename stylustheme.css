@@ -1991,6 +1991,10 @@
         background-position: -28px -250px; 
     }
 
+    .dark-theme div#game-follow-icon.icon-notifications-bell {
+        filter: grayscale(1);
+    }
+
     .light-theme .dialogs .dialog-container .dialog-header
     {
         background-color: #00a2ff;
