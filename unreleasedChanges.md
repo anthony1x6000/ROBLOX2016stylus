@@ -1,6 +1,6 @@
 # 1.2.8 Unreleased
 
-## Thanks for 25k installs on Userstyles!!!
+## Thanks for nearly 100k installs on Userstyles!!!
 
 [Quick install](https://github.com/anthony1x6000/ROBLOX2016stylus/raw/downloads/.user.css-installFiles/release.user.css) | You'll get the most recent version of this release with patches and changes.
 [Unreleased install](https://github.com/anthony1x6000/ROBLOX2016stylus/raw/main/devDownloads/roblox2016-preLatest.user.css) | You'll get the most recent in-development version of this release.
