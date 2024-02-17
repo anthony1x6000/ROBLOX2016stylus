@@ -3,7 +3,7 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        02.17.1708133847
+@version        02.17.1708137154
 @license        MIT License
 @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
 ==/UserStyle== */
@@ -1998,6 +1998,10 @@
     div#game-follow-icon.icon-notifications-bell:hover, div#game-follow-icon.followed.icon-notifications-bell {
         background-image: url('https://images.rbxcdn.com/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg');
         background-position: -28px -250px; 
+    }
+
+    .dark-theme div#game-follow-icon.icon-notifications-bell {
+        filter: grayscale(1);
     }
 
     .light-theme .dialogs .dialog-container .dialog-header
