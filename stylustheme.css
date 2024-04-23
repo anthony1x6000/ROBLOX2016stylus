@@ -3674,44 +3674,79 @@
     }
     /* New games interface patch : 001  */
     /* 001 : User Home  */
+        .game-grid.home-game-grid.wide-game-tile-game-grid .hover-game-tile.grid-tile .featured-game-container {
+            max-height: 240px !important;
+        }
+        /*     max-height: 240px !important; */
+        .hover-game-tile.event-tile.focused, .hover-game-tile.grid-tile.focused{
+            padding: 0;
+        }
+        .light-theme .hover-game-tile.focused {
+            background: none;
+        }
 
+        .game-grid.home-game-grid {
+            margin: 0;
+        }
 
-.game-grid.home-game-grid.wide-game-tile-game-grid .hover-game-tile.grid-tile .featured-game-container {
-    max-height: 240px !important;
-}
-/*     max-height: 240px !important; */
-.hover-game-tile.event-tile.focused, .hover-game-tile.grid-tile.focused{
-    padding: 0;
-}
-.light-theme .hover-game-tile.focused {
-    background: none;
-}
+        .game-grid.home-game-grid.wide-game-tile-game-grid .hover-game-tile.event-tile, .game-grid.home-game-grid.wide-game-tile-game-grid .hover-game-tile.grid-tile, 
+        .game-grid.home-game-grid.wide-game-tile-game-grid .hover-game-tile.grid-tile .info-container,
+        div.featured-game-icon-container > span > img,
+        li.focused[data-testid='wide-game-tile'] {
+            width: 230px !important;
+        }
+        div.game-card-container.featured-game-container > a.game-card-link {
+            height: 200px !important;
+        }
+        .hover-game-tile.grid-tile .featured-game-container .info-container {
+            margin-top: 0;
+        }
 
-.game-grid.home-game-grid {
-    margin: 0;
-}
+        div > div.game-card-info {
+            bottom: 12px !important;
+        }
 
-.game-grid.home-game-grid.wide-game-tile-game-grid .hover-game-tile.event-tile, .game-grid.home-game-grid.wide-game-tile-game-grid .hover-game-tile.grid-tile, 
-.game-grid.home-game-grid.wide-game-tile-game-grid .hover-game-tile.grid-tile .info-container,
-div.featured-game-icon-container > span > img,
-li.focused[data-testid='wide-game-tile'] {
-    width: 230px !important;
-}
-div.game-card-container.featured-game-container > a.game-card-link {
-    height: 200px !important;
-}
-.hover-game-tile.grid-tile .featured-game-container .info-container {
-    margin-top: 0;
-}
+        .game-grid.home-game-grid, .game-grid.home-game-grid.wide-game-tile-game-grid {
+            grid-template-columns: repeat(auto-fill,calc((var(--home-feed-width) - 19px* (var(--items-per-row) - 1))/var(--items-per-row)));
+                --items-per-row: 4;
+        }
 
-div > div.game-card-info {
-    bottom: 12px !important;
-}
-
-.game-grid.home-game-grid, .game-grid.home-game-grid.wide-game-tile-game-grid {
-    grid-template-columns: repeat(auto-fill,calc((var(--home-feed-width) - 19px* (var(--items-per-row) - 1))/var(--items-per-row)));
-        --items-per-row: 4;
-}
+    /*  Catalog fixes    */
+        .container-main .catalog-full-screen .catalog-results .item-cards-stackable .item-card, .container-main .splash.catalog-full-screen .catalog-results .item-cards-stackable .item-card {
+            width: 150px;
+            min-width: auto;
+            margin-right: 12px;
+        }
+        .add-to-cart {
+            border-radius: 2px !important;
+            opacity: 0.8;
+            mix-blend-mode: multiply;
+        }
+        .light-theme .topic-container .topic-carousel .unselected-topic, .light-theme .topic-container .topic-carousel .selected-topic,
+        .dark-theme .topic-container .topic-carousel .unselected-topic, .dark-theme .topic-container .topic-carousel .selected-topic {
+            border-radius: 2px;
+            background: white;
+            color: #000;
+            border: solid 0.5px #d4d4d4;
+        }
+        .dark-theme .topic-container .topic-carousel .unselected-topic, .dark-theme .topic-container .topic-carousel .selected-topic {
+            filter: invert(0.85);
+        }
+    /* Game description fixes      */
+        .game-description-container {
+            background: white;
+            margin-top: 60px;
+            padding: 6px;
+        }
+        .game-description-container  *{
+            position: relative;
+        }
+        .container-header {
+            bottom: 53px;
+        }
+        .game-description, .game-age-recommendation-details-container {
+            bottom: 47px;
+        }
 
     /* ROBLOX 2016 Avatar Editor Reconstruct by Mystery Channel (1185261) 
         No License as of 09-18023
