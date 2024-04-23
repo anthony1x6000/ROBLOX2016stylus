@@ -3675,11 +3675,7 @@
     /* New games interface patch : 001  */
     /* 001 : User Home  */
 
-li.focused[data-testid='wide-game-tile'] {
-    width: calc((var(--home-feed-width) - 12px*(var(--items-per-row) - 1))/var(--items-per-row)) !important;
-    height: min-content;
-    max-height: calc((var(--home-feed-width) - 12px*(var(--items-per-row) - 1))/var(--items-per-row)*0.5625 + 61px);
-}
+
 .game-grid.home-game-grid.wide-game-tile-game-grid .hover-game-tile.grid-tile .featured-game-container {
     max-height: 240px !important;
 }
@@ -3689,6 +3685,32 @@ li.focused[data-testid='wide-game-tile'] {
 }
 .light-theme .hover-game-tile.focused {
     background: none;
+}
+
+.game-grid.home-game-grid {
+    margin: 0;
+}
+
+.game-grid.home-game-grid.wide-game-tile-game-grid .hover-game-tile.event-tile, .game-grid.home-game-grid.wide-game-tile-game-grid .hover-game-tile.grid-tile, 
+.game-grid.home-game-grid.wide-game-tile-game-grid .hover-game-tile.grid-tile .info-container,
+div.featured-game-icon-container > span > img,
+li.focused[data-testid='wide-game-tile'] {
+    width: 230px !important;
+}
+div.game-card-container.featured-game-container > a.game-card-link {
+    height: 200px !important;
+}
+.hover-game-tile.grid-tile .featured-game-container .info-container {
+    margin-top: 0;
+}
+
+div > div.game-card-info {
+    bottom: 12px !important;
+}
+
+.game-grid.home-game-grid, .game-grid.home-game-grid.wide-game-tile-game-grid {
+    grid-template-columns: repeat(auto-fill,calc((var(--home-feed-width) - 19px* (var(--items-per-row) - 1))/var(--items-per-row)));
+        --items-per-row: 4;
 }
 
     /* ROBLOX 2016 Avatar Editor Reconstruct by Mystery Channel (1185261) 
