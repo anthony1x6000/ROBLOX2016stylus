@@ -3,7 +3,7 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        04.23.1713835818
+@version        04.23.1713835925
 @license        MIT License
 @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
 ==/UserStyle== */
@@ -3456,7 +3456,7 @@
         width: 100%;
         margin: 0 6px !important;
     }
-    .game-card-container .game-card-name {
+    .builder-font .game-card-container .game-card-name {
         padding: 0 6px !important;
         margin: 6px 0;
         width: 150px;
