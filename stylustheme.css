@@ -19,16 +19,15 @@
     /* latin */
     /*  DISABLE DARK MODE NOTIFIER    */
 
-    div[data-testid='home-page-game-grid'], div.home-interleave-divider {
-        display: var(--noRec);
-    }
-
 
     :root {
         --darkThemeBlue: #324856;
     }
     .dark-theme label.text-label[for='theme-dropdown']::after {
         content: " (Light is recommended.)";
+    }
+    div[data-testid='home-page-game-grid'], div.home-interleave-divider {
+        display: var(--displayRecommended);
     }
 
     @font-face {
