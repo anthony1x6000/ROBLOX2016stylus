@@ -15,6 +15,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 ## Changes/Fixes 
 - [Game page] Aesthetic improvements to the description. Added background. 
 - [Catalog] Changed width to allow for more items at once. Modified 'Add to Cart' Button.
+- [Home] Allow for the hiding of recommended games on home page. 
 
 ### Find a bug?
 
