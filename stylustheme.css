@@ -3747,7 +3747,7 @@
         .game-description-container  *{
             position: relative;
         }
-        .container-header {
+        div.game-description-container > div.container-header {
             bottom: 53px;
         }
         .game-description, .game-age-recommendation-details-container {
