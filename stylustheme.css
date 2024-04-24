@@ -2686,21 +2686,21 @@
 
     /* Messing with the games tab */
 
-
+    .game-card-info .icon-playing-counts-gray {
+        display: none !important;
+    }
     .game-card-info .vote-percentage-label {
         position: relative;
         top: 2.5px;
     }
 
-
     .game-card-info .playing-counts-label {
         position: relative; 
         display: block !important;
         bottom: 25px;
-        right: 2px;
     } 
-    .game-card-info .icon-playing-counts-gray {
-        visibility: hidden;
+    div.profile-container > div > div > div > div > div > ul > li > div > a > div > span.playing-counts-label {
+        right: 0px;
     }
 
     .info-label.vote-percentage-label {
@@ -3753,7 +3753,7 @@
         .game-description, .game-age-recommendation-details-container {
             bottom: 47px;
         }
-
+    
     /* ROBLOX 2016 Avatar Editor Reconstruct by Mystery Channel (1185261) 
         No License as of 09-18023
         https://uso.kkx.one/style/227593 */
