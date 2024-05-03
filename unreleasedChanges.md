@@ -17,6 +17,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Catalog] Changed width to allow for more items at once. Modified 'Add to Cart' Button.
 - [Home] Allow for the hiding of recommended games on home page. 
 - [Profile] Fix positioning of gamecard player count.
+- [Games] Featured game card playing count fix.
 
 ### Find a bug?
 

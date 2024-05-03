@@ -2699,6 +2699,16 @@
         display: block !important;
         bottom: 25px;
     } 
+    a > div > div > div > span.playing-counts-label {
+        bottom: 14px !important;
+    }
+    div > div > div > span.vote-percentage-label {
+        top: 24px !important;
+        position: relative !important;
+    }
+    div > div > div > span.icon-votes-gray {
+        top: 23.5px !important;
+    }
     div.profile-container > div > div > div > div > div > ul > li > div > a > div > span.playing-counts-label {
         right: 0px;
     }
