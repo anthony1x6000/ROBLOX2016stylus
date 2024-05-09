@@ -19,6 +19,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Profile] Fix positioning of gamecard player count.
 - [Games] Featured game card playing count fix.
 - [Home] Increase margin under the parent wide game tiles container.
+- [Home] Remove box-shadow on recommended games on dark-theme.
 
 ### Find a bug?
 

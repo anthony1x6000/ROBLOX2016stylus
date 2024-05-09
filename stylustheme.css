@@ -3696,8 +3696,8 @@
         .hover-game-tile.event-tile.focused, .hover-game-tile.grid-tile.focused{
             padding: 0;
         }
-        .light-theme .hover-game-tile.focused {
-            background: none;
+        .hover-game-tile.focused {
+            background: none !important;
         }
 
         .game-grid.home-game-grid {
