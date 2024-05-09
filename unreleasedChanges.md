@@ -18,6 +18,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Home] Allow for the hiding of recommended games on home page. 
 - [Profile] Fix positioning of gamecard player count.
 - [Games] Featured game card playing count fix.
+- [Home] Increase margin under the parent wide game tiles container.
 
 ### Find a bug?
 

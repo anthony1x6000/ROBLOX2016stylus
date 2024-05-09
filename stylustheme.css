@@ -1,5 +1,4 @@
 @-moz-document domain("web.roblox.com"), domain("www.roblox.com") {
-
 /* Hey! if you see this, check out the Github repository for this!
     https://github.com/anthony1x6000/ROBLOX2016stylus
     You can find the style under releases. Make sure to check out the beta "stylustheme.css."
@@ -3703,6 +3702,10 @@
 
         .game-grid.home-game-grid {
             margin: 0;
+        }
+
+        div.wide-game-tile-game-grid {
+            margin-bottom:  40px !important;
         }
 
         .game-grid.home-game-grid.wide-game-tile-game-grid .hover-game-tile.event-tile, .game-grid.home-game-grid.wide-game-tile-game-grid .hover-game-tile.grid-tile, 
