@@ -2,7 +2,7 @@
 # ROBLOX 2016 Userstyle & helloUser.user.js
 A UserStyle that changes the look of ROBLOX to be more faithful to what it would look like back in 2016.\
 **To install the latest release click [here](https://github.com/anthony1x6000/ROBLOX2016stylus/raw/downloads/.user.css-installFiles/release.user.css).** \
-Find a bug? See if it has been fixed in the **[latest prerelease](https://github.com/anthony1x6000/ROBLOX2016stylus/raw/main/devDownloads/roblox2016-preLatest.user.css).**
+**Find a bug? See if it has been fixed in the [latest prerelease](https://github.com/anthony1x6000/ROBLOX2016stylus/raw/main/devDownloads/roblox2016-preLatest.user.css).**
 ## Dark Theme
 Dark theme is now supported as of the unreleased version and soon to be released userscript version [1.2.8](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/devDownloads/roblox2016-preLatest.user.css). \
 Dark theme support will not be 100% faithful to the 2016 era of Roblox.
