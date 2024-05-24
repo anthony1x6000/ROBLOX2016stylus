@@ -3689,11 +3689,11 @@
     }
     /* New games interface patch : 001  */
     /* 001 : User Home  */
-        .game-grid.home-game-grid.wide-game-tile-game-grid .hover-game-tile.grid-tile .featured-game-container {
+        div.featured-game-container.game-card-container {
             max-height: 240px !important;
         }
         /*     max-height: 240px !important; */
-        .hover-game-tile.event-tile.focused, .hover-game-tile.grid-tile.focused{
+        .hover-game-tile.event-tile.focused, .hover-game-tile.grid-tile.focused {
             padding: 0;
         }
         .hover-game-tile.focused {
@@ -3704,14 +3704,15 @@
             margin: 0;
         }
 
+        div.wide-game-tile-carousel {
+            margin-bottom: 0;
+        }
+
         div.wide-game-tile-game-grid {
             margin-bottom:  40px !important;
         }
 
-        .game-grid.home-game-grid.wide-game-tile-game-grid .hover-game-tile.event-tile, .game-grid.home-game-grid.wide-game-tile-game-grid .hover-game-tile.grid-tile, 
-        .game-grid.home-game-grid.wide-game-tile-game-grid .hover-game-tile.grid-tile .info-container,
-        div.featured-game-icon-container > span > img,
-        li.focused[data-testid='wide-game-tile'] {
+        div.featured-game-container.game-card-container, div.featured-game-icon-container > span.brief-game-icon > img {
             width: 230px !important;
         }
         div.game-card-container.featured-game-container > a.game-card-link {

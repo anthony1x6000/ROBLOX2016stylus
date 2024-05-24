@@ -20,6 +20,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Games] Featured game card playing count fix.
 - [Home] Increase margin under the parent wide game tiles container.
 - [Home] Remove box-shadow on recommended games on dark-theme.
+- [Home] Fix event wide games on homepage. 
 
 ### Find a bug?
 
