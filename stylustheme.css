@@ -3779,4 +3779,8 @@
         position: relative;
         z-index: 999;
     }
+    /* messsage back icon fix */
+    .messages-container .success-block .navigationsuccess a .icon-left {
+        background-position: 0 -420px !important;
+    }
 }
