@@ -14,13 +14,16 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 
 ## Changes/Fixes 
 - [Game page] Aesthetic improvements to the description. Added background. 
-- [Catalog] Changed width to allow for more items at once. Modified 'Add to Cart' Button.
-- [Home] Allow for the hiding of recommended games on home page. 
+- [Catalog] Changed width to allow for more items at once. Modified the 'Add to Cart' Button.
+- [Home] Allow for hiding recommended games on the home page. 
 - [Profile] Fix positioning of gamecard player count.
 - [Games] Featured game card playing count fix.
-- [Home] Increase margin under the parent wide game tiles container.
+- [Home] Increase margin under the parent of the wide game tiles container.
 - [Home] Remove box-shadow on recommended games on dark-theme.
-- [Home] Fix event wide games on homepage. 
+- [Home] Fix event-wide games on the homepage. 
+- [Home] Fixed game tile shadow cut-off,
+- [Home] Fixed recommended games rating alignment.  
+- [Home] "Today's Picks" description alignment
 
 ### Find a bug?
 
