@@ -3707,17 +3707,27 @@
         div.wide-game-tile-carousel {
             margin-bottom: 0;
         }
+        .game-carousel.expand-home-content-disabled {
+            margin-bottom: 0;
+        }
 
         div.wide-game-tile-game-grid {
             margin-bottom:  40px !important;
         }
 
+        div.info-container > div.wide-game-tile-metadata > div > div.game-card-info[data-testid='game-tile-stats-text-footer'] {
+            padding-top: 16px;
+            padding-left: 3px;
+        }
+
         div.featured-game-container.game-card-container, div.featured-game-icon-container > span.brief-game-icon > img {
             width: 230px !important;
         }
+
         div.game-card-container.featured-game-container > a.game-card-link {
             height: 200px !important;
         }
+
         .hover-game-tile.grid-tile .featured-game-container .info-container {
             margin-top: 0;
         }
