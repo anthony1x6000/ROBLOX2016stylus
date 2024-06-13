@@ -3,7 +3,7 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        06.13.1718296093
+@version        06.13.1718296533
 @license        MIT License
 @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
 @var select displayRecommended 'displayRecommended' ['block:Visible', 'none:Hidden']
@@ -3728,6 +3728,7 @@
 
         div.wide-game-tile-metadata > div > div > span.info-label.icon-votes-gray {
             margin-top: 23px;
+            margin-left: 3px;
         }
 
         div.info-container > div.wide-game-tile-metadata > div > div.game-card-info[data-testid='game-tile-stats-text-footer'] {
