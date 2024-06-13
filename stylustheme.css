@@ -3718,6 +3718,7 @@
 
         div.wide-game-tile-metadata > div > div > span.info-label.icon-votes-gray {
             margin-top: 23px;
+            margin-left: 3px;
         }
 
         div.info-container > div.wide-game-tile-metadata > div > div.game-card-info[data-testid='game-tile-stats-text-footer'] {
