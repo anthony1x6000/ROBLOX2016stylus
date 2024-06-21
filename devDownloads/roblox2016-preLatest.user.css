@@ -3,7 +3,7 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        06.21.1718944220
+@version        06.21.1719003925
 @license        MIT License
 @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
 @var select displayRecommended 'displayRecommended' ['block:Visible', 'none:Hidden']
@@ -2040,18 +2040,18 @@
         background-color: #fff;
     }
 
-
-
-
-
     .light-theme .game-card-container {
         background-color: #fff;
     }
-    .dark-theme .game-card-container {
+    .dark-theme .game-card-container, .dark-theme .hover-game-tile.focused.old-hover .featured-game-container {
         background-color: #2d2d2d87;
     }
 
-
+    .dark-theme div.home-friends > div.people-list {
+        padding-top: 10px;
+        background-color: #0000001f;
+        box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
+    }
 
     .light-theme .btn-control-sm
     {
@@ -2721,15 +2721,24 @@
 
     .info-label.vote-percentage-label {
         top: 12px;
-
     }
 
     .info-label.icon-votes-gray {
         position: relative;
         top: 10px;
-
     }
 
+    .featured-grid-item-container .icon-votes-gray {
+        top: 20px;
+    }
+
+    .featured-grid-item-container .vote-percentage-label {
+        top: 22px;
+    }
+    
+    .featured-grid-item-container .game-card-name-info > div {
+        margin-top: 4px !important;
+    }
 
     /* --------------- */ 
     /* side bar tab thing */
