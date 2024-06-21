@@ -25,6 +25,8 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Home] Fixed recommended games rating alignment.  
 - [Home] "Today's Picks" description alignment
 - [Home] Fixed superwide homepage. 
+- [Home] Made dark-mode wide game tiles look better.
+- [Home] Made dark-mode friends list header look better. 
 
 ### Find a bug?
 

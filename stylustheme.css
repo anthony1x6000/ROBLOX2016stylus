@@ -2030,18 +2030,18 @@
         background-color: #fff;
     }
 
-
-
-
-
     .light-theme .game-card-container {
         background-color: #fff;
     }
-    .dark-theme .game-card-container {
+    .dark-theme .game-card-container, .dark-theme .hover-game-tile.focused.old-hover .featured-game-container {
         background-color: #2d2d2d87;
     }
 
-
+    .dark-theme div.home-friends > div.people-list {
+        padding-top: 10px;
+        background-color: #0000001f;
+        box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
+    }
 
     .light-theme .btn-control-sm
     {
