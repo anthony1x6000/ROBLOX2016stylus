@@ -2711,15 +2711,24 @@
 
     .info-label.vote-percentage-label {
         top: 12px;
-
     }
 
     .info-label.icon-votes-gray {
         position: relative;
         top: 10px;
-
     }
 
+    .featured-grid-item-container .icon-votes-gray {
+        top: 20px;
+    }
+
+    .featured-grid-item-container .vote-percentage-label {
+        top: 22px;
+    }
+    
+    .featured-grid-item-container .game-card-name-info > div {
+        margin-top: 4px !important;
+    }
 
     /* --------------- */ 
     /* side bar tab thing */
