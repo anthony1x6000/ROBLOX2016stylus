@@ -24,7 +24,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Home] Fixed game tile shadow cut-off,
 - [Home] Fixed recommended games rating alignment.  
 - [Home] "Today's Picks" description alignment
-- [Home] Working on fixing the super wide homepage again. I may put custom advertisements haha. Just kidding. Maybe.
+- [Home] Fixed superwide homepage. 
 
 ### Find a bug?
 

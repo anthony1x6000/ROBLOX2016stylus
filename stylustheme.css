@@ -2701,10 +2701,7 @@
     a > div > div > div > span.playing-counts-label {
         bottom: 14px !important;
     }
-    div > div > div > span.vote-percentage-label {
-        top: 24px !important;
-        position: relative !important;
-    }
+
 /*     div > div > div > span.icon-votes-gray {
         top: 23.5px !important;
     } */
@@ -3690,9 +3687,20 @@
     /* New games interface patch : 001  */
     /* 001 : User Home  */
 
+        div.wide-game-tile-metadata > div > div > span.info-label.icon-votes-gray {
+            margin: 3px 0 0 3px;
+        }
 
-        div.game-home-page-container  { 
-            width: 67%;
+        div > div > div > span.vote-percentage-label {
+            position: relative !important;
+        }
+
+        div.wide-game-tile-metadata > div > div > span.info-label{
+            padding: 19px 0 0 3px;
+        }
+
+        .home-container.expand-max-width { 
+            max-width: 67%;
             padding-right: 3%;
         }
 
@@ -3740,10 +3748,7 @@
             margin-bottom:  40px !important;
         }
 
-        div.wide-game-tile-metadata > div > div > span.info-label.icon-votes-gray {
-            margin-top: 23px;
-            margin-left: 3px;
-        }
+
 
         div.info-container > div.wide-game-tile-metadata > div > div.game-card-info[data-testid='game-tile-stats-text-footer'] {
             padding-top: 16px;
