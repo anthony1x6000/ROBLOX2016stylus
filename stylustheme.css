@@ -3689,13 +3689,37 @@
     }
     /* New games interface patch : 001  */
     /* 001 : User Home  */
+
+
+        div.game-home-page-container  { 
+            width: 67%;
+            padding-right: 3%;
+        }
+
+        .featured-game-container.game-card-container {
+            transition: none !important;
+        }
+
+        .hover-game-tile.event-tile.focused.old-hover, .hover-game-tile.grid-tile.focused.old-hover {
+            padding: 0;
+        }
+
+        .game-grid.expand-home-content, .game-carousel.expand-home-content {
+            grid-column-gap: 10px !important;
+        }
+
+        .game-carousel.expand-home-content {
+            margin-bottom: 0;
+        }
+
         div.featured-game-container.game-card-container {
             max-height: 240px !important;
         }
-        /*     max-height: 240px !important; */
+
         .hover-game-tile.event-tile.focused, .hover-game-tile.grid-tile.focused {
             padding: 0;
         }
+
         .hover-game-tile.focused {
             background: none !important;
         }
