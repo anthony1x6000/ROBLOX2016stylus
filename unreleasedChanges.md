@@ -28,6 +28,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Home] Made dark-mode wide game tiles look better.
 - [Home] Made dark-mode friends list header look better. 
 - [Search] Fix player and vote count positioning on featured games when searching.
+- [Settings] Optional visibility for credit
 
 ### Find a bug?
 

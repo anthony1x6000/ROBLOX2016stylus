@@ -610,6 +610,11 @@
     }
     /*robux patch      */
     /* Some moved to image patch section */
+        
+    /* Remove nav-credit display */
+    .nav-credit {
+        display: var(--creditVis) !important;
+    }
 
     .light-theme .icon-default-economy-28x28, .light-theme .icon-robux-28x28, .light-theme .icon-robux-gold-28x28, .light-theme .icon-robux-white {
     /*     background-image: url(https://svgur.com/i/GuZ.svg); */
