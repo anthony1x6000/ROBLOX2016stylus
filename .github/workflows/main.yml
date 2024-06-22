@@ -30,6 +30,7 @@ jobs:
         @license        MIT License
         @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
         @var select displayRecommended 'displayRecommended' ['block:Visible', 'none:Hidden']
+        @var select creditVis 'Hide credit on nav bar?' ['block:Visible', 'none:Hidden']
         ==/UserStyle== */" > header.txt
         cat header.txt stylustheme.css > roblox2016-pre$CUR_DATE.user.css
     - name: Set user identity
