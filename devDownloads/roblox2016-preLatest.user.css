@@ -7,6 +7,7 @@
 @license        MIT License
 @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
 @var select displayRecommended 'displayRecommended' ['block:Visible', 'none:Hidden']
+@var select creditVis 'Hide credit on nav bar?' ['block:Visible', 'none:Hidden']
 ==/UserStyle== */
 @-moz-document domain("web.roblox.com"), domain("www.roblox.com") {
 /* Hey! if you see this, check out the Github repository for this!
@@ -620,6 +621,11 @@
     }
     /*robux patch      */
     /* Some moved to image patch section */
+
+    /* Remove nav-credit display */
+    .nav-credit {
+        display: var(--creditVis) !important;
+    }
 
     .light-theme .icon-default-economy-28x28, .light-theme .icon-robux-28x28, .light-theme .icon-robux-gold-28x28, .light-theme .icon-robux-white {
     /*     background-image: url(https://svgur.com/i/GuZ.svg); */
