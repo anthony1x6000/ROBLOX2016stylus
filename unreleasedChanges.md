@@ -1,4 +1,4 @@
-# 1.3.0 Unreleased
+# 1.3.1 Unreleased
 
 ## Thanks for nearly 100k installs on Userstyles!!!
 ![image](https://github.com/anthony1x6000/ROBLOX2016stylus/assets/33004321/0560ce22-209c-4df2-90fa-b61dda473597)
@@ -13,22 +13,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 [**HELLO, [USER]**](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/helloUser.user.js) - I probably should have announced this a while ago, but I made a [Userscript](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/helloUser.user.js) that **brings back the Hello, User stuff on the home page**. Go check it out! Works with and without the Roblox 2016 style.
 
 ## Changes/Fixes 
-- [Game page] Aesthetic improvements to the description. Added background. 
-- [Catalog] Changed width to allow for more items at once. Modified the 'Add to Cart' Button.
-- [Home] Allow for hiding recommended games on the home page. 
-- [Profile] Fix positioning of gamecard player count.
-- [Games] Featured game card playing count fix.
-- [Home] Increase margin under the parent of the wide game tiles container.
-- [Home] Remove box-shadow on recommended games on dark-theme.
-- [Home] Fix event-wide games on the homepage. 
-- [Home] Fixed game tile shadow cut-off,
-- [Home] Fixed recommended games rating alignment.  
-- [Home] "Today's Picks" description alignment
-- [Home] Fixed superwide homepage. 
-- [Home] Made dark-mode wide game tiles look better.
-- [Home] Made dark-mode friends list header look better. 
-- [Search] Fix player and vote count positioning on featured games when searching.
-- [Settings] Optional visibility for credit
+- [] 
 
 ### Find a bug?
 
