@@ -30,6 +30,8 @@ jobs:
         @version        $TAG_NUMBER
         @license        MIT License
         @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
+        @var select displayRecommended 'displayRecommended' ['block:Visible', 'none:Hidden']
+        @var select creditVis 'Hide credit on nav bar?' ['block:Visible', 'none:Hidden']
         ==/UserStyle== */" > header.txt
         cat header.txt stylustheme.css > $TAG_NUMBER.user.css
         cp $TAG_NUMBER.user.css release.user.css
