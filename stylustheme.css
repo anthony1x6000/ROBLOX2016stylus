@@ -3695,7 +3695,7 @@
     .dark-theme #autocomplete-list {
         background: rgba(35, 37, 39, .81);
     }
-    #nav-credit-icon {
+    .light-theme #nav-credit-icon {
         filter: invert(1);
     }
     /* New games interface patch : 001  */
