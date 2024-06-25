@@ -611,11 +611,6 @@
     }
     /*robux patch      */
     /* Some moved to image patch section */
-        
-    /* Remove nav-credit display */
-    .nav-credit {
-        display: var(--creditVis) !important;
-    }
 
     .light-theme .icon-default-economy-28x28, .light-theme .icon-robux-28x28, .light-theme .icon-robux-gold-28x28, .light-theme .icon-robux-white {
     /*     background-image: url(https://svgur.com/i/GuZ.svg); */
@@ -3468,6 +3463,7 @@
         background-image: url(https://images.rbxcdn.com/153fd3209692232cd8087cad74a669b0-games.svg);
         background-position: 0 -351px;
     }
+
     .game-card-info {
         position: absolute;
         bottom: auto !important;
@@ -3696,7 +3692,7 @@
     .dark-theme #autocomplete-list {
         background: rgba(35, 37, 39, .81);
     }
-    .light-theme #nav-credit-icon {
+    #nav-credit-icon {
         filter: invert(1);
     }
     /* New games interface patch : 001  */
@@ -3730,16 +3726,40 @@
         .game-grid.expand-home-content, .game-carousel.expand-home-content {
             grid-column-gap: 10px !important;
         }
-
-        .game-carousel.expand-home-content {
-            margin-bottom: 0;
+        div.wide-game-tile-carousel {
+            margin-bottom: 0 !important;
+/*             remove bottom margin under todays picks */
+        }
+        
+/*card widths and heights  */
+/*         .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile.focused, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile.focused {
+            width: 100%;
+            max-height: 800px;
+        } */
+        li.event-tile > div.featured-game-container.game-card-container {
+            height: 13em !important;
+            max-height: 13em !important;
+            overflow: hidden;
+        }
+        div.expand-home-content > li.focused {
+            width: 100% !important;
+            max-width: 100% !important;
+        } 
+        div.wide-game-tile-game-grid.home-game-grid > li > div.featured-game-container {
+/*             height: 200px !important; */
+            height: 13em !important; 
+            max-height: 13em !important;
+            overflow: hidden;
+        }
+        .game-grid.home-game-grid.expand-home-content {
+            margin-bottom: 45px;
+        }
+        div.wide-game-tile-metadata > div > div > span.icon-votes-gray {
+            background-size: 32.03px auto !important;
         }
 
-        div.featured-game-container.game-card-container {
-            max-height: 240px !important;
-        }
 
-        .hover-game-tile.event-tile.focused, .hover-game-tile.grid-tile.focused {
+.hover-game-tile.event-tile.focused, .hover-game-tile.grid-tile.focused {
             padding: 0;
         }
 
@@ -3759,9 +3779,6 @@
             overflow: visible;
         }
 
-        div.wide-game-tile-game-grid {
-            margin-bottom:  40px !important;
-        }
 
 
 
@@ -3770,13 +3787,6 @@
             padding-left: 3px;
         }
 
-        div.featured-game-container.game-card-container, div.featured-game-icon-container > span.brief-game-icon > img {
-            width: 230px !important;
-        }
-
-        div.game-card-container.featured-game-container > a.game-card-link {
-            height: 200px !important;
-        }
 
         .hover-game-tile.grid-tile .featured-game-container .info-container {
             margin-top: 0;
