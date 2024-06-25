@@ -3,7 +3,7 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        06.25.1719332659
+@version        06.25.1719337929
 @license        MIT License
 @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
 @var select displayRecommended 'displayRecommended' ['block:Visible', 'none:Hidden']
@@ -612,9 +612,6 @@
         content: "!";
     }
 
-
-
-
     #nav-robux-icon .icon-robux-28x28
     {
         background-position: 0 -28px;
@@ -622,6 +619,11 @@
     }
     /*robux patch      */
     /* Some moved to image patch section */
+
+    /* Remove nav-credit display */
+    .nav-credit {
+        display: var(--creditVis) !important;
+    }
 
     .light-theme .icon-default-economy-28x28, .light-theme .icon-robux-28x28, .light-theme .icon-robux-gold-28x28, .light-theme .icon-robux-white {
     /*     background-image: url(https://svgur.com/i/GuZ.svg); */
@@ -3279,9 +3281,9 @@
         .game-card-container {
             height: 240px;
         }
-        .game-carousel {
+/*         .game-carousel {
             height: 240px;
-        }
+        } */
     /* End of STATIC gamecards
     For expanding gamecards see addon on GitHub: anthony1x6000/ROBLOX2016stylus */ 
     /* View Details hover over player */
@@ -3473,6 +3475,9 @@
     .light-theme .game-card-info .info-label.icon-votes-gray {
         background-image: url(https://images.rbxcdn.com/153fd3209692232cd8087cad74a669b0-games.svg);
         background-position: 0 -351px;
+    }
+    .light-theme li[data-testid='wide-game-tile'] .game-card-info .info-label.icon-votes-gray {
+        background-size: 32.05px auto;
     }
 
     .game-card-info {
@@ -3703,11 +3708,46 @@
     .dark-theme #autocomplete-list {
         background: rgba(35, 37, 39, .81);
     }
-    #nav-credit-icon {
+    .light-theme #nav-credit-icon {
         filter: invert(1);
     }
     /* New games interface patch : 001  */
     /* 001 : User Home  */
+
+
+
+        @media (max-width: 767px) {
+            .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile, 
+            .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile.focused, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile.focused{
+                width: calc((717px - 16px*(var(--items-per-row) - 1))/var(--items-per-row)) !important;
+            }
+            .home-container.expand-max-width { 
+                max-width: 100% !important;
+                padding-right: 0% !important;
+            }
+
+        }
+        .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.expand-home-content .hover-game-tile.event-tile.focused, .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.expand-home-content .hover-game-tile.grid-tile.focused,
+        .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile.focused, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile.focused {
+            width: calc((var(--home-feed-width) - 1px - 16px*(var(--items-per-row) - 1))/var(--items-per-row) + 0px);
+        }
+        .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile,
+        .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile.focused, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile.focused{
+            width: calc((var(--home-feed-width) - 1px - 16px*(var(--items-per-row) - 1))/var(--items-per-row));
+        }
+        .home-container.expand-max-width { 
+            max-width: 67%;
+/*             background: #ff000057; */
+        }
+
+        .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile .featured-game-container, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile .featured-game-container, 
+        .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.expand-home-content .hover-game-tile.event-tile .featured-game-container, .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.expand-home-content .hover-game-tile.grid-tile .featured-game-container {
+            height: calc((var(--home-feed-width) - 1px - 16px*(var(--items-per-row) - 1))/var(--items-per-row)*0.5625 + 61px);
+        }
+        .hover-game-tile.event-tile .featured-game-container .featured-game-icon-container, 
+        .hover-game-tile.event-tile, .hover-game-tile.grid-tile{
+            transition: none !important;
+        }
 
         div.wide-game-tile-metadata > div > div > span.info-label.icon-votes-gray {
             margin: 3px 0 0 3px;
@@ -3721,59 +3761,19 @@
             padding: 19px 0 0 3px;
         }
 
-        .home-container.expand-max-width { 
-            max-width: 67%;
-            padding-right: 3%;
-        }
 
-        .featured-game-container.game-card-container {
-            transition: none !important;
-        }
 
         .hover-game-tile.event-tile.focused.old-hover, .hover-game-tile.grid-tile.focused.old-hover {
             padding: 0;
+/*             prevents card from moving */
         }
 
-        .game-grid.expand-home-content, .game-carousel.expand-home-content {
-            grid-column-gap: 10px !important;
+        div.game-home-page-container > div > div.game-carousel{
+            grid-template-columns: repeat(auto-fill, 150px);
+            grid-column-gap: 0.9em;
         }
-        div.wide-game-tile-carousel {
-            margin-bottom: 0 !important;
-/*             remove bottom margin under todays picks */
-        }
+
         
-/*card widths and heights  */
-/*         .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile.focused, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile.focused {
-            width: 100%;
-            max-height: 800px;
-        } */
-        li.event-tile > div.featured-game-container.game-card-container {
-            height: 13em !important;
-            max-height: 13em !important;
-            overflow: hidden;
-        }
-        div.expand-home-content > li.focused {
-            width: 100% !important;
-            max-width: 100% !important;
-        } 
-        div.wide-game-tile-game-grid.home-game-grid > li > div.featured-game-container {
-/*             height: 200px !important; */
-            height: 13em !important; 
-            max-height: 13em !important;
-            overflow: hidden;
-        }
-        .game-grid.home-game-grid.expand-home-content {
-            margin-bottom: 45px;
-        }
-        div.wide-game-tile-metadata > div > div > span.icon-votes-gray {
-            background-size: 32.03px auto !important;
-        }
-
-
-.hover-game-tile.event-tile.focused, .hover-game-tile.grid-tile.focused {
-            padding: 0;
-        }
-
         .hover-game-tile.focused {
             background: none !important;
         }
@@ -3789,9 +3789,6 @@
             margin-bottom: 0;
             overflow: visible;
         }
-
-
-
 
         div.info-container > div.wide-game-tile-metadata > div > div.game-card-info[data-testid='game-tile-stats-text-footer'] {
             padding-top: 16px;
@@ -3810,6 +3807,10 @@
         .game-grid.home-game-grid, .game-grid.home-game-grid.wide-game-tile-game-grid {
             grid-template-columns: repeat(auto-fill,calc((var(--home-feed-width) - 19px* (var(--items-per-row) - 1))/var(--items-per-row)));
                 --items-per-row: 4;
+        }
+        .game-home-page-container .see-all-link-icon {
+            position: relative;
+            left: 1em;
         }
 
     /*  Catalog fixes    */
