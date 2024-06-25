@@ -31,7 +31,7 @@ jobs:
         @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
         @var select displayRecommended 'Display Recommended Games at home?' ['block:Visible', 'none:Hidden']
         @var select creditVis 'Hide credit on nav bar?' ['block:Visible', 'none:Hidden']
-        @var select iconPadding 'Use 2016 icon padding?' ['9px 6px 6px 6px', '0:No']
+        @var select iconPadding 'Use 2016 icon padding?' ['0:No', '9px 6px 6px 6px']
         ==/UserStyle== */" > header.txt
         cat header.txt stylustheme.css > roblox2016-pre$CUR_DATE.user.css
     - name: Set user identity
