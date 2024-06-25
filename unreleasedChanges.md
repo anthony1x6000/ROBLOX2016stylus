@@ -13,7 +13,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 [**HELLO, [USER]**](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/helloUser.user.js) - I probably should have announced this a while ago, but I made a [Userscript](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/helloUser.user.js) that **brings back the Hello, User stuff on the home page**. Go check it out! Works with and without the Roblox 2016 style.
 
 ## Changes/Fixes 
-- [] 
+- [Icon padding] Optional 2016 icon padding. You will see why it will be optional.
 
 ### Find a bug?
 
