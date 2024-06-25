@@ -3,12 +3,12 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        06.25.1719339065
+@version        06.25.1719340486
 @license        MIT License
 @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
 @var select displayRecommended 'Display Recommended Games at home?' ['block:Visible', 'none:Hidden']
 @var select creditVis 'Hide credit on nav bar?' ['block:Visible', 'none:Hidden']
-@var select iconPadding 'Use 2016 icon padding?' ['9px 6px 6px 6px:Yes', '0:No']
+@var select iconPadding 'Use 2016 icon padding?' ['9px 6px 6px 6px', '0:No']
 ==/UserStyle== */
 @-moz-document domain("web.roblox.com"), domain("www.roblox.com") {
 /* Hey! if you see this, check out the Github repository for this!
@@ -411,9 +411,7 @@
         border-radius: 3px 3px 0 0;
 /*         padding: 6px; */
     }
-    .thumbnail-2d-container img {
-    /*     width: 95%; */
-    /*     height: 95%; */
+    span.thumbnail-2d-container.game-card-thumb-container > img, div.featured-game-icon-container > span > img {
         padding: var(--iconPadding);
     }
     .game-card-container thumbnail-2d .game-card-thumb, .game-card-thumb-container .game-card-thumb {
@@ -3816,7 +3814,6 @@
 
         .game-grid.home-game-grid, .game-grid.home-game-grid.wide-game-tile-game-grid {
             grid-template-columns: repeat(auto-fill,calc((var(--home-feed-width) - 19px* (var(--items-per-row) - 1))/var(--items-per-row)));
-                --items-per-row: 4;
         }
         .game-home-page-container .see-all-link-icon {
             position: relative;
