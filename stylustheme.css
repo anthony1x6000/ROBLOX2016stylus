@@ -601,9 +601,6 @@
         content: "!";
     }
 
-
-
-
     #nav-robux-icon .icon-robux-28x28
     {
         background-position: 0 -28px;
@@ -611,7 +608,7 @@
     }
     /*robux patch      */
     /* Some moved to image patch section */
-        
+
     /* Remove nav-credit display */
     .nav-credit {
         display: var(--creditVis) !important;
@@ -3273,9 +3270,9 @@
         .game-card-container {
             height: 240px;
         }
-        .game-carousel {
+/*         .game-carousel {
             height: 240px;
-        }
+        } */
     /* End of STATIC gamecards
     For expanding gamecards see addon on GitHub: anthony1x6000/ROBLOX2016stylus */ 
     /* View Details hover over player */
@@ -3468,6 +3465,10 @@
         background-image: url(https://images.rbxcdn.com/153fd3209692232cd8087cad74a669b0-games.svg);
         background-position: 0 -351px;
     }
+    .light-theme li[data-testid='wide-game-tile'] .game-card-info .info-label.icon-votes-gray {
+        background-size: 32.05px auto;
+    }
+
     .game-card-info {
         position: absolute;
         bottom: auto !important;
@@ -3702,6 +3703,41 @@
     /* New games interface patch : 001  */
     /* 001 : User Home  */
 
+
+
+        @media (max-width: 767px) {
+            .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile, 
+            .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile.focused, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile.focused{
+                width: calc((717px - 16px*(var(--items-per-row) - 1))/var(--items-per-row)) !important;
+            }
+            .home-container.expand-max-width { 
+                max-width: 100% !important;
+                padding-right: 0% !important;
+            }
+
+        }
+        .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.expand-home-content .hover-game-tile.event-tile.focused, .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.expand-home-content .hover-game-tile.grid-tile.focused,
+        .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile.focused, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile.focused {
+            width: calc((var(--home-feed-width) - 1px - 16px*(var(--items-per-row) - 1))/var(--items-per-row) + 0px);
+        }
+        .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile,
+        .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile.focused, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile.focused{
+            width: calc((var(--home-feed-width) - 1px - 16px*(var(--items-per-row) - 1))/var(--items-per-row));
+        }
+        .home-container.expand-max-width { 
+            max-width: 67%;
+/*             background: #ff000057; */
+        }
+
+        .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile .featured-game-container, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile .featured-game-container, 
+        .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.expand-home-content .hover-game-tile.event-tile .featured-game-container, .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.expand-home-content .hover-game-tile.grid-tile .featured-game-container {
+            height: calc((var(--home-feed-width) - 1px - 16px*(var(--items-per-row) - 1))/var(--items-per-row)*0.5625 + 61px);
+        }
+        .hover-game-tile.event-tile .featured-game-container .featured-game-icon-container, 
+        .hover-game-tile.event-tile, .hover-game-tile.grid-tile{
+            transition: none !important;
+        }
+
         div.wide-game-tile-metadata > div > div > span.info-label.icon-votes-gray {
             margin: 3px 0 0 3px;
         }
@@ -3714,35 +3750,19 @@
             padding: 19px 0 0 3px;
         }
 
-        .home-container.expand-max-width { 
-            max-width: 67%;
-            padding-right: 3%;
-        }
 
-        .featured-game-container.game-card-container {
-            transition: none !important;
-        }
 
         .hover-game-tile.event-tile.focused.old-hover, .hover-game-tile.grid-tile.focused.old-hover {
             padding: 0;
+/*             prevents card from moving */
         }
 
-        .game-grid.expand-home-content, .game-carousel.expand-home-content {
-            grid-column-gap: 10px !important;
+        div.game-home-page-container > div > div.game-carousel{
+            grid-template-columns: repeat(auto-fill, 150px);
+            grid-column-gap: 0.9em;
         }
 
-        .game-carousel.expand-home-content {
-            margin-bottom: 0;
-        }
-
-        div.featured-game-container.game-card-container {
-            max-height: 240px !important;
-        }
-
-        .hover-game-tile.event-tile.focused, .hover-game-tile.grid-tile.focused {
-            padding: 0;
-        }
-
+        
         .hover-game-tile.focused {
             background: none !important;
         }
@@ -3759,24 +3779,11 @@
             overflow: visible;
         }
 
-        div.wide-game-tile-game-grid {
-            margin-bottom:  40px !important;
-        }
-
-
-
         div.info-container > div.wide-game-tile-metadata > div > div.game-card-info[data-testid='game-tile-stats-text-footer'] {
             padding-top: 16px;
             padding-left: 3px;
         }
 
-        div.featured-game-container.game-card-container, div.featured-game-icon-container > span.brief-game-icon > img {
-            width: 230px !important;
-        }
-
-        div.game-card-container.featured-game-container > a.game-card-link {
-            height: 200px !important;
-        }
 
         .hover-game-tile.grid-tile .featured-game-container .info-container {
             margin-top: 0;
@@ -3789,6 +3796,10 @@
         .game-grid.home-game-grid, .game-grid.home-game-grid.wide-game-tile-game-grid {
             grid-template-columns: repeat(auto-fill,calc((var(--home-feed-width) - 19px* (var(--items-per-row) - 1))/var(--items-per-row)));
                 --items-per-row: 4;
+        }
+        .game-home-page-container .see-all-link-icon {
+            position: relative;
+            left: 1em;
         }
 
     /*  Catalog fixes    */
