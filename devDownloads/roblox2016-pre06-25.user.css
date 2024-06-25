@@ -3,11 +3,12 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        06.25.1719337929
+@version        06.25.1719339065
 @license        MIT License
 @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
-@var select displayRecommended 'displayRecommended' ['block:Visible', 'none:Hidden']
+@var select displayRecommended 'Display Recommended Games at home?' ['block:Visible', 'none:Hidden']
 @var select creditVis 'Hide credit on nav bar?' ['block:Visible', 'none:Hidden']
+@var select iconPadding 'Use 2016 icon padding?' ['9px 6px 6px 6px:Yes', '0:No']
 ==/UserStyle== */
 @-moz-document domain("web.roblox.com"), domain("www.roblox.com") {
 /* Hey! if you see this, check out the Github repository for this!
@@ -405,9 +406,18 @@
 
     .game-card-container thumbnail-2d, .game-card-thumb-container {
         height: 150px;
-        width: 150px;
+        width: 100%;
         display: inline-block;
         border-radius: 3px 3px 0 0;
+/*         padding: 6px; */
+    }
+    .thumbnail-2d-container img {
+    /*     width: 95%; */
+    /*     height: 95%; */
+        padding: var(--iconPadding);
+    }
+    .game-card-container thumbnail-2d .game-card-thumb, .game-card-thumb-container .game-card-thumb {
+        width: 100%;
     }
 
     .avatar.avatar-card-fullbody .avatar-status {
@@ -1530,7 +1540,15 @@
         margin: 0 auto;
         padding: 0;
         text-align: left;
-        width: 100%;
+        width: 152px;
+        box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
+        transition: box-shadow 70ms ease;
+    }
+    .game-card-container:hover {
+        box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.75);
+    }
+    .game-tile-list .game-tile .game-card-container {
+        width: 152px;
     }
 
 
@@ -1556,14 +1574,8 @@
     }
 
     /* game tile shadows */ 
-    .game-card-container {
-        box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
-        transition: box-shadow 70ms ease;
-    }
-    .game-card-container:hover {
-        box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.75);
 
-    }
+
         /* Took a while to scout these rules out. */
         /* .light-theme .hover-game-tile.visible-tile:hover .featured-game-container {
             box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.60);
@@ -1679,9 +1691,7 @@
 
     /* Stuff for my browser that hopefully won't mess something up */ 
 
-    .grid-item-container.game-card-container {
-        width: 150px;
-    } /* cant seem to close the gap between the game cards 
+    /* cant seem to close the gap between the game cards 
     https://i.ibb.co/NVQQkd6/image.png
     Got any ideas? (I tried margin-... w/ !important and it didnt work)
     */
@@ -1750,7 +1760,7 @@
         z-index: 2 !important;
         left: 0px;
         background-color: #fff;
-        width: 101%;
+        width: 100%;
     }
 
     /* removed this
@@ -3489,7 +3499,7 @@
     .builder-font .game-card-container .game-card-name {
         padding: 0 6px !important;
         margin: 6px 0;
-        width: 150px;
+        width: 100%;
         margin-top: 2px !important;
         font-weight: 300;
     }
@@ -3520,7 +3530,6 @@
         position: relative;
     } */
     .hover-game-tile.focused {
-        width: 150px;    
         margin: 0 14px 0 0 !important;
     }
     .hover-game-tile.focused .featured-game-container .info-container {
@@ -3769,9 +3778,10 @@
         }
 
         div.game-home-page-container > div > div.game-carousel{
-            grid-template-columns: repeat(auto-fill, 150px);
+            grid-template-columns: repeat(auto-fill, 152px);
             grid-column-gap: 0.9em;
         }
+
 
         
         .hover-game-tile.focused {
