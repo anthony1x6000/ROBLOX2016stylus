@@ -32,7 +32,7 @@ jobs:
         @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
         @var select displayRecommended 'displayRecommended' ['block:Visible', 'none:Hidden']
         @var select creditVis 'Hide credit on nav bar?' ['block:Visible', 'none:Hidden']
-        @var select iconPadding 'Use 2016 icon padding?' ['9px 6px 6px 6px:Yes', '0:No']
+        @var select iconPadding 'Use 2016 icon padding?' ['9px 6px 6px 6px', '0:No']
         ==/UserStyle== */" > header.txt
         cat header.txt stylustheme.css > $TAG_NUMBER.user.css
         cp $TAG_NUMBER.user.css release.user.css

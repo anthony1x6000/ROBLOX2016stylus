@@ -399,9 +399,7 @@
         border-radius: 3px 3px 0 0;
 /*         padding: 6px; */
     }
-    .thumbnail-2d-container img {
-    /*     width: 95%; */
-    /*     height: 95%; */
+    span.thumbnail-2d-container.game-card-thumb-container > img, div.featured-game-icon-container > span > img {
         padding: var(--iconPadding);
     }
     .game-card-container thumbnail-2d .game-card-thumb, .game-card-thumb-container .game-card-thumb {
@@ -3804,7 +3802,6 @@
 
         .game-grid.home-game-grid, .game-grid.home-game-grid.wide-game-tile-game-grid {
             grid-template-columns: repeat(auto-fill,calc((var(--home-feed-width) - 19px* (var(--items-per-row) - 1))/var(--items-per-row)));
-                --items-per-row: 4;
         }
         .game-home-page-container .see-all-link-icon {
             position: relative;
