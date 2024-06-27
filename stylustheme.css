@@ -1536,6 +1536,9 @@
     .game-tile-list .game-tile .game-card-container {
         width: 152px;
     }
+    div.featured-grid-item-container.game-card-container {
+        width: inherit;
+    }
 
 
     .game-card-link {
