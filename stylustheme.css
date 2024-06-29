@@ -3719,9 +3719,9 @@
             .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile.focused, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile.focused{
                 width: calc((717px - 16px*(var(--items-per-row) - 1))/var(--items-per-row)) !important;
             }
-            .home-container.expand-max-width { 
-                max-width: 100% !important;
-                padding-right: 0% !important;
+            body[data-internal-page-name='Home'] > div > main > div.content { 
+                padding-left: 0 !important;
+                padding-right: 0 !important;
             }
 
         }
@@ -3733,9 +3733,9 @@
         .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile.focused, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile.focused{
             width: calc((var(--home-feed-width) - 1px - 16px*(var(--items-per-row) - 1))/var(--items-per-row));
         }
-        .home-container.expand-max-width { 
-            max-width: 67%;
-/*             background: #ff000057; */
+        body[data-internal-page-name='Home'] > div > main > div.content { 
+            padding-left: 15%;
+            padding-right: 20%;
         }
 
         .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile .featured-game-container, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile .featured-game-container, 
