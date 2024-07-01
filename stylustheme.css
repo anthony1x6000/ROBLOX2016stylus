@@ -399,7 +399,7 @@
         border-radius: 3px 3px 0 0;
 /*         padding: 6px; */
     }
-    span.thumbnail-2d-container.game-card-thumb-container > img, div.featured-game-icon-container > span > img {
+    span.thumbnail-2d-container.game-card-thumb-container > img, div.featured-game-icon-container > span > img, span.thumbnail-2d-container.game-card-thumb > img {
         padding: var(--iconPadding);
     }
     .game-card-container thumbnail-2d .game-card-thumb, .game-card-thumb-container .game-card-thumb {
