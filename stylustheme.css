@@ -615,7 +615,41 @@
     }
     /*robux patch      */
     /* Some moved to image patch section */
-
+    /*START  July 1st 2024 Robux Patch.      */
+    div.robux-page-content > div.robux-std-container-1 {
+        width: 50%;
+        float:  right;
+    }
+    #robux-upsell-react-page-wrapper .robux-upsell-container-1 .robux-upsell-packages-table-desktop {
+        padding-bottom: 0;
+    }
+    #robux-upsell-react-page-wrapper .robux-std-container-1 {
+        margin-top: 0;
+        border-top: 1px solid rgba(0,0,0,.1);
+    }
+    div.robux-button-container > button > h4 {
+        color: white !important;
+    }
+    div.robux-upsell-item-and-packages-container, div.robux-table-banner.upsell-banner {
+        background: none !important;
+        box-shadow: none !important;
+    }
+    div.robux-page-content > div.robux-std-container-1 > div.font-header-2, div.robux-standard-packages-table-desktop > div.robux-header-unit, div.robux-upsell-container-1 > div.upsell-footer{
+        display: none !important;
+    }
+    .light-theme .icon-default-reverse-28x28, .light-theme .icon-robux-reverse, div.robux-button-container > button > span.icon-robux {
+        filter: invert(0);
+        background-position: -2px -40px;
+        width: 36px;
+        height: 36px;
+        float: left;
+        position: absolute;
+        left: 16px;
+    }
+    #robux-upsell-react-page-wrapper .subscription-container {
+        margin-top: 20%;
+    }
+    /*END  July 1st 2024 Robux Patch.      */
     /* Remove nav-credit display */
     .nav-credit {
         display: var(--creditVis) !important;
@@ -3456,8 +3490,8 @@
         background-image: url(https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg);
         background-position: -28px -28px;
     }
-    .icon-robux {
-        filter: invert(0.6);
+    .icon-robux, .light-theme .icon-default-reverse-28x28, .light-theme .icon-robux-reverse {
+/*         filter: invert(0.6); */
         background-position: 0px -37px;
         background-size: 75px;
         background-image: url(https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg) !important;

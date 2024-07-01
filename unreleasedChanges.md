@@ -15,6 +15,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 ## Changes/Fixes 
 - [Icon padding | x2 ] Optional 2016 icon padding. You will see why it will be optional. 
 - [BTR ROBLOX Profile] Fix groups tiles when viewing someones profile with better roblox.
+- [Robux Page] Clean up robux page.
 
 ### Find a bug?
 
