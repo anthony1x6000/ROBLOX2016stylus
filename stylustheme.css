@@ -3572,6 +3572,17 @@
         font-size: 12px;
     }
     /* Profile groups */
+        div.btr-profile-groups > div > ul > li > div > div.text-overflow:nth-child(3) {
+                margin-top: 16px;
+        }
+        div.btr-profile-groups > div > ul > li > div > div.text-overflow {
+            margin-left: 7px !important;
+        }
+        div.btr-profile-groups > div > ul > li.game-card{
+            margin-right: 34px;
+        }
+    /*end better roblox profile groups  */
+
     div.game-card-name-secondary[ng-bind='\$ctrl\.group\.role\.name'], div[ng-bind="\'Label\.MembersCount\'\ \|\ translate\:\{\ memberCount\:\ \$ctrl\.group\.members\ \}"] {
         position: relative;
         margin-top: 0;
