@@ -3879,11 +3879,14 @@
         }
     /* Game description fixes      */
         .game-description-container {
-            background: white;
-            margin-top: 60px;
+/*             margin-top: 60px; */
+            margin-top: 6%;
             padding: 6px;
         }
-        .game-description-container  *{
+        .light-theme .game-description-container {
+            background: white;
+        }
+        .game-description-container  * {
             position: relative;
         }
         div.game-description-container > div.container-header {
