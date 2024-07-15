@@ -1220,12 +1220,12 @@
         padding-top: 3px;
     }
     /* changing top bar stuff I FOUND OUT HOW! Not really I just looked at Ologist's code and saw that he figured it out so I'm stealing it */ 
-    ul.nav:nth-child(2) > li:nth-child(1) > a:nth-child(1)
+    ul.rbx-navbar > li:nth-child(1) > a
         {
         font-size: 0 !important;
         }
 
-        ul.nav:nth-child(2) > li:nth-child(1) > a:nth-child(1)::before
+        ul.rbx-navbar > li:nth-child(1) > a::before
         {
         content: "Games";
         font-size: 16px;
@@ -1254,12 +1254,13 @@
         font-size: 16px;
         }
 
-    ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)
+    ul.rbx-navbar > li:nth-child(4) > div a
         {
+            display: none;
         font-size: 0 !important;
         }
 
-        ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)::before
+        ul.rbx-navbar > li:nth-child(4) > div a::before
         {
         content: "ROBUX";
         font-size: 16px;
