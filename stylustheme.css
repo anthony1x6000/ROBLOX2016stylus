@@ -2859,6 +2859,18 @@
     #signup-container #signup-header-container .header-icon-logo {
         height: 123px;
     }
+    .signup-container .gender-button {
+        background: #fff;
+    }
+    #FemaleButton {
+        border-right: 1px solid #707070 !important; 
+    }
+    body[data-internal-page-name='Landing'] > div > footer.container-footer {
+        background-color: #fff !important;
+    }
+    body[data-internal-page-name='Landing'] > div > footer > div.footer * {
+        color: #464646 !important;
+    }
     #app-stores-devices:after { 
         text-transform: none;
         background: rgba(0,0,0,0.7);
