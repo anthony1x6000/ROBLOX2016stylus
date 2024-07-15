@@ -2850,8 +2850,7 @@
     #signup-container #signup-header-container #signup-header {  
         overflow: hidden;
         position: relative;
-        right: 0px;
-        margin-right: 50%;
+        right: 25em !important;
         top: 200px;
         padding: 0px;
         width: 100%;

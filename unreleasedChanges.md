@@ -18,6 +18,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Robux Page] Clean up robux page.
 - [BTR ROBLOX Game Description] Fix game description when using BTR ROBLOX.
 - [Navbar] Update navbar to say 'Games' and 'ROBUX' instead of 'Charts' and 'Robux.'
+- [Sign-up] Fix logo position on sign-up page.
 
 ### Find a bug?
 
