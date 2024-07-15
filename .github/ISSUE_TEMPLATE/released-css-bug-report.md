@@ -26,11 +26,12 @@ Put a reference image or a [Wayback](https://wayback.archive.org/) link of what 
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-**Desktop (please complete the following information):**
+**Additional Information:**
  - OS: [e.g. Windows, macOS]
  - Browser [e.g. Brave, Firefox]
  - Script Version [e.g. 1.1.2]
  - Display resolution [e.g. 1920 x 1080]
+ - Additional Extensions/Addons
 
 **Additional context**
 Add any other context about the problem here.
