@@ -3,7 +3,7 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        07.15.1721059060
+@version        07.15.1721060311
 @license        MIT License
 @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
 @var select displayRecommended 'Display Recommended Games at home?' ['block:Visible', 'none:Hidden']
@@ -1232,12 +1232,12 @@
         padding-top: 3px;
     }
     /* changing top bar stuff I FOUND OUT HOW! Not really I just looked at Ologist's code and saw that he figured it out so I'm stealing it */ 
-    ul.nav:nth-child(2) > li:nth-child(1) > a:nth-child(1)
+    ul.rbx-navbar > li:nth-child(1) > a
         {
         font-size: 0 !important;
         }
 
-        ul.nav:nth-child(2) > li:nth-child(1) > a:nth-child(1)::before
+        ul.rbx-navbar > li:nth-child(1) > a::before
         {
         content: "Games";
         font-size: 16px;
@@ -1266,12 +1266,13 @@
         font-size: 16px;
         }
 
-    ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)
+    ul.rbx-navbar > li:nth-child(4) > div a
         {
+            display: none;
         font-size: 0 !important;
         }
 
-        ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)::before
+        ul.rbx-navbar > li:nth-child(4) > div a::before
         {
         content: "ROBUX";
         font-size: 16px;
