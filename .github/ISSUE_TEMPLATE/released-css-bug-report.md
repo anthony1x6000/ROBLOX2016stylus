@@ -31,7 +31,7 @@ If applicable, add screenshots to help explain your problem.
  - Browser [e.g. Brave, Firefox]
  - Script Version [e.g. 1.1.2]
  - Display resolution [e.g. 1920 x 1080]
- - Additional Extensions/Addons
+ - Additional Extensions/Addons on your browser [e.g. 'BTRoblox']
 
 **Additional context**
 Add any other context about the problem here.
