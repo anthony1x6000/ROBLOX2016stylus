@@ -3894,7 +3894,7 @@
         div.game-description-container > div.container-header {
             bottom: 53px;
         }
-        .game-description, .game-age-recommendation-details-container {
+        .game-description:not( #btr-description-wrapper .game-description), .game-age-recommendation-details-container:not(#btr-description-wrapper .game-age-recommendation-details-container) {
             bottom: 47px;
         }
     
