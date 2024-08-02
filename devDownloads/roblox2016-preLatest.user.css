@@ -3,7 +3,7 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        07.15.1721060311
+@version        07.15.1721071105
 @license        MIT License
 @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
 @var select displayRecommended 'Display Recommended Games at home?' ['block:Visible', 'none:Hidden']
@@ -2862,8 +2862,7 @@
     #signup-container #signup-header-container #signup-header {  
         overflow: hidden;
         position: relative;
-        right: 0px;
-        margin-right: 50%;
+        right: 25em !important;
         top: 200px;
         padding: 0px;
         width: 100%;
@@ -2871,6 +2870,18 @@
     }
     #signup-container #signup-header-container .header-icon-logo {
         height: 123px;
+    }
+    .signup-container .gender-button {
+        background: #fff;
+    }
+    #FemaleButton {
+        border-right: 1px solid #707070 !important; 
+    }
+    body[data-internal-page-name='Landing'] > div > footer.container-footer {
+        background-color: #fff !important;
+    }
+    body[data-internal-page-name='Landing'] > div > footer > div.footer * {
+        color: #464646 !important;
     }
     #app-stores-devices:after { 
         text-transform: none;
