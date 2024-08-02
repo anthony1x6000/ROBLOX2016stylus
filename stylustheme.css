@@ -1260,7 +1260,7 @@
         font-size: 0 !important;
         }
 
-        ul.rbx-navbar > li:nth-child(4) > div a::before
+        a.robux-menu-btn[href='\/upgrades\/robux\?ctx\=nav']::before
         {
         content: "ROBUX";
         font-size: 16px;
