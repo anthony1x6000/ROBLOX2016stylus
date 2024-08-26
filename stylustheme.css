@@ -3919,7 +3919,7 @@
             display: block !important;
             bottom: 25px;
         } 
-        div.wide-game-tile-metadata > div > div.game-card-info {
+        ul.wide-game-tile-carousel.games-page-carousel div.game-card-info {
             top: -2px;
             left: -2px;
         }
