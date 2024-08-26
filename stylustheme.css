@@ -1260,7 +1260,7 @@
         font-size: 0 !important;
         }
 
-        a.robux-menu-btn[href='\/upgrades\/robux\?ctx\=nav']::before
+        #navigation-robux-container > div > a::before
         {
         content: "ROBUX";
         font-size: 16px;
@@ -2741,11 +2741,7 @@
         top: 2.5px;
     }
 
-    .game-card-info .playing-counts-label {
-        position: relative; 
-        display: block !important;
-        bottom: 25px;
-    } 
+
     a > div > div > div > span.playing-counts-label {
         bottom: 14px !important;
     }
@@ -3909,7 +3905,29 @@
         .game-description:not( #btr-description-wrapper .game-description), .game-age-recommendation-details-container:not(#btr-description-wrapper .game-age-recommendation-details-container) {
             bottom: 47px;
         }
-    
+    /*  Experience Page    */
+        .game-carousel.wide-game-tile-carousel.expand-home-content.games-page-carousel .hover-game-tile.event-tile.focused, .game-carousel.wide-game-tile-carousel.expand-home-content.games-page-carousel .hover-game-tile.grid-tile.focused, .game-carousel.wide-game-tile-carousel.expand-home-content.games-page-carousel .hover-game-tile.interest-tile.focused, .game-carousel.wide-game-tile-carousel.games-page-carousel.games-page-carousel .hover-game-tile.event-tile.focused, .game-carousel.wide-game-tile-carousel.games-page-carousel.games-page-carousel .hover-game-tile.grid-tile.focused, .game-carousel.wide-game-tile-carousel.games-page-carousel.games-page-carousel .hover-game-tile.interest-tile.focused {
+            width: 100% !important;
+        }
+        ul.wide-game-tile-carousel.games-page-carousel > li > div.game-card-container {
+            height: 240px !important;
+            max-height: 240px !important;
+        }
+    /* Don't mess with, modified home page game tiles */
+        .game-card-info .playing-counts-label {
+            position: relative; 
+            display: block !important;
+            bottom: 25px;
+        } 
+        div.wide-game-tile-metadata > div > div.game-card-info {
+            top: -2px;
+            left: -2px;
+        }
+        div.wide-game-tile-metadata > div > div > span.playing-counts-label {
+            bottom: 4px;
+            left: -55px;
+        }
+
     /* ROBLOX 2016 Avatar Editor Reconstruct by Mystery Channel (1185261) 
         No License as of 09-18023
         https://uso.kkx.one/style/227593 */

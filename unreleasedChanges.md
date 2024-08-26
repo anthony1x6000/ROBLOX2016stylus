@@ -17,9 +17,10 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [BTR ROBLOX Profile] Fix groups tiles when viewing someones profile with better roblox.
 - [Robux Page] Clean up robux page.
 - [BTR ROBLOX Game Description] Fix game description when using BTR ROBLOX.
-- [Navbar] Update navbar to say 'Games' and 'ROBUX' instead of 'Charts' and 'Robux.'
+- [Navbar] Update navbar to say 'Games' and 'ROBUX' instead of 'Charts' and 'Robux.' Fixed again 08/25 to bring back "ROBUX."
 - [Sign-up] Fix logo position on sign-up page.
 - [Sign-up] Fix background colors.
+- [Experience Page] Patch-up game tiles. Won't attempt to bring back the older, thinner tiles.
 
 ### Find a bug?
 
