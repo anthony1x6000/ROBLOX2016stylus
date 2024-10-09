@@ -3769,7 +3769,9 @@
     /* 001 : User Home  */
 
 
-
+        div.game-card-text-pill {
+            display: none !important;  
+        }
         @media (max-width: 767px) {
             .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile, 
             .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile.focused, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile.focused{
@@ -3783,7 +3785,7 @@
         }
         .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.expand-home-content .hover-game-tile.event-tile.focused, .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.expand-home-content .hover-game-tile.grid-tile.focused,
         .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile.focused, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile.focused {
-            width: calc((var(--home-feed-width) - 1px - 16px*(var(--items-per-row) - 1))/var(--items-per-row) + 0px);
+            width: calc((var(--home-feed-width) - 1px - 16px*(var(--items-per-row) - 1))/var(--items-per-row) + 0px) !important;
         }
         .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile,
         .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile.focused, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile.focused{
