@@ -21,6 +21,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Sign-up] Fix logo position on sign-up page.
 - [Sign-up] Fix background colors.
 - [Experience Page] Patch-up game tiles. Won't attempt to bring back the older, thinner tiles.
+- [Home Page] Fixed game card width again.
 
 ### Find a bug?
 
