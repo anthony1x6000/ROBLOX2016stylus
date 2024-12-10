@@ -1333,7 +1333,7 @@
         box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.45);
     }
 
-    .light-theme .section-content {
+    .light-theme .section-content, .light-theme .friends-carousel-container {
         box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
     }
 
@@ -3868,6 +3868,20 @@
             position: relative;
             left: 1em;
         }
+
+    /*     Remove Today's picks */
+        .game-sort-carousel-wrapper:nth-child(2) {
+            display: none; 
+        }
+    /* Friends carousel  */
+    .friends-carousel-container {
+        background: white;
+        padding-top: 16px;
+        height: 147px;
+    }
+    .dark-theme .friends-carousel-container {
+        background: #2d2d2d87;
+    }
 
     /*  Catalog fixes    */
         .container-main .catalog-full-screen .catalog-results .item-cards-stackable .item-card, .container-main .splash.catalog-full-screen .catalog-results .item-cards-stackable .item-card {
