@@ -57,7 +57,7 @@ jobs:
         branch: main
         force: true
     - name: Upload artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: roblox2016-$CUR_DATE.user.css
         path: devDownloads/roblox2016-$CUR_DATE.user.css

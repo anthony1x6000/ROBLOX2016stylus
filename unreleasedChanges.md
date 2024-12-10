@@ -22,6 +22,8 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Sign-up] Fix background colors.
 - [Experience Page] Patch-up game tiles. Won't attempt to bring back the older, thinner tiles.
 - [Home Page] Fixed game card width again.
+- [Home Page] Add background to friends list. 
+- [Home Page] Remove "Today's Picks." The removal is not final.
 
 ### Find a bug?
 
