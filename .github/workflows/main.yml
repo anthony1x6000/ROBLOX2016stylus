@@ -66,4 +66,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: roblox2016-${{ env.CUR_DATE }}.user.css
-        path: devDownloads/roblox2016-${{ env.CUR_DATE }}.user.css
+        path: devDownloads/roblox2016-pre${{ env.CUR_DATE }}.user.css
