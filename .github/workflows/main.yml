@@ -10,7 +10,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    env:
+      CUR_DATE: ${{ steps.set-date.outputs.cur_date }}
+      CURV_DATE: ${{ steps.set-date.outputs.curv_date }}
+      UNIX_TIME: ${{ steps.set-date.outputs.unix_time }}
+
     steps:
+    - name: Set Date Variables
+      id: set-date
+      run: |
+        echo "cur_date=$(date +%m-%d)" >> $GITHUB_ENV
+        echo "curv_date=$(date +%m.%d)" >> $GITHUB_ENV
+        echo "unix_time=$(date +%s)" >> $GITHUB_ENV
+
     - name: Checkout code
       uses: actions/checkout@v3
       with:
@@ -18,44 +30,43 @@ jobs:
 
     - name: Add header to stylustheme.css
       run: |
-        CUR_DATE=$(date +%m-%d)
-        CURV_DATE=$(date +%m.%d)
-        UNIX_TIME=$(date +%s)
         echo "/* ==UserStyle==
-        @name           ROBLOX 2016 dev$CUR_DATE
+        @name           ROBLOX 2016 dev${{ env.CUR_DATE }}
         @namespace      Userstyle
         @author         anthony1x6000
         @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-        @version        $CURV_DATE.$UNIX_TIME
+        @version        ${{ env.CURV_DATE }}.${{ env.UNIX_TIME }}
         @license        MIT License
         @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
         @var select displayRecommended 'Display Recommended Games at home?' ['block:Visible', 'none:Hidden']
         @var select creditVis 'Hide credit on nav bar?' ['block:Visible', 'none:Hidden']
         @var select iconPadding 'Use 2016 icon padding?' ['0:No', '9px 6px 6px 6px']
         ==/UserStyle== */" > header.txt
-        cat header.txt stylustheme.css > roblox2016-pre$CUR_DATE.user.css
+        cat header.txt stylustheme.css > roblox2016-pre${{ env.CUR_DATE }}.user.css
+
     - name: Set user identity
       run: |
         git config --global user.email "33004321+anthony1x6000@users.noreply.github.com"
         git config --global user.name "roblox-workflow"
+
     - name: Commit changes to main branch
       run: |
-        UNIX_TIME=$(date +%s)
-        CUR_DATE=$(date +%m-%d)
-        # git checkout -b main
-        cp roblox2016-pre$CUR_DATE.user.css roblox2016-preLatest.user.css
-        mv roblox2016-pre$CUR_DATE.user.css roblox2016-preLatest.user.css devDownloads/
+        cp roblox2016-pre${{ env.CUR_DATE }}.user.css roblox2016-preLatest.user.css
+        mv roblox2016-pre${{ env.CUR_DATE }}.user.css roblox2016-preLatest.user.css devDownloads/
         git add devDownloads
-        git commit -m "$CUR_DATE-$UNIX_TIME dev"
+        git commit -m "${{ env.CUR_DATE }}-${{ env.UNIX_TIME }} dev"
+
     - name: Pull and Rebase origin/dev
       run: |
         git pull origin main --rebase
+
     - name: Push to GitHub
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: main
         force: true
+
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
