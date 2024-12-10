@@ -10,23 +10,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    env:
-      CUR_DATE: ${{ steps.set-date.outputs.cur_date }}
-      CURV_DATE: ${{ steps.set-date.outputs.curv_date }}
-      UNIX_TIME: ${{ steps.set-date.outputs.unix_time }}
-
     steps:
-    - name: Set Date Variables
-      id: set-date
-      run: |
-        echo "cur_date=$(date +%m-%d)" >> $GITHUB_ENV
-        echo "curv_date=$(date +%m.%d)" >> $GITHUB_ENV
-        echo "unix_time=$(date +%s)" >> $GITHUB_ENV
-
     - name: Checkout code
       uses: actions/checkout@v3
       with:
         ref: main
+
+    - name: Set Date Variables
+      id: set-date
+      run: |
+        echo "CUR_DATE=$(date +%m-%d)" >> $GITHUB_ENV
+        echo "CURV_DATE=$(date +%m.%d)" >> $GITHUB_ENV
+        echo "UNIX_TIME=$(date +%s)" >> $GITHUB_ENV
 
     - name: Add header to stylustheme.css
       run: |
