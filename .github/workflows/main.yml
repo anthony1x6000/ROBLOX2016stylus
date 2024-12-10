@@ -56,8 +56,8 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: main
         force: true
-    - name: Upload artifact
+    - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
-        name: roblox2016-$CUR_DATE.user.css
-        path: devDownloads/roblox2016-$CUR_DATE.user.css
+        name: roblox2016-${{ env.CUR_DATE }}.user.css
+        path: devDownloads/roblox2016-${{ env.CUR_DATE }}.user.css
