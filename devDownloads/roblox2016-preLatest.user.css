@@ -3971,4 +3971,12 @@
     .messages-container .success-block .navigationsuccess a .icon-left {
         background-position: 0 -420px !important;
     }
+    /* Change Communities to Groups*/
+    #nav-group > .dynamic-ellipsis-item.font-header-2 {
+    visibility: hidden;
+    }
+    #nav-group > .dynamic-ellipsis-item.font-header-2:before {
+    visibility: visible;
+    content: "Groups"
+    }
 }
