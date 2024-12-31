@@ -3,12 +3,15 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        12.31.1703996238
+@version        12.31.1735608187
 @license        MIT License
 @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
+@var select displayRecommended 'Display Recommended Games at home?' ['block:Visible', 'none:Hidden']
+@var select creditVis 'Hide credit on nav bar?' ['block:Visible', 'none:Hidden']
+@var select iconPadding 'Use 2016 icon padding?' ['0:No', '9px 6px 6px 6px']
 ==/UserStyle== */
 @-moz-document domain("web.roblox.com"), domain("www.roblox.com") {
-    /* Hey! if you see this, check out the Github repository for this!
+/* Hey! if you see this, check out the Github repository for this!
     https://github.com/anthony1x6000/ROBLOX2016stylus
     You can find the style under releases. Make sure to check out the beta "stylustheme.css."
     Make sure to report any bugs to the issue tracker on Github.  
@@ -16,53 +19,59 @@
     Credit to Ologist for initially making this great Userstyle theme!
     Code contributors:
     - Ologist (Original creator)
-    - anthop/anthony1x6000
+    - antho/anthony1x6000
     - Aubrey/aubymori
     - ssd21345/randomguyingithub
     - ProTaxEvader/ProTaxEvader
+    - Parker/parker02311
     */ 
 
     /* font */ 
     /* @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700); */
     /* latin */
     /*  DISABLE DARK MODE NOTIFIER    */
+
+
     :root {
         --darkThemeBlue: #324856;
     }
     .dark-theme label.text-label[for='theme-dropdown']::after {
         content: " (Light is recommended.)";
     }
+    div[data-testid='home-page-game-grid'], div.home-interleave-divider {
+        display: var(--displayRecommended);
+    }
 
     @font-face {
-      font-family: 'Source Sans Pro';
-      font-style: normal;
-      font-weight: 300;
-      src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
     /* latin */
     @font-face {
-      font-family: 'Source Sans Pro';
-      font-style: normal;
-      font-weight: 400;
-      src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
     /* latin */
     @font-face {
-      font-family: 'Source Sans Pro';
-      font-style: normal;
-      font-weight: 600;
-      src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
     /* latin */
     @font-face {
-      font-family: 'Source Sans Pro';
-      font-style: normal;
-      font-weight: 700;
-      src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
     /* end of font */ 
 
@@ -98,7 +107,7 @@
         opacity: 1;
     }
 
-
+    
     *
     {
         font-family: "Source Sans Pro",Arial,Helvetica,sans-serif !important;
@@ -126,12 +135,12 @@
         font-weight: 600;
         src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGCmgpmuQqK2I-L2S9cF65Ek.woff) format('woff');
     } */
-    .gotham-font.light-theme .refresh-link, .gotham-font.light-theme .refresh-link-icon, .gotham-font.light-theme .refresh-link-icon:active, .gotham-font.light-theme .refresh-link-icon:hover, .gotham-font.light-theme .refresh-link-icon:link, .gotham-font.light-theme .refresh-link-icon:visited, .gotham-font.light-theme .refresh-link:active, .gotham-font.light-theme .refresh-link:hover, .gotham-font.light-theme .refresh-link:link, .gotham-font.light-theme .refresh-link:visited, .gotham-font.light-theme .see-all-link, .gotham-font.light-theme .see-all-link-icon, .gotham-font.light-theme .see-all-link-icon:active, .gotham-font.light-theme .see-all-link-icon:hover, .gotham-font.light-theme .see-all-link-icon:link, .gotham-font.light-theme .see-all-link-icon:visited, .gotham-font.light-theme .see-all-link:active, .gotham-font.light-theme .see-all-link:hover, .gotham-font.light-theme .see-all-link:link, .gotham-font.light-theme .see-all-link:visited, .gotham-font.light-theme .touch .refresh-link, .gotham-font.light-theme .touch .refresh-link-icon, .gotham-font.light-theme .touch .refresh-link-icon:active, .gotham-font.light-theme .touch .refresh-link-icon:hover, .gotham-font.light-theme .touch .refresh-link-icon:link, .gotham-font.light-theme .touch .refresh-link-icon:visited, .gotham-font.light-theme .touch .refresh-link:active, .gotham-font.light-theme .touch .refresh-link:hover, .gotham-font.light-theme .touch .refresh-link:link, .gotham-font.light-theme .touch .refresh-link:visited, .gotham-font.light-theme .touch .see-all-link, .gotham-font.light-theme .touch .see-all-link-icon, .gotham-font.light-theme .touch .see-all-link-icon:active, .gotham-font.light-theme .touch .see-all-link-icon:hover, .gotham-font.light-theme .touch .see-all-link-icon:link, .gotham-font.light-theme .touch .see-all-link-icon:visited, .gotham-font.light-theme .touch .see-all-link:active, .gotham-font.light-theme .touch .see-all-link:hover, .gotham-font.light-theme .touch .see-all-link:link, .gotham-font.light-theme .touch .see-all-link:visited {
+    .builder-font.light-theme .refresh-link, .builder-font.light-theme .refresh-link-icon, .builder-font.light-theme .refresh-link-icon:active, .builder-font.light-theme .refresh-link-icon:hover, .builder-font.light-theme .refresh-link-icon:link, .builder-font.light-theme .refresh-link-icon:visited, .builder-font.light-theme .refresh-link:active, .builder-font.light-theme .refresh-link:hover, .builder-font.light-theme .refresh-link:link, .builder-font.light-theme .refresh-link:visited, .builder-font.light-theme .see-all-link, .builder-font.light-theme .see-all-link-icon, .builder-font.light-theme .see-all-link-icon:active, .builder-font.light-theme .see-all-link-icon:hover, .builder-font.light-theme .see-all-link-icon:link, .builder-font.light-theme .see-all-link-icon:visited, .builder-font.light-theme .see-all-link:active, .builder-font.light-theme .see-all-link:hover, .builder-font.light-theme .see-all-link:link, .builder-font.light-theme .see-all-link:visited, .builder-font.light-theme .touch .refresh-link, .builder-font.light-theme .touch .refresh-link-icon, .builder-font.light-theme .touch .refresh-link-icon:active, .builder-font.light-theme .touch .refresh-link-icon:hover, .builder-font.light-theme .touch .refresh-link-icon:link, .builder-font.light-theme .touch .refresh-link-icon:visited, .builder-font.light-theme .touch .refresh-link:active, .builder-font.light-theme .touch .refresh-link:hover, .builder-font.light-theme .touch .refresh-link:link, .builder-font.light-theme .touch .refresh-link:visited, .builder-font.light-theme .touch .see-all-link, .builder-font.light-theme .touch .see-all-link-icon, .builder-font.light-theme .touch .see-all-link-icon:active, .builder-font.light-theme .touch .see-all-link-icon:hover, .builder-font.light-theme .touch .see-all-link-icon:link, .builder-font.light-theme .touch .see-all-link-icon:visited, .builder-font.light-theme .touch .see-all-link:active, .builder-font.light-theme .touch .see-all-link:hover, .builder-font.light-theme .touch .see-all-link:link, .builder-font.light-theme .touch .see-all-link:visited {
         color: #00a2ff;
         background-color: rgba(255, 0, 0, 0);
         border: none;
     }
-    .dark-theme .gotham-font .see-all-link-icon:after, .gotham-font.dark-theme .see-all-link-icon:after, .gotham-font.light-theme .see-all-link-icon:after, .icon-push-right-sm, .light-theme .gotham-font .see-all-link-icon:after {
+    .dark-theme .builder-font .see-all-link-icon:after, .builder-font.dark-theme .see-all-link-icon:after, .builder-font.light-theme .see-all-link-icon:after, .icon-push-right-sm, .light-theme .builder-font .see-all-link-icon:after {
         display: none
     }
     .light-theme .icon-default-navigation, .light-theme .icon-nav-blog, .light-theme .icon-nav-charactercustomizer, .light-theme .icon-nav-friends, .light-theme .icon-nav-group, .light-theme .icon-nav-home, .light-theme .icon-nav-inventory, .light-theme .icon-nav-menu, .light-theme .icon-nav-message, .light-theme .icon-nav-my-feed, .light-theme .icon-nav-notification-stream, .light-theme .icon-nav-profile, .light-theme .icon-nav-robux, .light-theme .icon-nav-search, .light-theme .icon-nav-search-white, .light-theme .icon-nav-settings, .light-theme .icon-nav-shop, .light-theme .icon-nav-trade {
@@ -150,18 +159,18 @@
         padding: 8px 0 !important;
         line-height: 1em;
     } */
-    .gotham-font .font-title, .gotham-font .h1, .gotham-font .h2, .gotham-font h1, .gotham-font h2 {
+    .builder-font .font-title, .builder-font .h1, .builder-font .h2, .builder-font h1, .builder-font h2 {
         font-size: 25px;
         font-weight: 200;
         overflow: visible;
     }
 
 
-    .gotham-font, .gotham-font .h1, .gotham-font .h2, .gotham-font .h3, .gotham-font .h4, .gotham-font .h5, .gotham-font .h6, .gotham-font h1, .gotham-font h2, .gotham-font h3, .gotham-font h4, .gotham-font h5, .gotham-font h6 {
+    .builder-font, .builder-font .h1, .builder-font .h2, .builder-font .h3, .builder-font .h4, .builder-font .h5, .builder-font .h6, .builder-font h1, .builder-font h2, .builder-font h3, .builder-font h4, .builder-font h5, .builder-font h6 {
         font-family: "Source Sans Pro",Arial,Helvetica,sans-serif !important;
     }
 
-    .gotham-font .text, .gotham-font body, .gotham-font button, .gotham-font html, .gotham-font input, .gotham-font pre, .gotham-font select, .gotham-font textarea {
+    .builder-font .text, .builder-font body, .builder-font button, .builder-font html, .builder-font input, .builder-font pre, .builder-font select, .builder-font textarea {
         font-family: "Source Sans Pro",Arial,Helvetica,sans-serif !important;
     }
 
@@ -180,14 +189,14 @@
 
 
 
-    .gotham-font .font-caption-header, .gotham-font .font-caption-header:active, .gotham-font .font-caption-header:focus, .gotham-font .font-caption-header:hover, .gotham-font .font-caption-header:link, .gotham-font .font-caption-header:visited, .gotham-font .small.font-caption-header, .gotham-font .small.font-caption-header:active, .gotham-font .small.font-caption-header:focus, .gotham-font .small.font-caption-header:hover, .gotham-font .small.font-caption-header:link, .gotham-font .small.font-caption-header:visited, .gotham-font .small.text-error, .gotham-font .small.text-error:active, .gotham-font .small.text-error:focus, .gotham-font .small.text-error:hover, .gotham-font .small.text-error:link, .gotham-font .small.text-error:visited, .gotham-font .small.text-pastname, .gotham-font .small.text-pastname:active, .gotham-font .small.text-pastname:focus, .gotham-font .small.text-pastname:hover, .gotham-font .small.text-pastname:link, .gotham-font .small.text-pastname:visited, .gotham-font .small.text-report, .gotham-font .small.text-report-ads, .gotham-font .small.text-report-ads:active, .gotham-font .small.text-report-ads:focus, .gotham-font .small.text-report-ads:hover, .gotham-font .small.text-report-ads:link, .gotham-font .small.text-report-ads:visited, .gotham-font .small.text-report:active, .gotham-font .small.text-report:focus, .gotham-font .small.text-report:hover, .gotham-font .small.text-report:link, .gotham-font .small.text-report:visited, .gotham-font .text-error, .gotham-font .text-error:active, .gotham-font .text-error:focus, .gotham-font .text-error:hover, .gotham-font .text-error:link, .gotham-font .text-error:visited, .gotham-font .text-pastname, .gotham-font .text-pastname:active, .gotham-font .text-pastname:focus, .gotham-font .text-pastname:hover, .gotham-font .text-pastname:link, .gotham-font .text-pastname:visited, .gotham-font .text-report, .gotham-font .text-report-ads, .gotham-font .text-report-ads:active, .gotham-font .text-report-ads:focus, .gotham-font .text-report-ads:hover, .gotham-font .text-report-ads:link, .gotham-font .text-report-ads:visited, .gotham-font .text-report:active, .gotham-font .text-report:focus, .gotham-font .text-report:hover, .gotham-font .text-report:link, .gotham-font .text-report:visited {
+    .builder-font .font-caption-header, .builder-font .font-caption-header:active, .builder-font .font-caption-header:focus, .builder-font .font-caption-header:hover, .builder-font .font-caption-header:link, .builder-font .font-caption-header:visited, .builder-font .small.font-caption-header, .builder-font .small.font-caption-header:active, .builder-font .small.font-caption-header:focus, .builder-font .small.font-caption-header:hover, .builder-font .small.font-caption-header:link, .builder-font .small.font-caption-header:visited, .builder-font .small.text-error, .builder-font .small.text-error:active, .builder-font .small.text-error:focus, .builder-font .small.text-error:hover, .builder-font .small.text-error:link, .builder-font .small.text-error:visited, .builder-font .small.text-pastname, .builder-font .small.text-pastname:active, .builder-font .small.text-pastname:focus, .builder-font .small.text-pastname:hover, .builder-font .small.text-pastname:link, .builder-font .small.text-pastname:visited, .builder-font .small.text-report, .builder-font .small.text-report-ads, .builder-font .small.text-report-ads:active, .builder-font .small.text-report-ads:focus, .builder-font .small.text-report-ads:hover, .builder-font .small.text-report-ads:link, .builder-font .small.text-report-ads:visited, .builder-font .small.text-report:active, .builder-font .small.text-report:focus, .builder-font .small.text-report:hover, .builder-font .small.text-report:link, .builder-font .small.text-report:visited, .builder-font .text-error, .builder-font .text-error:active, .builder-font .text-error:focus, .builder-font .text-error:hover, .builder-font .text-error:link, .builder-font .text-error:visited, .builder-font .text-pastname, .builder-font .text-pastname:active, .builder-font .text-pastname:focus, .builder-font .text-pastname:hover, .builder-font .text-pastname:link, .builder-font .text-pastname:visited, .builder-font .text-report, .builder-font .text-report-ads, .builder-font .text-report-ads:active, .builder-font .text-report-ads:focus, .builder-font .text-report-ads:hover, .builder-font .text-report-ads:link, .builder-font .text-report-ads:visited, .builder-font .text-report:active, .builder-font .text-report:focus, .builder-font .text-report:hover, .builder-font .text-report:link, .builder-font .text-report:visited {
         font-size: 16px;
     font-weight: 400;
     }
 
 
     /* TESTING REMOVE LATER
-    .gotham-font .font-bold, .gotham-font .font-bold:active, .gotham-font .font-bold:hover, .gotham-font .font-bold:link, .gotham-font .font-bold:visited, .gotham-font .font-header-2, .gotham-font .font-header-2:active, .gotham-font .font-header-2:hover, .gotham-font .font-header-2:link, .gotham-font .font-header-2:visited, .gotham-font .h5, .gotham-font .h5:active, .gotham-font .h5:hover, .gotham-font .h5:link, .gotham-font .h5:visited, .gotham-font .h6, .gotham-font .h6:active, .gotham-font .h6:hover, .gotham-font .h6:link, .gotham-font .h6:visited, .gotham-font .text-footer-nav, .gotham-font .text-footer-nav:active, .gotham-font .text-footer-nav:hover, .gotham-font .text-footer-nav:link, .gotham-font .text-footer-nav:visited, .gotham-font .text-label, .gotham-font .text-label:active, .gotham-font .text-label:hover, .gotham-font .text-label:link, .gotham-font .text-label:visited, .gotham-font .text-lead, .gotham-font .text-lead:active, .gotham-font .text-lead:hover, .gotham-font .text-lead:link, .gotham-font .text-lead:visited, .gotham-font .text-name, .gotham-font .text-name:active, .gotham-font .text-name:hover, .gotham-font .text-name:link, .gotham-font .text-name:visited, .gotham-font .text-subject, .gotham-font .text-subject:active, .gotham-font .text-subject:hover, .gotham-font .text-subject:link, .gotham-font .text-subject:visited, .gotham-font .text-warning, .gotham-font .text-warning:active, .gotham-font .text-warning:hover, .gotham-font .text-warning:link, .gotham-font .text-warning:visited, .gotham-font h5, .gotham-font h5:active, .gotham-font h5:hover, .gotham-font h5:link, .gotham-font h5:visited, .gotham-font h6, .gotham-font h6:active, .gotham-font h6:hover, .gotham-font h6:link, .gotham-font h6:visited, .gotham-font strong, .gotham-font strong:active, .gotham-font strong:hover, .gotham-font strong:link, .gotham-font strong:visited {
+    .builder-font .font-bold, .builder-font .font-bold:active, .builder-font .font-bold:hover, .builder-font .font-bold:link, .builder-font .font-bold:visited, .builder-font .font-header-2, .builder-font .font-header-2:active, .builder-font .font-header-2:hover, .builder-font .font-header-2:link, .builder-font .font-header-2:visited, .builder-font .h5, .builder-font .h5:active, .builder-font .h5:hover, .builder-font .h5:link, .builder-font .h5:visited, .builder-font .h6, .builder-font .h6:active, .builder-font .h6:hover, .builder-font .h6:link, .builder-font .h6:visited, .builder-font .text-footer-nav, .builder-font .text-footer-nav:active, .builder-font .text-footer-nav:hover, .builder-font .text-footer-nav:link, .builder-font .text-footer-nav:visited, .builder-font .text-label, .builder-font .text-label:active, .builder-font .text-label:hover, .builder-font .text-label:link, .builder-font .text-label:visited, .builder-font .text-lead, .builder-font .text-lead:active, .builder-font .text-lead:hover, .builder-font .text-lead:link, .builder-font .text-lead:visited, .builder-font .text-name, .builder-font .text-name:active, .builder-font .text-name:hover, .builder-font .text-name:link, .builder-font .text-name:visited, .builder-font .text-subject, .builder-font .text-subject:active, .builder-font .text-subject:hover, .builder-font .text-subject:link, .builder-font .text-subject:visited, .builder-font .text-warning, .builder-font .text-warning:active, .builder-font .text-warning:hover, .builder-font .text-warning:link, .builder-font .text-warning:visited, .builder-font h5, .builder-font h5:active, .builder-font h5:hover, .builder-font h5:link, .builder-font h5:visited, .builder-font h6, .builder-font h6:active, .builder-font h6:hover, .builder-font h6:link, .builder-font h6:visited, .builder-font strong, .builder-font strong:active, .builder-font strong:hover, .builder-font strong:link, .builder-font strong:visited {
         font-size: 16px;
         font-weight: 400;
     }
@@ -201,11 +210,11 @@
 
 
 
-    .gotham-font .font-caption-body, .gotham-font .font-caption-body:active, .gotham-font .font-caption-body:focus, .gotham-font .font-caption-body:link, .gotham-font .font-caption-body:visited, .gotham-font .tooltip .tooltip-inner, .gotham-font .tooltip .tooltip-inner:active, .gotham-font .tooltip .tooltip-inner:focus, .gotham-font .tooltip .tooltip-inner:link, .gotham-font .tooltip .tooltip-inner:visited {
+    .builder-font .font-caption-body, .builder-font .font-caption-body:active, .builder-font .font-caption-body:focus, .builder-font .font-caption-body:link, .builder-font .font-caption-body:visited, .builder-font .tooltip .tooltip-inner, .builder-font .tooltip .tooltip-inner:active, .builder-font .tooltip .tooltip-inner:focus, .builder-font .tooltip .tooltip-inner:link, .builder-font .tooltip .tooltip-inner:visited {
         font-size: 16px;
         font-weight: 300;
     } 
-    /* .gotham-font div {
+    /* .builder-font div {
         line-height: 1.2em;
     } Looks better when I remove this, just pushes stuff on the top header & the left bar up a little. */
 
@@ -255,7 +264,7 @@
 
 
 
-    .gotham-font .font-header-1, .gotham-font .h3, .gotham-font .h4, .gotham-font .text-robux-lg, .gotham-font h3, .gotham-font h4 {
+    .builder-font .font-header-1, .builder-font .h3, .builder-font .h4, .builder-font .text-robux-lg, .builder-font h3, .builder-font h4 {
         font-size: 24px;
         font-weight: 300;
     }
@@ -266,7 +275,7 @@
     .rbx-header .age-bracket-label .age-bracket-label-username {
     visibility: hidden;
     }
-    /* .gotham-font .font-footer, .gotham-font .font-footer:active, .gotham-font .font-footer:focus, .gotham-font .font-footer:hover, .gotham-font .font-footer:link, .gotham-font .font-footer:visited, .gotham-font .text-footer, .gotham-font .text-footer:active, .gotham-font .text-footer:focus, .gotham-font .text-footer:hover, .gotham-font .text-footer:link, .gotham-font .text-footer:visited, .gotham-font .xsmall, .gotham-font .xsmall:active, .gotham-font .xsmall:focus, .gotham-font .xsmall:hover, .gotham-font .xsmall:link, .gotham-font .xsmall:visited, .gotham-font .xxsmall, .gotham-font .xxsmall:active, .gotham-font .xxsmall:focus, .gotham-font .xxsmall:hover, .gotham-font .xxsmall:link, .gotham-font .xxsmall:visited {
+    /* .builder-font .font-footer, .builder-font .font-footer:active, .builder-font .font-footer:focus, .builder-font .font-footer:hover, .builder-font .font-footer:link, .builder-font .font-footer:visited, .builder-font .text-footer, .builder-font .text-footer:active, .builder-font .text-footer:focus, .builder-font .text-footer:hover, .builder-font .text-footer:link, .builder-font .text-footer:visited, .builder-font .xsmall, .builder-font .xsmall:active, .builder-font .xsmall:focus, .builder-font .xsmall:hover, .builder-font .xsmall:link, .builder-font .xsmall:visited, .builder-font .xxsmall, .builder-font .xxsmall:active, .builder-font .xxsmall:focus, .builder-font .xxsmall:hover, .builder-font .xxsmall:link, .builder-font .xxsmall:visited {
         font-size: 0;
         font-weight: 500;
     } */
@@ -332,7 +341,7 @@
 
     /* End of universal */
 
-    .gotham-font.light-theme .refresh-link, .gotham-font.light-theme .refresh-link-icon, .gotham-font.light-theme .refresh-link-icon:active, .gotham-font.light-theme .refresh-link-icon:hover, .gotham-font.light-theme .refresh-link-icon:link, .gotham-font.light-theme .refresh-link-icon:visited, .gotham-font.light-theme .refresh-link:active, .gotham-font.light-theme .refresh-link:hover, .gotham-font.light-theme .refresh-link:link, .gotham-font.light-theme .refresh-link:visited, .gotham-font.light-theme .see-all-link, .gotham-font.light-theme .see-all-link-icon, .gotham-font.light-theme .see-all-link-icon:active, .gotham-font.light-theme .see-all-link-icon:hover, .gotham-font.light-theme .see-all-link-icon:link, .gotham-font.light-theme .see-all-link-icon:visited, .gotham-font.light-theme .see-all-link:active, .gotham-font.light-theme .see-all-link:hover, .gotham-font.light-theme .see-all-link:link, .gotham-font.light-theme .see-all-link:visited, .gotham-font.light-theme .touch .refresh-link, .gotham-font.light-theme .touch .refresh-link-icon, .gotham-font.light-theme .touch .refresh-link-icon:active, .gotham-font.light-theme .touch .refresh-link-icon:hover, .gotham-font.light-theme .touch .refresh-link-icon:link, .gotham-font.light-theme .touch .refresh-link-icon:visited, .gotham-font.light-theme .touch .refresh-link:active, .gotham-font.light-theme .touch .refresh-link:hover, .gotham-font.light-theme .touch .refresh-link:link, .gotham-font.light-theme .touch .refresh-link:visited, .gotham-font.light-theme .touch .see-all-link, .gotham-font.light-theme .touch .see-all-link-icon, .gotham-font.light-theme .touch .see-all-link-icon:active, .gotham-font.light-theme .touch .see-all-link-icon:hover, .gotham-font.light-theme .touch .see-all-link-icon:link, .gotham-font.light-theme .touch .see-all-link-icon:visited, .gotham-font.light-theme .touch .see-all-link:active, .gotham-font.light-theme .touch .see-all-link:hover, .gotham-font.light-theme .touch .see-all-link:link, .gotham-font.light-theme .touch .see-all-link:visited {
+    .builder-font.light-theme .refresh-link, .builder-font.light-theme .refresh-link-icon, .builder-font.light-theme .refresh-link-icon:active, .builder-font.light-theme .refresh-link-icon:hover, .builder-font.light-theme .refresh-link-icon:link, .builder-font.light-theme .refresh-link-icon:visited, .builder-font.light-theme .refresh-link:active, .builder-font.light-theme .refresh-link:hover, .builder-font.light-theme .refresh-link:link, .builder-font.light-theme .refresh-link:visited, .builder-font.light-theme .see-all-link, .builder-font.light-theme .see-all-link-icon, .builder-font.light-theme .see-all-link-icon:active, .builder-font.light-theme .see-all-link-icon:hover, .builder-font.light-theme .see-all-link-icon:link, .builder-font.light-theme .see-all-link-icon:visited, .builder-font.light-theme .see-all-link:active, .builder-font.light-theme .see-all-link:hover, .builder-font.light-theme .see-all-link:link, .builder-font.light-theme .see-all-link:visited, .builder-font.light-theme .touch .refresh-link, .builder-font.light-theme .touch .refresh-link-icon, .builder-font.light-theme .touch .refresh-link-icon:active, .builder-font.light-theme .touch .refresh-link-icon:hover, .builder-font.light-theme .touch .refresh-link-icon:link, .builder-font.light-theme .touch .refresh-link-icon:visited, .builder-font.light-theme .touch .refresh-link:active, .builder-font.light-theme .touch .refresh-link:hover, .builder-font.light-theme .touch .refresh-link:link, .builder-font.light-theme .touch .refresh-link:visited, .builder-font.light-theme .touch .see-all-link, .builder-font.light-theme .touch .see-all-link-icon, .builder-font.light-theme .touch .see-all-link-icon:active, .builder-font.light-theme .touch .see-all-link-icon:hover, .builder-font.light-theme .touch .see-all-link-icon:link, .builder-font.light-theme .touch .see-all-link-icon:visited, .builder-font.light-theme .touch .see-all-link:active, .builder-font.light-theme .touch .see-all-link:hover, .builder-font.light-theme .touch .see-all-link:link, .builder-font.light-theme .touch .see-all-link:visited {
         color: #ffffff;
         background-color: #00A2FF;
         border: 1px solid transparent;
@@ -342,7 +351,7 @@
     .light-theme .dialogs .dialog-container .dialog-message-container .indicated-message-bubble {
         color: rgb(116, 116, 116);
     }
-    .gotham-font .font-footer, .gotham-font .font-footer:active, .gotham-font .font-footer:focus, .gotham-font .font-footer:hover, .gotham-font .font-footer:link, .gotham-font .font-footer:visited, .gotham-font .text-footer, .gotham-font .text-footer:active, .gotham-font .text-footer:focus, .gotham-font .text-footer:hover, .gotham-font .text-footer:link, .gotham-font .text-footer:visited, .gotham-font .xsmall, .gotham-font .xsmall:active, .gotham-font .xsmall:focus, .gotham-font .xsmall:hover, .gotham-font .xsmall:link, .gotham-font .xsmall:visited, .gotham-font .xxsmall, .gotham-font .xxsmall:active, .gotham-font .xxsmall:focus, .gotham-font .xxsmall:hover, .gotham-font .xxsmall:link, .gotham-font .xxsmall:visited {
+    .builder-font .font-footer, .builder-font .font-footer:active, .builder-font .font-footer:focus, .builder-font .font-footer:hover, .builder-font .font-footer:link, .builder-font .font-footer:visited, .builder-font .text-footer, .builder-font .text-footer:active, .builder-font .text-footer:focus, .builder-font .text-footer:hover, .builder-font .text-footer:link, .builder-font .text-footer:visited, .builder-font .xsmall, .builder-font .xsmall:active, .builder-font .xsmall:focus, .builder-font .xsmall:hover, .builder-font .xsmall:link, .builder-font .xsmall:visited, .builder-font .xxsmall, .builder-font .xxsmall:active, .builder-font .xxsmall:focus, .builder-font .xxsmall:hover, .builder-font .xxsmall:link, .builder-font .xxsmall:visited {
         font-size: 10px !important;
         font-weight: 500 !important;
     }
@@ -385,7 +394,7 @@
 
 
 
-    .gotham-font.light-theme .refresh-link-icon {
+    .builder-font.light-theme .refresh-link-icon {
         padding: inherit;
     }
 
@@ -397,9 +406,16 @@
 
     .game-card-container thumbnail-2d, .game-card-thumb-container {
         height: 150px;
-        width: 150px;
+        width: 100%;
         display: inline-block;
         border-radius: 3px 3px 0 0;
+/*         padding: 6px; */
+    }
+    span.thumbnail-2d-container.game-card-thumb-container > img, div.featured-game-icon-container > span > img, span.thumbnail-2d-container.game-card-thumb > img {
+        padding: var(--iconPadding);
+    }
+    .game-card-container thumbnail-2d .game-card-thumb, .game-card-thumb-container .game-card-thumb {
+        width: 100%;
     }
 
     .avatar.avatar-card-fullbody .avatar-status {
@@ -604,9 +620,6 @@
         content: "!";
     }
 
-
-
-
     #nav-robux-icon .icon-robux-28x28
     {
         background-position: 0 -28px;
@@ -614,6 +627,45 @@
     }
     /*robux patch      */
     /* Some moved to image patch section */
+    /*START  July 1st 2024 Robux Patch.      */
+    div.robux-page-content > div.robux-std-container-1 {
+        width: 50%;
+        float:  right;
+    }
+    #robux-upsell-react-page-wrapper .robux-upsell-container-1 .robux-upsell-packages-table-desktop {
+        padding-bottom: 0;
+    }
+    #robux-upsell-react-page-wrapper .robux-std-container-1 {
+        margin-top: 0;
+        border-top: 1px solid rgba(0,0,0,.1);
+    }
+    div.robux-button-container > button > h4 {
+        color: white !important;
+    }
+    div.robux-upsell-item-and-packages-container, div.robux-table-banner.upsell-banner {
+        background: none !important;
+        box-shadow: none !important;
+    }
+    div.robux-page-content > div.robux-std-container-1 > div.font-header-2, div.robux-standard-packages-table-desktop > div.robux-header-unit, div.robux-upsell-container-1 > div.upsell-footer{
+        display: none !important;
+    }
+    .light-theme .icon-default-reverse-28x28, .light-theme .icon-robux-reverse, div.robux-button-container > button > span.icon-robux {
+        filter: invert(0);
+        background-position: -2px -40px;
+        width: 36px;
+        height: 36px;
+        float: left;
+        position: absolute;
+        left: 16px;
+    }
+    #robux-upsell-react-page-wrapper .subscription-container {
+        margin-top: 20%;
+    }
+    /*END  July 1st 2024 Robux Patch.      */
+    /* Remove nav-credit display */
+    .nav-credit {
+        display: var(--creditVis) !important;
+    }
 
     .light-theme .icon-default-economy-28x28, .light-theme .icon-robux-28x28, .light-theme .icon-robux-gold-28x28, .light-theme .icon-robux-white {
     /*     background-image: url(https://svgur.com/i/GuZ.svg); */
@@ -623,7 +675,7 @@
         background-size: 56px;
     }
 
-    .gotham-font.light-theme .see-all-link-icon {
+    .builder-font.light-theme .see-all-link-icon {
         padding: 1px 4px;
         font-size: 14px !important;
         font-weight: normal !important;
@@ -678,7 +730,7 @@
 
 
 
-    /*.gotham-font .text-link, .gotham-font .vlist .list-item .list-body .list-content a, .vlist .list-item .list-body .list-content .gotham-font a {
+    /*.builder-font .text-link, .builder-font .vlist .list-item .list-body .list-content a, .vlist .list-item .list-body .list-content .builder-font a {
         float: right;
     }*/
 
@@ -754,10 +806,10 @@
         padding: 10px 0 8px;
     } */
 
-    /* .gotham-font .game-main-content .game-calls-to-action .game-play-buttons, .gotham-font .game-main-content .game-calls-to-action .game-buttons-container .game-play-buttons {
+    /* .builder-font .game-main-content .game-calls-to-action .game-play-buttons, .builder-font .game-main-content .game-calls-to-action .game-buttons-container .game-play-buttons {
         padding: 36px 12px;
     } */
-    /* .gotham-font .game-main-content .game-calls-to-action .game-play-buttons, .gotham-font .game-main-content .game-calls-to-action .game-buttons-container .game-play-buttons {
+    /* .builder-font .game-main-content .game-calls-to-action .game-play-buttons, .builder-font .game-main-content .game-calls-to-action .game-buttons-container .game-play-buttons {
         border-top: #bdbebe solid 1px;
     } */
     /* .game-main-content .game-play-buttons .btn-common-play-game-lg {
@@ -770,7 +822,7 @@
         min-height: 345px;
         padding: 12px 12px !important;
     }
-    .gotham-font .game-main-content .game-calls-to-action {
+    .builder-font .game-main-content .game-calls-to-action {
         padding-right: 0;
     }
     .dark-theme > div > main > div > div > div > div.game-calls-to-action {
@@ -1180,12 +1232,12 @@
         padding-top: 3px;
     }
     /* changing top bar stuff I FOUND OUT HOW! Not really I just looked at Ologist's code and saw that he figured it out so I'm stealing it */ 
-    ul.nav:nth-child(2) > li:nth-child(1) > a:nth-child(1)
+    ul.rbx-navbar > li:nth-child(1) > a
         {
         font-size: 0 !important;
         }
 
-        ul.nav:nth-child(2) > li:nth-child(1) > a:nth-child(1)::before
+        ul.rbx-navbar > li:nth-child(1) > a::before
         {
         content: "Games";
         font-size: 16px;
@@ -1214,12 +1266,13 @@
         font-size: 16px;
         }
 
-    ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)
+    ul.rbx-navbar > li:nth-child(4) > div a
         {
+            display: none;
         font-size: 0 !important;
         }
 
-        ul.nav:nth-child(2) > li:nth-child(4) > a:nth-child(1)::before
+        #navigation-robux-container > div > a::before
         {
         content: "ROBUX";
         font-size: 16px;
@@ -1292,7 +1345,7 @@
         box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.45);
     }
 
-    .light-theme .section-content {
+    .light-theme .section-content, .light-theme .friends-carousel-container {
         box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
     }
 
@@ -1302,7 +1355,7 @@
     } */
 
 
-    .gotham-font .font-caption-body:hover, .gotham-font .tooltip .tooltip-inner:hover {
+    .builder-font .font-caption-body:hover, .builder-font .tooltip .tooltip-inner:hover {
         font-size: 16px;
         font-weight: 300;
         text-decoration: none;
@@ -1428,7 +1481,7 @@
         color: #000000;
     }
 
-    .gotham-font div {
+    .builder-font div {
         font-size: 16px;
         font-weight: 300;
         line-height: 1.3em;
@@ -1462,7 +1515,7 @@
     }*/
 
 
-    .gotham-font .font-caption-header, .gotham-font .font-caption-header:active, .gotham-font .font-caption-header:focus, .gotham-font .font-caption-header:hover, .gotham-font .font-caption-header:link, .gotham-font .font-caption-header:visited, .gotham-font .small.font-caption-header, .gotham-font .small.font-caption-header:active, .gotham-font .small.font-caption-header:focus, .gotham-font .small.font-caption-header:hover, .gotham-font .small.font-caption-header:link, .gotham-font .small.font-caption-header:visited, .gotham-font .small.text-error, .gotham-font .small.text-error:active, .gotham-font .small.text-error:focus, .gotham-font .small.text-error:hover, .gotham-font .small.text-error:link, .gotham-font .small.text-error:visited, .gotham-font .small.text-pastname, .gotham-font .small.text-pastname:active, .gotham-font .small.text-pastname:focus, .gotham-font .small.text-pastname:hover, .gotham-font .small.text-pastname:link, .gotham-font .small.text-pastname:visited, .gotham-font .small.text-report, .gotham-font .small.text-report-ads, .gotham-font .small.text-report-ads:active, .gotham-font .small.text-report-ads:focus, .gotham-font .small.text-report-ads:hover, .gotham-font .small.text-report-ads:link, .gotham-font .small.text-report-ads:visited, .gotham-font .small.text-report:active, .gotham-font .small.text-report:focus, .gotham-font .small.text-report:hover, .gotham-font .small.text-report:link, .gotham-font .small.text-report:visited, .gotham-font .text-error, .gotham-font .text-error:active, .gotham-font .text-error:focus, .gotham-font .text-error:hover, .gotham-font .text-error:link, .gotham-font .text-error:visited, .gotham-font .text-pastname, .gotham-font .text-pastname:active, .gotham-font .text-pastname:focus, .gotham-font .text-pastname:hover, .gotham-font .text-pastname:link, .gotham-font .text-pastname:visited, .gotham-font .text-report, .gotham-font .text-report-ads, .gotham-font .text-report-ads:active, .gotham-font .text-report-ads:focus, .gotham-font .text-report-ads:hover, .gotham-font .text-report-ads:link, .gotham-font .text-report-ads:visited, .gotham-font .text-report:active, .gotham-font .text-report:focus, .gotham-font .text-report:hover, .gotham-font .text-report:link, .gotham-font .text-report:visited {
+    .builder-font .font-caption-header, .builder-font .font-caption-header:active, .builder-font .font-caption-header:focus, .builder-font .font-caption-header:hover, .builder-font .font-caption-header:link, .builder-font .font-caption-header:visited, .builder-font .small.font-caption-header, .builder-font .small.font-caption-header:active, .builder-font .small.font-caption-header:focus, .builder-font .small.font-caption-header:hover, .builder-font .small.font-caption-header:link, .builder-font .small.font-caption-header:visited, .builder-font .small.text-error, .builder-font .small.text-error:active, .builder-font .small.text-error:focus, .builder-font .small.text-error:hover, .builder-font .small.text-error:link, .builder-font .small.text-error:visited, .builder-font .small.text-pastname, .builder-font .small.text-pastname:active, .builder-font .small.text-pastname:focus, .builder-font .small.text-pastname:hover, .builder-font .small.text-pastname:link, .builder-font .small.text-pastname:visited, .builder-font .small.text-report, .builder-font .small.text-report-ads, .builder-font .small.text-report-ads:active, .builder-font .small.text-report-ads:focus, .builder-font .small.text-report-ads:hover, .builder-font .small.text-report-ads:link, .builder-font .small.text-report-ads:visited, .builder-font .small.text-report:active, .builder-font .small.text-report:focus, .builder-font .small.text-report:hover, .builder-font .small.text-report:link, .builder-font .small.text-report:visited, .builder-font .text-error, .builder-font .text-error:active, .builder-font .text-error:focus, .builder-font .text-error:hover, .builder-font .text-error:link, .builder-font .text-error:visited, .builder-font .text-pastname, .builder-font .text-pastname:active, .builder-font .text-pastname:focus, .builder-font .text-pastname:hover, .builder-font .text-pastname:link, .builder-font .text-pastname:visited, .builder-font .text-report, .builder-font .text-report-ads, .builder-font .text-report-ads:active, .builder-font .text-report-ads:focus, .builder-font .text-report-ads:hover, .builder-font .text-report-ads:link, .builder-font .text-report-ads:visited, .builder-font .text-report:active, .builder-font .text-report:focus, .builder-font .text-report:hover, .builder-font .text-report:link, .builder-font .text-report:visited {
         font-size: 16px;
         font-weight: 400;
     }
@@ -1499,7 +1552,7 @@
         background-color: #e3e3e3 !important;
     }
 
-    .gotham-font.light-theme .see-all-link-icon:hover {
+    .builder-font.light-theme .see-all-link-icon:hover {
         box-shadow: 0 1px 4px 0 rgba(25,25,25,0.35);
         background-color: #44b4f8;
     }
@@ -1520,7 +1573,18 @@
         margin: 0 auto;
         padding: 0;
         text-align: left;
-        width: 100%;
+        width: 152px;
+        box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
+        transition: box-shadow 70ms ease;
+    }
+    .game-card-container:hover {
+        box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.75);
+    }
+    .game-tile-list .game-tile .game-card-container {
+        width: 152px;
+    }
+    div.featured-grid-item-container.game-card-container {
+        width: inherit;
     }
 
 
@@ -1546,14 +1610,8 @@
     }
 
     /* game tile shadows */ 
-    .game-card-container {
-        box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
-        transition: box-shadow 70ms ease;
-    }
-    .game-card-container:hover {
-        box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.75);
 
-    }
+
         /* Took a while to scout these rules out. */
         /* .light-theme .hover-game-tile.visible-tile:hover .featured-game-container {
             box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.60);
@@ -1669,9 +1727,7 @@
 
     /* Stuff for my browser that hopefully won't mess something up */ 
 
-    .grid-item-container.game-card-container {
-        width: 150px;
-    } /* cant seem to close the gap between the game cards 
+    /* cant seem to close the gap between the game cards 
     https://i.ibb.co/NVQQkd6/image.png
     Got any ideas? (I tried margin-... w/ !important and it didnt work)
     */
@@ -1740,7 +1796,7 @@
         z-index: 2 !important;
         left: 0px;
         background-color: #fff;
-        width: 101%;
+        width: 100%;
     }
 
     /* removed this
@@ -1809,11 +1865,11 @@
 
 
 
-    .gotham-font .font-caption-header, .gotham-font .font-caption-header:active, .gotham-font .font-caption-header:focus, .gotham-font .font-caption-header:hover, .gotham-font .font-caption-header:link, .gotham-font .font-caption-header:visited, .gotham-font .small.font-caption-header, .gotham-font .small.font-caption-header:active, .gotham-font .small.font-caption-header:focus, .gotham-font .small.font-caption-header:hover, .gotham-font .small.font-caption-header:link, .gotham-font .small.font-caption-header:visited, .gotham-font .small.text-error, .gotham-font .small.text-error:active, .gotham-font .small.text-error:focus, .gotham-font .small.text-error:hover, .gotham-font .small.text-error:link, .gotham-font .small.text-error:visited, .gotham-font .small.text-pastname, .gotham-font .small.text-pastname:active, .gotham-font .small.text-pastname:focus, .gotham-font .small.text-pastname:hover, .gotham-font .small.text-pastname:link, .gotham-font .small.text-pastname:visited, .gotham-font .small.text-report, .gotham-font .small.text-report-ads, .gotham-font .small.text-report-ads:active, .gotham-font .small.text-report-ads:focus, .gotham-font .small.text-report-ads:hover, .gotham-font .small.text-report-ads:link, .gotham-font .small.text-report-ads:visited, .gotham-font .small.text-report:active, .gotham-font .small.text-report:focus, .gotham-font .small.text-report:hover, .gotham-font .small.text-report:link, .gotham-font .small.text-report:visited, .gotham-font .text-error, .gotham-font .text-error:active, .gotham-font .text-error:focus, .gotham-font .text-error:hover, .gotham-font .text-error:link, .gotham-font .text-error:visited, .gotham-font .text-pastname, .gotham-font .text-pastname:active, .gotham-font .text-pastname:focus, .gotham-font .text-pastname:hover, .gotham-font .text-pastname:link, .gotham-font .text-pastname:visited, .gotham-font .text-report, .gotham-font .text-report-ads, .gotham-font .text-report-ads:active, .gotham-font .text-report-ads:focus, .gotham-font .text-report-ads:hover, .gotham-font .text-report-ads:link, .gotham-font .text-report-ads:visited, .gotham-font .text-report:active, .gotham-font .text-report:focus, .gotham-font .text-report:hover, .gotham-font .text-report:link, .gotham-font .text-report:visited {
+    .builder-font .font-caption-header, .builder-font .font-caption-header:active, .builder-font .font-caption-header:focus, .builder-font .font-caption-header:hover, .builder-font .font-caption-header:link, .builder-font .font-caption-header:visited, .builder-font .small.font-caption-header, .builder-font .small.font-caption-header:active, .builder-font .small.font-caption-header:focus, .builder-font .small.font-caption-header:hover, .builder-font .small.font-caption-header:link, .builder-font .small.font-caption-header:visited, .builder-font .small.text-error, .builder-font .small.text-error:active, .builder-font .small.text-error:focus, .builder-font .small.text-error:hover, .builder-font .small.text-error:link, .builder-font .small.text-error:visited, .builder-font .small.text-pastname, .builder-font .small.text-pastname:active, .builder-font .small.text-pastname:focus, .builder-font .small.text-pastname:hover, .builder-font .small.text-pastname:link, .builder-font .small.text-pastname:visited, .builder-font .small.text-report, .builder-font .small.text-report-ads, .builder-font .small.text-report-ads:active, .builder-font .small.text-report-ads:focus, .builder-font .small.text-report-ads:hover, .builder-font .small.text-report-ads:link, .builder-font .small.text-report-ads:visited, .builder-font .small.text-report:active, .builder-font .small.text-report:focus, .builder-font .small.text-report:hover, .builder-font .small.text-report:link, .builder-font .small.text-report:visited, .builder-font .text-error, .builder-font .text-error:active, .builder-font .text-error:focus, .builder-font .text-error:hover, .builder-font .text-error:link, .builder-font .text-error:visited, .builder-font .text-pastname, .builder-font .text-pastname:active, .builder-font .text-pastname:focus, .builder-font .text-pastname:hover, .builder-font .text-pastname:link, .builder-font .text-pastname:visited, .builder-font .text-report, .builder-font .text-report-ads, .builder-font .text-report-ads:active, .builder-font .text-report-ads:focus, .builder-font .text-report-ads:hover, .builder-font .text-report-ads:link, .builder-font .text-report-ads:visited, .builder-font .text-report:active, .builder-font .text-report:focus, .builder-font .text-report:hover, .builder-font .text-report:link, .builder-font .text-report:visited {
         font-size: 14px;
         font-weight: 300;
     }
-    .light-theme .gotham-font .font-caption-header {
+    .light-theme .builder-font .font-caption-header {
         color: #333333;
     }
 
@@ -1961,7 +2017,7 @@
         background-image: url(https://images.rbxcdn.com/153fd3209692232cd8087cad74a669b0-games.svg);
     }
 
-    .dark-theme .game-card-info .light-theme .info-label.icon-playing-counts-gray, .dark-theme .game-card-info .light-theme .info-label.icon-playing-counts-gray-white-70, .dark-theme .game-card-info .light-theme .info-label.icon-votes-gray, .dark-theme .game-card-info .light-theme .info-label.icon-votes-gray-white-70, .dark-theme .gotham-font .light-theme .refresh-link-icon:after, .dark-theme .gotham-font .light-theme .see-all-link-icon:after, .gotham-font.dark-theme .light-theme .refresh-link-icon:after, .gotham-font.dark-theme .light-theme .see-all-link-icon:after, .gotham-font.light-theme .refresh-link-icon:after, .gotham-font.light-theme .see-all-link-icon:after, .light-theme .game-card-info .info-label.icon-playing-counts-gray, .light-theme .game-card-info .info-label.icon-playing-counts-gray-white-70, .light-theme .game-card-info .info-label.icon-votes-gray, .light-theme .game-card-info .info-label.icon-votes-gray-white-70, .light-theme .gotham-font .refresh-link-icon:after, .light-theme .gotham-font .see-all-link-icon:after, .light-theme .icon-currently-playing-sm, .light-theme .icon-default-common-sm, .light-theme .icon-push-right-sm, .light-theme .icon-rating-sm, .light-theme .icon-refresh-sm
+    .dark-theme .game-card-info .light-theme .info-label.icon-playing-counts-gray, .dark-theme .game-card-info .light-theme .info-label.icon-playing-counts-gray-white-70, .dark-theme .game-card-info .light-theme .info-label.icon-votes-gray, .dark-theme .game-card-info .light-theme .info-label.icon-votes-gray-white-70, .dark-theme .builder-font .light-theme .refresh-link-icon:after, .dark-theme .builder-font .light-theme .see-all-link-icon:after, .builder-font.dark-theme .light-theme .refresh-link-icon:after, .builder-font.dark-theme .light-theme .see-all-link-icon:after, .builder-font.light-theme .refresh-link-icon:after, .builder-font.light-theme .see-all-link-icon:after, .light-theme .game-card-info .info-label.icon-playing-counts-gray, .light-theme .game-card-info .info-label.icon-playing-counts-gray-white-70, .light-theme .game-card-info .info-label.icon-votes-gray, .light-theme .game-card-info .info-label.icon-votes-gray-white-70, .light-theme .builder-font .refresh-link-icon:after, .light-theme .builder-font .see-all-link-icon:after, .light-theme .icon-currently-playing-sm, .light-theme .icon-default-common-sm, .light-theme .icon-push-right-sm, .light-theme .icon-rating-sm, .light-theme .icon-refresh-sm
     {
         background-image: url(https://images.rbxcdn.com/153fd3209692232cd8087cad74a669b0-games.svg);
     }
@@ -1988,6 +2044,20 @@
     .light-theme .icon-clanpoint, .light-theme .icon-default-branded, .light-theme .icon-favorite, .light-theme .icon-follow-game, .light-theme .icon-follow-game-gray, .light-theme .icon-leaderboard, .light-theme .icon-playerpoint
     {
         background-image: url(https://images.rbxcdn.com/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg)
+    }
+
+    div#game-follow-icon.icon-notifications-bell {
+        background-image: url('https://images.rbxcdn.com/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg');
+        background-position: 0 -250px;
+        
+    }
+    div#game-follow-icon.icon-notifications-bell:hover, div#game-follow-icon.followed.icon-notifications-bell {
+        background-image: url('https://images.rbxcdn.com/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg');
+        background-position: -28px -250px; 
+    }
+
+    .dark-theme div#game-follow-icon.icon-notifications-bell {
+        filter: grayscale(1);
     }
 
     .light-theme .dialogs .dialog-container .dialog-header
@@ -2020,18 +2090,18 @@
         background-color: #fff;
     }
 
-
-
-
-
     .light-theme .game-card-container {
         background-color: #fff;
     }
-    .dark-theme .game-card-container {
+    .dark-theme .game-card-container, .dark-theme .hover-game-tile.focused.old-hover .featured-game-container {
         background-color: #2d2d2d87;
     }
 
-
+    .dark-theme div.home-friends > div.people-list {
+        padding-top: 10px;
+        background-color: #0000001f;
+        box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
+    }
 
     .light-theme .btn-control-sm
     {
@@ -2062,7 +2132,7 @@
         border-radius: 2px;
     }
 
-    .gotham-font.light-theme .refresh-link-icon:after
+    .builder-font.light-theme .refresh-link-icon:after
     {
         display: none
     }
@@ -2096,7 +2166,7 @@
 
     .light-theme .icon-default-branded-16x16, .light-theme .icon-robux-16x16, .light-theme .icon-robux-gray-16x16, .light-theme .icon-robux-white-16x16
     {
-     background-image: url(https://images.rbxcdn.com/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg);
+        background-image: url(https://images.rbxcdn.com/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg);
     }
 
     .light-theme .layer
@@ -2303,16 +2373,16 @@
     .icon-left {
         background-position: 0 -300px !important;
     }
-    .btn-generic-left-sm[disabled] {
+    .dark-theme .btn-generic-left-sm[disabled], .dark-theme .btn-generic-right-sm[disabled] {
+        background: transparent !important;
+/*         border: 1px solid transparent !important;
+        opacity: 0.35 !important; */
+    }
+/*     .btn-generic-right-sm[disabled] {
         background: #fff !important;
         border: 1px solid transparent !important;
         opacity: 0.35 !important;
-    }
-    .btn-generic-right-sm[disabled] {
-        background: #fff !important;
-        border: 1px solid transparent !important;
-        opacity: 0.35 !important;
-    }
+    } */
 
     .chat-windows-header .chat-header-label span, div.robux-upsell > button > h4 {
         color: #fff;
@@ -2675,34 +2745,46 @@
 
     /* Messing with the games tab */
 
-
+    .game-card-info .icon-playing-counts-gray {
+        display: none !important;
+    }
     .game-card-info .vote-percentage-label {
         position: relative;
         top: 2.5px;
     }
 
 
-    .game-card-info .playing-counts-label {
-        position: relative; 
-        display: block !important;
-        bottom: 25px;
-        right: 2px;
-    } 
-    .game-card-info .icon-playing-counts-gray {
-        visibility: hidden;
+    a > div > div > div > span.playing-counts-label {
+        bottom: 14px !important;
+    }
+
+/*     div > div > div > span.icon-votes-gray {
+        top: 23.5px !important;
+    } */
+    div.profile-container > div > div > div > div > div > ul > li > div > a > div > span.playing-counts-label {
+        right: 0px;
     }
 
     .info-label.vote-percentage-label {
         top: 12px;
-
     }
 
     .info-label.icon-votes-gray {
         position: relative;
         top: 10px;
-
     }
 
+    .featured-grid-item-container .icon-votes-gray {
+        top: 20px;
+    }
+
+    .featured-grid-item-container .vote-percentage-label {
+        top: 22px;
+    }
+    
+    .featured-grid-item-container .game-card-name-info > div {
+        margin-top: 4px !important;
+    }
 
     /* --------------- */ 
     /* side bar tab thing */
@@ -2776,8 +2858,7 @@
     #signup-container #signup-header-container #signup-header {  
         overflow: hidden;
         position: relative;
-        right: 0px;
-        margin-right: 50%;
+        right: 25em !important;
         top: 200px;
         padding: 0px;
         width: 100%;
@@ -2785,6 +2866,18 @@
     }
     #signup-container #signup-header-container .header-icon-logo {
         height: 123px;
+    }
+    .signup-container .gender-button {
+        background: #fff;
+    }
+    #FemaleButton {
+        border-right: 1px solid #707070 !important; 
+    }
+    body[data-internal-page-name='Landing'] > div > footer.container-footer {
+        background-color: #fff !important;
+    }
+    body[data-internal-page-name='Landing'] > div > footer > div.footer * {
+        color: #464646 !important;
     }
     #app-stores-devices:after { 
         text-transform: none;
@@ -3241,9 +3334,9 @@
         .game-card-container {
             height: 240px;
         }
-        .game-carousel {
+/*         .game-carousel {
             height: 240px;
-        }
+        } */
     /* End of STATIC gamecards
     For expanding gamecards see addon on GitHub: anthony1x6000/ROBLOX2016stylus */ 
     /* View Details hover over player */
@@ -3348,7 +3441,7 @@
         margin-right: 15px;
         margin-bottom: 25px;
     }
-     */
+        */
     /* Remove discover */
     .games-list-header {
         display: none;
@@ -3411,17 +3504,20 @@
     }
     .light-theme .icon-default-branded-16x16, .light-theme .icon-robux-16x16, .light-theme .icon-robux-gray-16x16, .light-theme .icon-robux-white-16x16
     {
-     background-image: url(https://images.rbxcdn.com/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg);
+        background-image: url(https://images.rbxcdn.com/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg);
     }
     #nav-robux-icon .icon-robux-28x28:hover {
         background-image: url(https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg);
         background-position: -28px -28px;
     }
-    .icon-robux {
-        filter: invert(0.6);
+    .icon-robux, .light-theme .icon-default-reverse-28x28, .light-theme .icon-robux-reverse {
+/*         filter: invert(0.6); */
         background-position: 0px -37px;
         background-size: 75px;
         background-image: url(https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg) !important;
+    }
+    div[ng-show='friend\.presence\.placeUrl'] > div > div > div > span.icon-robux {
+        filter: invert(0.6);
     }
     /* Small roblox logo  */
         .icon-default-logo-r, .icon-logo-r, .icon-logo-r-95 {
@@ -3436,16 +3532,20 @@
         background-image: url(https://images.rbxcdn.com/153fd3209692232cd8087cad74a669b0-games.svg);
         background-position: 0 -351px;
     }
+    .light-theme li[data-testid='wide-game-tile'] .game-card-info .info-label.icon-votes-gray {
+        background-size: 32.05px auto;
+    }
+
     .game-card-info {
         position: absolute;
         bottom: auto !important;
         width: 100%;
         margin: 0 6px !important;
     }
-    .game-card-container .game-card-name {
+    .builder-font .game-card-container .game-card-name {
         padding: 0 6px !important;
         margin: 6px 0;
-        width: 150px;
+        width: 100%;
         margin-top: 2px !important;
         font-weight: 300;
     }
@@ -3476,7 +3576,6 @@
         position: relative;
     } */
     .hover-game-tile.focused {
-        width: 150px;    
         margin: 0 14px 0 0 !important;
     }
     .hover-game-tile.focused .featured-game-container .info-container {
@@ -3530,6 +3629,17 @@
         font-size: 12px;
     }
     /* Profile groups */
+        div.btr-profile-groups > div > ul > li > div > div.text-overflow:nth-child(3) {
+                margin-top: 16px;
+        }
+        div.btr-profile-groups > div > ul > li > div > div.text-overflow {
+            margin-left: 7px !important;
+        }
+        div.btr-profile-groups > div > ul > li.game-card{
+            margin-right: 34px;
+        }
+    /*end better roblox profile groups  */
+
     div.game-card-name-secondary[ng-bind='\$ctrl\.group\.role\.name'], div[ng-bind="\'Label\.MembersCount\'\ \|\ translate\:\{\ memberCount\:\ \$ctrl\.group\.members\ \}"] {
         position: relative;
         margin-top: 0;
@@ -3664,9 +3774,188 @@
     .dark-theme #autocomplete-list {
         background: rgba(35, 37, 39, .81);
     }
-    #nav-credit-icon {
+    .light-theme #nav-credit-icon {
         filter: invert(1);
     }
+    /* New games interface patch : 001  */
+    /* 001 : User Home  */
+
+
+        div.game-card-text-pill {
+            display: none !important;  
+        }
+        @media (max-width: 767px) {
+            .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile, 
+            .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile.focused, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile.focused{
+                width: calc((717px - 16px*(var(--items-per-row) - 1))/var(--items-per-row)) !important;
+            }
+            body[data-internal-page-name='Home'] > div > main > div.content { 
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+        }
+        .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.expand-home-content .hover-game-tile.event-tile.focused, .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.expand-home-content .hover-game-tile.grid-tile.focused,
+        .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile.focused, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile.focused {
+            width: calc((var(--home-feed-width) - 1px - 16px*(var(--items-per-row) - 1))/var(--items-per-row) + 0px) !important;
+        }
+        .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile,
+        .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile.focused, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile.focused{
+            width: calc((var(--home-feed-width) - 1px - 16px*(var(--items-per-row) - 1))/var(--items-per-row));
+        }
+        body[data-internal-page-name='Home'] > div > main > div.content { 
+            padding-left: 15%;
+            padding-right: 20%;
+        }
+
+        .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile .featured-game-container, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile .featured-game-container, 
+        .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.expand-home-content .hover-game-tile.event-tile .featured-game-container, .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.expand-home-content .hover-game-tile.grid-tile .featured-game-container {
+            height: calc((var(--home-feed-width) - 1px - 16px*(var(--items-per-row) - 1))/var(--items-per-row)*0.5625 + 61px);
+        }
+        .hover-game-tile.event-tile .featured-game-container .featured-game-icon-container, 
+        .hover-game-tile.event-tile, .hover-game-tile.grid-tile{
+            transition: none !important;
+        }
+
+        div.wide-game-tile-metadata > div > div > span.info-label.icon-votes-gray {
+            margin: 3px 0 0 3px;
+        }
+
+        div > div > div > span.vote-percentage-label {
+            position: relative !important;
+        }
+
+        div.wide-game-tile-metadata > div > div > span.info-label{
+            padding: 19px 0 0 3px;
+        }
+
+
+
+        .hover-game-tile.event-tile.focused.old-hover, .hover-game-tile.grid-tile.focused.old-hover {
+            padding: 0;
+/*             prevents card from moving */
+        }
+
+        div.game-home-page-container > div > div.game-carousel{
+            grid-template-columns: repeat(auto-fill, 152px);
+            grid-column-gap: 0.9em;
+        }
+
+
+        
+        .hover-game-tile.focused {
+            background: none !important;
+        }
+
+        .game-grid.home-game-grid {
+            margin: 0;
+        }
+
+        div.wide-game-tile-carousel {
+            margin-bottom: 0;
+        }
+        .game-carousel.expand-home-content-disabled {
+            margin-bottom: 0;
+            overflow: visible;
+        }
+
+        div.info-container > div.wide-game-tile-metadata > div > div.game-card-info[data-testid='game-tile-stats-text-footer'] {
+            padding-top: 16px;
+            padding-left: 3px;
+        }
+
+
+        .hover-game-tile.grid-tile .featured-game-container .info-container {
+            margin-top: 0;
+        }
+
+        div > div.game-card-info {
+            bottom: 12px !important;
+        }
+
+        .game-grid.home-game-grid, .game-grid.home-game-grid.wide-game-tile-game-grid {
+            grid-template-columns: repeat(auto-fill,calc((var(--home-feed-width) - 19px* (var(--items-per-row) - 1))/var(--items-per-row)));
+        }
+        .game-home-page-container .see-all-link-icon {
+            position: relative;
+            left: 1em;
+        }
+
+    /*     Remove Today's picks */
+        .game-sort-carousel-wrapper:nth-child(2) {
+            display: none; 
+        }
+    /* Friends carousel  */
+    .friends-carousel-container {
+        background: white;
+        padding-top: 16px;
+        height: 147px;
+    }
+    .dark-theme .friends-carousel-container {
+        background: #2d2d2d87;
+    }
+
+    /*  Catalog fixes    */
+        .container-main .catalog-full-screen .catalog-results .item-cards-stackable .item-card, .container-main .splash.catalog-full-screen .catalog-results .item-cards-stackable .item-card {
+            width: 150px;
+            min-width: auto;
+            margin-right: 12px;
+        }
+        .add-to-cart {
+            border-radius: 2px !important;
+            opacity: 0.8;
+            mix-blend-mode: multiply;
+        }
+        .light-theme .topic-container .topic-carousel .unselected-topic, .light-theme .topic-container .topic-carousel .selected-topic,
+        .dark-theme .topic-container .topic-carousel .unselected-topic, .dark-theme .topic-container .topic-carousel .selected-topic {
+            border-radius: 2px;
+            background: white;
+            color: #000;
+            border: solid 0.5px #d4d4d4;
+        }
+        .dark-theme .topic-container .topic-carousel .unselected-topic, .dark-theme .topic-container .topic-carousel .selected-topic {
+            filter: invert(0.85);
+        }
+    /* Game description fixes      */
+        .game-description-container {
+            margin-top: 6%;
+            padding: 6px;
+        }
+        .light-theme .game-description-container {
+            background: white;
+        }
+        .game-description-container  * {
+            position: relative !important;
+        }
+        div.game-description-container > div.container-header {
+            bottom: 53px;
+        }
+        .game-description:not( #btr-description-wrapper .game-description), .game-age-recommendation-details-container:not(#btr-description-wrapper .game-age-recommendation-details-container) {
+            bottom: 47px;
+        }
+    /*  Experience Page    */
+        .game-carousel.wide-game-tile-carousel.expand-home-content.games-page-carousel .hover-game-tile.event-tile.focused, .game-carousel.wide-game-tile-carousel.expand-home-content.games-page-carousel .hover-game-tile.grid-tile.focused, .game-carousel.wide-game-tile-carousel.expand-home-content.games-page-carousel .hover-game-tile.interest-tile.focused, .game-carousel.wide-game-tile-carousel.games-page-carousel.games-page-carousel .hover-game-tile.event-tile.focused, .game-carousel.wide-game-tile-carousel.games-page-carousel.games-page-carousel .hover-game-tile.grid-tile.focused, .game-carousel.wide-game-tile-carousel.games-page-carousel.games-page-carousel .hover-game-tile.interest-tile.focused {
+            width: 100% !important;
+        }
+        ul.wide-game-tile-carousel.games-page-carousel > li > div.game-card-container {
+            height: 240px !important;
+            max-height: 240px !important;
+        }
+    /* Don't mess with, modified home page game tiles */
+        .game-card-info .playing-counts-label {
+            position: relative; 
+            display: block !important;
+            bottom: 25px;
+        } 
+        ul.wide-game-tile-carousel.games-page-carousel div.game-card-info {
+            top: -2px;
+            left: -2px;
+        }
+        div.wide-game-tile-metadata > div > div > span.playing-counts-label {
+            bottom: 4px;
+            left: -55px;
+        }
+
     /* ROBLOX 2016 Avatar Editor Reconstruct by Mystery Channel (1185261) 
         No License as of 09-18023
         https://uso.kkx.one/style/227593 */
@@ -3674,5 +3963,19 @@
         border-radius: 0px;
     }
     thumbnail-2d[ng-class="\{\'shimmer\'\:avatarCallLimiter\.itemCardsDisabled\}"]{width:58%!important}.items-list .item-card .item-card-thumb{position:relative;top:2px;left:21px;cursor:default}.items-list.avatar-item-list .item-card.six-column{width:16.6%;margin-right:20px}.avatar-editor-header h1{display:inline-block;font-weight:1000;letter-spacing:-1px;line-height:32px;font-size:0}.items-list .item-card .item-card-thumb-container::before{display:inline-block!important;content:"Wear";font-size:14px;cursor:pointer;color:#fff;border:1px solid #0852b7;background-color:#0852b7!important;background-image:url(http://static.rbxcdn.com/images/Buttons/StyleGuide/bg-btn-blue.png)!important;padding:1px 7px 0;position:relative;left:78px;opacity:1!important}.items-list .item-card .item-card-name{color:#0055B3;font-size:14px}.light-theme .avatar-back{background:transparent}span.toggle-three-dee.btn-control.btn-control-small.ng-binding{background-image:url(https://static.rbxcdn.com/images/StyleGuide/btn-control-small-tile.png);padding:0 6px;line-height:1.428;font-size:12px;border-color:#777;min-height:0;border-radius:0}.light-theme .thumbnail-2d-container{background:none}.avatar-editor-header h1::before{content:"Avatar Customizer";font-size:32px}body[data-internal-page-name='Avatar'] > div > main#container-main{background:#fff}div[ng-controller='avatarController'] > div > div > div.section-content,.items-list.avatar-item-list .item-card .item-card-container{box-shadow:none!important}.items-list .item-card .item-card-equipped::before{display:inline-block;content:"Wearing";font-size:14px;cursor:pointer;height:26.781px;color:#fff;border:1px solid #0852b7;background-color:#0852b7;background-image:url(http://static.rbxcdn.com/images/Buttons/StyleGuide/bg-btn-blue.png);padding:1px 7px 0;position:relative;left:62px;top:-1px}.light-theme .item-card-container .item-card-equipped{border:none}.item-card-equipped-label{visibility:hidden}#wrap.pinned .right-wrapper:before{background:none!important}
-
+    .pager-holder {
+        position: relative;
+        z-index: 999;
+    }
+    /* messsage back icon fix */
+    .messages-container .success-block .navigationsuccess a .icon-left {
+        background-position: 0 -420px !important;
+    }
+    #nav-group > .dynamic-ellipsis-item.font-header-2 {
+    visibility: hidden;
+    }
+    #nav-group > .dynamic-ellipsis-item.font-header-2:before {
+    visibility: visible;
+    content: "Groups"
+    }
 }

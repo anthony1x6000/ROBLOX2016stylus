@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           ROBLOX 2016 dev12-10
+@name           ROBLOX 2016 dev12-31
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        12.10.1733873012
+@version        12.31.1735608187
 @license        MIT License
 @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
 @var select displayRecommended 'Display Recommended Games at home?' ['block:Visible', 'none:Hidden']
@@ -3970,5 +3970,12 @@
     /* messsage back icon fix */
     .messages-container .success-block .navigationsuccess a .icon-left {
         background-position: 0 -420px !important;
+    }
+    #nav-group > .dynamic-ellipsis-item.font-header-2 {
+    visibility: hidden;
+    }
+    #nav-group > .dynamic-ellipsis-item.font-header-2:before {
+    visibility: visible;
+    content: "Groups"
     }
 }
