@@ -307,6 +307,9 @@
         background-color: #02b757;
         border: none;
     }
+    .dark-theme .touch .btn-common-play-game-lg.active, .dark-theme .touch .btn-common-play-game-lg:active, .dark-theme .touch .btn-common-play-game-lg:focus, .dark-theme .touch .btn-common-play-game-lg:hover, .dark-theme .touch .btn-common-play-game-lg:visited, .light-theme .touch .btn-common-play-game-lg.active, .light-theme .touch .btn-common-play-game-lg:active, .light-theme .touch .btn-common-play-game-lg:focus, .light-theme .touch .btn-common-play-game-lg:hover, .light-theme .touch .btn-common-play-game-lg:visited, .light-theme a.btn-common-play-game-lg {
+        background-color: #02b757;
+    }
 
     /* Green buttons */
     .light-theme .btn-primary-lg, li.signup-button-container {

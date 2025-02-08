@@ -24,6 +24,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Home Page] Fixed game card width again.
 - [Home Page] Add background to friends list. 
 - [Home Page] Remove "Today's Picks." The removal is not final.
+- [Games Page] Fixed button coloring/shadowing.
 
 ### Find a bug?
 
