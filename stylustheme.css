@@ -29,7 +29,10 @@
     div[data-testid='home-page-game-grid'], div.home-interleave-divider {
         display: var(--displayRecommended);
     }
-
+    /*Remove New Homepage Editions Pt. 2 ("Today's Picks)" Add to Top of Userstyle Like Similar options (ex: displayRecommended) (Pt. 1 is lower down in the userstyle)*/
+    div.game-sort-carousel-wrapper:nth-of-type(3) {
+        display: var(--displayTodaysPicks);
+    }
     @font-face {
         font-family: 'Source Sans Pro';
         font-style: normal;
@@ -3968,5 +3971,119 @@
     #nav-group > .dynamic-ellipsis-item.font-header-2:before {
     visibility: visible;
     content: "Groups"
+    }
+
+    /*Homepage Tweaks (The Continuation of this is Pt. 2, which is near the top of the userstyle)*/
+    /*Remove New Homepage Editions Pt. 1 (If you determine that Pt.1 impedes site functionality, feel free to make it into a toggleable option as well)*/
+    .friends-carousel-list-container > .friends-carousel-tile {
+        display: none;
+    }
+    .home-page-upsell-card-banner-container {
+        display: none;
+    }
+    /*Home Page Font Fix*/
+    .css-1ia7jxc-textIconRowText[data-sdui-text="true"] {
+        font-weight: 200;
+        font-size: 25px;
+    }
+    /*Remove Arrows Next to IconRowText (not sure if this is fully accurate but I based it off of the homepage screenshot in the github README.md)*/
+    .icon-push-right-16x16.sdui-icon.css-5x2vn1-iconBaseStyles.css-1y0a2rp-iconOverride.css-ne7k1o-iconBaseStyles {
+        display: none;
+    }
+
+    /*Profile Accuracy Fixes*/
+    /*More Accurate Friend Text*/
+    b {
+        font-weight: 300;
+        font-size: 24px;
+        color: #00A2FF;
+    }
+    /* More Accurate Profile Header (really just a fix for how this style was before it broke)*/
+    .profile-header-main {
+        background-color: #fff;
+        box-shadow: 0 1px 4px 0 rgba(25,25,25,0.3);
+        padding: 15px;
+        position: relative;
+    }
+    /*Accurate Stat Text (Friends, Followers Following) in Profile*/
+    .profile-header-social-count-label {
+        padding: 0 5px;
+        text-align: center;
+        color: #B8B8B8;
+        font-weight: 400;
+        line-height: 1.3em;
+        font-size: 16px;
+        font-family: "Source Sans Pro",Arial,Helvetica,sans-serif;
+    }
+    /*Accurate Friend Button in Profile*/
+    .web-blox-css-tss-rjt6b6-Typography-buttonMedium {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        background-color: #fff;
+        border-color: #B8B8B8;
+        color: #191919;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 400;
+        height: auto;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        padding: 9px 9px;
+        font-size: 18px;
+        line-height: 100%;
+        border-radius: 3px;
+    }
+    /*Accurate Chat Button in Profile (or at least as accurate as I could get it because I couldn't figure out how to replace "Chat" with "Message"*/
+    .web-blox-css-tss-1n7nggp-Button-contained {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        background-color: #fff;
+        border-color: #B8B8B8;
+        color: #191919;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 400;
+        height: auto;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        padding: 9px 9px;
+        font-size: 18px;
+        line-height: 100%;
+        border-radius: 3px;
+    }
+    /*Accurate About and Creations Tab in Profile*/
+    #tab-about > .text-lead, #tab-creations > .text-lead {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    /*Fixed Profile Name Header Size and Padding (I have yet to figure out how to position it in the same way as the archive)*/
+    .web-blox-css-mui-clml2g.MuiTypography-inherit.web-blox-css-tss-1sr4lqx-Typography-h1-Typography-root.MuiTypography-root {
+        float: left;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 1em;
+        padding: 15px 0;
+        box-sizing: inherit;
+    }
+    .profile-header-main {
+        margin-bottom: 18px;
+    }
+    /*You might not need this part because it has no effect, but it's closer to the archive this way*/
+    .profile-header-details {
+        padding: 0;
+    }
+    /*Join Button Fix*/
+    .web-blox-css-tss-lo77dr-Button-contained, .web-blox-css-tss-lo77dr-Button-contained:hover {
+        background-color: #3fc679;
+        font-size: 18px;
+        font-weight: 400;
     }
 }
