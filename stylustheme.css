@@ -3092,6 +3092,7 @@
     /* avatar page changes */ 
     .redraw-avatar > .text-link.ng-binding::before {
         content: "Click here to re-draw it!";
+        line-height: 30px;
         font-size: 16px;
         color: #085bcd;
     }
@@ -3112,9 +3113,6 @@
     }
     div > div > div > div > div > div > div.avatar-editor-header > div.catalog-header > a.btn-primary-md {
         visibility: hidden; 
-    }
-    div.catalog-header {
-        display: none;
     }
     /*accept friend button */ 
     #accept-fr-btn {
@@ -4086,4 +4084,40 @@
         font-size: 18px;
         font-weight: 400;
     }
+    /* Outfit Settings cog */
+    span.icon-settings-16x16.edit-outfit {
+        position: relative;
+        left: 0;
+    }
+    /* Content deleted */
+    span.icon-blocked.thumbnail-2d-container {
+        overflow: hidden;
+        z-index: 0;
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjAuMiwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSI5MHB4IiBoZWlnaHQ9IjkwcHgiIHZpZXdCb3g9IjAgMCA5MCA5MCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgOTAgOTA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojRkZGRkZGO30KCS5zdDF7b3BhY2l0eTowLjE7fQoJLnN0MntmaWxsOm5vbmU7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjI7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjEwO30KPC9zdHlsZT4KPGcgaWQ9InVuYXBwcm92ZWRfMV8iPgoJPHJlY3QgaWQ9ImJnXzJfIiBjbGFzcz0ic3QwIiB3aWR0aD0iOTAiIGhlaWdodD0iOTAiLz4KCTxnIGlkPSJ1bmFwcHJvdmVkIiBjbGFzcz0ic3QxIj4KCQk8Y2lyY2xlIGNsYXNzPSJzdDIiIGN4PSI0NSIgY3k9IjQ4LjgiIHI9IjEwIi8+CgkJPGxpbmUgY2xhc3M9InN0MiIgeDE9IjM4IiB5MT0iNDEuNyIgeDI9IjUyIiB5Mj0iNTUuOCIvPgoJCTxwb2x5bGluZSBjbGFzcz0ic3QyIiBwb2ludHM9IjMyLjUsMjMuNSAyOC41LDIzLjUgMjguNSwyNy41IAkJIi8+CgkJPHBvbHlsaW5lIGNsYXNzPSJzdDIiIHBvaW50cz0iMjguNSw2Mi41IDI4LjUsNjYuNSAzMi41LDY2LjUgCQkiLz4KCQk8bGluZSBjbGFzcz0ic3QyIiB4MT0iMjguNSIgeTE9IjMxLjgiIHgyPSIyOC41IiB5Mj0iMzcuOCIvPgoJCTxsaW5lIGNsYXNzPSJzdDIiIHgxPSIyOC41IiB5MT0iNDIiIHgyPSIyOC41IiB5Mj0iNDgiLz4KCQk8bGluZSBjbGFzcz0ic3QyIiB4MT0iMjguNSIgeTE9IjUyLjIiIHgyPSIyOC41IiB5Mj0iNTguMiIvPgoJCTxwb2x5bGluZSBjbGFzcz0ic3QyIiBwb2ludHM9IjU3LjUsNjYuNSA2MS41LDY2LjUgNjEuNSw2Mi41IAkJIi8+CgkJPGxpbmUgY2xhc3M9InN0MiIgeDE9IjYxLjUiIHkxPSI1OC4yIiB4Mj0iNjEuNSIgeTI9IjUyLjIiLz4KCQk8bGluZSBjbGFzcz0ic3QyIiB4MT0iNjEuNSIgeTE9IjQ4IiB4Mj0iNjEuNSIgeTI9IjQyIi8+CgkJPGxpbmUgY2xhc3M9InN0MiIgeDE9IjYxLjUiIHkxPSIzNy44IiB4Mj0iNjEuNSIgeTI9IjMzLjgiLz4KCQk8bGluZSBjbGFzcz0ic3QyIiB4MT0iMzYuOCIgeTE9IjY2LjUiIHgyPSI0Mi44IiB5Mj0iNjYuNSIvPgoJCTxsaW5lIGNsYXNzPSJzdDIiIHgxPSI0Ny4yIiB5MT0iNjYuNSIgeDI9IjUzLjIiIHkyPSI2Ni41Ii8+CgkJPGxpbmUgY2xhc3M9InN0MiIgeDE9IjM2LjgiIHkxPSIyMy41IiB4Mj0iNDIuOCIgeTI9IjIzLjUiLz4KCQk8bGluZSBjbGFzcz0ic3QyIiB4MT0iNDcuMiIgeTE9IjIzLjUiIHgyPSI1MS4yIiB5Mj0iMjMuNSIvPgoJCTxsaW5lIGNsYXNzPSJzdDIiIHgxPSI1MS40IiB5MT0iMjMuNiIgeDI9IjU0LjkiIHkyPSIyNy4xIi8+CgkJPGxpbmUgY2xhc3M9InN0MiIgeDE9IjU3LjkiIHkxPSIzMC4xIiB4Mj0iNjEuNCIgeTI9IjMzLjYiLz4KCQk8bGluZSBjbGFzcz0ic3QyIiB4MT0iNTEuMiIgeTE9IjIzLjgiIHgyPSI1MS4yIiB5Mj0iMjYuOCIvPgoJCTxsaW5lIGNsYXNzPSJzdDIiIHgxPSI1OC41IiB5MT0iMzMuOCIgeDI9IjYxLjUiIHkyPSIzMy44Ii8+CgkJPHBvbHlsaW5lIGNsYXNzPSJzdDIiIHBvaW50cz0iNTEuMiwzMC4yIDUxLjIsMzMuOCA1NC44LDMzLjggCQkiLz4KCTwvZz4KPC9nPgo8L3N2Zz4K) -10px / 110px;
+    }
+    div.outfit-card > div > a > div.item-card-name {
+        z-index: 1;
+        position: absolute;
+    }
+    /* Catalog button */
+    div.avatar-editor-header > div > div:after {
+        content: "Explore the catalog to find more clothes!" !important;
+        visibility: visible;
+    }
+    div.avatar-editor-header > div > div {
+        visibility: hidden;
+    }
+    .catalog-header {
+        margin-top: 0;
+    }
+    a.btn-primary-md[href='https\:\/\/www\.roblox\.com\/catalog'] {
+        border-radius: 3px;
+    }
+    /* Avatar editor header */
+    .avatar-editor-header h1::before {
+        content: "Avatar Editor";
+        font-family: "Source Sans Pro",Arial,Helvetica,sans-serif !important;
+        font-weight: 400;
+    }
+
 }

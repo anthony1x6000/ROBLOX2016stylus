@@ -1,4 +1,4 @@
-# 1.3.1 Unreleased
+# 1.3.2 Unreleased
 
 ## Thanks for nearly 100k installs on Userstyles!!!
 ![image](https://github.com/anthony1x6000/ROBLOX2016stylus/assets/33004321/0560ce22-209c-4df2-90fa-b61dda473597)
@@ -13,18 +13,10 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 [**HELLO, [USER]**](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/helloUser.user.js) - I probably should have announced this a while ago, but I made a [Userscript](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/helloUser.user.js) that **brings back the Hello, User stuff on the home page**. Go check it out! Works with and without the Roblox 2016 style.
 
 ## Changes/Fixes 
-- [Icon padding | x2 ] Optional 2016 icon padding. You will see why it will be optional. 
-- [BTR ROBLOX Profile] Fix groups tiles when viewing someones profile with better roblox.
-- [Robux Page] Clean up robux page.
-- [BTR ROBLOX Game Description] Fix game description when using BTR ROBLOX.
-- [Navbar] Update navbar to say 'Games' and 'ROBUX' instead of 'Charts' and 'Robux.' Fixed again 08/25 to bring back "ROBUX."
-- [Sign-up] Fix logo position on sign-up page.
-- [Sign-up] Fix background colors.
-- [Experience Page] Patch-up game tiles. Won't attempt to bring back the older, thinner tiles.
-- [Home Page] Fixed game card width again.
-- [Home Page] Add background to friends list. 
-- [Home Page] Remove "Today's Picks." The removal is not final.
-- [Games Page] Fixed button coloring/shadowing.
+- [Avatar Page] Setting cog fix on Outfits page. 
+- [Avatar Page] Fix "Explore the catalog to find more clothes!" 
+- [Avatar Page] Modify font weight and text of "Avatar Editor" 
+- [Avatar Page] Touch up avatar redraw (line height).
 
 ### Find a bug?
 
