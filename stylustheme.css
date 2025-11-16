@@ -3916,6 +3916,9 @@
         .light-theme .game-description-container {
             background: white;
         }
+        .dark-theme .game-description-container {
+              background-color: #2d2d2d87;
+        }
         .game-description-container  * {
             position: relative !important;
         }
