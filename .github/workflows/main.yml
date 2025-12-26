@@ -41,8 +41,8 @@ jobs:
 
     - name: Set user identity
       run: |
-        git config --global user.email "33004321+anthony1x6000@users.noreply.github.com"
-        git config --global user.name "roblox-workflow"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
     - name: Commit changes to main branch
       run: |

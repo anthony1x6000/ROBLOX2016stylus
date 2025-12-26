@@ -49,8 +49,8 @@ jobs:
       if: github.event_name == 'release'
     - name: Set user identity
       run: |
-        git config --global user.email "contact.b7hkd@simplelogin.fr"
-        git config --global user.name "anthony1x6000"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
     - name: Commit changes to downloads branch
       run: |
         ls
