@@ -3769,6 +3769,23 @@
     .light-theme #nav-credit-icon {
         filter: invert(1);
     }
+
+    /* Home page, wide card hover fix (Recommended For You)*/ 
+    .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.dynamic-layout-sizing .hover-game-tile.grid-tile .featured-game-container,
+    .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.dynamic-layout-sizing .hover-game-tile.grid-tile.focused.old-hover {
+        max-height: 230px;
+        height: 230px;
+        width: 100%;
+    }
+    
+    /* Todays picks */
+    .game-carousel.wide-game-tile-carousel.home-page-carousel .hover-game-tile.event-tile .featured-game-container {
+        width: calc((var(--home-feed-width) - 1px - 16px*(var(--items-per-row) - 1))/var(--items-per-row)); 
+        max-height: 260px;
+        height: 260px;
+    }
+    
+
     /* New games interface patch : 001  */
     /* 001 : User Home  */
 
@@ -4122,5 +4139,4 @@
         font-family: "Source Sans Pro",Arial,Helvetica,sans-serif !important;
         font-weight: 400;
     }
-
 }
