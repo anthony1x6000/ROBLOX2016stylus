@@ -1,0 +1,40 @@
+name: Update navigation.txt
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - stylustheme.css
+      - .github/workflows/navigate.py
+      - .github/workflows/update-navigation.yml
+
+permissions:
+  contents: write
+
+jobs:
+  build-navigation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Generate navigation.txt (repo root)
+        shell: bash
+        run: |
+          rm -f navigation.txt
+          python .github/workflows/navigate.py stylustheme.css >> navigation.txt
+
+      - name: Commit and push if changed
+        shell: bash
+        run: |
+          git add navigation.txt
+          git diff --cached --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update navigation.txt"
+          git push

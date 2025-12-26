@@ -20,6 +20,10 @@ It was built on [Tampermonkey](https://www.tampermonkey.net/) so I'd recommend u
 ## Contributing
 **If you can, please contribute!** \
 I don't know much CSS myself, so any contribution, even improving the slightest little thing, is greatly appreciated!
+### How to navigate the userstyle 
+The userstyle is currently very bloated and unorganized. To make it a little easier to figure out where edits are, provided is [navigation.txt](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/navigation.txt).
+
+In [navigation.txt](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/navigation.txt), you can see all of the comments in the userstyle and the lines the comments are on. So, if someone made a change to the catalog, you can see: ```Line 3040: /* catalog changes  */``` 
 ## Style Mirrors
  - [Github](https://github.com/anthony1x6000/ROBLOX2016stylus/raw/downloads/.user.css-installFiles/release.user.css)
  - [Userstyles](https://userstyles.org/styles/189624)
