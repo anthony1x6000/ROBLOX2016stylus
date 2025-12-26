@@ -3772,23 +3772,30 @@
 
     /* Home page, wide card hover fix (Recommended For You)*/ 
     .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.dynamic-layout-sizing .hover-game-tile.grid-tile .featured-game-container,
-    .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.dynamic-layout-sizing .hover-game-tile.grid-tile.focused.old-hover {
-        max-height: 230px;
-        height: 230px;
+    .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.dynamic-layout-sizing .hover-game-tile.grid-tile.focused.old-hover, 
+    .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.dynamic-layout-sizing .hover-game-tile.grid-tile {
+        max-height: 100%;
+        height: 100%;
         width: 100%;
     }
     
     /* Todays picks */
-    .game-carousel.wide-game-tile-carousel.home-page-carousel .hover-game-tile.event-tile .featured-game-container {
+    .game-carousel.wide-game-tile-carousel.home-page-carousel .hover-game-tile.event-tile .featured-game-container, 
+    .game-carousel.wide-game-tile-carousel.home-page-carousel .hover-game-tile.event-tile {
         width: calc((var(--home-feed-width) - 1px - 16px*(var(--items-per-row) - 1))/var(--items-per-row)); 
         max-height: 260px;
-        height: 260px;
+        height: 100%;
     }
     
+    .game-carousel.wide-game-tile-carousel.home-page-carousel {
+        width: var(--home-feed-width);
+        height: 115%;
+        overflow-x: hidden;
+    }
 
     /* New games interface patch : 001  */
     /* 001 : User Home  */
-
+    /* Modify width of home page */
 
         div.game-card-text-pill {
             display: none !important;  

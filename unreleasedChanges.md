@@ -17,7 +17,8 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Avatar Page] Fix "Explore the catalog to find more clothes!" 
 - [Avatar Page] Modify font weight and text of "Avatar Editor" 
 - [Avatar Page] Touch up avatar redraw (line height).
-- [Home page] Fix width and height hover issues on the 'Today's Picks' and 'Recommended For You' game cards 
+- [Home page] Fix width and height hover issues on the 'Today's Picks' and 'Recommended For You' game cards.
+- [Home page] Fix Today's Picks going outside of home page width.
 
 ### Find a bug?
 
