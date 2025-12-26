@@ -19,8 +19,8 @@ jobs:
     - name: Set Date Variables
       id: set-date
       run: |
-        echo "CUR_DATE=$(date +%m-%d)" >> $GITHUB_ENV
-        echo "CURV_DATE=$(date +%m.%d)" >> $GITHUB_ENV
+        echo "CUR_DATE=$(date +%m-%d-%Y)" >> $GITHUB_ENV
+        echo "CURV_DATE=$(date +%m.%d.%Y)" >> $GITHUB_ENV
         echo "UNIX_TIME=$(date +%s)" >> $GITHUB_ENV
 
     - name: Add header to stylustheme.css
