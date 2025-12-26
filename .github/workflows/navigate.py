@@ -8,8 +8,6 @@ def extract_css_comments(file_path):
                 comments = re.findall(r'/\*.*?\*/', line)
                 for comment in comments:
                     print(f"Line {line_number}: {comment}")
-                    
-        print(f"Success! Comments extracted from '{file_path}'.")
 
     except FileNotFoundError:
         print(f"Error: The file '{file_path}' was not found.")
