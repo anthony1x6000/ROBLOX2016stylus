@@ -3,7 +3,7 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        12.26.1766778209
+@version        12.26.1766783121
 @license        MIT License
 @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
 @var select displayRecommended 'Display Recommended Games at home?' ['block:Visible', 'none:Hidden']
@@ -3784,23 +3784,30 @@
 
     /* Home page, wide card hover fix (Recommended For You)*/ 
     .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.dynamic-layout-sizing .hover-game-tile.grid-tile .featured-game-container,
-    .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.dynamic-layout-sizing .hover-game-tile.grid-tile.focused.old-hover {
-        max-height: 230px;
-        height: 230px;
+    .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.dynamic-layout-sizing .hover-game-tile.grid-tile.focused.old-hover, 
+    .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.dynamic-layout-sizing .hover-game-tile.grid-tile {
+        max-height: 100%;
+        height: 100%;
         width: 100%;
     }
     
     /* Todays picks */
-    .game-carousel.wide-game-tile-carousel.home-page-carousel .hover-game-tile.event-tile .featured-game-container {
+    .game-carousel.wide-game-tile-carousel.home-page-carousel .hover-game-tile.event-tile .featured-game-container, 
+    .game-carousel.wide-game-tile-carousel.home-page-carousel .hover-game-tile.event-tile {
         width: calc((var(--home-feed-width) - 1px - 16px*(var(--items-per-row) - 1))/var(--items-per-row)); 
         max-height: 260px;
-        height: 260px;
+        height: 100%;
     }
     
+    .game-carousel.wide-game-tile-carousel.home-page-carousel {
+        width: var(--home-feed-width);
+        height: 115%;
+        overflow-x: hidden;
+    }
 
     /* New games interface patch : 001  */
     /* 001 : User Home  */
-
+    /* Modify width of home page */
 
         div.game-card-text-pill {
             display: none !important;  
