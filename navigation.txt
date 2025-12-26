@@ -164,3 +164,4 @@ Line 4114: /* Outfit Settings cog */
 Line 4119: /* Content deleted */
 Line 4129: /* Catalog button */
 Line 4143: /* Avatar editor header */
+Success! Comments extracted from 'stylustheme.css'.
