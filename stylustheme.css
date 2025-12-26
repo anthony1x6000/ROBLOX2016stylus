@@ -12,6 +12,7 @@
     - ssd21345/randomguyingithub
     - ProTaxEvader/ProTaxEvader
     - Parker/parker02311
+    - Viper/Cosmella-v
     */ 
 
     /* font */ 
@@ -662,7 +663,7 @@
     }
 
     .light-theme .icon-default-economy-28x28, .light-theme .icon-robux-28x28, .light-theme .icon-robux-gold-28x28, .light-theme .icon-robux-white {
-    /*     background-image: url(https://svgur.com/i/GuZ.svg); */
+    
         background-size: 56px;
     }
     .light-theme .icon-default-economy-28x28, .light-theme .icon-robux-28x28, .light-theme .icon-robux-gold-28x28, .light-theme .icon-robux-white:hover {
@@ -3695,7 +3696,7 @@
         background: #00bf5a !important;
         border: 1px solid #00bf5a !important;
     }
-    /* notification box */
+    /* notification box, updated again December 26, 2025 */
     .new-notification-stream-2022 .notification-stream-body .notification-stream-data .notification-stream-scrollbar .notification-stream-list {
         overflow: hidden;
         padding: 0 0 0 0;
@@ -3727,6 +3728,15 @@
     #notification-stream-body {
         height: auto;
     }
+
+    .notif-row-left-button {
+        margin-right: 10%;
+    }
+    .button-row-container {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    
     /* Game name */
     /* Buy it with */
     #populated-complimentary-items-recommendations {
