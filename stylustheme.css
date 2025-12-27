@@ -3693,6 +3693,10 @@
         overflow: hidden;
         padding: 0 0 0 0;
     }
+    /* Notification background fix */ 
+    .light-theme .new-notification-stream-2022 .notification-stream-container .notification-content-view .notification-stream-body .notification-stream-scrollbar .notification-stream-list {
+        background: #f7f7f8;
+    }
     .new-notification-stream-2022 .notification-stream-body .notification-stream-data .notification-stream-scrollbar .notification-stream-list .notification-stream-item {
         border-radius: 0;
         margin: 0;
