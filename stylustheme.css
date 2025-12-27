@@ -2204,17 +2204,7 @@
         background-color: #0074bd
     }
 
-    .light-theme .btn-control-xs
-    {
-        background-color: #fff;
-        border: 1px solid #B8B8B8;
-        color: rgba(0,0,0,.6);
-        border-radius: 3px
-    }
-    .light-theme .btn-control-xs:hover {
-        background-color: white;
-        border: 1px solid #B8B8B8;
-    }
+
 
     .light-theme .btn-secondary-xs
     {
@@ -2231,8 +2221,6 @@
         color: #fff;
     }
 
-
-    .light-theme .btn-control-xs:hover
     {
         background-color: #fff;
         border: 1px solid #b8b8b8;
