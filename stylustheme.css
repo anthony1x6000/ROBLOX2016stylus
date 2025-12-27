@@ -3956,9 +3956,18 @@
         div.game-description-container > div.container-header {
             bottom: 53px;
         }
-        .game-description:not( #btr-description-wrapper .game-description), .game-age-recommendation-details-container:not(#btr-description-wrapper .game-age-recommendation-details-container) {
-            bottom: 47px;
+
+        /* Attempt to fix problematic BTRoblox line */
+        .game-description,
+        .game-age-recommendation-details-container {
+            bottom: 47px !important;
         }
+
+        #btr-description-wrapper .game-description,
+        #btr-description-wrapper .game-age-recommendation-details-container {
+            bottom: auto !important; /* Or 'initial', or '0', depending on default */
+        }
+
     /*  Experience Page    */
         .game-carousel.wide-game-tile-carousel.expand-home-content.games-page-carousel .hover-game-tile.event-tile.focused, .game-carousel.wide-game-tile-carousel.expand-home-content.games-page-carousel .hover-game-tile.grid-tile.focused, .game-carousel.wide-game-tile-carousel.expand-home-content.games-page-carousel .hover-game-tile.interest-tile.focused, .game-carousel.wide-game-tile-carousel.games-page-carousel.games-page-carousel .hover-game-tile.event-tile.focused, .game-carousel.wide-game-tile-carousel.games-page-carousel.games-page-carousel .hover-game-tile.grid-tile.focused, .game-carousel.wide-game-tile-carousel.games-page-carousel.games-page-carousel .hover-game-tile.interest-tile.focused {
             width: 100% !important;
