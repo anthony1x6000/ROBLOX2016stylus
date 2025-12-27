@@ -6,7 +6,7 @@ on:
     paths:
       - get-installs.py
       - README.md
-      - .github/workflows/update-total-installs.yml
+      - .github/workflows/get-installs.yml
   # Optional: run after your other workflow finishes successfully
   workflow_run:
     workflows: ["ROBLOX 2016 dev workflow"]
