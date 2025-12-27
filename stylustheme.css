@@ -4192,4 +4192,7 @@
     .btr-profile-favorites {
         padding-top: 30px;
     }
+    div.btr-profile-favorites > div > div > button.input-dropdown-btn {
+        margin-top: 13px;
+    }
 }
