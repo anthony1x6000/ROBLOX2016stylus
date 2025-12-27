@@ -19,6 +19,9 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Avatar Page] Touch up avatar redraw (line height).
 - [Home page] Fix width and height hover issues on the 'Today's Picks' and 'Recommended For You' game cards.
 - [Home page] Fix Today's Picks going outside of home page width.
+- [Notification] Fix buttons hover rules [Issue 67](https://github.com/anthony1x6000/ROBLOX2016stylus/issues/67)
+- [BTRoblox] Fix favorites overlapping on profile [Issue 69](https://github.com/anthony1x6000/ROBLOX2016stylus/issues/69)
+
 
 ### Find a bug?
 
