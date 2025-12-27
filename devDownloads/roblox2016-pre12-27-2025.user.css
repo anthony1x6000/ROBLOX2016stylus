@@ -3,7 +3,7 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        12.27.2025.1766814559
+@version        12.27.2025.1766815086
 @license        MIT License
 @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
 @var select displayRecommended 'Display Recommended Games at home?' ['block:Visible', 'none:Hidden']
@@ -3824,6 +3824,8 @@
     /* 001 : User Home  */
     /* Modify width of home page */
 /* start problematic code */ 
+
+
         div.game-card-text-pill {
             display: none !important;  
         }
@@ -3851,10 +3853,7 @@
             padding-right: 20%;
         }
 
-        .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile .featured-game-container, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile .featured-game-container, 
-        .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.expand-home-content .hover-game-tile.event-tile .featured-game-container, .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.expand-home-content .hover-game-tile.grid-tile .featured-game-container {
-            height: calc((var(--home-feed-width) - 1px - 16px*(var(--items-per-row) - 1))/var(--items-per-row)*0.5625 + 61px);
-        }
+
         .hover-game-tile.event-tile .featured-game-container .featured-game-icon-container, 
         .hover-game-tile.event-tile, .hover-game-tile.grid-tile{
             transition: none !important;
@@ -4083,6 +4082,10 @@
     #HomeContainer > div.place-list-container > div > div > div:nth-child(3) > div.horizontal-scroller.games-list.home-page-games-list.dynamic-layout-sizing {
         overflow-x: hidden;
     } /* ensure currently wearing hides overflow, to negate the top rule */
+
+    #HomeContainer > div.place-list-container > div > div > div:nth-child(3) > div.horizontal-scroller.games-list.home-page-games-list.dynamic-layout-sizing {
+        height: 243px;    
+    } /* Continue games, modify height, lazy, will probably break in future */
 
     /*More Accurate Friend Text*/
     b {
