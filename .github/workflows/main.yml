@@ -26,7 +26,7 @@ jobs:
     - name: Add header to stylustheme.css
       run: |
         echo "/* ==UserStyle==
-        @name           ROBLOX 2016 dev${{ env.CUR_DATE }}
+        @name           ROBLOX 2016 ${{ env.CUR_DATE }}
         @namespace      Userstyle
         @author         anthony1x6000
         @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
