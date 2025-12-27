@@ -32,6 +32,7 @@ jobs:
       - name: Commit and push if changed
         shell: bash
         run: |
+          git pull
           git add navigation.txt
           git diff --cached --quiet && exit 0
           git config user.name "github-actions[bot]"
