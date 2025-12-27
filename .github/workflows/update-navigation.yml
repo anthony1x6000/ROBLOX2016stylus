@@ -7,6 +7,11 @@ on:
       - stylustheme.css
       - .github/workflows/navigate.py
       - .github/workflows/update-navigation.yml
+  # run after other workflows
+  workflow_run:
+    workflows: ["ROBLOX 2016 dev workflow"] 
+    types:
+      - completed
 
 permissions:
   contents: write
@@ -14,14 +19,23 @@ permissions:
 jobs:
   build-navigation:
     runs-on: ubuntu-latest
+    # Only run if the triggering workflow succeeded (or if triggered by push/dispatch)
+    if: ${{ github.event.name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Check out the branch that triggered the workflow_run, or default ref for push
+          ref: ${{ github.event.workflow_run.head_branch || github.ref }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
+
+      - name: Pull latest changes
+        shell: bash
+        run: git pull origin ${{ github.event.workflow_run.head_branch || github.ref_name }}
 
       - name: Generate navigation.txt (repo root)
         shell: bash
@@ -32,10 +46,11 @@ jobs:
       - name: Commit and push if changed
         shell: bash
         run: |
-          git pull
           git add navigation.txt
           git diff --cached --quiet && exit 0
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "Update navigation.txt"
+          # Final pull to avoid race conditions during push
+          git pull origin ${{ github.event.workflow_run.head_branch || github.ref_name }}
           git push
