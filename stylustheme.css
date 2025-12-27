@@ -4046,6 +4046,10 @@
         height: 240px;
     }
 
+    /* move collections section down */
+    .profile-collections {
+        padding-top: 50px;
+    }
     /*More Accurate Friend Text*/
     b {
         font-weight: 300;
