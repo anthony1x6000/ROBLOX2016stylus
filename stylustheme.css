@@ -4029,6 +4029,14 @@
     }
 
     /*Profile Accuracy Fixes*/
+
+    /* fix currently wearing, collections cards */ 
+    /* fix font weight */
+    :root {
+        --typography-title-medium-font: 300;
+        --typography-title-large-font: 300;
+        --typography-body-medium-font: 300;
+    }
     /*More Accurate Friend Text*/
     b {
         font-weight: 300;
