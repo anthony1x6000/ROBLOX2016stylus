@@ -3,7 +3,7 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        12.27.2025.1766797486
+@version        12.27.2025.1766799854
 @license        MIT License
 @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
 @var select displayRecommended 'Display Recommended Games at home?' ['block:Visible', 'none:Hidden']
@@ -3705,6 +3705,11 @@
     .light-theme .new-notification-stream-2022 .notification-stream-container .notification-content-view .notification-stream-body .notification-stream-scrollbar .notification-stream-list {
         background: #f7f7f8;
     }
+    .light-theme .text-emphasis b {
+        font-size: 12px;
+        font-weight: 400;
+    }
+    /* 
     .new-notification-stream-2022 .notification-stream-body .notification-stream-data .notification-stream-scrollbar .notification-stream-list .notification-stream-item {
         border-radius: 0;
         margin: 0;
