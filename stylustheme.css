@@ -4188,4 +4188,8 @@
         font-weight: 400;
     }
 
+    /* move btr roblox profile favorites down to avoid overlap */
+    .btr-profile-favorites {
+        padding-top: 30px;
+    }
 }
