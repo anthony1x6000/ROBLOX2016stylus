@@ -128,6 +128,7 @@
         font-weight: 600;
         src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGCmgpmuQqK2I-L2S9cF65Ek.woff) format('woff');
     } */
+
     .dark-theme .builder-font .see-all-link-icon:after, .builder-font.dark-theme .see-all-link-icon:after, .builder-font.light-theme .see-all-link-icon:after, .icon-push-right-sm, .light-theme .builder-font .see-all-link-icon:after {
         display: none
     }
@@ -1547,10 +1548,6 @@
         box-shadow: 0 1px 4px 0 rgba(25,25,25,0.35);
         background-color: #44b4f8;
     }
-
-
-
-
 
     .game-cards .game-card {
         white-space: nowrap;
@@ -4182,7 +4179,6 @@
         font-family: "Source Sans Pro",Arial,Helvetica,sans-serif !important;
         font-weight: 400;
     }
-
     /* move btr roblox profile favorites down to avoid overlap */
     .btr-profile-favorites {
         padding-top: 30px;
