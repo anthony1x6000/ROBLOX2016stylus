@@ -127,45 +127,46 @@ Line 3626: /*end better roblox profile groups  */
 Line 3652: /*     display: none; */
 Line 3682: /* remove banner desktop app */
 Line 3691: /* notification box, updated again December 26, 2025 */
-Line 3732: /* Game name */
-Line 3733: /* Buy it with */
-Line 3737: /* top bar pfp */
-Line 3741: /* Catalog patches */
-Line 3748: /* Dark theme modifications */
-Line 3775: /* Home page, wide card hover fix (Recommended For You)*/
-Line 3784: /* Todays picks */
-Line 3798: /* New games interface patch : 001  */
-Line 3799: /* 001 : User Home  */
-Line 3800: /* Modify width of home page */
-Line 3854: /*             prevents card from moving */
-Line 3902: /*     Remove Today's picks */
-Line 3906: /* Friends carousel  */
-Line 3916: /*  Catalog fixes    */
-Line 3937: /* Game description fixes      */
-Line 3957: /*  Experience Page    */
-Line 3965: /* Don't mess with, modified home page game tiles */
-Line 3991: /* messsage back icon fix */
-Line 4003: /*Homepage Tweaks (The Continuation of this is Pt. 2, which is near the top of the userstyle)*/
-Line 4004: /*Remove New Homepage Editions Pt. 1 (If you determine that Pt.1 impedes site functionality, feel free to make it into a toggleable option as well)*/
-Line 4012: /*Home Page Font Fix*/
-Line 4017: /*Remove Arrows Next to IconRowText (not sure if this is fully accurate but I based it off of the homepage screenshot in the github README.md)*/
-Line 4022: /*Profile Accuracy Fixes*/
-Line 4024: /* fix currently wearing, collections cards */
-Line 4025: /* fix font weight */
-Line 4040: /* move collections section down */
-Line 4047: /* overflow visible so shadow is not cut on the collections carousel */
-Line 4050: /* ensure currently wearing hides overflow, to negate the top rule */
-Line 4052: /*More Accurate Friend Text*/
-Line 4058: /* More Accurate Profile Header (really just a fix for how this style was before it broke)*/
-Line 4065: /*Accurate Stat Text (Friends, Followers Following) in Profile*/
-Line 4075: /*Accurate Friend Button in Profile*/
-Line 4097: /*Accurate Chat Button in Profile (or at least as accurate as I could get it because I couldn't figure out how to replace "Chat" with "Message"*/
-Line 4119: /*Accurate About and Creations Tab in Profile*/
-Line 4124: /*Fixed Profile Name Header Size and Padding (I have yet to figure out how to position it in the same way as the archive)*/
-Line 4136: /*You might not need this part because it has no effect, but it's closer to the archive this way*/
-Line 4140: /*Join Button Fix*/
-Line 4146: /* Outfit Settings cog */
-Line 4151: /* Content deleted */
-Line 4161: /* Catalog button */
-Line 4175: /* Avatar editor header */
-Line 4181: /* move btr roblox profile favorites down to avoid overlap */
+Line 3696: /* Notification background fix */
+Line 3736: /* Game name */
+Line 3737: /* Buy it with */
+Line 3741: /* top bar pfp */
+Line 3745: /* Catalog patches */
+Line 3752: /* Dark theme modifications */
+Line 3779: /* Home page, wide card hover fix (Recommended For You)*/
+Line 3788: /* Todays picks */
+Line 3802: /* New games interface patch : 001  */
+Line 3803: /* 001 : User Home  */
+Line 3804: /* Modify width of home page */
+Line 3858: /*             prevents card from moving */
+Line 3906: /*     Remove Today's picks */
+Line 3910: /* Friends carousel  */
+Line 3920: /*  Catalog fixes    */
+Line 3941: /* Game description fixes      */
+Line 3961: /*  Experience Page    */
+Line 3969: /* Don't mess with, modified home page game tiles */
+Line 3995: /* messsage back icon fix */
+Line 4007: /*Homepage Tweaks (The Continuation of this is Pt. 2, which is near the top of the userstyle)*/
+Line 4008: /*Remove New Homepage Editions Pt. 1 (If you determine that Pt.1 impedes site functionality, feel free to make it into a toggleable option as well)*/
+Line 4016: /*Home Page Font Fix*/
+Line 4021: /*Remove Arrows Next to IconRowText (not sure if this is fully accurate but I based it off of the homepage screenshot in the github README.md)*/
+Line 4026: /*Profile Accuracy Fixes*/
+Line 4028: /* fix currently wearing, collections cards */
+Line 4029: /* fix font weight */
+Line 4044: /* move collections section down */
+Line 4051: /* overflow visible so shadow is not cut on the collections carousel */
+Line 4054: /* ensure currently wearing hides overflow, to negate the top rule */
+Line 4056: /*More Accurate Friend Text*/
+Line 4062: /* More Accurate Profile Header (really just a fix for how this style was before it broke)*/
+Line 4069: /*Accurate Stat Text (Friends, Followers Following) in Profile*/
+Line 4079: /*Accurate Friend Button in Profile*/
+Line 4101: /*Accurate Chat Button in Profile (or at least as accurate as I could get it because I couldn't figure out how to replace "Chat" with "Message"*/
+Line 4123: /*Accurate About and Creations Tab in Profile*/
+Line 4128: /*Fixed Profile Name Header Size and Padding (I have yet to figure out how to position it in the same way as the archive)*/
+Line 4140: /*You might not need this part because it has no effect, but it's closer to the archive this way*/
+Line 4144: /*Join Button Fix*/
+Line 4150: /* Outfit Settings cog */
+Line 4155: /* Content deleted */
+Line 4165: /* Catalog button */
+Line 4179: /* Avatar editor header */
+Line 4185: /* move btr roblox profile favorites down to avoid overlap */
