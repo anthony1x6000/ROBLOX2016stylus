@@ -4037,6 +4037,15 @@
         --typography-title-large-font: 300;
         --typography-body-medium-font: 300;
     }
+
+    .css-1i465w8-carousel {
+        height: 250px !important;
+        padding-left: 5px;
+    }
+    #collection-carousel-item > div > div {
+        height: 240px;
+    }
+
     /*More Accurate Friend Text*/
     b {
         font-weight: 300;
