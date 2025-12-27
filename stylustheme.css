@@ -4071,6 +4071,10 @@
         overflow-x: hidden;
     } /* ensure currently wearing hides overflow, to negate the top rule */
 
+    #HomeContainer > div.place-list-container > div > div > div:nth-child(3) > div.horizontal-scroller.games-list.home-page-games-list.dynamic-layout-sizing {
+        height: 243px;    
+    } /* Continue games, modify height, lazy, will probably break in future */
+
     /*More Accurate Friend Text*/
     b {
         font-weight: 300;
