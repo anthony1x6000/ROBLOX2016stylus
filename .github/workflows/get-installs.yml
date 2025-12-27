@@ -1,0 +1,64 @@
+name: Update total installs in README.md
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - get-installs.py
+      - README.md
+      - .github/workflows/update-total-installs.yml
+  # Optional: run after your other workflow finishes successfully
+  workflow_run:
+    workflows: ["ROBLOX 2016 dev workflow"]
+    types:
+      - completed
+
+permissions:
+  contents: write
+
+jobs:
+  update-total-installs:
+    runs-on: ubuntu-latest
+    # Only run if the triggering workflow succeeded (or if triggered by push/dispatch)
+    if: ${{ github.event.name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Check out the branch that triggered the workflow_run, or default ref for push
+          ref: ${{ github.event.workflow_run.head_branch || github.ref }}  # ref is supported by checkout [web:9]
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Pull latest changes
+        shell: bash
+        run: git pull origin ${{ github.event.workflow_run.head_branch || github.ref_name }}
+
+      - name: Update README.md line 6 with total installs
+        shell: bash
+        run: |
+          installs="$(python3 get-installs.py "https://userstyles.world/style/1485" "Total installs" | tr -d '\r\n')"
+          echo "Installs parsed: $installs"
+
+          # Ensure README.md has at least 6 lines
+          while [ "$(wc -l < README.md)" -lt 6 ]; do
+            echo "" >> README.md
+          done
+
+          # Replace line 6 in-place with the new value (line-numbered substitution) [web:2]
+          sed -i "6s|.*|TOTAL INSTALLS: ${installs}|" README.md
+
+      - name: Commit and push if changed
+        shell: bash
+        run: |
+          git add README.md
+          git diff --cached --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update total installs"
+          git pull origin ${{ github.event.workflow_run.head_branch || github.ref_name }}
+          git push
