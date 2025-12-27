@@ -3,7 +3,7 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        12.27.2025.1766796064
+@version        12.27.2025.1766796394
 @license        MIT License
 @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
 @var select displayRecommended 'Display Recommended Games at home?' ['block:Visible', 'none:Hidden']
@@ -4200,4 +4200,11 @@
         font-weight: 400;
     }
 
+    /* move btr roblox profile favorites down to avoid overlap */
+    .btr-profile-favorites {
+        padding-top: 30px;
+    }
+    div.btr-profile-favorites > div > div > button.input-dropdown-btn {
+        margin-top: 13px;
+    }
 }
