@@ -41,7 +41,7 @@ jobs:
       - name: Update README.md line 6 with total installs
         shell: bash
         run: |
-          installs="$(python3 get-installs.py "https://userstyles.world/style/1485" "Total installs" | tr -d '\r\n')"
+          installs="$(python3 ./github/workflows/get-installs.py "https://userstyles.world/style/1485" "Total installs" | tr -d '\r\n')"
           echo "Installs parsed: $installs"
 
           # Ensure README.md has at least 6 lines
