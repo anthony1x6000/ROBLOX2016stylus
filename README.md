@@ -3,8 +3,8 @@ A UserStyle that changes the look of ROBLOX to be more faithful to what it would
 **To install this userstyle, click [here](https://userstyles.world/api/style/1485.user.css).** 
 ## Current Installs
 - Total installs: 144123
+- Total installs: 144123
 - Weekly installs: 1148
-
 See stats [here](https://userstyles.world/style/1485/roblox-2016-dev12-27-2025).
 ## Dark Theme
 Dark theme is now supported as of the unreleased version and soon to be released userscript version [1.2.8](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/devDownloads/roblox2016-preLatest.user.css). \
