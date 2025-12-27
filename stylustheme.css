@@ -4050,6 +4050,10 @@
     .profile-collections {
         padding-top: 50px;
     }
+    .css-1i465w8-carousel {
+        padding-top: 3px;
+        overflow-x: visible;
+    } /* overflow visible so shadow is not cut on the collections carousel */
     /*More Accurate Friend Text*/
     b {
         font-weight: 300;
