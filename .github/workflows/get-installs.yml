@@ -45,8 +45,10 @@ jobs:
           weeklyi="$(python3 .github/workflows/get-installs.py "https://userstyles.world/style/1485" "Weekly installs" | tr -d '\r\n')"
 
           # Replace line 6 in-place with the new value (line-numbered substitution) [web:2]
-          sed -i "5i Total installs: ${totali}" README.md
-          sed -i "5i Weekly installs: ${weeklyi}" README.md
+          sed -i "6s|.*|- Total installs: ${totali}|" README.md
+          sed -i "7s|.*|- Weekly installs: ${weeklyi}|" README.md
+
+
       - name: Commit and push if changed
         shell: bash
         run: |
