@@ -3812,6 +3812,7 @@
     /* 001 : User Home  */
     /* Modify width of home page */
 /* start problematic code */ 
+
 :root { --items-per-row: ; }
         div.game-card-text-pill {
             display: none !important;  
@@ -4068,7 +4069,8 @@
         padding-top: 3px;
         overflow-x: visible;
     } /* overflow visible so shadow is not cut on the collections carousel */
-    div.profile-currently-wearing > div > div > div > div {
+    div.profile-currently-wearing > div > div > div > div,
+    #HomeContainer > div.place-list-container > div > div > div:nth-child(3) > div.horizontal-scroller.games-list.home-page-games-list.dynamic-layout-sizing {
         overflow-x: hidden;
     } /* ensure currently wearing hides overflow, to negate the top rule */
 
