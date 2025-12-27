@@ -4054,6 +4054,10 @@
         padding-top: 3px;
         overflow-x: visible;
     } /* overflow visible so shadow is not cut on the collections carousel */
+    div.profile-currently-wearing > div > div > div > div {
+        overflow-x: hidden;
+    } /* ensure currently wearing hides overflow, to negate the top rule */
+
     /*More Accurate Friend Text*/
     b {
         font-weight: 300;
