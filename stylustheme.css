@@ -2221,10 +2221,18 @@
         color: #fff;
     }
 
+    .light-theme .btn-control-xs:hover, .light-theme .btn-secondary-xs:hover
     {
+        background-color: #fff !important;
+        border: 1px solid #b8b8b8 !important;
+        color: #000;
+    }
+    
+    .light-theme .btn-control-xs, .light-theme .btn-secondary-xs {
         background-color: #fff;
-        border: 1px solid #b8b8b8;
-        color: #fff;
+        border: 1px solid #B8B8B8;
+        color: rgba(0,0,0,.6);
+        border-radius: 3px
     }
 
     .light-theme .btn-control-sm:focus, .light-theme .btn-control-sm:hover
