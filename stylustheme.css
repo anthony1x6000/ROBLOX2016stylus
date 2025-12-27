@@ -3812,6 +3812,8 @@
     /* 001 : User Home  */
     /* Modify width of home page */
 /* start problematic code */ 
+
+
         div.game-card-text-pill {
             display: none !important;  
         }
@@ -3839,10 +3841,7 @@
             padding-right: 20%;
         }
 
-        .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile .featured-game-container, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile .featured-game-container, 
-        .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.expand-home-content .hover-game-tile.event-tile .featured-game-container, .game-grid.home-game-grid.wide-game-tile-game-grid.game-grid.expand-home-content .hover-game-tile.grid-tile .featured-game-container {
-            height: calc((var(--home-feed-width) - 1px - 16px*(var(--items-per-row) - 1))/var(--items-per-row)*0.5625 + 61px);
-        }
+
         .hover-game-tile.event-tile .featured-game-container .featured-game-icon-container, 
         .hover-game-tile.event-tile, .hover-game-tile.grid-tile{
             transition: none !important;
