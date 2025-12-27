@@ -41,12 +41,12 @@ jobs:
       - name: Update README.md line 6 with total installs
         shell: bash
         run: |
-          total-installs="$(python3 .github/workflows/get-installs.py "https://userstyles.world/style/1485" "Total installs" | tr -d '\r\n')"
-          weekly-installs="$(python3 .github/workflows/get-installs.py "https://userstyles.world/style/1485" "Weekly installs" | tr -d '\r\n')"
+          totali="$(python3 .github/workflows/get-installs.py "https://userstyles.world/style/1485" "Total installs" | tr -d '\r\n')"
+          weeklyi="$(python3 .github/workflows/get-installs.py "https://userstyles.world/style/1485" "Weekly installs" | tr -d '\r\n')"
 
           # Replace line 6 in-place with the new value (line-numbered substitution) [web:2]
-          sed -i "6s|.*|Total installs: ${total-installs}|" README.md
-          sed -i "7s|.*|Weekly installs: ${total-installs}|" README.md
+          sed -i "6s|.*|Total installs: ${totali}|" README.md
+          sed -i "7s|.*|Weekly installs: ${weeklyi}|" README.md
 
 
       - name: Commit and push if changed
