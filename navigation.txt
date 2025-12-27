@@ -168,3 +168,4 @@ Line 4155: /* Outfit Settings cog */
 Line 4160: /* Content deleted */
 Line 4170: /* Catalog button */
 Line 4184: /* Avatar editor header */
+Line 4191: /* move btr roblox profile favorites down to avoid overlap */
