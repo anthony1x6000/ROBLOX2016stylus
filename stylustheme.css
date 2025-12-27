@@ -3728,11 +3728,17 @@
 
     .notif-row-left-button {
         margin-right: 10%;
+    /* notification stream buttons, push to right */ 
+    .legacy-notif-base .button-row-container {
+        width: 25%;
+        margin-left: 55%;
     }
-    .button-row-container {
-        padding-left: 2px;
-        padding-right: 2px;
+    .legacy-notif-base .button-row-container .notif-left-right-button {
+        left: 100%;
+        position: relative;
     }
+
+
     
     /* Game name */
     /* Buy it with */
