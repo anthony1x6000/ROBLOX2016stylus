@@ -333,11 +333,7 @@
 
     /* End of universal */
 
-    .builder-font.light-theme .refresh-link, .builder-font.light-theme .refresh-link-icon, .builder-font.light-theme .refresh-link-icon:active, .builder-font.light-theme .refresh-link-icon:hover, .builder-font.light-theme .refresh-link-icon:link, .builder-font.light-theme .refresh-link-icon:visited, .builder-font.light-theme .refresh-link:active, .builder-font.light-theme .refresh-link:hover, .builder-font.light-theme .refresh-link:link, .builder-font.light-theme .refresh-link:visited, .builder-font.light-theme .see-all-link, .builder-font.light-theme .see-all-link-icon, .builder-font.light-theme .see-all-link-icon:active, .builder-font.light-theme .see-all-link-icon:hover, .builder-font.light-theme .see-all-link-icon:link, .builder-font.light-theme .see-all-link-icon:visited, .builder-font.light-theme .see-all-link:active, .builder-font.light-theme .see-all-link:hover, .builder-font.light-theme .see-all-link:link, .builder-font.light-theme .see-all-link:visited, .builder-font.light-theme .touch .refresh-link, .builder-font.light-theme .touch .refresh-link-icon, .builder-font.light-theme .touch .refresh-link-icon:active, .builder-font.light-theme .touch .refresh-link-icon:hover, .builder-font.light-theme .touch .refresh-link-icon:link, .builder-font.light-theme .touch .refresh-link-icon:visited, .builder-font.light-theme .touch .refresh-link:active, .builder-font.light-theme .touch .refresh-link:hover, .builder-font.light-theme .touch .refresh-link:link, .builder-font.light-theme .touch .refresh-link:visited, .builder-font.light-theme .touch .see-all-link, .builder-font.light-theme .touch .see-all-link-icon, .builder-font.light-theme .touch .see-all-link-icon:active, .builder-font.light-theme .touch .see-all-link-icon:hover, .builder-font.light-theme .touch .see-all-link-icon:link, .builder-font.light-theme .touch .see-all-link-icon:visited, .builder-font.light-theme .touch .see-all-link:active, .builder-font.light-theme .touch .see-all-link:hover, .builder-font.light-theme .touch .see-all-link:link, .builder-font.light-theme .touch .see-all-link:visited,.light-theme .btn-secondary-xs:hover, .light-theme .btn-secondary-xs:focus {
-        color: #ffffff;
-        background-color: #00A2FF;
-        border: 1px solid transparent;
-    }
+
 
     .light-theme .dialogs .dialog-container .dialog-message-container .indicated-message-bubble {
         color: rgb(116, 116, 116);
@@ -2205,6 +2201,11 @@
     }
 
 
+    .builder-font.light-theme .refresh-link, .builder-font.light-theme .refresh-link-icon, .builder-font.light-theme .refresh-link-icon:active, .builder-font.light-theme .refresh-link-icon:hover, .builder-font.light-theme .refresh-link-icon:link, .builder-font.light-theme .refresh-link-icon:visited, .builder-font.light-theme .refresh-link:active, .builder-font.light-theme .refresh-link:hover, .builder-font.light-theme .refresh-link:link, .builder-font.light-theme .refresh-link:visited, .builder-font.light-theme .see-all-link, .builder-font.light-theme .see-all-link-icon, .builder-font.light-theme .see-all-link-icon:active, .builder-font.light-theme .see-all-link-icon:hover, .builder-font.light-theme .see-all-link-icon:link, .builder-font.light-theme .see-all-link-icon:visited, .builder-font.light-theme .see-all-link:active, .builder-font.light-theme .see-all-link:hover, .builder-font.light-theme .see-all-link:link, .builder-font.light-theme .see-all-link:visited, .builder-font.light-theme .touch .refresh-link, .builder-font.light-theme .touch .refresh-link-icon, .builder-font.light-theme .touch .refresh-link-icon:active, .builder-font.light-theme .touch .refresh-link-icon:hover, .builder-font.light-theme .touch .refresh-link-icon:link, .builder-font.light-theme .touch .refresh-link-icon:visited, .builder-font.light-theme .touch .refresh-link:active, .builder-font.light-theme .touch .refresh-link:hover, .builder-font.light-theme .touch .refresh-link:link, .builder-font.light-theme .touch .refresh-link:visited, .builder-font.light-theme .touch .see-all-link, .builder-font.light-theme .touch .see-all-link-icon, .builder-font.light-theme .touch .see-all-link-icon:active, .builder-font.light-theme .touch .see-all-link-icon:hover, .builder-font.light-theme .touch .see-all-link-icon:link, .builder-font.light-theme .touch .see-all-link-icon:visited, .builder-font.light-theme .touch .see-all-link:active, .builder-font.light-theme .touch .see-all-link:hover, .builder-font.light-theme .touch .see-all-link:link, .builder-font.light-theme .touch .see-all-link:visited,.light-theme .btn-secondary-xs:hover, .light-theme .btn-secondary-xs:focus, #content > div.profile-platform-container > div > div:nth-child(4) > div:nth-child(2) > div:nth-child(6) > div > div > div.container-header > div > button.profile-view-selector.btn-secondary-xs.btn-generic-slideshow-xs {
+        color: #ffffff;
+        background-color: #00A2FF ;
+        border: 1px solid transparent;
+    }
 
     .light-theme .btn-secondary-xs
     {
@@ -2221,19 +2222,22 @@
         color: #fff;
     }
 
-    .light-theme .btn-control-xs:hover, .light-theme .btn-secondary-xs:hover
-    {
-        background-color: #fff !important;
-        border: 1px solid #b8b8b8 !important;
-        color: #000;
-    }
-    
-    .light-theme .btn-control-xs, .light-theme .btn-secondary-xs {
+    .light-theme .btn-control-xs, .notif-row-left-button, 
+    .notif-row-left-button.btn-secondary-xs.btn-min-width {
         background-color: #fff;
         border: 1px solid #B8B8B8;
         color: rgba(0,0,0,.6);
-        border-radius: 3px
+        border-radius: 3px;
     }
+
+    .light-theme .btn-control-xs:hover, .notif-row-left-button:hover,
+    .notif-row-left-button.btn-secondary-xs.btn-min-width:hover,
+    .profile-view-selector.btn-control-xs.btn-generic-grid-xs:hover {
+        background-color: #fff;
+        border: 1px solid #b8b8b8;
+        color: #000;
+    }
+    
 
     .light-theme .btn-control-sm:focus, .light-theme .btn-control-sm:hover
     {
@@ -3697,7 +3701,7 @@
         font-size: 12px;
         font-weight: 400;
     }
-    /* 
+
     .new-notification-stream-2022 .notification-stream-body .notification-stream-data .notification-stream-scrollbar .notification-stream-list .notification-stream-item {
         border-radius: 0;
         margin: 0;
@@ -3726,8 +3730,6 @@
         height: auto;
     }
 
-    .notif-row-left-button {
-        margin-right: 10%;
     /* notification stream buttons, push to right */ 
     .legacy-notif-base .button-row-container {
         width: 25%;
