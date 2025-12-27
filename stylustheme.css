@@ -3812,8 +3812,6 @@
     /* 001 : User Home  */
     /* Modify width of home page */
 /* start problematic code */ 
-
-:root { --items-per-row: ; }
         div.game-card-text-pill {
             display: none !important;  
         }
