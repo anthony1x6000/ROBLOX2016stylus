@@ -2,8 +2,8 @@
 A UserStyle that changes the look of ROBLOX to be more faithful to what it would look like back in 2016.\
 **To install this userstyle, click [here](https://userstyles.world/api/style/1485.user.css).** 
 ## Current Installs
-- Total installs: 147023
-- Weekly installs: 1090
+- Total installs: 147967
+- Weekly installs: 1099
 
 See stats [here](https://userstyles.world/style/1485/roblox-2016-dev12-27-2025).
 ## Dark Theme
