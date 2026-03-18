@@ -6,11 +6,6 @@ A UserStyle that changes the look of ROBLOX to be more faithful to what it would
 - Weekly installs: 974
 
 See stats [here](https://userstyles.world/style/1485/roblox-2016-dev12-27-2025).
-## Dark Theme
-Dark theme is now supported as of the unreleased version and soon to be released userscript version [1.2.8](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/devDownloads/roblox2016-preLatest.user.css). \
-Dark theme support will not be 100% faithful to the 2016 era of Roblox.
-Please report any bugs related to dark theme.
-
 
 If you don't have it already, this requires Stylus to function. Get it at the [Chrome Web Store](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or at [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/styl-us/). \
 ![Preview of style](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/2016_stuff/preview.png?raw=true "Preview")
@@ -42,8 +37,6 @@ Your display/monitor needs to be at least 1024 pixels wide for this style to wor
 **Note: I don't know what other people or I did, but thinner displays should work fine in any releases past 1.2.0.x.* \
 I'd recommend at least a 1366 x 768 monitor or, even better, a 1920 x 1080 monitor.
 ## Releases<1.2.5
-For myself. \
-After, I think, merging a clone of this repo into itself through git prior releases to 1.2.5 dissapeared. \
 Access the older releases by manually accessing certain tags. ```https://github.com/anthony1x6000/ROBLOX2016stylus/releases/tag/{release<1.2.5}``` \
 [1.0.4](https://github.com/anthony1x6000/ROBLOX2016stylus/releases/tag/1.0.4), [1.2.0](https://github.com/anthony1x6000/ROBLOX2016stylus/releases/tag/1.2.0)
 ## Credit
