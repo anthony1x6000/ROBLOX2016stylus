@@ -12,7 +12,7 @@ If you don't have it already, this requires Stylus to function. Get it at the [C
 ## helloUser.user.js
 This userscript brings back the [Hello, User](https://files.catbox.moe/26eosn.png) header that used to be at the top of the site.\
 **Install the userscript [here](https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/main/helloUser.user.js)** \
-It was built on [Tampermonkey](https://www.tampermonkey.net/) so I'd recommend using that. I haven't tested it out on other extensions like [Greasemonkey](https://www.greasespot.net/).
+I recommend using [Tampermonkey](https://www.tampermonkey.net/).
 [![image](https://github.com/anthony1x6000/ROBLOX2016stylus/assets/33004321/57ab6c00-ed33-460e-8253-583362660523)
 ]([url](https://youtu.be/cLTlOtZMDtk?t=706))
 ## Contributing
