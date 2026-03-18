@@ -10,16 +10,15 @@ See stats [here](https://userstyles.world/style/1485/roblox-2016-dev12-27-2025).
 If you don't have it already, this requires Stylus to function. Get it at the [Chrome Web Store](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or at [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/styl-us/). \
 ![Preview of style](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/2016_stuff/preview.png?raw=true "Preview")
 ## helloUser.user.js
-This userscript brings back the [Hello, User](https://files.catbox.moe/26eosn.png) thing that used to be at the top of the site.\
+This userscript brings back the [Hello, User](https://files.catbox.moe/26eosn.png) header that used to be at the top of the site.\
 **Install the userscript [here](https://raw.githubusercontent.com/anthony1x6000/ROBLOX2016stylus/main/helloUser.user.js)** \
 It was built on [Tampermonkey](https://www.tampermonkey.net/) so I'd recommend using that. I haven't tested it out on other extensions like [Greasemonkey](https://www.greasespot.net/).
 [![image](https://github.com/anthony1x6000/ROBLOX2016stylus/assets/33004321/57ab6c00-ed33-460e-8253-583362660523)
 ]([url](https://youtu.be/cLTlOtZMDtk?t=706))
 ## Contributing
-**If you can, please contribute!** \
-I don't know much CSS myself, so any contribution, even improving the slightest little thing, is greatly appreciated!
+**If you can, please contribute!** This project is community driven, so changes are appreciated. 
 ### How to navigate the userstyle 
-The userstyle is currently very bloated and unorganized. To make it a little easier to figure out where edits are, provided is [navigation.txt](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/navigation.txt).
+The project is being refactored as to clear some technical debt. Provided is [navigation.txt](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/navigation.txt) to make navigation easier for contributors. 
 
 In [navigation.txt](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/navigation.txt), you can see all of the comments in the userstyle and the lines the comments are on. So, if someone made a change to the catalog, you can see: ```Line 3040: /* catalog changes  */``` 
 
@@ -32,7 +31,7 @@ In [navigation.txt](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/
 ## Supported Browsers
 - [Brave](https://brave.com/) and probably all [Chromium based browsers](https://en.wikipedia.org/wiki/Chromium_(web_browser)#Browsers_based_on_Chromium).
 - [Firefox](https://firefox.com/). 
-### Display Compatability
+### Compatibility
 Your display/monitor needs to be at least 1024 pixels wide for this style to work correctly. \
 **Note: I don't know what other people or I did, but thinner displays should work fine in any releases past 1.2.0.x.* \
 I'd recommend at least a 1366 x 768 monitor or, even better, a 1920 x 1080 monitor.
@@ -42,6 +41,6 @@ Access the older releases by manually accessing certain tags. ```https://github.
 ## Credit
 All credit to Ologist for initially making this great user-style theme! \
 Find the original style @ https://userstyles.org/styles/178105/roblox-in-2016 \
-Big thanks to all [contrubutors](https://github.com/anthony1x6000/ROBLOX2016stylus/graphs/contributors) as well!
+Big thanks to all [Contrubutors](https://github.com/anthony1x6000/ROBLOX2016stylus/graphs/contributors) as well!
 ## License
-The [license](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/LICENSE) in this Github repository applies to, but is not limited to, all code, images, and/or files created by me and/or contributors.
+The [license](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/LICENSE) in this Github repository applies to, but is not limited to, all code, images, and/or files created by me and/or Contributors.
