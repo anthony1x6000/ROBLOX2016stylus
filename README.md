@@ -41,7 +41,6 @@ Access the older releases by manually accessing certain tags. ```https://github.
 [1.0.4](https://github.com/anthony1x6000/ROBLOX2016stylus/releases/tag/1.0.4), [1.2.0](https://github.com/anthony1x6000/ROBLOX2016stylus/releases/tag/1.2.0)
 ## Credit
 All credit to Ologist for initially making this great user-style theme! \
-This is just me adding to it and fixing some little things. \
 Find the original style @ https://userstyles.org/styles/178105/roblox-in-2016 \
 Big thanks to all [contrubutors](https://github.com/anthony1x6000/ROBLOX2016stylus/graphs/contributors) as well!
 ## License
