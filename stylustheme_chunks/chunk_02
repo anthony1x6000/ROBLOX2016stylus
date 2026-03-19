@@ -1,0 +1,500 @@
+        box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
+    }
+
+    .dark-theme .store-card:hover, 
+    .light-theme .store-card:hover {
+        box-shadow: 0 1px 6px 0 rgba(25,25,25,0.45);
+    }
+
+    .store-card .store-card-caption {
+        padding: 0 6px 6px;
+    }
+
+    /* Item Cards */
+    .light-theme .item-card {
+        height: 205px;
+    }
+
+    .item-card-container .item-card-name {
+        white-space: nowrap;
+    }
+
+    .light-theme .item-card-container {
+        background-color: white !important;
+        padding: 0 0 1.8px 0;
+        border-radius: 3px;
+        box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
+    }
+
+    .light-theme .item-card-container:hover {
+        box-shadow: 0 1px 6px 0 rgba(25,25,25,0.45);
+    }
+
+    .item-card-container.recommended-item-link {
+        height: 84%;
+    }
+
+    .item-card-thumb-container, 
+    .item-card-thumb-container .item-card-thumb, 
+    .item-card-thumb-container div[class^=icon-], 
+    .item-card-thumb-container span[class^=icon-] {
+        border-radius: 3px 3px 0 0 !important;
+    }
+
+    .light-theme .item-card-container .item-card-thumb-container {
+        border: none !important;
+    }
+
+    /* MISC UI ELEMENTS */
+    .light-theme .hlist .list-item a {
+        background-color: #ffffff;
+    }
+
+    .resellers-container .vlist .list-item button {
+        margin-top: 12px;
+    }
+
+    .resellers-container .vlist .list-item {
+        padding-top: 0;
+    }
+
+    .builder-font.light-theme .refresh-link-icon {
+        padding: inherit;
+    }
+
+    /* SEARCH BAR & NAVIGATION SEARCH */
+    .rbx-header .navbar-search .input-field {
+        border-radius: 2px !important; 
+    }
+
+    .light-theme .new-navbar-search-anchor > .navbar-list-option-suffix, 
+    span.navbar-list-option-icon, 
+    .navbar-list-option-text {
+        color: #000;
+        opacity: 1 !important;
+        font-size: 16px;
+    }
+
+    .light-theme .rbx-header .navbar-search .new-dropdown-menu {
+        width: 475px !important;
+        margin-left: 6px;
+        margin-top: 0;
+        background-color: #fff;
+        box-shadow: 0 0 8px 0 rgba(0,0,0,.1);
+        border-radius: 3px;
+    }
+
+    .light-theme .rbx-header .navbar-search .navbar-search-option.new-selected {
+        background-color: #F2F2F2;
+        box-shadow: 4px 0 0 0 #00A2FF inset;
+        cursor: pointer !important;
+    }
+
+    .clear-search {
+        visibility: hidden;
+    }
+
+    .new-navbar-search-anchor {
+        max-height: 43px !important;
+    }
+
+    span.navbar-list-option-icon {
+        visibility: hidden;
+    }
+
+    span.navbar-list-option-icon::before {
+        visibility: visible;
+        content: "Search";
+        font-size: 16px;
+    }
+
+    .dark-theme span.navbar-list-option-icon {
+        color: rgb(189, 190, 190);
+    }
+
+    .new-navbar-search-anchor > .navbar-list-option-text {
+        margin-left: 21px;
+    }
+
+    .light-theme .rbx-header .navbar-search .new-dropdown-menu li {
+        border-bottom: 0;
+    }
+
+    /* Autocomplete in Catalog */
+    li[ng-repeat='suggestion\ in\ autocompleteSuggestions\.suggestions'] {
+        height: 43px !important;
+        overflow: hidden;
+    }
+
+    div.autocomplete-dropdown-menu {
+        position: relative;
+        top: -7px;
+        width: 300px !important;
+        margin-left: 11.4px;
+    }
+
+    a[ng-click='onAutocompleteSuggestionClicked\(suggestion\.Query\,\ \$index\)'] > span.navbar-list-option-icon {
+        position: relative;
+        margin-bottom: 6px;
+        left: -10px;
+    }
+
+    a[ng-click='onAutocompleteSuggestionClicked\(suggestion\.Query\,\ \$index\)'] > span.ng-binding {
+        margin-left: 10px;
+    }
+
+    /* SMALL BUTTONS & CONTROLS */
+    .light-theme .btn-control-xs:visited, 
+    .light-theme .btn-control-xs:hover {
+        color: rgba(0,0,0,.6) !important;
+        box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2) !important;
+    }
+
+    .light-theme .btn-buy-md {
+        background-color: transparent;
+        border-color: #B8B8B8;
+        color: rgba(0,0,0,.5);
+        border-radius: 3px;
+    }
+
+
+    /* PREMIUM ICONS (BC/OBC REPLACEMENTS) */
+    .profile-header .header-title h2, 
+    .profile-header .header-title span[class^="icon"] {
+        float: right;
+    }
+
+    .light-theme .icon-default-premium-small, 
+    .light-theme .icon-premium-small {
+        background-image: url('https://images.rbxcdn.com/4c608a5ed7e118d6f26e08ddb44a8636-bc_06282017.svg');
+        background-size: 64px;
+        background-position: 0 -86px;
+    }
+
+    .item-name-container .icon-premium-medium {
+        margin-top: 3px;
+    }
+
+    .light-theme .icon-default-premium-medium, 
+    .light-theme .icon-premium-medium {
+        background: none;
+        content: url('https://tr.rbxcdn.com/f4712d317130845d47726fcfcd9209e0/420/420/Decal/Png');
+        width: 45px;
+    }
+
+    .home-header-content a {
+        float: left;
+    }
+
+    .home-header-content h1 .icon-premium-medium {
+        display: inline-block;
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-left: 12px;
+    }
+
+    .home-header-content h1 {
+        margin: 44px 0 0 0 !important;
+    }
+
+    /* PROFILE & FRIENDS */
+    .profile-header .header-userstatus .header-userstatus-text span.userstatus-editable {
+        cursor: pointer;
+        margin-top: 4px !important;
+    }
+
+    .game-card-avatar-slots {
+        text-align: center;
+        padding: 5.45px 0 0;
+    }
+
+    .people-list .friend .place-name {
+        color: transparent;
+        text-align: center;
+        position: fixed;
+    }
+
+    .btr-profile-favorites .btr-creator-link-container {
+        line-height: 14px;
+    }
+
+    .btr-profile-favorites .card-item .btr-creator-link:any-link {
+        display: inline-block;
+        vertical-align: bottom;
+        max-width: calc(100% - 22px);
+        font-size: 12px;
+    }
+
+    /* INPUTS & DROPDOWNS */
+    .light-theme .input-group-btn .input-dropdown-btn {
+        border-radius: 3px;
+    }
+
+    .light-theme .input-group-btn .input-dropdown-btn:focus, 
+    .light-theme .input-group-btn .input-dropdown-btn:hover {
+        border: 1px solid #00A2FF;
+        color: #ffffff;
+        background-color: #00A2FF;
+    }
+
+    .light-theme .dropdown-menu li:hover {
+        background-color: #F2F2F2;
+        box-shadow: 4px 0 0 0 #00A2FF inset;
+        cursor: pointer;
+    }
+
+    /* USER NAME DECORATIONS */
+    .user-info-container .user-name-container a:before {
+        content: "Hello, ";
+    }
+
+    .user-info-container .user-name-container a:after {
+        content: "!";
+    }
+
+    /* ROBUX & ECONOMY */
+    #nav-robux-icon .icon-robux-28x28 {
+        background-position: 0 -28px;
+        background-image: url(https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg);
+    }
+
+    /* Robux Patch (July 1st 2024) */
+    div.robux-page-content > div.robux-std-container-1 {
+        width: 50%;
+        float: right;
+    }
+
+    #robux-upsell-react-page-wrapper .robux-upsell-container-1 .robux-upsell-packages-table-desktop {
+        padding-bottom: 0;
+    }
+
+    #robux-upsell-react-page-wrapper .robux-std-container-1 {
+        margin-top: 0;
+        border-top: 1px solid rgba(0,0,0,.1);
+    }
+
+    div.robux-button-container > button > h4 {
+        color: white !important;
+    }
+
+    div.robux-upsell-item-and-packages-container, 
+    div.robux-table-banner.upsell-banner {
+        background: none !important;
+        box-shadow: none !important;
+    }
+
+    div.robux-page-content > div.robux-std-container-1 > div.font-header-2, 
+    div.robux-standard-packages-table-desktop > div.robux-header-unit, 
+    div.robux-upsell-container-1 > div.upsell-footer {
+        display: none !important;
+    }
+
+    .light-theme .icon-default-reverse-28x28, 
+    .light-theme .icon-robux-reverse, 
+    div.robux-button-container > button > span.icon-robux {
+        filter: invert(0);
+        background-position: -2px -40px;
+        width: 36px;
+        height: 36px;
+        float: left;
+        position: absolute;
+        left: 16px;
+    }
+
+    #robux-upsell-react-page-wrapper .subscription-container {
+        margin-top: 20%;
+    }
+    /* END July 1st 2024 Robux Patch */
+
+    /* OTHER ECONOMY STYLES */
+    .nav-credit {
+        display: var(--creditVis) !important;
+    }
+
+    .light-theme .icon-default-economy-28x28, 
+    .light-theme .icon-robux-28x28, 
+    .light-theme .icon-robux-gold-28x28, 
+    .light-theme .icon-robux-white {
+        background-size: 56px;
+    }
+
+    .light-theme .icon-default-economy-28x28, 
+    .light-theme .icon-robux-28x28, 
+    .light-theme .icon-robux-gold-28x28, 
+    .light-theme .icon-robux-white:hover {
+        background-size: 56px;
+    }
+
+    .builder-font.light-theme .see-all-link-icon {
+        padding: 1px 4px;
+        font-size: 14px !important;
+        font-weight: normal !important;
+        min-width: 90px; 
+    }
+
+    .see-all-link-icon:hover, 
+    .touch .see-all-link-icon:hover,
+    .see-all-link:hover, 
+    .touch .see-all-link:hover {
+        text-decoration: none;
+    }
+
+    /* AVATAR STYLES */
+    .avatar-headshot-sm {
+        background-color: transparent;
+        border: #c5c5c5 1px solid !important;
+        width: 48px;
+        height: 48px;
+        padding: 0;
+        position: relative;
+        vertical-align: bottom;
+        border-radius: 50%;
+    }
+
+    .avatar-card-container .avatar-card-caption {
+        padding: 10px 0 0;
+    }
+
+    a.avatar-card-label {
+        color: #00a2ff !important;
+    }
+
+    a.avatar-card-label:before {
+        content: "Online \A Playing \A";
+        white-space: pre;
+        color: #606162 !important;
+    }
+
+    .light-theme .avatar-container .avatar-card-image, 
+    .light-theme .avatar-container img,
+    .light-theme .avatar-container .avatar-card-image, 
+    .light-theme .avatar-container img {
+        background-color: #ffffff !important;
+    }
+
+    /* NOTIFICATION STYLES */
+    .notification-action-container {
+        position: absolute;
+        bottom: -10px;
+        right: 0;
+    }
+
+    .notification-action-container .btn-control-xs.see-all-link.font-caption-header.ng-binding {
+        border: 1px solid #B8B8B8 !important;
+        margin: 4px;
+        background-color: #ffffff !important;
+        border-top: hidden;
+        border-right: hidden;
+        border-left: hidden;
+        border-bottom: 1px solid #B8B8B8;
+        color: black !important;
+    }
+
+    .notification-action-container .btn-secondary-xs.see-all-link.font-caption-header.ng-binding,
+    .notification-action-container .btn-secondary-xs.see-all-link.font-caption-header.ng-binding.ng-scope {
+        margin: 4px;
+        color: #ffffff !important;
+    }
+
+    .notification-action-container .btn-secondary-xs.see-all-link.font-caption-header.ng-binding:hover {
+        box-shadow: 0 1px 6px 0 rgba(25,25,25,0.45);
+        background-color: #44b4f8;
+    }
+
+    .notification-action-container .btn-secondary-xs.roblox-popover-close.see-all-link.font-caption-header.ng-binding {
+        background-color: #ffffff !important;
+        border: 1px solid #B8B8B8;
+        color: black !important;
+    }
+
+    .notification-action-container.ng-scope .play-button.btn-growth-xs.see-all-link.font-caption-header.ng-binding {
+        color: #ffffff !important;
+        background-color: #54b85b;
+    }
+
+    .light-theme .notification-stream-header, 
+    .notification-stream-header.light-theme {
+        background-color: #ffffff;
+        border-top: hidden;
+        border-right: hidden;
+        border-left: hidden;
+        border-bottom: 1px solid #B8B8B8;
+    }
+
+    .text-secondary.font-caption-body.ng-binding {
+        color: rgb(97, 97, 97) !important;
+        font-size: 12px !important;
+        margin-top: auto;
+    }
+
+    /* GAME PAGE STYLES */
+    .light-theme .game-main-content {
+        min-height: 345px;
+        padding: 12px 12px !important;
+    }
+
+    .builder-font .game-main-content .game-calls-to-action {
+        padding-right: 0;
+    }
+
+    .dark-theme > div > main > div > div > div > div.game-calls-to-action {
+        padding-top: 10px !important;
+    }
+
+    div.VisitButton.VisitButtonPlayGLI a:before {
+        content: "Play";
+        margin-left: 40px;
+        font-size: 21px;
+        font-weight: 400;
+    }
+
+    .game-card-2x-featured {
+        white-space: nowrap;
+    }
+
+    .game-card-2x-featured .thumb-container {
+        border-radius: 3px 0 0 0;
+    }
+
+    .game-card-2x-featured .thumb-container::before {
+        background: none;
+    }
+
+    /* MISC UI ELEMENTS */
+    .icon-logo {
+        background-position: 50%;
+        background-size: 110px;
+    }
+
+    .light-theme .stack .stack-list .stack-row.remove-panel {
+        background-color: white;
+    }
+
+    .btn-min-width.btn-control-xs.btn-more.rbx-refresh.refresh-link-icon {
+        background-color: #ffffff;
+        color: black;
+        border: 1px solid #B8B8B8;
+        padding: 4px 4px !important;
+    }
+
+    .btn-min-width.btn-control-xs.btn-more.rbx-refresh.refresh-link-icon:hover {
+        box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2) !important;
+        background-color: white !important;
+        color: black !important;
+        text-decoration: none !important;
+        padding: 4px 4px !important;
+    }
+
+    .refresh-link-icon, 
+    .touch .refresh-link-icon {
+        font-size: 14px;
+        font-weight: 400;
+        transition: box-shadow 200ms ease-in-out;
+    }
+
+    thumbnail-2d .thumbnail-2d-container[thumbnail-type=avatarHeadshot] {
+        background-color: #ffffff;
+    }
+
+    .list-item.group-container.shown.ng-scope .ng-isolate-scope .game-card .card-item.game-card-container {
+        height: 100%;

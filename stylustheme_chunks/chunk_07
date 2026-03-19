@@ -1,0 +1,500 @@
+        height: 25px !important;
+        position: relative; 
+        text-align: center;
+        border-radius: 3px;
+    }
+
+    .light-theme .btn-secondary-xs {
+        border-radius: 3px;
+    }
+    a.btn-secondary-xs.see-all-link-icon, span.see-all-button {
+        padding: 4px 4px !important;
+    }
+
+    /* avatar friends playing game tile */
+    /* this could be slightly broken idk I just tested it with two alts and it seems fine
+    https://i.ibb.co/VtZQ0KP/image.png    */ 
+    .game-card-name.game-name-title.game-name-oneline {
+        position: relative; 
+        bottom: 85px;
+    }
+
+    .cursor-pointer.game-card-avatar-slots {
+        position: relative; 
+        bottom: 80px;
+        left: 8px;
+        text-align: left;
+    /* if you want to centered again remove line 2731 to 2732 */
+    }
+    /* continue move down */ 
+    .container-header.games-filter-changer {
+        position: relative;
+        top: 5px;   
+    }
+
+    /* notification top */ 
+
+    .light-theme .alert-info {
+        background-color: #ff8c41;
+        color: #fff;
+    }
+
+    .push-notifications-prompt-text {
+        position: relative;
+        top: 2px;
+
+    }
+    .alert-info.linkify > .text-link {
+        color: #085bcd;
+    }
+
+    /* 404 error page */
+    .light-theme .request-error-page-content .action-buttons .btn-primary-md {
+        background-color: #02b757;
+        border-color: #02b757;
+        color: #f2f4f5;
+        border-radius: 1px;
+    }.light-theme .request-error-page-content .action-buttons .btn-primary-md:hover {
+        background-color: #40c47c;
+        border-color: #40c47c;
+    }
+
+    /* ignore accept friend request */ 
+
+    .light-theme .ignore-friend.btn-secondary-md.btn-min-width {
+        color: #000;
+        border-radius: 2px;
+    }
+    .ignore-friend.btn-secondary-md.btn-min-width {
+        border-radius: 2px;
+    }
+
+    .accept-friend.btn-cta-md.btn-min-width {
+        border-radius: 4px;
+
+    }
+
+    /* roblox powering imagination chat & party */ 
+    .light-theme .icon-default-logo-tagline, .light-theme .icon-logo-tagline {visibility: hidden;}
+
+    /* Buy premium page */ 
+    .premium-landing-page .premium-title-section .get-premium-button {
+        color: #fff;    
+    }
+    .premium-landing-page .premium-title-section .get-premium-button:hover, .btn-min-width:hover {
+        background-color: #00bf5a;
+        border-color: #00bf5a;
+    }
+
+
+    .robux-package-name, .font-header-2.text-disabled{
+        position: relative;
+        top: 30px;
+    }
+
+    .icon-premium-120x120{
+        background-image: url("https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/oldbchardhat.png?raw=true");
+        background-size: 110%;
+    }
+
+    /* catalog changes  */ 
+    /* 10/16/2021 */
+    .light-theme div.catalog-results > div > ul > li > a.item-card-container > div.item-card-link {
+        border-bottom: 1px solid #B8B8B8;
+    }
+
+    .list-item.item-card.ng-scope {
+        margin-bottom: 5px;
+        width: auto;
+    }
+    /* .container-main .catalog-full-screen .catalog-results .item-cards-stackable .item-card, .container-main .splash.catalog-full-screen .catalog-results .item-cards-stackable .item-card {
+        width: auto;
+    }
+        */
+    .hlist.item-cards-stackable.ng-scope {
+        overflow: visible !important;
+    }
+    .catalog-container .search-container .input-group .search-input {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        left: 1px;
+    }
+    .icon-search{
+        position: relative;
+        left: 2px;
+    }
+
+    input.form-control.input-field { /* changed the border radius of the input fields */ 
+        border-radius: 6px !important;
+    }
+    /* limited label change | IT BROKEY SO I COMMENT OUT
+    .icon-limited-label { 
+        background-image: url("https://web.archive.org/web/20160910031530im_/https://images.rbxcdn.com/793dc1fd7562307165231ca2b960b19a.png");
+        width: 70px;
+        height: 18px;
+        margin-left: 2px;
+        background-repeat: repeat;
+    }
+    .icon-limited-unique-label{
+        background-image: url("https://web.archive.org/web/20160910031530im_/https://images.rbxcdn.com/d649b9c54a08dcfa76131d123e7d8acc.png");
+        width: 88px;
+        height: 18px;
+        margin-left: 2px;
+        background-repeat: repeat;
+    }*/
+    /* recommended catalog */ 
+    .list-item.item-card.recommended-item.ng-scope{
+        height: 250px;
+    }
+    recommendations > div > div > div > div > ul > li > div > a > div.item-card-name.recommended-name > span.ng-binding, div > div > div > recommendations.ng-isolate-scope > div > div > div > div > ul > li > div > div {
+        margin-left: 6px;
+    }
+    /* avatar page changes */ 
+    .redraw-avatar > .text-link.ng-binding::before {
+        content: "Click here to re-draw it!";
+        line-height: 30px;
+        font-size: 16px;
+        color: #085bcd;
+    }
+    .redraw-avatar > .text-link.ng-binding {
+        position: relative; 
+        bottom: 11px;
+        right: 122px;
+        font-size: 0px;
+    }
+    .redraw-avatar > span.ng-binding:nth-of-type(1)::before {
+        content: "Something wrong with your avatar?";
+        font-size: 16px; 
+    }
+    .redraw-avatar > span.ng-binding:nth-of-type(1) {
+        font-size: 0px; 
+        position: relative;
+        left: 1px;
+    }
+    div > div > div > div > div > div > div.avatar-editor-header > div.catalog-header > a.btn-primary-md {
+        visibility: hidden; 
+    }
+    /*accept friend button */ 
+    #accept-fr-btn {
+        background-color: #00a2ff;
+        border-color: #00a2ff;
+        color: white !important;
+        border-radius: 3px;
+    }
+    .notification-item.ng-scope.ng-isolate-scope > .notification-item-front > .notification-item-content > .notification-action-container {
+        margin-bottom: 1px;
+    }
+    /*game search results */ 
+        /* big game icon (featured game)*/
+    .game-card-description-info.font-body {
+        margin-top: 25px;
+    }
+    div.game-card-name-info > button.btn-full-width[type='button'] {
+        position: relative;
+        width: 168px !important;
+        height: 10px;
+        padding-right: 9px !important;
+        padding-bottom: 5px !important; 
+        right: 10px;
+    }
+    div > div.featured-grid-item-container.game-card-container > a > div > div > div {
+        font-size: 17px;
+    }
+    div > div.featured-grid-item-container {
+        overflow: hidden;
+        height: 504px;
+        background-color: white;
+    }
+    div.featured-grid-item-container.game-card-container > a > div.game-card-description-info {
+        position: relative;
+        overflow: hidden;
+        left: 5px;
+        width: 97%;
+    }
+        /* pushing results to the right */ 
+    div.game-grid-container > li.game-card {
+        position: relative;
+        left: 5px;
+        top: 5px;
+    }
+    /*thanks for visiting roblox */ 
+    div > div > div > ul > li.step4-of-4 > div.VisitButton.VisitButtonContinueGLI > a:hover {
+        background-color: #3fc679; 
+        border-color: #3fc679;
+    }
+    /* scroll bars*/
+    .section-content.remove-panel.people-list {
+        overflow-x: hidden;
+    }
+    /* re-activate screen/ban screen */ 
+        /* replicating old buttons | IE 11 type beat */ 
+            /* TAGS: NOT NEEDED */ 
+    button#reactivate-button, div.not-approved-page > div > div > button#logout-button {
+        font-size: 13px;
+        line-height: 2px;
+        padding: 9px;
+        border-color: #717071; 
+        border-radius: 0px;
+        background-image: linear-gradient(#e9e8e8, #dcdcdd);
+        color: black;
+        box-shadow: 0 0 0 white /* hopefully this nulls it */ ;
+    }button#reactivate-button:hover, div.not-approved-page > div > div > button#logout-button:hover {
+        box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2) !important;
+        background-image: linear-gradient(#a6f5fe, #a6f5fe) !important;
+        border-color: #27a1da;
+    }
+
+    /* sitewide defaults */
+    .input-field{ /* search bars */ 
+        border-radius: 1px !important;
+    }
+    .input-dropdown-btn { /* dropdowns */ 
+        border-radius: 1px !important; 
+    }
+    .light-theme .btn-primary-md {
+        border-radius: 5px;
+    }
+
+    /* profile game card layout */ 
+    div.game-container {
+        margin-left: 11px;
+    }
+    div > div.profile-game.container-list > div.game-grid {
+        position: relative;
+        right: 9px;
+    }
+
+
+    /* signup header */ 
+
+    .rbx-navbar-signup.btn-growth-sm.nav-menu-title.signup-button {
+        background: none; 
+        border: none;
+    }
+    .nav.navbar-right.rbx-navbar-right-nav {
+        margin-right: 30px;
+        margin-top: 3px;
+    }
+    .font-header-2.rbx-navbar-login.nav-menu-title.rbx-menu-item {
+        margin-left: 110px;
+    } /* i know that this is the best way of doing this but it works */ 
+
+
+
+    /* game page about store servers bottom highlight fix */ 
+    .nav.nav-tabs {
+        width: 100.01%;
+    }
+    /* Divider on the left */ 
+    .rbx-divider {
+        width: 94%;
+    }
+    .info-text > .ng-binding {
+        position: relative;
+        top: 11px;
+    }
+    /* I agree button */
+    .agree-button.btn-cta-lg.btn-min-width {
+        background-color: #00a2ff;
+        border: 0px;
+    }
+
+    /* 10/15/2021 */
+    /* Only favorites & continue on homepage - DISCARDED, IT BROKEY
+    div.game-home-page-carousel-title:nth-of-type(1) {
+    margin-top: 12px;
+    }
+    .avatar-shop-homepage-recommendations-container,
+    div.game-carousel:nth-of-type(n + 3),
+    div.game-home-page-carousel-title:nth-of-type(n + 3) {
+    visibility: hidden;
+    height: 0px;
+    margin-bottom: 0;
+    }
+    div.game-carousel:nth-of-type(19),
+    div.game-home-page-carousel-title:nth-of-type(18) {
+    visibility: visible !important;
+    height: inherit !important;
+    } */
+    /*
+    * bruh, really?
+    * come on, you can do better than this.
+
+    D:
+
+    */
+    /*     #\36 48454481 > .game-card-thumb-container:hover,
+    #\31 087859240 > .game-card-thumb-container:hover {
+    background: url(https://t4.rbxcdn.com/95cbc398c5101cfc377d8511431b6430) no-repeat;
+    padding-left: 100%;
+    overflow: hidden;
+    filter: drop-shadow(0 90px 0 pink);
+    transition: padding 2s, filter 1.9s;
+    } */
+    .game-cards .game-card .game-card-info,
+    .game-cards .game-card .game-card-name {
+        line-height: 20px;
+    /*     margin-top: 0; */
+        font-weight: 300;
+    }
+    /* hide avatar icon on sidebar */
+    /* #navigation .avatar-headshot-xs {
+        display: none;
+    } */
+
+    /* for legacy pages */
+    #MasterContainer {
+        background-color: #fff;
+    }
+
+    /* remove weird line on unvoted game cards */
+    .game-card-info .no-vote::after {
+        content: none;
+    }
+    /* view featured items hover button fix & full width button fix*/ 
+    button.view-all:hover, button.btn-control-md.btn-full-width.ng-binding:hover {
+        background: #fff !important;
+        color: #000 !important;
+        border: 1px solid #a4a4a4 !important;
+
+    }
+
+
+    #nav-robux-amount {
+        font-weight: 400;
+    }
+
+
+
+    .btr-description .game-description {
+        padding: 0;
+    }
+
+
+    .game-card-name, .game-name-title {
+        height: 20px;
+    }
+    .game-carousel {
+        width: 110%;
+        overflow-x: visible;
+        overflow-y: visible;
+    }
+    /* STATIC gamecards */ 
+        .scroller.prev, .scroller.next {
+            height: 247px !important;
+        }
+        .game-card-container {
+            height: 240px;
+        }
+/*         .game-carousel {
+            height: 240px;
+        } */
+    /* End of STATIC gamecards
+    For expanding gamecards see addon on GitHub: anthony1x6000/ROBLOX2016stylus */ 
+    /* View Details hover over player */
+    span[ng-bind='library\.placesDict\[friend\.presence\.rootPlaceId\]\.name'] {
+        height: 20px;
+    }
+
+    /* Top header */ 
+    .navbar-fixed-top {
+        border: 0 !important;
+    }
+    /* remove suggested avatar items */ 
+    div.avatar-shop-homepage-recommendations-container {
+        visibility: hidden;
+        height: 0;
+        margin: 0;
+    }
+    /* favorites on profile */
+    div.favorite-games-container > ul > li.list-item {
+        margin-right: -3px;
+    }
+    .text-overflow.item-card-price {
+    height: 100%;
+    }
+    /* Catalog */
+    .text-overflow.item-card-price.font-header-2.text-subheader.ng-scope.margin-top-none, .light-theme .item-card-container .item-card-price {
+        height: auto;
+        position: absolute;
+    }
+    /*     robux */
+        div[ng-controller='itemsContainerController'] > a.btn-growth-md {
+            display: none;
+        }
+        div.input-group-btn.sort-dropdown {
+            position: relative;
+            margin-right: -12px;
+        }
+    /* popover */ 
+    .popover {
+    border-radius: 2px;
+    }
+    #StudioWidget {
+        height: fit-content;
+    }
+    /* Server tab */
+    .light-theme .btn-control-xs:focus {
+        border: 1px solid #b8b8b8;
+    }
+    /* Private server/VIP server change name button */
+    /* .light-theme .btn-primary-md:focus, .light-theme .btn-primary-md:hover, .light-theme .btn-primary-md[disabled] {
+        background-color: #3FC679;
+        box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
+    } */
+    .light-theme .btn-primary-md:hover, .light-theme .btn-primary-md:focus {
+        background: #00bf5a;
+        border-color: #00bf5a;
+    }
+    .light-theme .stack .card-list .card-item button.game-server-join-btn:hover, .light-theme .stack .card-list .card-item button.game-server-join-btn:focus{
+        background-color: #fff;
+        border: 1px solid #B8B8B8;
+    }
+    button.modal-button.btn-primary-md:hover {
+        background: #3FC679;
+        border: 1px solid #3FC679;
+        box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
+    }
+    /* welcome user */
+    /* span.thumbnail-2d-container.avatar-card-image {
+        position: relative;
+        left: 455px;
+        width: 128px;
+        height: 128px;
+    }
+    div.font-header-2.dynamic-ellipsis-item:before {
+        content: "Hello, ";
+    }
+    div.font-header-2.dynamic-ellipsis-item, div.font-header-2.dynamic-ellipsis-item:hover{
+        position: relative;
+        left: 575px;
+        top: 50px;
+        overflow: visible;
+        font-size: 30px;
+    }
+    div.font-header-2.dynamic-ellipsis-item:after {
+        content: "!"
+    }
+    .rbx-left-col {
+        overflow: visible;
+    }
+    div.col-xs-12.container-header {
+        margin-top: 115px;
+        visibility: hidden;
+    } */
+
+    /* #displayName {
+        font-size: 30px;
+        margin-top: calc(128px / 3);
+    }
+    #profileAV {
+        height: 128px;
+        width: 128px;
+        margin-right: 15px;
+        margin-bottom: 25px;
+    }
+        */
+    /* Remove discover */
+    .games-list-header {
+        display: none;
+    }

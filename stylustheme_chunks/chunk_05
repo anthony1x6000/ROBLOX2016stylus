@@ -1,0 +1,500 @@
+    }
+    .light-theme .rbx-tabs-horizontal .rbx-tab.active .rbx-tab-heading, .light-theme .rbx-tabs-horizontal .rbx-tab.active:active
+    {
+        box-shadow: inset 0 -4px 0 0 #00a2ff;
+        background-color: white;
+    }
+    .light-theme .text-link, .light-theme .text-link.small, .light-theme .text-link.small:active, .light-theme .text-link.small:link, .light-theme .text-link.small:visited, .light-theme .text-link.xsmall, .light-theme .text-link.xsmall:active, .light-theme .text-link.xsmall:link, .light-theme .text-link.xsmall:visited, .light-theme .text-link.xxsmall, .light-theme .text-link.xxsmall:active, .light-theme .text-link.xxsmall:link, .light-theme .text-link.xxsmall:visited, .light-theme .text-link:active, .light-theme .text-link:hover, .light-theme .text-link:link, .light-theme .text-link:visited, .light-theme .text-name, .light-theme .text-name.small, .light-theme .text-name.small:active, .light-theme .text-name.small:link, .light-theme .text-name.small:visited, .light-theme .text-name.xsmall, .light-theme .text-name.xsmall:active, .light-theme .text-name.xsmall:link, .light-theme .text-name.xsmall:visited, .light-theme .text-name.xxsmall, .light-theme .text-name.xxsmall:active, .light-theme .text-name.xxsmall:link, .light-theme .text-name.xxsmall:visited, .light-theme .text-name:active, .light-theme .text-name:hover, .light-theme .text-name:link, .light-theme .text-name:visited, .light-theme .vlist .list-item .list-body .list-content a, .light-theme .vlist .list-item .list-body .list-content a.small, .light-theme .vlist .list-item .list-body .list-content a.small:active, .light-theme .vlist .list-item .list-body .list-content a.small:link, .light-theme .vlist .list-item .list-body .list-content a.small:visited, .light-theme .vlist .list-item .list-body .list-content a.xsmall, .light-theme .vlist .list-item .list-body .list-content a.xsmall:active, .light-theme .vlist .list-item .list-body .list-content a.xsmall:link, .light-theme .vlist .list-item .list-body .list-content a.xsmall:visited, .light-theme .vlist .list-item .list-body .list-content a.xxsmall, .light-theme .vlist .list-item .list-body .list-content a.xxsmall:active, .light-theme .vlist .list-item .list-body .list-content a.xxsmall:link, .light-theme .vlist .list-item .list-body .list-content a.xxsmall:visited, .light-theme .vlist .list-item .list-body .list-content a:active, .light-theme .vlist .list-item .list-body .list-content a:hover, .light-theme .vlist .list-item .list-body .list-content a:link, .light-theme .vlist .list-item .list-body .list-content a:visited, .vlist .list-item .list-body .list-content .light-theme a, .vlist .list-item .list-body .list-content .light-theme a.small, .vlist .list-item .list-body .list-content .light-theme a.small:active, .vlist .list-item .list-body .list-content .light-theme a.small:link, .vlist .list-item .list-body .list-content .light-theme a.small:visited, .vlist .list-item .list-body .list-content .light-theme a.xsmall, .vlist .list-item .list-body .list-content .light-theme a.xsmall:active, .vlist .list-item .list-body .list-content .light-theme a.xsmall:link, .vlist .list-item .list-body .list-content .light-theme a.xsmall:visited, .vlist .list-item .list-body .list-content .light-theme a.xxsmall, .vlist .list-item .list-body .list-content .light-theme a.xxsmall:active, .vlist .list-item .list-body .list-content .light-theme a.xxsmall:link, .vlist .list-item .list-body .list-content .light-theme a.xxsmall:visited, .vlist .list-item .list-body .list-content .light-theme a:active, .vlist .list-item .list-body .list-content .light-theme a:hover, .vlist .list-item .list-body .list-content .light-theme a:link, .vlist .list-item .list-body .list-content .light-theme a:visited {
+        color: #00a2ff;
+    }
+    .light-theme .section-content 
+    {
+        color: #191919;
+    }
+
+
+    .avatar-back
+    {
+        width: 265px;
+    }
+
+    .light-theme .spinner
+    {
+        background-image: url(https://images.rbxcdn.com/4bed93c91f909002b1f17f05c0ce13d1-loading.gif);
+    }
+
+    .content .games-lists-multiple .games-list-container .game-card-container
+    {
+        background-color: #ffffff;
+    }
+
+
+
+    .game-card-container thumbnail-2d .game-card-thumb, .game-card-thumb-container .game-card-thumb
+    {
+        border-radius: 0px;
+    }
+
+
+
+    .game-card-thumb-container:before
+    {
+        border-radius: 0px;
+    }
+
+    .light-theme .scroller.disabled
+    {
+        border: 1px solid #e3e3e3;
+    }
+
+
+    .rbx-tabs-horizontal .rbx-tab .rbx-tab-heading.active, .rbx-tabs-horizontal .rbx-tab .rbx-tab-heading:active, .rbx-tabs-horizontal .rbx-tab .rbx-tab-heading:focus, .rbx-tabs-horizontal .rbx-tab .rbx-tab-heading:hover
+    {
+        box-shadow: inset 0 -4px 0 0 #00a2ff;
+    }
+
+    .light-theme .voting-panel .users-vote .vote-details .vote-numbers .count-left
+    {
+        color: #02b757;
+    }
+        .light-theme .voting-panel .users-vote .vote-details .vote-numbers .count-right
+    {
+        color: #e2231a;
+    }
+
+    .light-theme .icon-allgears, .light-theme .icon-Building, .light-theme .icon-catalog, .light-theme .icon-copylocked, .light-theme .icon-default-games, .light-theme .icon-dislike, .light-theme .icon-experimental-black, .light-theme .icon-experimental-gray1, .light-theme .icon-experimental-gray2, .light-theme .icon-experimental-white, .light-theme .icon-Explosive, .light-theme .icon-games, .light-theme .icon-inventory, .light-theme .icon-like, .light-theme .icon-Melee, .light-theme .icon-Musical, .light-theme .icon-Navigation, .light-theme .icon-nocopylocked, .light-theme .icon-nogear, .light-theme .icon-partialgears, .light-theme .icon-playaudio, .light-theme .icon-playing-counts-gray, .light-theme .icon-playing-counts-gray-white-70, .light-theme .icon-PowerUp, .light-theme .icon-privateserver, .light-theme .icon-publicserver, .light-theme .icon-Ranged, .light-theme .icon-share-game-to-chat, .light-theme .icon-Social, .light-theme .icon-Transport, .light-theme .icon-votes-gray, .light-theme .icon-votes-gray-white-70
+    {
+        background-image: url(https://images.rbxcdn.com/153fd3209692232cd8087cad74a669b0-games.svg);
+    }
+
+    .dark-theme .game-card-info .light-theme .info-label.icon-playing-counts-gray, .dark-theme .game-card-info .light-theme .info-label.icon-playing-counts-gray-white-70, .dark-theme .game-card-info .light-theme .info-label.icon-votes-gray, .dark-theme .game-card-info .light-theme .info-label.icon-votes-gray-white-70, .dark-theme .builder-font .light-theme .refresh-link-icon:after, .dark-theme .builder-font .light-theme .see-all-link-icon:after, .builder-font.dark-theme .light-theme .refresh-link-icon:after, .builder-font.dark-theme .light-theme .see-all-link-icon:after, .builder-font.light-theme .refresh-link-icon:after, .builder-font.light-theme .see-all-link-icon:after, .light-theme .game-card-info .info-label.icon-playing-counts-gray, .light-theme .game-card-info .info-label.icon-playing-counts-gray-white-70, .light-theme .game-card-info .info-label.icon-votes-gray, .light-theme .game-card-info .info-label.icon-votes-gray-white-70, .light-theme .builder-font .refresh-link-icon:after, .light-theme .builder-font .see-all-link-icon:after, .light-theme .icon-currently-playing-sm, .light-theme .icon-default-common-sm, .light-theme .icon-push-right-sm, .light-theme .icon-rating-sm, .light-theme .icon-refresh-sm
+    {
+        background-image: url(https://images.rbxcdn.com/153fd3209692232cd8087cad74a669b0-games.svg);
+    }
+
+    div#chat-header, div.dialog-header {
+        background-color: #00a2ff;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+    }
+    .dark-theme div#chat-header, div.dialog-header  {
+        background: var(--darkThemeBlue);
+    }
+
+
+    span.font-caption-header.chat-header-title.ng-binding:after {
+        content: " & Party";
+    }
+
+    .light-theme .icon-chat-add-friends, .light-theme .icon-chat-arrow-right, .light-theme .icon-chat-back, .light-theme .icon-chat-close-black, .light-theme .icon-chat-close-white, .light-theme .icon-chat-error, .light-theme .icon-chat-friends, .light-theme .icon-chat-group-create, .light-theme .icon-chat-group-label, .light-theme .icon-chat-group-name, .light-theme .icon-chat-info-black, .light-theme .icon-chat-info-white, .light-theme .icon-chat-more-dialogs, .light-theme .icon-chat-more-options, .light-theme .icon-chat-notification, .light-theme .icon-chat-notification-mute, .light-theme .icon-chat-party-label-black, .light-theme .icon-chat-party-label-white, .light-theme .icon-chat-pin, .light-theme .icon-chat-pinned, .light-theme .icon-chat-place-favorite, .light-theme .icon-chat-place-my, .light-theme .icon-chat-place-popular, .light-theme .icon-chat-place-recent, .light-theme .icon-chat-place-recommended, .light-theme .icon-chat-place-vip, .light-theme .icon-chat-play-together, .light-theme .icon-chat-resend, .light-theme .icon-chat-search, .light-theme .icon-chat-search-cancel, .light-theme .icon-chat-search-white, .light-theme .icon-chat-selected, .light-theme .icon-chat-set-place, .light-theme .icon-chat-unpin, .light-theme .icon-default-chat
+    {
+        background-image: url(https://images.rbxcdn.com/f4d8925211682759829e2662560c7639-chat_02142018.svg);
+    }
+
+    .light-theme .icon-clanpoint, .light-theme .icon-default-branded, .light-theme .icon-favorite, .light-theme .icon-follow-game, .light-theme .icon-follow-game-gray, .light-theme .icon-leaderboard, .light-theme .icon-playerpoint
+    {
+        background-image: url(https://images.rbxcdn.com/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg)
+    }
+
+    div#game-follow-icon.icon-notifications-bell {
+        background-image: url('https://images.rbxcdn.com/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg');
+        background-position: 0 -250px;
+        
+    }
+    div#game-follow-icon.icon-notifications-bell:hover, div#game-follow-icon.followed.icon-notifications-bell {
+        background-image: url('https://images.rbxcdn.com/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg');
+        background-position: -28px -250px; 
+    }
+
+    .dark-theme div#game-follow-icon.icon-notifications-bell {
+        filter: grayscale(1);
+    }
+
+    .light-theme .dialogs .dialog-container .dialog-header
+    {
+        background-color: #00a2ff;
+        color: #ffffff;
+    }
+
+    .light-theme .dialogs .dialog-container .dialog-message-container .dialog-message
+    {
+        background-color: #00a2ff;
+        color: #ffffff;
+        border: 1px solid #00a2ff
+    }
+
+    .light-theme .dialogs .dialog-container .dialog-message-container.message-inbound .dialog-message
+    {
+    background-color: #ffffff;
+        color: #393b3d;
+        border: 1px solid #e3e3e3;
+    }
+
+    .light-theme .text-emphasis, .light-theme .text-sec, .light-theme .text-warning
+    {
+        color: inherit;
+    }
+
+    .light-theme .dialog-container .dialog-input-container .dialog-input
+    {
+        background-color: #fff;
+    }
+
+    .light-theme .game-card-container {
+        background-color: #fff;
+    }
+    .dark-theme .game-card-container, .dark-theme .hover-game-tile.focused.old-hover .featured-game-container {
+        background-color: #2d2d2d87;
+    }
+
+    .dark-theme div.home-friends > div.people-list {
+        padding-top: 10px;
+        background-color: #0000001f;
+        box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
+    }
+
+    .light-theme .btn-control-sm
+    {
+        background: #fff;
+    border: 1px solid #b8b8b8;
+        border-radius: 1px;
+    }
+
+    .light-theme .btn-secondary-md
+    {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: #00a2ff;
+        border: 1px solid #00a2ff;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 500;
+        height: auto;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        padding: 9px;
+        font-size: 16px;
+        line-height: 100%;
+        border-radius: 2px;
+    }
+
+    .builder-font.light-theme .refresh-link-icon:after
+    {
+        display: none
+    }
+
+    .rbx-header .age-bracket-label .age-bracket-label-username, .chat-container.collapsed .chat-header .chat-header-title
+    {
+        color: #fff;
+    }
+
+    .light-theme .item-card-container .item-card-caption
+    {
+    background-color: #fff;
+        margin-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .item-cards-stackable .item-card-caption
+    {
+        height: 90px;
+    }
+    .items-list .item-card .item-card-caption
+    {
+        height: 53px
+    }
+
+    /*.light-theme .icon-default-economy-28x28, .light-theme .icon-robux-28x28, .light-theme .icon-robux-gold-28x28, .light-theme .icon-robux-white
+    {
+        background-image: url(https://images.rbxcdn.com/3a9b44283e65ae1ead90defcb0bdcb6e-economy_28x28_dark.svg);
+    }*/
+
+    .light-theme .icon-default-branded-16x16, .light-theme .icon-robux-16x16, .light-theme .icon-robux-gray-16x16, .light-theme .icon-robux-white-16x16
+    {
+        background-image: url(https://images.rbxcdn.com/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg);
+    }
+
+    .light-theme .layer
+    {
+        background-color: #f3f3f3
+    }
+
+
+
+    .light-theme .pill-toggle
+    {
+        background-color: #fff;
+    }
+
+    .light-theme .pill-toggle input:checked+label
+    {
+        background-color: #00a2ff;
+    }
+
+    .light-theme .btn-primary-md
+    {
+        background-color: #08b454;
+        border-color: #08b454;
+    }
+
+    .light-theme .profile-avatar-left
+    {
+        background-color: #fff;
+    }
+
+    .light-theme .profile-avatar-right .profile-avatar-mask
+    {
+        background-color: rgba(117,117,117,0.5)
+    }
+
+    .light-theme .profile-avatar-right
+    {
+        background-color: #0074bd
+    }
+
+    .light-theme .profile-accoutrements-container .profile-accoutrements-slider .accoutrement-item a
+    {
+        background-color: #fff;
+    }
+
+    .light-theme .slide-switcher .slide-item-container .slide-item-container-left
+    {
+        background-color: #0074bd
+    }
+
+
+    .builder-font.light-theme .refresh-link, .builder-font.light-theme .refresh-link-icon, .builder-font.light-theme .refresh-link-icon:active, .builder-font.light-theme .refresh-link-icon:hover, .builder-font.light-theme .refresh-link-icon:link, .builder-font.light-theme .refresh-link-icon:visited, .builder-font.light-theme .refresh-link:active, .builder-font.light-theme .refresh-link:hover, .builder-font.light-theme .refresh-link:link, .builder-font.light-theme .refresh-link:visited, .builder-font.light-theme .see-all-link, .builder-font.light-theme .see-all-link-icon, .builder-font.light-theme .see-all-link-icon:active, .builder-font.light-theme .see-all-link-icon:hover, .builder-font.light-theme .see-all-link-icon:link, .builder-font.light-theme .see-all-link-icon:visited, .builder-font.light-theme .see-all-link:active, .builder-font.light-theme .see-all-link:hover, .builder-font.light-theme .see-all-link:link, .builder-font.light-theme .see-all-link:visited, .builder-font.light-theme .touch .refresh-link, .builder-font.light-theme .touch .refresh-link-icon, .builder-font.light-theme .touch .refresh-link-icon:active, .builder-font.light-theme .touch .refresh-link-icon:hover, .builder-font.light-theme .touch .refresh-link-icon:link, .builder-font.light-theme .touch .refresh-link-icon:visited, .builder-font.light-theme .touch .refresh-link:active, .builder-font.light-theme .touch .refresh-link:hover, .builder-font.light-theme .touch .refresh-link:link, .builder-font.light-theme .touch .refresh-link:visited, .builder-font.light-theme .touch .see-all-link, .builder-font.light-theme .touch .see-all-link-icon, .builder-font.light-theme .touch .see-all-link-icon:active, .builder-font.light-theme .touch .see-all-link-icon:hover, .builder-font.light-theme .touch .see-all-link-icon:link, .builder-font.light-theme .touch .see-all-link-icon:visited, .builder-font.light-theme .touch .see-all-link:active, .builder-font.light-theme .touch .see-all-link:hover, .builder-font.light-theme .touch .see-all-link:link, .builder-font.light-theme .touch .see-all-link:visited,.light-theme .btn-secondary-xs:hover, .light-theme .btn-secondary-xs:focus, #content > div.profile-platform-container > div > div:nth-child(4) > div:nth-child(2) > div:nth-child(6) > div > div > div.container-header > div > button.profile-view-selector.btn-secondary-xs.btn-generic-slideshow-xs {
+        color: #ffffff;
+        background-color: #00A2FF ;
+        border: 1px solid transparent;
+    }
+
+    .light-theme .btn-secondary-xs
+    {
+        background-color: #00a2ff;
+        border: 1px solid #00a2ff;
+        color: #fff;
+        border-radius: 1px
+    }
+
+    .light-theme .btn-generic-slideshow-xs:hover, .light-theme .btn-generic-slideshow-xs:focus
+    {
+        background-color: #00a2ff;
+        border: 1px solid #00a2ff;
+        color: #fff;
+    }
+
+    .light-theme .btn-control-xs, .notif-row-left-button, 
+    .notif-row-left-button.btn-secondary-xs.btn-min-width {
+        background-color: #fff;
+        border: 1px solid #B8B8B8;
+        color: rgba(0,0,0,.6);
+        border-radius: 3px;
+    }
+
+    .light-theme .btn-control-xs:hover, .notif-row-left-button:hover,
+    .notif-row-left-button.btn-secondary-xs.btn-min-width:hover,
+    .profile-view-selector.btn-control-xs.btn-generic-grid-xs:hover {
+        background-color: #fff;
+        border: 1px solid #b8b8b8;
+        color: #000;
+    }
+    
+
+    .light-theme .btn-control-sm:focus, .light-theme .btn-control-sm:hover
+    {
+        background-color: #fff;
+        border: 1px solid #b8b8b8;
+        color: rgba(0,0,0,.6);
+    }
+
+    .light-theme .btn-generic-grid-xs:focus
+    {
+        background-color: #fff;
+    }
+
+    .light-theme .btn-generic-grid-xs:focus
+    {
+        background-color: #00a2ff;
+        border: 1px solid #00a2ff;
+        color: #fff;
+    }
+
+    .light-theme .btn-secondary-sm, .light-theme .btn-secondary-sm:focus, .light-theme .btn-secondary-sm:hover
+    {
+        background: #fff;
+        border: 1px solid #b8b8b8;
+        border-radius: 1px;
+        color: rgba(0,0,0,.6);
+    }
+
+    .light-theme .btn-secondary-sm.disabled, .light-theme .btn-secondary-sm.disabled.active, .light-theme .btn-secondary-sm.disabled:active, .light-theme .btn-secondary-sm.disabled:focus, .light-theme .btn-secondary-sm.disabled:hover, .light-theme .btn-secondary-sm[disabled], .light-theme .btn-secondary-sm[disabled].active, .light-theme .btn-secondary-sm[disabled]:active, .light-theme .btn-secondary-sm[disabled]:focus, .light-theme .btn-secondary-sm[disabled]:hover
+    {
+        background: #fff;
+        border: 1px solid #b8b8b8;
+        border-radius: 1px;
+        color: rgba(0,0,0,.6);
+    }
+
+    .light-theme .btn-primary-sm.disabled, .light-theme .btn-primary-sm.disabled.active, .light-theme .btn-primary-sm.disabled:active, .light-theme .btn-primary-sm.disabled:focus, .light-theme .btn-primary-sm.disabled:hover, .light-theme .btn-primary-sm[disabled], .light-theme .btn-primary-sm[disabled].active, .light-theme .btn-primary-sm[disabled]:active, .light-theme .btn-primary-sm[disabled]:focus, .light-theme .btn-primary-sm[disabled]:hover
+    {
+        background-color: #02b757;
+        border: 1px solid #02b757;
+    }
+
+    .light-theme .icon-additem, .light-theme .icon-arrow-right-blue, .light-theme .icon-audio, .light-theme .icon-back, .light-theme .icon-bigplay, .light-theme .icon-bigplay-fill, .light-theme .icon-bigstop, .light-theme .icon-bigstop-fill, .light-theme .icon-brokenpage, .light-theme .icon-carousel-left, .light-theme .icon-carousel-right, .light-theme .icon-chat-gray, .light-theme .icon-check-selection, .light-theme .icon-checkmark, .light-theme .icon-checkmark-blue, .light-theme .icon-checkmark-on, .light-theme .icon-checkmark-white, .light-theme .icon-checkmark-white-bold, .light-theme .icon-clock, .light-theme .icon-close, .light-theme .icon-close-white, .light-theme .icon-copy, .light-theme .icon-default-generic, .light-theme .icon-down, .light-theme .icon-edit, .light-theme .icon-female, .light-theme .icon-female-white, .light-theme .icon-first-gray, .light-theme .icon-first-page, .light-theme .icon-games-carousel-left, .light-theme .icon-games-carousel-right, .light-theme .icon-globe, .light-theme .icon-grid, .light-theme .icon-home, .light-theme .icon-inactive, .light-theme .icon-last-gray, .light-theme .icon-last-page, .light-theme .icon-left, .light-theme .icon-left-gray, .light-theme .icon-locked, .light-theme .icon-logo-apple, .light-theme .icon-logo-win, .light-theme .icon-male, .light-theme .icon-male-white, .light-theme .icon-menu, .light-theme .icon-menu-black, .light-theme .icon-minus, .light-theme .icon-more, .light-theme .icon-more-gray-vertical, .light-theme .icon-moreinfo, .light-theme .icon-next, .light-theme .icon-notifications, .light-theme .icon-page, .light-theme .icon-password-hide, .light-theme .icon-password-hide-white, .light-theme .icon-password-show, .light-theme .icon-password-show-white, .light-theme .icon-pastname, .light-theme .icon-pause, .light-theme .icon-pause-fill, .light-theme .icon-play, .light-theme .icon-playgame, .light-theme .icon-plus, .light-theme .icon-regenerate, .light-theme .icon-right, .light-theme .icon-right-gray, .light-theme .icon-sandglass, .light-theme .icon-search, .light-theme .icon-settings, .light-theme .icon-slideshow, .light-theme .icon-sorting, .light-theme .icon-trash-bin, .light-theme .icon-unlocked, .light-theme .icon-up, .light-theme .icon-viewdetails
+    {
+        background-image: url(https://images.rbxcdn.com/8f9d73863e52851ec5910be4ffa5ed78-generic_01312019.svg);
+    }
+
+    .light-theme .rbx-tabs-horizontal .rbx-tab .rbx-tab-heading:hover
+    {
+        box-shadow: inset 0 -4px 0 0 #00a2ff;
+    }
+
+    .light-theme .slide-switcher.games
+    {
+        background-color: #118237;
+    }
+
+
+    .rbx-header.light-theme
+    {
+        background-color: #0074bd;
+    }
+
+    .rbx-header.light-theme .text-header, .rbx-header.light-theme .text-header:active, .rbx-header.light-theme .text-header:focus, .rbx-header.light-theme .text-header:hover, .rbx-header.light-theme .text-header:link, .rbx-header.light-theme .text-header:visited
+    {
+        color: #fff;
+    }
+
+    .rbx-left-col.light-theme
+    {
+        background-color: #fff;
+    }
+
+    .container-footer
+    {
+        background-color: #e3e3e3;
+    }
+
+    .light-theme .profile-accoutrements-container .profile-accoutrements-page-container .profile-accoutrements-page
+    {
+        border-color: #fff;
+    }
+
+    .light-theme .profile-accoutrements-container .profile-accoutrements-page-container .page-active
+    {
+        background-color: #fff;
+    }
+
+
+    .light-theme .avatar-card-btns .accept-friend
+    {
+        background-color: #00a2ff;
+    border-color: #00a2ff;
+    color: #fff;
+    border-radius: 1px;
+    }
+
+    .light-theme .rbx-tabs-horizontal .rbx-tab .rbx-tab-heading.active
+    {
+            box-shadow: inset 0 -4px 0 0 #00a2ff;
+    }
+
+    /* .light-theme .pager .first .pager-btn, .light-theme .pager .first a, .light-theme .pager .last .pager-btn, .light-theme .pager .last a, .light-theme .pager .pager-next .pager-btn, .light-theme .pager .pager-next a, .light-theme .pager .pager-prev .pager-btn, .light-theme .pager .pager-prev a
+    {
+        border-radius: 3px;
+        background-color: #fff;
+        border: 1px solid #b8b8b8;
+    } */
+    .light-theme .btn-generic-right-sm, .light-theme .btn-generic-left-sm {
+        background: #fff;
+        border-radius: 3px;
+        border: 1px solid #b8b8b8 !important;
+    }
+    .light-theme .btn-generic-right-sm:hover, .light-theme .btn-generic-left-sm:hover {
+        background: #F2F2F2;
+    }
+    .icon-right {
+        background-position: 0 -280px !important;
+    }
+    .icon-left {
+        background-position: 0 -300px !important;
+    }
+    .dark-theme .btn-generic-left-sm[disabled], .dark-theme .btn-generic-right-sm[disabled] {
+        background: transparent !important;
+/*         border: 1px solid transparent !important;
+        opacity: 0.35 !important; */
+    }
+/*     .btn-generic-right-sm[disabled] {
+        background: #fff !important;
+        border: 1px solid transparent !important;
+        opacity: 0.35 !important;
+    } */
+
+    .chat-windows-header .chat-header-label span, div.robux-upsell > button > h4 {
+        color: #fff;
+    }
+
+    .light-theme .text-robux-lg, .light-theme .text-robux, .discount-savings-original-price, div.robux-downsell > button > h4, td.icon-robux-container.amount > span {
+        color: #02b757;
+    }
+
+    .light-theme .carousel-control
+    {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-transition: all,0.2s,ease-in-out;
+        -o-transition: all,0.2s,ease-in-out;
+        transition: all,0.2s,ease-in-out;
+        background-color: #191919;
+        background-color: rgba(25,25,25,0.3);
+        top: 40%;
+        top: calc(50% - 24px);
+        border: 2px solid #fff;
+        border-radius: 50%;
+        display: none;
+        height: 48px;
+        position: absolute;
+        text-align: center;
+        width: 48px;
+        z-index: 1000;
+    }
+
+    .light-theme .carousel-control:hover
+    {
+        background-color: rgba(25,25,25,0.75);
+        border: 2px solid #fff;
+    }
+
+    .light-theme .input-group-btn .input-dropdown-btn
+    {
+        background-color: #fff;
+    }
+
+    .light-theme .menu-vertical .menu-option.active, .light-theme .menu-vertical .menu-option:hover
+    {
+        box-shadow: inset 4px 0 0 0 #00a2ff
+    }
+
+    .light-theme .input-group-btn .input-dropdown-btn
+    {
+        border: 1px solid #b8b8b8;
+        color: #191919;
+        background-color: #fff;
+    }
+
+    .light-theme .btn-control-md.disabled, .light-theme .btn-control-md.disabled.active, .light-theme .btn-control-md.disabled:active, .light-theme .btn-control-md.disabled:focus, .light-theme .btn-control-md.disabled:hover, .light-theme .btn-control-md[disabled], .light-theme .btn-control-md[disabled].active, .light-theme .btn-control-md[disabled]:active, .light-theme .btn-control-md[disabled]:focus, .light-theme .btn-control-md[disabled]:hover 
+    {
+        opacity: .5;
+        background-color: #fff;
+        border-color: #b8b8b8;
+        color: #b8b8b8;

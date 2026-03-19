@@ -1,0 +1,500 @@
+
+    .content .friends-subtitle {
+        margin: 0 0 0 0;
+    }
+
+    .profile-container .asset-item .item-name:hover {
+        color: #00A2FF !important;
+        text-decoration: none !important;
+    }
+
+    .friend-list .friend .friend-name, .people-list .friend .friend-name:hover {
+        color: #00A2FF !important;
+        text-decoration: none !important;
+    }
+    .light-theme .people-list .friend .friend-link:hover {
+        text-decoration: none !important;
+    }
+
+    .btn.btn-control-xs.load-more-button.ng-binding {
+        color: black;
+    }
+    .btn.btn-control-xs.load-more-button.ng-binding:hover {
+        color: black !important;
+    }
+
+
+
+
+    .light-theme .catalog-content .search-options .search-options-form {
+        border-right: 1px solid #bdbebe;
+        background-color: #efefef !important;
+    }
+
+    .light-theme .text-muted, .light-theme .text-subheader {
+        color: #000000;
+    }
+
+    .builder-font div {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.3em;
+    }
+
+    .light-theme .item-card-container .item-card-caption {
+        background-color: transparent !important;
+        margin-top: -2px;
+    }
+
+    .light-theme .item-card-container .item-card-caption {
+        margin-top: 0 !important;
+    }
+
+
+
+    .game-card-avatar-slots .avatar {
+        margin: -10px 2px 0 0;
+    }
+
+    .light-theme .item-card-container .item-card-thumb-container {
+        border-radius: 0px;
+        background-color: transparent !important;
+        border-bottom: 1px solid #e3e3e3;
+    }
+
+    /*@media screen and (min-width: 784px)
+    .container-main .catalog-full-screen .catalog-results .item-cards-stackable .item-card, .container-main .splash.catalog-full-screen .catalog-results .item-cards-stackable .item-card {
+        width: 23%;
+        min-width: auto;
+    }*/
+
+
+    .builder-font .font-caption-header, .builder-font .font-caption-header:active, .builder-font .font-caption-header:focus, .builder-font .font-caption-header:hover, .builder-font .font-caption-header:link, .builder-font .font-caption-header:visited, .builder-font .small.font-caption-header, .builder-font .small.font-caption-header:active, .builder-font .small.font-caption-header:focus, .builder-font .small.font-caption-header:hover, .builder-font .small.font-caption-header:link, .builder-font .small.font-caption-header:visited, .builder-font .small.text-error, .builder-font .small.text-error:active, .builder-font .small.text-error:focus, .builder-font .small.text-error:hover, .builder-font .small.text-error:link, .builder-font .small.text-error:visited, .builder-font .small.text-pastname, .builder-font .small.text-pastname:active, .builder-font .small.text-pastname:focus, .builder-font .small.text-pastname:hover, .builder-font .small.text-pastname:link, .builder-font .small.text-pastname:visited, .builder-font .small.text-report, .builder-font .small.text-report-ads, .builder-font .small.text-report-ads:active, .builder-font .small.text-report-ads:focus, .builder-font .small.text-report-ads:hover, .builder-font .small.text-report-ads:link, .builder-font .small.text-report-ads:visited, .builder-font .small.text-report:active, .builder-font .small.text-report:focus, .builder-font .small.text-report:hover, .builder-font .small.text-report:link, .builder-font .small.text-report:visited, .builder-font .text-error, .builder-font .text-error:active, .builder-font .text-error:focus, .builder-font .text-error:hover, .builder-font .text-error:link, .builder-font .text-error:visited, .builder-font .text-pastname, .builder-font .text-pastname:active, .builder-font .text-pastname:focus, .builder-font .text-pastname:hover, .builder-font .text-pastname:link, .builder-font .text-pastname:visited, .builder-font .text-report, .builder-font .text-report-ads, .builder-font .text-report-ads:active, .builder-font .text-report-ads:focus, .builder-font .text-report-ads:hover, .builder-font .text-report-ads:link, .builder-font .text-report-ads:visited, .builder-font .text-report:active, .builder-font .text-report:focus, .builder-font .text-report:hover, .builder-font .text-report:link, .builder-font .text-report:visited {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+
+
+    .light-theme .text-label, .light-theme.text-label:hover, .light-theme .text-label:focus {
+        color: #B8B8B8;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 4px;
+    }
+
+
+
+    /*@media (max-width: 991px)
+    .section .container-header {
+        padding: 0;
+    }*/
+
+
+
+    .light-theme .asset-thumb-container {
+        background-color: rgb(255, 255, 255);
+        border: 1px solid #B8B8B8;
+    }
+    .asset-item .asset-thumb-container {
+        border-radius: 3px;
+    }
+
+
+
+    .light-theme .layer {
+        background-color: #e3e3e3 !important;
+    }
+
+    .builder-font.light-theme .see-all-link-icon:hover, .light-theme .btn-secondary-xs:hover, .light-theme .btn-secondary-xs:focus {
+        box-shadow: 0 1px 4px 0 rgba(25,25,25,0.35);
+        background-color: #44b4f8;
+    }
+
+    .game-cards .game-card {
+        white-space: nowrap;
+    }
+
+    .game-card-container {
+        position: relative;
+        border-radius: 3px;
+        float: left;
+        height: 200px;
+        margin: 0 auto;
+        padding: 0;
+        text-align: left;
+        width: 152px;
+        box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
+        transition: box-shadow 70ms ease;
+    }
+    .game-card-container:hover {
+        box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.75);
+    }
+    .game-tile-list .game-tile .game-card-container {
+        width: 152px;
+    }
+    div.featured-grid-item-container.game-card-container {
+        width: inherit;
+    }
+
+
+    .game-card-link {
+        height: 100%;
+        border-radius: 3px; 
+    }
+
+    /* fixing the game tiles to be the old ones | GAMES PAGE CARD FIX */
+    .thumb-container img {
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        transition: opacity .5s ease;
+        opacity: 1;
+    }
+    .hover-game-tile {
+        height: 100%;
+        max-height: 300px;
+        width: 150px;
+        margin-right: 14px;
+        transition: all .0s cubic-bezier(0,0,0,1);
+    }
+
+    /* game tile shadows */ 
+
+
+        /* Took a while to scout these rules out. */
+        /* .light-theme .hover-game-tile.visible-tile:hover .featured-game-container {
+            box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.60);
+        }
+        .dark-theme .game-card-container, .light-theme .game-card-container {
+            box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.40);
+        }
+        .dark-theme .game-card-container, .light-theme .game-card-container:hover {
+            box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.75);
+        } 
+        .game-tile:hover .game-card-container {
+            height: 240px;
+            box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.9);
+        } 
+        .dark-theme .game-card-container:hover, .light-theme .game-card-container:hover {
+            box-shadow: 0 1px 6px 0 rgba(25,25,25,0.45);
+        }
+        */
+
+    .hover-game-tile .featured-game-container .featured-game-icon-container .brief-game-icon {
+        height: 150px;
+        width: 150px;
+        border-top-left-radius: 3px !important;
+        border-top-right-radius: 3px !important;
+        transition: all .0s cubic-bezier(0,0,0,1) !important;
+    }
+    .hover-game-tile .featured-game-container{transition: all 0s cubic-bezier(0,0,0,1) !important;}
+    div > div.horizontally-scrollable > ul > li.list-item.game-card.game-tile > div.game-card-container {
+        margin-left: 11px;
+    }
+    /* used to be margin-left: 11px; ^^*/ 
+
+
+
+    .hover-game-tile.visible-tile:hover .featured-game-container {
+        position: relative;
+        overflow: hidden;
+        max-height: 240px;
+        transition-duration: 0s;
+        transition-delay: 0s;
+    }
+    .scroller.next, .scroller.prev {
+        height: 242px !important;
+        top: -3px;
+
+    }
+
+    .hover-game-tile.visible-tile:hover {
+        width: 345px;
+        z-index: 4;
+        margin: 0px 24px 0 0px;
+        transition-duration: .15s;
+        transition-delay: .15s;
+    }
+    .hover-game-tile.visible-tile:hover.first-tile, .hover-game-tile.visible-tile:hover {
+        margin-left: 0px !important;
+        margin-right: 14px !important;
+    }
+    .list-item.hover-game-tile.first-tile.visible-tile {
+        margin-left: 11px !important;
+    }
+    .game-card-native-ad {
+        position: relative; 
+        overflow: hidden;
+        top: 15%;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+    .hover-game-tile .featured-game-container .thumb-container {
+        position: absolute;
+        height: 194px;
+        width: 0%; /* chng val 4 smth */
+        overflow: hidden;
+        border-radius: 3px 3px 0 0;
+        opacity: 0;
+        transition: opacity .0s ease-out;
+
+    }
+    div.featured-game-container.game-card-container > a.game-card-link > div.thumb-container {
+        border-radius: 0px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+    .featured-game-tile:hover .thumb-container:before {
+        opacity: 0;
+    }
+    span.brief-game-icon > img {
+        border-radius: 3px;
+    }
+    .featured-game-container.game-card-container {
+        margin-left: 5px;
+        margin-top: 4px;
+    }
+
+    /* point of 100% removing the new game cards */
+    .list-item.hover-game-tile.visible-tile {
+        width: 150px;
+    }
+    .hover-game-tile.visible-tile:hover .featured-game-container .info-container {
+        width: 315px;
+        margin-left: 0px;
+        margin-right: 0px;
+        transition: width 0s cubic-bezier(0,0,0,1) .0s,margin .0s cubic-bezier(0,0,0,1) .0s;
+    }
+
+    .thumbnail-2d-container.brief-game-icon {
+        border-radius: 0px !important;
+    }
+    .hover-game-tile.visible-tile:hover .featured-game-container .featured-game-icon-container { /* fixing the game icon going to the right*/ 
+        margin-left: 0px !important;
+
+    }
+
+    /* Stuff for my browser that hopefully won't mess something up */ 
+
+    /* cant seem to close the gap between the game cards 
+    https://i.ibb.co/NVQQkd6/image.png
+    Got any ideas? (I tried margin-... w/ !important and it didnt work)
+    */
+    .game-grid {
+        margin-right: 78px;
+    } /* This did fix it (vertically) but I don't know if breaks anything */ 
+
+
+    /* new games page fixes */ 
+    .hover-game-tile .featured-game-container {
+        height: 240px;
+    }
+    /*sponsored ad */ 
+    .game-card-native-ad {
+        width: 150px !important;
+        overflow: hidden; 
+        border-bottom-right-radius: 2px;
+        border-bottom-left-radius: 2px;
+    }
+
+    /* END OF GAME CARD FIXING STUFF */
+
+    /* games page arrows & fix*/ 
+    /* div > ul.hlist.game-tile-list {
+        padding: 0px 30px;
+    }
+    .touch .is-windows .scroller{
+        opacity: 1;
+        display: block !important;
+    }
+    div.horizontal-scroll-window {
+        overflow: visible !important;
+    } */
+    /* .arrow, .scroller.prev.disabled, .scroller.next, .scroller.next.disabled, .scroller.prev {
+        height: 242px;   
+    } */ 
+    /* new games page fix */ 
+    /* Game cover thing fixing gaps */ 
+    .light-theme .horizontal-scroller .scroller.next .spacer {
+        left: 29px;
+        height: 115%;
+        bottom: -5px;
+        background-color: #e3e3e3;
+    }
+    .scroller.prev, div.prev > div.arrow{
+        border-radius: 3px 0px 0px 3px;
+    }
+    .scroller.next, div.next > div.arrow{
+        border-radius: 0px 3px 3px 0px;
+    }
+
+    .light-theme .horizontal-scroller .scroller.prev .spacer {
+        right: 29px;
+        height: 115%;
+        background-color: #e3e3e3;
+        top: -10px;
+    }
+    .spacer {
+        z-index: 0 !important;
+    }
+    /* games page fix right above here too changed 91 to 82 i think */ 
+    .icon-games-carousel-right {
+        margin-right: 3px;
+    }
+    .light-theme  .scroller .arrow {
+        z-index: 2 !important;
+        left: 0px;
+        background-color: #fff;
+        width: 100%;
+    }
+
+    /* removed this
+    .scroller.prev .arrow::hover {
+        z-index: 2 !important;
+        left: 1px;
+        box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
+    } */ 
+    .arrow:hover {
+        z-index: 5;
+        cursor: pointer;
+        box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
+    }
+    div#notification-stream-popover > div.arrow {
+    box-shadow: 0 0 0;
+    }
+    .light-theme .disabled > .arrow {
+        box-shadow: 0 0 0;
+        cursor: default;
+        background-color: #f2f4f5;
+    }
+    div.disabled > div > span.icon-games-carousel-left {
+        filter: opacity(.3);
+    }
+
+    .light-theme .scroller .icon-games-carousel-right {
+        margin-left: -7px;
+    }
+    /* 
+    .light-theme .scroller:focus, .light-theme .scroller:hover {
+        background-color: #fff;
+    } */ 
+    .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image, .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image:hover {
+    box-shadow: none !important;
+    border: #c5c5c5 1px solid !important;
+    }
+
+    .avatar-card-fullbody .avatar-card-image, .avatar-card-fullbody .avatar-card-link, .avatar .avatar-card-image, .avatar .avatar-card-link {
+        border-radius: 50%;
+    box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
+    }
+    .avatar-card-fullbody .avatar-card-image, .avatar .avatar-card-image {
+        background-color: transparent;
+    }
+    .light-theme .avatar {
+        background-color: #00000000;
+        color: #393b3d;
+    }
+
+
+
+    .avatar-headshot-lg .avatar-status {
+        bottom: 4%;
+        position: absolute;
+        right: 2%;
+    }
+    .people-list .avatar-container .avatar-status {
+        top: 69px;
+        right: -8px;
+    }
+
+    .light-theme .people-list {
+        height: 127px;
+        max-height: 133px;
+    }
+
+
+
+    .builder-font .font-caption-header, .builder-font .font-caption-header:active, .builder-font .font-caption-header:focus, .builder-font .font-caption-header:hover, .builder-font .font-caption-header:link, .builder-font .font-caption-header:visited, .builder-font .small.font-caption-header, .builder-font .small.font-caption-header:active, .builder-font .small.font-caption-header:focus, .builder-font .small.font-caption-header:hover, .builder-font .small.font-caption-header:link, .builder-font .small.font-caption-header:visited, .builder-font .small.text-error, .builder-font .small.text-error:active, .builder-font .small.text-error:focus, .builder-font .small.text-error:hover, .builder-font .small.text-error:link, .builder-font .small.text-error:visited, .builder-font .small.text-pastname, .builder-font .small.text-pastname:active, .builder-font .small.text-pastname:focus, .builder-font .small.text-pastname:hover, .builder-font .small.text-pastname:link, .builder-font .small.text-pastname:visited, .builder-font .small.text-report, .builder-font .small.text-report-ads, .builder-font .small.text-report-ads:active, .builder-font .small.text-report-ads:focus, .builder-font .small.text-report-ads:hover, .builder-font .small.text-report-ads:link, .builder-font .small.text-report-ads:visited, .builder-font .small.text-report:active, .builder-font .small.text-report:focus, .builder-font .small.text-report:hover, .builder-font .small.text-report:link, .builder-font .small.text-report:visited, .builder-font .text-error, .builder-font .text-error:active, .builder-font .text-error:focus, .builder-font .text-error:hover, .builder-font .text-error:link, .builder-font .text-error:visited, .builder-font .text-pastname, .builder-font .text-pastname:active, .builder-font .text-pastname:focus, .builder-font .text-pastname:hover, .builder-font .text-pastname:link, .builder-font .text-pastname:visited, .builder-font .text-report, .builder-font .text-report-ads, .builder-font .text-report-ads:active, .builder-font .text-report-ads:focus, .builder-font .text-report-ads:hover, .builder-font .text-report-ads:link, .builder-font .text-report-ads:visited, .builder-font .text-report:active, .builder-font .text-report:focus, .builder-font .text-report:hover, .builder-font .text-report:link, .builder-font .text-report:visited {
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .light-theme .builder-font .font-caption-header {
+        color: #333333;
+    }
+
+
+    .rbx-header .age-bracket-label .age-bracket-label-username, .chat-container.collapsed .chat-header .chat-header-title {
+        color: #fff !important;
+    }
+    .chat-windows-header .chat-header-label span{
+        color: #fff !important;
+    }
+
+
+    .layer {
+        padding: 0;
+    }
+
+
+
+
+    .light-theme .input-group .input-field {
+        background-color: #ffffff;
+        color: #000000;
+    }
+    /*.light-theme .icon-default-logo, .light-theme .icon-logo {
+        background-image: url(https://images.rbxcdn.com/1359485336f67d6e7be76b5e8ff4b72c-roblox_logo_11212016.svg);
+    }*/
+    .light-theme .game-card-info .info-label {
+        color: hsla(0, 0%, 0%, .7);
+    }
+    .light-theme .container-footer {
+        background-color: #ffffff;
+    }
+    .light-theme .rbx-header {
+        background-color: #0074BD;
+    }
+    .light-theme .games-list-container {
+        background-color: #e3e3e3
+    }
+
+    .light-theme .notification-red, .light-theme #header .btr-nav-notif /*better roblox */ {
+        background-color: #e2231a;
+        color: #ffffff;
+        border: 0px !important;
+    }
+    .light-theme .icon-nav-message-btr,
+    .light-theme .icon-nav-friend-btr /*better roblox */{
+        filter: none;
+    }
+    .light-theme .notification-blue {
+        background-color: #00a2ff;
+        color: #ffffff;
+    }
+    .light-theme .rbx-upgrade-now .btn-secondary-md {
+        background-color: #00a2ff;
+        color: #ffffff;
+    }
+    #upgrade-now-button {
+        background-color: #00a2ff;
+        border-color: inherit;
+        color: #ffffff;
+        border-radius: 3px;
+        line-height: 7px;
+    }
+    .dark-theme #upgrade-now-button {
+        border: none;
+        background: var(--darkThemeBlue);
+    }
+    .light-theme .sponsored-game .game-card-native-ad {
+        background-color: #00a2ff;
+    }
+    .light-theme .game-card-native-ad .native-ad-label {
+        color: #ffffff;
+    }
+    .light-theme .voting-panel .users-vote .vote-details .vote-container .vote-percentage {
+        background-color: #02b757;
+    }
+    .light-theme .voting-panel .users-vote .vote-details .vote-container .vote-background, .light-theme .voting-panel .users-vote .vote-details .vote-container .vote-background.has-votes {
+        background-color: #e27676;
