@@ -1,0 +1,500 @@
+    .ignore-friend.btn-secondary-md.btn-min-width {
+        border-radius: 2px;
+    }
+
+    .accept-friend.btn-cta-md.btn-min-width {
+        border-radius: 4px;
+
+    }
+
+    /* roblox powering imagination chat & party */ 
+    .light-theme .icon-default-logo-tagline, .light-theme .icon-logo-tagline {visibility: hidden;}
+
+    /* Buy premium page */ 
+    .premium-landing-page .premium-title-section .get-premium-button {
+        color: #fff;    
+    }
+    .premium-landing-page .premium-title-section .get-premium-button:hover, .btn-min-width:hover {
+        background-color: #00bf5a;
+        border-color: #00bf5a;
+    }
+
+
+    .robux-package-name, .font-header-2.text-disabled{
+        position: relative;
+        top: 30px;
+    }
+
+    .icon-premium-120x120{
+        background-image: url("https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/oldbchardhat.png?raw=true");
+        background-size: 110%;
+    }
+
+    /* catalog changes  */ 
+    /* 10/16/2021 */
+    .light-theme div.catalog-results > div > ul > li > a.item-card-container > div.item-card-link {
+        border-bottom: 1px solid #B8B8B8;
+    }
+
+    .list-item.item-card.ng-scope {
+        margin-bottom: 5px;
+        width: auto;
+    }
+    /* .container-main .catalog-full-screen .catalog-results .item-cards-stackable .item-card, .container-main .splash.catalog-full-screen .catalog-results .item-cards-stackable .item-card {
+        width: auto;
+    }
+        */
+    .hlist.item-cards-stackable.ng-scope {
+        overflow: visible !important;
+    }
+    .catalog-container .search-container .input-group .search-input {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        left: 1px;
+    }
+    .icon-search{
+        position: relative;
+        left: 2px;
+    }
+
+    input.form-control.input-field { /* changed the border radius of the input fields */ 
+        border-radius: 6px !important;
+    }
+    /* limited label change | IT BROKEY SO I COMMENT OUT
+    .icon-limited-label { 
+        background-image: url("https://web.archive.org/web/20160910031530im_/https://images.rbxcdn.com/793dc1fd7562307165231ca2b960b19a.png");
+        width: 70px;
+        height: 18px;
+        margin-left: 2px;
+        background-repeat: repeat;
+    }
+    .icon-limited-unique-label{
+        background-image: url("https://web.archive.org/web/20160910031530im_/https://images.rbxcdn.com/d649b9c54a08dcfa76131d123e7d8acc.png");
+        width: 88px;
+        height: 18px;
+        margin-left: 2px;
+        background-repeat: repeat;
+    }*/
+    /* recommended catalog */ 
+    .list-item.item-card.recommended-item.ng-scope{
+        height: 250px;
+    }
+    recommendations > div > div > div > div > ul > li > div > a > div.item-card-name.recommended-name > span.ng-binding, div > div > div > recommendations.ng-isolate-scope > div > div > div > div > ul > li > div > div {
+        margin-left: 6px;
+    }
+    /* avatar page changes */ 
+    .redraw-avatar > .text-link.ng-binding::before {
+        content: "Click here to re-draw it!";
+        line-height: 30px;
+        font-size: 16px;
+        color: #085bcd;
+    }
+    .redraw-avatar > .text-link.ng-binding {
+        position: relative; 
+        bottom: 11px;
+        right: 122px;
+        font-size: 0px;
+    }
+    .redraw-avatar > span.ng-binding:nth-of-type(1)::before {
+        content: "Something wrong with your avatar?";
+        font-size: 16px; 
+    }
+    .redraw-avatar > span.ng-binding:nth-of-type(1) {
+        font-size: 0px; 
+        position: relative;
+        left: 1px;
+    }
+    div > div > div > div > div > div > div.avatar-editor-header > div.catalog-header > a.btn-primary-md {
+        visibility: hidden; 
+    }
+    /*accept friend button */ 
+    #accept-fr-btn {
+        background-color: #00a2ff;
+        border-color: #00a2ff;
+        color: white !important;
+        border-radius: 3px;
+    }
+    .notification-item.ng-scope.ng-isolate-scope > .notification-item-front > .notification-item-content > .notification-action-container {
+        margin-bottom: 1px;
+    }
+    /*game search results */ 
+        /* big game icon (featured game)*/
+    .game-card-description-info.font-body {
+        margin-top: 25px;
+    }
+    div.game-card-name-info > button.btn-full-width[type='button'] {
+        position: relative;
+        width: 168px !important;
+        height: 10px;
+        padding-right: 9px !important;
+        padding-bottom: 5px !important; 
+        right: 10px;
+    }
+    div > div.featured-grid-item-container.game-card-container > a > div > div > div {
+        font-size: 17px;
+    }
+    div > div.featured-grid-item-container {
+        overflow: hidden;
+        height: 504px;
+        background-color: white;
+    }
+    div.featured-grid-item-container.game-card-container > a > div.game-card-description-info {
+        position: relative;
+        overflow: hidden;
+        left: 5px;
+        width: 97%;
+    }
+        /* pushing results to the right */ 
+    div.game-grid-container > li.game-card {
+        position: relative;
+        left: 5px;
+        top: 5px;
+    }
+    /*thanks for visiting roblox */ 
+    div > div > div > ul > li.step4-of-4 > div.VisitButton.VisitButtonContinueGLI > a:hover {
+        background-color: #3fc679; 
+        border-color: #3fc679;
+    }
+    /* scroll bars*/
+    .section-content.remove-panel.people-list {
+        overflow-x: hidden;
+    }
+    /* re-activate screen/ban screen */ 
+        /* replicating old buttons | IE 11 type beat */ 
+            /* TAGS: NOT NEEDED */ 
+    button#reactivate-button, div.not-approved-page > div > div > button#logout-button {
+        font-size: 13px;
+        line-height: 2px;
+        padding: 9px;
+        border-color: #717071; 
+        border-radius: 0px;
+        background-image: linear-gradient(#e9e8e8, #dcdcdd);
+        color: black;
+        box-shadow: 0 0 0 white /* hopefully this nulls it */ ;
+    }button#reactivate-button:hover, div.not-approved-page > div > div > button#logout-button:hover {
+        box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2) !important;
+        background-image: linear-gradient(#a6f5fe, #a6f5fe) !important;
+        border-color: #27a1da;
+    }
+
+    /* sitewide defaults */
+    .input-field{ /* search bars */ 
+        border-radius: 1px !important;
+    }
+    .input-dropdown-btn { /* dropdowns */ 
+        border-radius: 1px !important; 
+    }
+    .light-theme .btn-primary-md {
+        border-radius: 5px;
+    }
+
+    /* profile game card layout */ 
+    div.game-container {
+        margin-left: 11px;
+    }
+    div > div.profile-game.container-list > div.game-grid {
+        position: relative;
+        right: 9px;
+    }
+
+
+    /* signup header */ 
+
+    .rbx-navbar-signup.btn-growth-sm.nav-menu-title.signup-button {
+        background: none; 
+        border: none;
+    }
+    .nav.navbar-right.rbx-navbar-right-nav {
+        margin-right: 30px;
+        margin-top: 3px;
+    }
+    .font-header-2.rbx-navbar-login.nav-menu-title.rbx-menu-item {
+        margin-left: 110px;
+    } /* i know that this is the best way of doing this but it works */ 
+
+
+
+    /* game page about store servers bottom highlight fix */ 
+    .nav.nav-tabs {
+        width: 100.01%;
+    }
+    /* Divider on the left */ 
+    .rbx-divider {
+        width: 94%;
+    }
+    .info-text > .ng-binding {
+        position: relative;
+        top: 11px;
+    }
+    /* I agree button */
+    .agree-button.btn-cta-lg.btn-min-width {
+        background-color: #00a2ff;
+        border: 0px;
+    }
+
+    /* 10/15/2021 */
+    /* Only favorites & continue on homepage - DISCARDED, IT BROKEY
+    div.game-home-page-carousel-title:nth-of-type(1) {
+    margin-top: 12px;
+    }
+    .avatar-shop-homepage-recommendations-container,
+    div.game-carousel:nth-of-type(n + 3),
+    div.game-home-page-carousel-title:nth-of-type(n + 3) {
+    visibility: hidden;
+    height: 0px;
+    margin-bottom: 0;
+    }
+    div.game-carousel:nth-of-type(19),
+    div.game-home-page-carousel-title:nth-of-type(18) {
+    visibility: visible !important;
+    height: inherit !important;
+    } */
+    /*
+    * bruh, really?
+    * come on, you can do better than this.
+
+    D:
+
+    */
+    /*     #\36 48454481 > .game-card-thumb-container:hover,
+    #\31 087859240 > .game-card-thumb-container:hover {
+    background: url(https://t4.rbxcdn.com/95cbc398c5101cfc377d8511431b6430) no-repeat;
+    padding-left: 100%;
+    overflow: hidden;
+    filter: drop-shadow(0 90px 0 pink);
+    transition: padding 2s, filter 1.9s;
+    } */
+    .game-cards .game-card .game-card-info,
+    .game-cards .game-card .game-card-name {
+        line-height: 20px;
+    /*     margin-top: 0; */
+        font-weight: 300;
+    }
+    /* hide avatar icon on sidebar */
+    /* #navigation .avatar-headshot-xs {
+        display: none;
+    } */
+
+    /* for legacy pages */
+    #MasterContainer {
+        background-color: #fff;
+    }
+
+    /* remove weird line on unvoted game cards */
+    .game-card-info .no-vote::after {
+        content: none;
+    }
+    /* view featured items hover button fix & full width button fix*/ 
+    button.view-all:hover, button.btn-control-md.btn-full-width.ng-binding:hover {
+        background: #fff !important;
+        color: #000 !important;
+        border: 1px solid #a4a4a4 !important;
+
+    }
+
+
+    #nav-robux-amount {
+        font-weight: 400;
+    }
+
+
+
+    .btr-description .game-description {
+        padding: 0;
+    }
+
+
+    .game-card-name, .game-name-title {
+        height: 20px;
+    }
+    .game-carousel {
+        width: 110%;
+        overflow-x: visible;
+        overflow-y: visible;
+    }
+    /* STATIC gamecards */ 
+        .scroller.prev, .scroller.next {
+            height: 247px !important;
+        }
+        .game-card-container {
+            height: 240px;
+        }
+/*         .game-carousel {
+            height: 240px;
+        } */
+    /* End of STATIC gamecards
+    For expanding gamecards see addon on GitHub: anthony1x6000/ROBLOX2016stylus */ 
+    /* View Details hover over player */
+    span[ng-bind='library\.placesDict\[friend\.presence\.rootPlaceId\]\.name'] {
+        height: 20px;
+    }
+
+    /* Top header */ 
+    .navbar-fixed-top {
+        border: 0 !important;
+    }
+    /* remove suggested avatar items */ 
+    div.avatar-shop-homepage-recommendations-container {
+        visibility: hidden;
+        height: 0;
+        margin: 0;
+    }
+    /* favorites on profile */
+    div.favorite-games-container > ul > li.list-item {
+        margin-right: -3px;
+    }
+    .text-overflow.item-card-price {
+    height: 100%;
+    }
+    /* Catalog */
+    .text-overflow.item-card-price.font-header-2.text-subheader.ng-scope.margin-top-none, .light-theme .item-card-container .item-card-price {
+        height: auto;
+        position: absolute;
+    }
+    /*     robux */
+        div[ng-controller='itemsContainerController'] > a.btn-growth-md {
+            display: none;
+        }
+        div.input-group-btn.sort-dropdown {
+            position: relative;
+            margin-right: -12px;
+        }
+    /* popover */ 
+    .popover {
+    border-radius: 2px;
+    }
+    #StudioWidget {
+        height: fit-content;
+    }
+    /* Server tab */
+    .light-theme .btn-control-xs:focus {
+        border: 1px solid #b8b8b8;
+    }
+    /* Private server/VIP server change name button */
+    /* .light-theme .btn-primary-md:focus, .light-theme .btn-primary-md:hover, .light-theme .btn-primary-md[disabled] {
+        background-color: #3FC679;
+        box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
+    } */
+    .light-theme .btn-primary-md:hover, .light-theme .btn-primary-md:focus {
+        background: #00bf5a;
+        border-color: #00bf5a;
+    }
+    .light-theme .stack .card-list .card-item button.game-server-join-btn:hover, .light-theme .stack .card-list .card-item button.game-server-join-btn:focus{
+        background-color: #fff;
+        border: 1px solid #B8B8B8;
+    }
+    button.modal-button.btn-primary-md:hover {
+        background: #3FC679;
+        border: 1px solid #3FC679;
+        box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
+    }
+    /* welcome user */
+    /* span.thumbnail-2d-container.avatar-card-image {
+        position: relative;
+        left: 455px;
+        width: 128px;
+        height: 128px;
+    }
+    div.font-header-2.dynamic-ellipsis-item:before {
+        content: "Hello, ";
+    }
+    div.font-header-2.dynamic-ellipsis-item, div.font-header-2.dynamic-ellipsis-item:hover{
+        position: relative;
+        left: 575px;
+        top: 50px;
+        overflow: visible;
+        font-size: 30px;
+    }
+    div.font-header-2.dynamic-ellipsis-item:after {
+        content: "!"
+    }
+    .rbx-left-col {
+        overflow: visible;
+    }
+    div.col-xs-12.container-header {
+        margin-top: 115px;
+        visibility: hidden;
+    } */
+
+    /* #displayName {
+        font-size: 30px;
+        margin-top: calc(128px / 3);
+    }
+    #profileAV {
+        height: 128px;
+        width: 128px;
+        margin-right: 15px;
+        margin-bottom: 25px;
+    }
+        */
+    /* Remove discover */
+    .games-list-header {
+        display: none;
+    }
+    /* IMAGE PATCH, Buy Robux */
+        /* Add in */
+
+    .light-theme .icon-robux-20x20 {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        background-image: url(https://images.rbxcdn.com/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg);
+        background-size: 40px auto;
+        background-position: 1px -79px;
+    }
+    .dark-theme .icon-robux-16x16, .light-theme .icon-robux-16x16, .robux-downsell .icon-robux-gray, .icon-default-economy-small, .icon-robux-16x16 {
+        background-image: url(https://images.rbxcdn.com/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg) !important;
+        background-size: 40px auto;
+        background-position: 1.5px -80px;
+    }
+    span.icon-robux-gray {
+        background-image: url(https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg);
+        background-position: 0px -113px !important;
+        background-size: auto !important;
+
+    }
+    .light-theme .icon-robux-28x28 {
+        background-image: url(https://images.rbxcdn.com/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg);
+        background-size: 60px auto;
+        background-position: 0 -122px;
+    }
+    /*   End add in   */
+        /* Part of Robux Patch */
+            .robux-upsell .unsubscribed .icon-robux-white, .robux-upsell .subscribed .icon-robux-white{
+                background-image: url(https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg);
+                background-position: 0px -28px !important;
+            }
+    .light-theme .icon-default-logo, .light-theme .icon-logo, .text-logo, .dark-theme .icon-default-logo, .dark-theme .icon-logo, .icon-default-logo, .icon-logo {
+        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IlJPQkxPWCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgd2lkdGg9IjMyMHB4IiBoZWlnaHQ9Ijc4cHgiIHZpZXdCb3g9IjAgMCAzMjAgNzgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyMCA3ODsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNFMjIzMUE7fQoJLnN0MXtmaWxsOiNGRkZGRkY7fQoJLnN0MntmaWxsLXJ1bGU6ZXZlbm9kZDtjbGlwLXJ1bGU6ZXZlbm9kZDtmaWxsOiNFMjIzMUE7fQoJLnN0M3tmaWxsLXJ1bGU6ZXZlbm9kZDtjbGlwLXJ1bGU6ZXZlbm9kZDtmaWxsOiNGRkZGRkY7fQo8L3N0eWxlPgo8ZyBpZD0iUk9CTE9YXzFfIj4KCTxnPgoJCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0yMzYuMywxMi4xYy0wLjQtMC40LTEtMC42LTEuNS0wLjdDMjIzLDkuNSwyMDcuNSw5LjUsMTk1LDExLjRjLTAuOSwwLjEtMS43LDAuNi0yLjEsMS40CgkJCWMtMi42LDQuMS00LjMsOC01LjcsMTIuOWMtMC4xLDAuMy0wLjEsMC42LTAuMSwwLjljMCwxNi41LDEsMzUuNSw5LDQzLjRjMC42LDAuNiwxLjMsMC45LDIuMSwwLjljMTEuNCwwLjQsMjQuMSwwLjQsMzYuMSwwCgkJCWMxLjEsMCwyLjItMC43LDIuNy0xLjdDMjQ0LjEsNTQuNCwyNDguNSwyMy4xLDIzNi4zLDEyLjF6IE0yMjEuNiw1Mi4xYy00LjIsMC4yLTkuNCwwLjEtMTMuMS0wLjFjLTAuOS02LjQtMS41LTE1LjctMC45LTIyLjYKCQkJYzMuOS0wLjMsMTEuNy0wLjMsMTQuNiwwQzIyMi45LDM1LjEsMjIyLjgsNDYuMiwyMjEuNiw1Mi4xeiIvPgoJCTxnPgoJCQk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMjMyLjgsMTUuOGMtMTEuNi0xLjQtMjYuMS0xLjMtMzYuMywwYy0yLDMtMy45LDcuMS01LDExYzAsMTIuOSwwLjQsMzQuMyw3LjgsMzkuNmM5LjgsMC41LDIzLjEsMC40LDMzLjksMAoJCQkJQzIzOS41LDU0LjQsMjQyLjcsMjQuMywyMzIuOCwxNS44eiBNMjI1LjIsNTUuOGMtNiwwLjMtMTQuMSwwLjMtMTkuOCwwYy0xLjMtNi43LTIuNi0yMi41LTEuMS0zMC4yYzUuNy0wLjQsMTUuNi0wLjUsMjEuMSwwCgkJCQlDMjI3LjMsMzUsMjI2LjMsNDguNywyMjUuMiw1NS44eiIvPgoJCTwvZz4KCTwvZz4KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xNjIuMSwxLjFjNy43LDAuMiwxNS42LDEuMSwyMy4zLDIuNGMxLDAuMiwxLjcsMC45LDEuNiwyYy0xLjIsMTIuOS0yLjksMzYuNS0zLjQsNDkuOWgxNi4xCgkJYzEuMiwwLDIuMSwxLjIsMi4xLDIuNGMtMC4yLDIuNi0wLjUsNS42LTEuMSw4LjRjLTAuMiwwLjgtMC44LDEuNS0xLjYsMS43Yy0xMS4xLDIuMy0yMSwzLjYtMzIuMyw1LjRjLTEuMiwwLjItMi4yLTAuNi0yLjQtMS44CgkJYy0zLjItMjYuNC00LTQ2LjgtNC4zLTY4LjNDMTYwLDIsMTYxLDEuMSwxNjIuMSwxLjF6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QzIiBkPSJNMTY0LjMsNC45YzYuNCwwLjQsMTIuMSwwLjYsMTguNSwxLjZjLTEuNCwxNi40LTIuMiwzNS41LTIuOCw1MS45YzYuNywwLDEyLjgsMCwxOC4xLDAKCQljLTAuMSwyLjEtMC40LDMuOC0wLjcsNS44Yy05LjMsMi0xOS43LDMtMjkuMyw0LjdDMTY1LjIsNDcuMSwxNjQuMywyNC41LDE2NC4zLDQuOXoiLz4KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0yMzMuOCw1OS4yYzEyLjMtMTYsMzEuOC0zNi43LDQ4LjgtNDkuN2MwLjctMC41LDEuNS0wLjcsMi4zLTAuNmM4LjYsMS41LDE3LjEsNC4xLDI1LjMsOC40CgkJYzAuNywwLjQsMC43LDEuNCwwLjEsMS44Yy0yMC45LDExLjktNDEuNSwzMy41LTUxLjcsNTNjLTAuNSwwLjktMS41LDEuMy0yLjQsMWMtOC43LTIuNy0xNS41LTYuNi0yMi0xMQoJCUMyMzMuMyw2MS41LDIzMy4xLDYwLjEsMjMzLjgsNTkuMnoiLz4KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0yMzIuNiwyNi43YzYuNC0zLjQsMTQuOS03LDIxLjctOC41YzAuNy0wLjIsMS41LDAuMSwyLDAuN2MxMi43LDE1LjEsMzAuNCwyNS44LDYyLjEsMzYuNgoJCWMwLjcsMC4yLDAuOSwxLjEsMC41LDEuNmMtNi4zLDcuMS0xNS43LDE1LjEtMjMsMTkuM2MtMSwwLjYtMi4yLDAuNS0zLjItMC4xYy0yMC4xLTEyLjUtNDUtMzEuMi02MC41LTQ2LjQKCQlDMjMxLjEsMjksMjMxLjMsMjcuNCwyMzIuNiwyNi43eiIvPgoJPHBhdGggY2xhc3M9InN0MyIgZD0iTTI4NC45LDEzYy0xNS44LDExLjgtMzMuNiwzMS40LTQ1LjksNDYuNmM1LjMsMy43LDEwLjEsNi4zLDE3LjEsOC43YzguNi0xNS41LDI2LjMtMzYuNyw0Ni44LTUwCgkJQzI5Ni43LDE1LjgsMjkwLjEsMTQuMiwyODQuOSwxM3oiLz4KCTxnPgoJCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xNjcuOCw0Ni4xYy00LTIuNC03LjQtNC4yLTEwLjktNmMxLjctMC45LDMuMi0xLjgsNS0yLjljMC4zLTAuMiwwLjYtMC41LDAuOC0wLjhjMS42LTMuMSwzLjItNi43LDQuMy0xMQoJCQljMC4zLTEsMC0yLjItMC43LTIuOWMtNC40LTQuNi05LjItOC45LTE1LjUtMTNjLTAuNS0wLjMtMS0wLjUtMS42LTAuNWMtMTAuNy0wLjItMjMsMC42LTM1LjIsMi40Yy0wLjksMC4xLTEuNiwwLjktMS43LDEuOAoJCQljLTEsMTEuNS0xLjksMzUuOS0xLjcsNTUuN2MwLDEuMSwwLjksMiwyLDJjMTUsMC42LDI5LjIsMC42LDQ1LjcsMGMxLDAsMi0wLjYsMi42LTEuNWMzLjQtNS44LDYuNS0xMy4xLDguNC0xOS44CgkJCUMxNjkuNiw0OC4zLDE2OSw0Ni44LDE2Ny44LDQ2LjF6IE0xNDIuNiwzMC45Yy0zLjMsMC43LTguMiwxLjYtMTEuNiwyYzAuMS0yLjMsMC4yLTQuOCwwLjUtNy42YzMuNCwwLjMsOC4zLDEuMSwxMS42LDEuNwoJCQlDMTQyLjksMjguNSwxNDIuOCwyOS45LDE0Mi42LDMwLjl6IE0xMzguNyw1NS40Yy0yLjUsMC4zLTUuOCwwLjQtNy43LDAuM2MtMC4xLTIuMS0wLjMtNS0wLjMtNy42YzIuNS0wLjUsNi4xLTEuMSw5LjMtMS42CgkJCUMxMzkuNiw0OS43LDEzOS4xLDUyLjUsMTM4LjcsNTUuNHoiLz4KCQk8Zz4KCQkJPHBhdGggY2xhc3M9InN0MSIgZD0iTTE0OS42LDQwLjFjMy45LTEuOCw2LjgtMy4zLDkuOS01LjZjMS40LTIuNywyLjktNi40LDMuOC05LjdjLTQuMy00LjItOS42LTcuOS0xNC44LTExLjIKCQkJCWMtMTEuNC0wLjMtMjEuMywwLjctMzIuMSwyLjNjLTEsMTguNS0xLjYsMzMuNi0xLjYsNTAuNmMxNC4zLDAuNiwyNy4zLDAuNSw0Mi4zLDBjMy4zLTUuMSw2LjMtMTIuMiw4LTE3LjUKCQkJCUMxNjAuNyw0Ni4xLDE1NC45LDQyLjgsMTQ5LjYsNDAuMXogTTE0MS43LDU4LjdjLTQuNSwwLjQtOS44LDAuNC0xMy44LDAuNGMtMC4zLTQuOS0wLjQtOC43LTAuNC0xMy42YzQuOC0xLDExLTIuMywxNi44LTMuNgoJCQkJQzE0My43LDQ3LjUsMTQyLjgsNTMuMywxNDEuNyw1OC43eiBNMTQ1LjUsMzNjLTUuOSwxLjUtMTIuNywzLTE3LjksMy44YzAuMS01LjMsMC41LTEwLjIsMC44LTE1LjFjNi40LDAuNywxMi42LDEuNSwxOC4zLDIuNwoJCQkJQzE0Ni4zLDI3LjcsMTQ1LjksMzAuNCwxNDUuNSwzM3oiLz4KCQk8L2c+Cgk8L2c+Cgk8cGF0aCBjbGFzcz0ic3QzIiBkPSJNMjM2LjUsMjkuMWM0LjUtMi41LDEyLjMtNS4yLDE3LjItNi41YzEyLjgsMTQuNywyOC42LDI0LjUsNTcuNCwzNS4zYy00LjksNC44LTExLjQsMTAuMi0xNi44LDEzLjkKCQlDMjc0LjMsNTkuMywyNTIuNSw0My4zLDIzNi41LDI5LjF6Ii8+Cgk8Zz4KCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTA3LjIsMTkuMWMtMC41LTEtMS40LTEuNi0yLjUtMS43Yy0xMi43LTEuMS0yOS40LDAuMS00MC45LDEuOWMtMS4xLDAuMi0yLDAuOS0yLjQsMS45CgkJCWMtMy45LDEwLjMtNi42LDIxLTguOSwzMi4zYy0wLjIsMSwwLjEsMiwwLjgsMi43YzQuNSw0LjgsMTAuNiwxMC4zLDE1LjgsMTRjMC41LDAuMywxLDAuNSwxLjYsMC42YzYuNywwLjQsMjMuNSwwLjMsMzIuMywwCgkJCWMwLjUsMCwxLjEtMC4yLDEuNS0wLjVjNC44LTMuMiw5LjQtOC44LDEyLjEtMTQuNGMwLjItMC41LDAuMy0xLDAuMy0xLjVDMTE2LjQsNDMsMTEyLjEsMjkuMSwxMDcuMiwxOS4xeiBNNzUuMiw1Mi4zCgkJCWMwLjQtNC42LDEuMy0xMi4yLDIuNC0xNi42YzMuOS0wLjMsOS40LTAuNSwxMy4yLTAuNGMwLjksNC44LDEuNSwxMi4yLDEuMywxNi44Qzg3LjEsNTIuNCw3OS44LDUyLjYsNzUuMiw1Mi4zeiIvPgoJCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik02Ni43LDE0LjZjMC4zLDAuOSwxLjIsMS40LDIuMiwxLjNjOS43LTEuMiwyMi4zLTEuOCwzMi4xLTEuM2MwLjksMC4xLDEuOC0wLjUsMi4xLTEuNAoJCQljMC43LTIuNywxLjMtNS44LDEuNi04LjhjMC4xLTEuMS0wLjctMi4yLTEuOC0yLjJDOTAuNiwxLDc2LjYsMS45LDY1LjksMy45Yy0xLjEsMC4yLTEuOSwxLjMtMS42LDIuNQoJCQlDNjQuOCw5LjEsNjUuNywxMi4yLDY2LjcsMTQuNnoiLz4KCQk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMTAwLjEsNS40Yy0wLjEsMS44LTAuNCwzLjgtMC44LDUuNGMtMTAuOC0wLjItMTkuOSwwLjMtMjkuNCwxLjVjLTAuNy0xLjctMS4zLTMuNy0xLjctNS41CgkJCUM3OC4xLDUuNCw4OS4yLDQuOCwxMDAuMSw1LjR6Ii8+CgkJPGc+CgkJCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0xMDMuNSwyMS41Yy0xMi45LTAuOS0yNy44LDAuMi0zNy44LDEuNGMtMyw3LjctNy4zLDIyLjYtOC42LDMxYzMuOCw0LDkuMiw4LjcsMTQsMTIKCQkJCWMxMC4xLDAuNiwxOS42LDAuOCwzMS4xLDBjNC4xLTMsOC4xLTcuNCwxMC40LTEyQzExMS43LDQzLDEwOC41LDMxLDEwMy41LDIxLjV6IE05Niw1NS44Yy04LjIsMC4zLTE4LjEsMC40LTI0LjksMAoJCQkJYzAuNC03LjIsMS45LTE3LjMsMy41LTIzLjdjNS4yLTAuNiwxMy4xLTAuOSwxOS0wLjhDOTUuOSwzOC44LDk2LjMsNDkuNCw5Niw1NS44eiIvPgoJCTwvZz4KCTwvZz4KCTxnPgoJCTxnPgoJCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNjYuMiw3Mi4zYy0xMC05LjItMTguNy0xNi44LTI3LjktMjQuNWM1LjUtMC4yLDExLjQtMC41LDE2LjktMC45YzAuNiwwLDEuMi0wLjMsMS43LTAuNwoJCQkJYzIuMS0xLjcsNS00LjYsNi44LTcuMWMwLjMtMC41LDAuNS0xLDAuMy0xLjZjLTItOC44LTUuMy0xOS4zLTEwLjEtMjguN2MtMC40LTAuNy0xLjEtMS4yLTEuOS0xLjFjLTE3LjgsMS4xLTM0LjYsMy41LTQ5LjUsNi41CgkJCQljLTAuOSwwLjItMS42LDEuMS0xLjYsMmMwLjMsMTguMiwxLjMsMzYuOSwyLjUsNTUuMmMwLjEsMSwwLjgsMS44LDEuOCwxLjljNiwwLjksMTEuOCwxLjcsMTkuOCwyLjFjMC43LDAsMS4zLTAuNywxLTEuMwoJCQkJYy0yLjctNy43LTctMjMtNy43LTI1LjdjMC43LDAsMS0wLjEsMS41LTAuMWMzLjYsNy4zLDkuMSwxNy40LDEzLDI1LjhjMC41LDEuMSwxLjUsMS43LDIuNywxLjhjOS4zLDAuMiwxOS40LTAuMiwzMC4xLTEuNwoJCQkJQzY2LjUsNzQsNjYuOSw3Mi45LDY2LjIsNzIuM3ogTTMxLjksMzIuOGMtMy41LDAuNC04LjgsMC44LTEyLjIsMWMtMC4zLTIuMi0wLjYtNS4zLTAuNy03LjVjNC4yLDAuMSw4LjUsMC4yLDEzLDAuNgoJCQkJQzMxLjksMjguOCwzMS45LDMwLjgsMzEuOSwzMi44eiIvPgoJCTwvZz4KCQk8Zz4KCQkJPHBhdGggY2xhc3M9InN0MSIgZD0iTTU0LjgsNDMuM2MxLjgtMS42LDMuOC0zLjUsNS4yLTUuN2MtMS44LTguMy00LjgtMTcuMi04LjctMjUuNkMzNS45LDEzLDE5LjMsMTUuMyw1LDE3LjkKCQkJCWMwLjYsMTkuMywxLjUsMzUsMyw1MS42YzQuNSwwLjYsNy43LDEuMSwxMi45LDEuNWMtMi41LTguOS00LjUtMTYuMi02LjMtMjUuM2MyLjQtMC4xLDQuOS0wLjIsNy41LTAuM2M2LDkuNyw5LjUsMTYuOCwxNS40LDI2LjMKCQkJCWM3LjIsMCwxMy44LTAuMiwyMC42LTAuOEM0OC4zLDYxLjQsMzkuNCw1My4xLDMwLjIsNDVDMzguOCw0NC41LDQ3LjcsNDMuOSw1NC44LDQzLjN6IE0xNi4yLDM3LjZjLTAuNy00LjktMC45LTkuNy0xLjEtMTQuNgoJCQkJYzYuOCwwLDE0LjEsMC4zLDIwLjcsMC45YzAuMiwzLjMsMC4yLDguOCwwLDEyLjJDMjkuNSwzNi42LDIyLjksMzcuMSwxNi4yLDM3LjZ6Ii8+CgkJPC9nPgoJPC9nPgo8L2c+Cjwvc3ZnPgo') !important;
+    }
+    .light-theme .icon-default-logo, .light-theme .icon-logo {
+        background-size: 118px 30px;
+    }
+    button.btn-common-play-game-lg > span.icon-robux-white {
+        display: none;
+        background-position: 0 -35px;
+        background-image: url(https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg);
+    }
+    .game-card-info .info-label.icon-votes-gray {
+        background-position: 0 -480px;
+        background-image: url(https://images.rbxcdn.com/153fd3209692232cd8087cad74a669b0-games.svg) !important;
+    }
+    .dark-theme .game-card-info .info-label.icon-votes-gray {
+        background-position: 0 -478px;
+    }
+    .light-theme .game-card-container:hover .game-card-info .info-label.icon-votes-gray {
+        background-position: -16px -351px;
+        background-image: url(https://images.rbxcdn.com/153fd3209692232cd8087cad74a669b0-games.svg) !important;
+    }
+    .light-theme .icon-default-branded-16x16, .light-theme .icon-robux-16x16, .light-theme .icon-robux-gray-16x16, .light-theme .icon-robux-white-16x16
+    {
+        background-image: url(https://images.rbxcdn.com/757f696cbfd2d8fcde61d219cead6a2c-branded_04182018.svg);
+    }
+    #nav-robux-icon .icon-robux-28x28:hover {
+        background-image: url(https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg);
+        background-position: -28px -28px;
+    }
+    .icon-robux, .light-theme .icon-default-reverse-28x28, .light-theme .icon-robux-reverse {
+/*         filter: invert(0.6); */
+        background-position: 0px -37px;
