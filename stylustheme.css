@@ -1,5 +1,5 @@
 @-moz-document domain("web.roblox.com"), domain("www.roblox.com") {
-/* Hey! if you see this, check out the Github repository for this!
+    /* Hey! if you see this, check out the Github repository for this!
     https://github.com/anthony1x6000/ROBLOX2016stylus
     You can find the style under releases. Make sure to check out the beta "stylustheme.css."
     Make sure to report any bugs to the issue tracker on Github.  
@@ -53,6 +53,7 @@
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
 
+    /* Set global font */
     * {
         font-family: "Source Sans Pro", Arial, Helvetica, sans-serif !important;
     }
@@ -62,6 +63,11 @@
     .builder-font h1, .builder-font h2, .builder-font h3, .builder-font h4, .builder-font h5, .builder-font h6,
     .builder-font .text, .builder-font body, .builder-font button, .builder-font html, .builder-font input, .builder-font pre, .builder-font select, .builder-font textarea {
         font-family: "Source Sans Pro", Arial, Helvetica, sans-serif !important;
+    }
+
+    /* Font sizes & weights */
+    .css-1ugh0vn-textIconRowText[data-sdui-text="true"] {
+        font-weight: 100;
     }
 
     .builder-font .font-title, 
@@ -86,54 +92,54 @@
     .builder-font .small.font-caption-header:hover, 
     .builder-font .small.font-caption-header:link, 
     .builder-font .small.font-caption-header:visited, 
-    .builder-font .small.text-error, 
-    .builder-font .small.text-error:active, 
-    .builder-font .small.text-error:focus, 
-    .builder-font .small.text-error:hover, 
-    .builder-font .small.text-error:link, 
-    .builder-font .small.text-error:visited, 
-    .builder-font .small.text-pastname, 
-    .builder-font .small.text-pastname:active, 
-    .builder-font .small.text-pastname:focus, 
-    .builder-font .small.text-pastname:hover, 
-    .builder-font .small.text-pastname:link, 
-    .builder-font .small.text-pastname:visited, 
-    .builder-font .small.text-report, 
-    .builder-font .small.text-report-ads, 
-    .builder-font .small.text-report-ads:active, 
-    .builder-font .small.text-report-ads:focus, 
-    .builder-font .small.text-report-ads:hover, 
-    .builder-font .small.text-report-ads:link, 
-    .builder-font .small.text-report-ads:visited, 
-    .builder-font .small.text-report:active, 
-    .builder-font .small.text-report:focus, 
-    .builder-font .small.text-report:hover, 
-    .builder-font .small.text-report:link, 
-    .builder-font .small.text-report:visited, 
     .builder-font .text-error, 
     .builder-font .text-error:active, 
     .builder-font .text-error:focus, 
     .builder-font .text-error:hover, 
     .builder-font .text-error:link, 
     .builder-font .text-error:visited, 
+    .builder-font .small.text-error, 
+    .builder-font .small.text-error:active, 
+    .builder-font .small.text-error:focus, 
+    .builder-font .small.text-error:hover, 
+    .builder-font .small.text-error:link, 
+    .builder-font .small.text-error:visited, 
     .builder-font .text-pastname, 
     .builder-font .text-pastname:active, 
     .builder-font .text-pastname:focus, 
     .builder-font .text-pastname:hover, 
     .builder-font .text-pastname:link, 
     .builder-font .text-pastname:visited, 
+    .builder-font .small.text-pastname, 
+    .builder-font .small.text-pastname:active, 
+    .builder-font .small.text-pastname:focus, 
+    .builder-font .small.text-pastname:hover, 
+    .builder-font .small.text-pastname:link, 
+    .builder-font .small.text-pastname:visited, 
     .builder-font .text-report, 
+    .builder-font .text-report:active, 
+    .builder-font .text-report:focus, 
+    .builder-font .text-report:hover, 
+    .builder-font .text-report:link, 
+    .builder-font .text-report:visited, 
+    .builder-font .small.text-report, 
+    .builder-font .small.text-report:active, 
+    .builder-font .small.text-report:focus, 
+    .builder-font .small.text-report:hover, 
+    .builder-font .small.text-report:link, 
+    .builder-font .small.text-report:visited, 
     .builder-font .text-report-ads, 
     .builder-font .text-report-ads:active, 
     .builder-font .text-report-ads:focus, 
     .builder-font .text-report-ads:hover, 
     .builder-font .text-report-ads:link, 
     .builder-font .text-report-ads:visited, 
-    .builder-font .text-report:active, 
-    .builder-font .text-report:focus, 
-    .builder-font .text-report:hover, 
-    .builder-font .text-report:link, 
-    .builder-font .text-report:visited {
+    .builder-font .small.text-report-ads, 
+    .builder-font .small.text-report-ads:active, 
+    .builder-font .small.text-report-ads:focus, 
+    .builder-font .small.text-report-ads:hover, 
+    .builder-font .small.text-report-ads:link, 
+    .builder-font .small.text-report-ads:visited {
         font-size: 16px;
         font-weight: 400;
     }
@@ -162,8 +168,37 @@
         font-weight: 300;
     }
 
-    /* GLOBAL STYLES */
-    body, .light-theme {
+    .builder-font .font-footer, 
+    .builder-font .font-footer:active, 
+    .builder-font .font-footer:focus, 
+    .builder-font .font-footer:hover, 
+    .builder-font .font-footer:link, 
+    .builder-font .font-footer:visited, 
+    .builder-font .text-footer, 
+    .builder-font .text-footer:active, 
+    .builder-font .text-footer:focus, 
+    .builder-font .text-footer:hover, 
+    .builder-font .text-footer:link, 
+    .builder-font .text-footer:visited, 
+    .builder-font .xsmall, 
+    .builder-font .xsmall:active, 
+    .builder-font .xsmall:focus, 
+    .builder-font .xsmall:hover, 
+    .builder-font .xsmall:link, 
+    .builder-font .xsmall:visited, 
+    .builder-font .xxsmall, 
+    .builder-font .xxsmall:active, 
+    .builder-font .xxsmall:focus, 
+    .builder-font .xxsmall:hover, 
+    .builder-font .xxsmall:link, 
+    .builder-font .xxsmall:visited {
+        font-size: 10px !important;
+        font-weight: 500 !important;
+    }
+
+    /* GLOBAL THEME STYLES */
+    body, 
+    .light-theme {
         background-color: #e3e3e3;
     }
 
@@ -177,7 +212,7 @@
     }
 
     .light-theme .rbx-tab:hover {
-        background: #F2F2F2;
+        background: #f2f2f2;
     }
 
     .light-theme .para-overflow-toggle .toggle-para, 
@@ -191,53 +226,12 @@
         content: " (Light is recommended.)";
     }
 
-    div[data-testid='home-page-game-grid'], 
-    div.home-interleave-divider {
-        display: var(--displayRecommended);
-    }
-
-    div.game-sort-carousel-wrapper:nth-of-type(3) {
-        display: var(--displayTodaysPicks);
-    }
-
     .filter-hidden {
         height: auto;
         visibility: visible;
     }
 
-    /* UI COMPONENTS (Scrollers, Icons, Avatars) */
-    .light-theme .scroller {
-        background-color: #ffffff;
-        border: 1px solid #b8b8b8;
-    }
-
-    .light-theme .scroller:focus, 
-    .light-theme .scroller:hover {
-        background-color: #ffffff;
-    }
-
-    .light-theme .scroller.disabled {
-        background-color: #f0f1f0;
-        opacity: 1;
-    }
-
-    .dark-theme .scroller {
-        transition: background-color .4s ease !important;
-        background: #191b1dc4;
-    }
-
-    .light-theme .remove-panel {
-        padding: 6px;
-    }
-
-    .dark-theme .builder-font .see-all-link-icon:after, 
-    .builder-font.dark-theme .see-all-link-icon:after, 
-    .builder-font.light-theme .see-all-link-icon:after, 
-    .icon-push-right-sm, 
-    .light-theme .builder-font .see-all-link-icon:after {
-        display: none;
-    }
-
+    /* NAVIGATION ICONS */
     .light-theme .icon-default-navigation, 
     .light-theme .icon-nav-blog, 
     .light-theme .icon-nav-charactercustomizer, 
@@ -259,6 +253,38 @@
         background-image: url(https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg);
     }
 
+    .dark-theme .builder-font .see-all-link-icon:after, 
+    .builder-font.dark-theme .see-all-link-icon:after, 
+    .builder-font.light-theme .see-all-link-icon:after, 
+    .icon-push-right-sm, 
+    .light-theme .builder-font .see-all-link-icon:after {
+        display: none;
+    }
+
+    /* UI COMPONENTS */
+    
+    /* Scrollers */
+    .light-theme .scroller {
+        background-color: #ffffff;
+        border: 1px solid #b8b8b8;
+    }
+
+    .light-theme .scroller:focus, 
+    .light-theme .scroller:hover {
+        background-color: #ffffff;
+    }
+
+    .light-theme .scroller.disabled {
+        background-color: #f0f1f0;
+        opacity: 1;
+    }
+
+    .dark-theme .scroller {
+        transition: background-color .4s ease !important;
+        background: #191b1dc4;
+    }
+
+    /* Avatars */
     .avatar-card-fullbody .avatar-card-image, 
     .avatar .avatar-card-image,
     .light-theme .avatar .avatar-card-image {
@@ -267,13 +293,14 @@
         word-break: break-all;
         vertical-align: top;
         background-color: #ffffff !important;
-        border: 1px solid #B8B8B8;
+        border: 1px solid #b8b8b8;
     }
 
     .avatar.avatar-card-fullbody .avatar-status {
         background-color: transparent !important;
     }
 
+    /* Slides & Panels */
     .slide-switcher .slide-item-container .slide-item-container-left .slide-item-image {
         box-shadow: 0 0 6px 0 rgba(0,0,0,0.49);
     }
@@ -282,28 +309,11 @@
         color: rgb(25, 25, 25);
     }
 
-    /* PROFILE STYLES */
-    .profile-header .header-caption .header-details .details-info li {
-        display: unset;
-        text-align: center;
-        padding: 0 20px;
+    .light-theme .remove-panel {
+        padding: 6px;
     }
 
-    .profile-header .header-caption .header-details .details-info li .font-header-2 {
-        font-size: 20px;
-    }
-
-    /* HEADER STYLES */
-    .rbx-header .age-bracket-label .age-bracket-label-username,
-    .rbx-header .age-bracket-label {
-        visibility: hidden;
-    }
-
-    .chat-container.collapsed .chat-header .chat-header-title {
-        color: #fff;
-    }
-
-    /* BUTTON STYLES */
+    /* BUTTONS */
 
     /* Alert Buttons */
     .light-theme .btn-alert-md {
@@ -315,21 +325,21 @@
 
     .light-theme .btn-alert-md:hover, 
     .light-theme .btn-alert-md:focus {
-        background-color: #E30301;
+        background-color: #e30301;
         border: 1px solid #b8b8b8;
         color: #ffffff;
         border-radius: 1px;
     }
 
-    /* Green Buttons (Hover) */
+    /* Purchase & Growth Buttons */
     .light-theme .btn-buy-md:hover, 
     .light-theme .btn-buy-md:focus,
     .light-theme .btn-growth-lg:focus, 
     .light-theme .btn-growth-lg:hover, 
     .signup-or-log-in .signup-container .signup-input-area .signup-submit-button:hover, 
     li.signup-button-container:hover { 
-        background-color: #3FC679;
-        border-color: #3FC679;
+        background-color: #3fc679;
+        border-color: #3fc679;
         color: #fff;
         cursor: pointer;
     }
@@ -339,14 +349,7 @@
         box-shadow: 0 1px 3px rgba(150,150,150,0.74);
     }
 
-    /* Navigation Buttons */
-    a.rbx-navbar-login.btn-secondary-sm.nav-menu-title.rbx-menu-item:hover {
-        background: rgba(25,25,25,0.1);
-        border: none;
-        border-radius: 5px;
-    }
-
-    /* Primary & Growth Buttons */
+    /* Primary Buttons */
     .light-theme .btn-primary-sm, 
     .light-theme .btn-primary-sm:hover,
     .light-theme .btn-primary-lg, 
@@ -403,7 +406,7 @@
         background: #00bf5a;
     }
 
-    /* Signup Submit Button */
+    /* Signup Submit */
     .signup-or-log-in .signup-container .signup-input-area .signup-submit-button {
         background-color: #02b757;
         border-color: #02b757;
@@ -413,43 +416,16 @@
         font-size: 20px;
     }
 
-    /* End of universal */
-
-    /* DIALOGS & MESSAGING */
-    .light-theme .dialogs .dialog-container .dialog-message-container .indicated-message-bubble {
-        color: rgb(116, 116, 116);
+    /* Secondary Buttons */
+    a.rbx-navbar-login.btn-secondary-sm.nav-menu-title.rbx-menu-item:hover {
+        background: rgba(25,25,25,0.1);
+        border: none;
+        border-radius: 5px;
     }
 
-    /* FOOTER TYPOGRAPHY */
-    .builder-font .font-footer, 
-    .builder-font .font-footer:active, 
-    .builder-font .font-footer:focus, 
-    .builder-font .font-footer:hover, 
-    .builder-font .font-footer:link, 
-    .builder-font .font-footer:visited, 
-    .builder-font .text-footer, 
-    .builder-font .text-footer:active, 
-    .builder-font .text-footer:focus, 
-    .builder-font .text-footer:hover, 
-    .builder-font .text-footer:link, 
-    .builder-font .text-footer:visited, 
-    .builder-font .xsmall, 
-    .builder-font .xsmall:active, 
-    .builder-font .xsmall:focus, 
-    .builder-font .xsmall:hover, 
-    .builder-font .xsmall:link, 
-    .builder-font .xsmall:visited, 
-    .builder-font .xxsmall, 
-    .builder-font .xxsmall:active, 
-    .builder-font .xxsmall:focus, 
-    .builder-font .xxsmall:hover, 
-    .builder-font .xxsmall:link, 
-    .builder-font .xxsmall:visited {
-        font-size: 10px !important;
-        font-weight: 500 !important;
-    }
+    /* PAGE-SPECIFIC STYLES */
 
-    /* HOME PAGE STYLES */
+    /* Home Page */
     div.home-header-content a:before {
         content: "Hello, ";
     }
@@ -458,9 +434,42 @@
         content: "!";
     }
 
-    /* GAME & ASSET CARDS */
+    div[data-testid='home-page-game-grid'], 
+    div.home-interleave-divider {
+        display: var(--displayRecommended);
+    }
 
-    /* Game Cards */
+    div.game-sort-carousel-wrapper:nth-of-type(3) {
+        display: var(--displayTodaysPicks);
+    }
+
+    /* Profiles */
+    .profile-header .header-caption .header-details .details-info li {
+        display: unset;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .profile-header .header-caption .header-details .details-info li .font-header-2 {
+        font-size: 20px;
+    }
+
+    /* Header */
+    .rbx-header .age-bracket-label .age-bracket-label-username,
+    .rbx-header .age-bracket-label {
+        visibility: hidden;
+    }
+
+    /* Chat & Dialogs */
+    .chat-container.collapsed .chat-header .chat-header-title {
+        color: #fff;
+    }
+
+    .light-theme .dialogs .dialog-container .dialog-message-container .indicated-message-bubble {
+        color: rgb(116, 116, 116);
+    }
+
+    /* Game & Asset Cards */
     div.game-card-info, 
     span.playing-counts-label:before {
         content: title;
