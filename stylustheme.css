@@ -15,25 +15,12 @@
     - Viper/Cosmella-v
     */ 
 
-    /* font */ 
-    /* @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700); */
-    /* latin */
-    /*  DISABLE DARK MODE NOTIFIER    */
-
-
+    /* ROOT & VARIABLES */
     :root {
         --darkThemeBlue: #324856;
     }
-    .dark-theme label.text-label[for='theme-dropdown']::after {
-        content: " (Light is recommended.)";
-    }
-    div[data-testid='home-page-game-grid'], div.home-interleave-divider {
-        display: var(--displayRecommended);
-    }
-    /*Remove New Homepage Editions Pt. 2 ("Today's Picks)" Add to Top of Userstyle Like Similar options (ex: displayRecommended) (Pt. 1 is lower down in the userstyle)*/
-    div.game-sort-carousel-wrapper:nth-of-type(3) {
-        display: var(--displayTodaysPicks);
-    }
+
+    /* FONTS & TYPOGRAPHY */
     @font-face {
         font-family: 'Source Sans Pro';
         font-style: normal;
@@ -41,7 +28,7 @@
         src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu.woff2) format('woff2');
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
-    /* latin */
+
     @font-face {
         font-family: 'Source Sans Pro';
         font-style: normal;
@@ -49,7 +36,7 @@
         src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
-    /* latin */
+
     @font-face {
         font-family: 'Source Sans Pro';
         font-style: normal;
@@ -57,7 +44,7 @@
         src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu.woff2) format('woff2');
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
-    /* latin */
+
     @font-face {
         font-family: 'Source Sans Pro';
         font-style: normal;
@@ -66,160 +53,226 @@
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
 
-    /* end of font */ 
-
-    body
-
-    {
-        background-color: #e3e3e3;
+    * {
+        font-family: "Source Sans Pro", Arial, Helvetica, sans-serif !important;
     }
 
-    .light-theme {
-        background-color: #e3e3e3;
-    }
-    .light-theme .rbx-left-col {
-        background-color: #ffffff;
-    }
-    .light-theme .content {
-        background-color: transparent;
-        color: #000000;
-    }
-    .light-theme .scroller {
-        background-color: #ffffff;
-        border: 1px solid #b8b8b8;
-    }
-    .dark-theme .scroller {
-        transition: background-color .4s ease !important;
-        background: #191b1dc4;
-    }
-    .light-theme .scroller:focus, .light-theme .scroller:hover {
-        background-color: #ffffff;
-    }
-    .light-theme .scroller.disabled {
-        background-color: #f0f1f0;
-        opacity: 1;
+    .builder-font, 
+    .builder-font .h1, .builder-font .h2, .builder-font .h3, .builder-font .h4, .builder-font .h5, .builder-font .h6, 
+    .builder-font h1, .builder-font h2, .builder-font h3, .builder-font h4, .builder-font h5, .builder-font h6,
+    .builder-font .text, .builder-font body, .builder-font button, .builder-font html, .builder-font input, .builder-font pre, .builder-font select, .builder-font textarea {
+        font-family: "Source Sans Pro", Arial, Helvetica, sans-serif !important;
     }
 
-    
-    *
-    {
-        font-family: "Source Sans Pro",Arial,Helvetica,sans-serif !important;
-    }
-
-    .light-theme .remove-panel {
-        padding: 6px;
-    }
-
-    /* @font-face {
-        font-family: 'Source Sans Pro';
-        font-style: normal;
-        font-weight: 300;
-        src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGMVNtom4QlEDNJaqqqzqdSs.woff) format('woff');
-    }
-    @font-face {
-        font-family: 'Source Sans Pro';
-        font-style: normal;
-        font-weight: 400;
-        src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNHq-FFgoDNV3GTKpHwuvtI.woff) format('woff');
-    }
-    @font-face {
-        font-family: 'Source Sans Pro';
-        font-style: normal;
-        font-weight: 600;
-        src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGCmgpmuQqK2I-L2S9cF65Ek.woff) format('woff');
-    } */
-
-    .dark-theme .builder-font .see-all-link-icon:after, .builder-font.dark-theme .see-all-link-icon:after, .builder-font.light-theme .see-all-link-icon:after, .icon-push-right-sm, .light-theme .builder-font .see-all-link-icon:after {
-        display: none
-    }
-    .light-theme .icon-default-navigation, .light-theme .icon-nav-blog, .light-theme .icon-nav-charactercustomizer, .light-theme .icon-nav-friends, .light-theme .icon-nav-group, .light-theme .icon-nav-home, .light-theme .icon-nav-inventory, .light-theme .icon-nav-menu, .light-theme .icon-nav-message, .light-theme .icon-nav-my-feed, .light-theme .icon-nav-notification-stream, .light-theme .icon-nav-profile, .light-theme .icon-nav-robux, .light-theme .icon-nav-search, .light-theme .icon-nav-search-white, .light-theme .icon-nav-settings, .light-theme .icon-nav-shop, .light-theme .icon-nav-trade {
-        background-image: url(https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg);
-    }
-
-    .avatar-card-fullbody .avatar-card-image, .avatar .avatar-card-image {
-        width: 100%;
-        height: 100%;
-        word-break: break-all;
-        vertical-align: top;
-        background-color: #ffffff;
-        border: 1px solid #B8B8B8;
-    }
-    /* h1, h2, h3, h4, h5 {
-        padding: 8px 0 !important;
-        line-height: 1em;
-    } */
-    .builder-font .font-title, .builder-font .h1, .builder-font .h2, .builder-font h1, .builder-font h2 {
+    .builder-font .font-title, 
+    .builder-font .h1, 
+    .builder-font .h2, 
+    .builder-font h1, 
+    .builder-font h2 {
         font-size: 25px;
         font-weight: 200;
         overflow: visible;
     }
 
-
-    .builder-font, .builder-font .h1, .builder-font .h2, .builder-font .h3, .builder-font .h4, .builder-font .h5, .builder-font .h6, .builder-font h1, .builder-font h2, .builder-font h3, .builder-font h4, .builder-font h5, .builder-font h6 {
-        font-family: "Source Sans Pro",Arial,Helvetica,sans-serif !important;
-    }
-
-    .builder-font .text, .builder-font body, .builder-font button, .builder-font html, .builder-font input, .builder-font pre, .builder-font select, .builder-font textarea {
-        font-family: "Source Sans Pro",Arial,Helvetica,sans-serif !important;
-    }
-
-    .profile-header .header-caption .header-details .details-info li
-    {
-    display: unset;
-    text-align: center;
-    padding: 0 20px;
-    }
-
-    .profile-header .header-caption .header-details .details-info li .font-header-2
-    {
-    font-size: 20px;
-    }
-
-
-
-
-    .builder-font .font-caption-header, .builder-font .font-caption-header:active, .builder-font .font-caption-header:focus, .builder-font .font-caption-header:hover, .builder-font .font-caption-header:link, .builder-font .font-caption-header:visited, .builder-font .small.font-caption-header, .builder-font .small.font-caption-header:active, .builder-font .small.font-caption-header:focus, .builder-font .small.font-caption-header:hover, .builder-font .small.font-caption-header:link, .builder-font .small.font-caption-header:visited, .builder-font .small.text-error, .builder-font .small.text-error:active, .builder-font .small.text-error:focus, .builder-font .small.text-error:hover, .builder-font .small.text-error:link, .builder-font .small.text-error:visited, .builder-font .small.text-pastname, .builder-font .small.text-pastname:active, .builder-font .small.text-pastname:focus, .builder-font .small.text-pastname:hover, .builder-font .small.text-pastname:link, .builder-font .small.text-pastname:visited, .builder-font .small.text-report, .builder-font .small.text-report-ads, .builder-font .small.text-report-ads:active, .builder-font .small.text-report-ads:focus, .builder-font .small.text-report-ads:hover, .builder-font .small.text-report-ads:link, .builder-font .small.text-report-ads:visited, .builder-font .small.text-report:active, .builder-font .small.text-report:focus, .builder-font .small.text-report:hover, .builder-font .small.text-report:link, .builder-font .small.text-report:visited, .builder-font .text-error, .builder-font .text-error:active, .builder-font .text-error:focus, .builder-font .text-error:hover, .builder-font .text-error:link, .builder-font .text-error:visited, .builder-font .text-pastname, .builder-font .text-pastname:active, .builder-font .text-pastname:focus, .builder-font .text-pastname:hover, .builder-font .text-pastname:link, .builder-font .text-pastname:visited, .builder-font .text-report, .builder-font .text-report-ads, .builder-font .text-report-ads:active, .builder-font .text-report-ads:focus, .builder-font .text-report-ads:hover, .builder-font .text-report-ads:link, .builder-font .text-report-ads:visited, .builder-font .text-report:active, .builder-font .text-report:focus, .builder-font .text-report:hover, .builder-font .text-report:link, .builder-font .text-report:visited {
-        font-size: 16px;
-    font-weight: 400;
-    }
-
-
-    /* TESTING REMOVE LATER
-    .builder-font .font-bold, .builder-font .font-bold:active, .builder-font .font-bold:hover, .builder-font .font-bold:link, .builder-font .font-bold:visited, .builder-font .font-header-2, .builder-font .font-header-2:active, .builder-font .font-header-2:hover, .builder-font .font-header-2:link, .builder-font .font-header-2:visited, .builder-font .h5, .builder-font .h5:active, .builder-font .h5:hover, .builder-font .h5:link, .builder-font .h5:visited, .builder-font .h6, .builder-font .h6:active, .builder-font .h6:hover, .builder-font .h6:link, .builder-font .h6:visited, .builder-font .text-footer-nav, .builder-font .text-footer-nav:active, .builder-font .text-footer-nav:hover, .builder-font .text-footer-nav:link, .builder-font .text-footer-nav:visited, .builder-font .text-label, .builder-font .text-label:active, .builder-font .text-label:hover, .builder-font .text-label:link, .builder-font .text-label:visited, .builder-font .text-lead, .builder-font .text-lead:active, .builder-font .text-lead:hover, .builder-font .text-lead:link, .builder-font .text-lead:visited, .builder-font .text-name, .builder-font .text-name:active, .builder-font .text-name:hover, .builder-font .text-name:link, .builder-font .text-name:visited, .builder-font .text-subject, .builder-font .text-subject:active, .builder-font .text-subject:hover, .builder-font .text-subject:link, .builder-font .text-subject:visited, .builder-font .text-warning, .builder-font .text-warning:active, .builder-font .text-warning:hover, .builder-font .text-warning:link, .builder-font .text-warning:visited, .builder-font h5, .builder-font h5:active, .builder-font h5:hover, .builder-font h5:link, .builder-font h5:visited, .builder-font h6, .builder-font h6:active, .builder-font h6:hover, .builder-font h6:link, .builder-font h6:visited, .builder-font strong, .builder-font strong:active, .builder-font strong:hover, .builder-font strong:link, .builder-font strong:visited {
+    .builder-font .font-caption-header, 
+    .builder-font .font-caption-header:active, 
+    .builder-font .font-caption-header:focus, 
+    .builder-font .font-caption-header:hover, 
+    .builder-font .font-caption-header:link, 
+    .builder-font .font-caption-header:visited, 
+    .builder-font .small.font-caption-header, 
+    .builder-font .small.font-caption-header:active, 
+    .builder-font .small.font-caption-header:focus, 
+    .builder-font .small.font-caption-header:hover, 
+    .builder-font .small.font-caption-header:link, 
+    .builder-font .small.font-caption-header:visited, 
+    .builder-font .small.text-error, 
+    .builder-font .small.text-error:active, 
+    .builder-font .small.text-error:focus, 
+    .builder-font .small.text-error:hover, 
+    .builder-font .small.text-error:link, 
+    .builder-font .small.text-error:visited, 
+    .builder-font .small.text-pastname, 
+    .builder-font .small.text-pastname:active, 
+    .builder-font .small.text-pastname:focus, 
+    .builder-font .small.text-pastname:hover, 
+    .builder-font .small.text-pastname:link, 
+    .builder-font .small.text-pastname:visited, 
+    .builder-font .small.text-report, 
+    .builder-font .small.text-report-ads, 
+    .builder-font .small.text-report-ads:active, 
+    .builder-font .small.text-report-ads:focus, 
+    .builder-font .small.text-report-ads:hover, 
+    .builder-font .small.text-report-ads:link, 
+    .builder-font .small.text-report-ads:visited, 
+    .builder-font .small.text-report:active, 
+    .builder-font .small.text-report:focus, 
+    .builder-font .small.text-report:hover, 
+    .builder-font .small.text-report:link, 
+    .builder-font .small.text-report:visited, 
+    .builder-font .text-error, 
+    .builder-font .text-error:active, 
+    .builder-font .text-error:focus, 
+    .builder-font .text-error:hover, 
+    .builder-font .text-error:link, 
+    .builder-font .text-error:visited, 
+    .builder-font .text-pastname, 
+    .builder-font .text-pastname:active, 
+    .builder-font .text-pastname:focus, 
+    .builder-font .text-pastname:hover, 
+    .builder-font .text-pastname:link, 
+    .builder-font .text-pastname:visited, 
+    .builder-font .text-report, 
+    .builder-font .text-report-ads, 
+    .builder-font .text-report-ads:active, 
+    .builder-font .text-report-ads:focus, 
+    .builder-font .text-report-ads:hover, 
+    .builder-font .text-report-ads:link, 
+    .builder-font .text-report-ads:visited, 
+    .builder-font .text-report:active, 
+    .builder-font .text-report:focus, 
+    .builder-font .text-report:hover, 
+    .builder-font .text-report:link, 
+    .builder-font .text-report:visited {
         font-size: 16px;
         font-weight: 400;
     }
 
-    */ 
+    .builder-font .font-caption-body, 
+    .builder-font .font-caption-body:active, 
+    .builder-font .font-caption-body:focus, 
+    .builder-font .font-caption-body:link, 
+    .builder-font .font-caption-body:visited, 
+    .builder-font .tooltip .tooltip-inner, 
+    .builder-font .tooltip .tooltip-inner:active, 
+    .builder-font .tooltip .tooltip-inner:focus, 
+    .builder-font .tooltip .tooltip-inner:link, 
+    .builder-font .tooltip .tooltip-inner:visited {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .builder-font .font-header-1, 
+    .builder-font .h3, 
+    .builder-font .h4, 
+    .builder-font .text-robux-lg, 
+    .builder-font h3, 
+    .builder-font h4 {
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    /* GLOBAL STYLES */
+    body, .light-theme {
+        background-color: #e3e3e3;
+    }
+
+    .light-theme .rbx-left-col {
+        background-color: #ffffff;
+    }
+
+    .light-theme .content {
+        background-color: transparent;
+        color: #000000;
+    }
+
+    .light-theme .rbx-tab:hover {
+        background: #F2F2F2;
+    }
+
+    .light-theme .para-overflow-toggle .toggle-para, 
+    .light-theme .para-overflow-toggle .toggle-para:hover, 
+    .light-theme .para-overflow .toggle-para, 
+    .light-theme .para-overflow .toggle-para:hover {
+        color: #00a2ff;
+    }
+
+    .dark-theme label.text-label[for='theme-dropdown']::after {
+        content: " (Light is recommended.)";
+    }
+
+    div[data-testid='home-page-game-grid'], 
+    div.home-interleave-divider {
+        display: var(--displayRecommended);
+    }
+
+    div.game-sort-carousel-wrapper:nth-of-type(3) {
+        display: var(--displayTodaysPicks);
+    }
 
     .filter-hidden {
         height: auto;
         visibility: visible;
     }
 
-
-
-    .builder-font .font-caption-body, .builder-font .font-caption-body:active, .builder-font .font-caption-body:focus, .builder-font .font-caption-body:link, .builder-font .font-caption-body:visited, .builder-font .tooltip .tooltip-inner, .builder-font .tooltip .tooltip-inner:active, .builder-font .tooltip .tooltip-inner:focus, .builder-font .tooltip .tooltip-inner:link, .builder-font .tooltip .tooltip-inner:visited {
-        font-size: 16px;
-        font-weight: 300;
-    } 
-    /* .builder-font div {
-        line-height: 1.2em;
-    } Looks better when I remove this, just pushes stuff on the top header & the left bar up a little. */
-
-
-
-    .light-theme .rbx-tab:hover {
-    background: #F2F2F2
+    /* UI COMPONENTS (Scrollers, Icons, Avatars) */
+    .light-theme .scroller {
+        background-color: #ffffff;
+        border: 1px solid #b8b8b8;
     }
 
-
-
-    .light-theme .para-overflow-toggle .toggle-para, .light-theme .para-overflow-toggle .toggle-para:hover, .light-theme .para-overflow .toggle-para, .light-theme .para-overflow .toggle-para:hover {
-        color: #00a2ff;
+    .light-theme .scroller:focus, 
+    .light-theme .scroller:hover {
+        background-color: #ffffff;
     }
 
+    .light-theme .scroller.disabled {
+        background-color: #f0f1f0;
+        opacity: 1;
+    }
 
+    .dark-theme .scroller {
+        transition: background-color .4s ease !important;
+        background: #191b1dc4;
+    }
+
+    .light-theme .remove-panel {
+        padding: 6px;
+    }
+
+    .dark-theme .builder-font .see-all-link-icon:after, 
+    .builder-font.dark-theme .see-all-link-icon:after, 
+    .builder-font.light-theme .see-all-link-icon:after, 
+    .icon-push-right-sm, 
+    .light-theme .builder-font .see-all-link-icon:after {
+        display: none;
+    }
+
+    .light-theme .icon-default-navigation, 
+    .light-theme .icon-nav-blog, 
+    .light-theme .icon-nav-charactercustomizer, 
+    .light-theme .icon-nav-friends, 
+    .light-theme .icon-nav-group, 
+    .light-theme .icon-nav-home, 
+    .light-theme .icon-nav-inventory, 
+    .light-theme .icon-nav-menu, 
+    .light-theme .icon-nav-message, 
+    .light-theme .icon-nav-my-feed, 
+    .light-theme .icon-nav-notification-stream, 
+    .light-theme .icon-nav-profile, 
+    .light-theme .icon-nav-robux, 
+    .light-theme .icon-nav-search, 
+    .light-theme .icon-nav-search-white, 
+    .light-theme .icon-nav-settings, 
+    .light-theme .icon-nav-shop, 
+    .light-theme .icon-nav-trade {
+        background-image: url(https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg);
+    }
+
+    .avatar-card-fullbody .avatar-card-image, 
+    .avatar .avatar-card-image,
+    .light-theme .avatar .avatar-card-image {
+        width: 100%;
+        height: 100%;
+        word-break: break-all;
+        vertical-align: top;
+        background-color: #ffffff !important;
+        border: 1px solid #B8B8B8;
+    }
+
+    .avatar.avatar-card-fullbody .avatar-status {
+        background-color: transparent !important;
+    }
 
     .slide-switcher .slide-item-container .slide-item-container-left .slide-item-image {
         box-shadow: 0 0 6px 0 rgba(0,0,0,0.49);
@@ -229,14 +282,30 @@
         color: rgb(25, 25, 25);
     }
 
-
-
-    .light-theme .avatar .avatar-card-image {
-        background-color: #ffffff !important;
+    /* PROFILE STYLES */
+    .profile-header .header-caption .header-details .details-info li {
+        display: unset;
+        text-align: center;
+        padding: 0 20px;
     }
 
+    .profile-header .header-caption .header-details .details-info li .font-header-2 {
+        font-size: 20px;
+    }
 
+    /* HEADER STYLES */
+    .rbx-header .age-bracket-label .age-bracket-label-username,
+    .rbx-header .age-bracket-label {
+        visibility: hidden;
+    }
 
+    .chat-container.collapsed .chat-header .chat-header-title {
+        color: #fff;
+    }
+
+    /* BUTTON STYLES */
+
+    /* Alert Buttons */
     .light-theme .btn-alert-md {
         background-color: #fff;
         border: 1px solid #b8b8b8;
@@ -244,67 +313,97 @@
         border-radius: 1px;
     }
 
-    .light-theme .btn-alert-md:hover, .light-theme .btn-alert-md:focus {
+    .light-theme .btn-alert-md:hover, 
+    .light-theme .btn-alert-md:focus {
         background-color: #E30301;
         border: 1px solid #b8b8b8;
         color: #ffffff;
         border-radius: 1px;
     }
 
-
-
-    .builder-font .font-header-1, .builder-font .h3, .builder-font .h4, .builder-font .text-robux-lg, .builder-font h3, .builder-font h4 {
-        font-size: 24px;
-        font-weight: 300;
-    }
-
-
-
-
-    .rbx-header .age-bracket-label .age-bracket-label-username {
-    visibility: hidden;
-    }
-    /* .builder-font .font-footer, .builder-font .font-footer:active, .builder-font .font-footer:focus, .builder-font .font-footer:hover, .builder-font .font-footer:link, .builder-font .font-footer:visited, .builder-font .text-footer, .builder-font .text-footer:active, .builder-font .text-footer:focus, .builder-font .text-footer:hover, .builder-font .text-footer:link, .builder-font .text-footer:visited, .builder-font .xsmall, .builder-font .xsmall:active, .builder-font .xsmall:focus, .builder-font .xsmall:hover, .builder-font .xsmall:link, .builder-font .xsmall:visited, .builder-font .xxsmall, .builder-font .xxsmall:active, .builder-font .xxsmall:focus, .builder-font .xxsmall:hover, .builder-font .xxsmall:link, .builder-font .xxsmall:visited {
-        font-size: 0;
-        font-weight: 500;
-    } */
-    .chat-container.collapsed .chat-header .chat-header-title {
-        color: #fff;
-    }
-
-    /* universal colors - universal buttons */
-
-    /* Hover green buttons */
-    .light-theme .btn-buy-md:hover, .light-theme .btn-buy-md:focus { 
-        background-color: #3FC679;
-        box-shadow: 0 1px 3px rgba(150,150,150,0.74);
-        border-color: #3FC679;
-        color: #fff;
-    }
-    .light-theme .btn-growth-lg:focus, .light-theme .btn-growth-lg:hover, .signup-or-log-in .signup-container .signup-input-area .signup-submit-button:hover, li.signup-button-container:hover   {
+    /* Green Buttons (Hover) */
+    .light-theme .btn-buy-md:hover, 
+    .light-theme .btn-buy-md:focus,
+    .light-theme .btn-growth-lg:focus, 
+    .light-theme .btn-growth-lg:hover, 
+    .signup-or-log-in .signup-container .signup-input-area .signup-submit-button:hover, 
+    li.signup-button-container:hover { 
         background-color: #3FC679;
         border-color: #3FC679;
         color: #fff;
         cursor: pointer;
     }
+
+    .light-theme .btn-buy-md:hover, 
+    .light-theme .btn-buy-md:focus {
+        box-shadow: 0 1px 3px rgba(150,150,150,0.74);
+    }
+
+    /* Navigation Buttons */
     a.rbx-navbar-login.btn-secondary-sm.nav-menu-title.rbx-menu-item:hover {
         background: rgba(25,25,25,0.1);
         border: none;
         border-radius: 5px;
     }
-    .light-theme .btn-primary-sm, .light-theme .btn-primary-sm:hover {
-        background-color: #02b757;
-        border: none;
-    }
-    .dark-theme .touch .btn-common-play-game-lg.active, .dark-theme .touch .btn-common-play-game-lg:active, .dark-theme .touch .btn-common-play-game-lg:focus, .dark-theme .touch .btn-common-play-game-lg:hover, .dark-theme .touch .btn-common-play-game-lg:visited, .light-theme .touch .btn-common-play-game-lg.active, .light-theme .touch .btn-common-play-game-lg:active, .light-theme .touch .btn-common-play-game-lg:focus, .light-theme .touch .btn-common-play-game-lg:hover, .light-theme .touch .btn-common-play-game-lg:visited, .light-theme a.btn-common-play-game-lg {
+
+    /* Primary & Growth Buttons */
+    .light-theme .btn-primary-sm, 
+    .light-theme .btn-primary-sm:hover,
+    .light-theme .btn-primary-lg, 
+    li.signup-button-container,
+    .light-theme .btn-growth-lg,
+    .light-theme .btn-growth-md, 
+    button.btn-primary-md.ng-binding[ng-click='chat\(\)'], 
+    .light-theme .btn-primary-md.disabled, 
+    .light-theme .btn-primary-md, 
+    button.btn-common-play-game-lg.btn-primary-md,
+    .dark-theme .touch .btn-common-play-game-lg.active, 
+    .dark-theme .touch .btn-common-play-game-lg:active, 
+    .dark-theme .touch .btn-common-play-game-lg:focus, 
+    .dark-theme .touch .btn-common-play-game-lg:hover, 
+    .dark-theme .touch .btn-common-play-game-lg:visited, 
+    .light-theme .touch .btn-common-play-game-lg.active, 
+    .light-theme .touch .btn-common-play-game-lg:active, 
+    .light-theme .touch .btn-common-play-game-lg:focus, 
+    .light-theme .touch .btn-common-play-game-lg:hover, 
+    .light-theme .touch .btn-common-play-game-lg:visited, 
+    .light-theme a.btn-common-play-game-lg {
         background-color: #02b757;
     }
 
-    /* Green buttons */
-    .light-theme .btn-primary-lg, li.signup-button-container {
-        background-color: #02b757;
+    .light-theme .btn-primary-sm, 
+    .light-theme .btn-primary-sm:hover,
+    .light-theme .btn-growth-lg {
+        border: none;
+    }
+
+    .light-theme .btn-primary-lg, 
+    li.signup-button-container {
         border: 1px solid #02b757;
     }
+
+    .light-theme .btn-growth-lg {
+        display: inline-block;
+        border-radius: 5px;
+    }
+
+    li.signup-button-container {
+        border-radius: 3px;
+    }
+
+    .light-theme .btn-growth-md, 
+    button.btn-primary-md.ng-binding[ng-click='chat\(\)'], 
+    .light-theme .btn-primary-md.disabled, 
+    .light-theme .btn-primary-md, 
+    button.btn-common-play-game-lg.btn-primary-md {
+        border-radius: 1px;
+    }
+
+    .dark-theme button.btn-common-play-game-lg.btn-primary-md:hover {
+        background: #00bf5a;
+    }
+
+    /* Signup Submit Button */
     .signup-or-log-in .signup-container .signup-input-area .signup-submit-button {
         background-color: #02b757;
         border-color: #02b757;
@@ -313,131 +412,108 @@
         height: 50px;
         font-size: 20px;
     }
-    .light-theme .btn-growth-lg {
-        border: none;
-        background-color: #02b757;
-        display: inline-block;
-        border-radius: 5px;
-    }
-    li.signup-button-container {
-        border-radius: 3px;
-    }
-    .light-theme .btn-growth-md, button.btn-primary-md.ng-binding[ng-click='chat\(\)'], .light-theme .btn-primary-md.disabled, .light-theme .btn-primary-md, button.btn-common-play-game-lg.btn-primary-md {
-        background-color: #02b757;
-    /*     border: 1px solid #02b757; */
-        border-radius: 1px;
-    }
-    .dark-theme button.btn-common-play-game-lg.btn-primary-md:hover {
-        background: #00bf5a;
-    }
 
     /* End of universal */
 
-
-
+    /* DIALOGS & MESSAGING */
     .light-theme .dialogs .dialog-container .dialog-message-container .indicated-message-bubble {
         color: rgb(116, 116, 116);
     }
-    .builder-font .font-footer, .builder-font .font-footer:active, .builder-font .font-footer:focus, .builder-font .font-footer:hover, .builder-font .font-footer:link, .builder-font .font-footer:visited, .builder-font .text-footer, .builder-font .text-footer:active, .builder-font .text-footer:focus, .builder-font .text-footer:hover, .builder-font .text-footer:link, .builder-font .text-footer:visited, .builder-font .xsmall, .builder-font .xsmall:active, .builder-font .xsmall:focus, .builder-font .xsmall:hover, .builder-font .xsmall:link, .builder-font .xsmall:visited, .builder-font .xxsmall, .builder-font .xxsmall:active, .builder-font .xxsmall:focus, .builder-font .xxsmall:hover, .builder-font .xxsmall:link, .builder-font .xxsmall:visited {
+
+    /* FOOTER TYPOGRAPHY */
+    .builder-font .font-footer, 
+    .builder-font .font-footer:active, 
+    .builder-font .font-footer:focus, 
+    .builder-font .font-footer:hover, 
+    .builder-font .font-footer:link, 
+    .builder-font .font-footer:visited, 
+    .builder-font .text-footer, 
+    .builder-font .text-footer:active, 
+    .builder-font .text-footer:focus, 
+    .builder-font .text-footer:hover, 
+    .builder-font .text-footer:link, 
+    .builder-font .text-footer:visited, 
+    .builder-font .xsmall, 
+    .builder-font .xsmall:active, 
+    .builder-font .xsmall:focus, 
+    .builder-font .xsmall:hover, 
+    .builder-font .xsmall:link, 
+    .builder-font .xsmall:visited, 
+    .builder-font .xxsmall, 
+    .builder-font .xxsmall:active, 
+    .builder-font .xxsmall:focus, 
+    .builder-font .xxsmall:hover, 
+    .builder-font .xxsmall:link, 
+    .builder-font .xxsmall:visited {
         font-size: 10px !important;
         font-weight: 500 !important;
     }
 
-
-    .rbx-header .age-bracket-label {
-        visibility: hidden;
-    }
-
-
-
+    /* HOME PAGE STYLES */
     div.home-header-content a:before {
         content: "Hello, ";
     }
+
     div.home-header-content a:after {
         content: "!";
     }
 
-    div.game-card-info, span.playing-counts-label:before {
-    content: title;
-    }
-    div.game-card-info, span.playing-counts-label:after {
-    content: " Playing";
-    }
+    /* GAME & ASSET CARDS */
 
-
-    .light-theme .btn-control-xs:visited, .light-theme .btn-control-xs:hover {
-        color: rgba(0,0,0,.6) !important;
-        box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2) !important;
+    /* Game Cards */
+    div.game-card-info, 
+    span.playing-counts-label:before {
+        content: title;
     }
 
-
-    .light-theme .store-card {
-        background-color: white;
-        box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
+    div.game-card-info, 
+    span.playing-counts-label:after {
+        content: " Playing";
     }
-    .dark-theme .store-card:hover, .light-theme .store-card:hover {
-        box-shadow: 0 1px 6px 0 rgba(25,25,25,0.45);
-    }
-
-
-
-    .builder-font.light-theme .refresh-link-icon {
-        padding: inherit;
-    }
-
-
 
     .light-theme .game-card-container .game-card-thumb-container {
         background-color: transparent;
     }
 
-    .game-card-container thumbnail-2d, .game-card-thumb-container {
+    .game-card-container thumbnail-2d, 
+    .game-card-thumb-container {
         height: 150px;
         width: 100%;
         display: inline-block;
         border-radius: 3px 3px 0 0;
-/*         padding: 6px; */
     }
-    span.thumbnail-2d-container.game-card-thumb-container > img, div.featured-game-icon-container > span > img, span.thumbnail-2d-container.game-card-thumb > img {
+
+    span.thumbnail-2d-container.game-card-thumb-container > img, 
+    div.featured-game-icon-container > span > img, 
+    span.thumbnail-2d-container.game-card-thumb > img {
         padding: var(--iconPadding);
     }
-    .game-card-container thumbnail-2d .game-card-thumb, .game-card-thumb-container .game-card-thumb {
+
+    .game-card-container thumbnail-2d .game-card-thumb, 
+    .game-card-thumb-container .game-card-thumb {
         width: 100%;
+        border-radius: 0;
     }
 
-    .avatar.avatar-card-fullbody .avatar-status {
-        background-color: transparent !important;
+    /* Store Cards */
+    .light-theme .store-card {
+        background-color: white;
+        box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
     }
 
-    .light-theme .hlist .list-item a {
-        background-color: #ffffff;
+    .dark-theme .store-card:hover, 
+    .light-theme .store-card:hover {
+        box-shadow: 0 1px 6px 0 rgba(25,25,25,0.45);
     }
 
     .store-card .store-card-caption {
         padding: 0 6px 6px;
     }
 
-    .light-theme .btn-buy-md {
-        background-color: transparent;
-        border-color: #B8B8B8;
-        color: rgba(0,0,0,.5);
-        border-radius: 3px;
+    /* Item Cards */
+    .light-theme .item-card {
+        height: 205px;
     }
-
-    .resellers-container .vlist .list-item button {
-        margin-top: 12px;
-    }
-    .resellers-container .vlist .list-item {
-        padding-top: 0;
-    }
-
-
-    /* .hlist .list-item a {
-        border-radius: 3px;
-        border-top-right-radius: 3px;
-        border-top-left-radius: 3px; 
-    }
-    */
 
     .item-card-container .item-card-name {
         white-space: nowrap;
@@ -449,114 +525,184 @@
         border-radius: 3px;
         box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
     }
+
+    .light-theme .item-card-container:hover {
+        box-shadow: 0 1px 6px 0 rgba(25,25,25,0.45);
+    }
+
     .item-card-container.recommended-item-link {
         height: 84%;
     }
 
+    .item-card-thumb-container, 
+    .item-card-thumb-container .item-card-thumb, 
+    .item-card-thumb-container div[class^=icon-], 
+    .item-card-thumb-container span[class^=icon-] {
+        border-radius: 3px 3px 0 0 !important;
+    }
 
+    .light-theme .item-card-container .item-card-thumb-container {
+        border: none !important;
+    }
 
-    /* search bar */ 
+    /* MISC UI ELEMENTS */
+    .light-theme .hlist .list-item a {
+        background-color: #ffffff;
+    }
 
+    .resellers-container .vlist .list-item button {
+        margin-top: 12px;
+    }
+
+    .resellers-container .vlist .list-item {
+        padding-top: 0;
+    }
+
+    .builder-font.light-theme .refresh-link-icon {
+        padding: inherit;
+    }
+
+    /* SEARCH BAR & NAVIGATION SEARCH */
     .rbx-header .navbar-search .input-field {
         border-radius: 2px !important; 
     }
-    /* search results & bar */ 
-    .light-theme .new-navbar-search-anchor > .navbar-list-option-suffix, span.navbar-list-option-icon, .navbar-list-option-text {
+
+    .light-theme .new-navbar-search-anchor > .navbar-list-option-suffix, 
+    span.navbar-list-option-icon, 
+    .navbar-list-option-text {
         color: #000;
         opacity: 1 !important;
         font-size: 16px;
     }
+
     .light-theme .rbx-header .navbar-search .new-dropdown-menu {
         width: 475px !important;
         margin-left: 6px;
-        margin-top: 0px;
+        margin-top: 0;
         background-color: #fff;
         box-shadow: 0 0 8px 0 rgba(0,0,0,.1);
         border-radius: 3px;
     }
+
     .light-theme .rbx-header .navbar-search .navbar-search-option.new-selected {
         background-color: #F2F2F2;
         box-shadow: 4px 0 0 0 #00A2FF inset;
         cursor: pointer !important;
     }
+
     .clear-search {
         visibility: hidden;
     }
+
     .new-navbar-search-anchor {
         max-height: 43px !important;
     }
+
     span.navbar-list-option-icon {
         visibility: hidden;
     }
+
     span.navbar-list-option-icon::before {
         visibility: visible;
         content: "Search";
         font-size: 16px;
     }
-    .dark-theme span.navbar-list-option-icon{
+
+    .dark-theme span.navbar-list-option-icon {
         color: rgb(189, 190, 190);
     }
+
     .new-navbar-search-anchor > .navbar-list-option-text {
         margin-left: 21px;
     }
+
     .light-theme .rbx-header .navbar-search .new-dropdown-menu li {
-        border-bottom: 0px;
+        border-bottom: 0;
     }
-    /* auto complete in catalog */ 
+
+    /* Autocomplete in Catalog */
     li[ng-repeat='suggestion\ in\ autocompleteSuggestions\.suggestions'] {
         height: 43px !important;
         overflow: hidden;
     }
+
     div.autocomplete-dropdown-menu {
         position: relative;
         top: -7px;
         width: 300px !important;
         margin-left: 11.4px;
     }
+
     a[ng-click='onAutocompleteSuggestionClicked\(suggestion\.Query\,\ \$index\)'] > span.navbar-list-option-icon {
         position: relative;
         margin-bottom: 6px;
         left: -10px;
     }
+
     a[ng-click='onAutocompleteSuggestionClicked\(suggestion\.Query\,\ \$index\)'] > span.ng-binding {
         margin-left: 10px;
     }
 
+    /* SMALL BUTTONS & CONTROLS */
+    .light-theme .btn-control-xs:visited, 
+    .light-theme .btn-control-xs:hover {
+        color: rgba(0,0,0,.6) !important;
+        box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2) !important;
+    }
 
-    /* Premium Icon Replacements (OBC) */
-    .profile-header .header-title h2, .profile-header .header-title span[class^="icon"] {
+    .light-theme .btn-buy-md {
+        background-color: transparent;
+        border-color: #B8B8B8;
+        color: rgba(0,0,0,.5);
+        border-radius: 3px;
+    }
+
+
+    /* PREMIUM ICONS (BC/OBC REPLACEMENTS) */
+    .profile-header .header-title h2, 
+    .profile-header .header-title span[class^="icon"] {
         float: right;
     }
-    .light-theme .icon-default-premium-small, .light-theme .icon-premium-small {
+
+    .light-theme .icon-default-premium-small, 
+    .light-theme .icon-premium-small {
         background-image: url('https://images.rbxcdn.com/4c608a5ed7e118d6f26e08ddb44a8636-bc_06282017.svg');
         background-size: 64px;
         background-position: 0 -86px;
     }
+
     .item-name-container .icon-premium-medium {
         margin-top: 3px;
     }
-    .light-theme .icon-default-premium-medium, .light-theme .icon-premium-medium {
+
+    .light-theme .icon-default-premium-medium, 
+    .light-theme .icon-premium-medium {
         background: none;
         content: url('https://tr.rbxcdn.com/f4712d317130845d47726fcfcd9209e0/420/420/Decal/Png');
         width: 45px;
     }
+
     .home-header-content a {
         float: left;
     }
+
     .home-header-content h1 .icon-premium-medium {
         display: inline-block;
         margin-bottom: 0;
-        margin-top: 0px;
+        margin-top: 0;
         margin-left: 12px;
     }
+
     .home-header-content h1 {
         margin: 44px 0 0 0 !important;
     }
 
+    /* PROFILE & FRIENDS */
     .profile-header .header-userstatus .header-userstatus-text span.userstatus-editable {
         cursor: pointer;
         margin-top: 4px !important;
     }
+
     .game-card-avatar-slots {
         text-align: center;
         padding: 5.45px 0 0;
@@ -579,64 +725,73 @@
         font-size: 12px;
     }
 
-
-
+    /* INPUTS & DROPDOWNS */
     .light-theme .input-group-btn .input-dropdown-btn {
         border-radius: 3px;
     }
 
-    .light-theme .input-group-btn .input-dropdown-btn:focus, .light-theme .input-group-btn .input-dropdown-btn:hover {
+    .light-theme .input-group-btn .input-dropdown-btn:focus, 
+    .light-theme .input-group-btn .input-dropdown-btn:hover {
         border: 1px solid #00A2FF;
         color: #ffffff;
         background-color: #00A2FF;
     }
 
-    /* .input-group-btn .input-dropdown-btn:focus .light-theme .icon-down, .input-group-btn .input-dropdown-btn:hover .light-theme .icon-down, .light-theme .icon-checkmark-16x16, .light-theme .icon-close-16x16, .light-theme .icon-close-gray-16x16, .light-theme .icon-default-generic-16x16, .light-theme .icon-down-16x16, .light-theme .icon-edit-16x16, .light-theme .icon-left-16x16, .light-theme .icon-moreinfo-16x16, .light-theme .icon-red-timer-16x16, .light-theme .icon-right-16x16, .light-theme .icon-settings-16x16, .light-theme .icon-up-16x16, .light-theme .input-group-btn .input-dropdown-btn:focus .icon-down, .light-theme .input-group-btn .input-dropdown-btn:hover .icon-down, .light-theme .open .input-dropdown-btn .icon-down, .light-theme .rbx-select-group:hover .icon-down, .open .input-dropdown-btn .light-theme .icon-down, .rbx-select-group:hover .light-theme .icon-down {
-        background-image: url(https://web.archive.org/web/20160727070458im_/https://static.rbxcdn.com/images/Shared/generic_06102016.svg);
-    } */
     .light-theme .dropdown-menu li:hover {
         background-color: #F2F2F2;
         box-shadow: 4px 0 0 0 #00A2FF inset;
         cursor: pointer;
     }
 
+    /* USER NAME DECORATIONS */
     .user-info-container .user-name-container a:before {
         content: "Hello, ";
     }
+
     .user-info-container .user-name-container a:after {
         content: "!";
     }
 
-    #nav-robux-icon .icon-robux-28x28
-    {
+    /* ROBUX & ECONOMY */
+    #nav-robux-icon .icon-robux-28x28 {
         background-position: 0 -28px;
         background-image: url(https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg);
     }
-    /*robux patch      */
-    /* Some moved to image patch section */
-    /*START  July 1st 2024 Robux Patch.      */
+
+    /* Robux Patch (July 1st 2024) */
     div.robux-page-content > div.robux-std-container-1 {
         width: 50%;
-        float:  right;
+        float: right;
     }
+
     #robux-upsell-react-page-wrapper .robux-upsell-container-1 .robux-upsell-packages-table-desktop {
         padding-bottom: 0;
     }
+
     #robux-upsell-react-page-wrapper .robux-std-container-1 {
         margin-top: 0;
         border-top: 1px solid rgba(0,0,0,.1);
     }
+
     div.robux-button-container > button > h4 {
         color: white !important;
     }
-    div.robux-upsell-item-and-packages-container, div.robux-table-banner.upsell-banner {
+
+    div.robux-upsell-item-and-packages-container, 
+    div.robux-table-banner.upsell-banner {
         background: none !important;
         box-shadow: none !important;
     }
-    div.robux-page-content > div.robux-std-container-1 > div.font-header-2, div.robux-standard-packages-table-desktop > div.robux-header-unit, div.robux-upsell-container-1 > div.upsell-footer{
+
+    div.robux-page-content > div.robux-std-container-1 > div.font-header-2, 
+    div.robux-standard-packages-table-desktop > div.robux-header-unit, 
+    div.robux-upsell-container-1 > div.upsell-footer {
         display: none !important;
     }
-    .light-theme .icon-default-reverse-28x28, .light-theme .icon-robux-reverse, div.robux-button-container > button > span.icon-robux {
+
+    .light-theme .icon-default-reverse-28x28, 
+    .light-theme .icon-robux-reverse, 
+    div.robux-button-container > button > span.icon-robux {
         filter: invert(0);
         background-position: -2px -40px;
         width: 36px;
@@ -645,20 +800,28 @@
         position: absolute;
         left: 16px;
     }
+
     #robux-upsell-react-page-wrapper .subscription-container {
         margin-top: 20%;
     }
-    /*END  July 1st 2024 Robux Patch.      */
-    /* Remove nav-credit display */
+    /* END July 1st 2024 Robux Patch */
+
+    /* OTHER ECONOMY STYLES */
     .nav-credit {
         display: var(--creditVis) !important;
     }
 
-    .light-theme .icon-default-economy-28x28, .light-theme .icon-robux-28x28, .light-theme .icon-robux-gold-28x28, .light-theme .icon-robux-white {
-    
+    .light-theme .icon-default-economy-28x28, 
+    .light-theme .icon-robux-28x28, 
+    .light-theme .icon-robux-gold-28x28, 
+    .light-theme .icon-robux-white {
         background-size: 56px;
     }
-    .light-theme .icon-default-economy-28x28, .light-theme .icon-robux-28x28, .light-theme .icon-robux-gold-28x28, .light-theme .icon-robux-white:hover {
+
+    .light-theme .icon-default-economy-28x28, 
+    .light-theme .icon-robux-28x28, 
+    .light-theme .icon-robux-gold-28x28, 
+    .light-theme .icon-robux-white:hover {
         background-size: 56px;
     }
 
@@ -669,10 +832,14 @@
         min-width: 90px; 
     }
 
-    .see-all-link-icon:hover, .touch .see-all-link-icon:hover {
+    .see-all-link-icon:hover, 
+    .touch .see-all-link-icon:hover,
+    .see-all-link:hover, 
+    .touch .see-all-link:hover {
         text-decoration: none;
     }
 
+    /* AVATAR STYLES */
     .avatar-headshot-sm {
         background-color: transparent;
         border: #c5c5c5 1px solid !important;
@@ -684,57 +851,49 @@
         border-radius: 50%;
     }
 
-    /*img.avatar-card-image:scr {
-        img.scr: url(https://www.dictionary.com/e/wp-content/uploads/2019/05/1000x700-LOL-1.jpg);
-    }*/
-
-
-    .light-theme .item-card {
-        height: 205px;
+    .avatar-card-container .avatar-card-caption {
+        padding: 10px 0 0;
     }
 
-
-    .light-theme .item-card-container:hover {
-        box-shadow: 0 1px 6px 0 rgba(25,25,25,0.45);
+    a.avatar-card-label {
+        color: #00a2ff !important;
     }
 
-    .item-card-thumb-container, .item-card-thumb-container .item-card-thumb, .item-card-thumb-container div[class^=icon-], .item-card-thumb-container span[class^=icon-] {
-        border-radius: 3px 3px 0 0 !important;
+    a.avatar-card-label:before {
+        content: "Online \A Playing \A";
+        white-space: pre;
+        color: #606162 !important;
     }
 
-    .light-theme .item-card-container .item-card-thumb-container {
-        border-bottom: none !important;
+    .light-theme .avatar-container .avatar-card-image, 
+    .light-theme .avatar-container img,
+    .light-theme .avatar-container .avatar-card-image, 
+    .light-theme .avatar-container img {
+        background-color: #ffffff !important;
     }
 
-    .light-theme .item-card-container .item-card-thumb-container {
-        border: none !important;
+    /* NOTIFICATION STYLES */
+    .notification-action-container {
+        position: absolute;
+        bottom: -10px;
+        right: 0;
     }
-
-
-
-
-
-
-
-
-    /*.builder-font .text-link, .builder-font .vlist .list-item .list-body .list-content a, .vlist .list-item .list-body .list-content .builder-font a {
-        float: right;
-    }*/
-
-
-
-    .game-card-container thumbnail-2d .game-card-thumb, .game-card-thumb-container .game-card-thumb {
-        border-radius: 3px 3px 0 0 !important;
-    }
-
-
 
     .notification-action-container .btn-control-xs.see-all-link.font-caption-header.ng-binding {
         border: 1px solid #B8B8B8 !important;
+        margin: 4px;
+        background-color: #ffffff !important;
+        border-top: hidden;
+        border-right: hidden;
+        border-left: hidden;
+        border-bottom: 1px solid #B8B8B8;
+        color: black !important;
     }
 
-    .see-all-link:hover, .touch .see-all-link:hover {
-        text-decoration: none;
+    .notification-action-container .btn-secondary-xs.see-all-link.font-caption-header.ng-binding,
+    .notification-action-container .btn-secondary-xs.see-all-link.font-caption-header.ng-binding.ng-scope {
+        margin: 4px;
+        color: #ffffff !important;
     }
 
     .notification-action-container .btn-secondary-xs.see-all-link.font-caption-header.ng-binding:hover {
@@ -742,117 +901,96 @@
         background-color: #44b4f8;
     }
 
-
-    .icon-logo {
-        background-position: 50%;
-        background-size: 110px;
+    .notification-action-container .btn-secondary-xs.roblox-popover-close.see-all-link.font-caption-header.ng-binding {
+        background-color: #ffffff !important;
+        border: 1px solid #B8B8B8;
+        color: black !important;
     }
 
+    .notification-action-container.ng-scope .play-button.btn-growth-xs.see-all-link.font-caption-header.ng-binding {
+        color: #ffffff !important;
+        background-color: #54b85b;
+    }
+
+    .light-theme .notification-stream-header, 
+    .notification-stream-header.light-theme {
+        background-color: #ffffff;
+        border-top: hidden;
+        border-right: hidden;
+        border-left: hidden;
+        border-bottom: 1px solid #B8B8B8;
+    }
+
+    .text-secondary.font-caption-body.ng-binding {
+        color: rgb(97, 97, 97) !important;
+        font-size: 12px !important;
+        margin-top: auto;
+    }
+
+    /* GAME PAGE STYLES */
+    .light-theme .game-main-content {
+        min-height: 345px;
+        padding: 12px 12px !important;
+    }
+
+    .builder-font .game-main-content .game-calls-to-action {
+        padding-right: 0;
+    }
+
+    .dark-theme > div > main > div > div > div > div.game-calls-to-action {
+        padding-top: 10px !important;
+    }
+
+    div.VisitButton.VisitButtonPlayGLI a:before {
+        content: "Play";
+        margin-left: 40px;
+        font-size: 21px;
+        font-weight: 400;
+    }
 
     .game-card-2x-featured {
         white-space: nowrap;
     }
 
     .game-card-2x-featured .thumb-container {
-        border-radius: 3px 0px 0 0;
+        border-radius: 3px 0 0 0;
     }
 
     .game-card-2x-featured .thumb-container::before {
         background: none;
     }
 
-
-    .avatar-card-container .avatar-card-caption {
-        padding: 10px 0 0;
+    /* MISC UI ELEMENTS */
+    .icon-logo {
+        background-position: 50%;
+        background-size: 110px;
     }
-
-    a.avatar-card-label {
-        color: #00a2ff !important;
-        /*white-space: nowrap !important;*/
-    }
-    a.avatar-card-label:before {
-        content: "Online \A Playing \A";
-        white-space: pre;
-        color: #606162 !important;
-    }
-
-
-
-    .light-theme .avatar-container .avatar-card-image, .light-theme .avatar-container img {
-        background-color: #ffffff !important;
-    }
-
-
-    /* .game-main-content.follow-button-enabled .favorite-follow-vote-share {
-        position: relative;
-        width: 100%;
-        padding-top: 20px;
-    } */
-    /* .game-main-content .game-play-buttons .btn-common-play-game-lg {
-        min-width: 80%;
-        padding: 10px 0 8px;
-    } */
-
-    /* .builder-font .game-main-content .game-calls-to-action .game-play-buttons, .builder-font .game-main-content .game-calls-to-action .game-buttons-container .game-play-buttons {
-        padding: 36px 12px;
-    } */
-    /* .builder-font .game-main-content .game-calls-to-action .game-play-buttons, .builder-font .game-main-content .game-calls-to-action .game-buttons-container .game-play-buttons {
-        border-top: #bdbebe solid 1px;
-    } */
-    /* .game-main-content .game-play-buttons .btn-common-play-game-lg {
-        min-width: 100%;
-        padding: 4px 16px;
-        padding-top: 8px;
-    } */
-
-    .light-theme .game-main-content {
-        min-height: 345px;
-        padding: 12px 12px !important;
-    }
-    .builder-font .game-main-content .game-calls-to-action {
-        padding-right: 0;
-    }
-    .dark-theme > div > main > div > div > div > div.game-calls-to-action {
-        padding-top: 10px !important;
-    }
-
-    div.VisitButton.VisitButtonPlayGLI a:before {
-    content: "Play";
-    margin-left: 40px;
-    font-size: 21px;
-        font-weight: 400;
-    }
-
-
-    /*div.favorite-button a:after {
-    content: span.game-favorite-count;
-    }*/
 
     .light-theme .stack .stack-list .stack-row.remove-panel {
         background-color: white;
     }
 
     .btn-min-width.btn-control-xs.btn-more.rbx-refresh.refresh-link-icon {
-    background-color: #ffffff;
-    color: black;
-    border: 1px solid #B8B8B8;
-    padding: 4px 4px !important;
-    }
-    .btn-min-width.btn-control-xs.btn-more.rbx-refresh.refresh-link-icon:hover {
-    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2) !important;
-    background-color: white !important;
-    color: black !important;
-    text-decoration: none !important;
-    padding: 4px 4px !important;
+        background-color: #ffffff;
+        color: black;
+        border: 1px solid #B8B8B8;
+        padding: 4px 4px !important;
     }
 
-    .refresh-link-icon, .touch .refresh-link-icon {
+    .btn-min-width.btn-control-xs.btn-more.rbx-refresh.refresh-link-icon:hover {
+        box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2) !important;
+        background-color: white !important;
+        color: black !important;
+        text-decoration: none !important;
+        padding: 4px 4px !important;
+    }
+
+    .refresh-link-icon, 
+    .touch .refresh-link-icon {
         font-size: 14px;
         font-weight: 400;
         transition: box-shadow 200ms ease-in-out;
     }
-
-
 
     thumbnail-2d .thumbnail-2d-container[thumbnail-type=avatarHeadshot] {
         background-color: #ffffff;
@@ -862,11 +1000,8 @@
         height: 100%;
     }
 
-    /*
-    .section-content.remove-panel.people-list .hlist .list-item.friend.ng-scope .ng-scope .avatar-container .text-link.friend-link.ng-isolate-scope .avatar-card-link .avatar-card-image.ng-isolate-scope {
-    } */
-
-    .game-card-container thumbnail-2d .game-card-thumb, .game-card-thumb-container .game-card-thumb {
+    .game-card-container thumbnail-2d .game-card-thumb, 
+    .game-card-thumb-container .game-card-thumb {
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
         border-bottom-left-radius: 0;
@@ -895,7 +1030,8 @@
         text-decoration: none !important;
     }
 
-    .light-theme .btn-secondary-md, .light-theme .btn-secondary-md:visited {
+    .light-theme .btn-secondary-md, 
+    .light-theme .btn-secondary-md:visited {
         color: #fff;
     }
 
@@ -903,56 +1039,161 @@
         height: 300px;
     }
 
+    /* LANDING PAGE & ROLLER */
     #InnerRollerContainer {
         background-size: 100% 100%;
         background-position: top;
         background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
+        background-image: url(https://www.mmogames.com/wp-content/uploads/2012/10/ROBLOX-screenshot-2017-1.jpg);
     }
+
     .lower-logo-container {
         position: relative;
         z-index: 2;
         background-color: rgba(0, 0, 0, 0);
         align-items: center;
     }
+
     .light-theme .container-footer {
         z-index: 3;
         background-color: #ffffff !important;
     }
+
     .dark-theme .input-group-btn .input-dropdown-btn {
         color: #bdbebe;
     }
+
     .dark-theme .open .dropdown-menu {
         background-color: #ffffff;
         color: #fff;
     }
+
     #RollerContainer.rollercoaster-background {
         background-image: url(https://images.rbxcdn.com/f3259582db4c0dcc214fa0e3c78a5f7b);
         background-position: 50%;
         background-repeat: no-repeat;
         background-size: cover;
     }
-    #InnerRollerContainer {
-        background-image: url(https://www.mmogames.com/wp-content/uploads/2012/10/ROBLOX-screenshot-2017-1.jpg);
+
+    /* GLOBAL TYPOGRAPHY */
+    .light-theme .text, 
+    .light-theme .text-date-hint, 
+    .light-theme .text-default, 
+    .light-theme .text-description, 
+    .light-theme .text-footer, 
+    .light-theme .text-info, 
+    .light-theme .text-label, 
+    .light-theme .text-secondary, 
+    .light-theme p {
+        color: rgb(25, 25, 25);
     }
 
+    /* TOOLTIPS & POPOVERS */
+    .light-theme .tooltip {
+        background-color: #75757500;
+    }
 
+    .light-theme .tooltip-inner {
+        background-color: #757575;
+        color: #ffffff;
+    }
 
+    .light-theme .tooltip.bottom-left .tooltip-arrow, 
+    .light-theme .tooltip.bottom .tooltip-arrow {
+        border-bottom-color: #757575;
+    }
+
+    .light-theme .roblox-popover-content.bottom .arrow, 
+    .light-theme .roblox-popover-content.bottom .arrow:after, 
+    .roblox-popover-content.light-theme.bottom .arrow, 
+    .roblox-popover-content.light-theme.bottom .arrow:after {
+        border-bottom-color: #ffffff;
+    }
+
+    /* SOCIAL LINKS & MEDALLIONS */
+    .light-theme .social-links .medallion {
+        height: 100px;
+        margin: .5em;
+        padding: 1em;
+        border: .5px solid #b8b8b8;
+        border-radius: 3px;
+    }
+
+    /* PLAY BUTTONS & ACTIONS */
+    button.btn-common-play-game-lg {
+        width: auto;
+        min-width: 75%;
+        overflow: hidden;
+        height: 53.21px;
+        padding: 13px 15px;
+    }
+
+    .light-theme .btn-common-play-game-lg:focus, 
+    .light-theme .btn-common-play-game-lg:hover {
+        background: #3FC679;
+        box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
+    }
+
+    .light-theme a.btn-common-play-game-lg {
+        border-radius: 5px;
+    }
+
+    .light-theme .btn-growth-sm { 
+        border-radius: 3px;
+        background: #02b757;
+        border: 0;
+    }
+
+    .light-theme .btn-growth-sm:hover {
+        background: #3FC679;
+    }
+
+    button.btn-full-width > span.icon-common-play {
+        visibility: hidden;
+    }
+
+    .icon-common-play:after {
+        visibility: visible;
+        position: relative;
+        vertical-align: middle;
+        text-align: center;
+        right: 2px;
+        content: "Play";
+        font-size: 21px;
+    }
+
+    div.game-card-name-info > button.btn-common-play-game-lg {
+        padding: 6px 0 0 0 !important;
+    }
+
+    /* Paid Games Play Button */
+    button.btn-common-play-game-lg > span.btn-text {
+        position: relative;
+        margin-left: 0;
+        right: 2px;
+        bottom: 1px;
+    }
+
+    button.btn-common-play-game-lg > span.btn-text:before {
+        position: relative;
+        content: "Buy Access for ";
+    }
+
+    button.btn-common-play-game-lg > span.btn-text:after {
+        position: relative;
+        content: " ROBUX";
+    }
+
+    /* MISC PAGE LAYOUT */
     .profile-slide-container .layout.isGridOn .hlist.game-cards.group-list .list-item.group-container.shown.ng-scope .ng-isolate-scope .game-card .card-item.game-card-container {
-    height: 100%;
+        height: 100%;
     }
-
 
     .content .games-lists-multiple .games-list-container .game-card-container {
         white-space: nowrap;
     }
-
-    .light-theme .text, .light-theme .text-date-hint, .light-theme .text-default, .light-theme .text-description, .light-theme .text-footer, .light-theme .text-info, .light-theme .text-label, .light-theme .text-secondary, .light-theme p {
-        color: rgb(25, 25, 25);
-    }
-
-
 
     .profile-accoutrements-container .profile-accoutrements-slider .accoutrement-item a {
         display: inline-block;
@@ -972,166 +1213,14 @@
         background-color: #2474bd;
     }
 
-
-
-    .avatar-card-fullbody .avatar-card-image, .avatar .avatar-card-image {
-        background-color: transparent;
-    }
-
     .avatar-card-fullbody .avatar-status {
         position: absolute;
         bottom: -0.1em;
         right: 0em;
     }
 
-
-
-    .light-theme .tooltip {
-        background-color: #75757500;
-    }
-    .light-theme .tooltip-inner {
-        background-color: #757575;
-        color: #ffffff;
-    }
-    .light-theme .tooltip.bottom-left .tooltip-arrow, .light-theme .tooltip.bottom .tooltip-arrow {
-        border-bottom-color: #757575;
-    }
-
-
-
-    .notification-action-container .btn-secondary-xs.see-all-link.font-caption-header.ng-binding.ng-scope {
-    color: #ffffff !important;
-    }
-    .light-theme .roblox-popover-content.bottom .arrow, .light-theme .roblox-popover-content.bottom .arrow:after, .roblox-popover-content.light-theme.bottom .arrow, .roblox-popover-content.light-theme.bottom .arrow:after {
-        border-bottom-color: #ffffff;
-    }
-
-
-
-    .notification-action-container {
-        position: absolute;
-        bottom: -10px;
-        right: 0;
-    }
-
-    .notification-action-container .btn-secondary-xs.see-all-link.font-caption-header.ng-binding {
-    margin: 4px;
-    color: #ffffff !important;
-    }
-
-    .notification-action-container .btn-control-xs.see-all-link.font-caption-header.ng-binding {
-    margin: 4px;
-    background-color: #ffffff !important;
-    border-top: hidden;
-        border-right: hidden;
-        border-left: hidden;
-        border-bottom: 1px solid #B8B8B8;
-    color: black !important;
-    }
-
-    .text-secondary.font-caption-body.ng-binding {
-    color: rgb(97, 97, 97) !important;
-        font-size: 12px !important;
-        margin-top: auto;
-    }
-
-    .notification-action-container .btn-secondary-xs.roblox-popover-close.see-all-link.font-caption-header.ng-binding {
-    background-color: #ffffff !important;
-    border: 1px solid #B8B8B8;
-    color: black !important;
-    }
-
-    .notification-action-container.ng-scope .play-button.btn-growth-xs.see-all-link.font-caption-header.ng-binding {
-    color: #ffffff !important;
-        background-color: #54b85b;
-    }
-
-    .light-theme .notification-stream-header, .notification-stream-header.light-theme {
-        background-color: #ffffff;
-    border-top: hidden;
-        border-right: hidden;
-        border-left: hidden;
-        border-bottom: 1px solid #B8B8B8;
-    }
-
-
-    .light-theme .social-links .medallion {
-        height: 100px;
-        margin: .5em;
-        padding: 1em;
-        border: .5px solid #b8b8b8;
-        border-radius: 3px;
-    }
-
-
-
-
-
     .light-theme .stack .stack-list .stack-row {
         box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
-    }
-
-
-
-    .light-theme a.btn-common-play-game-lg {
-        border-radius: 5px;
-    }
-
-
-    /* Play button changes */
-    button.btn-common-play-game-lg {
-    /*     position: relative; */
-    /*     right: 1px; */
-        width: auto;
-        min-width: 75%;
-        overflow: hidden;
-        height: 53.21px;
-        padding: 13px 15px;
-    }
-    .light-theme .btn-common-play-game-lg:focus, .light-theme .btn-common-play-game-lg:hover {
-        background: #3FC679;
-        box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
-    }
-    .light-theme .btn-growth-sm { /* popover join button */
-        border-radius: 3px;
-        background: #02b757;
-        border: 0;
-    }
-
-    .light-theme .btn-growth-sm:hover {
-        background: #3FC679;
-    }
-    button.btn-full-width > span.icon-common-play {
-        visibility: hidden;
-    }
-    .icon-common-play:after {
-        visibility: visible;
-        position: relative;
-    /*     top: 3px; */
-        vertical-align: middle;
-        text-align: center;
-        right: 2px;
-        content: "Play";
-        font-size: 21px;
-    }
-    div.game-card-name-info > button.btn-common-play-game-lg {
-        padding: 6px 0 0 0 !important;
-    }
-    /* paid games play button - ref https://web.archive.org/web/20160501164208/roblox.com/games/388168427/ZOMBIE-UNIVERSE-BETA-TEST-SUNDAY */
-
-    button.btn-common-play-game-lg > span.btn-text {
-        position: relative;
-        margin-left: 0px;
-        right: 2px;
-        bottom: 1px;
-    }
-    button.btn-common-play-game-lg > span.btn-text:before {
-        position: relative;
-        content: "Buy Access for ";
-    }
-    button.btn-common-play-game-lg > span.btn-text:after {
-        position: relative;
-        content: " ROBUX";
     }
 
     /* play button top and bottom bar things */ 
@@ -1158,216 +1247,202 @@
 
 
 
+    /* CAROUSEL CONTROLS */
+    .carousel-controls.carousel-controls-left.btn-primary-md.btn-min-width,
     .carousel-controls.carousel-controls-right.btn-primary-md.btn-min-width {
-        background-color: rgba(25,25,25,0.3) !important;
+        background-color: rgba(25, 25, 25, 0.3) !important;
         border: 2px solid #fff !important;
         border-color: #fff !important;
-
     }
 
-    .icon-additem, .icon-arrow-right-blue, .icon-audio, .icon-back, .icon-bigplay, .icon-bigplay-fill, .icon-bigstop, .icon-bigstop-fill, .icon-brokenpage, .icon-carousel-left, .icon-carousel-right, .icon-chat-gray, .icon-check-selection, .icon-checkmark, .icon-checkmark-blue, .icon-checkmark-on, .icon-checkmark-white, .icon-checkmark-white-bold, .icon-clock, .icon-close, .icon-close-white, .icon-copy, .icon-default-generic, .icon-down, .icon-edit, .icon-female, .icon-female-white, .icon-first-gray, .icon-first-page, .icon-games-carousel-left, .icon-games-carousel-left.hover, .icon-games-carousel-right, .icon-games-carousel-right.hover, .icon-globe, .icon-grid, .icon-home, .icon-inactive, .icon-last-gray, .icon-last-page, .icon-left, .icon-left-gray, .icon-locked, .icon-logo-apple, .icon-logo-win, .icon-male, .icon-male-white, .icon-menu, .icon-menu-black, .icon-minus, .icon-more, .icon-more-gray-vertical, .icon-moreinfo, .icon-next, .icon-notifications, .icon-page, .icon-password-hide, .icon-password-hide-white, .icon-password-show, .icon-password-show-white, .icon-pastname, .icon-pause, .icon-pause-fill, .icon-play, .icon-playgame, .icon-plus, .icon-regenerate, .icon-right, .icon-right-gray, .icon-sandglass, .icon-search, .icon-settings, .icon-slideshow, .icon-sorting, .icon-trash-bin, .icon-unlocked, .icon-up, .icon-viewdetails {
-        background-size: auto;
-    }
-    .icon-carousel-right {
-        background-position: 0 -896px;
-    }
-    .icon-carousel-left {
-        background-position: 0 -924px;
-    }
     button.carousel-controls.carousel-controls-left {
         padding-left: 7px;
     }
 
-
-    .carousel-controls.carousel-controls-right.btn-primary-md.btn-min-width {
-        background-color: rgba(25,25,25,0.3);
-        border-color: #fff;   
-    }
-    /* Servers header tab selection thingy changes 
-    Unrelated note but remember when games had comments? That was pretty cool.
-    */ 
-    .rbx-tab-heading {
-        height: 43px;
-    }
-    .text-lead { 
-    line-height: 20px !important;
+    .icon-carousel-right {
+        background-position: 0 -896px;
     }
 
-    /* refresh ~~blue~~ WHITE (I was looking at 2015 not 2016 but personally I like 2015 better) - reference for all of this is at https://web.archive.org/web/20150627045216/https://www.roblox.com/games/9689581/Roblox-High-School#!/about*/ 
-    .btn-min-width.btn-control-xs.btn-more.rbx-refresh.refresh-link-icon {
-    background-color: #ffffff;
-    color: black;
-    border: 1px solid #B8B8B8;
-    padding: 4px 4px !important;
-    }
-    .btn-min-width.btn-control-xs.btn-more.rbx-refresh.refresh-link-icon:hover {
-    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2) !important;
-    background-color: white !important;
-    color: black !important;
-    text-decoration: none !important;
-    padding: 4px 4px !important;
+    .icon-carousel-left {
+        background-position: 0 -924px;
     }
 
-    /* maybe this will fix see more being short I probably did something to mess it up */
-    .btn-control-sm:hover {
-        border: 1px solid #a4a4a4;
-        color: #000;
-        box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.45);   
+    /* GENERIC ICONS */
+    .icon-additem, .icon-arrow-right-blue, .icon-audio, .icon-back, .icon-bigplay, .icon-bigplay-fill, 
+    .icon-bigstop, .icon-bigstop-fill, .icon-brokenpage, .icon-carousel-left, .icon-carousel-right, 
+    .icon-chat-gray, .icon-check-selection, .icon-checkmark, .icon-checkmark-blue, .icon-checkmark-on, 
+    .icon-checkmark-white, .icon-checkmark-white-bold, .icon-clock, .icon-close, .icon-close-white, 
+    .icon-copy, .icon-default-generic, .icon-down, .icon-edit, .icon-female, .icon-female-white, 
+    .icon-first-gray, .icon-first-page, .icon-games-carousel-left, .icon-games-carousel-left.hover, 
+    .icon-games-carousel-right, .icon-games-carousel-right.hover, .icon-globe, .icon-grid, .icon-home, 
+    .icon-inactive, .icon-last-gray, .icon-last-page, .icon-left, .icon-left-gray, .icon-locked, 
+    .icon-logo-apple, .icon-logo-win, .icon-male, .icon-male-white, .icon-menu, .icon-menu-black, 
+    .icon-minus, .icon-more, .icon-more-gray-vertical, .icon-moreinfo, .icon-next, .icon-notifications, 
+    .icon-page, .icon-password-hide, .icon-password-hide-white, .icon-password-show, 
+    .icon-password-show-white, .icon-pastname, .icon-pause, .icon-pause-fill, .icon-play, 
+    .icon-playgame, .icon-plus, .icon-regenerate, .icon-right, .icon-right-gray, .icon-sandglass, 
+    .icon-search, .icon-settings, .icon-slideshow, .icon-sorting, .icon-trash-bin, .icon-unlocked, 
+    .icon-up, .icon-viewdetails {
+        background-size: auto;
     }
-    .message-actions.ng-scope {
-        height: 40px;
-        padding-top: 3px;
-    }
-    /* changing top bar stuff I FOUND OUT HOW! Not really I just looked at Ologist's code and saw that he figured it out so I'm stealing it */ 
-    ul.rbx-navbar > li:nth-child(1) > a
-        {
+
+    /* TOP NAVIGATION OVERRIDES */
+    ul.rbx-navbar > li:nth-child(1) > a,
+    ul.nav:nth-child(2) > li:nth-child(2) > a:nth-child(1),
+    ul.nav:nth-child(2) > li:nth-child(3) > a:nth-child(1),
+    ul.rbx-navbar > li:nth-child(4) > div a {
         font-size: 0 !important;
-        }
+    }
 
-        ul.rbx-navbar > li:nth-child(1) > a::before
-        {
+    ul.rbx-navbar > li:nth-child(1) > a::before {
         content: "Games";
         font-size: 16px;
+    }
 
-        }
-
-    ul.nav:nth-child(2) > li:nth-child(2) > a:nth-child(1)
-        {
-        font-size: 0 !important;
-        }
-
-        ul.nav:nth-child(2) > li:nth-child(2) > a:nth-child(1)::before
-        {
+    ul.nav:nth-child(2) > li:nth-child(2) > a:nth-child(1)::before {
         content: "Catalog";
         font-size: 16px;
-        }
+    }
 
-    ul.nav:nth-child(2) > li:nth-child(3) > a:nth-child(1)
-        {
-        font-size: 0 !important;
-        }
-
-        ul.nav:nth-child(2) > li:nth-child(3) > a:nth-child(1)::before
-        {
+    ul.nav:nth-child(2) > li:nth-child(3) > a:nth-child(1)::before {
         content: "Develop";
         font-size: 16px;
-        }
+    }
 
-    ul.rbx-navbar > li:nth-child(4) > div a
-        {
-            display: none;
-        font-size: 0 !important;
-        }
+    ul.rbx-navbar > li:nth-child(4) > div a {
+        display: none;
+    }
 
-        #navigation-robux-container > div > a::before
-        {
+    #navigation-robux-container > div > a::before {
         content: "ROBUX";
         font-size: 16px;
-        }
+    }
 
-    /* tHEADER, GRAY HIGHLIGHT */
-    .light-theme .rbx-header .text-header, .light-theme .rbx-header .text-header:active, .light-theme .rbx-header .text-header:focus, .light-theme .rbx-header .text-header:hover, .light-theme .rbx-header .text-header:link, .light-theme .rbx-header .text-header:visited {
+    /* HEADER & NAVBAR STYLES */
+    .light-theme .rbx-header .text-header, 
+    .light-theme .rbx-header .text-header:active, 
+    .light-theme .rbx-header .text-header:focus, 
+    .light-theme .rbx-header .text-header:hover, 
+    .light-theme .rbx-header .text-header:link, 
+    .light-theme .rbx-header .text-header:visited {
         color: #ffffff;
     }
-        /* Header fix, background position, etc*/ 
-            .icon-nav-notification-stream:hover {
-                background-position: -28px -448px !important;
-            }
-            .icon-nav-settings:hover {
-                background-position: -28px -84px !important;
-            }
-            .icon-nav-menu:hover {
-                background-position: -28px 0 !important;
-            }
-            .btn-navigation-nav-robux-md, .btn-navigation-nav-notification-stream-md, .btn-navigation-nav-settings-md, .btn-navigation-nav-menu-md {
-                background-color: transparent !important;
-            }
+
+    .icon-nav-notification-stream:hover {
+        background-position: -28px -448px !important;
+    }
+
+    .icon-nav-settings:hover {
+        background-position: -28px -84px !important;
+    }
+
+    .icon-nav-menu:hover {
+        background-position: -28px 0 !important;
+    }
+
+    .btn-navigation-nav-robux-md, 
+    .btn-navigation-nav-notification-stream-md, 
+    .btn-navigation-nav-settings-md, 
+    .btn-navigation-nav-menu-md {
+        background-color: transparent !important;
+    }
+
     .rbx-text-navbar-right.text-header {
         margin-bottom: 2px !important;
     }
+
     .font-header-2.nav-menu-title.text-header:hover {
         background: #1919191a !important;
         border-radius: 5px;
         height: 21px !important;
     } 
+
     div#wrap > div > div > div > ul > li > a {
         height: 33px !important; 
     }
+
     .rbx-header .rbx-navbar-header {
         width: 167px !important;
         padding: 0;
         margin-left: 9px;
         margin-right: 0;
     }
+
     .nav.rbx-navbar.hidden-xs.hidden-sm.col-md-5.col-lg-4 {
         padding-top: 3px;
         margin: 0;
         width: 25%;
     }
+
     .rbx-header .rbx-navbar li .nav-menu-title {
         width: auto;
     }
 
-    /*.profile-header .header-caption .header-details .details-info li .font-header-2:before {
-        content: "\A \A";
-        white-space: pre;
-    }*/
+    /* TAB SELECTION */
+    .rbx-tab-heading {
+        height: 43px;
+    }
 
+    .text-lead { 
+        line-height: 20px !important;
+    }
 
-    .profile-header .header-caption .header-title h2, .profile-header .header-caption .header-title span[class^="icon"] {
-        float: right !important;
+    /* PROFILE HEADER & AVATAR CARDS */
+    .profile-header .header-title .profile-name {
+        padding: 7.5px 0 0 8px;
     }
 
     .profile-header .header-caption .header-title .profile-name {
         float: left !important;
     }
 
+    .profile-header .header-title h2, 
+    .profile-header .header-title span[class^="icon"] {
+        float: right;
+    }
 
-    .avatar-card-fullbody .avatar-card-image, .avatar-card-fullbody .avatar-card-link, .avatar .avatar-card-image, .avatar .avatar-card-link {
+    .profile-header .header-caption .header-title h2, 
+    .profile-header .header-caption .header-title span[class^="icon"] {
+        float: right !important;
+    }
+
+    .avatar-card-fullbody .avatar-card-image, 
+    .avatar-card-fullbody .avatar-card-link, 
+    .avatar .avatar-card-image, 
+    .avatar .avatar-card-link {
         border-radius: 50% !important;
         box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
     }
-    /* TODO: make profile look more like 2016 - border-radius should be 0%, idk why i set it to 50% before*/
-    .avatar-card-fullbody .avatar-card-image:hover, .avatar-card-fullbody .avatar-card-link:hover, .avatar .avatar-card-image:hover, .avatar .avatar-card-link:hover {
+
+    .avatar-card-fullbody .avatar-card-image:hover, 
+    .avatar-card-fullbody .avatar-card-link:hover, 
+    .avatar .avatar-card-image:hover, 
+    .avatar .avatar-card-link:hover {
         box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.45);
     }
 
-    .light-theme .section-content, .light-theme .friends-carousel-container {
+    .avatar-card-fullbody .avatar-card-image, 
+    .avatar .avatar-card-image {
+        border: 0 solid transparent !important;
+        background-color: transparent;
+    }
+
+    .light-theme .section-content, 
+    .light-theme .friends-carousel-container {
         box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
     }
 
-    /* .light-theme .remove-panel:not(.people-list) {
-        background-color: transparent;
-        padding: 0px;
-    } */
-
-
-    .builder-font .font-caption-body:hover, .builder-font .tooltip .tooltip-inner:hover {
+    .builder-font .font-caption-body:hover, 
+    .builder-font .tooltip .tooltip-inner:hover {
         font-size: 16px;
         font-weight: 300;
         text-decoration: none;
-    }
-
-
-    .profile-header .header-title .profile-name {
-        padding: 7.5px 0 0 8px;
     }
 
     .profile-header .header-userstatus .header-userstatus-text span.userstatus-editable {
         cursor: pointer;
         margin-top: 4px;
     }
-
-
-
-    /*.text-name .font-caption-body .ng-binding:hover
-        font-size: 24px;
-        font-weight: 300;
-        text-decoration: underline;
-    }*/
-
-
-
 
     h1, h2, h3, h4, h5 {
         padding: 0 0 5px 0 !important;
@@ -1379,8 +1454,6 @@
         padding-top: 10px;
     }
 
-
-
     .light-theme .rbx-tabs-horizontal .nav-tabs {
         box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
     }
@@ -1390,25 +1463,19 @@
         color: #393b3d;
     }
 
-    .avatar-card-fullbody .avatar-card-image, .avatar .avatar-card-image {
-        border: 0 solid transparent !important;
-    }
-
-
-
     .people-list .avatar-container .avatar-status {
         top: 61px !important;
         right: -2px !important;
     }
 
-
-
     .light-theme .avatar-card-container {
         box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
     }
+
     .light-theme .avatar-card-container:hover {
         box-shadow: 0 1px 6px 0 rgba(25,25,25,0.45);
     }
+
 
 
 
@@ -4032,7 +4099,7 @@
     
     /*Home Page Font Fix*/
     .css-1ia7jxc-textIconRowText[data-sdui-text="true"] {
-        font-weight: 200;
+        font-weight: 100;
         font-size: 25px;
     }
     /*Remove Arrows Next to IconRowText (not sure if this is fully accurate but I based it off of the homepage screenshot in the github README.md)*/
