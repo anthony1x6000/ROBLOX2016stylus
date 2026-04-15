@@ -391,7 +391,8 @@
         background-color: transparent;
     }
 
-    .game-card-container thumbnail-2d, .game-card-thumb-container {
+    .game-card-container thumbnail-2d, .game-card-thumb-container, 
+    .game-card-link .game-tile-thumb {
         height: 150px;
         width: 100%;
         display: inline-block;
@@ -3265,7 +3266,8 @@
     transition: padding 2s, filter 1.9s;
     } */
     .game-cards .game-card .game-card-info,
-    .game-cards .game-card .game-card-name {
+    .game-cards .game-card .game-card-name,
+    .css-1ugh0vn-textIconRowText.css-59f5rs-textOverride {
         line-height: 20px;
     /*     margin-top: 0; */
         font-weight: 300;
