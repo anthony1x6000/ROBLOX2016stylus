@@ -1,12 +1,9 @@
 # ROBLOX 2016 Userstyle & helloUser.user.js
 A UserStyle that changes the look of ROBLOX to be more faithful to what it would look like back in 2016.\
 **To install this userstyle, click [here](https://userstyles.world/api/style/1485.user.css).** 
-## Current Installs
-- Total installs: 157450
-- Weekly installs: 1008
-
+## Thanks for over 157450 installs!
 See stats [here](https://userstyles.world/style/1485/roblox-2016-dev12-27-2025).
-
+# Install
 If you don't have it already, this requires Stylus to function. Get it at the [Chrome Web Store](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or at [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/styl-us/). \
 ![Preview of style](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/images/2016_stuff/preview.png?raw=true "Preview")
 ## helloUser.user.js
