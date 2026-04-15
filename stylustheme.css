@@ -1219,7 +1219,8 @@
         height: 40px;
         padding-top: 3px;
     }
-    /* changing top bar stuff I FOUND OUT HOW! Not really I just looked at Ologist's code and saw that he figured it out so I'm stealing it */ 
+
+    /* Update top nav bar with legacy words */
     ul.rbx-navbar > li:nth-child(1) > a
         {
         font-size: 0 !important;
@@ -1265,6 +1266,14 @@
         content: "ROBUX";
         font-size: 16px;
         }
+    /* update left nav bar with legacy words */ 
+    span[title="Connect"]:before {
+        content: "Friends" !important;
+        font-size: 16px !important; 
+    }
+    span[title="Connect"] {
+        font-size: 0 !important; 
+    }
 
     /* tHEADER, GRAY HIGHLIGHT */
     .light-theme .rbx-header .text-header, .light-theme .rbx-header .text-header:active, .light-theme .rbx-header .text-header:focus, .light-theme .rbx-header .text-header:hover, .light-theme .rbx-header .text-header:link, .light-theme .rbx-header .text-header:visited {

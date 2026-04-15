@@ -24,6 +24,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Userstyles.org] Fix upload issue, can now updated style on that website. 
 - [Game card border radius] Fix to 3px 3px 0 0 instead of 8px. 
 - [Home page] Fix header font weight to 300.
+- [Left nav bar] Update Connect to Friends.
 
 ### Find a bug?
 
