@@ -7,173 +7,180 @@ Line 44: /* latin */
 Line 52: /* latin */
 Line 60: /* latin */
 Line 69: /* end of font */
-Line 275: /* universal colors - universal buttons */
-Line 277: /* Hover green buttons */
-Line 303: /* Green buttons */
-Line 327: /*     border: 1px solid #02b757; */
-Line 334: /* End of universal */
-Line 400: /*         padding: 6px; */
-Line 459: /* search bar */
-Line 464: /* search results & bar */
-Line 506: /* auto complete in catalog */
-Line 527: /* Premium Icon Replacements (OBC) */
-Line 616: /*robux patch      */
-Line 617: /* Some moved to image patch section */
-Line 618: /*START  July 1st 2024 Robux Patch.      */
-Line 652: /*END  July 1st 2024 Robux Patch.      */
-Line 653: /* Remove nav-credit display */
-Line 772: /*white-space: nowrap !important;*/
-Line 1082: /* Play button changes */
-Line 1084: /*     position: relative; */
-Line 1085: /*     right: 1px; */
-Line 1096: /* popover join button */
-Line 1111: /*     top: 3px; */
-Line 1121: /* paid games play button - ref https://web.archive.org/web/20160501164208/roblox.com/games/388168427/ZOMBIE-UNIVERSE-BETA-TEST-SUNDAY */
-Line 1138: /* play button top and bottom bar things */
-Line 1146: /* avatar page try it on */
-Line 1152: /* fixing the color of the thumbnail arrow things */
-Line 1197: /* refresh ~~blue~~ WHITE (I was looking at 2015 not 2016 but personally I like 2015 better) - reference for all of this is at https://web.archive.org/web/20150627045216/https://www.roblox.com/games/9689581/Roblox-High-School#!/about*/
-Line 1212: /* maybe this will fix see more being short I probably did something to mess it up */
-Line 1223: /* Update top nav bar with legacy words */
-Line 1269: /* update left nav bar with legacy words */
-Line 1278: /* tHEADER, GRAY HIGHLIGHT */
-Line 1282: /* Header fix, background position, etc*/
-Line 1340: /* TODO: make profile look more like 2016 - border-radius should be 0%, idk why i set it to 50% before*/
-Line 1589: /* fixing the game tiles to be the old ones | GAMES PAGE CARD FIX */
-Line 1605: /* game tile shadows */
-Line 1608: /* Took a while to scout these rules out. */
-Line 1638: /* used to be margin-left: 11px; ^^*/
-Line 1679: /* chng val 4 smth */
-Line 1702: /* point of 100% removing the new game cards */
-Line 1716: /* fixing the game icon going to the right*/
-Line 1721: /* Stuff for my browser that hopefully won't mess something up */
-Line 1729: /* This did fix it (vertically) but I don't know if breaks anything */
-Line 1732: /* new games page fixes */
-Line 1736: /*sponsored ad */
-Line 1744: /* END OF GAME CARD FIXING STUFF */
-Line 1746: /* games page arrows & fix*/
-Line 1760: /* new games page fix */
-Line 1761: /* Game cover thing fixing gaps */
-Line 1784: /* games page fix right above here too changed 91 to 82 i think */
-Line 1905: /*better roblox */
-Line 1911: /*better roblox */
-Line 2743: /* Messing with the games tab */
-Line 2786: /* --------------- */
-Line 2787: /* side bar tab thing */
-Line 2808: /* login stuff */
-Line 2830: /* Signup page */
-Line 2831: /* 2016      */
-Line 2928: /* robux icon change */
-Line 2942: /* See all button fixes */
-Line 2957: /* avatar friends playing game tile */
-Line 2970: /* if you want to centered again remove line 2731 to 2732 */
-Line 2972: /* continue move down */
-Line 2978: /* notification top */
-Line 2994: /* 404 error page */
-Line 3005: /* ignore accept friend request */
-Line 3020: /* roblox powering imagination chat & party */
-Line 3023: /* Buy premium page */
-Line 3043: /* catalog changes  */
-Line 3044: /* 10/16/2021 */
-Line 3070: /* changed the border radius of the input fields */
-Line 3088: /* recommended catalog */
-Line 3095: /* avatar page changes */
-Line 3120: /*accept friend button */
-Line 3130: /*game search results */
-Line 3131: /* big game icon (featured game)*/
-Line 3157: /* pushing results to the right */
-Line 3163: /*thanks for visiting roblox */
-Line 3168: /* scroll bars*/
-Line 3172: /* re-activate screen/ban screen */
-Line 3173: /* replicating old buttons | IE 11 type beat */
-Line 3174: /* TAGS: NOT NEEDED */
-Line 3183: /* hopefully this nulls it */
-Line 3190: /* sitewide defaults */
-Line 3191: /* search bars */
-Line 3194: /* dropdowns */
-Line 3201: /* profile game card layout */
-Line 3211: /* signup header */
-Line 3223: /* i know that this is the best way of doing this but it works */
-Line 3227: /* game page about store servers bottom highlight fix */
-Line 3231: /* Divider on the left */
-Line 3239: /* I agree button */
-Line 3245: /* 10/15/2021 */
-Line 3281: /*     margin-top: 0; */
-Line 3284: /* hide avatar icon on sidebar */
-Line 3289: /* for legacy pages */
-Line 3294: /* remove weird line on unvoted game cards */
-Line 3298: /* view featured items hover button fix & full width button fix*/
-Line 3326: /* STATIC gamecards */
-Line 3338: /* View Details hover over player */
-Line 3343: /* Top header */
-Line 3347: /* remove suggested avatar items */
-Line 3353: /* favorites on profile */
-Line 3360: /* Catalog */
-Line 3365: /*     robux */
-Line 3373: /* popover */
-Line 3380: /* Server tab */
-Line 3384: /* Private server/VIP server change name button */
-Line 3402: /* welcome user */
-Line 3441: /* Remove discover */
-Line 3445: /* IMAGE PATCH, Buy Robux */
-Line 3446: /* Add in */
-Line 3473: /*   End add in   */
-Line 3474: /* Part of Robux Patch */
-Line 3510: /*         filter: invert(0.6); */
-Line 3518: /* Small roblox logo  */
-Line 3601: /* Notification icon fix */
-Line 3615: /* Group search fix */
-Line 3627: /* Profile groups */
-Line 3637: /*end better roblox profile groups  */
-Line 3663: /*     display: none; */
-Line 3693: /* remove banner desktop app */
-Line 3702: /* notification box, updated again December 26, 2025 */
-Line 3707: /* Notification background fix */
-Line 3744: /* notification stream buttons, push to right */
-Line 3756: /* Game name */
-Line 3757: /* Buy it with */
-Line 3761: /* top bar pfp */
-Line 3765: /* Catalog patches */
-Line 3772: /* Dark theme modifications */
-Line 3799: /* Home page, wide card hover fix (Recommended For You)*/
-Line 3808: /* Todays picks */
-Line 3822: /* New games interface patch : 001  */
-Line 3823: /* 001 : User Home  */
-Line 3824: /* Modify width of home page */
-Line 3825: /* start problematic code */
-Line 3873: /* end problematic code */
-Line 3877: /*             prevents card from moving */
-Line 3925: /*     Remove Today's picks */
-Line 3929: /* Friends carousel  */
-Line 3939: /*  Catalog fixes    */
-Line 3960: /* Game description fixes      */
-Line 3978: /* Attempt to fix problematic BTRoblox line */
-Line 3986: /* Or 'initial', or '0', depending on default */
-Line 3989: /*  Experience Page    */
-Line 3997: /* Don't mess with, modified home page game tiles */
-Line 4023: /* messsage back icon fix */
-Line 4035: /*Homepage Tweaks (The Continuation of this is Pt. 2, which is near the top of the userstyle)*/
-Line 4036: /*Remove New Homepage Editions Pt. 1 (If you determine that Pt.1 impedes site functionality, feel free to make it into a toggleable option as well)*/
-Line 4044: /*Home Page Font Fix*/
-Line 4049: /*Remove Arrows Next to IconRowText (not sure if this is fully accurate but I based it off of the homepage screenshot in the github README.md)*/
-Line 4054: /*Profile Accuracy Fixes*/
-Line 4056: /* fix currently wearing, collections cards */
-Line 4057: /* fix font weight */
-Line 4072: /* move collections section down */
-Line 4079: /* overflow visible so shadow is not cut on the collections carousel */
-Line 4083: /* ensure currently wearing hides overflow, to negate the top rule */
-Line 4087: /* Continue games, modify height, lazy, will probably break in future */
-Line 4089: /*More Accurate Friend Text*/
-Line 4095: /* More Accurate Profile Header (really just a fix for how this style was before it broke)*/
-Line 4102: /*Accurate Stat Text (Friends, Followers Following) in Profile*/
-Line 4112: /*Accurate Friend Button in Profile*/
-Line 4134: /*Accurate Chat Button in Profile (or at least as accurate as I could get it because I couldn't figure out how to replace "Chat" with "Message"*/
-Line 4156: /*Accurate About and Creations Tab in Profile*/
-Line 4161: /*Fixed Profile Name Header Size and Padding (I have yet to figure out how to position it in the same way as the archive)*/
-Line 4173: /*You might not need this part because it has no effect, but it's closer to the archive this way*/
-Line 4177: /*Join Button Fix*/
-Line 4183: /* Outfit Settings cog */
-Line 4188: /* Content deleted */
-Line 4198: /* Catalog button */
-Line 4212: /* Avatar editor header */
-Line 4218: /* move btr roblox profile favorites down to avoid overlap */
+Line 262: /* universal colors - universal buttons */
+Line 264: /* Hover green buttons */
+Line 290: /* Green buttons */
+Line 314: /*     border: 1px solid #02b757; */
+Line 321: /* End of universal */
+Line 387: /*         padding: 6px; */
+Line 446: /* search bar */
+Line 451: /* search results & bar */
+Line 493: /* auto complete in catalog */
+Line 514: /* Premium Icon Replacements (OBC) */
+Line 603: /*robux patch      */
+Line 604: /* Some moved to image patch section */
+Line 605: /*START  July 1st 2024 Robux Patch.      */
+Line 639: /*END  July 1st 2024 Robux Patch.      */
+Line 640: /* Remove nav-credit display */
+Line 759: /*white-space: nowrap !important;*/
+Line 1069: /* Play button changes */
+Line 1071: /*     position: relative; */
+Line 1072: /*     right: 1px; */
+Line 1083: /* popover join button */
+Line 1098: /*     top: 3px; */
+Line 1108: /* paid games play button - ref https://web.archive.org/web/20160501164208/roblox.com/games/388168427/ZOMBIE-UNIVERSE-BETA-TEST-SUNDAY */
+Line 1125: /* play button top and bottom bar things */
+Line 1133: /* avatar page try it on */
+Line 1139: /* fixing the color of the thumbnail arrow things */
+Line 1184: /* refresh ~~blue~~ WHITE (I was looking at 2015 not 2016 but personally I like 2015 better) - reference for all of this is at https://web.archive.org/web/20150627045216/https://www.roblox.com/games/9689581/Roblox-High-School#!/about*/
+Line 1199: /* maybe this will fix see more being short I probably did something to mess it up */
+Line 1210: /* Update top nav bar with legacy words */
+Line 1256: /* update left nav bar with legacy words */
+Line 1265: /* tHEADER, GRAY HIGHLIGHT */
+Line 1269: /* Header fix, background position, etc*/
+Line 1327: /* TODO: make profile look more like 2016 - border-radius should be 0%, idk why i set it to 50% before*/
+Line 1576: /* fixing the game tiles to be the old ones | GAMES PAGE CARD FIX */
+Line 1592: /* game tile shadows */
+Line 1595: /* Took a while to scout these rules out. */
+Line 1625: /* used to be margin-left: 11px; ^^*/
+Line 1663: /* chng val 4 smth */
+Line 1686: /* point of 100% removing the new game cards */
+Line 1700: /* fixing the game icon going to the right*/
+Line 1705: /* Stuff for my browser that hopefully won't mess something up */
+Line 1713: /* This did fix it (vertically) but I don't know if breaks anything */
+Line 1716: /* new games page fixes */
+Line 1720: /*sponsored ad */
+Line 1728: /* END OF GAME CARD FIXING STUFF */
+Line 1730: /* games page arrows & fix*/
+Line 1744: /* new games page fix (scroller rules now consolidated below) */
+Line 1750: /* CAROUSEL ARROW STYLES */
+Line 1752: /* Base container styling (moved from top of stylesheet). */
+Line 1783: /* Positioning, dimensions, and rounded corners. */
+Line 1802: /* Bar background, width, layer depth, and hover states. */
+Line 1844: /* Nudging and positioning the chevrons. */
+Line 1885: /* Masks seams and gaps around the carousel control. */
+Line 1886: /* Game cover thing fixing gaps */
+Line 1902: /* games page fix right above here too changed 91 to 82 i think */
+Line 1997: /* ======= End of SCROLLER / CAROUSEL BUTTONS ======= */
+Line 2078: /*better roblox */
+Line 2084: /*better roblox */
+Line 2914: /* Messing with the games tab */
+Line 2957: /* --------------- */
+Line 2958: /* side bar tab thing */
+Line 2979: /* login stuff */
+Line 3001: /* Signup page */
+Line 3002: /* 2016      */
+Line 3099: /* robux icon change */
+Line 3113: /* See all button fixes */
+Line 3128: /* avatar friends playing game tile */
+Line 3141: /* if you want to centered again remove line 2731 to 2732 */
+Line 3143: /* continue move down */
+Line 3149: /* notification top */
+Line 3165: /* 404 error page */
+Line 3176: /* ignore accept friend request */
+Line 3191: /* roblox powering imagination chat & party */
+Line 3194: /* Buy premium page */
+Line 3214: /* catalog changes  */
+Line 3215: /* 10/16/2021 */
+Line 3241: /* changed the border radius of the input fields */
+Line 3259: /* recommended catalog */
+Line 3266: /* avatar page changes */
+Line 3291: /*accept friend button */
+Line 3301: /*game search results */
+Line 3302: /* big game icon (featured game)*/
+Line 3328: /* pushing results to the right */
+Line 3334: /*thanks for visiting roblox */
+Line 3339: /* scroll bars*/
+Line 3343: /* re-activate screen/ban screen */
+Line 3344: /* replicating old buttons | IE 11 type beat */
+Line 3345: /* TAGS: NOT NEEDED */
+Line 3354: /* hopefully this nulls it */
+Line 3361: /* sitewide defaults */
+Line 3362: /* search bars */
+Line 3365: /* dropdowns */
+Line 3372: /* profile game card layout */
+Line 3382: /* signup header */
+Line 3394: /* i know that this is the best way of doing this but it works */
+Line 3398: /* game page about store servers bottom highlight fix */
+Line 3402: /* Divider on the left */
+Line 3410: /* I agree button */
+Line 3416: /* 10/15/2021 */
+Line 3452: /*     margin-top: 0; */
+Line 3455: /* hide avatar icon on sidebar */
+Line 3460: /* for legacy pages */
+Line 3465: /* remove weird line on unvoted game cards */
+Line 3469: /* view featured items hover button fix & full width button fix*/
+Line 3497: /* STATIC gamecards */
+Line 3508: /* View Details hover over player */
+Line 3513: /* Top header */
+Line 3517: /* remove suggested avatar items */
+Line 3523: /* favorites on profile */
+Line 3530: /* Catalog */
+Line 3535: /*     robux */
+Line 3543: /* popover */
+Line 3550: /* Server tab */
+Line 3554: /* Private server/VIP server change name button */
+Line 3572: /* welcome user */
+Line 3611: /* Remove discover */
+Line 3615: /* IMAGE PATCH, Buy Robux */
+Line 3616: /* Add in */
+Line 3643: /*   End add in   */
+Line 3644: /* Part of Robux Patch */
+Line 3680: /*         filter: invert(0.6); */
+Line 3688: /* Small roblox logo  */
+Line 3771: /* Notification icon fix */
+Line 3785: /* Group search fix */
+Line 3797: /* Profile groups */
+Line 3807: /*end better roblox profile groups  */
+Line 3833: /*     display: none; */
+Line 3863: /* remove banner desktop app */
+Line 3872: /* notification box, updated again December 26, 2025 */
+Line 3877: /* Notification background fix */
+Line 3914: /* notification stream buttons, push to right */
+Line 3926: /* Game name */
+Line 3927: /* Buy it with */
+Line 3931: /* top bar pfp */
+Line 3935: /* Catalog patches */
+Line 3942: /* Dark theme modifications */
+Line 3969: /* Home page, wide card hover fix (Recommended For You)*/
+Line 3978: /* Todays picks */
+Line 3992: /* New games interface patch : 001  */
+Line 3993: /* 001 : User Home  */
+Line 3994: /* Modify width of home page */
+Line 3995: /* start problematic code */
+Line 4043: /* end problematic code */
+Line 4047: /*             prevents card from moving */
+Line 4095: /*     Remove Today's picks */
+Line 4099: /* Friends carousel  */
+Line 4109: /*  Catalog fixes    */
+Line 4130: /* Game description fixes      */
+Line 4148: /* Attempt to fix problematic BTRoblox line */
+Line 4156: /* Or 'initial', or '0', depending on default */
+Line 4159: /*  Experience Page    */
+Line 4167: /* Don't mess with, modified home page game tiles */
+Line 4193: /* messsage back icon fix */
+Line 4205: /*Homepage Tweaks (The Continuation of this is Pt. 2, which is near the top of the userstyle)*/
+Line 4206: /*Remove New Homepage Editions Pt. 1 (If you determine that Pt.1 impedes site functionality, feel free to make it into a toggleable option as well)*/
+Line 4214: /*Home Page Font Fix*/
+Line 4219: /*Remove Arrows Next to IconRowText (not sure if this is fully accurate but I based it off of the homepage screenshot in the github README.md)*/
+Line 4224: /*Profile Accuracy Fixes*/
+Line 4226: /* fix currently wearing, collections cards */
+Line 4227: /* fix font weight */
+Line 4242: /* move collections section down */
+Line 4249: /* overflow visible so shadow is not cut on the collections carousel */
+Line 4253: /* ensure currently wearing hides overflow, to negate the top rule */
+Line 4257: /* Continue games, modify height, lazy, will probably break in future */
+Line 4259: /*More Accurate Friend Text*/
+Line 4265: /* More Accurate Profile Header (really just a fix for how this style was before it broke)*/
+Line 4272: /*Accurate Stat Text (Friends, Followers Following) in Profile*/
+Line 4282: /*Accurate Friend Button in Profile*/
+Line 4304: /*Accurate Chat Button in Profile (or at least as accurate as I could get it because I couldn't figure out how to replace "Chat" with "Message"*/
+Line 4326: /*Accurate About and Creations Tab in Profile*/
+Line 4331: /*Fixed Profile Name Header Size and Padding (I have yet to figure out how to position it in the same way as the archive)*/
+Line 4343: /*You might not need this part because it has no effect, but it's closer to the archive this way*/
+Line 4347: /*Join Button Fix*/
+Line 4353: /* Outfit Settings cog */
+Line 4358: /* Content deleted */
+Line 4368: /* Catalog button */
+Line 4382: /* Avatar editor header */
+Line 4388: /* move btr roblox profile favorites down to avoid overlap */
