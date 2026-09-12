@@ -84,21 +84,8 @@
         background-color: transparent;
         color: #000000;
     }
-    .light-theme .scroller {
-        background-color: #ffffff;
-        border: 1px solid #b8b8b8;
-    }
-    .dark-theme .scroller {
-        transition: background-color .4s ease !important;
-        background: #191b1dc4;
-    }
-    .light-theme .scroller:focus, .light-theme .scroller:hover {
-        background-color: #ffffff;
-    }
-    .light-theme .scroller.disabled {
-        background-color: #f0f1f0;
-        opacity: 1;
-    }
+    /* NOTE: All .scroller carousel rules are consolidated in the
+       "SCROLLER / CAROUSEL BUTTONS" section (see games page arrows area). */
 
     
     *
@@ -1646,11 +1633,8 @@
         transition-duration: 0s;
         transition-delay: 0s;
     }
-    .scroller.next, .scroller.prev {
-        height: 242px !important;
-        top: -3px;
-
-    }
+    /* NOTE: .scroller.next/.prev sizing moved to the consolidated
+       "SCROLLER / CAROUSEL BUTTONS" section below. */
 
     .hover-game-tile.visible-tile:hover {
         width: 345px;
@@ -1757,35 +1741,68 @@
     /* .arrow, .scroller.prev.disabled, .scroller.next, .scroller.next.disabled, .scroller.prev {
         height: 242px;   
     } */ 
-    /* new games page fix */ 
-    /* Game cover thing fixing gaps */ 
-    .light-theme .horizontal-scroller .scroller.next .spacer {
-        left: 29px;
-        height: 115%;
-        bottom: -5px;
-        background-color: #e3e3e3;
+    /* new games page fix (scroller rules now consolidated below) */
+    /* Not scroller-related: notification popover arrow. Kept outside
+       the consolidated scroller section. */
+    div#notification-stream-popover > div.arrow {
+        box-shadow: 0 0 0;
     }
-    .scroller.prev, div.prev > div.arrow{
+    /* ============================================================
+       SCROLLER / CAROUSEL BUTTONS (consolidated)
+       All .scroller, carousel .arrow, .icon-games-carousel, and
+       carousel .spacer rules live here. Nothing scroller-related
+       should remain scattered elsewhere in this stylesheet.
+       ------------------------------------------------------------
+       Structure:
+         1. Outer container (.scroller, .scroller.next/.prev)
+         2. Arrow bar (.arrow)
+         3. Arrow icons (.icon-games-carousel-left/right)
+         4. Background spacing fix (.spacer)
+       ============================================================ */
+
+    /* ---------- 1. Outer container (.scroller) ---------- */
+    /* Base container styling (moved from top of stylesheet). */
+    .light-theme .scroller {
+        background-color: #ffffff;
+        border: 1px solid #b8b8b8;
+    }
+    .dark-theme .scroller {
+        transition: background-color .4s ease !important;
+        background: #191b1dc4;
+    }
+    .light-theme .scroller:focus, .light-theme .scroller:hover {
+        background-color: #ffffff;
+    }
+    .light-theme .scroller.disabled {
+        background-color: #f0f1f0;
+        opacity: 1;
+    }
+    .light-theme .scroller.disabled {
+        border: 1px solid #e3e3e3;
+    }
+
+    /* Positioning, dimensions, and rounded corners. */
+    .scroller.next, .scroller.prev {
+        height: 242px !important;
+        top: -3px;
+    }
+    .scroller.prev, div.prev > div.arrow {
         border-radius: 3px 0px 0px 3px;
     }
-    .scroller.next, div.next > div.arrow{
+    .scroller.next, div.next > div.arrow {
         border-radius: 0px 3px 3px 0px;
     }
 
-    .light-theme .horizontal-scroller .scroller.prev .spacer {
-        right: 29px;
-        height: 115%;
-        background-color: #e3e3e3;
-        top: -10px;
+    /* STATIC gamecards override: match card height. Keep this AFTER
+       the 242px rule above so it wins (same specificity, both
+       !important). Moved here from the "STATIC gamecards" section. */
+    .scroller.prev, .scroller.next {
+        height: 247px !important;
     }
-    .spacer {
-        z-index: 0 !important;
-    }
-    /* games page fix right above here too changed 91 to 82 i think */ 
-    .icon-games-carousel-right {
-        margin-right: 3px;
-    }
-    .light-theme  .scroller .arrow {
+
+    /* ---------- 2. Arrow bar (.arrow) ---------- */
+    /* Bar background, width, layer depth, and hover states. */
+    .light-theme .scroller .arrow {
         z-index: 2 !important;
         left: 0px;
         background-color: #fff;
@@ -1797,31 +1814,63 @@
         z-index: 2 !important;
         left: 1px;
         box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
-    } */ 
+    } */
     .arrow:hover {
         z-index: 5;
         cursor: pointer;
         box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
-    }
-    div#notification-stream-popover > div.arrow {
-    box-shadow: 0 0 0;
     }
     .light-theme .disabled > .arrow {
         box-shadow: 0 0 0;
         cursor: default;
         background-color: #f2f4f5;
     }
-    div.disabled > div > span.icon-games-carousel-left {
-        filter: opacity(.3);
-    }
+    /*
+    .light-theme .scroller:focus, .light-theme .scroller:hover {
+        background-color: #fff;
+    } */
 
+    /* ---------- 3. Arrow icons (.icon-games-carousel-*) ---------- */
+    /* Nudging and positioning the chevrons. */
+    .icon-games-carousel-right {
+        margin-right: 3px;
+    }
     .light-theme .scroller .icon-games-carousel-right {
         margin-left: -7px;
     }
-    /* 
-    .light-theme .scroller:focus, .light-theme .scroller:hover {
-        background-color: #fff;
-    } */ 
+    div.disabled > div > span.icon-games-carousel-left {
+        filter: opacity(.3);
+    }
+    /* Sprite sheet + auto-sizing for these icons is handled by the
+       shared generic icon rules (intentionally NOT moved here so the
+       other ~70 icons keep working):
+       - ".icon-additem, ... .icon-games-carousel-left, ...,
+          .icon-games-carousel-right, ... { background-size: auto; }"
+       - ".light-theme .icon-additem, ... .light-theme
+          .icon-games-carousel-left, .light-theme
+          .icon-games-carousel-right, ... { background-image:
+          url(https://images.rbxcdn.com/8f9d73863e52851ec5910be4ffa5ed78-generic_01312019.svg); }" */
+
+    /* ---------- 4. Background spacing fix (.spacer) ---------- */
+    /* Masks seams and gaps around the carousel control. */
+    /* Game cover thing fixing gaps */
+    .light-theme .horizontal-scroller .scroller.next .spacer {
+        left: 29px;
+        height: 115%;
+        bottom: -5px;
+        background-color: #e3e3e3;
+    }
+    .light-theme .horizontal-scroller .scroller.prev .spacer {
+        right: 29px;
+        height: 115%;
+        background-color: #e3e3e3;
+        top: -10px;
+    }
+    .spacer {
+        z-index: 0 !important;
+    }
+    /* games page fix right above here too changed 91 to 82 i think */
+    /* ======= End of SCROLLER / CAROUSEL BUTTONS ======= */
     .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image, .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image:hover {
     box-shadow: none !important;
     border: #c5c5c5 1px solid !important;
@@ -1985,10 +2034,8 @@
         border-radius: 0px;
     }
 
-    .light-theme .scroller.disabled
-    {
-        border: 1px solid #e3e3e3;
-    }
+    /* NOTE: .light-theme .scroller.disabled border moved to the
+       consolidated "SCROLLER / CAROUSEL BUTTONS" section. */
 
 
     .rbx-tabs-horizontal .rbx-tab .rbx-tab-heading.active, .rbx-tabs-horizontal .rbx-tab .rbx-tab-heading:active, .rbx-tabs-horizontal .rbx-tab .rbx-tab-heading:focus, .rbx-tabs-horizontal .rbx-tab .rbx-tab-heading:hover
@@ -3323,10 +3370,9 @@
         overflow-x: visible;
         overflow-y: visible;
     }
-    /* STATIC gamecards */ 
-        .scroller.prev, .scroller.next {
-            height: 247px !important;
-        }
+    /* STATIC gamecards */
+    /* NOTE: .scroller.prev/.next height override (247px) moved to the
+       consolidated "SCROLLER / CAROUSEL BUTTONS" section. */
         .game-card-container {
             height: 240px;
         }
