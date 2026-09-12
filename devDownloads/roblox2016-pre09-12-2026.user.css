@@ -3,14 +3,14 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        09.12.2026.1789222805
+@version        09.12.2026.1789227803
 @license        MIT License
 @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
 @var select displayRecommended 'Display Recommended Games at home?' ['block:Visible', 'none:Hidden']
 @var select creditVis 'Hide credit on nav bar?' ['block:Visible', 'none:Hidden']
 @var select iconPadding 'Use 2016 icon padding?' ['0:No', '9px 6px 6px 6px']
 ==/UserStyle== */
-@-moz-document domain("web.roblox.com"), domain("www.roblox.com") {
+@-moz-document domain("www.roblox.com") {
 /* Hey! if you see this, check out the Github repository for this!
     https://github.com/anthony1x6000/ROBLOX2016stylus
     You can find the style under releases. Make sure to check out the beta "stylustheme.css."
@@ -267,9 +267,6 @@
         font-size: 0;
         font-weight: 500;
     } */
-    .chat-container.collapsed .chat-header .chat-header-title {
-        color: #fff;
-    }
 
     /* universal colors - universal buttons */
 
@@ -321,7 +318,7 @@
     li.signup-button-container {
         border-radius: 3px;
     }
-    .light-theme .btn-growth-md, button.btn-primary-md.ng-binding[ng-click='chat\(\)'], .light-theme .btn-primary-md.disabled, .light-theme .btn-primary-md, button.btn-common-play-game-lg.btn-primary-md {
+    .light-theme .btn-growth-md, .light-theme .btn-primary-md.disabled, .light-theme .btn-primary-md, button.btn-common-play-game-lg.btn-primary-md {
         background-color: #02b757;
     /*     border: 1px solid #02b757; */
         border-radius: 1px;
@@ -334,9 +331,6 @@
 
 
 
-    .light-theme .dialogs .dialog-container .dialog-message-container .indicated-message-bubble {
-        color: rgb(116, 116, 116);
-    }
     .builder-font .font-footer, .builder-font .font-footer:active, .builder-font .font-footer:focus, .builder-font .font-footer:hover, .builder-font .font-footer:link, .builder-font .font-footer:visited, .builder-font .text-footer, .builder-font .text-footer:active, .builder-font .text-footer:focus, .builder-font .text-footer:hover, .builder-font .text-footer:link, .builder-font .text-footer:visited, .builder-font .xsmall, .builder-font .xsmall:active, .builder-font .xsmall:focus, .builder-font .xsmall:hover, .builder-font .xsmall:link, .builder-font .xsmall:visited, .builder-font .xxsmall, .builder-font .xxsmall:active, .builder-font .xxsmall:focus, .builder-font .xxsmall:hover, .builder-font .xxsmall:link, .builder-font .xxsmall:visited {
         font-size: 10px !important;
         font-weight: 500 !important;
@@ -1103,6 +1097,11 @@
     }
     button.btn-full-width > span.icon-common-play {
         visibility: hidden;
+    }
+    .btn-common-play-game-lg span[class^=icon-], .btn-common-play-game-lg span[class^=icon-]:hover, button.btn-common-play-game-lg span[class^=icon-], button.btn-common-play-game-lg span[class^=icon-]:hover, a.btn-common-play-game-lg span[class^=icon-], a.btn-common-play-game-lg span[class^=icon-]:hover {
+        background-size: 72px;
+        width: 36px;
+        height: 22px !important;
     }
     .icon-common-play:after {
         visibility: visible;
@@ -2005,6 +2004,22 @@
     }
     .clearfix.horizontal-scroll-window {
         overflow-x: hidden;
+        height: 300px;
+    }
+    /* avatar tabs keep tab height, not carousel height */
+    .avatar-tabs-scroller .scroller-new,
+    .avatar-tabs-scroller [data-testid="game-carousel-scroll-bar"] {
+        height: 43px !important;
+    }
+    .avatar-tabs-scroller .clearfix.horizontal-scroll-window,
+    .avatar-tabs-scroller .horizontally-scrollable {
+        height: auto !important;
+    }
+    /* search pill carousel ("Try searching for") keeps pill height, not game-card height */
+    .search-pill-carousel-container .scroller.next,
+    .search-pill-carousel-container .scroller.prev,
+    .search-pill-carousel-container [data-testid="game-carousel-scroll-bar"] {
+        height: 32px !important;
     }
     /* ======= End of SCROLLER / CAROUSEL BUTTONS ======= */
     .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image, .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image:hover {
@@ -2052,10 +2067,7 @@
     }
 
 
-    .rbx-header .age-bracket-label .age-bracket-label-username, .chat-container.collapsed .chat-header .chat-header-title {
-        color: #fff !important;
-    }
-    .chat-windows-header .chat-header-label span{
+    .rbx-header .age-bracket-label .age-bracket-label-username {
         color: #fff !important;
     }
 
@@ -2198,24 +2210,7 @@
         background-image: url(https://images.rbxcdn.com/153fd3209692232cd8087cad74a669b0-games.svg);
     }
 
-    div#chat-header, div.dialog-header {
-        background-color: #00a2ff;
-        border-top-right-radius: 4px;
-        border-top-left-radius: 4px;
-    }
-    .dark-theme div#chat-header, div.dialog-header  {
-        background: var(--darkThemeBlue);
-    }
 
-
-    span.font-caption-header.chat-header-title.ng-binding:after {
-        content: " & Party";
-    }
-
-    .light-theme .icon-chat-add-friends, .light-theme .icon-chat-arrow-right, .light-theme .icon-chat-back, .light-theme .icon-chat-close-black, .light-theme .icon-chat-close-white, .light-theme .icon-chat-error, .light-theme .icon-chat-friends, .light-theme .icon-chat-group-create, .light-theme .icon-chat-group-label, .light-theme .icon-chat-group-name, .light-theme .icon-chat-info-black, .light-theme .icon-chat-info-white, .light-theme .icon-chat-more-dialogs, .light-theme .icon-chat-more-options, .light-theme .icon-chat-notification, .light-theme .icon-chat-notification-mute, .light-theme .icon-chat-party-label-black, .light-theme .icon-chat-party-label-white, .light-theme .icon-chat-pin, .light-theme .icon-chat-pinned, .light-theme .icon-chat-place-favorite, .light-theme .icon-chat-place-my, .light-theme .icon-chat-place-popular, .light-theme .icon-chat-place-recent, .light-theme .icon-chat-place-recommended, .light-theme .icon-chat-place-vip, .light-theme .icon-chat-play-together, .light-theme .icon-chat-resend, .light-theme .icon-chat-search, .light-theme .icon-chat-search-cancel, .light-theme .icon-chat-search-white, .light-theme .icon-chat-selected, .light-theme .icon-chat-set-place, .light-theme .icon-chat-unpin, .light-theme .icon-default-chat
-    {
-        background-image: url(https://images.rbxcdn.com/f4d8925211682759829e2662560c7639-chat_02142018.svg);
-    }
 
     .light-theme .icon-clanpoint, .light-theme .icon-default-branded, .light-theme .icon-favorite, .light-theme .icon-follow-game, .light-theme .icon-follow-game-gray, .light-theme .icon-leaderboard, .light-theme .icon-playerpoint
     {
@@ -2236,35 +2231,12 @@
         filter: grayscale(1);
     }
 
-    .light-theme .dialogs .dialog-container .dialog-header
-    {
-        background-color: #00a2ff;
-        color: #ffffff;
-    }
-
-    .light-theme .dialogs .dialog-container .dialog-message-container .dialog-message
-    {
-        background-color: #00a2ff;
-        color: #ffffff;
-        border: 1px solid #00a2ff
-    }
-
-    .light-theme .dialogs .dialog-container .dialog-message-container.message-inbound .dialog-message
-    {
-    background-color: #ffffff;
-        color: #393b3d;
-        border: 1px solid #e3e3e3;
-    }
 
     .light-theme .text-emphasis, .light-theme .text-sec, .light-theme .text-warning
     {
         color: inherit;
     }
 
-    .light-theme .dialog-container .dialog-input-container .dialog-input
-    {
-        background-color: #fff;
-    }
 
     .light-theme .game-card-container {
         background-color: #fff;
@@ -2313,7 +2285,7 @@
         display: none
     }
 
-    .rbx-header .age-bracket-label .age-bracket-label-username, .chat-container.collapsed .chat-header .chat-header-title
+    .rbx-header .age-bracket-label .age-bracket-label-username
     {
         color: #fff;
     }
@@ -2528,6 +2500,12 @@
     border-radius: 1px;
     }
 
+    /* Game page tabs (About / Store / Servers) heading fix */
+    .light-theme .rbx-tab .rbx-tab-heading {
+        background-color: white !important;
+        color: var(--color-content-emphasis);
+    }
+
     .light-theme .rbx-tabs-horizontal .rbx-tab .rbx-tab-heading.active
     {
             box-shadow: inset 0 -4px 0 0 #00a2ff;
@@ -2564,7 +2542,7 @@
         opacity: 0.35 !important;
     } */
 
-    .chat-windows-header .chat-header-label span, div.robux-upsell > button > h4 {
+    div.robux-upsell > button > h4 {
         color: #fff;
     }
 
@@ -2670,6 +2648,16 @@
         border-radius: 1px;
         background: #fff;
     }
+    .light-theme .touch .btn-control-md, .light-theme .touch .btn-control-md:hover, .light-theme .touch .btn-control-md:focus, .light-theme .touch .btn-control-md:visited, .light-theme .touch .btn-control-md:active, .light-theme .touch .btn-control-md.active, .dark-theme .touch .btn-control-md, .dark-theme .touch .btn-control-md:hover, .dark-theme .touch .btn-control-md:focus, .dark-theme .touch .btn-control-md:visited, .dark-theme .touch .btn-control-md:active, .dark-theme .touch .btn-control-md.active {
+        color: #191919;
+        background-color: #fff;
+        border-color: #b8b8b8;
+    }
+    .light-theme .touch .btn-control-md:focus, .light-theme .touch .btn-control-md:hover, .dark-theme .touch .btn-control-md:focus, .dark-theme .touch .btn-control-md:hover {
+        box-shadow: 0 1px 4px 0 rgba(25,25,25,0.45);
+        border-radius: 1px;
+        background: #fff;
+    }
 
     .scale-container .text-label
     {
@@ -2690,16 +2678,6 @@
 
 
 
-    .light-theme .dialogs .dialog-container.active .dialog-header
-    {
-        background-color: #00a2ff;
-        color: #ffffff;
-    }
-
-    .light-theme .dialogs .dialog-container.active .dialog-header .dialog-header-title
-    {
-        color: #fff;
-    }
 
     html body div.wrap div.container-main div.content div.profilecontainer ng.scope { background-color: #fff; }
 
@@ -2895,11 +2873,6 @@
     }
 
 
-    button.btn-primary-md.ng-binding[ng-click='chat\(\)']:hover {
-        background-color: #00b06f;
-        border-color: #00b06f;
-        color: #fff;
-    }
 
     /* .light-theme .rbx-header .rbx-navbar-search .rbx-navbar-search-option.selected
     {
@@ -3377,6 +3350,139 @@
     .input-dropdown-btn { /* dropdowns */ 
         border-radius: 1px !important; 
     }
+    /* avatar shop / catalog filter dropdowns -> 2016 .input-dropdown-btn look
+       old ref: https://web.archive.org/web/20160707045059cs_/https://static.rbxcdn.com/css/leanbase___17430914d145b9ee9176185d539072d7_m.css/fetch
+       new ref: https://css.rbxcdn.com/7f4f10003b8708331d7c8f20bf584a6478db0a83a986877b6c8d079f74be0a42-StyleGuide.css
+       2016 DOM: #FiltersAndSort > .input-group-btn.games-page-filter > button.input-dropdown-btn > span.rbx-selection-label + span.icon-down-16x16
+       modern DOM: .filters-container > .filter-items-container > div > button.filter-select.btn-primary-md.btn-min-width > span.filter-display-text + span.icon-expand-arrow-selected
+       2016 base: bg #fff, border #B8B8B8, text #191919, weight 400, padding 5px 12px, line-height 18px, radius 0, width 100%.
+       2016 label (.rbx-selection-label): float left, left-aligned, 16px/26px, weight 300.
+       2016 arrow (span[class^="icon"]): float right, margin-top 1px.
+       2016 hover/focus/open: bg #00A2FF, border #00A2FF, text #fff, no shadow. */
+    .filters-container .filter-items-container {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+    }
+    .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width,
+    .light-theme .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width,
+    .dark-theme .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width {
+        user-select: none;
+        background-color: #fff;
+        border: 1px solid #B8B8B8;
+        border-color: #B8B8B8;
+        border-radius: 0;
+        color: #191919;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        height: auto;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        padding: 5px 12px;
+        margin: 0;
+        line-height: 18px;
+        font-size: 16px;
+        box-shadow: none;
+    }
+    .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width:link,
+    .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width:visited {
+        color: #191919;
+        background-color: #fff;
+    }
+    .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width:hover,
+    .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width:focus,
+    .light-theme .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width:hover,
+    .light-theme .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width:focus,
+    .dark-theme .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width:hover,
+    .dark-theme .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width:focus {
+        background-color: #00A2FF;
+        border-color: #00A2FF;
+        color: #fff;
+        box-shadow: none;
+    }
+    .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width:active,
+    .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width.active,
+    .filters-container .filter-items-container .open button.filter-select.btn-primary-md.btn-min-width {
+        background-color: #00A2FF;
+        border-color: #00A2FF;
+        color: #fff;
+        box-shadow: none;
+    }
+    .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width .filter-display-text {
+        flex: 1 1 auto;
+        text-align: left;
+        font-size: 16px;
+        font-weight: 300;
+        color: inherit;
+        padding: 0 8px 0 0;
+    }
+    .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width span[class^="icon"] {
+        flex: 0 0 auto;
+        margin: 1px 0 0 auto;
+        padding: 0;
+    }
+    .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width .icon-expand-arrow-selected {
+        background-image: url(https://images.rbxcdn.com/424995aeeb54e41f.svg);
+        background-position: 0 -272px;
+        background-size: 32px auto;
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width:hover .icon-expand-arrow-selected,
+    .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width:focus .icon-expand-arrow-selected,
+    .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width:active .icon-expand-arrow-selected,
+    .filters-container .filter-items-container .open button.filter-select.btn-primary-md.btn-min-width .icon-expand-arrow-selected {
+        filter: brightness(0) invert(1);
+    }
+    .filters-container .dropdown-menu {
+        background-color: #fff;
+        border-radius: 3px;
+        box-shadow: 0 -5px 20px rgba(25, 25, 25, 0.15);
+        font-size: 16px;
+        min-width: 105px;
+        width: 100%;
+    }
+    .filters-container .dropdown-menu li {
+        margin: 0;
+        padding: 0;
+        white-space: nowrap;
+        width: 100%;
+    }
+    .filters-container .dropdown-menu li:hover {
+        background-color: #F2F2F2;
+        box-shadow: 4px 0 0 0 #00A2FF inset;
+        cursor: pointer;
+    }
+    .filters-container .dropdown-menu li a {
+        display: block;
+        padding: 10px 12px;
+        line-height: 1.25;
+        white-space: nowrap;
+        color: #191919;
+    }
+    .filters-container .dropdown-menu li a:hover,
+    .filters-container .dropdown-menu li a:focus {
+        background-color: #F2F2F2;
+        box-shadow: 4px 0 0 0 #00A2FF inset;
+        text-decoration: none;
+    }
+    /* filter popup above game carousel scroll arrows
+       .sticky-header-sorts traps the modal in a z-index:1 context while the theme puts scroll bars at z-index:1000 */
+    .sticky-header-sorts {
+        z-index: 1001 !important;
+    }
+    .filters-container .filter-items-container .filters-modal-container {
+        z-index: 1001 !important;
+        box-shadow: none !important;
+    }
     .light-theme .btn-primary-md {
         border-radius: 5px;
     }
@@ -3569,6 +3675,15 @@
         box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
     } */
     .light-theme .btn-primary-md:hover, .light-theme .btn-primary-md:focus {
+        background: #00bf5a;
+        border-color: #00bf5a;
+    }
+    .light-theme .touch .btn-primary-md, .light-theme .touch .btn-primary-md:hover, .light-theme .touch .btn-primary-md:focus, .light-theme .touch .btn-primary-md:visited, .light-theme .touch .btn-primary-md:active, .light-theme .touch .btn-primary-md.active, .dark-theme .touch .btn-primary-md, .dark-theme .touch .btn-primary-md:hover, .dark-theme .touch .btn-primary-md:focus, .dark-theme .touch .btn-primary-md:visited, .dark-theme .touch .btn-primary-md:active, .dark-theme .touch .btn-primary-md.active {
+        color: #fff;
+        background-color: #08b454;
+        border-color: #08b454;
+    }
+    .light-theme .touch .btn-primary-md:hover, .light-theme .touch .btn-primary-md:focus, .dark-theme .touch .btn-primary-md:hover, .dark-theme .touch .btn-primary-md:focus {
         background: #00bf5a;
         border-color: #00bf5a;
     }
@@ -3778,7 +3893,8 @@
         box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.75) !important;
     }
     .horizontally-scrollable {
-        height: 240px !important;
+        height: 247px !important;
+        padding-top: 3px;
     }
     /* Notification icon fix */
         .icon-common-notification-bell {
@@ -3955,7 +4071,7 @@
     .dark-theme .stack .card-list .card-item {
         background-color: transparent;
     }
-    .dark-theme .age-rating-details, .dark-theme .item-card-container .item-card-thumb-container, .dark-theme .layer, .dark-theme .chat-search, .dark-theme .btn-uiblox-common-common-notification-bell-md:hover {
+    .dark-theme .age-rating-details, .dark-theme .item-card-container .item-card-thumb-container, .dark-theme .layer, .dark-theme .btn-uiblox-common-common-notification-bell-md:hover {
         background: none;
     }
     .dark-theme .item-card-container .item-card-equipped {
@@ -4008,7 +4124,10 @@
 
 
         div.game-card-text-pill {
-            display: none !important;  
+            background-color: #fff;
+            border: 1px solid #b8b8b8;
+            color: #191919;
+            border-radius: 1px;
         }
         @media (max-width: 767px) {
             .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile, 
@@ -4259,13 +4378,9 @@
         padding-top: 3px;
         overflow-x: visible;
     } /* overflow visible so shadow is not cut on the collections carousel */
-    div.profile-currently-wearing > div > div > div > div,
-    #HomeContainer > div.place-list-container > div > div > div:nth-child(3) > div.horizontal-scroller.games-list.home-page-games-list.dynamic-layout-sizing {
-        overflow-x: hidden;
-    } /* ensure currently wearing hides overflow, to negate the top rule */
 
     #HomeContainer > div.place-list-container > div > div > div:nth-child(3) > div.horizontal-scroller.games-list.home-page-games-list.dynamic-layout-sizing {
-        height: 243px;    
+        height: 247px;    
     } /* Continue games, modify height, lazy, will probably break in future */
 
     /*More Accurate Friend Text*/
@@ -4404,4 +4519,278 @@
     div.btr-profile-favorites > div > div > button.input-dropdown-btn {
         margin-top: 13px;
     }
+    /* Chat patches */
+    .light-theme .react-chat-root section[class*="react-chat-top-radius"] {
+        background-color: #fff !important;
+        border: 1px solid #b8b8b8 !important;
+        border-bottom: none !important;
+        border-radius: 4px 4px 0 0 !important;
+        box-shadow: 0 1px 4px 0 rgba(25,25,25,0.3) !important;
+        overflow: hidden !important;
+    }
+    .dark-theme .react-chat-root section[class*="react-chat-top-radius"] {
+        background-color: #2d2d2d !important;
+        border: 1px solid #565656 !important;
+        border-bottom: none !important;
+        border-radius: 4px 4px 0 0 !important;
+        box-shadow: 0 1px 4px 0 rgba(0,0,0,0.5) !important;
+        overflow: hidden !important;
+    }
+
+    .light-theme .react-chat-root section[class*="react-chat-top-radius"] div[class*="bg-surface"] {
+        background-color: #fff !important;
+    }
+    .dark-theme .react-chat-root section[class*="react-chat-top-radius"] div[class*="bg-surface"] {
+        background-color: #2d2d2d !important;
+    }
+
+    .light-theme .react-chat-root section[class*="react-chat-top-radius"] > div[role="button"] {
+        background-color: #00a2ff !important;
+        border-radius: 4px 4px 0 0 !important;
+        min-height: 36px !important;
+    }
+    .dark-theme .react-chat-root section[class*="react-chat-top-radius"] > div[role="button"] {
+        background: var(--darkThemeBlue) !important;
+        border-radius: 4px 4px 0 0 !important;
+        min-height: 36px !important;
+    }
+    .light-theme .react-chat-root section[class*="react-chat-top-radius"] > div[role="button"] span[class*="text-title"],
+    .dark-theme .react-chat-root section[class*="react-chat-top-radius"] > div[role="button"] span[class*="text-title"] {
+        color: #fff !important;
+        font-size: 16px !important;
+        font-weight: 100 !important;
+    }
+    
+    .react-chat-root section[class*="react-chat-top-radius"]:has([data-testid="react-chat-thread-list"]) > div[role="button"] span[class*="text-title"]::after {
+        content: " & Party";
+    }
+    
+    .react-chat-root section[class*="react-chat-top-radius"] > div[role="button"] {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    
+    .react-chat-root section[class*="height-[48px]"] {
+        height: auto !important;
+    }
+
+    
+    .react-chat-root section[class*="react-chat-top-radius"] > div[role="button"] button {
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+    .react-chat-root section[class*="react-chat-top-radius"] > div[role="button"] button span[class*="icon"] {
+        color: #fff !important;
+    }
+
+    
+    .light-theme .react-chat-root [data-testid="text-input-container"] {
+        background-color: #fff !important;
+        border: 1px solid #b8b8b8 !important;
+        border-radius: 3px !important;
+        box-shadow: none !important;
+    }
+    .dark-theme .react-chat-root [data-testid="text-input-container"] {
+        background-color: #232323 !important;
+        border: 1px solid #565656 !important;
+        border-radius: 3px !important;
+        box-shadow: none !important;
+    }
+    .light-theme .react-chat-root [data-testid="text-input-container"] input {
+        background: transparent !important;
+        color: #393b3d !important;
+    }
+    .dark-theme .react-chat-root [data-testid="text-input-container"] input {
+        background: transparent !important;
+        color: #fff !important;
+    }
+    .light-theme .react-chat-root [data-testid="text-input-container"] input::placeholder {
+        color: #a3a2a5 !important;
+    }
+    .dark-theme .react-chat-root [data-testid="text-input-container"] input::placeholder {
+        color: #848484 !important;
+    }
+    .light-theme .react-chat-root [data-testid="text-input-leading-icon"] {
+        color: #757575 !important;
+    }
+    .dark-theme .react-chat-root [data-testid="text-input-leading-icon"] {
+        color: #b8b8b8 !important;
+    }
+    
+    .react-chat-root div.padding-x-small.padding-bottom-small {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    
+    .react-chat-root button.react-chat-row {
+        border-radius: 0 !important;
+        border: none !important;
+    }
+    .light-theme .react-chat-root button.react-chat-row:hover {
+        background-color: #f2f4f5 !important;
+    }
+    .dark-theme .react-chat-root button.react-chat-row:hover {
+        background-color: rgba(255,255,255,0.06) !important;
+    }
+    
+    .light-theme .react-chat-root .react-chat-row-title {
+        color: #393b3d !important;
+        font-size: 14px !important;
+        font-weight: 100 !important;
+    }
+    .dark-theme .react-chat-root .react-chat-row-title {
+        color: #fff !important;
+        font-size: 14px !important;
+        font-weight: 100 !important;
+    }
+    .react-chat-root .react-chat-row-title[class*="text-title"] {
+        font-weight: 400 !important; 
+    }
+    
+    .light-theme .react-chat-root .react-chat-row-preview {
+        color: #757575 !important;
+        font-size: 12px !important;
+    }
+    .dark-theme .react-chat-root .react-chat-row-preview {
+        color: #b8b8b8 !important;
+        font-size: 12px !important;
+    }
+    
+    .light-theme .react-chat-root .react-chat-row-title-line > span:last-child {
+        color: #a3a2a5 !important;
+        font-size: 11px !important;
+        font-weight: 400 !important;
+    }
+    .dark-theme .react-chat-root .react-chat-row-title-line > span:last-child {
+        color: #848484 !important;
+        font-size: 11px !important;
+        font-weight: 400 !important;
+    }
+
+    
+    .light-theme .react-chat-root .react-chat-avatar-group {
+        background-color: #e3e3e3 !important;
+    }
+    .dark-theme .react-chat-root .react-chat-avatar-group {
+        background-color: #3d3d3d !important;
+    }
+    
+    .react-chat-root .react-chat-presence-dot {
+        border: 2px solid #fff !important;
+        box-shadow: none !important;
+    }
+    .dark-theme .react-chat-root .react-chat-presence-dot {
+        border-color: #2d2d2d !important;
+    }
+
+    
+    
+
+    
+    .react-chat-root [data-testid="react-chat-thread-list"]::-webkit-scrollbar {
+        width: 8px !important;
+    }
+    .light-theme .react-chat-root [data-testid="react-chat-thread-list"]::-webkit-scrollbar-thumb {
+        background: #b8b8b8 !important;
+        border-radius: 4px !important;
+    }
+    .dark-theme .react-chat-root [data-testid="react-chat-thread-list"]::-webkit-scrollbar-thumb {
+        background: #565656 !important;
+        border-radius: 4px !important;
+    }
+
+    /* Redundant patches */
+    /*
+    .chat-container.collapsed .chat-header .chat-header-title {
+        color: #fff;
+    }
+
+    .light-theme .dialogs .dialog-container .dialog-message-container .indicated-message-bubble {
+        color: rgb(116, 116, 116);
+    }
+
+    div#chat-header, div.dialog-header {
+        background-color: #00a2ff;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+    }
+    .dark-theme div#chat-header, div.dialog-header  {
+        background: var(--darkThemeBlue);
+    }
+
+
+    span.font-caption-header.chat-header-title.ng-binding:after {
+        content: " & Party";
+    }
+
+    .light-theme .dialogs .dialog-container .dialog-header
+    {
+        background-color: #00a2ff;
+        color: #ffffff;
+    }
+
+    .light-theme .dialogs .dialog-container .dialog-message-container .dialog-message
+    {
+        background-color: #00a2ff;
+        color: #ffffff;
+        border: 1px solid #00a2ff
+    }
+
+    .light-theme .dialogs .dialog-container .dialog-message-container.message-inbound .dialog-message
+    {
+    background-color: #ffffff;
+        color: #393b3d;
+        border: 1px solid #e3e3e3;
+    }
+
+    .light-theme .dialog-container .dialog-input-container .dialog-input
+    {
+        background-color: #fff;
+    }
+
+    .light-theme .dialogs .dialog-container.active .dialog-header
+    {
+        background-color: #00a2ff;
+        color: #ffffff;
+    }
+
+    .light-theme .dialogs .dialog-container.active .dialog-header .dialog-header-title
+    {
+        color: #fff;
+    }
+
+    button.btn-primary-md.ng-binding[ng-click='chat\(\)']:hover {
+        background-color: #00b06f;
+        border-color: #00b06f;
+        color: #fff;
+    }
+
+    .light-theme .icon-chat-add-friends, .light-theme .icon-chat-arrow-right, .light-theme .icon-chat-back, .light-theme .icon-chat-close-black, .light-theme .icon-chat-close-white, .light-theme .icon-chat-error, .light-theme .icon-chat-friends, .light-theme .icon-chat-group-create, .light-theme .icon-chat-group-label, .light-theme .icon-chat-group-name, .light-theme .icon-chat-info-black, .light-theme .icon-chat-info-white, .light-theme .icon-chat-more-dialogs, .light-theme .icon-chat-more-options, .light-theme .icon-chat-notification, .light-theme .icon-chat-notification-mute, .light-theme .icon-chat-party-label-black, .light-theme .icon-chat-party-label-white, .light-theme .icon-chat-pin, .light-theme .icon-chat-pinned, .light-theme .icon-chat-place-favorite, .light-theme .icon-chat-place-my, .light-theme .icon-chat-place-popular, .light-theme .icon-chat-place-recent, .light-theme .icon-chat-place-recommended, .light-theme .icon-chat-place-vip, .light-theme .icon-chat-play-together, .light-theme .icon-chat-resend, .light-theme .icon-chat-search, .light-theme .icon-chat-search-cancel, .light-theme .icon-chat-search-white, .light-theme .icon-chat-selected, .light-theme .icon-chat-set-place, .light-theme .icon-chat-unpin, .light-theme .icon-default-chat
+    {
+        background-image: url(https://images.rbxcdn.com/f4d8925211682759829e2662560c7639-chat_02142018.svg);
+    }
+
+    .chat-container.collapsed .chat-header .chat-header-title {
+        color: #fff !important;
+    }
+
+    .chat-windows-header .chat-header-label span{
+        color: #fff !important;
+    }
+
+    .chat-windows-header .chat-header-label span {
+        color: #fff;
+    }
+
+    button.btn-primary-md.ng-binding[ng-click='chat\(\)'] {
+        background-color: #02b757;
+        border-radius: 1px;
+    }
+
+    .dark-theme .chat-search {
+        background: none;
+    }
+    NOTE: .chat-container.collapsed .chat-header .chat-header-title { color: #fff; } matched twice (standalone + grouped with .rbx-header age label); kept once above.
+    */
 }
