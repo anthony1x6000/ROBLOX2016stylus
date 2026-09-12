@@ -1747,42 +1747,41 @@
     div#notification-stream-popover > div.arrow {
         box-shadow: 0 0 0;
     }
-    /* ============================================================
-       SCROLLER / CAROUSEL BUTTONS (consolidated)
-       All .scroller, carousel .arrow, .icon-games-carousel, and
-       carousel .spacer rules live here. Nothing scroller-related
-       should remain scattered elsewhere in this stylesheet.
-       ------------------------------------------------------------
-       Structure:
-         1. Outer container (.scroller, .scroller.next/.prev)
-         2. Arrow bar (.arrow)
-         3. Arrow icons (.icon-games-carousel-left/right)
-         4. Background spacing fix (.spacer)
-       ============================================================ */
+    /* CAROUSEL ARROW STYLES */
 
-    /* ---------- 1. Outer container (.scroller) ---------- */
     /* Base container styling (moved from top of stylesheet). */
-    .light-theme .scroller {
+    .light-theme .scroller,
+    .light-theme .scroller-new,
+    .light-theme [data-testid="game-carousel-scroll-bar"] {
         background-color: #ffffff;
         border: 1px solid #b8b8b8;
     }
-    .dark-theme .scroller {
+    .dark-theme .scroller,
+    .dark-theme .scroller-new,
+    .dark-theme [data-testid="game-carousel-scroll-bar"] {
         transition: background-color .4s ease !important;
         background: #191b1dc4;
     }
-    .light-theme .scroller:focus, .light-theme .scroller:hover {
+    .light-theme .scroller:focus, .light-theme .scroller:hover,
+    .light-theme .scroller-new:focus, .light-theme .scroller-new:hover,
+    .light-theme [data-testid="game-carousel-scroll-bar"]:focus,
+    .light-theme [data-testid="game-carousel-scroll-bar"]:hover {
         background-color: #ffffff;
     }
-    .light-theme .scroller.disabled {
+    .light-theme .scroller.disabled,
+    .light-theme .scroller-new[aria-disabled="true"],
+    .light-theme [data-testid="game-carousel-scroll-bar"][aria-disabled="true"] {
         background-color: #f0f1f0;
         opacity: 1;
     }
-    .light-theme .scroller.disabled {
+    .light-theme .scroller.disabled,
+    .light-theme .scroller-new[aria-disabled="true"],
+    .light-theme [data-testid="game-carousel-scroll-bar"][aria-disabled="true"] {
         border: 1px solid #e3e3e3;
     }
 
     /* Positioning, dimensions, and rounded corners. */
-    .scroller.next, .scroller.prev {
+    .scroller.next:not(.scroller-new), .scroller.prev:not(.scroller-new) {
         height: 242px !important;
         top: -3px;
     }
@@ -1796,11 +1795,10 @@
     /* STATIC gamecards override: match card height. Keep this AFTER
        the 242px rule above so it wins (same specificity, both
        !important). Moved here from the "STATIC gamecards" section. */
-    .scroller.prev, .scroller.next {
+    .scroller.prev:not(.scroller-new), .scroller.next:not(.scroller-new) {
         height: 247px !important;
     }
 
-    /* ---------- 2. Arrow bar (.arrow) ---------- */
     /* Bar background, width, layer depth, and hover states. */
     .light-theme .scroller .arrow {
         z-index: 2 !important;
@@ -1820,7 +1818,20 @@
         cursor: pointer;
         box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
     }
+    .scroller-new:hover,
+    [data-testid="game-carousel-scroll-bar"]:hover {
+        z-index: 5;
+        cursor: pointer;
+        box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.30);
+        opacity: 1;
+    }
     .light-theme .disabled > .arrow {
+        box-shadow: 0 0 0;
+        cursor: default;
+        background-color: #f2f4f5;
+    }
+    .light-theme .scroller-new[aria-disabled="true"],
+    .light-theme [data-testid="game-carousel-scroll-bar"][aria-disabled="true"] {
         box-shadow: 0 0 0;
         cursor: default;
         background-color: #f2f4f5;
@@ -1830,7 +1841,6 @@
         background-color: #fff;
     } */
 
-    /* ---------- 3. Arrow icons (.icon-games-carousel-*) ---------- */
     /* Nudging and positioning the chevrons. */
     .icon-games-carousel-right {
         margin-right: 3px;
@@ -1839,6 +1849,27 @@
         margin-left: -7px;
     }
     div.disabled > div > span.icon-games-carousel-left {
+        filter: opacity(.3);
+    }
+    .scroller-new .icon-chevron-heavy-right,
+    [data-testid="game-carousel-scroll-bar"] .icon-chevron-heavy-right {
+        margin-right: 3px;
+    }
+    .light-theme .scroller-new .icon-chevron-heavy-right,
+    .light-theme [data-testid="game-carousel-scroll-bar"] .icon-chevron-heavy-right {
+        margin-left: -7px;
+    }
+    .scroller-new .icon-chevron-heavy-left,
+    .scroller-new .icon-chevron-heavy-right,
+    [data-testid="game-carousel-scroll-bar"] .icon-chevron-heavy-left,
+    [data-testid="game-carousel-scroll-bar"] .icon-chevron-heavy-right {
+        vertical-align: middle;
+        pointer-events: none;
+    }
+    .scroller-new[aria-disabled="true"] .icon-chevron-heavy-left,
+    .scroller-new[aria-disabled="true"] .icon-chevron-heavy-right,
+    [data-testid="game-carousel-scroll-bar"][aria-disabled="true"] .icon-chevron-heavy-left,
+    [data-testid="game-carousel-scroll-bar"][aria-disabled="true"] .icon-chevron-heavy-right {
         filter: opacity(.3);
     }
     /* Sprite sheet + auto-sizing for these icons is handled by the
@@ -1851,7 +1882,6 @@
           .icon-games-carousel-right, ... { background-image:
           url(https://images.rbxcdn.com/8f9d73863e52851ec5910be4ffa5ed78-generic_01312019.svg); }" */
 
-    /* ---------- 4. Background spacing fix (.spacer) ---------- */
     /* Masks seams and gaps around the carousel control. */
     /* Game cover thing fixing gaps */
     .light-theme .horizontal-scroller .scroller.next .spacer {
@@ -1870,6 +1900,97 @@
         z-index: 0 !important;
     }
     /* games page fix right above here too changed 91 to 82 i think */
+
+    .scroller-new,
+    [data-testid="game-carousel-scroll-bar"] {
+        width: 30px !important;
+        height: 247px !important;
+        border-radius: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        position: absolute !important;
+        top: 0 !important;
+        z-index: 1000 !important;
+        box-shadow: none !important;
+        opacity: 1 !important;
+        cursor: pointer;
+        -webkit-user-select: none !important;
+        -moz-user-select: none !important;
+        -ms-user-select: none !important;
+        user-select: none !important;
+    }
+    .scroller-new.prev,
+    [data-testid="game-carousel-scroll-bar"].prev {
+        left: -12px !important;
+        right: auto !important;
+        border-radius: 3px 0 0 3px !important;
+    }
+    .scroller-new.next,
+    [data-testid="game-carousel-scroll-bar"].next {
+        right: -12px !important;
+        left: auto !important;
+        border-radius: 0 3px 3px 0 !important;
+    }
+    .scroller-new:hover,
+    [data-testid="game-carousel-scroll-bar"]:hover {
+        cursor: pointer;
+        box-shadow: 0 1px 4px 0 rgba(25, 25, 25, 0.3) !important;
+        opacity: 1 !important;
+    }
+    .scroller-new:focus,
+    [data-testid="game-carousel-scroll-bar"]:focus {
+        background-color: #f2f2f2 !important;
+    }
+    .scroller-new[aria-disabled="true"],
+    [data-testid="game-carousel-scroll-bar"][aria-disabled="true"] {
+        opacity: .3 !important;
+        cursor: default !important;
+        border: 1px solid #e3e3e3 !important;
+    }
+    .scroller-new[aria-disabled="true"]:hover,
+    [data-testid="game-carousel-scroll-bar"][aria-disabled="true"]:hover {
+        box-shadow: none !important;
+    }
+    .games-page-container .scroller-new,
+    .games-page-container [data-testid="game-carousel-scroll-bar"] {
+        top: 0 !important;
+    }
+    .games-page-container .scroller-new.prev,
+    .games-page-container [data-testid="game-carousel-scroll-bar"].prev {
+        left: -10px !important;
+    }
+    .games-page-container .scroller-new.next,
+    .games-page-container [data-testid="game-carousel-scroll-bar"].next {
+        right: -10px !important;
+    }
+    .horizontal-scroller .scroller-new,
+    .horizontal-scroller [data-testid="game-carousel-scroll-bar"] {
+        display: flex !important;
+    }
+    .container-main.rbx-touch .scroller-new,
+    .container-main.rbx-touch [data-testid="game-carousel-scroll-bar"] {
+        display: none !important;
+    }
+    .games-list-container.wide-game-tile-container .scroller-new,
+    .home-page-games-list.games-list .scroller-new,
+    .games-list-container.wide-game-tile-container [data-testid="game-carousel-scroll-bar"],
+    .home-page-games-list.games-list [data-testid="game-carousel-scroll-bar"] {
+        z-index: 1000 !important;
+    }
+    .scroller-new .icon-chevron-heavy-left,
+    .scroller-new .icon-chevron-heavy-right,
+    [data-testid="game-carousel-scroll-bar"] .icon-chevron-heavy-left,
+    [data-testid="game-carousel-scroll-bar"] .icon-chevron-heavy-right {
+        opacity: .5;
+        pointer-events: none;
+    }
+    .scroller-new:focus-visible,
+    [data-testid="game-carousel-scroll-bar"]:focus-visible {
+        outline: 2px solid #0074bd;
+        outline-offset: 2px;
+        opacity: 1 !important;
+    }
     /* ======= End of SCROLLER / CAROUSEL BUTTONS ======= */
     .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image, .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image:hover {
     box-shadow: none !important;
