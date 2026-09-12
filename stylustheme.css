@@ -1086,6 +1086,11 @@
     button.btn-full-width > span.icon-common-play {
         visibility: hidden;
     }
+    .btn-common-play-game-lg span[class^=icon-], .btn-common-play-game-lg span[class^=icon-]:hover, button.btn-common-play-game-lg span[class^=icon-], button.btn-common-play-game-lg span[class^=icon-]:hover, a.btn-common-play-game-lg span[class^=icon-], a.btn-common-play-game-lg span[class^=icon-]:hover {
+        background-size: 72px;
+        width: 36px;
+        height: 22px !important;
+    }
     .icon-common-play:after {
         visibility: visible;
         position: relative;
@@ -1989,6 +1994,15 @@
         overflow-x: hidden;
         height: 300px;
     }
+    /* avatar tabs keep tab height, not carousel height */
+    .avatar-tabs-scroller .scroller-new,
+    .avatar-tabs-scroller [data-testid="game-carousel-scroll-bar"] {
+        height: 43px !important;
+    }
+    .avatar-tabs-scroller .clearfix.horizontal-scroll-window,
+    .avatar-tabs-scroller .horizontally-scrollable {
+        height: auto !important;
+    }
     /* ======= End of SCROLLER / CAROUSEL BUTTONS ======= */
     .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image, .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image:hover {
     box-shadow: none !important;
@@ -2607,6 +2621,16 @@
         box-shadow: 0 1px 4px 0 rgba(25,25,25,0.45);
         border: 1px solid #b8b8b8;
         color: #191919;
+        border-radius: 1px;
+        background: #fff;
+    }
+    .light-theme .touch .btn-control-md, .light-theme .touch .btn-control-md:hover, .light-theme .touch .btn-control-md:focus, .light-theme .touch .btn-control-md:visited, .light-theme .touch .btn-control-md:active, .light-theme .touch .btn-control-md.active, .dark-theme .touch .btn-control-md, .dark-theme .touch .btn-control-md:hover, .dark-theme .touch .btn-control-md:focus, .dark-theme .touch .btn-control-md:visited, .dark-theme .touch .btn-control-md:active, .dark-theme .touch .btn-control-md.active {
+        color: #191919;
+        background-color: #fff;
+        border-color: #b8b8b8;
+    }
+    .light-theme .touch .btn-control-md:focus, .light-theme .touch .btn-control-md:hover, .dark-theme .touch .btn-control-md:focus, .dark-theme .touch .btn-control-md:hover {
+        box-shadow: 0 1px 4px 0 rgba(25,25,25,0.45);
         border-radius: 1px;
         background: #fff;
     }
@@ -3497,6 +3521,15 @@
         background: #00bf5a;
         border-color: #00bf5a;
     }
+    .light-theme .touch .btn-primary-md, .light-theme .touch .btn-primary-md:hover, .light-theme .touch .btn-primary-md:focus, .light-theme .touch .btn-primary-md:visited, .light-theme .touch .btn-primary-md:active, .light-theme .touch .btn-primary-md.active, .dark-theme .touch .btn-primary-md, .dark-theme .touch .btn-primary-md:hover, .dark-theme .touch .btn-primary-md:focus, .dark-theme .touch .btn-primary-md:visited, .dark-theme .touch .btn-primary-md:active, .dark-theme .touch .btn-primary-md.active {
+        color: #fff;
+        background-color: #08b454;
+        border-color: #08b454;
+    }
+    .light-theme .touch .btn-primary-md:hover, .light-theme .touch .btn-primary-md:focus, .dark-theme .touch .btn-primary-md:hover, .dark-theme .touch .btn-primary-md:focus {
+        background: #00bf5a;
+        border-color: #00bf5a;
+    }
     .light-theme .stack .card-list .card-item button.game-server-join-btn:hover, .light-theme .stack .card-list .card-item button.game-server-join-btn:focus{
         background-color: #fff;
         border: 1px solid #B8B8B8;
@@ -3933,7 +3966,10 @@
 
 
         div.game-card-text-pill {
-            display: none !important;  
+            background-color: #fff;
+            border: 1px solid #b8b8b8;
+            color: #191919;
+            border-radius: 1px;
         }
         @media (max-width: 767px) {
             .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.event-tile, .game-carousel.wide-game-tile-carousel.expand-home-content .hover-game-tile.grid-tile, 
