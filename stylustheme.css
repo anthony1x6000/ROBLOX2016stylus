@@ -1991,6 +1991,9 @@
         outline-offset: 2px;
         opacity: 1 !important;
     }
+    .games-page-container #game-carousel-web-app {
+        overflow-x: hidden !important;
+    }
     /* ======= End of SCROLLER / CAROUSEL BUTTONS ======= */
     .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image, .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image:hover {
     box-shadow: none !important;
