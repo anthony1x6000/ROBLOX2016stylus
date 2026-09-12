@@ -1987,6 +1987,7 @@
     }
     .clearfix.horizontal-scroll-window {
         overflow-x: hidden;
+        height: 300px;
     }
     /* ======= End of SCROLLER / CAROUSEL BUTTONS ======= */
     .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image, .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image:hover {
@@ -3702,7 +3703,7 @@
         box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.75) !important;
     }
     .horizontally-scrollable {
-        height: 240px !important;
+        height: 247px !important;
     }
     /* Notification icon fix */
         .icon-common-notification-bell {
@@ -4183,13 +4184,9 @@
         padding-top: 3px;
         overflow-x: visible;
     } /* overflow visible so shadow is not cut on the collections carousel */
-    div.profile-currently-wearing > div > div > div > div,
-    #HomeContainer > div.place-list-container > div > div > div:nth-child(3) > div.horizontal-scroller.games-list.home-page-games-list.dynamic-layout-sizing {
-        overflow-x: hidden;
-    } /* ensure currently wearing hides overflow, to negate the top rule */
 
     #HomeContainer > div.place-list-container > div > div > div:nth-child(3) > div.horizontal-scroller.games-list.home-page-games-list.dynamic-layout-sizing {
-        height: 243px;    
+        height: 247px;    
     } /* Continue games, modify height, lazy, will probably break in future */
 
     /*More Accurate Friend Text*/
