@@ -2003,6 +2003,12 @@
     .avatar-tabs-scroller .horizontally-scrollable {
         height: auto !important;
     }
+    /* search pill carousel ("Try searching for") keeps pill height, not game-card height */
+    .search-pill-carousel-container .scroller.next,
+    .search-pill-carousel-container .scroller.prev,
+    .search-pill-carousel-container [data-testid="game-carousel-scroll-bar"] {
+        height: 32px !important;
+    }
     /* ======= End of SCROLLER / CAROUSEL BUTTONS ======= */
     .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image, .col-xs-12.home-header .avatar.avatar-headshot-lg .avatar-card-image:hover {
     box-shadow: none !important;
@@ -2480,6 +2486,12 @@
     border-color: #00a2ff;
     color: #fff;
     border-radius: 1px;
+    }
+
+    /* Game page tabs (About / Store / Servers) heading fix */
+    .light-theme .rbx-tab .rbx-tab-heading {
+        background-color: white !important;
+        color: var(--color-content-emphasis);
     }
 
     .light-theme .rbx-tabs-horizontal .rbx-tab .rbx-tab-heading.active
@@ -3326,6 +3338,139 @@
     .input-dropdown-btn { /* dropdowns */ 
         border-radius: 1px !important; 
     }
+    /* avatar shop / catalog filter dropdowns -> 2016 .input-dropdown-btn look
+       old ref: https://web.archive.org/web/20160707045059cs_/https://static.rbxcdn.com/css/leanbase___17430914d145b9ee9176185d539072d7_m.css/fetch
+       new ref: https://css.rbxcdn.com/7f4f10003b8708331d7c8f20bf584a6478db0a83a986877b6c8d079f74be0a42-StyleGuide.css
+       2016 DOM: #FiltersAndSort > .input-group-btn.games-page-filter > button.input-dropdown-btn > span.rbx-selection-label + span.icon-down-16x16
+       modern DOM: .filters-container > .filter-items-container > div > button.filter-select.btn-primary-md.btn-min-width > span.filter-display-text + span.icon-expand-arrow-selected
+       2016 base: bg #fff, border #B8B8B8, text #191919, weight 400, padding 5px 12px, line-height 18px, radius 0, width 100%.
+       2016 label (.rbx-selection-label): float left, left-aligned, 16px/26px, weight 300.
+       2016 arrow (span[class^="icon"]): float right, margin-top 1px.
+       2016 hover/focus/open: bg #00A2FF, border #00A2FF, text #fff, no shadow. */
+    .filters-container .filter-items-container {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+    }
+    .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width,
+    .light-theme .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width,
+    .dark-theme .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width {
+        user-select: none;
+        background-color: #fff;
+        border: 1px solid #B8B8B8;
+        border-color: #B8B8B8;
+        border-radius: 0;
+        color: #191919;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        height: auto;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        padding: 5px 12px;
+        margin: 0;
+        line-height: 18px;
+        font-size: 16px;
+        box-shadow: none;
+    }
+    .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width:link,
+    .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width:visited {
+        color: #191919;
+        background-color: #fff;
+    }
+    .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width:hover,
+    .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width:focus,
+    .light-theme .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width:hover,
+    .light-theme .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width:focus,
+    .dark-theme .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width:hover,
+    .dark-theme .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width:focus {
+        background-color: #00A2FF;
+        border-color: #00A2FF;
+        color: #fff;
+        box-shadow: none;
+    }
+    .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width:active,
+    .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width.active,
+    .filters-container .filter-items-container .open button.filter-select.btn-primary-md.btn-min-width {
+        background-color: #00A2FF;
+        border-color: #00A2FF;
+        color: #fff;
+        box-shadow: none;
+    }
+    .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width .filter-display-text {
+        flex: 1 1 auto;
+        text-align: left;
+        font-size: 16px;
+        font-weight: 300;
+        color: inherit;
+        padding: 0 8px 0 0;
+    }
+    .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width span[class^="icon"] {
+        flex: 0 0 auto;
+        margin: 1px 0 0 auto;
+        padding: 0;
+    }
+    .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width .icon-expand-arrow-selected {
+        background-image: url(https://images.rbxcdn.com/424995aeeb54e41f.svg);
+        background-position: 0 -272px;
+        background-size: 32px auto;
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width:hover .icon-expand-arrow-selected,
+    .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width:focus .icon-expand-arrow-selected,
+    .filters-container .filter-items-container button.filter-select.btn-primary-md.btn-min-width:active .icon-expand-arrow-selected,
+    .filters-container .filter-items-container .open button.filter-select.btn-primary-md.btn-min-width .icon-expand-arrow-selected {
+        filter: brightness(0) invert(1);
+    }
+    .filters-container .dropdown-menu {
+        background-color: #fff;
+        border-radius: 3px;
+        box-shadow: 0 -5px 20px rgba(25, 25, 25, 0.15);
+        font-size: 16px;
+        min-width: 105px;
+        width: 100%;
+    }
+    .filters-container .dropdown-menu li {
+        margin: 0;
+        padding: 0;
+        white-space: nowrap;
+        width: 100%;
+    }
+    .filters-container .dropdown-menu li:hover {
+        background-color: #F2F2F2;
+        box-shadow: 4px 0 0 0 #00A2FF inset;
+        cursor: pointer;
+    }
+    .filters-container .dropdown-menu li a {
+        display: block;
+        padding: 10px 12px;
+        line-height: 1.25;
+        white-space: nowrap;
+        color: #191919;
+    }
+    .filters-container .dropdown-menu li a:hover,
+    .filters-container .dropdown-menu li a:focus {
+        background-color: #F2F2F2;
+        box-shadow: 4px 0 0 0 #00A2FF inset;
+        text-decoration: none;
+    }
+    /* filter popup above game carousel scroll arrows
+       .sticky-header-sorts traps the modal in a z-index:1 context while the theme puts scroll bars at z-index:1000 */
+    .sticky-header-sorts {
+        z-index: 1001 !important;
+    }
+    .filters-container .filter-items-container .filters-modal-container {
+        z-index: 1001 !important;
+        box-shadow: none !important;
+    }
     .light-theme .btn-primary-md {
         border-radius: 5px;
     }
@@ -3737,6 +3882,7 @@
     }
     .horizontally-scrollable {
         height: 247px !important;
+        padding-top: 3px;
     }
     /* Notification icon fix */
         .icon-common-notification-bell {
