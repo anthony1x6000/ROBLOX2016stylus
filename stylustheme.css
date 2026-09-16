@@ -4781,4 +4781,22 @@
     }
     NOTE: .chat-container.collapsed .chat-header .chat-header-title { color: #fff; } matched twice (standalone + grouped with .rbx-header age label); kept once above.
     */
+
+    /* Issue #72: New sidebar semi-fix */
+    div.width-\[288px\] {
+        width: 175px;
+    }
+    div.flex.width-\[289px\].height-full.scroll-y {
+        width: 175px;
+        height: auto;
+    }
+    div.left-nav {
+        box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
+    }
+
+    @media (min-width: 1141px) {
+        .no-gutter-ads.logged-in.left-nav-new-width, body.left-nav-new-width {
+            --left-nav-reserved-width: 175px;
+        }
+    }
 }
