@@ -188,3 +188,4 @@ Line 4497: /* Avatar editor header */
 Line 4503: /* move btr roblox profile favorites down to avoid overlap */
 Line 4510: /* Chat patches */
 Line 4691: /* Redundant patches */
+Line 4785: /* Issue #72: New sidebar semi-fix */
