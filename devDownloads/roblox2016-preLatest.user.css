@@ -3,7 +3,7 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        10.18.2026.1792364623
+@version        10.18.2026.1792364631
 @license        MIT License
 @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
 @var select displayRecommended 'Display Recommended Games at home?' ['block:Visible', 'none:Hidden']
@@ -1438,6 +1438,7 @@
 
     h1, h2, h3, h4, h5 {
         padding: 0 0 5px 0 !important;
+        font-weight: 100 !important;
     }
 
     .container-header h3 {
@@ -4403,8 +4404,11 @@
     
     /*Home Page Font Fix*/
     .css-1ia7jxc-textIconRowText[data-sdui-text="true"] {
-        font-weight: 200;
         font-size: 25px;
+    }
+    /*Every header (page header, section title & subtitle) uses the 2016 light weight*/
+    .container-header, .home-sort-header-container, [data-testid="text-icon-row-text"] {
+        font-weight: 100 !important;
     }
     /*Remove Arrows Next to IconRowText (not sure if this is fully accurate but I based it off of the homepage screenshot in the github README.md)*/
     .icon-push-right-16x16.sdui-icon.css-5x2vn1-iconBaseStyles.css-1y0a2rp-iconOverride.css-ne7k1o-iconBaseStyles {
