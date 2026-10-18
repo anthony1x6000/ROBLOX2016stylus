@@ -1312,6 +1312,31 @@
             .btn-navigation-nav-robux-md, .btn-navigation-nav-notification-stream-md, .btn-navigation-nav-settings-md, .btn-navigation-nav-menu-md {
                 background-color: transparent !important;
             }
+            /* The new navbar draws the robux and settings icons as mask icons tinted with
+               currentColor, so they show up gray on the 2016 blue header. Force the white
+               2016 sprite back on (including the old robux coin). */
+            .rbx-navbar-icon-group .icon-regular-robux, .rbx-navbar-icon-group .icon-regular-gear {
+                -webkit-mask-image: none !important;
+                mask-image: none !important;
+                background-color: transparent !important;
+                background-image: url(https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg) !important;
+                background-repeat: no-repeat !important;
+                background-size: 56px auto !important;
+                width: 28px !important;
+                height: 28px !important;
+            }
+            .rbx-navbar-icon-group .icon-regular-robux {
+                background-position: 0 -28px !important;
+            }
+            .rbx-navbar-icon-group .icon-regular-gear {
+                background-position: 0 -84px !important;
+            }
+            .rbx-navbar-icon-group .icon-regular-robux:hover {
+                background-position: -28px -28px !important;
+            }
+            .rbx-navbar-icon-group .icon-regular-gear:hover {
+                background-position: -28px -84px !important;
+            }
     .rbx-text-navbar-right.text-header {
         margin-bottom: 2px !important;
     }
