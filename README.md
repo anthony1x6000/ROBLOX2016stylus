@@ -15,9 +15,9 @@ I recommend using [Tampermonkey](https://www.tampermonkey.net/).
 ## Contributing
 **If you can, please contribute!** This project is community driven, so changes are appreciated. 
 ### How to navigate the userstyle 
-The project is being refactored as to clear some technical debt. Provided is [navigation.txt](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/navigation.txt) to make navigation easier for contributors. 
+The project is being refactored as to clear some technical debt. The userstyle is organized by section comments, so search [stylustheme.css](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/stylustheme.css) for them to find the part you are looking for. 
 
-In [navigation.txt](https://github.com/anthony1x6000/ROBLOX2016stylus/blob/main/navigation.txt), you can see all of the comments in the userstyle and the lines the comments are on. So, if someone made a change to the catalog, you can see: ```Line 3040: /* catalog changes  */``` 
+For example, if someone made a change to the catalog, you can search for: ```/* catalog changes  */``` 
 
 **Please make changes under existing comments, otherwise create your own** 
 ## Style Mirrors
