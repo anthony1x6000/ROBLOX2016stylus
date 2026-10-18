@@ -4,7 +4,7 @@
 ![image](https://github.com/anthony1x6000/ROBLOX2016stylus/assets/33004321/0560ce22-209c-4df2-90fa-b61dda473597)
 
 [Quick install](https://github.com/anthony1x6000/ROBLOX2016stylus/raw/downloads/.user.css-installFiles/release.user.css) | You'll get the most recent version of this release with patches and changes.
-[Unreleased install](https://github.com/anthony1x6000/ROBLOX2016stylus/raw/main/devDownloads/roblox2016-preLatest.user.css) | You'll get the most recent in-development version of this release.
+[Unreleased install](https://github.com/anthony1x6000/ROBLOX2016stylus/raw/downloads/devDownloads/roblox2016-preLatest.user.css) | You'll get the most recent in-development version of this release.
 
 Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com/anthony1x6000/ROBLOX2016stylus/releases).
 

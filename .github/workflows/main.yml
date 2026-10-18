@@ -44,23 +44,25 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-    - name: Commit changes to main branch
+    - name: Commit changes to downloads branch
       run: |
+        git fetch origin downloads
+        git checkout -B downloads origin/downloads
+        mkdir -p devDownloads
         cp roblox2016-pre${{ env.CUR_DATE }}.user.css roblox2016-preLatest.user.css
         mv roblox2016-pre${{ env.CUR_DATE }}.user.css roblox2016-preLatest.user.css devDownloads/
         git add devDownloads
         git commit -m "${{ env.CUR_DATE }}-${{ env.UNIX_TIME }} dev"
 
-    - name: Pull and Rebase origin/dev
+    - name: Pull and Rebase origin/downloads
       run: |
-        git pull origin main --rebase
+        git pull origin downloads --rebase
 
     - name: Push to GitHub
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: main
-        force: true
+        branch: downloads
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
