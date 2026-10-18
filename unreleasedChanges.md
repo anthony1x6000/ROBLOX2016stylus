@@ -26,6 +26,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Home page] Fix header font weight to 300.
 - [Left nav bar] Update Connect to Friends.
 - [Nav bar] Robux and settings icons are white again, and the Robux icon uses the 2016 sprite.
+- [Home page] Game rows fit their cards again on wide screens, so the tile text stays inside the card and the row no longer grows a scrollbar.
 
 ### Find a bug?
 

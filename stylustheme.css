@@ -4155,14 +4155,40 @@
     .game-carousel.wide-game-tile-carousel.home-page-carousel .hover-game-tile.event-tile .featured-game-container, 
     .game-carousel.wide-game-tile-carousel.home-page-carousel .hover-game-tile.event-tile {
         width: calc((var(--home-feed-width) - 1px - 16px*(var(--items-per-row) - 1))/var(--items-per-row)); 
-        max-height: 260px;
+        max-height: none;
         height: 100%;
+    }
+    /* wide game tile: 4px shorter card */
+    .game-carousel.wide-game-tile-carousel.home-page-carousel .hover-game-tile.event-tile .featured-game-container {
+        /* Roblox offsets the card 4px from the top of the tile, so it has to be
+           4px shorter than the tile or it spills out of the row */
+        height: calc(100% - 4px);
     }
     
     .game-carousel.wide-game-tile-carousel.home-page-carousel {
         width: var(--home-feed-width);
-        height: 115%;
+        height: 250px !important;
         overflow-x: hidden;
+    }
+
+    /* Home page game rows: fit the cards (wide screens) */
+    /* The cards get taller as --home-feed-width grows (the thumbnail keeps
+       its 16:9 shape), so the old fixed 247px/300px row pushed the tile text
+       below the card and popped a scrollbar on the row itself.
+       height: auto + the old sizes as min-height keeps the 2016 row box on
+       normal width screens and lets the row grow on wide ones. */
+    .home-page-games-list.games-list .clearfix.horizontal-scroll-window {
+        height: auto;
+        min-height: 300px;
+    }
+    .home-page-games-list.games-list .horizontally-scrollable {
+        height: auto !important;
+        min-height: 247px;
+    }
+    /* arrows cover the whole row, and never get shorter than the 2016 size */
+    .home-page-games-list.games-list .scroller-new,
+    .home-page-games-list.games-list [data-testid="game-carousel-scroll-bar"] {
+        height: max(247px, 100%) !important;
     }
 
     /* New games interface patch : 001  */
@@ -4431,7 +4457,7 @@
     } /* overflow visible so shadow is not cut on the collections carousel */
 
     #HomeContainer > div.place-list-container > div > div > div:nth-child(3) > div.horizontal-scroller.games-list.home-page-games-list.dynamic-layout-sizing {
-        height: 247px;    
+        min-height: 247px;    
     } /* Continue games, modify height, lazy, will probably break in future */
 
     /*More Accurate Friend Text*/
