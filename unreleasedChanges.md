@@ -28,6 +28,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Nav bar] Robux and settings icons are white again, and the Robux icon uses the 2016 sprite.
 - [Game details] Events grid: the event card is no longer capped shorter than its tile, so the info panel stays inside the card.
 - [Home page] Game rows are a fixed 250px tall again instead of growing with the cards.
+- [Carousels] The scroll window no longer forces a 300px height, so a row sizes to its tiles.
 
 ### Find a bug?
 
