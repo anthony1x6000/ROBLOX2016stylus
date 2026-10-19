@@ -2052,7 +2052,7 @@
     }
     .clearfix.horizontal-scroll-window {
         overflow-x: hidden;
-        height: 300px;
+        height: inherit;
     }
     /* avatar tabs keep tab height, not carousel height */
     .avatar-tabs-scroller .scroller-new,
