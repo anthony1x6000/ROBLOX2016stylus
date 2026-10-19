@@ -4450,9 +4450,8 @@
         overflow-x: visible;
     } /* overflow visible so shadow is not cut on the collections carousel */
 
-    #HomeContainer > div.place-list-container > div > div > div:nth-child(3) > div.horizontal-scroller.games-list.home-page-games-list.dynamic-layout-sizing {
-        height: 247px;    
-    } /* Continue games, modify height, lazy, will probably break in future */
+    /* Continue games: deliberately no height here. The old fixed 247px made the
+       row shorter than its tiles. */
 
     /*More Accurate Friend Text*/
     b {
