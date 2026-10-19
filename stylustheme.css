@@ -4288,6 +4288,10 @@
         div > div.game-card-info {
             bottom: 12px !important;
         }
+        /* ...but the nudge above must not push the "New content" label out of its pill */
+        div.game-card-text-pill > div.game-card-info {
+            bottom: 0 !important;
+        }
 
         .game-grid.home-game-grid, .game-grid.home-game-grid.wide-game-tile-game-grid {
             grid-template-columns: repeat(auto-fill,calc((var(--home-feed-width) - 19px* (var(--items-per-row) - 1))/var(--items-per-row)));
@@ -4382,6 +4386,20 @@
         div.wide-game-tile-metadata > div > div > span.playing-counts-label {
             bottom: 4px;
             left: -55px;
+        }
+
+    /* Game details page: Events grid (wide event tiles) */
+        /* Roblox rounds these tiles to 8px, match the 3px game card radius instead */
+        .game-grid.game-details-page-events-grid .featured-game-container .featured-game-icon-container {
+            border-radius: 3px 3px 0 0;
+        }
+        .game-grid.game-details-page-events-grid .featured-game-container .game-card-link .info-container {
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+        /* the event card may be as tall as its tile, not Roblox's shorter row formula */
+        .game-grid.wide-game-tile-game-grid.game-details-page-events-grid.game-details-page-events-grid .hover-game-tile.experience-events-tile .featured-game-container {
+            max-height: 100% !important;
         }
 
     /* ROBLOX 2016 Avatar Editor Reconstruct by Mystery Channel (1185261) 
