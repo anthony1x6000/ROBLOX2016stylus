@@ -27,6 +27,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Left nav bar] Update Connect to Friends.
 - [Nav bar] Robux and settings icons are white again, and the Robux icon uses the 2016 sprite.
 - [Home page] Game rows fit their cards again on wide screens, so the tile text stays inside the card and the row no longer grows a scrollbar.
+- [Game details] Events grid: the event card is no longer capped shorter than its tile, so the info panel stays inside the card.
 
 ### Find a bug?
 

@@ -4397,6 +4397,10 @@
             border-bottom-left-radius: 3px;
             border-bottom-right-radius: 3px;
         }
+        /* the event card may be as tall as its tile, not Roblox's shorter row formula */
+        .game-grid.wide-game-tile-game-grid.game-details-page-events-grid.game-details-page-events-grid .hover-game-tile.experience-events-tile .featured-game-container {
+            max-height: 100% !important;
+        }
 
     /* ROBLOX 2016 Avatar Editor Reconstruct by Mystery Channel (1185261) 
         No License as of 09-18023
