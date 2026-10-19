@@ -1337,6 +1337,18 @@
             .rbx-navbar-icon-group .icon-regular-gear:hover {
                 background-position: -28px -84px !important;
             }
+            /* The hamburger and the search magnifier are foundation mask icons
+               too (.icon paints its --svg mask with currentColor), so they come
+               up gray on the light 2016 blue header. Keep the masks, paint them
+               white there; the dark theme keeps its own tint. */
+            .light-theme #header-menu-icon .menu-button,
+            .light-theme .rbx-navbar-right-search .btn-navigation-nav-search-white-md {
+                color: #ffffff !important;
+            }
+            .light-theme #header-menu-icon .menu-button .icon-regular-three-bars-horizontal,
+            .light-theme .rbx-navbar-right-search .icon-regular-magnifying-glass {
+                background-color: #ffffff !important;
+            }
     .rbx-text-navbar-right.text-header {
         margin-bottom: 2px !important;
     }
