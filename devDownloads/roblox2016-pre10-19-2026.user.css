@@ -3,7 +3,7 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        10.19.2026.1792377006
+@version        10.19.2026.1792422030
 @license        MIT License
 @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
 @var select displayRecommended 'Display Recommended Games at home?' ['block:Visible', 'none:Hidden']
@@ -1348,6 +1348,18 @@
             }
             .rbx-navbar-icon-group .icon-regular-gear:hover {
                 background-position: -28px -84px !important;
+            }
+            /* The hamburger and the search magnifier are foundation mask icons
+               too (.icon paints its --svg mask with currentColor), so they come
+               up gray on the light 2016 blue header. Keep the masks, paint them
+               white there; the dark theme keeps its own tint. */
+            .light-theme #header-menu-icon .menu-button,
+            .light-theme .rbx-navbar-right-search .btn-navigation-nav-search-white-md {
+                color: #ffffff !important;
+            }
+            .light-theme #header-menu-icon .menu-button .icon-regular-three-bars-horizontal,
+            .light-theme .rbx-navbar-right-search .icon-regular-magnifying-glass {
+                background-color: #ffffff !important;
             }
     .rbx-text-navbar-right.text-header {
         margin-bottom: 2px !important;
