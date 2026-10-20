@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           ROBLOX 2016 10-19-2026
+@name           ROBLOX 2016 10-20-2026
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        10.19.2026.1792423331
+@version        10.20.2026.1792455952
 @license        MIT License
 @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
 @var select displayRecommended 'Display Recommended Games at home?' ['block:Visible', 'none:Hidden']
@@ -1806,6 +1806,52 @@
         overflow: hidden; 
         border-bottom-right-radius: 2px;
         border-bottom-left-radius: 2px;
+    }
+
+    /* Game tile overflow ("...") menu: 2016 look.
+       2016 has no card menu, but its language is a flat white card/button with
+       3px corners, a #e3e3e3 border and a small drop shadow, and the "more"
+       glyph in generic_06102016.svg is three 6x6 squares with a 2x2 hole that
+       fill in on hover (the old .icon-more / .icon-more:hover cells). The new
+       button ships a 32px material circle (bg-over-media-0) with a state layer
+       and round dots, so the circle, its wash and the round-dot mask are all
+       replaced; the mask swap keeps background-color: currentColor, so the
+       glyph follows the theme. */
+    [data-testid="game-tile-overflow-button"] button {
+        background-color: #fff !important;
+        border: 1px solid #e3e3e3 !important;
+        border-radius: 3px !important;
+        color: #191919 !important;
+        box-shadow: 0 1px 4px 0 rgb(25 25 25 / 0.25);
+    }
+    [data-testid="game-tile-overflow-button"] button:hover {
+        background-color: #f2f2f2 !important;
+        box-shadow: 0 1px 6px 0 rgb(25 25 25 / 0.4);
+    }
+    [data-testid="game-tile-overflow-button"] button:active,
+    [data-testid="game-tile-overflow-button"] button[data-state="open"] {
+        background-color: #e3e3e3 !important;
+        box-shadow: none;
+    }
+    .dark-theme [data-testid="game-tile-overflow-button"] button {
+        background-color: #2d2d2d !important;
+        border-color: #454545 !important;
+        color: #f7f7f8 !important;
+    }
+    /* the new button paints its own hover/press wash over the background */
+    [data-testid="game-tile-overflow-button"] [data-testid="foundation-web-state-layer"] {
+        display: none !important;
+    }
+    [data-testid="game-tile-overflow-button"] .icon {
+        --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M2 11h6v6H2zm2 2h2v2H4zM11 11h6v6h-6zm2 2h2v2h-2zM20 11h6v6h-6zm2 2h2v2h-2z'/%3E%3C/svg%3E");
+        color: #191919 !important;
+    }
+    .dark-theme [data-testid="game-tile-overflow-button"] .icon {
+        color: #f7f7f8 !important;
+    }
+    /* hover fills the 2016 squares in (the old .icon-more-on cell) */
+    [data-testid="game-tile-overflow-button"] button:hover .icon {
+        --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Cpath fill='%23fff' d='M2 11h6v6H2zM11 11h6v6h-6zM20 11h6v6h-6z'/%3E%3C/svg%3E");
     }
 
     /* END OF GAME CARD FIXING STUFF */
