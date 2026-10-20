@@ -32,6 +32,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Home page] The "Continue games" row is no longer pinned to 247px, so it stops shrinking below its tiles.
 - [Nav bar] The hamburger and search icons are white again on the light theme instead of gray.
 - [Carousels] The scroll window hides vertical overflow too, so a row no longer grows a vertical scrollbar.
+- [Home page] The game tile "..." menu is a 2016 white button with the old square dots instead of the modern circle.
 
 ### Find a bug?
 
