@@ -33,9 +33,13 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Nav bar] The hamburger and search icons are white again on the light theme instead of gray.
 - [Carousels] The scroll window hides vertical overflow too, so a row no longer grows a vertical scrollbar.
 - [Home page] The game tile "..." menu is a 2016 white button with the old square dots instead of the modern circle.
+<<<<<<< HEAD
 - [Left nav bar] Restore the 2016 sidebar on the new React nav: compact 175px rail, legacy icons, Groups/Blog names, blue friends counter and Upgrade Now button. [Issue 70](https://github.com/anthony1x6000/ROBLOX2016stylus/issues/70)
 - [Game details] Play button: lift the generated "Play" label 2px so it sits centered in the 2016 green button. [Issue 86](https://github.com/anthony1x6000/ROBLOX2016stylus/issues/86)
 - [Nav bar] Settings popover: square the Radix menu panel and item corners like the 2016 dropdown.
+=======
+- [Game details] Play button: use the 2016 3px corner radius instead of 5px.
+>>>>>>> cb19ca6 (fix: use 3px play button radius)
 
 ### Find a bug?
 
