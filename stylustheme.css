@@ -1081,7 +1081,7 @@
            so the theme prefixed selectors outrank them */
         background-color: #02b757;
         border: 1px solid #02b757;
-        border-radius: 5px;
+        border-radius: 3px;
         color: #fff;
     }
     button.btn-common-play-game-lg:focus, button.btn-common-play-game-lg:hover,
