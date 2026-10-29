@@ -2594,6 +2594,13 @@
         background-color: #e3e3e3;
     }
 
+    /* The 2016 footer never turns light on the dark surface (issue 87). */
+    .dark-theme .container-footer,
+    .container-footer.dark-theme
+    {
+        background-color: #121215 !important;
+    }
+
     .light-theme .profile-accoutrements-container .profile-accoutrements-page-container .profile-accoutrements-page
     {
         border-color: #fff;
