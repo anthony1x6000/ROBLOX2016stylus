@@ -24,6 +24,10 @@
     :root {
         --darkThemeBlue: #324856;
     }
+    /* 2016 medium corners are 3px, not the foundation 8px. */
+    .radius-medium {
+        border-radius: 3px !important;
+    }
     .dark-theme label.text-label[for='theme-dropdown']::after {
         content: " (Light is recommended.)";
     }
