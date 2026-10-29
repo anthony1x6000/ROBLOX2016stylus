@@ -1128,7 +1128,7 @@
     .icon-common-play:after {
         visibility: visible;
         position: relative;
-    /*     top: 3px; */
+        top: -2px;
         vertical-align: middle;
         text-align: center;
         right: 2px;
