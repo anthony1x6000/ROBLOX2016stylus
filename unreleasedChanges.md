@@ -35,6 +35,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Home page] The game tile "..." menu is a 2016 white button with the old square dots instead of the modern circle.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Left nav bar] Restore the 2016 sidebar on the new React nav: compact 175px rail, legacy icons, Groups/Blog names, blue friends counter and Upgrade Now button. [Issue 70](https://github.com/anthony1x6000/ROBLOX2016stylus/issues/70)
 - [Game details] Play button: lift the generated "Play" label 2px so it sits centered in the 2016 green button. [Issue 86](https://github.com/anthony1x6000/ROBLOX2016stylus/issues/86)
 - [Nav bar] Settings popover: square the Radix menu panel and item corners like the 2016 dropdown.
@@ -44,6 +45,9 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 =======
 - [Footer] Dark mode: paint the footer the dark surface color instead of the light #e3e3e3. [Issue 87](https://github.com/anthony1x6000/ROBLOX2016stylus/issues/87)
 >>>>>>> b46baed (fix: dark footer background)
+=======
+- [Foundation] Medium-radius elements use the 2016 3px corner instead of the 8px default.
+>>>>>>> 7ea2e70 (fix: use 3px medium radius)
 
 ### Find a bug?
 
