@@ -33,6 +33,7 @@ Standard releases can be found at [ROBLOX2016stylus/releases](https://github.com
 - [Nav bar] The hamburger and search icons are white again on the light theme instead of gray.
 - [Carousels] The scroll window hides vertical overflow too, so a row no longer grows a vertical scrollbar.
 - [Home page] The game tile "..." menu is a 2016 white button with the old square dots instead of the modern circle.
+- [Left nav bar] Restore the 2016 sidebar on the new React nav: compact 175px rail, legacy icons, Groups/Blog names, blue friends counter and Upgrade Now button. [Issue 70](https://github.com/anthony1x6000/ROBLOX2016stylus/issues/70)
 
 ### Find a bug?
 
