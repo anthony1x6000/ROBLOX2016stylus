@@ -1349,6 +1349,12 @@
             .light-theme .rbx-navbar-right-search .icon-regular-magnifying-glass {
                 background-color: #ffffff !important;
             }
+    /* 2016 nav popovers are square; the Radix menu shell rounds the panel
+       and each item. */
+    .foundation-web-menu.nav-foundation-menu,
+    .foundation-web-menu.nav-foundation-menu .foundation-web-menu-item {
+        border-radius: 0 !important;
+    }
     .rbx-text-navbar-right.text-header {
         margin-bottom: 2px !important;
     }
