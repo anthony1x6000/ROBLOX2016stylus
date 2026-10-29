@@ -3,7 +3,7 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        10.29.2026.1793294071
+@version        10.29.2026.1793294100
 @license        MIT License
 @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
 @var select displayRecommended 'Display Recommended Games at home?' ['block:Visible', 'none:Hidden']
@@ -1140,7 +1140,7 @@
     .icon-common-play:after {
         visibility: visible;
         position: relative;
-    /*     top: 3px; */
+        top: -2px;
         vertical-align: middle;
         text-align: center;
         right: 2px;
