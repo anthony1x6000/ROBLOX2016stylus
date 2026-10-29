@@ -3,7 +3,7 @@
 @namespace      Userstyle
 @author         anthony1x6000
 @description    Userstyle that changes the look of ROBLOX to be more faithful to what it would look like in 2016.
-@version        10.29.2026.1793294125
+@version        10.29.2026.1793294156
 @license        MIT License
 @var select profileVis 'Hide profile in nav bar?' ['block:Visible', 'none:Hidden']
 @var select displayRecommended 'Display Recommended Games at home?' ['block:Visible', 'none:Hidden']
@@ -1361,6 +1361,12 @@
             .light-theme .rbx-navbar-right-search .icon-regular-magnifying-glass {
                 background-color: #ffffff !important;
             }
+    /* 2016 nav popovers are square; the Radix menu shell rounds the panel
+       and each item. */
+    .foundation-web-menu.nav-foundation-menu,
+    .foundation-web-menu.nav-foundation-menu .foundation-web-menu-item {
+        border-radius: 0 !important;
+    }
     .rbx-text-navbar-right.text-header {
         margin-bottom: 2px !important;
     }
