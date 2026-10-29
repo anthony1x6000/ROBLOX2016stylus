@@ -4923,16 +4923,203 @@
     NOTE: .chat-container.collapsed .chat-header .chat-header-title { color: #fff; } matched twice (standalone + grouped with .rbx-header age label); kept once above.
     */
 
-    /* Issue #72: New sidebar semi-fix */
-    div.width-\[288px\] {
-        width: 175px;
-    }
-    div.flex.width-\[289px\].height-full.scroll-y {
-        width: 175px;
-        height: auto;
-    }
-    div.left-nav {
+    /* Issue #70: restore the 2016 sidebar on the React left nav */
+    .left-nav {
+        width: 175px !important;
         box-shadow: 0 1px 4px 0 rgba(25,25,25,0.2);
+    }
+    .left-nav .width-\[289px\],
+    .left-nav .width-\[288px\] {
+        width: 175px !important;
+    }
+    .left-nav .padding-x-large,
+    .left-nav .padding-y-medium {
+        padding: 0 !important;
+    }
+    .left-nav .flex.flex-col.gap-large,
+    .left-nav ul {
+        gap: 0 !important;
+    }
+    .left-nav ul {
+        padding: 6px 12px 0 10px !important;
+        margin: 0 !important;
+    }
+    .left-nav li {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .left-nav li:first-child {
+        margin: 0 8px 12px 0 !important;
+        border-bottom: 1px solid #e3e4e9;
+    }
+    .left-nav li > a,
+    .left-nav li > button {
+        height: 34px !important;
+        padding: 0 !important;
+        gap: 4px !important;
+        border: 0 !important;
+        border-radius: 0 !important;
+        background-color: transparent !important;
+        font-size: 14px !important;
+        font-weight: 400 !important;
+        line-height: 34px !important;
+        text-align: left !important;
+    }
+    /* The new rows paint a grey hover overlay; the 2016 rail only recolours. */
+    .left-nav li > a > div[role="presentation"] {
+        display: none !important;
+    }
+    .left-nav li:first-child > a {
+        height: 43px !important;
+        padding-left: 2px !important;
+        gap: 3px !important;
+        font-size: 15px !important;
+        line-height: 43px !important;
+    }
+    .left-nav .size-1000 {
+        width: 28px !important;
+        height: 28px !important;
+    }
+    .left-nav li:first-child .size-1000,
+    .left-nav li:first-child .size-600 {
+        width: 30px !important;
+        height: 30px !important;
+    }
+    .left-nav li:first-child .size-600 img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    /* 2016 navigation sprite: black line icons that colour on hover. */
+    .left-nav .icon {
+        width: 28px !important;
+        height: 28px !important;
+        -webkit-mask-image: none !important;
+        mask-image: none !important;
+        background-color: transparent !important;
+        background-image: url(https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg) !important;
+        background-repeat: no-repeat !important;
+        background-size: 56px 504px !important;
+    }
+    .left-nav .icon-regular-house { background-position: 0 -140px !important; }
+    .left-nav .icon-regular-person { background-position: 0 -168px !important; }
+    .left-nav .icon-regular-speech-bubble-align-center { background-position: 0 -196px !important; }
+    .left-nav .icon-regular-two-people { background-position: 0 -224px !important; }
+    .left-nav .icon-regular-person-standing { background-position: 0 -252px !important; }
+    .left-nav .icon-regular-backpack { background-position: 0 -280px !important; }
+    .left-nav .icon-regular-hand-two-arrows-horizontal { background-position: 0 -308px !important; }
+    .left-nav .icon-regular-three-people { background-position: 0 -336px !important; }
+    .left-nav .icon-regular-fountain-pen-nib { background-position: 0 -364px !important; }
+    .left-nav .icon-regular-building-store { background-position: 0 -420px !important; }
+    /* The 2018 sprite has no gift-card row; the 532px light sprite does. */
+    .left-nav .icon-regular-gift-card {
+        background-image: url(https://images.rbxcdn.com/4c534716156acb6c.svg) !important;
+        background-size: 56px 532px !important;
+        background-position: 0 -504px !important;
+    }
+    .left-nav li > a:hover .icon,
+    .left-nav li > button:hover .icon {
+        background-position-x: -28px !important;
+    }
+    /* There is no white 2016 navigation sprite; invert the black one. */
+    .dark-theme .left-nav .icon {
+        filter: invert(1);
+    }
+    .dark-theme .left-nav li > a:hover .icon,
+    .dark-theme .left-nav li > button:hover .icon {
+        background-position-x: 0 !important;
+    }
+    .dark-theme .left-nav li:first-child {
+        border-bottom-color: rgba(255,255,255,0.12);
+    }
+
+    /* New-only rows: Plus and the game ad did not exist on the 2016 rail. */
+    .left-nav li:has(> a > .size-1000 .icon-regular-roblox-plus),
+    .left-nav li:has(> a > img) {
+        display: none !important;
+    }
+
+    /* 2016 names: Communities and Newsroom were Groups and Blog. */
+    .left-nav li:has(.icon-regular-three-people) > a > span.min-width-0,
+    .left-nav li:has(.icon-regular-fountain-pen-nib) > a > span.min-width-0 {
+        font-size: 0 !important;
+    }
+    .left-nav li:has(.icon-regular-three-people) > a > span.min-width-0::after,
+    .left-nav li:has(.icon-regular-fountain-pen-nib) > a > span.min-width-0::after {
+        font-size: 14px !important;
+    }
+    .left-nav li:has(.icon-regular-three-people) > a > span.min-width-0::after { content: "Groups"; }
+    .left-nav li:has(.icon-regular-fountain-pen-nib) > a > span.min-width-0::after { content: "Blog"; }
+
+    /* Friends counter: the 2016 blue dot, not the modern pill. */
+    .left-nav li:has(.foundation-web-badge) .fill {
+        padding: 0 !important;
+    }
+    .left-nav .foundation-web-badge {
+        width: 18px !important;
+        min-width: 18px !important;
+        height: 18px !important;
+        padding: 0 !important;
+        border-radius: 50% !important;
+        background-color: #00a2ff !important;
+        justify-content: center !important;
+    }
+    .left-nav .foundation-web-badge span {
+        padding: 0 !important;
+        font-size: 11px !important;
+        line-height: 18px !important;
+        color: #ffffff !important;
+    }
+
+    /* The Plus promo card becomes the 2016 Upgrade Now button. */
+    .left-nav li.padding-top-xsmall {
+        padding-top: 9px !important;
+    }
+    .left-nav li.padding-top-xsmall > a {
+        height: 36px !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 0 !important;
+        border: 0 !important;
+        border-radius: 3px !important;
+        background-color: #00a2ff !important;
+        color: #ffffff !important;
+        line-height: 36px !important;
+    }
+    .left-nav li.padding-top-xsmall > a > span {
+        display: none !important;
+    }
+    .left-nav li.padding-top-xsmall > a::after {
+        content: "Upgrade Now";
+        font-size: 14px;
+        line-height: 36px;
+        color: #ffffff;
+    }
+    .left-nav li.padding-top-xsmall > a:hover {
+        background-color: #00b0ff !important;
+    }
+    .left-nav [role="separator"] {
+        display: none !important;
+    }
+
+    /* 2016 hover colours: green home/inventory, orange profile/avatar, blue rest. */
+    .light-theme .left-nav li:has(.icon-regular-house) > a:hover,
+    .light-theme .left-nav li:has(.icon-regular-backpack) > a:hover {
+        color: #01854b !important;
+    }
+    .light-theme .left-nav li:has(.icon-regular-person) > a:hover,
+    .light-theme .left-nav li:has(.icon-regular-person-standing) > a:hover {
+        color: #f57630 !important;
+    }
+    .light-theme .left-nav li:has(.icon-regular-speech-bubble-align-center) > :is(a, button):hover,
+    .light-theme .left-nav li:has(.icon-regular-two-people) > :is(a, button):hover,
+    .light-theme .left-nav li:has(.icon-regular-hand-two-arrows-horizontal) > :is(a, button):hover,
+    .light-theme .left-nav li:has(.icon-regular-three-people) > :is(a, button):hover,
+    .light-theme .left-nav li:has(.icon-regular-fountain-pen-nib) > :is(a, button):hover,
+    .light-theme .left-nav li:has(.icon-regular-building-store) > :is(a, button):hover,
+    .light-theme .left-nav li:has(.icon-regular-gift-card) > :is(a, button):hover {
+        color: #70a0ff !important;
     }
 
     @media (min-width: 1141px) {
